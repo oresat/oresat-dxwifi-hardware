@@ -13,4 +13,5 @@ NB:  There are other DxWiFi materials on the PSAS GitHub repo, in particular:
    - The efforts of testing and using [WiFi with the PSAS rocket](https://github.com/psas/DxWiFi)
    - A proposed WiFi [power amplifier design project](https://github.com/psas/dxwifi-pa)
 
-
+Here is a Google Spreadsheet for the [Link Budget started in 2013](https://docs.google.com/spreadsheets/d/1QitQvIPwlf3Sn3N1pg1PywyiM__GuMZ6tIb5JUAfHp4/edit#gid=944074214) for the
+OreSat DxWiFi link.
