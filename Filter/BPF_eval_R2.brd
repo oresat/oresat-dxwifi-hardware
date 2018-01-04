@@ -9,7 +9,7 @@
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="10" fill="9" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,22 +22,22 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="25" fill="9" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="25" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -55,11 +55,11 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1323,7 +1323,7 @@ This package is identical to 0402-B, but has its tPlace silkscreen layer removed
 <clearance class="1" value="1.016"/>
 </class>
 </classes>
-<designrules name="OSH-Park-2-layer">
+<designrules name="oshpark-4layer">
 <description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
@@ -1332,24 +1332,24 @@ Please make sure your boards conform to these design rules.
 Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
 &lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
 &lt;/p&gt;</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
-<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="layerSetup" value="(1*2*15*16)"/>
+<param name="mtCopper" value="0.035559375mm 0.01778125mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.01778125mm 0.035559375mm"/>
+<param name="mtIsolate" value="0.17018125mm 47mil 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.17018125mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="5mil"/>
 <param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -1360,19 +1360,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="5mil"/>
+<param name="rlMinPadTop" value="4mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="5mil"/>
+<param name="rlMinPadInner" value="4mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="5mil"/>
+<param name="rlMinPadBottom" value="4mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMinViaOuter" value="4mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMinViaInner" value="4mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="5mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="5mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -1546,25 +1546,25 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="5"/>
 <contactref element="L1" pad="2"/>
 <contactref element="L2" pad="2"/>
-<polygon width="0.1524" layer="1" orphans="yes">
+<polygon width="0.1524" layer="1" isolate="0.254" orphans="yes">
 <vertex x="0" y="0"/>
 <vertex x="35.56" y="0"/>
 <vertex x="35.56" y="33.02"/>
 <vertex x="0" y="33.02"/>
 </polygon>
-<polygon width="0.1524" layer="2">
-<vertex x="0.1524" y="33.0708"/>
+<polygon width="0.1524" layer="2" isolate="0.254">
+<vertex x="0" y="33.02"/>
 <vertex x="0.1524" y="0.1524"/>
 <vertex x="35.3568" y="0.1524"/>
-<vertex x="35.3568" y="33.0708"/>
+<vertex x="35.56" y="33.02"/>
 </polygon>
 <polygon width="0.1524" layer="15">
-<vertex x="0.1524" y="33.0708"/>
-<vertex x="35.3568" y="33.0708"/>
-<vertex x="35.3568" y="0.1524"/>
-<vertex x="0.1524" y="0.1524"/>
+<vertex x="0" y="33.02"/>
+<vertex x="35.56" y="33.02"/>
+<vertex x="35.56" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
-<polygon width="0.1524" layer="16" orphans="yes">
+<polygon width="0.1524" layer="16" isolate="0.254" orphans="yes">
 <vertex x="0" y="33.02"/>
 <vertex x="35.56" y="33.02"/>
 <vertex x="35.56" y="0"/>
@@ -1761,37 +1761,37 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,16,f4332839d534083e"/>
 <approved hash="4,16,f65f2904d40f0a24"/>
 <approved hash="4,16,f677296bd5cc0538"/>
-<approved hash="5,1,3c4d4918d2951b43"/>
-<approved hash="5,1,4a7642c6f2ae094c"/>
 <approved hash="5,1,56727873a53a1e96"/>
 <approved hash="5,1,0db7a7db7b0ce0ab"/>
+<approved hash="5,1,3c4d4918d2951b43"/>
+<approved hash="5,1,4a7642c6f2ae094c"/>
 <approved hash="5,1,e0e5fcfd8f935377"/>
-<approved hash="5,1,17cc40b12960412f"/>
-<approved hash="5,1,9c8065bb96bce2ef"/>
 <approved hash="5,1,3365bd29f5e87b7a"/>
 <approved hash="5,1,e0c86dfe225adf95"/>
+<approved hash="5,1,17cc40b12960412f"/>
+<approved hash="5,1,9c8065bb96bce2ef"/>
 <approved hash="5,1,2fbe55c24c2564d2"/>
 <approved hash="5,1,a44d0ba165c0ae76"/>
 <approved hash="5,1,ee828f39bbbdc7b3"/>
-<approved hash="5,1,51eb8c5e092d40f1"/>
-<approved hash="5,1,5c3c4cb190b59614"/>
-<approved hash="5,1,065aa545f312c580"/>
-<approved hash="5,1,f30d67fc78608656"/>
 <approved hash="5,1,6603ec86c54721ed"/>
 <approved hash="5,1,ed1bd672fb2cf7a5"/>
-<approved hash="5,1,eb4afbee8bc6fab1"/>
+<approved hash="5,1,f30d67fc78608656"/>
+<approved hash="5,1,5c3c4cb190b59614"/>
+<approved hash="5,1,065aa545f312c580"/>
+<approved hash="5,1,51eb8c5e092d40f1"/>
 <approved hash="5,1,41b52d9fa869f3f8"/>
+<approved hash="5,1,eb4afbee8bc6fab1"/>
 <approved hash="5,1,15e293f3af150a6b"/>
 <approved hash="5,1,1fbab82a6712667c"/>
 <approved hash="5,1,00f33c59e468d9ff"/>
-<approved hash="5,1,7e65833b6a43534c"/>
-<approved hash="5,1,b3c2bb325466ac4d"/>
-<approved hash="5,1,7fe24c8f58087cc1"/>
-<approved hash="5,1,7a470943a2ed7f90"/>
 <approved hash="5,1,ab97697d82d5f58f"/>
 <approved hash="5,1,11ff94b854ab45d0"/>
-<approved hash="5,1,f767d7b4052d59f5"/>
+<approved hash="5,1,7a470943a2ed7f90"/>
+<approved hash="5,1,b3c2bb325466ac4d"/>
+<approved hash="5,1,7fe24c8f58087cc1"/>
+<approved hash="5,1,7e65833b6a43534c"/>
 <approved hash="5,1,9a93ba6f00fb1902"/>
+<approved hash="5,1,f767d7b4052d59f5"/>
 <approved hash="5,1,8547d5bbdd21aa49"/>
 <approved hash="5,1,886011cd88afdead"/>
 <approved hash="5,1,e3aa71a27256ef62"/>
@@ -1799,64 +1799,64 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,1454157c67067bd6"/>
 <approved hash="5,1,d793f8f7dea7e390"/>
 <approved hash="5,1,1fb3648fa7aae169"/>
-<approved hash="5,1,40f1e415a9efb64c"/>
-<approved hash="5,1,aa6141f4c7f7c59e"/>
-<approved hash="5,1,991d97ca50e41c1e"/>
-<approved hash="5,1,fda0f2c6c6e31b01"/>
 <approved hash="5,1,dbf3e07f9c4b38a3"/>
-<approved hash="5,1,52d1729a7c04602f"/>
+<approved hash="5,1,40f1e415a9efb64c"/>
+<approved hash="5,1,fda0f2c6c6e31b01"/>
+<approved hash="5,1,991d97ca50e41c1e"/>
+<approved hash="5,1,aa6141f4c7f7c59e"/>
 <approved hash="5,1,fe67ff75708d9203"/>
+<approved hash="5,1,52d1729a7c04602f"/>
 <approved hash="5,1,4a1ba56f7700ff54"/>
 <approved hash="5,1,3e06bc615a1d8d5a"/>
 <approved hash="5,1,d91620bffdfbace4"/>
 <approved hash="5,1,3fc427c8279e1a94"/>
 <approved hash="5,1,7ceaf2a598a03af8"/>
-<approved hash="5,1,e83b502dc2216993"/>
-<approved hash="5,1,7f051686357101cb"/>
 <approved hash="5,1,69c10241e3ea632c"/>
-<approved hash="5,1,d759737c1f543466"/>
+<approved hash="5,1,7f051686357101cb"/>
+<approved hash="5,1,e83b502dc2216993"/>
 <approved hash="5,1,8bb00f8836599fc5"/>
-<approved hash="4,1,4e201009ec74b23d"/>
-<approved hash="4,1,80c6a6c5dabefdce"/>
-<approved hash="4,1,3f93011a7d8743af"/>
-<approved hash="4,1,9299b440c84cef94"/>
-<approved hash="4,1,233db21e4619dfda"/>
-<approved hash="4,1,f42cc2b3b1fb888b"/>
+<approved hash="5,1,d759737c1f543466"/>
 <approved hash="4,1,0763fa13895b7bc4"/>
+<approved hash="4,1,72269156ed2d0f2e"/>
 <approved hash="5,1,a4a681487a0109ba"/>
 <approved hash="5,1,30880d69332c6b7a"/>
 <approved hash="4,1,79baaa48965d45bc"/>
 <approved hash="5,1,a2f7e5e6cc955a7b"/>
 <approved hash="4,1,9cc6ffedc270a0f9"/>
+<approved hash="4,1,4e201009ec74b23d"/>
+<approved hash="4,1,80c6a6c5dabefdce"/>
+<approved hash="5,1,475f01f187899bd3"/>
+<approved hash="5,1,de2ea3b7f0fd599a"/>
 <approved hash="5,1,62c10110cad43d16"/>
-<approved hash="5,1,4644c140029a841d"/>
-<approved hash="5,1,1e49b83ff24faad2"/>
+<approved hash="5,1,89218de3532bc5ff"/>
+<approved hash="4,1,2f8956326af913c2"/>
+<approved hash="5,1,9a9781dded9296dd"/>
+<approved hash="5,1,01b9a1563b1ccf72"/>
 <approved hash="5,1,22204055cbab5917"/>
 <approved hash="5,1,996d11b5449ba64a"/>
 <approved hash="5,1,87e97ee5fad6144a"/>
-<approved hash="5,1,9a9781dded9296dd"/>
-<approved hash="5,1,01b9a1563b1ccf72"/>
-<approved hash="4,1,2f8956326af913c2"/>
+<approved hash="4,1,233db21e4619dfda"/>
+<approved hash="5,1,4644c140029a841d"/>
+<approved hash="5,1,1e49b83ff24faad2"/>
 <approved hash="4,1,3dd5a79c5be1c1c8"/>
-<approved hash="4,1,72269156ed2d0f2e"/>
-<approved hash="5,1,475f01f187899bd3"/>
-<approved hash="5,1,de2ea3b7f0fd599a"/>
-<approved hash="5,1,89218de3532bc5ff"/>
-<approved hash="5,1,d4e6fc35317dee19"/>
-<approved hash="5,1,71675b3b31b87cbb"/>
 <approved hash="5,1,bae23e24fc1f79fa"/>
 <approved hash="5,1,4ec9565e59c8c65b"/>
+<approved hash="5,1,d4e6fc35317dee19"/>
+<approved hash="5,1,71675b3b31b87cbb"/>
+<approved hash="4,1,3f93011a7d8743af"/>
+<approved hash="4,1,9299b440c84cef94"/>
+<approved hash="4,1,f42cc2b3b1fb888b"/>
 <approved hash="5,1,2c5efeb8157bb4cf"/>
 <approved hash="5,1,daa1342e5661f44c"/>
 <approved hash="5,1,b9d8c25783361a4d"/>
+<approved hash="4,16,0763fa13895b7bc4"/>
+<approved hash="4,16,2f8956326af913c2"/>
+<approved hash="4,16,9cc6ffedc270a0f9"/>
+<approved hash="4,16,72269156ed2d0f2e"/>
 <approved hash="4,16,3f93011a7d8743af"/>
 <approved hash="4,16,9299b440c84cef94"/>
 <approved hash="4,16,80c6a6c5dabefdce"/>
 <approved hash="4,16,f42cc2b3b1fb888b"/>
-<approved hash="4,16,0763fa13895b7bc4"/>
-<approved hash="4,16,9cc6ffedc270a0f9"/>
-<approved hash="4,16,2f8956326af913c2"/>
-<approved hash="4,16,72269156ed2d0f2e"/>
 </errors>
 </board>
 </drawing>
