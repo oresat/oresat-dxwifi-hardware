@@ -10,6 +10,18 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
@@ -18674,6 +18686,7 @@ STAND-OFF</description>
 <part name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="TIGHT" package3d_urn="urn:adsk.eagle:package:38629/1"/>
 <part name="H3" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="TIGHT" package3d_urn="urn:adsk.eagle:package:38629/1"/>
 <part name="H4" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="TIGHT" package3d_urn="urn:adsk.eagle:package:38629/1"/>
+<part name="R39" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -18962,6 +18975,7 @@ Input from TX/RX Switch 1</text>
 <instance part="H2" gate="G$1" x="134.62" y="27.94"/>
 <instance part="H3" gate="G$1" x="134.62" y="25.4"/>
 <instance part="H4" gate="G$1" x="134.62" y="22.86"/>
+<instance part="R39" gate="R" x="71.12" y="185.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19132,9 +19146,13 @@ Input from TX/RX Switch 1</text>
 <junction x="33.02" y="137.16"/>
 <pinref part="PD1" gate="PD" pin="OUT1"/>
 <wire x1="62.23" y1="185.42" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="185.42" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="185.42" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="180.34" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="165.1" x2="20.32" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="165.1" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R39" gate="R" pin="1"/>
+<wire x1="71.12" y1="180.34" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
+<junction x="66.04" y="180.34"/>
 </segment>
 </net>
 <net name="N$6" class="1">
@@ -19315,8 +19333,12 @@ Input from TX/RX Switch 1</text>
 <net name="PWR_DIV_OUT2" class="1">
 <segment>
 <pinref part="PD1" gate="PD" pin="OUT2"/>
-<wire x1="62.23" y1="193.04" x2="158.75" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="193.04" x2="71.12" y2="193.04" width="0.1524" layer="91"/>
 <label x="157.48" y="193.04" size="1.778" layer="95" rot="MR180" xref="yes"/>
+<pinref part="R39" gate="R" pin="2"/>
+<wire x1="71.12" y1="193.04" x2="158.75" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="190.5" x2="71.12" y2="193.04" width="0.1524" layer="91"/>
+<junction x="71.12" y="193.04"/>
 </segment>
 </net>
 <net name="PA_ON_LNA_OFF" class="0">
@@ -19404,7 +19426,7 @@ Input from TX/RX Switch 1</text>
 <text x="156.21" y="109.22" size="1.778" layer="97">0402</text>
 <text x="105.41" y="104.14" size="1.778" layer="97">0402</text>
 <text x="105.41" y="85.09" size="2.54" layer="97">TX/RX Switch 1</text>
-<text x="27.94" y="135.89" size="1.778" layer="97">Inverter U5 causes TX/RX Switch 1
+<text x="20.32" y="135.89" size="1.778" layer="97">Inverter U5 causes TX/RX Switch 1
 to select RF2 port during transmit.
 TX/RX Switch 2, without inverter,
 selects RF1 port during transmit.
