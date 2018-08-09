@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -244,27 +244,27 @@
 <package name="QFN50P400X400X102-21N">
 <description>&lt;b&gt;QFN-20&lt;/b&gt;&lt;br&gt;
 </description>
-<smd name="1" x="-2.05" y="1" dx="0.65" dy="0.3" layer="1"/>
-<smd name="2" x="-2.05" y="0.5" dx="0.65" dy="0.3" layer="1"/>
-<smd name="3" x="-2.05" y="0" dx="0.65" dy="0.3" layer="1"/>
-<smd name="4" x="-2.05" y="-0.5" dx="0.65" dy="0.3" layer="1"/>
-<smd name="5" x="-2.05" y="-1" dx="0.65" dy="0.3" layer="1"/>
-<smd name="6" x="-1" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="-0.5" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="0" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="9" x="0.5" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="10" x="1" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="11" x="2.05" y="-1" dx="0.65" dy="0.3" layer="1"/>
-<smd name="12" x="2.05" y="-0.5" dx="0.65" dy="0.3" layer="1"/>
-<smd name="13" x="2.05" y="0" dx="0.65" dy="0.3" layer="1"/>
-<smd name="14" x="2.05" y="0.5" dx="0.65" dy="0.3" layer="1"/>
-<smd name="15" x="2.05" y="1" dx="0.65" dy="0.3" layer="1"/>
-<smd name="16" x="1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="17" x="0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="18" x="0" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="19" x="-0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="20" x="-1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="21" x="0" y="0" dx="2.15" dy="2.15" layer="1" rot="R90"/>
+<smd name="1" x="-2.05" y="1" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="2" x="-2.05" y="0.5" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="3" x="-2.05" y="0" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="4" x="-2.05" y="-0.5" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="5" x="-2.05" y="-1" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="6" x="-1" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="7" x="-0.5" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="8" x="0" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="9" x="0.5" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="10" x="1" y="-2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="11" x="2.05" y="-1" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="12" x="2.05" y="-0.5" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="13" x="2.05" y="0" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="14" x="2.05" y="0.5" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="15" x="2.05" y="1" dx="0.65" dy="0.3" layer="1" thermals="no"/>
+<smd name="16" x="1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="17" x="0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="18" x="0" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="19" x="-0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="20" x="-1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
+<smd name="21" x="0" y="0" dx="2.15" dy="2.15" layer="1" rot="R90" thermals="no"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-2.625" y1="2.625" x2="2.625" y2="2.625" width="0.05" layer="51"/>
@@ -671,7 +671,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <devices>
 <device name="" package="QFN50P400X400X102-21N">
 <connects>
-<connect gate="U" pin="GND" pad="21"/>
+<connect gate="U" pin="GND" pad="1 5 7 9 10 11 15 17 19 21"/>
 <connect gate="U" pin="IREF1" pad="6"/>
 <connect gate="U" pin="IREF2" pad="8"/>
 <connect gate="U" pin="RFIN@2" pad="2"/>
@@ -13939,7 +13939,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <connect gate="R" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF1000V" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805-A" package=".0805-A">
@@ -14212,8 +14214,11 @@ STAND-OFF</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="RF" width="0.3302" drill="0">
-<clearance class="1" value="0.75"/>
+<class number="1" name="RF" width="0" drill="0">
+<clearance class="0" value="0.75"/>
+</class>
+<class number="2" name="pad_rf" width="0" drill="0">
+<clearance class="0" value="0.75"/>
 </class>
 </classes>
 <parts>
@@ -16326,7 +16331,7 @@ Output to Power Divider</text>
 <label x="73.66" y="80.01" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$23" class="1">
+<net name="N$23" class="2">
 <segment>
 <pinref part="U6" gate="U" pin="RFIN@4"/>
 <wire x1="114.3" y1="114.3" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
