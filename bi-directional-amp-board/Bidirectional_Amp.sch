@@ -224,22 +224,14 @@
 <smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
 <smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
 <smd name="5" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.1" y1="1.75" x2="2.1" y2="1.75" width="0.05" layer="51"/>
-<wire x1="2.1" y1="1.75" x2="2.1" y2="-1.75" width="0.05" layer="51"/>
-<wire x1="2.1" y1="-1.75" x2="-2.1" y2="-1.75" width="0.05" layer="51"/>
-<wire x1="-2.1" y1="-1.75" x2="-2.1" y2="1.75" width="0.05" layer="51"/>
+<text x="0" y="-3.81" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
 <wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
 <wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
 <wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
 <wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
-<wire x1="-0.3" y1="1.45" x2="0.3" y2="1.45" width="0.2" layer="21"/>
-<wire x1="0.3" y1="1.45" x2="0.3" y2="-1.45" width="0.2" layer="21"/>
-<wire x1="0.3" y1="-1.45" x2="-0.3" y2="-1.45" width="0.2" layer="21"/>
-<wire x1="-0.3" y1="-1.45" x2="-0.3" y2="1.45" width="0.2" layer="21"/>
-<wire x1="-1.85" y1="1.5" x2="-0.65" y2="1.5" width="0.2" layer="21"/>
+<circle x="-2.286" y="1.778" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="INDC2928X203N">
 <description>&lt;b&gt;1008LS&lt;/b&gt;&lt;br&gt;
@@ -352,7 +344,7 @@
 <smd name="3" x="-1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="4" x="1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="5" x="1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
-<text x="-3.4544" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-3.4544" y="3.81" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-0.4826" y1="-1.4986" x2="0.4826" y2="-1.4986" width="0.1524" layer="21"/>
 <wire x1="0.8382" y1="-0.3302" x2="0.8382" y2="0.3302" width="0.1524" layer="21"/>
@@ -360,6 +352,7 @@
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4986" x2="-0.4826" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
+<circle x="-2.413" y="1.778" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="SHDR3W87P0X254_1X3_747X635X843">
 <description>&lt;b&gt;22-23-2031&lt;/b&gt;&lt;br&gt;
@@ -1012,12 +1005,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <wire x1="-0.3048" y1="1.4478" x2="-0.8636" y2="1.4478" width="0.1524" layer="51"/>
 <wire x1="-0.8636" y1="1.4478" x2="-0.8636" y2="-1.4478" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.0668" y="0.1016" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.016" y1="-1.5748" x2="1.016" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.5748" x2="-1.016" y2="1.5748" width="0.1524" layer="21"/>
-<text x="-1.9812" y="1.3208" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-3.81" y="2.54" size="1.27" layer="27">&gt;Value</text>
+<circle x="-1.524" y="1.651" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="TSOT-23_S6-M">
 <smd name="1" x="-1.1938" y="0.95" dx="1.524" dy="0.5588" layer="1"/>
@@ -8937,11 +8929,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-0.3048" y1="1.4478" x2="-0.8636" y2="1.4478" width="0.1524" layer="51"/>
 <wire x1="-0.8636" y1="1.4478" x2="-0.8636" y2="-1.4478" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.0668" y="0.1016" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.016" y1="-1.5748" x2="1.016" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.5748" x2="-1.016" y2="1.5748" width="0.1524" layer="21"/>
-<text x="-1.9812" y="1.3208" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-3.2766" y="-3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<circle x="-1.778" y="1.651" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="TSOT-23_S6-M">
 <smd name="1" x="-1.1938" y="0.95" dx="1.524" dy="0.5588" layer="1"/>
@@ -9318,7 +9309,7 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <devices>
 <device name="" package="DFN-8">
 <connects>
-<connect gate="U1" pin="GND" pad="9"/>
+<connect gate="U1" pin="GND" pad="1 3 4 5 8 9"/>
 <connect gate="U1" pin="RFIN" pad="2"/>
 <connect gate="U1" pin="RFOUT" pad="7"/>
 <connect gate="U1" pin="SHUTDN" pad="6"/>
@@ -17022,7 +17013,7 @@ an external shutdown feature is needed.</text>
 <pinref part="SUPPLY86" gate="GND" pin="GND"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="SWA" class="0">
 <segment>
 <pinref part="L9" gate="G$1" pin="1"/>
 <wire x1="189.23" y1="137.16" x2="189.23" y2="127" width="0.1524" layer="91"/>
@@ -17033,7 +17024,7 @@ an external shutdown feature is needed.</text>
 <junction x="189.23" y="127"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="SWB" class="0">
 <segment>
 <pinref part="L10" gate="G$1" pin="1"/>
 <wire x1="201.93" y1="137.16" x2="201.93" y2="121.92" width="0.1524" layer="91"/>
@@ -17044,7 +17035,7 @@ an external shutdown feature is needed.</text>
 <junction x="201.93" y="121.92"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="VOUT" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="VOUT"/>
 <wire x1="179.07" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
@@ -17071,7 +17062,7 @@ an external shutdown feature is needed.</text>
 <pinref part="J3" gate="-5" pin="S"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="FB" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="FB"/>
 <wire x1="179.07" y1="114.3" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
@@ -17082,7 +17073,7 @@ an external shutdown feature is needed.</text>
 <junction x="232.41" y="114.3"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="SHDN" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="!SHDN"/>
 <wire x1="138.43" y1="124.46" x2="118.11" y2="124.46" width="0.1524" layer="91"/>
@@ -17096,7 +17087,7 @@ an external shutdown feature is needed.</text>
 <pinref part="J3" gate="-7" pin="S"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="VC" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="VC"/>
 <pinref part="R30" gate="R" pin="2"/>
@@ -17115,7 +17106,7 @@ an external shutdown feature is needed.</text>
 <wire x1="118.11" y1="101.6" x2="118.11" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="L10" gate="G$1" pin="2"/>
 <pinref part="L9" gate="G$1" pin="2"/>
