@@ -9633,7 +9633,6 @@ Diode with low voltage drop</description>
 <wire x1="-1.6764" y1="1.6764" x2="-1.6764" y2="1.4732" width="0.1524" layer="21"/>
 <wire x1="-1.6764" y1="-1.4732" x2="-1.6764" y2="-1.6764" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="1.4732" x2="1.6764" y2="1.6764" width="0.1524" layer="21"/>
-<wire x1="-2.1844" y1="0.9144" x2="-2.1844" y2="1.0668" width="0.1524" layer="21" curve="-208"/>
 <wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="-1.5494" x2="1.5494" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="51"/>
@@ -9642,6 +9641,7 @@ Diode with low voltage drop</description>
 <wire x1="-1.5494" y1="1.5494" x2="-1.5494" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<circle x="-2.286" y="1.524" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="DFN-10_DD-M">
 <smd name="1" x="-1.4986" y="1" dx="0.9144" dy="0.3048" layer="1"/>
@@ -14196,6 +14196,8 @@ STAND-OFF</description>
 <class number="1" name="RF" width="0" drill="0">
 <clearance class="0" value="0.75"/>
 </class>
+<class number="2" name="RF_GND" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="J1" library="SamacSys_Parts" deviceset="73415-2061" device="">
@@ -15015,6 +15017,88 @@ STAND-OFF</description>
 <attribute name="MPN" value="ERJ-3EKF1000V"/>
 </part>
 <part name="U6" library="SamacSys_Parts" deviceset="TQP9111" device=""/>
+<part name="C43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MPN" value="GCJ31CR71C475KA01L"/>
+<attribute name="SIZE" value="1206"/>
+<attribute name="TEMP" value="X7R"/>
+<attribute name="VOLTAGE" value="16V"/>
+</part>
+<part name="SUPPLY98" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R40" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="383k">
+<attribute name="MPN" value="ERJ-2RKF3833X"/>
+</part>
+<part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1000pF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MPN" value="CGA3E2C0G1H102J080AA"/>
+</part>
+<part name="SUPPLY99" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="22pF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MPN" value="GCM1555C1H220JA16J"/>
+</part>
+<part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="22uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MPN" value="GCJ32ER71C226KE01L"/>
+</part>
+<part name="R41" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="121k">
+<attribute name="MPN" value="ERJ-2RKF1213X"/>
+</part>
+<part name="R42" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="10k">
+<attribute name="MPN" value="ERJ-2RKF1002X"/>
+</part>
+<part name="L13" library="SamacSys_Parts" deviceset="XFL4020-222MEB" device="" value="2.2uH"/>
+<part name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" package3d_urn="urn:adsk.eagle:package:38441/1" value="">
+<attribute name="MPN" value="PMEG1020EJ,115"/>
+</part>
+<part name="D4" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" package3d_urn="urn:adsk.eagle:package:38441/1" value="">
+<attribute name="MPN" value="PMEG1020EJ,115"/>
+</part>
+<part name="L14" library="SamacSys_Parts" deviceset="XFL4020-222MEB" device="" value="2.2uH"/>
+<part name="U12" library="LTC3428" deviceset="LTC3428EDDPBF" device=""/>
+<part name="SUPPLY100" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY101" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY102" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY103" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY104" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY105" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R43" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="10k">
+<attribute name="MPN" value="ERJ-2GEJ103X"/>
+</part>
+<part name="SUPPLY106" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="22uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MPN" value="GCJ32ER71C226KE01L"/>
+</part>
+<part name="SUPPLY107" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="J13" library="22-23-2071" deviceset="22-23-2071" device=""/>
+<part name="SUPPLY108" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16856,6 +16940,35 @@ an external shutdown feature is needed.</text>
 <text x="106.426" y="120.904" size="1.778" layer="97">0402</text>
 <text x="29.464" y="165.608" size="1.778" layer="97">Ground</text>
 <text x="29.464" y="163.068" size="1.778" layer="97">Ground</text>
+<text x="387.35" y="102.87" size="1.778" layer="97">1206</text>
+<text x="511.81" y="82.55" size="1.778" layer="97">1210</text>
+<text x="400.05" y="71.12" size="1.778" layer="97">0603</text>
+<text x="419.1" y="82.55" size="1.778" layer="97">0402</text>
+<text x="523.24" y="97.79" size="1.778" layer="97">0402</text>
+<text x="523.24" y="82.55" size="1.778" layer="97">0402</text>
+<text x="400.05" y="81.28" size="1.778" layer="97">0402</text>
+<text x="372.11" y="151.13" size="1.778" layer="97">1210</text>
+<text x="319.024" y="140.208" size="1.778" layer="97">+5VDC lab supply</text>
+<text x="319.024" y="137.668" size="1.778" layer="97">+5VDC to all loads</text>
+<text x="319.024" y="135.128" size="1.778" layer="97">DC/DC Conv Out</text>
+<text x="319.024" y="132.588" size="1.778" layer="97">DC/DC Conv In</text>
+<text x="319.024" y="130.048" size="1.778" layer="97">DC/DC Conv !SHDN!</text>
+<text x="317.5" y="93.98" size="1.778" layer="97">To use DC/DC Converter for +5VDC,
+connect Vbatt source to Pin 6 and
+connect Ground to Pin 1.
+Connect Pin 5 to Pin 4 with jumper clip.
+
+To use lab supply, connect +5VDC
+to Pin 3 and connect Ground to Pin 1.
+Connect Pin 3 to Pin 4
+with jumper clip.
+
+Pin 7 may be left unconnected unless
+an external shutdown feature is needed.</text>
+<text x="429.26" y="124.46" size="2.54" layer="97">Step-Up DC/DC Converter</text>
+<text x="395.986" y="100.584" size="1.778" layer="97">0402</text>
+<text x="319.024" y="145.288" size="1.778" layer="97">Ground</text>
+<text x="319.024" y="142.748" size="1.778" layer="97">Ground</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -16947,6 +17060,93 @@ an external shutdown feature is needed.</text>
 <instance part="J3" gate="-6" x="59.69" y="153.67" rot="MR0"/>
 <instance part="J3" gate="-7" x="59.69" y="151.13" rot="MR0"/>
 <instance part="SUPPLY86" gate="GND" x="80.01" y="161.29" smashed="yes"/>
+<instance part="C43" gate="G$1" x="386.08" y="107.95" smashed="yes">
+<attribute name="MPN" x="386.08" y="107.95" size="1.778" layer="96" display="off"/>
+<attribute name="SIZE" x="386.08" y="107.95" size="1.778" layer="96" display="off"/>
+<attribute name="TEMP" x="386.08" y="107.95" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="386.08" y="107.95" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="387.604" y="108.331" size="1.778" layer="95"/>
+<attribute name="VALUE" x="388.874" y="105.791" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY98" gate="GND" x="415.29" y="77.47" smashed="yes"/>
+<instance part="R40" gate="R" x="521.97" y="101.6" smashed="yes" rot="R90">
+<attribute name="MPN" x="521.97" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="528.0914" y="104.14" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="529.082" y="101.6" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C44" gate="G$1" x="407.67" y="77.47" smashed="yes">
+<attribute name="MPN" x="407.67" y="77.47" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="400.304" y="76.581" size="1.778" layer="95"/>
+<attribute name="VALUE" x="396.494" y="74.041" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY99" gate="GND" x="407.67" y="69.85" smashed="yes"/>
+<instance part="C45" gate="G$1" x="415.29" y="87.63" smashed="yes">
+<attribute name="NAME" x="419.354" y="88.011" size="1.778" layer="95"/>
+<attribute name="VALUE" x="419.354" y="85.471" size="1.778" layer="96"/>
+<attribute name="MPN" x="415.29" y="87.63" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C46" gate="G$1" x="510.54" y="87.63" smashed="yes">
+<attribute name="MPN" x="510.54" y="87.63" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="512.064" y="88.011" size="1.778" layer="95"/>
+<attribute name="VALUE" x="513.334" y="85.471" size="1.778" layer="96"/>
+</instance>
+<instance part="R41" gate="R" x="521.97" y="86.36" smashed="yes" rot="R90">
+<attribute name="MPN" x="521.97" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="528.0914" y="88.9" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="529.082" y="86.36" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R42" gate="R" x="407.67" y="86.36" smashed="yes" rot="R90">
+<attribute name="MPN" x="407.67" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="404.9014" y="87.63" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="404.622" y="85.09" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L13" gate="G$1" x="478.79" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="476.25" y="133.35" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="476.25" y="130.81" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
+<instance part="D3" gate="G$1" x="497.84" y="106.68">
+<attribute name="MPN" x="497.84" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D4" gate="G$1" x="504.19" y="101.6">
+<attribute name="MPN" x="504.19" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L14" gate="G$1" x="491.49" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="488.95" y="133.35" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="488.95" y="130.81" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
+<instance part="U12" gate="A" x="425.45" y="111.76" smashed="yes">
+<attribute name="NAME" x="436.4736" y="121.1326" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="436.6006" y="118.3386" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="SUPPLY100" gate="GND" x="440.69" y="77.47" smashed="yes"/>
+<instance part="SUPPLY101" gate="GND" x="445.77" y="77.47" smashed="yes"/>
+<instance part="SUPPLY102" gate="GND" x="450.85" y="77.47" smashed="yes"/>
+<instance part="SUPPLY103" gate="GND" x="455.93" y="77.47" smashed="yes"/>
+<instance part="SUPPLY104" gate="GND" x="510.54" y="77.47" smashed="yes"/>
+<instance part="SUPPLY105" gate="GND" x="521.97" y="77.47" smashed="yes"/>
+<instance part="R43" gate="R" x="402.59" y="104.14" smashed="yes" rot="R90">
+<attribute name="MPN" x="402.59" y="104.14" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="400.8374" y="107.188" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="400.05" y="104.648" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY106" gate="GND" x="386.08" y="101.6" smashed="yes"/>
+<instance part="P+15" gate="1" x="383.54" y="170.18" smashed="yes">
+<attribute name="VALUE" x="384.81" y="172.72" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C47" gate="G$1" x="369.57" y="156.21" smashed="yes">
+<attribute name="MPN" x="369.57" y="156.21" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="371.094" y="156.591" size="1.778" layer="95"/>
+<attribute name="VALUE" x="372.364" y="154.051" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY107" gate="GND" x="369.57" y="148.59" smashed="yes"/>
+<instance part="J13" gate="-1" x="349.25" y="146.05" rot="MR0"/>
+<instance part="J13" gate="-2" x="349.25" y="143.51" rot="MR0"/>
+<instance part="J13" gate="-3" x="349.25" y="140.97" rot="MR0"/>
+<instance part="J13" gate="-4" x="349.25" y="138.43" rot="MR0"/>
+<instance part="J13" gate="-5" x="349.25" y="135.89" rot="MR0"/>
+<instance part="J13" gate="-6" x="349.25" y="133.35" rot="MR0"/>
+<instance part="J13" gate="-7" x="349.25" y="130.81" rot="MR0"/>
+<instance part="SUPPLY108" gate="GND" x="369.57" y="140.97" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -17011,6 +17211,66 @@ an external shutdown feature is needed.</text>
 <junction x="66.04" y="165.1"/>
 <wire x1="80.01" y1="165.1" x2="80.01" y2="163.83" width="0.1524" layer="91"/>
 <pinref part="SUPPLY86" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="SUPPLY99" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY100" gate="GND" pin="GND"/>
+<pinref part="U12" gate="A" pin="GND@1"/>
+<wire x1="440.69" y1="80.01" x2="440.69" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U12" gate="A" pin="GND@10"/>
+<pinref part="SUPPLY101" gate="GND" pin="GND"/>
+<wire x1="445.77" y1="78.74" x2="445.77" y2="80.01" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY102" gate="GND" pin="GND"/>
+<pinref part="U12" gate="A" pin="GND@7"/>
+<wire x1="450.85" y1="80.01" x2="450.85" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U12" gate="A" pin="GND@11"/>
+<pinref part="SUPPLY103" gate="GND" pin="GND"/>
+<wire x1="455.93" y1="78.74" x2="455.93" y2="80.01" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C46" gate="G$1" pin="2"/>
+<pinref part="SUPPLY104" gate="GND" pin="GND"/>
+<wire x1="510.54" y1="80.01" x2="510.54" y2="82.55" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R41" gate="R" pin="1"/>
+<pinref part="SUPPLY105" gate="GND" pin="GND"/>
+<wire x1="521.97" y1="80.01" x2="521.97" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C45" gate="G$1" pin="2"/>
+<pinref part="SUPPLY98" gate="GND" pin="GND"/>
+<wire x1="415.29" y1="80.01" x2="415.29" y2="82.55" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="SUPPLY106" gate="GND" pin="GND"/>
+<wire x1="386.08" y1="104.14" x2="386.08" y2="102.87" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="SUPPLY107" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J13" gate="-1" pin="S"/>
+<wire x1="351.79" y1="146.05" x2="355.6" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="146.05" x2="355.6" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="J13" gate="-2" pin="S"/>
+<wire x1="355.6" y1="144.78" x2="355.6" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="143.51" x2="351.79" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="144.78" x2="369.57" y2="144.78" width="0.1524" layer="91"/>
+<junction x="355.6" y="144.78"/>
+<wire x1="369.57" y1="144.78" x2="369.57" y2="143.51" width="0.1524" layer="91"/>
+<pinref part="SUPPLY108" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SWA" class="0">
@@ -17146,6 +17406,139 @@ an external shutdown feature is needed.</text>
 <wire x1="93.98" y1="158.75" x2="93.98" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
 <pinref part="J3" gate="-4" pin="S"/>
+</segment>
+<segment>
+<wire x1="351.79" y1="138.43" x2="383.54" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="138.43" x2="383.54" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
+<pinref part="J13" gate="-4" pin="S"/>
+</segment>
+</net>
+<net name="SWA1" class="0">
+<segment>
+<pinref part="L13" gate="G$1" pin="1"/>
+<wire x1="478.79" y1="116.84" x2="478.79" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U12" gate="A" pin="SWA"/>
+<wire x1="478.79" y1="106.68" x2="468.63" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="478.79" y1="106.68" x2="495.3" y2="106.68" width="0.1524" layer="91"/>
+<junction x="478.79" y="106.68"/>
+</segment>
+</net>
+<net name="SWB1" class="0">
+<segment>
+<pinref part="L14" gate="G$1" pin="1"/>
+<wire x1="491.49" y1="116.84" x2="491.49" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U12" gate="A" pin="SWB"/>
+<wire x1="491.49" y1="101.6" x2="468.63" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="491.49" y1="101.6" x2="501.65" y2="101.6" width="0.1524" layer="91"/>
+<junction x="491.49" y="101.6"/>
+</segment>
+</net>
+<net name="VOUT1" class="0">
+<segment>
+<pinref part="U12" gate="A" pin="VOUT"/>
+<wire x1="468.63" y1="111.76" x2="510.54" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C46" gate="G$1" pin="1"/>
+<wire x1="510.54" y1="111.76" x2="510.54" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="510.54" y1="106.68" x2="510.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="101.6" x2="510.54" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="506.73" y1="101.6" x2="510.54" y2="101.6" width="0.1524" layer="91"/>
+<junction x="510.54" y="101.6"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="500.38" y1="106.68" x2="510.54" y2="106.68" width="0.1524" layer="91"/>
+<junction x="510.54" y="106.68"/>
+<wire x1="510.54" y1="111.76" x2="521.97" y2="111.76" width="0.1524" layer="91"/>
+<junction x="510.54" y="111.76"/>
+<pinref part="R40" gate="R" pin="2"/>
+<wire x1="521.97" y1="111.76" x2="521.97" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="521.97" y1="111.76" x2="532.13" y2="111.76" width="0.1524" layer="91"/>
+<junction x="521.97" y="111.76"/>
+<wire x1="532.13" y1="111.76" x2="532.13" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="532.13" y1="140.97" x2="388.62" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="140.97" x2="388.62" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="135.89" x2="351.79" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="J13" gate="-5" pin="S"/>
+</segment>
+</net>
+<net name="FB1" class="0">
+<segment>
+<pinref part="U12" gate="A" pin="FB"/>
+<wire x1="468.63" y1="93.98" x2="521.97" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R41" gate="R" pin="2"/>
+<wire x1="521.97" y1="91.44" x2="521.97" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R40" gate="R" pin="1"/>
+<wire x1="521.97" y1="96.52" x2="521.97" y2="93.98" width="0.1524" layer="91"/>
+<junction x="521.97" y="93.98"/>
+</segment>
+</net>
+<net name="SHDN1" class="0">
+<segment>
+<pinref part="U12" gate="A" pin="!SHDN"/>
+<wire x1="427.99" y1="104.14" x2="407.67" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="104.14" x2="407.67" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="99.06" x2="402.59" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R43" gate="R" pin="1"/>
+<wire x1="402.59" y1="99.06" x2="361.95" y2="99.06" width="0.1524" layer="91"/>
+<junction x="402.59" y="99.06"/>
+<wire x1="361.95" y1="99.06" x2="361.95" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="361.95" y1="130.81" x2="351.79" y2="130.81" width="0.1524" layer="91"/>
+<pinref part="J13" gate="-7" pin="S"/>
+</segment>
+</net>
+<net name="VC1" class="0">
+<segment>
+<pinref part="U12" gate="A" pin="VC"/>
+<pinref part="R42" gate="R" pin="2"/>
+<wire x1="427.99" y1="96.52" x2="415.29" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="415.29" y1="96.52" x2="407.67" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="96.52" x2="407.67" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<wire x1="415.29" y1="90.17" x2="415.29" y2="96.52" width="0.1524" layer="91"/>
+<junction x="415.29" y="96.52"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="C44" gate="G$1" pin="1"/>
+<pinref part="R42" gate="R" pin="1"/>
+<wire x1="407.67" y1="81.28" x2="407.67" y2="80.01" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VIN1" class="0">
+<segment>
+<pinref part="L14" gate="G$1" pin="2"/>
+<pinref part="L13" gate="G$1" pin="2"/>
+<wire x1="491.49" y1="137.16" x2="478.79" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U12" gate="A" pin="VIN"/>
+<wire x1="427.99" y1="111.76" x2="421.64" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="421.64" y1="111.76" x2="402.59" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="402.59" y1="111.76" x2="386.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="111.76" x2="386.08" y2="110.49" width="0.1524" layer="91"/>
+<junction x="386.08" y="111.76"/>
+<wire x1="478.79" y1="137.16" x2="421.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="137.16" x2="421.64" y2="111.76" width="0.1524" layer="91"/>
+<junction x="478.79" y="137.16"/>
+<junction x="421.64" y="111.76"/>
+<pinref part="R43" gate="R" pin="2"/>
+<wire x1="402.59" y1="109.22" x2="402.59" y2="111.76" width="0.1524" layer="91"/>
+<junction x="402.59" y="111.76"/>
+<wire x1="386.08" y1="111.76" x2="364.49" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="364.49" y1="111.76" x2="364.49" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="364.49" y1="133.35" x2="351.79" y2="133.35" width="0.1524" layer="91"/>
+<pinref part="J13" gate="-6" pin="S"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<wire x1="359.41" y1="140.97" x2="359.41" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="359.41" y1="158.75" x2="369.57" y2="158.75" width="0.1524" layer="91"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<pinref part="J13" gate="-3" pin="S"/>
+<wire x1="351.79" y1="140.97" x2="359.41" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
