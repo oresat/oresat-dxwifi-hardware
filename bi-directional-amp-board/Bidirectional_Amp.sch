@@ -9641,7 +9641,7 @@ Diode with low voltage drop</description>
 <wire x1="-1.5494" y1="1.5494" x2="-1.5494" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<circle x="-2.286" y="1.524" radius="0.127" width="0.254" layer="21"/>
+<circle x="-1.651" y="2.032" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="DFN-10_DD-M">
 <smd name="1" x="-1.4986" y="1" dx="0.9144" dy="0.3048" layer="1"/>
