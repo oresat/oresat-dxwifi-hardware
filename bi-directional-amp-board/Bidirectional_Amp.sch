@@ -231,7 +231,7 @@
 <wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
 <wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
 <wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
-<circle x="-2.286" y="1.778" radius="0.127" width="0.254" layer="21"/>
+<circle x="-2.159" y="1.27" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="INDC2928X203N">
 <description>&lt;b&gt;1008LS&lt;/b&gt;&lt;br&gt;
@@ -350,7 +350,7 @@
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4986" x2="-0.4826" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
-<circle x="-2.413" y="1.778" radius="0.127" width="0.254" layer="21"/>
+<circle x="-1.397" y="1.524" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="QFN50P400X400X102-21N">
 <description>&lt;b&gt;QFN-20&lt;/b&gt;&lt;br&gt;
@@ -951,7 +951,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <wire x1="1.016" y1="1.5748" x2="-1.016" y2="1.5748" width="0.1524" layer="21"/>
 <text x="-3.2766" y="-3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-3.81" y="2.54" size="1.27" layer="27">&gt;Value</text>
-<circle x="-1.524" y="1.651" radius="0.127" width="0.254" layer="21"/>
+<circle x="-1.143" y="1.524" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="TSOT-23_S6-M">
 <smd name="1" x="-1.1938" y="0.95" dx="1.524" dy="0.5588" layer="1"/>
@@ -8874,7 +8874,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-1.016" y1="-1.5748" x2="1.016" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.5748" x2="-1.016" y2="1.5748" width="0.1524" layer="21"/>
 <text x="-3.2766" y="-3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<circle x="-1.778" y="1.651" radius="0.127" width="0.254" layer="21"/>
+<circle x="-1.905" y="1.397" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="TSOT-23_S6-M">
 <smd name="1" x="-1.1938" y="0.95" dx="1.524" dy="0.5588" layer="1"/>
@@ -14896,7 +14896,7 @@ Holes are offset 0.005", to hold pins in place during soldering.
 <text x="-0.889" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.143" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="1X08_LONGPADS" urn="urn:adsk.eagle:footprint:37763/1">
+<package name="1X08_LONGPADS" urn="urn:adsk.eagle:footprint:37763/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole -8 Pin Long Pads&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
@@ -14907,14 +14907,14 @@ Holes are offset 0.005", to hold pins in place during soldering.
 &lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="0.635" x2="19.05" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="8" x="17.78" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="2" x="2.54" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="3" x="5.08" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="4" x="7.62" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="5" x="10.16" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="6" x="12.7" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="7" x="15.24" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
+<pad name="8" x="17.78" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90" thermals="no"/>
 <rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
@@ -15632,7 +15632,7 @@ CONN_08
 <packageinstance name="1X08_LOCK_LONGPADS"/>
 </packageinstances>
 </package3d>
-<package3d name="1X08_LONGPADS" urn="urn:adsk.eagle:package:38142/1" type="box">
+<package3d name="1X08_LONGPADS" urn="urn:adsk.eagle:package:38142/1" locally_modified="yes" type="box">
 <description>Plated Through Hole -8 Pin Long Pads
 Specifications:
 Pin count:8
@@ -16185,7 +16185,7 @@ CONN_08
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONN_08" urn="urn:adsk.eagle:component:38333/1" prefix="J" uservalue="yes">
+<deviceset name="CONN_08" urn="urn:adsk.eagle:component:38333/1" locally_modified="yes" prefix="J" uservalue="yes">
 <description>&lt;h3&gt;Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections&lt;/h3&gt;
 
 &lt;p&gt;&lt;/p&gt;
