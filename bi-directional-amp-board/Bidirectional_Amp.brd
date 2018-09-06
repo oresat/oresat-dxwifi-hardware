@@ -9,7 +9,7 @@
 <grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.03125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -462,6 +462,11 @@
 <vertex x="43.84425" y="33.547625"/>
 <vertex x="43.84425" y="34.266375"/>
 </polygon>
+<text x="23" y="13" size="1.778" layer="21">RX</text>
+<text x="6.5" y="13" size="1.778" layer="21">TX</text>
+<text x="13" y="6.5" size="1.778" layer="21">AUTO</text>
+<text x="21" y="-0.5" size="1.778" layer="21">NUMBER THESE</text>
+<text x="35.5" y="43" size="0.5" layer="21">WINDOW TCREAM</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -3375,7 +3380,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="1X03_LONGPADS" urn="urn:adsk.eagle:footprint:37686/1">
+<package name="1X03_LONGPADS" urn="urn:adsk.eagle:footprint:37686/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin Long Pads&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
@@ -3394,6 +3399,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<circle x="0" y="-2.54" radius="0.179603125" width="0.254" layer="21"/>
 </package>
 <package name="1X08_LONGPADS" urn="urn:adsk.eagle:footprint:37763/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole -8 Pin Long Pads&lt;/h3&gt;
@@ -3428,7 +3434,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
-<package3d name="1X03_LONGPADS" urn="urn:adsk.eagle:package:38068/1" type="box">
+<package3d name="1X03_LONGPADS" urn="urn:adsk.eagle:package:38068/1" locally_modified="yes" type="box">
 <description>Plated Through Hole - 3 Pin Long Pads
 Specifications:
 Pin count:3
@@ -3455,456 +3461,6 @@ CONN_08
 </packageinstances>
 </package3d>
 </packages3d>
-</library>
-<library name="Oliver_Custom">
-<packages>
-<package name="PSAS_LOGO_10X10_NEW">
-<polygon width="0.01" layer="41">
-<vertex x="1.35429375" y="2.24084375"/>
-<vertex x="1.4046375" y="2.075290625"/>
-<vertex x="1.4672375" y="1.8507875"/>
-<vertex x="1.198634375" y="1.891025"/>
-<vertex x="0.2351375" y="1.9545625"/>
-<vertex x="-0.407025" y="1.9545625"/>
-<vertex x="-1.370375" y="1.89088125"/>
-<vertex x="-1.838059375" y="1.8208125"/>
-<vertex x="-1.82063125" y="1.9245375"/>
-<vertex x="-1.8041125" y="1.993796875"/>
-<vertex x="-1.598128125" y="2.60738125"/>
-<vertex x="-1.357440625" y="3.131153125"/>
-<vertex x="-1.088953125" y="3.5532625"/>
-<vertex x="-0.801153125" y="3.862096875"/>
-<vertex x="-0.501190625" y="4.05060625"/>
-<vertex x="-0.274753125" y="4.11325625"/>
-<vertex x="-0.14605625" y="4.11325625"/>
-<vertex x="0.036903125" y="4.072990625"/>
-<vertex x="0.283603125" y="3.95125"/>
-<vertex x="0.525659375" y="3.75101875"/>
-<vertex x="0.759478125" y="3.4743875"/>
-<vertex x="0.978896875" y="3.126546875"/>
-<vertex x="1.178746875" y="2.713546875"/>
-</polygon>
-<polygon width="0.01" layer="41">
-<vertex x="0.0110625" y="4.484053125"/>
-<vertex x="-0.137475" y="4.512078125"/>
-<vertex x="-0.33294375" y="4.512078125"/>
-<vertex x="-0.6452625" y="4.43023125"/>
-<vertex x="-1.0395625" y="4.1996875"/>
-<vertex x="-1.40746875" y="3.837921875"/>
-<vertex x="-1.741315625" y="3.36084375"/>
-<vertex x="-2.034803125" y="2.781215625"/>
-<vertex x="-2.280575" y="2.110978125"/>
-<vertex x="-2.35323125" y="1.824284375"/>
-<vertex x="-2.375690625" y="1.719803125"/>
-<vertex x="-2.58525625" y="1.68840625"/>
-<vertex x="-3.7908875" y="1.384290625"/>
-<vertex x="-4.59933125" y="1.108725"/>
-<vertex x="-4.686465625" y="0.762009375"/>
-<vertex x="-4.737178125" y="0.429453125"/>
-<vertex x="-4.76144375" y="0.0683125"/>
-<vertex x="-4.76100625" y="-0.168178125"/>
-<vertex x="-4.73670625" y="-0.52988125"/>
-<vertex x="-4.66505625" y="-0.999696875"/>
-<vertex x="-4.5490125" y="-1.450621875"/>
-<vertex x="-4.390865625" y="-1.88311875"/>
-<vertex x="-4.192690625" y="-2.2944875"/>
-<vertex x="-3.95695625" y="-2.6826125"/>
-<vertex x="-3.68590625" y="-3.0450625"/>
-<vertex x="-3.381875" y="-3.379471875"/>
-<vertex x="-3.04748125" y="-3.6835"/>
-<vertex x="-2.6850375" y="-3.95454375"/>
-<vertex x="-2.296884375" y="-4.190284375"/>
-<vertex x="-1.885509375" y="-4.388459375"/>
-<vertex x="-1.453040625" y="-4.54660625"/>
-<vertex x="-1.00211875" y="-4.662646875"/>
-<vertex x="-0.5322125" y="-4.734303125"/>
-<vertex x="-0.17080625" y="-4.7587375"/>
-<vertex x="0.0110625" y="-4.7587375"/>
-<vertex x="0.0110625" y="-5.0500625"/>
-<vertex x="-0.180640625" y="-5.0500625"/>
-<vertex x="-0.564053125" y="-5.0241375"/>
-<vertex x="-1.060528125" y="-4.94843125"/>
-<vertex x="-1.539578125" y="-4.82515"/>
-<vertex x="-1.999025" y="-4.6571375"/>
-<vertex x="-2.436040625" y="-4.4466125"/>
-<vertex x="-2.8482625" y="-4.19625625"/>
-<vertex x="-3.23313125" y="-3.90844375"/>
-<vertex x="-3.588109375" y="-3.5857"/>
-<vertex x="-3.910846875" y="-3.2307125"/>
-<vertex x="-4.1986625" y="-2.84584375"/>
-<vertex x="-4.44901875" y="-2.43365"/>
-<vertex x="-4.659546875" y="-1.996634375"/>
-<vertex x="-4.827559375" y="-1.537159375"/>
-<vertex x="-4.950840625" y="-1.05810625"/>
-<vertex x="-5.02655" y="-0.5616625"/>
-<vertex x="-5.0523125" y="-0.178221875"/>
-<vertex x="-5.052784375" y="0.077821875"/>
-<vertex x="-5.027021875" y="0.461234375"/>
-<vertex x="-4.962203125" y="0.886303125"/>
-<vertex x="-4.948484375" y="0.968721875"/>
-<vertex x="-4.828034375" y="1.436934375"/>
-<vertex x="-4.659865625" y="1.89620625"/>
-<vertex x="-4.4493375" y="2.33325"/>
-<vertex x="-4.198978125" y="2.7455875"/>
-<vertex x="-3.91100625" y="3.13045625"/>
-<vertex x="-3.588428125" y="3.48558125"/>
-<vertex x="-3.233275" y="3.808190625"/>
-<vertex x="-2.848409375" y="4.0961375"/>
-<vertex x="-2.436040625" y="4.346528125"/>
-<vertex x="-1.999025" y="4.5570375"/>
-<vertex x="-1.539753125" y="4.725190625"/>
-<vertex x="-1.060528125" y="4.848478125"/>
-<vertex x="-0.564053125" y="4.92419375"/>
-<vertex x="-0.180640625" y="4.949975"/>
-<vertex x="0.0110625" y="4.949975"/>
-</polygon>
-<polygon width="0.01" layer="41">
-<vertex x="0.0110625" y="-5.0500625"/>
-<vertex x="0.07490625" y="-5.0500625"/>
-<vertex x="0.458375" y="-5.0241375"/>
-<vertex x="0.954821875" y="-4.94843125"/>
-<vertex x="1.43401875" y="-4.82515"/>
-<vertex x="1.89349375" y="-4.6571375"/>
-<vertex x="2.3305375" y="-4.4466125"/>
-<vertex x="2.742878125" y="-4.19625625"/>
-<vertex x="3.12774375" y="-3.90844375"/>
-<vertex x="3.48286875" y="-3.5857"/>
-<vertex x="3.805625" y="-3.2307125"/>
-<vertex x="4.0936" y="-2.84584375"/>
-<vertex x="4.344109375" y="-2.43365"/>
-<vertex x="4.55461875" y="-1.996634375"/>
-<vertex x="4.722828125" y="-1.537159375"/>
-<vertex x="4.846059375" y="-1.05810625"/>
-<vertex x="4.921803125" y="-0.5616625"/>
-<vertex x="4.9477" y="-0.178221875"/>
-<vertex x="4.947234375" y="0.077821875"/>
-<vertex x="4.9213375" y="0.461234375"/>
-<vertex x="4.85706875" y="0.88265"/>
-<vertex x="4.843409375" y="0.968921875"/>
-<vertex x="4.84265625" y="0.969234375"/>
-<vertex x="4.722334375" y="1.436934375"/>
-<vertex x="4.55418125" y="1.89620625"/>
-<vertex x="4.3436125" y="2.33325"/>
-<vertex x="4.093278125" y="2.7455875"/>
-<vertex x="3.80530625" y="3.13045625"/>
-<vertex x="3.482721875" y="3.48558125"/>
-<vertex x="3.12756875" y="3.808190625"/>
-<vertex x="2.742703125" y="4.0961375"/>
-<vertex x="2.3303625" y="4.346528125"/>
-<vertex x="1.89335" y="4.5570375"/>
-<vertex x="1.43401875" y="4.725190625"/>
-<vertex x="0.954821875" y="4.848478125"/>
-<vertex x="0.458375" y="4.92419375"/>
-<vertex x="0.07490625" y="4.949975"/>
-<vertex x="0.0110625" y="4.949975"/>
-<vertex x="0.0110625" y="4.484053125"/>
-<vertex x="0.1110625" y="4.458565625"/>
-<vertex x="0.114265625" y="4.457875"/>
-<vertex x="0.425640625" y="4.302909375"/>
-<vertex x="0.713121875" y="4.0567"/>
-<vertex x="0.97435" y="3.729825"/>
-<vertex x="1.20961875" y="3.3294375"/>
-<vertex x="1.418853125" y="2.861640625"/>
-<vertex x="1.60073125" y="2.332878125"/>
-<vertex x="1.74458125" y="1.79869375"/>
-<vertex x="2.48004375" y="1.688521875"/>
-<vertex x="3.685834375" y="1.384290625"/>
-<vertex x="4.51611875" y="1.101375"/>
-<vertex x="4.58070625" y="0.76245625"/>
-<vertex x="4.6315" y="0.4294"/>
-<vertex x="4.65593125" y="0.067728125"/>
-<vertex x="4.656359375" y="-0.168659375"/>
-<vertex x="4.631965625" y="-0.52981875"/>
-<vertex x="4.560275" y="-0.999703125"/>
-<vertex x="4.444290625" y="-1.450584375"/>
-<vertex x="4.285959375" y="-1.883071875"/>
-<vertex x="4.087796875" y="-2.29445625"/>
-<vertex x="3.851934375" y="-2.68255"/>
-<vertex x="3.580709375" y="-3.04503125"/>
-<vertex x="3.276659375" y="-3.379446875"/>
-<vertex x="2.94211875" y="-3.683484375"/>
-<vertex x="2.579665625" y="-3.954534375"/>
-<vertex x="2.1914" y="-4.190275"/>
-<vertex x="1.779984375" y="-4.38845625"/>
-<vertex x="1.34749375" y="-4.5466"/>
-<vertex x="0.896421875" y="-4.66264375"/>
-<vertex x="0.4265375" y="-4.734303125"/>
-<vertex x="0.065071875" y="-4.7587375"/>
-<vertex x="0.0110625" y="-4.7587375"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="4.085815625" y="-1.031071875"/>
-<vertex x="4.085815625" y="-0.8381"/>
-<vertex x="4.058021875" y="-0.7357"/>
-<vertex x="3.982484375" y="-0.624440625"/>
-<vertex x="3.87105" y="-0.549484375"/>
-<vertex x="3.769409375" y="-0.52213125"/>
-<vertex x="2.697659375" y="-0.52213125"/>
-<vertex x="2.595228125" y="-0.549484375"/>
-<vertex x="2.48394375" y="-0.624440625"/>
-<vertex x="2.408896875" y="-0.7357"/>
-<vertex x="2.38154375" y="-0.8381"/>
-<vertex x="2.38154375" y="-1.24271875"/>
-<vertex x="2.408896875" y="-1.34511875"/>
-<vertex x="2.48394375" y="-1.456403125"/>
-<vertex x="2.595228125" y="-1.531334375"/>
-<vertex x="2.697659375" y="-1.55880625"/>
-<vertex x="3.7142625" y="-1.55880625"/>
-<vertex x="3.7142625" y="-1.8570625"/>
-<vertex x="2.748521875" y="-1.8570625"/>
-<vertex x="2.748521875" y="-1.7174875"/>
-<vertex x="2.38154375" y="-1.7174875"/>
-<vertex x="2.38154375" y="-1.91016875"/>
-<vertex x="2.408896875" y="-2.01256875"/>
-<vertex x="2.48394375" y="-2.12403125"/>
-<vertex x="2.595228125" y="-2.198959375"/>
-<vertex x="2.697659375" y="-2.22643125"/>
-<vertex x="3.769409375" y="-2.22643125"/>
-<vertex x="3.87105" y="-2.198959375"/>
-<vertex x="3.982484375" y="-2.12403125"/>
-<vertex x="4.058021875" y="-2.01256875"/>
-<vertex x="4.085815625" y="-1.91016875"/>
-<vertex x="4.085815625" y="-1.50555"/>
-<vertex x="4.058021875" y="-1.40315"/>
-<vertex x="3.982484375" y="-1.29189375"/>
-<vertex x="3.87105" y="-1.2169375"/>
-<vertex x="3.769409375" y="-1.18958125"/>
-<vertex x="2.748521875" y="-1.18958125"/>
-<vertex x="2.748521875" y="-0.891353125"/>
-<vertex x="3.7142625" y="-0.891353125"/>
-<vertex x="3.7142625" y="-1.031071875"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="0.996196875" y="-1.677196875"/>
-<vertex x="0.996196875" y="-1.307975"/>
-<vertex x="0.51334375" y="-1.307975"/>
-<vertex x="0.51334375" y="-0.891353125"/>
-<vertex x="0.996196875" y="-0.891353125"/>
-<vertex x="0.996196875" y="-0.52213125"/>
-<vertex x="0.46245" y="-0.52213125"/>
-<vertex x="0.36005" y="-0.549484375"/>
-<vertex x="0.2487625" y="-0.624440625"/>
-<vertex x="0.17371875" y="-0.7357"/>
-<vertex x="0.1463625" y="-0.8381"/>
-<vertex x="0.1463625" y="-2.22643125"/>
-<vertex x="0.51334375" y="-2.22643125"/>
-<vertex x="0.51334375" y="-1.677196875"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="0.996196875" y="-0.52213125"/>
-<vertex x="0.996196875" y="-0.891353125"/>
-<vertex x="1.479053125" y="-0.891353125"/>
-<vertex x="1.479053125" y="-1.307975"/>
-<vertex x="0.996196875" y="-1.307975"/>
-<vertex x="0.996196875" y="-1.6772"/>
-<vertex x="1.479053125" y="-1.6772"/>
-<vertex x="1.479053125" y="-2.22643125"/>
-<vertex x="1.850634375" y="-2.22643125"/>
-<vertex x="1.850634375" y="-0.8381"/>
-<vertex x="1.82284375" y="-0.7357"/>
-<vertex x="1.7471" y="-0.62444375"/>
-<vertex x="1.634909375" y="-0.549484375"/>
-<vertex x="1.532159375" y="-0.52213125"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-0.3853625" y="-1.031071875"/>
-<vertex x="-0.3853625" y="-0.8381"/>
-<vertex x="-0.413153125" y="-0.7357"/>
-<vertex x="-0.48869375" y="-0.624440625"/>
-<vertex x="-0.600125" y="-0.549484375"/>
-<vertex x="-0.7019125" y="-0.52213125"/>
-<vertex x="-1.77351875" y="-0.52213125"/>
-<vertex x="-1.875946875" y="-0.549484375"/>
-<vertex x="-1.987234375" y="-0.624440625"/>
-<vertex x="-2.062278125" y="-0.7357"/>
-<vertex x="-2.089634375" y="-0.8381"/>
-<vertex x="-2.089634375" y="-1.24271875"/>
-<vertex x="-2.062278125" y="-1.34511875"/>
-<vertex x="-1.987234375" y="-1.456403125"/>
-<vertex x="-1.875946875" y="-1.531334375"/>
-<vertex x="-1.77351875" y="-1.55880625"/>
-<vertex x="-0.756915625" y="-1.55880625"/>
-<vertex x="-0.756915625" y="-1.8570625"/>
-<vertex x="-1.72276875" y="-1.8570625"/>
-<vertex x="-1.72276875" y="-1.7174875"/>
-<vertex x="-2.089634375" y="-1.7174875"/>
-<vertex x="-2.089634375" y="-1.91016875"/>
-<vertex x="-2.062278125" y="-2.01256875"/>
-<vertex x="-1.987234375" y="-2.12403125"/>
-<vertex x="-1.875946875" y="-2.198959375"/>
-<vertex x="-1.77351875" y="-2.22643125"/>
-<vertex x="-0.7019125" y="-2.22643125"/>
-<vertex x="-0.600125" y="-2.198959375"/>
-<vertex x="-0.48869375" y="-2.12403125"/>
-<vertex x="-0.413153125" y="-2.01256875"/>
-<vertex x="-0.3853625" y="-1.91016875"/>
-<vertex x="-0.3853625" y="-1.50555"/>
-<vertex x="-0.413153125" y="-1.40315"/>
-<vertex x="-0.48869375" y="-1.29189375"/>
-<vertex x="-0.600125" y="-1.2169375"/>
-<vertex x="-0.7019125" y="-1.18958125"/>
-<vertex x="-1.72276875" y="-1.18958125"/>
-<vertex x="-1.72276875" y="-0.891353125"/>
-<vertex x="-0.756915625" y="-0.891353125"/>
-<vertex x="-0.756915625" y="-1.031071875"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-2.833328125" y="-0.52451875"/>
-<vertex x="-3.364" y="-0.52451875"/>
-<vertex x="-3.364" y="-0.891353125"/>
-<vertex x="-2.8864375" y="-0.891353125"/>
-<vertex x="-2.8864375" y="-1.29611875"/>
-<vertex x="-3.364" y="-1.29611875"/>
-<vertex x="-3.364" y="-1.666546875"/>
-<vertex x="-2.867471875" y="-1.665340625"/>
-<vertex x="-2.833328125" y="-1.665340625"/>
-<vertex x="-2.730609375" y="-1.63755"/>
-<vertex x="-2.618390625" y="-1.562009375"/>
-<vertex x="-2.542675" y="-1.450578125"/>
-<vertex x="-2.514709375" y="-1.348934375"/>
-<vertex x="-2.514709375" y="-0.840778125"/>
-<vertex x="-2.542675" y="-0.739165625"/>
-<vertex x="-2.618390625" y="-0.627734375"/>
-<vertex x="-2.730609375" y="-0.552165625"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-3.3681875" y="-1.666546875"/>
-<vertex x="-3.3681875" y="-1.29611875"/>
-<vertex x="-3.8563375" y="-1.29611875"/>
-<vertex x="-3.8563375" y="-0.891353125"/>
-<vertex x="-3.3681875" y="-0.891353125"/>
-<vertex x="-3.3681875" y="-0.52451875"/>
-<vertex x="-3.864715625" y="-0.52451875"/>
-<vertex x="-3.900753125" y="-0.523878125"/>
-<vertex x="-4.0093375" y="-0.552165625"/>
-<vertex x="-4.125346875" y="-0.6319875"/>
-<vertex x="-4.200740625" y="-0.752275"/>
-<vertex x="-4.225078125" y="-0.86405625"/>
-<vertex x="-4.223178125" y="-0.90085"/>
-<vertex x="-4.223178125" y="-2.22643125"/>
-<vertex x="-3.8563375" y="-2.22643125"/>
-<vertex x="-3.8563375" y="-1.666546875"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-0.180040625" y="4.412078125"/>
-<vertex x="-0.35198125" y="4.412078125"/>
-<vertex x="-0.63855625" y="4.336975"/>
-<vertex x="-1.01025625" y="4.119646875"/>
-<vertex x="-1.362728125" y="3.7730625"/>
-<vertex x="-1.687234375" y="3.30933125"/>
-<vertex x="-1.97485625" y="2.74128125"/>
-<vertex x="-2.21683125" y="2.081403125"/>
-<vertex x="-2.404121875" y="1.342371875"/>
-<vertex x="-2.506553125" y="0.738925"/>
-<vertex x="-2.52805" y="0.53628125"/>
-<vertex x="-2.53090625" y="0.510209375"/>
-<vertex x="-2.563446875" y="0.37745"/>
-<vertex x="-2.6084875" y="0.244840625"/>
-<vertex x="-2.617340625" y="0.21859375"/>
-<vertex x="-2.614196875" y="0.213378125"/>
-<vertex x="-2.59223125" y="0.199015625"/>
-<vertex x="-2.54244375" y="0.17655625"/>
-<vertex x="-2.4780875" y="0.157559375"/>
-<vertex x="-2.426903125" y="0.1492"/>
-<vertex x="-2.40965625" y="0.1487625"/>
-<vertex x="-2.377409375" y="0.148121875"/>
-<vertex x="-2.2535375" y="0.1700875"/>
-<vertex x="-2.178259375" y="0.210203125"/>
-<vertex x="-2.17021875" y="0.21859375"/>
-<vertex x="-2.175259375" y="0.230275"/>
-<vertex x="-2.183009375" y="0.273740625"/>
-<vertex x="-2.190115625" y="0.357525"/>
-<vertex x="-2.191253125" y="0.45238125"/>
-<vertex x="-2.188046875" y="0.5188875"/>
-<vertex x="-2.185396875" y="0.54085625"/>
-<vertex x="-2.1627625" y="0.73306875"/>
-<vertex x="-2.06606875" y="1.3061625"/>
-<vertex x="-1.899171875" y="2.0058625"/>
-<vertex x="-1.690059375" y="2.628771875"/>
-<vertex x="-1.444296875" y="3.163584375"/>
-<vertex x="-1.167221875" y="3.5992"/>
-<vertex x="-0.86424375" y="3.924315625"/>
-<vertex x="-0.540815625" y="4.127571875"/>
-<vertex x="-0.2871625" y="4.197753125"/>
-<vertex x="-0.1340125" y="4.197753125"/>
-<vertex x="0.071428125" y="4.1525375"/>
-<vertex x="0.33950625" y="4.02025"/>
-<vertex x="0.59744375" y="3.806884375"/>
-<vertex x="0.8415125" y="3.518121875"/>
-<vertex x="1.0676375" y="3.15965"/>
-<vertex x="1.272003125" y="2.73731875"/>
-<vertex x="1.4504375" y="2.2568375"/>
-<vertex x="1.5671125" y="1.858425"/>
-<vertex x="1.5989875" y="1.72473125"/>
-<vertex x="1.61658125" y="1.725171875"/>
-<vertex x="1.625290625" y="1.725171875"/>
-<vertex x="1.59208125" y="1.87089375"/>
-<vertex x="1.47321875" y="2.303334375"/>
-<vertex x="1.293821875" y="2.824890625"/>
-<vertex x="1.088671875" y="3.28355"/>
-<vertex x="0.8598375" y="3.672990625"/>
-<vertex x="0.608978125" y="3.986890625"/>
-<vertex x="0.338078125" y="4.218903125"/>
-<vertex x="0.049025" y="4.362759375"/>
-</polygon>
-<polygon width="0.01" layer="21">
-<vertex x="4.728809375" y="3.481325"/>
-<vertex x="4.710803125" y="3.47660625"/>
-<vertex x="4.671446875" y="3.457146875"/>
-<vertex x="4.562084375" y="3.4012125"/>
-<vertex x="4.39533125" y="3.312853125"/>
-<vertex x="4.183390625" y="3.196353125"/>
-<vertex x="3.939175" y="3.055846875"/>
-<vertex x="3.6750625" y="2.8953"/>
-<vertex x="3.40351875" y="2.7187"/>
-<vertex x="3.202796875" y="2.578834375"/>
-<vertex x="3.137540625" y="2.53015625"/>
-<vertex x="3.098503125" y="2.501225"/>
-<vertex x="2.981071875" y="2.41481875"/>
-<vertex x="2.750925" y="2.246434375"/>
-<vertex x="2.463125" y="2.03641875"/>
-<vertex x="2.133290625" y="1.79601875"/>
-<vertex x="1.77685625" y="1.5368"/>
-<vertex x="1.410196875" y="1.27018125"/>
-<vertex x="1.048546875" y="1.00731875"/>
-<vertex x="0.792996875" y="0.821628125"/>
-<vertex x="0.70793125" y="0.7596375"/>
-<vertex x="0.276453125" y="0.918"/>
-<vertex x="-0.20435" y="0.564303125"/>
-<vertex x="-0.15409375" y="0.132825"/>
-<vertex x="-0.1635625" y="0.12618125"/>
-<vertex x="-0.1284875" y="0.077821875"/>
-<vertex x="-5.336646875" y="-2.789909375"/>
-<vertex x="-4.303925" y="-3.1018875"/>
-<vertex x="-4.322890625" y="-4.1801375"/>
-<vertex x="0.000509375" y="-0.1004375"/>
-<vertex x="0.035584375" y="-0.148828125"/>
-<vertex x="0.046015625" y="-0.141225"/>
-<vertex x="0.440525" y="-0.3195125"/>
-<vertex x="0.92415" y="0.0294625"/>
-<vertex x="0.906146875" y="0.487509375"/>
-<vertex x="0.991009375" y="0.549621875"/>
-<vertex x="1.246121875" y="0.736096875"/>
-<vertex x="1.60695625" y="0.99974375"/>
-<vertex x="1.973003125" y="1.266975"/>
-<vertex x="2.328796875" y="1.5266625"/>
-<vertex x="2.6583125" y="1.76694375"/>
-<vertex x="2.9462875" y="1.97635"/>
-<vertex x="3.177071875" y="2.143596875"/>
-<vertex x="3.2952625" y="2.228925"/>
-<vertex x="3.334796875" y="2.2570375"/>
-<vertex x="3.4010125" y="2.304465625"/>
-<vertex x="3.595559375" y="2.452865625"/>
-<vertex x="3.846534375" y="2.657084375"/>
-<vertex x="4.080175" y="2.859409375"/>
-<vertex x="4.28861875" y="3.048915625"/>
-<vertex x="4.464228125" y="3.215028125"/>
-<vertex x="4.599228125" y="3.346996875"/>
-<vertex x="4.6858375" y="3.4339"/>
-<vertex x="4.716484375" y="3.465215625"/>
-</polygon>
-</package>
-</packages>
 </library>
 </libraries>
 <attributes>
@@ -4295,7 +3851,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="CF1" library="oresat-connectors" package="CON-MMCX-F-MOLEX-0734151001" value="" x="62" y="12" smashed="yes" rot="R90">
 <attribute name="MPN" value="0734151001" x="62" y="12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="64.5" y="13.25" size="0.5" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="61.5" y="9.25" size="0.5" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="63" y="14.5" size="0.635" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="FL1" library="U-Qorvo-885071_A-2.4GHz-BPF" package="FIL_B39162B9417K610" value="885071-A" x="42.62735625" y="33.90933125" smashed="yes" rot="R180">
@@ -4336,21 +3892,21 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="DESCRIPTION" value="MMCX 50 Ohm SMT PCB mount vertical jack Molex 50 Straight PCB Mount MMCX Connector, jack, Solder Termination, DC to 6GHz, RG178" x="62" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Molex" x="62" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0734152061" x="62" y="35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="63.136" y="35.365" size="0.5" layer="25" ratio="15" rot="R270"/>
+<attribute name="NAME" x="61.135" y="32.636" size="0.5" layer="25" ratio="15"/>
 <attribute name="VALUE" x="63.136" y="35.365" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="J11" library="SamacSys_Parts" package="73415-2063" value="73415-2061" x="68" y="35" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="MMCX 50 Ohm SMT PCB mount vertical jack Molex 50 Straight PCB Mount MMCX Connector, jack, Solder Termination, DC to 6GHz, RG178" x="68" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Molex" x="68" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0734152061" x="68" y="35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="69.136" y="35.365" size="0.5" layer="25" ratio="15" rot="R270"/>
+<attribute name="NAME" x="67.635" y="32.636" size="0.5" layer="25" ratio="15"/>
 <attribute name="VALUE" x="69.136" y="35.365" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="J12" library="SamacSys_Parts" package="73415-2063" value="73415-2061" x="62" y="23" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="MMCX 50 Ohm SMT PCB mount vertical jack Molex 50 Straight PCB Mount MMCX Connector, jack, Solder Termination, DC to 6GHz, RG178" x="62" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Molex" x="62" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0734152061" x="62" y="23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="64.5" y="24" size="0.5" layer="25" ratio="15"/>
+<attribute name="NAME" x="62" y="20.5" size="0.5" layer="25" ratio="15"/>
 <attribute name="VALUE" x="60.864" y="22.635" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
 <element name="J2" library="SamacSys_Parts" package="73415-2063" value="73415-2061" x="51.125" y="37.5" smashed="yes">
@@ -4371,7 +3927,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="DESCRIPTION" value="MMCX 50 Ohm SMT PCB mount vertical jack Molex 50 Straight PCB Mount MMCX Connector, jack, Solder Termination, DC to 6GHz, RG178" x="62.015625" y="40.96875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Molex" x="62.015625" y="40.96875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0734152061" x="62.015625" y="40.96875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="63.151625" y="41.33375" size="0.5" layer="25" ratio="15" rot="R270"/>
+<attribute name="NAME" x="62.885" y="38.370375" size="0.5" layer="25" ratio="15"/>
 <attribute name="VALUE" x="63.151625" y="41.33375" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="J6" library="SamacSys_Parts" package="73415-2063" value="73415-2061" x="62" y="29" smashed="yes" rot="R270">
@@ -4392,7 +3948,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="DESCRIPTION" value="MMCX 50 Ohm SMT PCB mount vertical jack Molex 50 Straight PCB Mount MMCX Connector, jack, Solder Termination, DC to 6GHz, RG178" x="62" y="17" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Molex" x="62" y="17" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0734152061" x="62" y="17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="64.5" y="18" size="0.5" layer="25" ratio="15"/>
+<attribute name="NAME" x="62" y="14.5" size="0.5" layer="25" ratio="15"/>
 <attribute name="VALUE" x="60.864" y="16.635" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
 <element name="L1" library="SamacSys_Parts" package="INDC2928X203N" value="10nH" x="35.80464375" y="46.625425" smashed="yes" rot="R90">
@@ -4693,7 +4249,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="HEIGHT" value="20mm" x="16" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="C &amp; K COMPONENTS" x="16" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="T211SY9CQE" x="16" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="16.38" y="7.5" size="0.5" layer="25" ratio="15" rot="R180"/>
+<attribute name="NAME" x="11" y="8.5" size="0.5" layer="25" ratio="15" rot="R180"/>
 <attribute name="VALUE" value="T211SY9CQE" x="16" y="13.62" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
 <element name="U1" library="LTC5536ES6" package="TSOT-23_S6" value="LTC5536" x="12.625" y="23.40625" smashed="yes">
@@ -4778,7 +4334,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R28" library="oresat-rcl" package=".0402-B-NOSILK" value="383k" x="39.75" y="9.25" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-2RKF3833X" x="57.25" y="15" size="0.5" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="40" y="6.3125" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="40.03125" y="6.4375" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="39.75" y="9.25" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="38.4" y="10.05" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
@@ -4801,7 +4357,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R29" library="oresat-rcl" package=".0402-B-NOSILK" value="121k" x="40.75" y="9.25" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2RKF1213X" x="44.5" y="0" size="0.5" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41" y="6.3125" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="41.03125" y="6.4375" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="40.75" y="9.25" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="42.1" y="8.45" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
@@ -4830,12 +4386,12 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PROD_ID" value="DIO-10955" x="31" y="-2.75" size="0.5" layer="27" display="off"/>
 <attribute name="VALUE" x="40.5" y="10.488" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="L10" library="SamacSys_Parts" package="XFL4020-222ME" value="2.2uH" x="44.5" y="10.75" smashed="yes">
-<attribute name="DESCRIPTION" value="Fixed Inductors 2.2uH 20% 8A 23.5mOhms AEC-Q200" x="45.25" y="-10.25" size="0.5" layer="27" display="off"/>
-<attribute name="MFR" value="COILCRAFT" x="45.25" y="-10.25" size="0.5" layer="27" display="off"/>
-<attribute name="MPN" value="XFL4020-222MEB" x="45.25" y="-10.25" size="0.5" layer="27" display="off"/>
-<attribute name="NAME" x="47.25" y="10.25" size="0.5" layer="25" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="44.5" y="10.75" size="1.27" layer="27" align="center"/>
+<element name="L10" library="SamacSys_Parts" package="XFL4020-222ME" value="2.2uH" x="44.34375" y="10.3125" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="Fixed Inductors 2.2uH 20% 8A 23.5mOhms AEC-Q200" x="23.34375" y="9.5625" size="0.5" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="COILCRAFT" x="23.34375" y="9.5625" size="0.5" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="XFL4020-222MEB" x="23.34375" y="9.5625" size="0.5" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="43.84375" y="7.5625" size="0.5" layer="25" ratio="15"/>
+<attribute name="VALUE" x="44.34375" y="10.3125" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="U9" library="LTC3428" package="DFN-10_DD" value="LTC3428EDDPBF" x="42.25" y="14.75" smashed="yes" rot="R270">
 <attribute name="MFR" value="Linear Technology" x="21.25" y="14.75" size="0.5" layer="27" rot="R270" display="off"/>
@@ -4844,7 +4400,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R31" library="oresat-rcl" package=".0402-B-NOSILK" value="10k" x="41.75" y="9" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="13" y="24.5" size="0.5" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="41.95" y="6.325" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="41.98125" y="6.45" size="0.5" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="41.75" y="9" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="40.4" y="9.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
@@ -4874,7 +4430,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="H8" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF-TIGHT" package3d_urn="urn:adsk.eagle:package:38629/1" value="STAND-OFFTIGHT" x="73.55" y="47" smashed="yes">
 <attribute name="VALUE" x="73.55" y="45.349" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="U$1" library="Oliver_Custom" package="PSAS_LOGO_10X10_NEW" value="" x="28.46875" y="15.71875"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5139,12 +4694,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="J3" pad="7"/>
 <contactref element="J3" pad="8"/>
 <via x="28.5" y="11.5" extent="1-16" drill="0.254"/>
-<polygon width="0.1" layer="1">
-<vertex x="27.84375" y="20.6875" curve="90"/>
-<vertex x="23.34375" y="15.71875" curve="94.688252"/>
-<vertex x="28.90625" y="10.59375" curve="76.556867"/>
-<vertex x="33.375" y="15.15625" curve="107.509756"/>
-</polygon>
 <wire x1="41.75" y1="13.3022" x2="41.75" y2="14.25" width="0.3" layer="1"/>
 <wire x1="41.75" y1="14.25" x2="42.25" y2="14.75" width="0.3" layer="1"/>
 <wire x1="43.25" y1="13.3022" x2="43.25" y2="14.125" width="0.3" layer="1"/>
@@ -5228,11 +4777,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="33.1875" y1="40.375" x2="31.4375" y2="40.375" width="0.3" layer="1"/>
 <wire x1="31.4375" y1="40.375" x2="31.5625" y2="40.25" width="0.3" layer="1"/>
 <wire x1="31.5625" y1="40.25" x2="34.5" y2="40.25" width="0.3" layer="1"/>
-<wire x1="34.5" y1="40.25" x2="34.75" y2="40" width="0.3" layer="1"/>
+<wire x1="34.5" y1="40.25" x2="34.625" y2="40.125" width="0.3" layer="1"/>
+<wire x1="34.625" y1="40.125" x2="34.75" y2="40" width="0.3" layer="1"/>
 <wire x1="34.75" y1="40" x2="34.75" y2="39.575" width="0.3" layer="1"/>
 <wire x1="33.75" y1="39.575" x2="33.75" y2="40.4375" width="0.3" layer="1"/>
 <wire x1="36.3" y1="40.625" x2="35.25" y2="40.625" width="0.3" layer="1"/>
-<wire x1="35.25" y1="40.625" x2="35.0625" y2="40.4375" width="0.3" layer="1"/>
+<wire x1="35.25" y1="40.625" x2="35.151103125" y2="40.526103125" width="0.3" layer="1"/>
+<wire x1="35.151103125" y1="40.526103125" x2="35.0625" y2="40.4375" width="0.3" layer="1"/>
 <wire x1="37.4375" y1="40.625" x2="37.75" y2="40.3125" width="0.3" layer="1"/>
 <wire x1="37.75" y1="40.3125" x2="37.5625" y2="40.5" width="0.3" layer="1"/>
 <wire x1="37.5625" y1="40.5" x2="35.25" y2="40.5" width="0.3" layer="1"/>
@@ -5733,6 +5284,27 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="8.75" y="36.84375" extent="1-16" drill="0.127" diameter="0.001"/>
 <via x="7.6875" y="37.5" extent="1-16" drill="0.127" diameter="0.001"/>
 <wire x1="13.6" y1="37.1" x2="13.46875" y2="36.96875" width="0.2" layer="1"/>
+<via x="26.25" y="2.5" extent="1-16" drill="0.254"/>
+<via x="27.25" y="2.5" extent="1-16" drill="0.254"/>
+<via x="26.75" y="5" extent="1-16" drill="0.254"/>
+<via x="26.25" y="4.5" extent="1-16" drill="0.254"/>
+<via x="27.25" y="4.5" extent="1-16" drill="0.254"/>
+<via x="26.75" y="2" extent="1-16" drill="0.254"/>
+<via x="23.71875" y="2.5" extent="1-16" drill="0.254"/>
+<via x="24.71875" y="2.5" extent="1-16" drill="0.254"/>
+<via x="24.21875" y="5" extent="1-16" drill="0.254"/>
+<via x="23.71875" y="4.5" extent="1-16" drill="0.254"/>
+<via x="24.71875" y="4.5" extent="1-16" drill="0.254"/>
+<via x="24.21875" y="2" extent="1-16" drill="0.254"/>
+<wire x1="33.40625" y1="40.46875" x2="33.4375" y2="40.5" width="0.3" layer="1" curve="-90"/>
+<wire x1="33.4375" y1="40.5" x2="33.5" y2="40.5" width="0.3" layer="1"/>
+<wire x1="34.625" y1="40.125" x2="34.75" y2="40.125" width="0.3" layer="1"/>
+<wire x1="34.75" y1="40.125" x2="35.151103125" y2="40.526103125" width="0.3" layer="1"/>
+<wire x1="33.75" y1="40.4375" x2="34.5" y2="40.4375" width="0.3" layer="1"/>
+<wire x1="34.5" y1="40.4375" x2="35.0625" y2="40.4375" width="0.3" layer="1"/>
+<wire x1="35.0625" y1="40.4375" x2="35.151103125" y2="40.526103125" width="0.3" layer="1"/>
+<wire x1="34.625" y1="40.125" x2="34.625" y2="40.3125" width="0.3" layer="1"/>
+<wire x1="34.625" y1="40.3125" x2="34.5" y2="40.4375" width="0.3" layer="1"/>
 <wire x1="74.246578125" y1="42.57040625" x2="72.019384375" y2="42.23855" width="0" layer="19" extent="1-1"/>
 <wire x1="69.504078125" y1="41.53790625" x2="72.019384375" y2="42.23855" width="0" layer="19" extent="1-1"/>
 <wire x1="69.004078125" y1="41.53790625" x2="69.504078125" y2="41.53790625" width="0" layer="19" extent="1-1"/>
@@ -6119,10 +5691,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="15.5" y1="12.5" x2="16.6807875" y2="12.5" width="0.1524" layer="1"/>
 <wire x1="21.0625" y1="16.8817125" x2="21.0625" y2="21.3125" width="0.1524" layer="1"/>
 <wire x1="16.6807875" y1="12.5" x2="21.0625" y2="16.8817125" width="0.1524" layer="1"/>
-<wire x1="18.79385" y1="3.29385" x2="18.79385" y2="3" width="0.4" layer="1"/>
-<wire x1="17.11265" y1="1.3188" x2="15.3188" y2="1.3188" width="0.4" layer="1"/>
-<wire x1="18.79385" y1="3" x2="17.11265" y2="1.3188" width="0.4" layer="1"/>
-<wire x1="15.3188" y1="1.3188" x2="13.7001" y2="2.9375" width="0.4" layer="1"/>
+<wire x1="18.79385" y1="3.29385" x2="18.79385" y2="2.59375" width="0.4" layer="1"/>
+<wire x1="17.4564" y1="1.2563" x2="15.3813" y2="1.2563" width="0.4" layer="1"/>
+<wire x1="18.79385" y1="2.59375" x2="17.4564" y2="1.2563" width="0.4" layer="1"/>
+<wire x1="15.3813" y1="1.2563" x2="13.7001" y2="2.9375" width="0.4" layer="1"/>
 <wire x1="13.7001" y1="2.9375" x2="13.71385" y2="2.95125" width="0.4" layer="1"/>
 <wire x1="13.71385" y1="2.95125" x2="13.71385" y2="3.29385" width="0.4" layer="1"/>
 <wire x1="13.71385" y1="3.29385" x2="13.71385" y2="3.5" width="0.1524" layer="1"/>
@@ -6561,28 +6133,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="L10" pad="1"/>
 <contactref element="U9" pad="9"/>
 <contactref element="D2" pad="A"/>
-<polygon width="0.1" layer="1" thermals="no">
-<vertex x="42.625" y="13.6875"/>
-<vertex x="42.625" y="9.28125"/>
-<vertex x="42.8125" y="9.09375"/>
-<vertex x="43.75" y="9.09375"/>
-<vertex x="43.75" y="11.0625"/>
-<vertex x="43.75" y="12.40625"/>
-<vertex x="43.53125" y="12.40625"/>
-<vertex x="43.34375" y="12.40625"/>
-<vertex x="42.90625" y="12.84375"/>
-<vertex x="42.90625" y="13.6875"/>
-</polygon>
-<polygon width="0.1" layer="1" thermals="no">
-<vertex x="43" y="12.5"/>
-<vertex x="42.75" y="12.5"/>
-<vertex x="42" y="11.75"/>
-<vertex x="41.25" y="11.75"/>
-<vertex x="41.25" y="10.75"/>
-<vertex x="42" y="10.75"/>
-<vertex x="42.75" y="10"/>
-<vertex x="43" y="10"/>
-</polygon>
+<wire x1="42.75" y1="13.3022" x2="44.34375" y2="11.4975" width="0" layer="19" extent="1-1"/>
+<wire x1="41.65" y1="11.25" x2="42.75" y2="13.3022" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT1">
 <contactref element="U9" pad="3"/>
@@ -6698,73 +6250,60 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="U9" pad="8"/>
 <contactref element="C34" pad="1"/>
 <contactref element="R31" pad="2"/>
-<polygon width="0.1" layer="1" isolate="0.2" thermals="no">
-<vertex x="45.5" y="9.125"/>
-<vertex x="45.5" y="12.34375"/>
-<vertex x="46.4375" y="12.34375"/>
-<vertex x="47" y="12.34375"/>
-<vertex x="47.78125" y="13.125"/>
-<vertex x="47.9375" y="13.28125"/>
-<vertex x="47.9375" y="14.875"/>
-<vertex x="47.9375" y="16.25"/>
-<vertex x="47.34375" y="16.84375"/>
-<vertex x="47.03125" y="17.15625"/>
-<vertex x="45.59375" y="17.15625"/>
-<vertex x="45.5" y="17.15625"/>
-<vertex x="45.5" y="20.25"/>
-<vertex x="45.5" y="20.34375"/>
-<vertex x="46.3125" y="20.34375"/>
-<vertex x="48.90625" y="20.34375"/>
-<vertex x="50.5" y="18.75"/>
-<vertex x="50.5" y="10.5"/>
-<vertex x="49" y="9"/>
-<vertex x="45.59375" y="9"/>
-<vertex x="45.5" y="9.09375"/>
-</polygon>
 <contactref element="J3" pad="2"/>
 <wire x1="42.25" y1="13.3022" x2="42.25" y2="12.75" width="0.4" layer="1"/>
 <wire x1="42.25" y1="12.75" x2="41.875" y2="12.375" width="0.4" layer="1"/>
 <via x="41.875" y="12.375" extent="1-16" drill="0.254"/>
-<wire x1="41.875" y1="12.375" x2="43.15625" y2="12.375" width="0.4" layer="16"/>
-<wire x1="43.15625" y1="12.375" x2="44.84375" y2="10.6875" width="0.4" layer="16"/>
-<via x="44.84375" y="10.6875" extent="1-16" drill="0.254"/>
-<polygon width="0.1" layer="1" isolate="0.2" thermals="no">
-<vertex x="49" y="10"/>
-<vertex x="49" y="9"/>
-<vertex x="48" y="8"/>
-<vertex x="45.8125" y="5.8125"/>
-<vertex x="41.9375" y="5.8125"/>
-<vertex x="41.5" y="5.8125"/>
-<vertex x="40.8125" y="5.125"/>
-<vertex x="40.6875" y="5"/>
-<vertex x="40.6875" y="2.5"/>
-<vertex x="40.6875" y="1.8125"/>
-<vertex x="40.1875" y="1.3125"/>
-<vertex x="38.875" y="1.3125"/>
-<vertex x="38.4375" y="1.75"/>
-<vertex x="38.3125" y="1.875"/>
-<vertex x="38.3125" y="5.3125"/>
-<vertex x="38.3125" y="6.75"/>
-<vertex x="38.9375" y="7.375"/>
-<vertex x="40.1875" y="7.375"/>
-<vertex x="40.6875" y="7.875"/>
-<vertex x="40.9375" y="8.125"/>
-<vertex x="41.3125" y="8.125"/>
-<vertex x="41.5" y="8.3125"/>
-<vertex x="41.5" y="8.6875"/>
-<vertex x="43.9375" y="8.6875"/>
-<vertex x="44.1875" y="8.9375"/>
-<vertex x="44.1875" y="9.9375"/>
-<vertex x="44.375" y="10.125"/>
-<vertex x="48.875" y="10.125"/>
-</polygon>
-<wire x1="45.685" y1="10.75" x2="44.84375" y2="10.6875" width="0" layer="19" extent="1-1"/>
 <via x="38.96875" y="4.5" extent="1-16" drill="0.254" diameter="0.001"/>
 <via x="39.9375" y="4.5" extent="1-16" drill="0.254" diameter="0.001"/>
 <via x="39.46875" y="5" extent="1-16" drill="0.254" diameter="0.001"/>
 <via x="39.46875" y="2" extent="1-16" drill="0.254" diameter="0.001"/>
 <via x="38.96875" y="2.5" extent="1-16" drill="0.254" diameter="0.001"/>
 <via x="39.9375" y="2.5" extent="1-16" drill="0.254" diameter="0.001"/>
+<polygon width="0.1" layer="1">
+<vertex x="45.5" y="20"/>
+<vertex x="45.25" y="20"/>
+<vertex x="45.25" y="17.96875"/>
+<vertex x="45.25" y="17"/>
+<vertex x="45.5625" y="16.6875"/>
+<vertex x="46.96875" y="16.6875"/>
+<vertex x="47.28125" y="16.375"/>
+<vertex x="47.65625" y="16"/>
+<vertex x="47.65625" y="13.90625"/>
+<vertex x="47.65625" y="13.4375"/>
+<vertex x="47.09375" y="12.875"/>
+<vertex x="46.40625" y="12.1875"/>
+<vertex x="46.40625" y="10.28125"/>
+<vertex x="46.03125" y="9.90625"/>
+<vertex x="45.875" y="9.90625"/>
+<vertex x="42.78125" y="9.90625"/>
+<vertex x="42.6875" y="9.8125"/>
+<vertex x="42.6875" y="9.1875"/>
+<vertex x="42.46875" y="8.96875"/>
+<vertex x="42.25" y="8.75"/>
+<vertex x="41.65625" y="8.75"/>
+<vertex x="41.4375" y="8.75"/>
+<vertex x="41.4375" y="8.4375"/>
+<vertex x="40.4375" y="7.4375"/>
+<vertex x="38.34375" y="5.34375"/>
+<vertex x="38.34375" y="4.40625"/>
+<vertex x="38.34375" y="1.6875"/>
+<vertex x="38.71875" y="1.3125"/>
+<vertex x="40.15625" y="1.3125"/>
+<vertex x="40.4375" y="1.59375"/>
+<vertex x="40.625" y="1.78125"/>
+<vertex x="40.625" y="4.59375"/>
+<vertex x="40.625" y="4.8125"/>
+<vertex x="41.71875" y="5.90625"/>
+<vertex x="47.03125" y="5.90625"/>
+<vertex x="49.25" y="8.125"/>
+<vertex x="50.625" y="9.5"/>
+<vertex x="50.625" y="15.84375"/>
+<vertex x="50.625" y="19.375"/>
+<vertex x="49.59375" y="20.40625"/>
+<vertex x="46.09375" y="20.40625"/>
+</polygon>
+<wire x1="41.75" y1="8.5" x2="41.875" y2="12.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="C35" pad="1"/>
@@ -6793,6 +6332,18 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="31.077" y="6.283"/>
 <vertex x="30.077" y="5.408"/>
 </polygon>
+<via x="31.3125" y="2.46875" extent="1-16" drill="0.254"/>
+<via x="32.3125" y="2.46875" extent="1-16" drill="0.254"/>
+<via x="31.8125" y="4.96875" extent="1-16" drill="0.254"/>
+<via x="31.3125" y="4.46875" extent="1-16" drill="0.254"/>
+<via x="32.3125" y="4.46875" extent="1-16" drill="0.254"/>
+<via x="31.8125" y="1.96875" extent="1-16" drill="0.254"/>
+<via x="28.78125" y="2.4375" extent="1-16" drill="0.254"/>
+<via x="29.78125" y="2.4375" extent="1-16" drill="0.254"/>
+<via x="29.28125" y="4.9375" extent="1-16" drill="0.254"/>
+<via x="28.78125" y="4.4375" extent="1-16" drill="0.254"/>
+<via x="29.78125" y="4.4375" extent="1-16" drill="0.254"/>
+<via x="29.28125" y="1.9375" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$37">
 <polygon width="0.1" layer="2" pour="cutout">
@@ -6826,7 +6377,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,0d4d0f4f0f4f0d4d"/>
 <approved hash="21,19,7717771577157717"/>
 <approved hash="21,19,92b89ab89aba9ab2"/>
 <approved hash="5,1,59eade908f5ae973"/>
