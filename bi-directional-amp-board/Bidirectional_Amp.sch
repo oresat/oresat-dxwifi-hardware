@@ -369,9 +369,9 @@
 <smd name="18" x="0" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
 <smd name="19" x="-0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
 <smd name="20" x="-1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90" thermals="no"/>
-<smd name="21" x="0" y="0" dx="2.15" dy="2.15" layer="1" rot="R90" thermals="no"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="21" x="0" y="0" dx="2.15" dy="2.15" layer="1" rot="R90" thermals="no" cream="no"/>
+<text x="0" y="-5.08" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-2.625" y1="2.625" x2="2.625" y2="2.625" width="0.05" layer="51"/>
 <wire x1="2.625" y1="2.625" x2="2.625" y2="-2.625" width="0.05" layer="51"/>
 <wire x1="2.625" y1="-2.625" x2="-2.625" y2="-2.625" width="0.05" layer="51"/>
@@ -384,6 +384,10 @@
 <circle x="-2.375" y="1.75" radius="0.125" width="0.25" layer="25"/>
 <smd name="1_2_3" x="-2.05" y="0" dx="0.65" dy="1.3" layer="1"/>
 <smd name="13_14_15" x="2.05" y="0" dx="0.65" dy="1.3" layer="1"/>
+<rectangle x1="-0.889" y1="0.127" x2="-0.127" y2="0.889" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="0.889" y2="0.889" layer="31"/>
+<rectangle x1="-0.889" y1="-0.889" x2="-0.127" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="-0.889" x2="0.889" y2="-0.127" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -9557,12 +9561,6 @@ Diode with low voltage drop</description>
 <smd name="9" x="1.4478" y="0.5" dx="0.8128" dy="0.3048" layer="1"/>
 <smd name="10" x="1.4478" y="1" dx="0.8128" dy="0.3048" layer="1"/>
 <smd name="11" x="0" y="0" dx="1.7526" dy="2.4892" layer="1" cream="no"/>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.8763" y="1.2446"/>
-<vertex x="-0.8763" y="-1.2446"/>
-<vertex x="0.8763" y="-1.2446"/>
-<vertex x="0.8763" y="1.2446"/>
-</polygon>
 <wire x1="-1.6764" y1="-1.6764" x2="1.6764" y2="-1.6764" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="-1.6764" x2="1.6764" y2="-1.4732" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="1.6764" x2="-1.6764" y2="1.6764" width="0.1524" layer="21"/>
@@ -9578,6 +9576,10 @@ Diode with low voltage drop</description>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <circle x="-1.651" y="2.032" radius="0.127" width="0.254" layer="21"/>
+<rectangle x1="-0.762" y1="0.127" x2="-0.127" y2="1.1176" layer="21"/>
+<rectangle x1="0.127" y1="0.127" x2="0.762" y2="1.1176" layer="21"/>
+<rectangle x1="-0.762" y1="-1.1176" x2="-0.127" y2="-0.127" layer="21"/>
+<rectangle x1="0.127" y1="-1.1176" x2="0.762" y2="-0.127" layer="21"/>
 </package>
 <package name="DFN-10_DD-M">
 <smd name="1" x="-1.4986" y="1" dx="0.9144" dy="0.3048" layer="1"/>
@@ -22218,14 +22220,14 @@ an external shutdown feature is needed.</text>
 <wire x1="172.72" y1="175.26" x2="179.705" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="N$53" class="1">
 <segment>
 <pinref part="J10" gate="J" pin="CTR"/>
 <pinref part="C42" gate="CE" pin="1"/>
 <wire x1="147.955" y1="116.84" x2="156.21" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="N$54" class="1">
 <segment>
 <pinref part="C42" gate="CE" pin="2"/>
 <pinref part="J11" gate="J" pin="CTR"/>
