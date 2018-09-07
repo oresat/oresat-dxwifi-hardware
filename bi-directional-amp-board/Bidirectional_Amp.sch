@@ -16894,7 +16894,7 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<circle x="0" y="-2.54" radius="0.179603125" width="0.254" layer="21"/>
+<circle x="-1.905" y="0" radius="0.179603125" width="0.254" layer="21"/>
 </package>
 <package name="JST-3-PTH" urn="urn:adsk.eagle:footprint:37687/1">
 <description>&lt;h3&gt;JST 3 Pin Right Angle Plated Through Hole&lt;/h3&gt;
@@ -17487,7 +17487,7 @@ Holes are offset 0.005", to hold pins in place during soldering.
 <rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <text x="-1.143" y="2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.016" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<circle x="0" y="-2.54" radius="0.1524" width="0.2794" layer="21"/>
+<circle x="-1.905" y="0" radius="0.1524" width="0.2794" layer="21"/>
 </package>
 <package name="SCREWTERMINAL-3.5MM-8" urn="urn:adsk.eagle:footprint:37764/1">
 <description>&lt;h3&gt;Screw Terminal  3.5mm Pitch -8 Pin PTH&lt;/h3&gt;
