@@ -342,7 +342,7 @@
 <wire x1="1.998" y1="2.006" x2="1.998" y2="-1.994" width="0.1" layer="51"/>
 <wire x1="1.998" y1="-1.994" x2="-2.002" y2="-1.994" width="0.1" layer="51"/>
 <wire x1="-2.002" y1="-1.994" x2="-2.002" y2="2.006" width="0.1" layer="51"/>
-<circle x="-2.54" y="-0.014" radius="0.12653125" width="0.1" layer="25"/>
+<circle x="-2.159" y="-0.014" radius="0.12653125" width="0.254" layer="25"/>
 </package>
 <package name="LEDC1607X80N">
 <description>&lt;b&gt;LTST-C193KRKT-5A
@@ -9185,7 +9185,7 @@ Source: &lt;a href="https://www.ckswitches.com/media/1391/ttoggle.pdf"&gt; Datas
 <smd name="3" x="-0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
 <smd name="5" x="0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
 <smd name="7" x="0.4" y="0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<circle x="-0.75" y="0.55" radius="0.05" width="0.0762" layer="21"/>
+<circle x="-0.75" y="0.55" radius="0.05" width="0.127" layer="21"/>
 <text x="-0.916940625" y="0.962659375" size="0.254" layer="25">&gt;NAME</text>
 <text x="-0.98933125" y="-1.172209375" size="0.254" layer="27">&gt;VALUE</text>
 </package>
@@ -16944,7 +16944,7 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<circle x="-1.905" y="0" radius="0.179603125" width="0.254" layer="21"/>
+<circle x="-1.905" y="0" radius="0.179603125" width="0.3302" layer="21"/>
 </package>
 <package name="JST-3-PTH" urn="urn:adsk.eagle:footprint:37687/1">
 <description>&lt;h3&gt;JST 3 Pin Right Angle Plated Through Hole&lt;/h3&gt;
@@ -19105,9 +19105,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="0" value="0.75"/>
-</class>
-<class number="2" name="RF_GND" width="0" drill="0">
+<clearance class="1" value="0.75"/>
 </class>
 </classes>
 <parts>
