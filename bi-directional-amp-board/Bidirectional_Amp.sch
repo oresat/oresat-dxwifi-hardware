@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9176,18 +9176,27 @@ Source: &lt;a href="https://www.ckswitches.com/media/1391/ttoggle.pdf"&gt; Datas
 <wire x1="0.55" y1="0.75" x2="0.55" y2="-0.75" width="0.0762" layer="21"/>
 <wire x1="0.55" y1="-0.75" x2="-0.55" y2="-0.75" width="0.0762" layer="21"/>
 <wire x1="-0.55" y1="-0.75" x2="-0.55" y2="0.75" width="0.0762" layer="21"/>
-<smd name="9" x="0" y="0" dx="0.6" dy="0.2" layer="1" rot="R90"/>
-<smd name="4" x="0" y="-0.6" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="8" x="0" y="0.6" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="2" x="-0.4" y="0" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="6" x="0.4" y="0" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="1" x="-0.4" y="0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="3" x="-0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="5" x="0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<smd name="7" x="0.4" y="0.4" dx="0.2" dy="0.2" layer="1" rot="R90"/>
-<circle x="-0.75" y="0.55" radius="0.05" width="0.127" layer="21"/>
+<smd name="9" x="0" y="0" dx="0.6" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0" y="-0.6" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="0" y="0.6" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.4" y="0" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="0.4" y="0" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="1" x="-0.4" y="0.4" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="0.4" y="-0.4" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="0.4" y="0.4" dx="0.2" dy="0.2" layer="1" rot="R90" cream="no"/>
+<circle x="-0.75" y="0.55" radius="0.05" width="0.0762" layer="21"/>
 <text x="-0.916940625" y="0.962659375" size="0.254" layer="25">&gt;NAME</text>
 <text x="-0.98933125" y="-1.172209375" size="0.254" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.55" y1="0.25" x2="-0.25" y2="0.55" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="0.55" y2="0.55" layer="31"/>
+<rectangle x1="-0.15" y1="0.45" x2="0.15" y2="0.75" layer="31"/>
+<rectangle x1="-0.55" y1="-0.15" x2="-0.25" y2="0.15" layer="31"/>
+<rectangle x1="-0.55" y1="-0.55" x2="-0.25" y2="-0.25" layer="31"/>
+<rectangle x1="-0.15" y1="-0.75" x2="0.15" y2="-0.45" layer="31"/>
+<rectangle x1="0.25" y1="-0.55" x2="0.55" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="-0.15" x2="0.55" y2="0.15" layer="31"/>
+<rectangle x1="-0.15" y1="-0.35" x2="0.15" y2="0.35" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -19999,11 +20008,16 @@ desired detector input level. </text>
 Input from TX/RX Switch 1</text>
 </plain>
 <instances>
-<instance part="J1" gate="J" x="13.97" y="189.23">
+<instance part="J1" gate="J" x="13.97" y="189.23" smashed="yes">
 <attribute name="MPN" x="13.97" y="189.23" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="7.62" y="193.04" size="1.778" layer="95" align="center-left"/>
 </instance>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
 <instance part="PD1" gate="PD" x="41.91" y="189.23" smashed="yes">
 <attribute name="NAME" x="31.75" y="201.93" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="31.75" y="199.39" size="1.778" layer="96" align="center-left"/>
@@ -20206,14 +20220,19 @@ Input from TX/RX Switch 1</text>
 </instance>
 <instance part="SUPPLY92" gate="GND" x="58.42" y="36.83" smashed="yes"/>
 <instance part="SUPPLY93" gate="GND" x="27.94" y="38.1" smashed="yes"/>
-<instance part="H1" gate="G$1" x="134.62" y="30.48"/>
-<instance part="H2" gate="G$1" x="134.62" y="27.94"/>
-<instance part="H3" gate="G$1" x="134.62" y="25.4"/>
-<instance part="H4" gate="G$1" x="134.62" y="22.86"/>
-<instance part="R39" gate="R" x="71.12" y="185.42" rot="R90">
+<instance part="H1" gate="G$1" x="134.62" y="30.48" smashed="yes"/>
+<instance part="H2" gate="G$1" x="134.62" y="27.94" smashed="yes"/>
+<instance part="H3" gate="G$1" x="134.62" y="25.4" smashed="yes"/>
+<instance part="H4" gate="G$1" x="134.62" y="22.86" smashed="yes"/>
+<instance part="R39" gate="R" x="71.12" y="185.42" smashed="yes" rot="R90">
 <attribute name="MPN" x="71.12" y="185.42" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="69.6214" y="181.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J9" gate="J$1" x="17.78" y="50.8"/>
+<instance part="J9" gate="J$1" x="17.78" y="50.8" smashed="yes">
+<attribute name="VALUE" x="15.24" y="43.434" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="15.24" y="56.388" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20711,24 +20730,34 @@ Output to Power Divider</text>
 <attribute name="VALUE" x="216.408" y="152.4" size="1.778" layer="96"/>
 <attribute name="MPN" x="213.36" y="152.4" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME2" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
 <instance part="U4" gate="U" x="133.35" y="101.6" smashed="yes">
 <attribute name="NAME" x="114.3" y="109.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="113.03" y="88.9" size="1.778" layer="96"/>
 <attribute name="MPN" x="133.35" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R13" gate="R" x="133.35" y="125.73">
+<instance part="R13" gate="R" x="133.35" y="125.73" smashed="yes">
 <attribute name="MPN" x="133.35" y="125.73" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="129.54" y="127.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="129.54" y="122.428" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="R" x="146.05" y="125.73">
+<instance part="R14" gate="R" x="146.05" y="125.73" smashed="yes">
 <attribute name="MPN" x="146.05" y="125.73" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="142.24" y="127.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="142.24" y="122.428" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY30" gate="GND" x="152.4" y="123.19" smashed="yes"/>
 <instance part="SUPPLY31" gate="GND" x="153.67" y="130.81" smashed="yes"/>
 <instance part="SUPPLY33" gate="GND" x="116.84" y="123.19" smashed="yes"/>
 <instance part="SUPPLY34" gate="GND" x="139.7" y="130.81" smashed="yes"/>
-<instance part="P+7" gate="1" x="128.27" y="143.51"/>
+<instance part="P+7" gate="1" x="128.27" y="143.51" smashed="yes">
+<attribute name="VALUE" x="125.73" y="138.43" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="C9" gate="CE" x="139.7" y="137.16" smashed="yes">
 <attribute name="NAME" x="143.764" y="136.271" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.764" y="133.731" size="1.778" layer="96"/>
@@ -20749,11 +20778,15 @@ Output to Power Divider</text>
 <attribute name="VALUE" x="156.464" y="112.141" size="1.778" layer="96"/>
 <attribute name="MPN" x="152.4" y="115.57" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R15" gate="R" x="95.25" y="125.73">
+<instance part="R15" gate="R" x="95.25" y="125.73" smashed="yes">
 <attribute name="MPN" x="95.25" y="125.73" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="91.44" y="127.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.44" y="122.428" size="1.778" layer="96"/>
 </instance>
-<instance part="R16" gate="R" x="110.49" y="125.73">
+<instance part="R16" gate="R" x="110.49" y="125.73" smashed="yes">
 <attribute name="MPN" x="110.49" y="125.73" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="106.68" y="127.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="106.68" y="122.428" size="1.778" layer="96"/>
 </instance>
 <instance part="U5" gate="U" x="73.66" y="125.73" smashed="yes">
 <attribute name="NAME" x="62.23" y="135.89" size="1.778" layer="95" align="center-left"/>
@@ -20762,7 +20795,9 @@ Output to Power Divider</text>
 <instance part="SUPPLY25" gate="GND" x="73.66" y="110.49" smashed="yes"/>
 <instance part="SUPPLY26" gate="GND" x="99.06" y="139.7" smashed="yes"/>
 <instance part="SUPPLY27" gate="GND" x="85.09" y="139.7" smashed="yes"/>
-<instance part="P+8" gate="1" x="73.66" y="152.4"/>
+<instance part="P+8" gate="1" x="73.66" y="152.4" smashed="yes">
+<attribute name="VALUE" x="71.12" y="147.32" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="C13" gate="CE" x="85.09" y="146.05" smashed="yes">
 <attribute name="NAME" x="89.154" y="145.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="89.154" y="142.621" size="1.778" layer="96"/>
@@ -20994,9 +21029,15 @@ Output to Power Divider</text>
 <text x="97.79" y="134.62" size="1.778" layer="97">Gain ~28dB</text>
 </plain>
 <instances>
-<instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="FRAME3" gate="G$2" x="172.72" y="0"/>
-<instance part="P+3" gate="1" x="132.08" y="194.31"/>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME3" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="P+3" gate="1" x="132.08" y="194.31" smashed="yes">
+<attribute name="VALUE" x="129.54" y="189.23" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="C15" gate="G$1" x="93.98" y="158.75" smashed="yes">
 <attribute name="MPN" x="93.98" y="158.75" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="96.774" y="159.131" size="1.778" layer="95"/>
@@ -21088,7 +21129,10 @@ Output to Power Divider</text>
 <instance part="SUPPLY46" gate="GND" x="88.138" y="106.68" smashed="yes"/>
 <instance part="SUPPLY47" gate="GND" x="153.416" y="107.95" smashed="yes"/>
 <instance part="SUPPLY48" gate="GND" x="181.356" y="107.95" smashed="yes"/>
-<instance part="U6" gate="U" x="132.08" y="119.38"/>
+<instance part="U6" gate="U" x="132.08" y="119.38" smashed="yes">
+<attribute name="NAME" x="115.57" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="110.49" y="101.6" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21298,10 +21342,16 @@ Output to Power Divider</text>
 <text x="173.99" y="109.22" size="1.778" layer="97">Loss ~2dB</text>
 </plain>
 <instances>
-<instance part="FRAME4" gate="G$1" x="0" y="0"/>
-<instance part="FRAME4" gate="G$2" x="172.72" y="0"/>
-<instance part="U7" gate="U1" x="129.54" y="116.84">
+<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME4" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="U7" gate="U1" x="129.54" y="116.84" smashed="yes">
 <attribute name="MPN" x="129.54" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="110.49" y="128.27" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.49" y="104.14" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY32" gate="GND" x="96.52" y="50.8" smashed="yes"/>
 <instance part="R21" gate="R" x="96.52" y="69.85" smashed="yes" rot="R90">
@@ -21349,11 +21399,15 @@ Output to Power Divider</text>
 <attribute name="NAME" x="144.78" y="140.97" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="146.05" y="138.43" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="FL1" gate="FL" x="63.5" y="121.92">
+<instance part="FL1" gate="FL" x="63.5" y="121.92" smashed="yes">
 <attribute name="MPN" x="63.5" y="121.92" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="43.18" y="129.54" size="1.9304" layer="95"/>
+<attribute name="VALUE" x="43.18" y="111.76" size="1.9304" layer="96"/>
 </instance>
-<instance part="FL2" gate="FL" x="194.31" y="121.92">
+<instance part="FL2" gate="FL" x="194.31" y="121.92" smashed="yes">
 <attribute name="MPN" x="194.31" y="121.92" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="173.99" y="129.54" size="1.9304" layer="95"/>
+<attribute name="VALUE" x="173.99" y="111.76" size="1.9304" layer="96"/>
 </instance>
 <instance part="SUPPLY43" gate="GND" x="63.5" y="106.68" smashed="yes"/>
 <instance part="SUPPLY49" gate="GND" x="194.31" y="106.68" smashed="yes"/>
@@ -21554,17 +21608,25 @@ will not have to cross or change layers.</text>
 <text x="189.23" y="130.81" size="1.778" layer="97">Control Input</text>
 </plain>
 <instances>
-<instance part="FRAME5" gate="G$1" x="0" y="0"/>
-<instance part="FRAME5" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME5" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
 <instance part="U8" gate="U" x="114.3" y="111.76" smashed="yes" rot="MR0">
 <attribute name="NAME" x="133.35" y="119.38" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="134.62" y="99.06" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R24" gate="R" x="114.3" y="135.89" rot="MR0">
+<instance part="R24" gate="R" x="114.3" y="135.89" smashed="yes" rot="MR0">
 <attribute name="MPN" x="114.3" y="135.89" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="NAME" x="118.11" y="137.3886" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="118.11" y="132.588" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R25" gate="R" x="101.6" y="135.89" rot="MR0">
+<instance part="R25" gate="R" x="101.6" y="135.89" smashed="yes" rot="MR0">
 <attribute name="MPN" x="101.6" y="135.89" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="NAME" x="105.41" y="137.3886" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="105.41" y="132.588" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY54" gate="GND" x="95.25" y="133.35" smashed="yes" rot="MR0"/>
 <instance part="SUPPLY55" gate="GND" x="93.98" y="140.97" smashed="yes" rot="MR0"/>
@@ -21593,16 +21655,22 @@ will not have to cross or change layers.</text>
 <attribute name="VALUE" x="91.186" y="122.301" size="1.778" layer="96" rot="MR0"/>
 <attribute name="MPN" x="95.25" y="125.73" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="R26" gate="R" x="152.4" y="135.89" rot="MR0">
+<instance part="R26" gate="R" x="152.4" y="135.89" smashed="yes" rot="MR0">
 <attribute name="MPN" x="152.4" y="135.89" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="NAME" x="156.21" y="137.3886" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="156.21" y="132.588" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R27" gate="R" x="137.16" y="135.89" rot="MR0">
+<instance part="R27" gate="R" x="137.16" y="135.89" smashed="yes" rot="MR0">
 <attribute name="MPN" x="137.16" y="135.89" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="NAME" x="140.97" y="137.3886" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="140.97" y="132.588" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY60" gate="GND" x="114.3" y="93.98" smashed="yes" rot="MR0"/>
 <instance part="SUPPLY61" gate="GND" x="146.05" y="114.3" smashed="yes" rot="MR0"/>
 <instance part="SUPPLY62" gate="GND" x="95.25" y="120.65" smashed="yes" rot="MR0"/>
-<instance part="J2" gate="J" x="203.2" y="109.22" rot="MR0"/>
+<instance part="J2" gate="J" x="203.2" y="109.22" smashed="yes" rot="MR0">
+<attribute name="NAME" x="209.55" y="113.03" size="1.778" layer="95" rot="MR0" align="center-left"/>
+</instance>
 <instance part="SUPPLY58" gate="GND" x="203.2" y="100.33" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
@@ -21767,8 +21835,12 @@ an external shutdown feature is needed.</text>
 <text x="41.656" y="147.828" size="1.778" layer="97">+5VDC lab supply</text>
 </plain>
 <instances>
-<instance part="FRAME6" gate="G$1" x="0" y="0"/>
-<instance part="FRAME6" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME6" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
 <instance part="C34" gate="G$1" x="109.22" y="113.03" smashed="yes">
 <attribute name="MPN" x="109.22" y="113.03" size="1.778" layer="96" display="off"/>
 <attribute name="SIZE" x="109.22" y="113.03" size="1.778" layer="96" display="off"/>
@@ -21813,11 +21885,15 @@ an external shutdown feature is needed.</text>
 <attribute name="NAME" x="199.39" y="138.43" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="199.39" y="135.89" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="D1" gate="G$1" x="220.98" y="111.76">
+<instance part="D1" gate="G$1" x="220.98" y="111.76" smashed="yes">
 <attribute name="MPN" x="220.98" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="218.44" y="113.792" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="218.44" y="109.728" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="D2" gate="G$1" x="227.33" y="106.68">
+<instance part="D2" gate="G$1" x="227.33" y="106.68" smashed="yes">
 <attribute name="MPN" x="227.33" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="224.79" y="108.712" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="224.79" y="104.648" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="L10" gate="G$1" x="214.63" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="212.09" y="138.43" size="1.778" layer="95" rot="R180" align="center-left"/>
@@ -21849,7 +21925,10 @@ an external shutdown feature is needed.</text>
 </instance>
 <instance part="SUPPLY107" gate="GND" x="92.71" y="161.29" smashed="yes"/>
 <instance part="SUPPLY108" gate="GND" x="92.71" y="148.59" smashed="yes"/>
-<instance part="J3" gate="G$1" x="69.85" y="143.51"/>
+<instance part="J3" gate="G$1" x="69.85" y="143.51" smashed="yes">
+<attribute name="VALUE" x="64.77" y="131.064" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="64.77" y="156.718" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22085,10 +22164,16 @@ an external shutdown feature is needed.</text>
 <text x="95.25" y="120.65" size="2.54" layer="97">SMT MMCX Test</text>
 </plain>
 <instances>
-<instance part="FRAME7" gate="G$1" x="0" y="0"/>
-<instance part="FRAME7" gate="G$2" x="172.72" y="0"/>
-<instance part="FL3" gate="FL" x="132.08" y="175.26">
+<instance part="FRAME7" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME7" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="FL3" gate="FL" x="132.08" y="175.26" smashed="yes">
 <attribute name="MPN" x="132.08" y="175.26" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="111.76" y="182.88" size="1.9304" layer="95"/>
+<attribute name="VALUE" x="111.76" y="165.1" size="1.9304" layer="96"/>
 </instance>
 <instance part="SUPPLY73" gate="GND" x="132.08" y="160.02" smashed="yes"/>
 <instance part="L11" gate="G$1" x="106.68" y="154.94" smashed="yes" rot="R90">
@@ -22101,15 +22186,25 @@ an external shutdown feature is needed.</text>
 </instance>
 <instance part="SUPPLY74" gate="GND" x="106.68" y="152.4" smashed="yes"/>
 <instance part="SUPPLY75" gate="GND" x="156.21" y="152.4" smashed="yes"/>
-<instance part="J4" gate="J" x="91.44" y="175.26"/>
+<instance part="J4" gate="J" x="91.44" y="175.26" smashed="yes">
+<attribute name="NAME" x="85.09" y="179.07" size="1.778" layer="95" align="center-left"/>
+</instance>
 <instance part="SUPPLY76" gate="GND" x="91.44" y="166.37" smashed="yes"/>
-<instance part="J5" gate="J" x="185.42" y="175.26" rot="MR0"/>
+<instance part="J5" gate="J" x="185.42" y="175.26" smashed="yes" rot="MR0">
+<attribute name="NAME" x="191.77" y="179.07" size="1.778" layer="95" rot="MR0" align="center-left"/>
+</instance>
 <instance part="SUPPLY77" gate="GND" x="185.42" y="166.37" smashed="yes"/>
-<instance part="J6" gate="J" x="91.44" y="137.16"/>
-<instance part="J7" gate="J" x="167.64" y="137.16" rot="MR0"/>
+<instance part="J6" gate="J" x="91.44" y="137.16" smashed="yes">
+<attribute name="NAME" x="85.09" y="140.97" size="1.778" layer="95" align="center-left"/>
+</instance>
+<instance part="J7" gate="J" x="167.64" y="137.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="173.99" y="140.97" size="1.778" layer="95" rot="MR0" align="center-left"/>
+</instance>
 <instance part="SUPPLY78" gate="GND" x="91.44" y="129.54" smashed="yes"/>
 <instance part="SUPPLY79" gate="GND" x="167.64" y="129.54" smashed="yes"/>
-<instance part="J8" gate="J" x="91.44" y="119.38"/>
+<instance part="J8" gate="J" x="91.44" y="119.38" smashed="yes">
+<attribute name="NAME" x="85.09" y="123.19" size="1.778" layer="95" align="center-left"/>
+</instance>
 <instance part="SUPPLY80" gate="GND" x="91.44" y="111.76" smashed="yes"/>
 <instance part="SUPPLY81" gate="GND" x="154.94" y="85.09" smashed="yes"/>
 <instance part="SUPPLY83" gate="GND" x="109.22" y="105.41" smashed="yes"/>
@@ -22124,16 +22219,22 @@ an external shutdown feature is needed.</text>
 <attribute name="VALUE" x="170.942" y="87.63" size="1.778" layer="96" rot="R180"/>
 <attribute name="MPN" x="172.72" y="87.63" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="CF1" gate="G$1" x="154.94" y="92.71">
+<instance part="CF1" gate="G$1" x="154.94" y="92.71" smashed="yes">
 <attribute name="MPN" x="154.94" y="92.71" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="157.48" y="88.9" size="1.27" layer="95"/>
+<attribute name="VALUE" x="157.48" y="86.36" size="1.27" layer="95"/>
 </instance>
 <instance part="R35" gate="R" x="167.64" y="175.26" smashed="yes">
 <attribute name="NAME" x="165.1" y="176.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="166.37" y="171.958" size="1.778" layer="96"/>
 <attribute name="MPN" x="167.64" y="175.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J10" gate="J" x="142.24" y="116.84"/>
-<instance part="J11" gate="J" x="180.34" y="116.84" rot="MR0"/>
+<instance part="J10" gate="J" x="142.24" y="116.84" smashed="yes">
+<attribute name="NAME" x="135.89" y="120.65" size="1.778" layer="95" align="center-left"/>
+</instance>
+<instance part="J11" gate="J" x="180.34" y="116.84" smashed="yes" rot="MR0">
+<attribute name="NAME" x="186.69" y="120.65" size="1.778" layer="95" rot="MR0" align="center-left"/>
+</instance>
 <instance part="SUPPLY94" gate="GND" x="142.24" y="109.22" smashed="yes"/>
 <instance part="SUPPLY95" gate="GND" x="180.34" y="107.95" smashed="yes"/>
 <instance part="C42" gate="CE" x="158.75" y="116.84" smashed="yes" rot="R90">
@@ -22141,7 +22242,9 @@ an external shutdown feature is needed.</text>
 <attribute name="VALUE" x="165.989" y="119.634" size="1.778" layer="96" rot="R180"/>
 <attribute name="MPN" x="158.75" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="J12" gate="J" x="90.17" y="92.71"/>
+<instance part="J12" gate="J" x="90.17" y="92.71" smashed="yes">
+<attribute name="NAME" x="83.82" y="96.52" size="1.778" layer="95" align="center-left"/>
+</instance>
 <instance part="SUPPLY96" gate="GND" x="90.17" y="85.09" smashed="yes"/>
 <instance part="SUPPLY97" gate="GND" x="107.95" y="78.74" smashed="yes"/>
 <instance part="R38" gate="G$1" x="107.95" y="86.36" smashed="yes" rot="R90">
