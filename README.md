@@ -1,7 +1,9 @@
 # oresat-dxwifi-hardware
-OreSat communication subsystem for high speed data (1 Mbps) using 2.4 GHz WiFi between the spacecraft and ground.
+This repository is for the DxWiFi hardware that will fly on the OreSat satellite. DxWiFi is our communication subsystem for high speed data (1 Mbps) using 2.4 GHz WiFi between the spacecraft and ground.
 
-We intend to use "rdinary WiFi (IEEE 802.11b) as a high speed satellite communication system. What is _not_ ordinary is that we run the radio under the amateur radio rules and regulations (FCC Part 97) and thus can increase power levels and antenna gains necessary to make the link budget work.
+For more information on satellite hardware, please see the repos for the OreSat Live handheld ground station or the Mini-OreSat balloon platform.
+
+We intend to use "ordinary WiFi" (IEEE 802.11b) as a high speed satellite communication system. What is _not_ ordinary is that we run the radio under the amateur radio rules and regulations (FCC Part 97) and thus can increase power levels and antenna gains necessary to make the link budget work.
 
 ### Ordinary WiFi
 The plan is to use the Qualcomm Atheros AR9271 USB to WiFi adapter because of the driver support in Linux.
