@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18730,9 +18730,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="U1" library="U-Atheros-AR9271-WiFi-adapter" deviceset="U-ATHEROS-AR9271" device=""/>
-<part name="J1" library="UJ2-MIBH2-4-SMT-TR" deviceset="UJ2-MIBH2-4-SMT-TR" device=""/>
-<part name="U2" library="AT24C04_TSSOP" deviceset="AT24C04C-XHM-T" device=""/>
+<part name="U1" library="U-Atheros-AR9271-WiFi-adapter" deviceset="U-ATHEROS-AR9271" device="">
+<attribute name="MPN" value="AR9271"/>
+</part>
+<part name="J1" library="UJ2-MIBH2-4-SMT-TR" deviceset="UJ2-MIBH2-4-SMT-TR" device="">
+<attribute name="MPN" value="UJ2-MIBH2-4-SMT-TR"/>
+</part>
+<part name="U2" library="AT24C04_TSSOP" deviceset="AT24C04C-XHM-T" device="">
+<attribute name="MANUFACTURER_PART_NUMBER" value=""/>
+<attribute name="MPN" value="AT24C04CXHMT"/>
+</part>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF">
@@ -18744,7 +18751,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </spice>
 <attribute name="MPN" value="GCM31CR71C475KA37L"/>
 </part>
-<part name="J2" library="SparkFun-Connectors" deviceset="CONN_08" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38142/1"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="CONN_08" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38142/1">
+<attribute name="MPN" value="22-23-2081"/>
+</part>
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="DNP">
 <attribute name="MPN" value="ERJ-2GE0R00X "/>
 </part>
@@ -18803,7 +18812,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="MPN" value="ERJ-2GEJ511X"/>
 </part>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="J3" library="HTST-110-01-XX-DV" deviceset="HTST-110-01-XX-DV" device=""/>
+<part name="J3" library="HTST-110-01-XX-DV" deviceset="HTST-110-01-XX-DV" device="">
+<attribute name="AVAILABILITY" value=""/>
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="HTST-110-01-L-DV-P"/>
+</part>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="R12" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="33">
 <attribute name="MPN" value="ERJ-2GEJ330X "/>
@@ -18816,9 +18829,13 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="MPN" value="ERJ-2GEJ103X"/>
 </part>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
+<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1">
+<attribute name="MPN" value="22-23-2031"/>
+</part>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
-<part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="" package3d_urn="urn:adsk.eagle:package:38104/1"/>
+<part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="" package3d_urn="urn:adsk.eagle:package:38104/1">
+<attribute name="MPN" value="22-23-2051"/>
+</part>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="LED2" library="SamacSys_Parts" deviceset="LTST-C193KGKT-5A" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -18842,7 +18859,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED12" library="SamacSys_Parts" deviceset="LTST-C193KGKT-5A" device=""/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_09" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38155/1"/>
+<part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_09" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38155/1">
+<attribute name="MPN" value="22-23-2091"/>
+</part>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -18903,8 +18922,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="C26" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="100n">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC"/>
 </part>
-<part name="J7" library="132134-15" deviceset="132134-15" device=""/>
-<part name="J8" library="132134-15" deviceset="132134-15" device=""/>
+<part name="J7" library="132134-15" deviceset="132134-15" device="">
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="132134-15"/>
+</part>
+<part name="J8" library="132134-15" deviceset="132134-15" device="">
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="132134-15"/>
+</part>
 <part name="SUPPLY49" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY50" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C27" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="100n">
@@ -18971,10 +18996,22 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="MPN" value="GRM155R70J105KA12J "/>
 </part>
 <part name="SUPPLY66" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="L5" library="BLM18PG221SH1D" deviceset="BLM18PG221SH1D" device=""/>
-<part name="D2" library="PGB1010603MR_Snap" deviceset="PGB1010603MR" device=""/>
-<part name="D3" library="PGB1010603MR_Snap" deviceset="PGB1010603MR" device=""/>
-<part name="F1" library="Polyfuse_1206L150" deviceset="1206L150THWR" device=""/>
+<part name="L5" library="BLM18PG221SH1D" deviceset="BLM18PG221SH1D" device="">
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="BLM18PG221SH1D"/>
+</part>
+<part name="D2" library="PGB1010603MR_Snap" deviceset="PGB1010603MR" device="">
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="PGB1010603MR"/>
+</part>
+<part name="D3" library="PGB1010603MR_Snap" deviceset="PGB1010603MR" device="">
+<attribute name="MP" value=""/>
+<attribute name="MPN" value="PGB1010603MR"/>
+</part>
+<part name="F1" library="Polyfuse_1206L150" deviceset="1206L150THWR" device="">
+<attribute name="MANUFACTURER_PART_NUMBER" value=""/>
+<attribute name="MPN" value="1206L150THWR"/>
+</part>
 <part name="SUPPLY68" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="SUPPLY69" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="C43" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="100n">
@@ -18989,7 +19026,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="MPN" value="C0402C103K4RACAUTO"/>
 </part>
 <part name="SUPPLY72" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="F2" library="Polyfuse_1206L150" deviceset="1206L150THWR" device=""/>
+<part name="F2" library="Polyfuse_1206L150" deviceset="1206L150THWR" device="">
+<attribute name="MANUFACTURER_PART_NUMBER" value=""/>
+<attribute name="MPN" value="1206L150THWR"/>
+</part>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="1M">
 <attribute name="MPN" value="ERJ-2GEJ105X"/>
 </part>
@@ -19090,7 +19130,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="R26" library="oresat-rcl" deviceset="R-US_" device="0201-B-NOSILK" value="1.0k">
 <attribute name="MPN" value="ERJ-1GNF1001C  "/>
 </part>
-<part name="CR1" library="SMP1321-079LF" deviceset="SMP1321-079LF" device=""/>
+<part name="D1" library="SMP1321-079LF" deviceset="SMP1321-079LF" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF">
 <spice>
@@ -19229,6 +19269,8 @@ for ~2.5mA LED current</text>
 <text x="170.434" y="83.058" size="1.778" layer="97" rot="R180">0402</text>
 <text x="192.024" y="123.952" size="1.778" layer="97" rot="R180">0402</text>
 <text x="236.22" y="112.268" size="1.778" layer="97" rot="R180">0402</text>
+<text x="51.054" y="141.986" size="1.778" layer="97">0603</text>
+<text x="57.658" y="141.986" size="1.778" layer="97">0603</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19236,14 +19278,17 @@ for ~2.5mA LED current</text>
 <instance part="U1" gate="G$1" x="139.7" y="139.7" smashed="yes">
 <attribute name="NAME" x="114.3" y="88.9" size="1.778" layer="95"/>
 <attribute name="VALUE" x="114.3" y="86.36" size="1.778" layer="96"/>
+<attribute name="MPN" x="139.7" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="G$1" x="27.94" y="152.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="29.21735" y="163.5907" size="1.78056875" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="40.64158125" y="139.696" size="1.77855" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="27.94" y="152.4" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="U2" gate="A" x="19.05" y="124.46" smashed="yes">
 <attribute name="NAME" x="26.2636" y="133.5786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="26.3906" y="131.0386" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="MPN" x="19.05" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="139.7" y="85.09" smashed="yes">
 <attribute name="VALUE" x="137.541" y="81.915" size="1.778" layer="96" display="off"/>
@@ -19251,7 +19296,9 @@ for ~2.5mA LED current</text>
 <instance part="SUPPLY3" gate="G$1" x="40.64" y="179.07" smashed="yes">
 <attribute name="VALUE" x="38.481" y="173.355" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J2" gate="G$1" x="31.75" y="191.77"/>
+<instance part="J2" gate="G$1" x="31.75" y="191.77">
+<attribute name="MPN" x="31.75" y="191.77" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R1" gate="R" x="15.24" y="124.46" smashed="yes">
 <attribute name="NAME" x="8.636" y="124.9426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="19.05" y="124.968" size="1.778" layer="96"/>
@@ -19350,7 +19397,9 @@ for ~2.5mA LED current</text>
 <attribute name="MPN" x="218.44" y="161.29" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="218.44" y="152.4" smashed="yes"/>
-<instance part="J3" gate="G$1" x="240.03" y="137.16"/>
+<instance part="J3" gate="G$1" x="240.03" y="137.16">
+<attribute name="MPN" x="240.03" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY13" gate="G$1" x="264.16" y="106.68" smashed="yes">
 <attribute name="VALUE" x="262.001" y="103.505" size="1.778" layer="96" display="off"/>
 </instance>
@@ -19375,11 +19424,15 @@ for ~2.5mA LED current</text>
 <instance part="SUPPLY15" gate="G$1" x="172.72" y="76.2" smashed="yes">
 <attribute name="VALUE" x="170.561" y="73.025" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J4" gate="J$1" x="252.73" y="96.52" rot="MR0"/>
+<instance part="J4" gate="J$1" x="252.73" y="96.52" rot="MR0">
+<attribute name="MPN" x="252.73" y="96.52" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="SUPPLY16" gate="G$1" x="241.3" y="91.44" smashed="yes">
 <attribute name="VALUE" x="239.141" y="88.265" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J5" gate="G$1" x="264.16" y="187.96" rot="MR0"/>
+<instance part="J5" gate="G$1" x="264.16" y="187.96" rot="MR0">
+<attribute name="MPN" x="264.16" y="187.96" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="SUPPLY17" gate="G$1" x="256.54" y="175.26" smashed="yes">
 <attribute name="VALUE" x="254.381" y="172.085" size="1.778" layer="96" display="off"/>
 </instance>
@@ -19427,25 +19480,31 @@ for ~2.5mA LED current</text>
 <attribute name="NAME" x="247.65" y="58.42" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="SUPPLY28" gate="GND" x="251.46" y="38.1" smashed="yes"/>
-<instance part="J6" gate="G$1" x="267.97" y="78.74" rot="MR0"/>
+<instance part="J6" gate="G$1" x="267.97" y="78.74" rot="MR0">
+<attribute name="MPN" x="267.97" y="78.74" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="SUPPLY29" gate="G$1" x="256.54" y="63.5" smashed="yes">
 <attribute name="VALUE" x="254.381" y="60.325" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="L5" gate="G$1" x="74.93" y="160.02" smashed="yes">
 <attribute name="NAME" x="70.60353125" y="164.46818125" size="1.780959375" layer="95"/>
 <attribute name="VALUE" x="69.844559375" y="157.47728125" size="1.779909375" layer="96" display="off"/>
+<attribute name="MPN" x="74.93" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="50.8" y="148.59" smashed="yes" rot="R270">
 <attribute name="NAME" x="51.308" y="150.876" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.72" y="151.13" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="50.8" y="148.59" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="D3" gate="G$1" x="57.15" y="148.59" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.658" y="150.876" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="151.13" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="57.15" y="148.59" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="F1" gate="A" x="53.34" y="160.02" smashed="yes">
 <attribute name="VALUE" x="59.3598" y="161.4424" size="1.778" layer="96" ratio="10" rot="SR0" display="off"/>
 <attribute name="NAME" x="55.6006" y="164.2364" size="1.778" layer="95" ratio="10" rot="SR0"/>
+<attribute name="MPN" x="53.34" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY68" gate="G$1" x="50.8" y="139.7" smashed="yes">
 <attribute name="VALUE" x="48.641" y="133.985" size="1.778" layer="96" display="off"/>
@@ -19476,6 +19535,7 @@ for ~2.5mA LED current</text>
 <instance part="F2" gate="A" x="227.33" y="137.16" smashed="yes">
 <attribute name="VALUE" x="223.4438" y="132.2324" size="1.778" layer="96" ratio="10" rot="SR0" display="off"/>
 <attribute name="NAME" x="227.5586" y="141.3764" size="1.778" layer="95" ratio="10" rot="SR0"/>
+<attribute name="MPN" x="227.33" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R29" gate="R" x="69.85" y="83.82" smashed="yes">
 <attribute name="NAME" x="62.484" y="84.8106" size="1.778" layer="95"/>
@@ -20518,8 +20578,12 @@ circuitry above are size 0201</text>
 <instance part="SUPPLY36" gate="GND" x="160.02" y="60.96" smashed="yes"/>
 <instance part="SUPPLY37" gate="GND" x="134.62" y="109.22" smashed="yes"/>
 <instance part="SUPPLY38" gate="GND" x="177.8" y="82.55" smashed="yes"/>
-<instance part="J7" gate="G$1" x="177.8" y="151.13" rot="MR0"/>
-<instance part="J8" gate="G$1" x="210.82" y="101.6" rot="MR0"/>
+<instance part="J7" gate="G$1" x="177.8" y="151.13" rot="MR0">
+<attribute name="MPN" x="177.8" y="151.13" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="J8" gate="G$1" x="210.82" y="101.6" rot="MR0">
+<attribute name="MPN" x="210.82" y="101.6" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="SUPPLY49" gate="GND" x="210.82" y="87.63" smashed="yes"/>
 <instance part="SUPPLY50" gate="GND" x="177.8" y="137.16" smashed="yes"/>
 <instance part="C19" gate="CE" x="160.02" y="69.85">
@@ -20616,7 +20680,7 @@ circuitry above are size 0201</text>
 <attribute name="VALUE" x="151.384" y="118.364" size="1.778" layer="96"/>
 <attribute name="MPN" x="153.67" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="CR1" gate="A" x="177.8" y="95.25" smashed="yes" rot="R270">
+<instance part="D1" gate="A" x="177.8" y="95.25" smashed="yes" rot="R270">
 <attribute name="VALUE" x="180.3908" y="87.4522" size="1.778" layer="96" ratio="10" rot="SR0"/>
 <attribute name="NAME" x="180.4924" y="89.9414" size="1.778" layer="95" ratio="10" rot="SR0"/>
 </instance>
@@ -20681,7 +20745,7 @@ circuitry above are size 0201</text>
 </segment>
 <segment>
 <pinref part="SUPPLY38" gate="GND" pin="GND"/>
-<pinref part="CR1" gate="A" pin="1"/>
+<pinref part="D1" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="RFOUT_P" class="0">
@@ -20812,7 +20876,7 @@ circuitry above are size 0201</text>
 <pinref part="C21" gate="CE" pin="1"/>
 <pinref part="L3" gate="L" pin="2"/>
 <pinref part="R26" gate="R" pin="2"/>
-<pinref part="CR1" gate="A" pin="2"/>
+<pinref part="D1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="RCV_IN" class="0">
