@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="16" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -198,6 +198,12 @@
 <wire x1="28.2" y1="33.2" x2="28.2" y2="32.6" width="0.1" layer="41"/>
 <wire x1="24.6" y1="29.6" x2="25.2" y2="29.6" width="0.1" layer="41"/>
 <wire x1="21.6" y1="33.1" x2="21.6" y2="32.6" width="0.1" layer="41"/>
+<text x="19.8" y="45.9" size="1.778" layer="21" font="vector">AR9271 Development Board</text>
+<text x="47.5" y="43.7" size="1.778" layer="21" font="vector">v1.0</text>
+<text x="37.4" y="41.3" size="1.778" layer="21" font="vector">2019/09/16</text>
+<wire x1="9.3" y1="27.8" x2="12.3" y2="30.8" width="0.1524" layer="21"/>
+<wire x1="12.3" y1="30.5" x2="12.3" y2="30.8" width="0.1524" layer="21"/>
+<wire x1="12.3" y1="30.8" x2="12" y2="30.8" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -3536,305 +3542,305 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <elements>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="23.8" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-19.38" y="15.43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="25.17" y="55.67" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="23.43" y="50.97" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="-19.38" y="15.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="26.34" y="40.83" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C10" library="oresat-rcl" package=".0201-B-NOSILK" value="2.0pF" x="14.7" y="33.5" smashed="yes" rot="R180">
 <attribute name="MPN" value="UMK063CG020CTHF  " x="-58.96" y="110.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.3" y="33.5" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="14.7" y="33.5" size="0.15" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="7.6" y="26.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="15.3" y="34.7" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C11" library="oresat-rcl" package=".0201-B-NOSILK" value="2.0pF" x="13.6" y="35.4" smashed="yes" rot="R270">
 <attribute name="MPN" value="UMK063CG020CTHF  " x="-63.87" y="-42.07" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.7" y="36.2" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="13.6" y="35.4" size="0.15" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="7.4" y="27.9" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="12.4" y="36" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C12" library="oresat-rcl" package=".0201-B-NOSILK" value="2.0pF" x="13.2" y="33.5" smashed="yes" rot="R180">
 <attribute name="MPN" value="UMK063CG020CTHF  " x="-68.08" y="110.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="9.9" y="33.7" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="13.2" y="33.5" size="0.15" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="5.7" y="26.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.8" y="34.7" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C13" library="oresat-rcl" package=".0201-B-NOSILK" value="2.0pF" x="12.8" y="32.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="UMK063CG020CTHF  " x="90.27" y="117.49" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="12.83" y="34" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="12.8" y="32.4" size="0.15" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="6.43" y="24.7" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="14" y="31.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="C14" library="oresat-rcl" package=".0201-B-NOSILK" value="1.0pF" x="12" y="33.1" smashed="yes" rot="R270">
 <attribute name="MPN" value="UMK063CG010CTHF" x="-69.28" y="17.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.1" y="34" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="12" y="33.1" size="0.15" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="5.4" y="25.9" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="10.8" y="33.7" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C15" library="oresat-rcl" package=".0201-B-NOSILK" value="10.0pF" x="18.11213125" y="37.1493875" smashed="yes" rot="R135">
 <attribute name="MPN" value="UMK063CG100DTHF  " x="44.154871875" y="120.665771875" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="18.3242625" y="35.94730625" size="0.8" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="18.11213125" y="37.1493875" size="0.15" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="40.1757375" y="34.05269375" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="19.384921875" y="37.573653125" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
 <element name="C16" library="oresat-rcl" package=".0201-B-NOSILK" value="10.0pF" x="18.60710625" y="37.6443625" smashed="yes" rot="R135">
 <attribute name="MPN" value="UMK063CG100DTHF  " x="41.057746875" y="124.752846875" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="21.2234" y="36.725125" size="0.8" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="18.60710625" y="37.6443625" size="0.15" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="40.8766" y="34.674875" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="19.879896875" y="38.068628125" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
 <element name="C17" library="oresat-rcl" package=".0201-B-NOSILK" value="1.5pF" x="16.556496875" y="37.1493875" smashed="yes" rot="R225">
 <attribute name="MPN" value="UMK063CG1R5CT-F " x="-54.387525" y="81.15264375" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="15.778678125" y="36.23015" size="0.8" layer="25" font="vector" ratio="15" rot="R225"/>
 <attribute name="NAME" x="16.556496875" y="37.1493875" size="0.15" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="38.821321875" y="32.86985" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="16.13223125" y="38.42218125" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="C18" library="oresat-rcl" package=".0201-B-NOSILK" value="1.5pF" x="17.54644375" y="38.705025" smashed="yes" rot="R135">
 <attribute name="MPN" value="UMK063CG1R5CT-F " x="58.855621875" y="112.343125" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="17.405025" y="40.82634375" size="0.8" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="17.54644375" y="38.705025" size="0.15" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="39.494975" y="35.87365625" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="18.8192375" y="39.1292875" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
 <element name="C19" library="oresat-rcl" package=".0201-B-NOSILK" value="1.0pF" x="15.990809375" y="37.715075" smashed="yes" rot="R225">
 <attribute name="MPN" value="UMK063CG010CTHF" x="-60.3413625" y="76.330175" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="15.778678125" y="36.23015" size="0.8" layer="25" font="vector" ratio="15" rot="R225"/>
 <attribute name="NAME" x="15.990809375" y="37.715075" size="0.15" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="38.221321875" y="33.46985" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="15.566546875" y="38.987865625" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="C20" library="oresat-rcl" package=".0201-B-NOSILK" value="10.0pF" x="18.83136875" y="42.276953125" smashed="yes" rot="R45">
 <attribute name="MPN" value="UMK063CG100DTHF  " x="109.53195625" y="23.418415625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="NAME" x="17.40208125" y="51.3033" size="0.8" layer="25" font="vector" ratio="15" rot="R45"/>
 <attribute name="NAME" x="18.83136875" y="42.276953125" size="0.15" layer="33" ratio="15" rot="R45" align="center"/>
+<attribute name="NAME" x="18.50208125" y="42.6033" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="19.255634375" y="41.0041625" size="0.8" layer="27" font="vector" ratio="15" rot="R45"/>
 </element>
 <element name="C21" library="oresat-rcl" package=".0201-B-NOSILK" value="100.0pF" x="16.485784375" y="39.765684375" smashed="yes" rot="R135">
 <attribute name="MPN" value="UMK063CG101JT-F " x="53.304834375" y="112.505759375" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="15.9201" y="40.89705625" size="0.8" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="16.485784375" y="39.765684375" size="0.15" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="37.9799" y="37.40294375" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="17.758578125" y="40.189946875" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
 <element name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="8" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-35.18" y="9.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="9.66" y="56.76" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="9.66" y="56.76" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="-35.18" y="9.08" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="7.935" y="51.985" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C23" library="oresat-rcl" package=".0402-B-NOSILK" value="10nF" x="2.6" y="60.2" smashed="yes" rot="R180">
 <attribute name="MPN" value="C0402C103K4RACAUTO" x="-62.17" y="133.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.4" y="59.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="2.6" y="60.2" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="1.3" y="58.95" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.4" y="61.55" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="10.8" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-32.38" y="2.73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="12.07" y="56.07" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="10.33" y="50.97" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="-32.38" y="2.73" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="8.26" y="56.07" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="47" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="3.82" y="-3.62" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="46.57" y="52" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="46.2" y="51.07" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="3.82" y="-3.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="44.46" y="54.8" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C26" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="41.5" y="60.2" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="22.45" y="133.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="40" y="60.45" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="41.5" y="60.2" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="40.1" y="58.85" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="43.57" y="62.82" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C27" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="19.79" y="28.29" smashed="yes" rot="R225">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-48.45994375" y="64.211021875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="20.744596875" y="28.466778125" size="0.8" layer="25" font="vector" ratio="15" rot="R45"/>
 <attribute name="NAME" x="19.79" y="28.29" size="0.2" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="20.144596875" y="26.966778125" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="19.40109375" y="29.81028125" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="C28" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="24.3" y="25.2" smashed="yes" rot="R270">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-49.36" y="-1.47" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="24.85" y="26" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="24.3" y="25.2" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="23.75" y="24.4" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="22.95" y="26" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C29" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="28.38585625" y="26.8" smashed="yes" rot="R315">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-2.1470125" y="-46.8381" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="28.209078125" y="27.75459375" size="0.8" layer="25" font="vector" ratio="15" rot="R315"/>
 <attribute name="NAME" x="28.38585625" y="26.8" size="0.2" layer="33" ratio="15" rot="R315" align="center"/>
+<attribute name="NAME" x="28.209078125" y="27.75459375" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="26.865578125" y="26.411090625" size="0.8" layer="27" font="vector" ratio="15" rot="R315"/>
 </element>
 <element name="C3" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="15.9" y="24.4" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-67.92" y="92.98" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="15.98" y="23.51" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="15.9" y="24.4" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="15.42" y="24.99" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.7" y="25.75" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C30" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="33.1" y="32.5" smashed="yes">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="67.39" y="-41.16" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="34.18" y="33.97" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="33.1" y="32.5" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="32.42" y="33.03" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="32.3" y="31.15" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C31" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="31.6" y="35.5" smashed="yes">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="69.7" y="-38.16" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="32.73" y="34.96" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="31.6" y="35.5" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="31.03" y="36.06" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.8" y="34.15" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C32" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="31.9" y="30.2" smashed="yes">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="73.81" y="-43.46" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="33" y="29.05" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="31.9" y="30.2" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="31.1" y="30.75" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="31.1" y="28.85" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C33" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="24.4" y="40.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="98.06" y="86.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26.65" y="41" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="24.4" y="40.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="23.05" y="42.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="25.75" y="39.6" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="C34" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="21" y="38.5" smashed="yes" rot="R90">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="94.66" y="88.03" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.55" y="38.3" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="21" y="38.5" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="20.45" y="37.8" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="22.35" y="37.7" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="C35" library="oresat-rcl" package=".0402-B-NOSILK" value="10p" x="17" y="35.7" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B2C0G1H100D050BA  " x="-49.039996875" y="104.279996875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="18.6" y="37.05" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="17" y="35.7" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="16.6" y="36.15" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="17.800003125" y="37.05" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C36" library="oresat-rcl" package=".0402-B-NOSILK" value="10p" x="15.9" y="31.7" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B2C0G1H100D050BA  " x="-55.22" y="100.28" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.4" y="31.05" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="15.9" y="31.7" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="15.2" y="32.25" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.7" y="33.05" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C37" library="oresat-rcl" package=".0402-B-NOSILK" value="100p" x="15.9" y="30.6" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B2C0G1H101J050BA " x="-60.3" y="99.18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.7" y="30.05" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="15.9" y="30.6" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="15.2" y="29.45" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.7" y="31.95" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C38" library="oresat-rcl" package=".0402-B-NOSILK" value="1n" x="21.7" y="26.1" smashed="yes" rot="R225">
 <attribute name="MPN" value="C0402C102K5GACTU" x="-66.306509375" y="35.08025625" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="22.65459375" y="26.276778125" size="0.8" layer="25" font="vector" ratio="15" rot="R225"/>
 <attribute name="NAME" x="21.7" y="26.1" size="0.2" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="21.54540625" y="26.623221875" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="21.311090625" y="27.62028125" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="C39" library="oresat-rcl" package=".0402-B-NOSILK" value="10n" x="25.3" y="24" smashed="yes" rot="R270">
 <attribute name="MPN" value="C0402C103K4RACAUTO" x="-48.36" y="-44.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="25.25" y="22.9" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="25.3" y="24" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="26.45" y="23.7" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="23.95" y="24.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C4" library="oresat-rcl" package=".0402-B-NOSILK" value="10p" x="27.8" y="42" smashed="yes" rot="R90">
-<attribute name="NAME" x="27.65" y="43.4" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="27.3" y="43.65" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="NAME" x="27.8" y="42" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="29.15" y="41.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="C40" library="oresat-rcl" package=".0402-B-NOSILK" value="1n" x="32.7" y="34.3" smashed="yes">
 <attribute name="MPN" value="C0402C102K5GACTU" x="93.66" y="-34.28" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="31.9" y="34.85" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="32.7" y="34.3" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="34.2" y="34.05" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="31.9" y="32.95" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C41" library="oresat-rcl" package=".0402-B-NOSILK" value="1u" x="23.4" y="40.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM155R70J105KA12J " x="100.87" y="55.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.75" y="41.5" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="23.4" y="40.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="22.15" y="42.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="24.75" y="39.6" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="C42" library="oresat-rcl" package=".0402-B-NOSILK" value="1u" x="27.4" y="39.8" smashed="yes">
 <attribute name="MPN" value="GRM155R70J105KA12J " x="46.45" y="-37.67" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="28.8" y="39.55" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="27.4" y="39.8" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="27" y="38.65" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="26.6" y="38.15" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C43" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="61.9732" y="37.2882" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="8.6332" y="110.9482" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="62.7332" y="38.8382" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="61.9732" y="37.2882" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="61.9668" y="37.9618" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="62.9332" y="39.7182" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C44" library="oresat-rcl" package=".0402-B-NOSILK" value="10n" x="51.9" y="37.4" smashed="yes" rot="R180">
 <attribute name="MPN" value="C0402C103K4RACAUTO" x="-31.92" y="111.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="50.74" y="37.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="51.9" y="37.4" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="51.26" y="35.55" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="52.7" y="38.75" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C45" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="51.9" y="38.9" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-5.25" y="112.56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="51.9" y="40.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="51.9" y="38.9" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="52.6" y="40.65" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="52.7" y="40.25" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="49.6" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="6.42" y="-9.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="51.17" y="56.87" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="48.93" y="51.07" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="6.42" y="-9.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="47.06" y="56.07" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="21" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-22.18" y="-16.32" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="18.67" y="55.67" size="1.27" layer="25"/>
+<attribute name="NAME" x="20.37" y="50.97" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="-22.18" y="-16.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="18.46" y="56.07" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C48" library="oresat-rcl" package=".0402-B-NOSILK" value="10nF" x="15.5" y="60.2" smashed="yes" rot="R180">
 <attribute name="MPN" value="C0402C103K4RACAUTO" x="-56.89" y="133.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.3" y="62.19" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="15.5" y="60.2" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="13.9" y="59.01" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.3" y="61.55" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="36.8" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-6.38" y="-22.67" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="36.47" y="51.47" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="36.03" y="50.97" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="-6.38" y="-22.67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="34.26" y="56.07" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C5" library="oresat-rcl" package=".0402-B-NOSILK" value="10p" x="32.4" y="42" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.25" y="41.7" size="0.8" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="33.05" y="41.9" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="NAME" x="32.4" y="42" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="31.05" y="42.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7uF" x="34" y="54.8" smashed="yes" rot="R270">
 <attribute name="MPN" value="GCM31CR71C475KA37L" x="-9.18" y="-29.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="33.37" y="51.37" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="33.33" y="50.97" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="SPICEPREFIX" value="C" x="-9.18" y="-29.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="31.46" y="56.07" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C51" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="28.5" y="60.2" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="-32.46" y="133.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="29.3" y="59.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="28.5" y="60.2" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="26.9" y="58.95" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="28.03" y="57.74" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C6" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="24.2" y="15.1" smashed="yes" rot="R180">
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="8.96" y="88.76" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="25" y="14.55" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="24.2" y="15.1" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="23.9" y="15.75" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="25" y="16.45" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C7" library="oresat-rcl" package=".0201-B-NOSILK" value="2.2pF" x="17.3" y="33.9" smashed="yes" rot="R270">
 <attribute name="MPN" value="UMK063CG2R2CTHF  " x="-60.17" y="-35.95" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="16" y="35.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="17.3" y="33.9" size="0.15" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="10.9" y="26.8" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="16.1" y="34.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C8" library="oresat-rcl" package=".0201-B-NOSILK" value="10.0pF" x="16.2" y="33.5" smashed="yes" rot="R180">
 <attribute name="MPN" value="UMK063CG100DTHF  " x="-14.28" y="110.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.8" y="34.7" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="16.2" y="33.5" size="0.15" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="9.3" y="26.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="16.8" y="34.7" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C9" library="oresat-rcl" package=".0201-B-NOSILK" value="10.0pF" x="14.7" y="34.3" smashed="yes" rot="R180">
 <attribute name="MPN" value="UMK063CG100DTHF  " x="-20.86" y="111.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.9" y="35.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="14.7" y="34.3" size="0.15" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="7.6" y="27.1" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="15.3" y="35.5" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D1" library="SMP1321-079LF" package="SOD523" value="SMP1321-079LF" x="18.8142125" y="40.438475" smashed="yes" rot="R225">
 <attribute name="MPN" value="SMP1321-079" x="-67.39624375" y="69.175296875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="17.853678125" y="41.36591875" size="1.27" layer="25" ratio="6" rot="SR45"/>
+<attribute name="NAME" x="40.953678125" y="36.56591875" size="0.635" layer="25" font="vector" ratio="20" rot="SR45"/>
 </element>
 <element name="D2" library="PGB1010603MR_Snap" package="ESD_PGB1010603MR" value="PGB1010603MR" x="50.5" y="30.2" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value=" PGB1 Series 15 V 63 Bi-Directional Surface Mount PulseGuard® ESD Suppressor " x="-9.19" y="9.88" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3843,7 +3849,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Littelfuse Inc." x="-9.19" y="9.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MP" value="" x="-9.19" y="9.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="PGB1010603MR" x="50.5" y="30.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="51.9" y="31.725" size="0.8" layer="25" rot="R270"/>
+<attribute name="NAME" x="48.675" y="29.8" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="0603 Littelfuse" x="-9.19" y="9.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="49.1" y="30.455" size="0.8" layer="27" align="top-left"/>
 </element>
@@ -3854,7 +3860,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Littelfuse Inc." x="110.19" y="64.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="" x="110.19" y="64.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PGB1010603MR" x="50.5" y="33.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="49.1" y="32.175" size="0.8" layer="25" rot="R90"/>
+<attribute name="NAME" x="48.675" y="33.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="0603 Littelfuse" x="110.19" y="64.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="51.9" y="32.175" size="0.8" layer="27" rot="R90" align="top-left"/>
 </element>
@@ -3866,7 +3872,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="CUI Inc." x="107.45" y="53.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="UJ2-MIBH2-4-SMT-TR" x="107.45" y="53.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="UJ2-MIBH2-4-SMT-TR" x="63" y="32.3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="58.159240625" y="28.28936875" size="0.812928125" layer="25" rot="R90"/>
+<attribute name="NAME" x="60.28936875" y="27.140759375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="None" x="107.45" y="53.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="66.991459375" y="28.28853125" size="0.813096875" layer="27" rot="R90"/>
 </element>
@@ -3876,7 +3882,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Samtec Inc." x="-31.23" y="16.29" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="" x="31" y="7.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HTST-110-01-L-DV-P" x="31" y="7.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="15.21066875" y="4.59485" size="1.27021875" layer="25" rot="R180"/>
+<attribute name="NAME" x="16.88933125" y="13.10515" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="None" x="-31.23" y="16.29" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="None" x="-31.23" y="16.29" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="34.816459375" y="15.032909375" size="1.27215" layer="27" rot="R180"/>
@@ -3888,7 +3894,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Amphenol RF" x="35.21" y="96.95" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="" x="35.21" y="96.95" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="132134-15" x="6" y="33.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="3.593240625" y="27.243890625" size="1.272040625" layer="25" rot="R90"/>
+<attribute name="NAME" x="2.443890625" y="28.706759375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="None" x="35.21" y="96.95" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="11.50755" y="29.64478125" size="1.271740625" layer="27" rot="R90"/>
 </element>
@@ -3899,32 +3905,32 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Amphenol RF" x="79.66" y="14.79" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="" x="79.66" y="14.79" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="132134-15" x="6" y="44" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.193890625" y="46.206759375" size="1.272040625" layer="25"/>
+<attribute name="NAME" x="2.193890625" y="46.206759375" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="None" x="79.66" y="14.79" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="2.19478125" y="38.49245" size="1.271740625" layer="27"/>
 </element>
 <element name="L1" library="oresat-rcl" package=".0201-B-NOSILK" value="1.8nH" x="13.6" y="32.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="LQP03TN1N8B02D " x="91.07" y="87.01" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="14.1" y="30.5" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="13.6" y="32.4" size="0.15" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="7.3" y="25.3" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="14.8" y="31.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="L2" library="oresat-rcl" package=".0201-B-NOSILK" value="1.8nH" x="13.2" y="34.3" smashed="yes" rot="R180">
 <attribute name="MPN" value="LQP03TN1N8B02D " x="-45.22" y="111.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="14.2" y="33.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="13.2" y="34.3" size="0.15" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="5.8" y="27.3" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.8" y="35.5" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="L3" library="oresat-rcl" package=".0201-B-NOSILK" value="2.2nH" x="17.058540625" y="38.21005" smashed="yes" rot="R135">
 <attribute name="MPN" value="LQP03TN2N2B02D " x="27.83485" y="136.992865625" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="16.2100125" y="38.35146875" size="0.8" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="17.058540625" y="38.21005" size="0.15" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="39.0899875" y="35.04853125" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="18.331334375" y="38.6343125" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
 <element name="L4" library="oresat-rcl" package=".0201-B-NOSILK" value="2.2nH" x="19.1435" y="38.64644375" smashed="yes" rot="R225">
 <attribute name="MPN" value="LQP03TN2N2B02D " x="-82.333390625" y="46.728675" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="18.577815625" y="39.494971875" size="0.8" layer="25" font="vector" ratio="15" rot="R225"/>
 <attribute name="NAME" x="19.1435" y="38.64644375" size="0.15" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="42.022184375" y="35.105028125" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="18.7192375" y="39.9192375" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="L5" library="BLM18PG221SH1D" package="INDC1608X95" value="BLM18PG221SH1D" x="53.5" y="38.1" smashed="yes" rot="R90">
@@ -3934,7 +3940,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MF" value="Murata Electronics" x="134.78" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="" x="134.78" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="BLM18PG221SH1D" x="53.5" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="54.915" y="37.405" size="0.5" layer="25" rot="R90"/>
+<attribute name="NAME" x="54.405" y="37.785" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="0603 Murata" x="134.78" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="63.005" y="32.805" size="0.5" layer="27" rot="R90"/>
 </element>
@@ -3942,330 +3948,330 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="-43.18" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Lite-On" x="-43.18" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="-43.18" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.45" y="10.92" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="10.45" y="11.52" size="0.635" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="21.59" y="12.7" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED10" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="10.16" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="127" y="-77.47" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="127" y="-77.47" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="127" y="-77.47" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.335" y="9.855" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.835" y="8.855" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="45.39" y="21.71" size="1.27" layer="27" align="center"/>
 </element>
 <element name="LED11" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="7.62" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="73.66" y="-82.55" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="73.66" y="-82.55" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="73.66" y="-82.55" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.49" y="7.33" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="51.99" y="6.33" size="0.635" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="40.64" y="7.62" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED12" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="5.08" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="91.44" y="-85.09" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="91.44" y="-85.09" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="91.44" y="-85.09" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.37" y="4.72" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.87" y="3.72" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="45.815" y="10.735" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED2" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="10.16" y="10.16" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="-60.96" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Lite-On" x="-60.96" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="-60.96" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.51" y="8.26" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="10.51" y="8.96" size="0.635" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="10.16" y="10.16" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED3" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="10.16" y="7.62" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="-11.43" y="92.71" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Lite-On" x="-11.43" y="92.71" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="-11.43" y="92.71" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.43" y="5.74" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="10.43" y="6.44" size="0.635" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="21.59" y="7.62" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED4" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="10.16" y="5.08" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="-29.21" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Lite-On" x="-29.21" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="-29.21" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.32" y="2.54" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="10.42" y="3.74" size="0.635" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="10.16" y="5.08" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED5" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="22.86" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="109.22" y="-62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="109.22" y="-62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="109.22" y="-62.23" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.77" y="22.72" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.87" y="21.52" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="39.2" y="21.4" size="1.27" layer="27" align="center"/>
 </element>
 <element name="LED6" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="20.32" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="127" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="127" y="-64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="127" y="-64.77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.605" y="21.115" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.805" y="19.115" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="38.835" y="18.215" size="1.27" layer="28" rot="MR180" align="center"/>
 </element>
 <element name="LED7" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="17.78" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="73.66" y="-69.85" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="73.66" y="-69.85" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="73.66" y="-69.85" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.68" y="17.79" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.78" y="16.59" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="40.64" y="17.78" size="1.27" layer="27" align="center"/>
 </element>
 <element name="LED8" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="15.24" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="91.44" y="-72.39" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="91.44" y="-72.39" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="91.44" y="-72.39" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.69" y="14.69" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.79" y="13.89" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="39.87" y="15.34" size="1.27" layer="27" align="center"/>
 </element>
 <element name="LED9" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="52.07" y="12.7" smashed="yes">
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Green,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="109.22" y="-74.93" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Lite-On" x="109.22" y="-74.93" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C193KGKT-5A" x="109.22" y="-74.93" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.77" y="12.2" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="51.77" y="11.5" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="52.07" y="12.7" size="1.27" layer="27" align="center"/>
 </element>
 <element name="R1" library="oresat-rcl" package=".0402-A-NOSILK" value="DNP" x="7.3" y="23" smashed="yes">
 <attribute name="MPN" value="ERJ-2GE0R00X " x="30.16" y="-41.77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.7" y="22.75" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="7.3" y="23" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="4.8" y="22.75" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="7.4" y="20.8" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R10" library="oresat-rcl" package=".0402-A-NOSILK" value="10k" x="25.8" y="15.7" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="90.57" y="88.09" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="25.15" y="14.8" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="25.8" y="15.7" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="26.05" y="17.3" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="27.2" y="14.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R11" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="12.9" y="12.7" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="-13.77" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.8" y="12.05" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.9" y="12.7" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.2" y="11.45" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.8" y="14.1" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R12" library="oresat-rcl" package=".0402-A-NOSILK" value="33" x="27.2" y="15.7" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-2GEJ330X " x="-37.57" y="-60.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="25.45" y="16.2" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="27.2" y="15.7" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="27.45" y="17.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="25.8" y="16.6" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R13" library="oresat-rcl" package=".0402-A-NOSILK" value="10k" x="32.7" y="15.1" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="-47.31" y="79.87" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="33.6" y="14.45" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="32.7" y="15.1" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="31.8" y="15.75" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="33.6" y="16.5" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R14" library="oresat-rcl" package=".0402-A-NOSILK" value="10k" x="31.1" y="28.5" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="-52.72" y="93.27" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="32" y="27.85" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="31.1" y="28.5" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="30.4" y="27.25" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="32" y="29.9" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R15" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="12.9" y="10.16" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="-17.58" y="74.93" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.8" y="9.51" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.9" y="10.16" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.2" y="8.89" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.8" y="11.56" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R16" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="12.9" y="7.62" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="-21.39" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.9" y="6.07" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.9" y="7.62" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.2" y="6.33" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="45.55" y="7.75" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R17" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="12.9" y="5.08" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="-25.2" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.9" y="2.93" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.9" y="5.08" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.2" y="3.77" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.8" y="6.48" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R18" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="22.86" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="90.17" y="-41.91" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.86" y="22.31" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="22.86" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.56" y="21.61" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="24" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R19" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="20.32" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="93.98" y="-44.45" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.96" y="19.77" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="20.32" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.46" y="19.07" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="31.62" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R2" library="oresat-rcl" package=".0402-A-NOSILK" value="0" x="7.3" y="21.8" smashed="yes">
 <attribute name="MPN" value="ERJ-2GE0R00X" x="40.32" y="-46.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.73" y="21.33" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="7.3" y="21.8" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="4.73" y="21.53" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.5475" y="21.8275" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R20" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="17.78" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="97.79" y="-46.99" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.89" y="16.7" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="17.78" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.49" y="16.5" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="16.38" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R21" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="15.24" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="101.6" y="-49.53" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.86" y="13.69" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="15.24" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.66" y="13.99" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="52.44" y="34.16" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R22" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="12.7" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="105.41" y="-52.07" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.76" y="11.45" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="12.7" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.56" y="11.45" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="11.3" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R23" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="10.16" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="109.22" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.26" y="9.51" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="10.16" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.56" y="8.91" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="54.98" y="11.3" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R24" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="7.62" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="113.03" y="-57.15" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.26" y="6.77" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="7.62" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.56" y="6.37" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="6.22" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R25" library="oresat-rcl" package=".0402-A-NOSILK" value="510" x="48.26" y="5.08" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ511X" x="116.84" y="-59.69" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.26" y="3.93" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="48.26" y="5.08" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="47.56" y="3.83" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="47.36" y="3.68" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R26" library="oresat-rcl" package=".0201-B-NOSILK" value="1.0k" x="17.770709375" y="41.21629375" smashed="yes" rot="R225">
 <attribute name="MPN" value="ERJ-1GNF1001C  " x="-61.255540625" y="77.13731875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="18.40710625" y="42.13553125" size="0.8" layer="25" font="vector" ratio="15" rot="R45"/>
 <attribute name="NAME" x="17.770709375" y="41.21629375" size="0.15" layer="33" ratio="15" rot="R225" align="center"/>
+<attribute name="NAME" x="16.90710625" y="40.93553125" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
 <attribute name="VALUE" x="17.34644375" y="42.489084375" size="0.8" layer="27" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="R27" library="oresat-rcl" package=".0402-A-NOSILK" value="330k" x="2.5" y="61.3" smashed="yes">
 <attribute name="MPN" value="ERJ-2RKF3303X" x="77.43" y="2.88" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.6" y="61.95" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="2.5" y="61.3" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="1.5" y="61.95" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="1.6" y="59.9" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R28" library="oresat-rcl" package=".0402-A-NOSILK" value="120k" x="41.5" y="61.3" smashed="yes">
 <attribute name="MPN" value="ERJ-2RKF1203X" x="120.24" y="2.88" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="38.1" y="60.85" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="41.5" y="61.3" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="40.5" y="62.05" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="40.6" y="59.9" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R29" library="oresat-rcl" package=".0402-A-NOSILK" value="1M" x="29.7" y="39.6" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ105X" x="45.54" y="-28.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="31.8" y="37.95" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="30.3" y="39.6" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="31" y="39.25" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="29.4" y="38.2" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R3" library="oresat-rcl" package=".0402-A-NOSILK" value="0" x="7.3" y="20.6" smashed="yes">
 <attribute name="MPN" value="ERJ-2GE0R00X" x="42.86" y="-47.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.8" y="20.05" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="7.3" y="20.6" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="4.6" y="20.15" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="6.4" y="19.2" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R30" library="oresat-rcl" package=".0402-A-NOSILK" value="330k" x="15.5" y="61.3" smashed="yes">
 <attribute name="MPN" value="ERJ-2RKF3303X" x="98.05" y="2.88" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="14.6" y="61.95" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="15.5" y="61.3" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="14.1" y="61.95" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="14.6" y="59.9" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R31" library="oresat-rcl" package=".0402-A-NOSILK" value="120k" x="28.5" y="61.3" smashed="yes">
 <attribute name="MPN" value="ERJ-2RKF1203X" x="43.74" y="-3.47" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.6" y="61.95" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="28.5" y="61.3" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="27.2" y="61.95" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="27.6" y="59.9" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R32" library="oresat-rcl" package=".0805-B" value="0" x="5.9" y="55.3" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="-53.79" y="21.01" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.7" y="56.6" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="5.9" y="55.3" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="5" y="54.7" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="4.1" y="56.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R33" library="oresat-rcl" package=".0805-B" value="0" x="18.9" y="55.3" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="-40.79" y="17.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="19.9" y="56.8" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="18.9" y="55.3" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="17.8" y="54.7" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="14.56" y="52.99" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R34" library="oresat-rcl" package=".0805-B" value="0" x="44.9" y="55.2" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="-14.79" y="13.29" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="45.9" y="56.7" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="44.9" y="55.2" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="43.8" y="54.6" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="43.1" y="56.7" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R35" library="oresat-rcl" package=".0805-B" value="0" x="31.9" y="55.3" smashed="yes" rot="R270">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="-27.79" y="9.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="29.8" y="56.3" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="31.9" y="55.3" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="30.8" y="54.5" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="30.1" y="56.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R36" library="oresat-rcl" package=".0805-B" value="DNP" x="12.9321" y="49.1959" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="-36.5979" y="108.8859" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="14.4321" y="48.1959" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="12.9321" y="49.1959" size="0.4" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.2041" y="47.5321" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="14.4321" y="50.9959" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R37" library="oresat-rcl" package=".0805-B" value="DNP" x="39.4875" y="49.2775" smashed="yes">
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="92.8275" y="-10.4125" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="37.9875" y="50.2775" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="39.4875" y="49.2775" size="0.4" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="38.8875" y="50.2775" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.9875" y="47.4775" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R4" library="oresat-rcl" package=".0402-A-NOSILK" value="10k" x="19" y="22.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2GEJ103X " x="87.58" y="41.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="18.35" y="21.5" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="19" y="22.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="19.25" y="20.3" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="20.4" y="21.5" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R5" library="oresat-rcl" package=".0402-A-NOSILK" value="4.7k" x="20.2" y="22.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="88.78" y="45.26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="19.55" y="21.5" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="20.2" y="22.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="20.55" y="20.3" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="21.6" y="21.5" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R6" library="oresat-rcl" package=".0402-A-NOSILK" value="4.7k" x="21.4" y="22.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="89.98" y="49.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="20.75" y="21.5" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="21.4" y="22.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="21.75" y="20.2" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="22.8" y="21.5" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R7" library="oresat-rcl" package=".0402-A-NOSILK" value="10k" x="25.5" y="42.8" smashed="yes">
 <attribute name="MPN" value="ERJ-2GEJ103X" x="55.98" y="-25.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22.8" y="42.45" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="25.5" y="42.8" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="24.3" y="43.35" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="24.6" y="41.4" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R8" library="oresat-rcl" package=".0402-A-NOSILK" value="51.1" x="36.2" y="30.1" smashed="yes" rot="R180">
 <attribute name="MPN" value="ERJ-2RKF51R1X " x="17.149996875" y="94.869996875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="37.1" y="29.44999375" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="36.2" y="30.1" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="35.8" y="28.85000625" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="37.099996875" y="31.49999375" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R9" library="oresat-rcl" package=".0402-A-NOSILK" value="6.19k" x="22.4" y="39.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="ERJ-2RKF6191X" x="80.82" y="110.52" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="21.55" y="40.4" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="22.4" y="39.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="21.55" y="40.4" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="23.8" y="38.5" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="U1" library="U-Atheros-AR9271-WiFi-adapter" package="QFN-68" value="U-ATHEROS-AR9271" x="24.9" y="32.9" smashed="yes">
 <attribute name="MPN" value="AR9271" x="24.9" y="32.9" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="24.9" y="27.345" size="0.635" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="NAME" x="26.8" y="27.745" size="0.635" layer="25" font="vector" ratio="20" align="bottom-center"/>
 </element>
 <element name="U3" library="U-LT3080EQ" package="DDPAK-5_Q" value="LT3080EQPBF" x="8" y="68" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LT3080EQ#PBF" x="25.78" y="34.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.7234" y="67.365" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="NAME" x="4.7234" y="67.365" size="0.635" layer="25" font="vector" ratio="20" rot="SR90"/>
 <attribute name="VENDOR" value="Linear Technology" x="25.78" y="34.98" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U4" library="U-LT3080EQ" package="DDPAK-5_Q" value="LT3080EQPBF" x="47" y="68" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LT3080EQ#PBF" x="76.21" y="34.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.9934" y="59.745" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="44.9934" y="59.745" size="0.635" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VENDOR" value="Linear Technology" x="76.21" y="34.98" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U5" library="U-LT3080EQ" package="DDPAK-5_Q" value="LT3080EQPBF" x="21" y="68" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LT3080EQ#PBF" x="61.64" y="34.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.7234" y="67.365" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="17.7234" y="67.365" size="0.635" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VENDOR" value="Linear Technology" x="61.64" y="34.98" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U6" library="U-LT3080EQ" package="DDPAK-5_Q" value="LT3080EQPBF" x="34" y="68" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LT3080EQ#PBF" x="86.07" y="34.98" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="30.7234" y="67.365" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="30.7234" y="67.365" size="0.635" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VENDOR" value="Linear Technology" x="86.07" y="34.98" size="1.778" layer="27" display="off"/>
 </element>
 <element name="Y1" library="ECS-400-10-36-CKY-TR" package="XTAL_ECS-400-10-36-CKY-TR" value="ECS-400-10-36-CKY-TR" x="30.1" y="42" smashed="yes">
@@ -4274,66 +4280,66 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/ecs-inc/ECS-400-10-36-CKY-TR/XC2666CT-ND/8023601?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="51.69" y="-11.34" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="ECS International" x="51.69" y="-11.34" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="ECS-400-10-36-CKY-TR" x="51.69" y="-11.34" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="30.147090625" y="43.35275" size="0.610615625" layer="25"/>
+<attribute name="NAME" x="29.547090625" y="43.35275" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="PACKAGE" value="SMD-4 ECS International" x="51.69" y="-11.34" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="28.349309375" y="39.74913125" size="0.6098375" layer="27"/>
 </element>
 <element name="U2" library="U-Generic-AT24C04-EEPROM-I2C-4Kb-TSSOP" package="8X" value="AT24C04C-XHM-T" x="13.5" y="21.5" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="AT24C04CXHMT" x="13.5" y="21.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.2234" y="20.865" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="12.8234" y="18.865" size="0.635" layer="25" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VENDOR" value="Atmel" x="13.5" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R" x="26.1" y="41.8" smashed="yes">
-<attribute name="NAME" x="25.8" y="42.2001" size="1.27" layer="25"/>
+<attribute name="NAME" x="25.1" y="44.6001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="26.1" y="41.8" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="25.846" y="41.419" size="0.0254" layer="27"/>
 </element>
 <element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R" x="26.7" y="40.7" smashed="yes">
-<attribute name="NAME" x="26.4" y="41.1001" size="1.27" layer="25"/>
+<attribute name="NAME" x="25.6" y="43.8001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="26.7" y="40.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.446" y="40.319" size="0.0254" layer="27"/>
 </element>
 <element name="C2" library="oresat-rcl" package=".0402-B-NOSILK" value="100n" x="25.4" y="40.4" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM155R70J105KA12J " x="25.4" y="40.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="24.85" y="39.6" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="25.4" y="40.4" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="23.95" y="42.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="26.75" y="39.6" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R" x="23.1" y="37.9" smashed="yes">
-<attribute name="NAME" x="22.8" y="38.3001" size="1.27" layer="25"/>
+<attribute name="NAME" x="21.5" y="44.3001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="23.1" y="37.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="22.846" y="37.519" size="0.0254" layer="27"/>
 </element>
 <element name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R" x="22.1" y="37.9" smashed="yes">
-<attribute name="NAME" x="21.8" y="38.3001" size="1.27" layer="25"/>
+<attribute name="NAME" x="19.6" y="44.3001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="22.1" y="37.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="21.846" y="37.519" size="0.0254" layer="27"/>
 </element>
 <element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R" x="29.7" y="28.5" smashed="yes">
-<attribute name="NAME" x="29.4" y="28.9001" size="1.27" layer="25"/>
+<attribute name="NAME" x="30" y="26.2001" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="29.7" y="28.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.446" y="28.119" size="0.0254" layer="27"/>
 </element>
 <element name="C52" library="oresat-rcl" package=".0402-B-NOSILK" value="1u" x="29.7" y="37.6" smashed="yes">
 <attribute name="MPN" value="CGA2B2C0G1H100D050BA  " x="29.7" y="37.6" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29" y="38.15" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="NAME" x="29.7" y="37.6" size="0.2" layer="33" ratio="15" align="center"/>
-<attribute name="NAME" x="28.9" y="38.15" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="28.9" y="36.25" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X05" package3d_urn="urn:adsk.eagle:package:22469/2" value="" x="6.35" y="7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.1788" y="14.0462" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="5.6" y="14.4" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.175" y="13.97" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="55.88" y="66.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="55" y="71" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="55" y="71" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="52.705" y="70.39" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X09" package3d_urn="urn:adsk.eagle:package:22483/2" value="" x="55.88" y="12.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.7088" y="24.2062" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="57.7088" y="24.2062" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="52.705" y="24.13" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X08" package3d_urn="urn:adsk.eagle:package:22409/2" value="" x="55.88" y="50.07" smashed="yes" rot="R270">
-<attribute name="NAME" x="55.6938" y="60.7088" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="55.6938" y="60.7088" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="52.705" y="60.23" size="1.27" layer="27" rot="R270"/>
 </element>
 </elements>
