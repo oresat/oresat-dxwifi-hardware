@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16981,7 +16981,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U2" library="U-Generic-AT24C04-EEPROM-I2C-4Kb-TSSOP" deviceset="AT24C04C-XHM-T" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="U$14" library="3V3_D" deviceset="3V3_D" device=""/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R"/>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R"/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="100n">
 <attribute name="MPN" value="GRM155R70J105KA12J "/>
@@ -17010,6 +17009,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="SUPPLY80" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$15" library="3V3_D" deviceset="3V3_D" device=""/>
+<part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP06R" package3d_urn="urn:adsk.eagle:package:27954/1" value="TPTP06R"/>
 </parts>
 <sheets>
 <sheet>
@@ -17023,7 +17023,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="86.106" y="218.948" size="1.778" layer="97">Ground</text>
 <text x="86.106" y="216.408" size="1.778" layer="97">Ground</text>
 <text x="82.296" y="213.868" size="1.778" layer="97">Lab Supply</text>
-<text x="70.104" y="169.418" size="1.778" layer="97">NC</text>
 <text x="44.45" y="214.63" size="1.27" layer="97">To use USB for LDO input, connect
 connect Pin 3 to Pin 4 with jumper clip.</text>
 <text x="44.45" y="206.502" size="1.27" layer="97">To use lab supply, connect +5VDC to Pin 6
@@ -17334,10 +17333,6 @@ connect Pin 3 to Pin 4 with jumper clip.</text>
 <attribute name="DRAWING_NAME" x="342.9" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="U$14" gate="G$1" x="116.84" y="109.22" smashed="yes"/>
-<instance part="TP1" gate="G$1" x="163.83" y="127" smashed="yes">
-<attribute name="NAME" x="162.56" y="128.27" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="165.1" y="125.73" size="1.778" layer="97"/>
-</instance>
 <instance part="TP2" gate="G$1" x="170.18" y="127" smashed="yes">
 <attribute name="NAME" x="167.64" y="128.27" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="171.45" y="125.73" size="1.778" layer="97"/>
@@ -17373,6 +17368,10 @@ connect Pin 3 to Pin 4 with jumper clip.</text>
 <instance part="TP6" gate="G$1" x="130.81" y="137.16" smashed="yes">
 <attribute name="NAME" x="129.54" y="138.43" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="132.08" y="135.89" size="1.778" layer="97"/>
+</instance>
+<instance part="TP7" gate="G$1" x="77.47" y="185.42" smashed="yes">
+<attribute name="NAME" x="76.2" y="186.69" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="78.74" y="184.15" size="1.778" layer="97"/>
 </instance>
 </instances>
 <busses>
@@ -17759,11 +17758,8 @@ connect Pin 3 to Pin 4 with jumper clip.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="CTRL1"/>
 <pinref part="R7" gate="R" pin="2"/>
-<wire x1="163.83" y1="124.46" x2="163.83" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="163.83" y1="121.92" x2="163.83" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="121.92" x2="163.83" y2="121.92" width="0.1524" layer="91"/>
-<junction x="163.83" y="121.92"/>
 </segment>
 </net>
 <net name="TXRTUNE" class="0">
@@ -18314,6 +18310,14 @@ connect Pin 3 to Pin 4 with jumper clip.</text>
 <pinref part="U1" gate="G$1" pin="PDET"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
 <wire x1="236.22" y1="170.18" x2="237.49" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="69.85" y1="170.18" x2="77.47" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="170.18" x2="77.47" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -19431,10 +19435,10 @@ circuitry above are size 0201</text>
 <approved hash="113,2,139.596,107.846,FRAME2,,,,,"/>
 <approved hash="113,3,139.596,107.846,FRAME3,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME4,,,,,"/>
-<approved hash="113,1,327.897,207.236,JP1,,,,,"/>
-<approved hash="113,1,305.037,125.956,JP2,,,,,"/>
-<approved hash="113,1,373.617,98.0161,JP3,,,,,"/>
-<approved hash="113,1,98.8229,212.316,JP4,,,,,"/>
+<approved hash="113,1,327.897,207.206,JP1,,,,,"/>
+<approved hash="113,1,305.037,125.926,JP2,,,,,"/>
+<approved hash="113,1,373.617,97.9856,JP3,,,,,"/>
+<approved hash="113,1,98.8229,212.286,JP4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
