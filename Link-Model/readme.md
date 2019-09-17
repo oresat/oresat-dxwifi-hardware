@@ -1,6 +1,6 @@
 ### Link Budget Models for the DxWiFi Channel
 
-The source of these link model spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm).  The spreadsheets have been customized from revision 2.5.5 which are signified by a suffix letter.  In addition, for OreSat protocol information please visit our [GitHub protocol page](https://github.com/oresat/oresat-design/tree/gh-pages/protocol).  For OreSat's primary communication link models please visit our [Github C3 RF page](https://github.com/oresat/oresat-c3-rf/link-models)
+The source of these link model spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm).  The spreadsheets have been customized from revision 2.5.5 which are signified by a suffix letter.  In addition, for OreSat protocol information please visit our [GitHub protocol page](https://github.com/oresat/oresat-design/tree/gh-pages/protocol).  For OreSat's primary communication link models please visit our [GitHub C3 RF page](https://github.com/oresat/oresat-c3-rf/link-models)
 
 * The bulk-data mission uplink and downlink using UniClOGS (University Class Open Ground Station)
   * ___OreSat1_link_model_v2.5.5a_mission_data_uniclogs.xlsx  (PDF summary)___
@@ -21,4 +21,4 @@ Notes:
   - System noise temperature is more precise
 - The 'System Performance Summary' sheet has been customized
   - Power levels in dBm
-  - More link losses details
+  - More link details
