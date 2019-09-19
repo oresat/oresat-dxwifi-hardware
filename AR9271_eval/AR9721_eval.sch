@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17200,11 +17200,11 @@ STAND-OFF</description>
 <text x="86.106" y="218.948" size="1.778" layer="97">Ground</text>
 <text x="86.106" y="216.408" size="1.778" layer="97">Ground</text>
 <text x="82.296" y="213.868" size="1.778" layer="97">Lab Supply</text>
-<text x="44.45" y="214.63" size="1.27" layer="97">To use USB for LDO input, connect
-connect Pin 3 to Pin 4 with jumper clip.</text>
-<text x="44.45" y="206.502" size="1.27" layer="97">To use lab supply, connect +5VDC to Pin 6
- and Ground to Pin 7 or 8. Connect Pin 5 to
- Pin 4 with jumper clip.</text>
+<text x="44.45" y="214.63" size="1.27" layer="97">To use USB power for LDO input, connect
+connect Pin 5 to Pin 6 with jumper clip.</text>
+<text x="44.45" y="206.502" size="1.27" layer="97">To use lab supply, connect +5VDC to Pin 3
+ and Ground to Pin 7 or 8. Connect Pin 4 to
+ Pin 5 with jumper clip.</text>
 <text x="302.768" y="132.588" size="1.778" layer="97">Serial Port</text>
 <text x="375.158" y="112.268" size="1.778" layer="97">GPIOs (8)</text>
 <text x="349.758" y="160.528" size="1.778" layer="97">JTAG Port</text>
@@ -18896,8 +18896,8 @@ circuitry above are size 0201</text>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="U3" gate="A" x="69.85" y="182.88" smashed="yes">
-<attribute name="NAME" x="92.8116" y="192.5066" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="92.6846" y="189.2046" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="57.2516" y="195.0466" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="57.1246" y="191.7446" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="C1" gate="G$1" x="40.64" y="179.07" smashed="yes">
 <attribute name="NAME" x="42.164" y="179.451" size="1.778" layer="95"/>
@@ -18920,8 +18920,8 @@ circuitry above are size 0201</text>
 <attribute name="VALUE" x="64.008" y="166.497" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U4" gate="A" x="69.85" y="91.44" smashed="yes">
-<attribute name="NAME" x="92.5576" y="100.5586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="92.6846" y="97.5106" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="56.9976" y="103.0986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="57.1246" y="100.0506" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="C24" gate="G$1" x="40.64" y="87.63" smashed="yes">
 <attribute name="NAME" x="42.164" y="88.011" size="1.778" layer="95"/>
@@ -19028,8 +19028,8 @@ circuitry above are size 0201</text>
 </instance>
 <instance part="SUPPLY66" gate="GND" x="127" y="35.56" smashed="yes"/>
 <instance part="U5" gate="A" x="69.85" y="139.7" smashed="yes">
-<attribute name="NAME" x="92.8116" y="149.3266" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="92.6846" y="146.0246" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="57.2516" y="151.8666" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="57.1246" y="148.5646" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="C46" gate="G$1" x="40.64" y="135.89" smashed="yes">
 <attribute name="NAME" x="42.164" y="136.271" size="1.778" layer="95"/>
@@ -19052,8 +19052,8 @@ circuitry above are size 0201</text>
 <attribute name="VALUE" x="64.008" y="123.317" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U6" gate="A" x="69.85" y="45.72" smashed="yes">
-<attribute name="NAME" x="92.5576" y="54.8386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="92.6846" y="51.7906" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="56.9976" y="57.3786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="57.1246" y="54.3306" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="C49" gate="G$1" x="40.64" y="41.91" smashed="yes">
 <attribute name="NAME" x="42.164" y="42.291" size="1.778" layer="95"/>
