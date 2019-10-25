@@ -1,0 +1,48 @@
+RF layer1, layer 2 GND
+thickness of roger determines line width
+ground must be continuous under RF traces, keep away from RF
+flood 5V power on layer 3
+routing on layer 3 and layer 4
+ground on same layer as RF needs to 2x dialelectric thickness(distance between RF and GND) away. Try for >30 mils
+
+Questions:
+Special considerations for power/ground pins on RF ICs?
+3.3V power plane would remove a bunch of resistors
+component pads centered on RF trace?
+Sunstone annular ring size
+GND pads within keepout, should I use a long GND trace or a close via?
+different switch and header footprint?
+no solder mask on traces
+RF trace adjacent vias in pads
+more caps on the SMPS?
+power select header needs another position for lab supply in?
+Do high power ground header pins need thermals?
+Do I need thermals on ground plane?
+Add an extra test for how traces are necked into pads?
+update PSAS logo with silk circle
+
+TO-DO
+DONE Power Divider resistor
+DONE change ref des on SMPS to original
+approved DRC errors
+smaller vias!
+
+NEW TODO:
+DONE Window tCream
+DONE number header
+
+
+NEWER TODO:
+DONE Label LEDs
+DONE move vias out of stub keepout
+DONE breakoff holes aligned with edge
+DONE fix tDoc on logic section
+DONE change traces on logic to .2 and use bottom layer
+DONE pull in vias around caps on boost converter and check for small clearances
+DONE make tCream bigger on PA. 
+DONE Move vias out of tStop on PA footprint 
+DONE change width of tStop on RF traces
+DONE via spacing at 1.5mm to let 5v through
+
+FINAL
+What should I call the wifi card side, HOST?
