@@ -16269,7 +16269,7 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <smd name="18" x="0" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
 <smd name="19" x="-0.5" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
 <smd name="20" x="-1" y="2.05" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="21" x="0" y="0" dx="2.25" dy="2.25" layer="1" rot="R90"/>
+<smd name="21" x="0" y="0" dx="2.25" dy="2.25" layer="1" rot="R90" cream="no"/>
 <text x="2" y="-3" size="0.625" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="2" y="-4" size="0.625" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.1" layer="51"/>
@@ -16285,6 +16285,10 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2" y1="1.5" x2="-1.5" y2="2" width="0.127" layer="21"/>
 <circle x="-2.5" y="1.7" radius="0.22360625" width="0.127" layer="21"/>
+<rectangle x1="-1" y1="0.1" x2="-0.2" y2="0.9" layer="21"/>
+<rectangle x1="0.2" y1="0.1" x2="1" y2="0.9" layer="21"/>
+<rectangle x1="0.2" y1="-1" x2="1" y2="-0.2" layer="21"/>
+<rectangle x1="-1" y1="-1" x2="-0.2" y2="-0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
