@@ -16864,7 +16864,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-2GEJ103X"/>
 </part>
-<part name="U4" library="U-Qorvo-TQP3M903x-LNA" deviceset="TQP3M903X" device="">
+<part name="U4" library="U-Qorvo-TQP3M903x-LNA" deviceset="TQP3M903X" device="" value="TQP3M9037">
 <attribute name="MFR" value="Qorvo"/>
 <attribute name="MPN" value="TQP3M9037 "/>
 </part>
@@ -16983,7 +16983,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="L5" library="SamacSys_Parts" deviceset="0603CS-68NXJLW" device="" value="68nH">
 <attribute name="MPN" value="0603CS-18NXJLW"/>
 </part>
-<part name="U5" library="U-Qorvo-TQP3M903x-LNA" deviceset="TQP3M903X" device="">
+<part name="U5" library="U-Qorvo-TQP3M903x-LNA" deviceset="TQP3M903X" device="" value="TQP3M9037">
 <attribute name="MFR" value="Qorvo"/>
 <attribute name="MPN" value="TQP3M9037 "/>
 </part>
