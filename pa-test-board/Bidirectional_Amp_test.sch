@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -16718,6 +16718,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402"/>
 <attribute name="MFR" value="TDK"/>
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC"/>
 </part>
@@ -16728,6 +16729,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402"/>
 <attribute name="MFR" value="TDK"/>
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC"/>
 </part>
@@ -16738,6 +16740,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402"/>
 <attribute name="MFR" value="TDK"/>
 <attribute name="MPN" value="CGA2B1X7R1C104K050BC"/>
 </part>
@@ -16748,8 +16751,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="MFR" value="Murata"/>
-<attribute name="MPN" value="GCM1555C1H101JA16D"/>
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402"/>
+<attribute name="MFR" value="TDK"/>
+<attribute name="MPN" value="CGA2B1X7R1C104K050BC"/>
 </part>
 <part name="C19" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="1000pF">
 <spice>
@@ -16758,6 +16762,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 1000PF 50V NP0 0402"/>
 <attribute name="MFR" value="TDK"/>
 <attribute name="MPN" value="CGA2B2NP01H102J050BA"/>
 </part>
@@ -16768,6 +16773,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 100PF 50V C0G/NP0 0603"/>
 <attribute name="MFR" value="Murata"/>
 <attribute name="MPN" value="GCM1885C1H101JA16D "/>
 </part>
@@ -16778,8 +16784,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="MFR" value="Taiyo Yuden"/>
-<attribute name="MPN" value="UVK105CG030JW-F"/>
+<attribute name="DESCRIPTION" value="CAP CER 3PF 50V NP0 0402"/>
+<attribute name="MFR" value="AVX"/>
+<attribute name="MPN" value="04025U3R0BAT2A"/>
 </part>
 <part name="C22" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.5p">
 <spice>
@@ -16788,8 +16795,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="MFR" value="Taiyo Yuden"/>
-<attribute name="MPN" value="UVK105CG2R2JW-F"/>
+<attribute name="DESCRIPTION" value="Capacitor Thin Film 50V 2.5pF .03pFTol  0402"/>
+<attribute name="MFR" value="AVX"/>
+<attribute name="MPN" value="04025J2R5QBSTR "/>
 </part>
 <part name="C23" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1.6pF">
 <spice>
@@ -16798,10 +16806,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="MFR" value="Murata"/>
-<attribute name="MPN" value="GJM1555C1H1R6BB01D"/>
+<attribute name="DESCRIPTION" value="CAP CER 1.6PF 50V NP0 0402"/>
+<attribute name="MFR" value="AVX"/>
+<attribute name="MPN" value="04025U1R6BAT2A"/>
 </part>
-<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.2nH"/>
+<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.0nH">
+<attribute name="DESCRIPTION" value="FIXED IND 1NH 500MA 100 MOHM SMD"/>
+<attribute name="MFR" value="TDK Corporation"/>
+<attribute name="MPN" value="MLK1005S1N0ST000"/>
+</part>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0">
 <spice>
 <pinmapping spiceprefix="R">
@@ -16809,16 +16822,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="RES SMD 0 OHM JUMPER 1/8W 0805"/>
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-6GEY0R00V"/>
 </part>
 <part name="R19" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="110">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
+<attribute name="DESCRIPTION" value="RES SMD 110 OHM 1% 1/10W 0402"/>
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-2RKF1100X"/>
 </part>
@@ -16829,6 +16838,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="RES SMD 220 OHM 1% 1/10W 0603"/>
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-3EKF2200V"/>
 </part>
@@ -16848,6 +16858,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="RES SMD 1K OHM 5% 1/10W 0402"/>
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-2GEJ102X"/>
 </part>
@@ -16861,6 +16872,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="RES SMD 1K OHM 5% 1/10W 0402"/>
 <attribute name="MFR" value="Panasonic"/>
 <attribute name="MPN" value="ERJ-2GEJ102X"/>
 </part>
@@ -16877,10 +16889,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 4.7UF 16V X7R 1206"/>
 <attribute name="MFR" value="Murata"/>
 <attribute name="MPN" value="GCJ31CR71C475KA01L"/>
-<attribute name="SIZE" value="1206"/>
-<attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="SUPPLY106" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -16891,12 +16902,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESCRIPTION" value="CAP CER 22UF 16V X7R 1210"/>
 <attribute name="MFR" value="Murata"/>
 <attribute name="MPN" value="GCJ32ER71C226KE01L"/>
 </part>
 <part name="SUPPLY107" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY108" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SW1" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="TL36PO" device="" package3d_urn="urn:adsk.eagle:package:27745/1">
+<attribute name="DESCRIPTION" value="SWITCH TOGGLE SPDT 0.4VA 20V"/>
 <attribute name="MFR" value="APEM Inc."/>
 <attribute name="MPN" value="TL36P005000"/>
 <attribute name="POPULARITY" value=""/>
@@ -16904,19 +16917,52 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U10" library="oresat-samacsys_Parts" deviceset="TQP9111" device=""/>
-<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="L4" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.2n"/>
-<part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
-<part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="L5" library="oresat-rcl" deviceset="L-US" device="0805-C-NOSILK" value="6.8n"/>
-<part name="L2" library="oresat-rcl" deviceset="L-US" device="0805-C-NOSILK" value="10n">
-<attribute name="MFR" value="CoilCraft"/>
-<attribute name="MPN" value="0807SQ-10n"/>
+<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2">
+<attribute name="DESCRIPTION" value="CONN HEADER VERT 4POS 2.54MM"/>
+<attribute name="MFR" value="Molex"/>
+<attribute name="MPN" value="0022232041"/>
 </part>
-<part name="J3" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="J4" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="L4" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.2n">
+<attribute name="DESCRIPTION" value="1.2nH RF Inductor, ceramic core, 5% tol, SMT, RoHS, halogen-free "/>
+<attribute name="MFR" value="Coilcraft"/>
+<attribute name="MPN" value="0402CT-1N2XJRW"/>
+</part>
+<part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device="">
+<attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT"/>
+<attribute name="MFR" value="Cinch Connectivity Solutions Johnson"/>
+<attribute name="MPN" value="142-0701-851"/>
+</part>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0">
+<attribute name="DESCRIPTION" value="RES SMD 0 OHM JUMPER 1/10W 0402"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MPN" value="ERJ-2GE0R00X"/>
+</part>
+<part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device="">
+<attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT"/>
+<attribute name="MFR" value="Cinch Connectivity Solutions Johnson"/>
+<attribute name="MPN" value="142-0701-851"/>
+</part>
+<part name="L5" library="oresat-rcl" deviceset="L-US" device="0805-C-NOSILK" value="6.8n">
+<attribute name="DESCRIPTION" value="Fixed Inductors 0805CS 6.8 nH 5 % 0.6 A"/>
+<attribute name="MFR" value="Coilcraft"/>
+<attribute name="MPN" value="0805CS-060XJLC"/>
+</part>
+<part name="L2" library="oresat-rcl" deviceset="L-US" device="0805-C-NOSILK" value="10n">
+<attribute name="DESCRIPTION" value="Fixed Inductors 080xSQ AirCore RF 10.2 nH 2 % 2.7 A "/>
+<attribute name="MFR" value="Coilcraft"/>
+<attribute name="MPN" value="0807SQ-10NGLB"/>
+</part>
+<part name="J3" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device="">
+<attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT"/>
+<attribute name="MFR" value="Cinch Connectivity Solutions Johnson"/>
+<attribute name="MPN" value="142-0701-851"/>
+</part>
+<part name="J4" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device="">
+<attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT"/>
+<attribute name="MFR" value="Cinch Connectivity Solutions Johnson"/>
+<attribute name="MPN" value="142-0701-851"/>
+</part>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
@@ -16959,75 +17005,90 @@ indicates +5VDC On</text>
 <attribute name="NAME" x="96.774" y="159.131" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.774" y="156.591" size="1.778" layer="96"/>
 <attribute name="MFR" x="93.98" y="158.75" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="93.98" y="158.75" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C16" gate="CE" x="144.78" y="158.75" smashed="yes">
 <attribute name="MPN" x="144.78" y="158.75" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="147.574" y="159.131" size="1.778" layer="95"/>
 <attribute name="VALUE" x="147.574" y="156.591" size="1.778" layer="96"/>
 <attribute name="MFR" x="144.78" y="158.75" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="144.78" y="158.75" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C17" gate="CE" x="158.75" y="158.75" smashed="yes">
 <attribute name="MPN" x="158.75" y="158.75" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="161.544" y="159.131" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.544" y="156.591" size="1.778" layer="96"/>
 <attribute name="MFR" x="158.75" y="158.75" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="158.75" y="158.75" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C18" gate="CE" x="144.78" y="86.36" smashed="yes">
 <attribute name="MPN" x="144.78" y="86.36" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="147.574" y="86.741" size="1.778" layer="95"/>
 <attribute name="VALUE" x="147.574" y="84.201" size="1.778" layer="96"/>
 <attribute name="MFR" x="144.78" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="144.78" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C19" gate="CE" x="107.95" y="158.75" smashed="yes">
 <attribute name="MPN" x="107.95" y="158.75" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="110.744" y="159.131" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.744" y="156.591" size="1.778" layer="96"/>
 <attribute name="MFR" x="107.95" y="158.75" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="107.95" y="158.75" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C20" gate="CE" x="196.85" y="119.38" smashed="yes" rot="R90">
 <attribute name="MPN" x="196.85" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="NAME" x="200.279" y="125.984" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="202.819" y="123.444" size="1.778" layer="96" rot="R180"/>
 <attribute name="MFR" x="196.85" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="196.85" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C21" gate="CE" x="163.83" y="115.57" smashed="yes">
 <attribute name="NAME" x="165.354" y="115.951" size="1.778" layer="95"/>
 <attribute name="VALUE" x="166.624" y="113.411" size="1.778" layer="96"/>
 <attribute name="MPN" x="163.83" y="115.57" size="1.778" layer="96" display="off"/>
 <attribute name="MFR" x="163.83" y="115.57" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="163.83" y="115.57" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C22" gate="CE" x="99.06" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="98.679" y="122.174" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="101.219" y="122.174" size="1.778" layer="96" rot="R90"/>
 <attribute name="MPN" x="99.06" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="99.06" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="99.06" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C23" gate="CE" x="181.61" y="115.57" smashed="yes">
 <attribute name="NAME" x="183.134" y="115.951" size="1.778" layer="95"/>
 <attribute name="VALUE" x="184.404" y="113.411" size="1.778" layer="96"/>
 <attribute name="MPN" x="181.61" y="115.57" size="1.778" layer="96" display="off"/>
 <attribute name="MFR" x="181.61" y="115.57" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="181.61" y="115.57" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="L3" gate="L" x="173.99" y="119.38" smashed="yes">
 <attribute name="NAME" x="167.64" y="123.19" size="1.778" layer="95" align="center-left"/>
+<attribute name="DESCRIPTION" x="173.99" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MFR" x="173.99" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="173.99" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R17" gate="G$1" x="132.08" y="181.61" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.5814" y="185.42" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="129.032" y="182.88" size="1.778" layer="96" rot="R180"/>
 <attribute name="MPN" x="132.08" y="181.61" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="132.08" y="181.61" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="132.08" y="181.61" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R19" gate="R" x="132.08" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="134.3914" y="87.63" size="1.778" layer="95"/>
 <attribute name="VALUE" x="134.112" y="85.09" size="1.778" layer="96"/>
 <attribute name="MPN" x="132.08" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="132.08" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="132.08" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R20" gate="R" x="138.43" y="151.13" smashed="yes" rot="R90">
 <attribute name="NAME" x="136.9314" y="144.018" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="136.652" y="151.13" size="1.778" layer="96" rot="R90"/>
 <attribute name="MPN" x="138.43" y="151.13" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="138.43" y="151.13" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="138.43" y="151.13" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY38" gate="GND" x="93.98" y="151.13" smashed="yes"/>
 <instance part="SUPPLY39" gate="GND" x="107.95" y="151.13" smashed="yes"/>
@@ -17047,36 +17108,51 @@ indicates +5VDC On</text>
 <instance part="L4" gate="L" x="93.98" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="91.44" y="106.68" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="95.25" y="106.68" size="1.778" layer="96" rot="R90" align="top-left"/>
+<attribute name="DESCRIPTION" x="93.98" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFR" x="93.98" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="93.98" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="J2" gate="G$1" x="68.58" y="119.38" smashed="yes">
 <attribute name="NAME" x="66.04" y="114.3" size="1.778" layer="95"/>
 <attribute name="VALUE" x="66.04" y="111.76" size="1.778" layer="96"/>
+<attribute name="DESCRIPTION" x="68.58" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MFR" x="68.58" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="68.58" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R1" gate="R" x="81.28" y="119.38" smashed="yes">
 <attribute name="NAME" x="77.47" y="120.8786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.47" y="116.078" size="1.778" layer="96"/>
+<attribute name="DESCRIPTION" x="81.28" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MFR" x="81.28" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="81.28" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="G$1" x="222.25" y="119.38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="224.79" y="114.3" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="224.79" y="111.76" size="1.778" layer="96" rot="MR0"/>
+<attribute name="DESCRIPTION" x="222.25" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFR" x="222.25" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="222.25" y="119.38" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="L5" gate="L" x="125.73" y="153.67" smashed="yes" rot="R90">
 <attribute name="NAME" x="123.19" y="148.59" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="123.19" y="153.67" size="1.778" layer="96" rot="MR90" align="top-left"/>
+<attribute name="DESCRIPTION" x="125.73" y="153.67" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFR" x="125.73" y="153.67" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="125.73" y="153.67" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="L2" gate="L" x="132.08" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.54" y="148.59" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="129.54" y="153.67" size="1.778" layer="96" rot="MR90" align="top-left"/>
 <attribute name="MPN" x="132.08" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="132.08" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="132.08" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C34" gate="G$1" x="39.37" y="157.48" smashed="yes">
 <attribute name="MPN" x="39.37" y="157.48" size="1.778" layer="96" display="off"/>
-<attribute name="SIZE" x="39.37" y="157.48" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="39.37" y="157.48" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="42.164" y="157.861" size="1.778" layer="95"/>
 <attribute name="VALUE" x="42.164" y="155.321" size="1.778" layer="96"/>
 <attribute name="MFR" x="39.37" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="39.37" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY106" gate="GND" x="39.37" y="149.86" smashed="yes"/>
 <instance part="P+15" gate="1" x="39.37" y="173.99" smashed="yes">
@@ -17087,18 +17163,23 @@ indicates +5VDC On</text>
 <attribute name="NAME" x="56.134" y="157.861" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.404" y="155.321" size="1.778" layer="96"/>
 <attribute name="MFR" x="54.61" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="54.61" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY107" gate="GND" x="54.61" y="149.86" smashed="yes"/>
 <instance part="SUPPLY108" gate="GND" x="33.02" y="152.4" smashed="yes"/>
 <instance part="JP6" gate="A" x="21.59" y="160.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="27.94" y="168.275" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="27.94" y="152.4" size="1.778" layer="96" rot="MR0"/>
+<attribute name="DESCRIPTION" x="21.59" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFR" x="21.59" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="21.59" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="R32" gate="R" x="109.22" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="106.4514" y="54.61" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="106.172" y="52.07" size="1.778" layer="96" rot="R180"/>
 <attribute name="MPN" x="109.22" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="109.22" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="109.22" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY71" gate="GND" x="109.22" y="43.18" smashed="yes"/>
 <instance part="LED1" gate="G$1" x="109.22" y="60.96" smashed="yes" rot="R90">
@@ -17112,6 +17193,7 @@ indicates +5VDC On</text>
 <attribute name="VALUE" x="73.152" y="172.72" size="1.778" layer="96" rot="R180"/>
 <attribute name="MPN" x="76.2" y="173.99" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFR" x="76.2" y="173.99" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="76.2" y="173.99" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY82" gate="GND" x="76.2" y="166.37" smashed="yes"/>
 <instance part="P+12" gate="1" x="76.2" y="200.66" smashed="yes">
@@ -17126,6 +17208,7 @@ indicates +5VDC On</text>
 <attribute name="VALUE" x="93.98" y="87.63" size="1.778" layer="96" rot="R180"/>
 <attribute name="MFR" x="91.44" y="80.01" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="91.44" y="80.01" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="91.44" y="80.01" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY1" gate="GND" x="83.82" y="73.66" smashed="yes"/>
 <instance part="P+1" gate="1" x="83.82" y="90.17" smashed="yes">
@@ -17134,10 +17217,16 @@ indicates +5VDC On</text>
 <instance part="J3" gate="G$1" x="189.23" y="182.88" smashed="yes">
 <attribute name="NAME" x="186.69" y="177.8" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.69" y="175.26" size="1.778" layer="96"/>
+<attribute name="DESCRIPTION" x="189.23" y="182.88" size="1.778" layer="96" display="off"/>
+<attribute name="MFR" x="189.23" y="182.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="189.23" y="182.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J4" gate="G$1" x="217.17" y="182.88" smashed="yes" rot="MR0">
 <attribute name="NAME" x="219.71" y="177.8" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="219.71" y="175.26" size="1.778" layer="96" rot="MR0"/>
+<attribute name="DESCRIPTION" x="217.17" y="182.88" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFR" x="217.17" y="182.88" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="217.17" y="182.88" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="SUPPLY2" gate="GND" x="193.04" y="171.45" smashed="yes"/>
 <instance part="SUPPLY4" gate="GND" x="213.36" y="171.45" smashed="yes"/>
