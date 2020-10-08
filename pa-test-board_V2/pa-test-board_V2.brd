@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="58" fill="1" visible="no" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -170,10 +170,10 @@
 <wire x1="30" y1="43.5" x2="29.5" y2="44" width="0" layer="20" curve="90"/>
 <wire x1="29.5" y1="44" x2="0.5" y2="44" width="0" layer="20"/>
 <wire x1="0.5" y1="44" x2="0" y2="43.5" width="0" layer="20" curve="90"/>
-<text x="26.0415" y="5.2099125" size="1" layer="21" font="vector" ratio="15" rot="R90">ORESAT DxWiFi
-PA TEST BOARD </text>
+<text x="24.3415" y="6.1099125" size="1" layer="21" font="vector" ratio="15" rot="R90">ORESAT DxWiFi
+PA TEST BOARD v2</text>
 <text x="29.1415" y="6.3099125" size="0.75" layer="21" font="vector" ratio="15" rot="R90">OLIVER JONES
-2020-03-09</text>
+2020-10-08</text>
 <text x="5.2" y="27.8" size="1" layer="21" font="vector" ratio="15">IN</text>
 <text x="13.5" y="0.5" size="1" layer="21" font="vector" ratio="15">+5.0V</text>
 <text x="19.4" y="0.5" size="1" layer="21" font="vector" ratio="15">GND</text>
@@ -183,13 +183,9 @@ PA TEST BOARD </text>
 <wire x1="30.7" y1="33.5" x2="30.7" y2="31.5" width="0" layer="41"/>
 <rectangle x1="12.4" y1="30.5" x2="12.7" y2="34.5" layer="29"/>
 <rectangle x1="10.6" y1="30.5" x2="12.2" y2="34.5" layer="29"/>
-<rectangle x1="8" y1="30.5" x2="10.4" y2="34.5" layer="29"/>
-<rectangle x1="2.2" y1="30.5" x2="7.8" y2="34.5" layer="29"/>
 <rectangle x1="0" y1="30.5" x2="2" y2="34.5" layer="29"/>
 <rectangle x1="2" y1="30.5" x2="2.2" y2="32.2" layer="29"/>
 <rectangle x1="2" y1="32.8" x2="2.2" y2="34.5" layer="29"/>
-<rectangle x1="7.8" y1="32.8" x2="8" y2="34.5" layer="29"/>
-<rectangle x1="7.8" y1="30.5" x2="8" y2="32.2" layer="29"/>
 <rectangle x1="10.4" y1="30.5" x2="10.6" y2="32.2" layer="29"/>
 <rectangle x1="10.4" y1="32.8" x2="10.6" y2="34.5" layer="29"/>
 <rectangle x1="12.2" y1="32.8" x2="12.4" y2="34.5" layer="29"/>
@@ -197,26 +193,42 @@ PA TEST BOARD </text>
 <rectangle x1="28" y1="30.5" x2="30" y2="34.5" layer="29" rot="R180"/>
 <rectangle x1="27.8" y1="32.8" x2="28" y2="34.5" layer="29" rot="R180"/>
 <rectangle x1="27.8" y1="30.5" x2="28" y2="32.2" layer="29" rot="R180"/>
-<rectangle x1="23.7" y1="30.5" x2="25.3" y2="34.5" layer="29"/>
-<rectangle x1="25.3" y1="32.8" x2="25.5" y2="34.5" layer="29" rot="R180"/>
-<rectangle x1="25.3" y1="30.5" x2="25.5" y2="32.2" layer="29" rot="R180"/>
-<rectangle x1="23.5" y1="30.5" x2="23.7" y2="32.2" layer="29" rot="R180"/>
-<rectangle x1="23.5" y1="32.8" x2="23.7" y2="34.5" layer="29" rot="R180"/>
-<rectangle x1="22.4" y1="30.5" x2="22.6" y2="32.2" layer="29" rot="R180"/>
-<rectangle x1="22.4" y1="32.8" x2="22.6" y2="34.5" layer="29" rot="R180"/>
+<rectangle x1="22.4" y1="30.5" x2="24" y2="34.5" layer="29"/>
+<rectangle x1="24" y1="32.8" x2="24.2" y2="34.5" layer="29" rot="R180"/>
+<rectangle x1="24" y1="30.5" x2="24.2" y2="32.2" layer="29" rot="R180"/>
+<rectangle x1="22.2" y1="30.5" x2="22.4" y2="32.2" layer="29" rot="R180"/>
+<rectangle x1="22.2" y1="32.8" x2="22.4" y2="34.5" layer="29" rot="R180"/>
 <rectangle x1="18.4" y1="32.8" x2="18.6" y2="34.5" layer="29" rot="R180"/>
 <rectangle x1="18.6" y1="30.5" x2="19.4" y2="34.5" layer="29"/>
-<rectangle x1="19.7" y1="30.5" x2="21.3" y2="34.5" layer="29"/>
-<rectangle x1="25.5" y1="30.5" x2="27.8" y2="34.5" layer="29"/>
+<rectangle x1="19.6" y1="30.5" x2="21.2" y2="34.5" layer="29"/>
 <rectangle x1="18.4" y1="30.5" x2="18.6" y2="32.2" layer="29" rot="R180"/>
-<rectangle x1="21.6" y1="30.5" x2="22.4" y2="34.5" layer="29"/>
-<rectangle x1="22.6" y1="30.5" x2="23.5" y2="34.5" layer="29"/>
-<rectangle x1="21.3" y1="30.5" x2="21.6" y2="32.2" layer="29"/>
-<rectangle x1="21.3" y1="32.8" x2="21.6" y2="34.5" layer="29"/>
-<rectangle x1="19.4" y1="32.8" x2="19.7" y2="34.5" layer="29"/>
-<rectangle x1="19.4" y1="30.5" x2="19.7" y2="32.2" layer="29"/>
+<rectangle x1="21.4" y1="30.5" x2="22.2" y2="34.5" layer="29"/>
 <rectangle x1="17.9" y1="30.5" x2="18.4" y2="34.5" layer="29"/>
 <rectangle x1="0" y1="19" x2="30" y2="23" layer="29"/>
+<circle x="15.5" y="31.8" radius="0.2" width="0" layer="30"/>
+<circle x="16.1" y="31.8" radius="0.2" width="0" layer="30"/>
+<circle x="14.9" y="31.8" radius="0.2" width="0" layer="30"/>
+<circle x="14.6" y="32.3" radius="0.2" width="0" layer="30"/>
+<circle x="15.2" y="32.3" radius="0.2" width="0" layer="30"/>
+<circle x="15.8" y="32.3" radius="0.2" width="0" layer="30"/>
+<circle x="16.1" y="32.8" radius="0.2" width="0" layer="30"/>
+<circle x="15.5" y="32.8" radius="0.2" width="0" layer="30"/>
+<circle x="14.9" y="32.8" radius="0.2" width="0" layer="30"/>
+<circle x="14.6" y="33.3" radius="0.2" width="0" layer="30"/>
+<circle x="15.2" y="33.3" radius="0.2" width="0" layer="30"/>
+<circle x="15.8" y="33.3" radius="0.2" width="0" layer="30"/>
+<rectangle x1="8.8" y1="30.5" x2="10.4" y2="34.5" layer="29"/>
+<rectangle x1="8.6" y1="32.8" x2="8.8" y2="34.5" layer="29"/>
+<rectangle x1="8.6" y1="30.5" x2="8.8" y2="32.2" layer="29"/>
+<rectangle x1="7.8" y1="30.5" x2="8.6" y2="34.5" layer="29"/>
+<rectangle x1="7.6" y1="32.8" x2="7.8" y2="34.5" layer="29"/>
+<rectangle x1="7.6" y1="30.5" x2="7.8" y2="32.2" layer="29"/>
+<rectangle x1="2.2" y1="30.5" x2="7.6" y2="34.5" layer="29"/>
+<rectangle x1="19.4" y1="32.8" x2="19.6" y2="34.5" layer="29" rot="R180"/>
+<rectangle x1="19.4" y1="30.5" x2="19.6" y2="32.2" layer="29" rot="R180"/>
+<rectangle x1="21.2" y1="32.8" x2="21.4" y2="34.5" layer="29" rot="R180"/>
+<rectangle x1="21.2" y1="30.5" x2="21.4" y2="32.2" layer="29" rot="R180"/>
+<rectangle x1="24.2" y1="30.5" x2="27.8" y2="34.5" layer="29"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2979,26 +2991,26 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="C15" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="10.3" y="37.3" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="10.3" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="TDK" x="10.3" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="10.3" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.2752375" y="36.930853125" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="10.935" y="39.205" size="1.27" layer="27" rot="R180"/>
+<element name="C15" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="9.4" y="37.3" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="9.4" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="TDK" x="9.4" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="9.4" y="37.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="6.3752375" y="36.930853125" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="10.035" y="39.205" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C16" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="17.2" y="38.2" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="17.2" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="TDK" x="17.2" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="17.2" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="17.51875" y="39.3625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="15.295" y="38.835" size="1.27" layer="27" rot="R270"/>
+<element name="C16" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="17.7" y="38.1" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="17.7" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="TDK" x="17.7" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="17.7" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="18.01875" y="39.2625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="15.795" y="38.735" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C17" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="18.3" y="38.2" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="18.3" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="TDK" x="18.3" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="18.3" y="38.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="18.61875" y="39.2625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="16.395" y="38.835" size="1.27" layer="27" rot="R270"/>
+<element name="C17" library="oresat-rcl" package=".0402-B-NOSILK" value="100nF" x="18.8" y="38.1" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="18.8" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="TDK" x="18.8" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="CGA2B1X7R1C104K050BC" x="18.8" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.11875" y="39.1625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="16.895" y="38.735" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C18" library="oresat-rcl" package=".0402-C-NOSILK" value="100nF" x="16.6" y="29.2" smashed="yes">
 <attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="16.6" y="29.2" size="1.778" layer="27" display="off"/>
@@ -3007,19 +3019,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="15.84925625" y="27.97421875" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="15.965" y="27.295" size="1.27" layer="27"/>
 </element>
-<element name="C19" library="oresat-rcl" package=".0402-B-NOSILK" value="1000pF" x="10.3" y="36.2" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="CAP CER 1000PF 50V NP0 0402" x="10.3" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="TDK" x="10.3" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="CGA2B2NP01H102J050BA" x="10.3" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.229321875" y="35.8493" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="10.935" y="38.105" size="1.27" layer="27" rot="R180"/>
+<element name="C19" library="oresat-rcl" package=".0402-B-NOSILK" value="1000pF" x="9.4" y="36.2" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="CAP CER 1000PF 50V NP0 0402" x="9.4" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="TDK" x="9.4" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CGA2B2NP01H102J050BA" x="9.4" y="36.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="6.329321875" y="35.8493" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="10.035" y="38.105" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C20" library="oresat-rcl" package=".0402-C-NOSILK" value="100pF" x="24.5" y="32.5" smashed="yes">
-<attribute name="DESCRIPTION" value="CAP CER 100PF 50V C0G/NP0 0603" x="24.5" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Murata" x="24.5" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GCM1885C1H101JA16D " x="24.5" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="23.865" y="29.735" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="23.865" y="30.595" size="1.27" layer="27"/>
+<element name="C20" library="oresat-rcl" package=".0402-C-NOSILK" value="100pF" x="23.2" y="32.5" smashed="yes">
+<attribute name="DESCRIPTION" value="CAP CER 100PF 50V C0G/NP0 0603" x="23.2" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata" x="23.2" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GCM1885C1H101JA16D " x="23.2" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="22.565" y="29.735" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="22.565" y="30.595" size="1.27" layer="27"/>
 </element>
 <element name="C21" library="oresat-rcl" package=".0402-C-NOSILK" value="3.0pF" x="19" y="32.05" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="CAP CER 3PF 50V NP0 0402" x="19" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3028,19 +3040,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="19.34049375" y="28.88379375" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="17.095" y="32.685" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C22" library="oresat-rcl" package=".0402-C-NOSILK" value="1.2pF" x="11.4" y="32.5" smashed="yes">
-<attribute name="DESCRIPTION" value="Capacitor Thin Film 50V 1.2pF .02pFTol  0402" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="AVX" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="04025J1R2PBSTR" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.74625" y="29.7960625" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="10.765" y="30.595" size="1.27" layer="27"/>
+<element name="C22" library="oresat-rcl" package=".0402-C-NOSILK" value="1.2pF" x="9.6" y="32.5" smashed="yes">
+<attribute name="DESCRIPTION" value="Capacitor Thin Film 50V 1.2pF .02pFTol  0402" x="9.6" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="AVX" x="9.6" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="04025J1R2PBSTR" x="9.6" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="8.84625" y="29.6960625" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="8.965" y="30.595" size="1.27" layer="27"/>
 </element>
-<element name="C23" library="oresat-rcl" package=".0402-C-NOSILK" value="1.6pF" x="22" y="32.05" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="CAP CER 1.6PF 50V NP0 0402" x="22" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="AVX" x="22" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="04025U1R6BAT2A" x="22" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="22.318790625" y="28.93888125" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="20.095" y="32.685" size="1.27" layer="27" rot="R270"/>
+<element name="C23" library="oresat-rcl" package=".0402-C-NOSILK" value="1.6pF" x="21.8" y="32.05" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="CAP CER 1.6PF 50V NP0 0402" x="21.8" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="AVX" x="21.8" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="04025U1R6BAT2A" x="21.8" y="32.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="22.118790625" y="28.93888125" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="19.895" y="32.685" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="H1" library="SparkFun-Hardware" package="STAND-OFF-TIGHT" value="STAND-OFFTIGHT" x="27" y="41" smashed="yes" rot="R90">
 <attribute name="VALUE" x="28.651" y="41" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
@@ -3058,7 +3070,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DESCRIPTION" value="LED,SMD,0603,Red,Lite-On  1608 (0603), Rectangle Lens SMD Package" x="15" y="13.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Lite-On" x="15" y="13.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C193KRKT-5A" x="15" y="13.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.44375" y="12.11875" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="17.4" y="12.2" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="15" y="13.1" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="LED2" library="SamacSys_Parts" package="LEDC1607X80N" value="LTST-C193KGKT-5A" x="19.7" y="13.1" smashed="yes" rot="R180">
@@ -3068,13 +3080,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="22.09375" y="12.15" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="19.7" y="13.1" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0" x="10.2" y="39.4" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="RES SMD 0 OHM JUMPER 1/8W 0805" x="10.2" y="39.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Panasonic" x="10.2" y="39.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ERJ-6GEY0R00V" x="10.2" y="39.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="9.49506875" y="40.42828125" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="SPICEPREFIX" value="R" x="10.2" y="39.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="10.835" y="39.94" size="1.27" layer="27" rot="R180"/>
+<element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0" x="9.3" y="39.1" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="RES SMD 0 OHM JUMPER 1/8W 0805" x="9.3" y="39.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic" x="9.3" y="39.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ERJ-6GEY0R00V" x="9.3" y="39.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="8.59506875" y="40.12828125" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="SPICEPREFIX" value="R" x="9.3" y="39.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="9.935" y="39.64" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R19" library="oresat-rcl" package=".0402-B-NOSILK" value="110" x="14.8" y="29.2" smashed="yes">
 <attribute name="DESCRIPTION" value="RES SMD 110 OHM 1% 1/10W 0402" x="14.8" y="29.2" size="1.778" layer="27" display="off"/>
@@ -3083,12 +3095,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="14.0467875" y="27.936" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="14.165" y="27.295" size="1.27" layer="27"/>
 </element>
-<element name="R20" library="oresat-rcl" package=".0603-C-NOSILK" value="220" x="19.4" y="38.2" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="RES SMD 220 OHM 1% 1/10W 0603" x="19.4" y="38.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Panasonic" x="19.4" y="38.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="ERJ-3EKF2200V" x="19.4" y="38.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="19.71875" y="39.4625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="21.305" y="37.565" size="1.27" layer="27" rot="R90"/>
+<element name="R20" library="oresat-rcl" package=".0603-C-NOSILK" value="220" x="19.9" y="38.1" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="RES SMD 220 OHM 1% 1/10W 0603" x="19.9" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Panasonic" x="19.9" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="ERJ-3EKF2200V" x="19.9" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="20.21875" y="39.3625" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="21.805" y="37.465" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R32" library="oresat-rcl" package=".0402-B-NOSILK" value="1k" x="15" y="14.6" smashed="yes">
 <attribute name="DESCRIPTION" value="RES SMD 1K OHM 5% 1/10W 0402" x="15" y="14.6" size="1.778" layer="27" display="off"/>
@@ -3144,13 +3156,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="POPULARITY" value="91" x="18.09" y="3.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="13.01" y="0.135" size="1.27" layer="27"/>
 </element>
-<element name="L4" library="oresat-rcl" package=".0402-C-NOSILK" value="1.7nH" x="10" y="32.05" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="1.7nH RF Inductor, ceramic core, 5% tol, SMT, RoHS" x="10" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Coilcraft" x="10" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="0402DC-1N7XJRU" x="10" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.2" y="29.55" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="NAME" x="10" y="32.05" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE" x="11.4" y="31.35" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
+<element name="L4" library="oresat-rcl" package=".0402-C-NOSILK" value="1.7nH" x="8.2" y="32.05" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="1.7nH RF Inductor, ceramic core, 5% tol, SMT, RoHS" x="8.2" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Coilcraft" x="8.2" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="0402DC-1N7XJRU" x="8.2" y="32.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="8.2" y="32.05" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="8.4" y="29.55" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="9.6" y="31.35" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851" value="142-0701-851" x="0" y="32.5" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT" x="0" y="32.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3164,13 +3176,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="142-0701-851" x="30" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.15" y="36.56" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="L5" library="oresat-rcl" package=".0805-C-NOSILK" value="6.8nH" x="12.9" y="36.4" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="Fixed Inductors 0805CS 6.8 nH 5 % 0.6 A" x="12.9" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Coilcraft" x="12.9" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="0805CS-060XJLC" x="12.9" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="11.75" y="37.25" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="12.9" y="36.4" size="0.4" layer="33" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE" x="14.15" y="38.05" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
+<element name="L5" library="oresat-rcl" package=".0805-C-NOSILK" value="6.8nH" x="11.8" y="36.4" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="Fixed Inductors 0805CS 6.8 nH 5 % 0.6 A" x="11.8" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Coilcraft" x="11.8" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="0805CS-060XJLC" x="11.8" y="36.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.8" y="36.4" size="0.4" layer="33" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="10.65" y="37.25" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="13.05" y="38.05" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="J3" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851" value="142-0701-851" x="0" y="21" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="CONN SMA JACK STR 50OHM EDGE MNT" x="0" y="21" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3184,28 +3196,28 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="142-0701-851" x="30" y="21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.05" y="25.06" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="L3" library="oresat-rcl" package=".0402-C-NOSILK" value="1.0nH" x="-8" y="-3" smashed="yes">
-<attribute name="DESCRIPTION" value="FIXED IND 1NH 500MA 100 MOHM SMD" x="-8" y="-3" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="TDK Corporation" x="-8" y="-3" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MLK1005S1N0ST000" x="-8" y="-3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-8" y="-3" size="0.2" layer="33" ratio="15" align="center"/>
-<attribute name="NAME" x="-8.7" y="-2.55" size="0.8" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-8.7" y="-4.25" size="0.8" layer="27" font="vector" ratio="15"/>
+<element name="L3" library="oresat-rcl" package=".0402-C-NOSILK" value="1.0nH" x="20.4" y="32.5" smashed="yes">
+<attribute name="DESCRIPTION" value="FIXED IND 1NH 500MA 100 MOHM SMD" x="20.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="20.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MLK1005S1N0ST000" x="20.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="20.1" y="29.75" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="20.4" y="32.5" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="VALUE" x="19.7" y="31.25" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="L2" library="oresat-samacsys_Parts" package="INDC2928X203N" value="10nH" x="-5" y="-7" smashed="yes">
-<attribute name="DESCRIPTION" value="Fixed Inductors 1008 10nH Unshld 5% 1.6A 60mOhms" x="-5" y="-7" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="COILCRAFT" x="-5" y="-7" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1008HQ-10NXJLB" x="-5" y="-7" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-5" y="-7" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="-5" y="-7" size="1.27" layer="27" align="center"/>
+<element name="L2" library="oresat-samacsys_Parts" package="INDC2928X203N" value="10nH" x="15.3" y="37.6" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Fixed Inductors 1008 10nH Unshld 5% 1.6A 60mOhms" x="15.3" y="37.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="COILCRAFT" x="15.3" y="37.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1008HQ-10NXJLB" x="15.3" y="37.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.3" y="40.4" size="0.635" layer="25" font="vector" ratio="20" align="center"/>
+<attribute name="VALUE" x="15.3" y="37.6" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R1" library="oresat-rcl" package=".0402-C-NOSILK" value="3.3" x="-8" y="-11" smashed="yes">
-<attribute name="DESCRIPTION" value="Resistor- SMD 1/16watt 3.3ohms 1% 100ppm" x="-8" y="-11" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Vishay / Dale" x="-8" y="-11" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW04023R30FKED" x="-8" y="-11" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-8.7" y="-10.55" size="0.8" layer="25" font="vector" ratio="15"/>
-<attribute name="NAME" x="-8" y="-11" size="0.2" layer="33" ratio="15" align="center"/>
-<attribute name="VALUE" x="-8.7" y="-12.25" size="0.8" layer="27" font="vector" ratio="15"/>
+<element name="R1" library="oresat-rcl" package=".0402-C-NOSILK" value="3.3" x="11.4" y="32.5" smashed="yes">
+<attribute name="DESCRIPTION" value="Resistor- SMD 1/16watt 3.3ohms 1% 100ppm" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay / Dale" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CRCW04023R30FKED" x="11.4" y="32.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.4" y="32.5" size="0.2" layer="33" ratio="15" align="center"/>
+<attribute name="NAME" x="11.1" y="29.75" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="10.7" y="31.25" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 </elements>
 <signals>
@@ -3277,10 +3289,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="16.1" y="31.8" extent="1-16" drill="0.254"/>
 <via x="15.8" y="33.3" extent="1-16" drill="0.254"/>
 <via x="15.5" y="32.8" extent="1-16" drill="0.254"/>
-<polygon width="0.1524" layer="1" thermals="no" rank="3">
+<polygon width="0.127" layer="1" isolate="0.2" thermals="no" rank="3">
 <vertex x="12.8" y="35.2"/>
-<vertex x="17.8" y="35.2"/>
-<vertex x="17.8" y="29.8"/>
+<vertex x="19.3" y="35.2"/>
+<vertex x="19.3" y="29.8"/>
 <vertex x="12.8" y="29.8"/>
 </polygon>
 <contactref element="U10" pad="1"/>
@@ -3313,17 +3325,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="21" y="9" extent="1-16" drill="0.254"/>
 <via x="18" y="11.5" extent="1-16" drill="0.254"/>
 <via x="18.5" y="5" extent="1-16" drill="0.254"/>
-<via x="18.3" y="36.9" extent="1-16" drill="0.254"/>
-<via x="17.2" y="36.9" extent="1-16" drill="0.254"/>
-<via x="9" y="36.2" extent="1-16" drill="0.254"/>
-<via x="9" y="37.3" extent="1-16" drill="0.254"/>
+<via x="18.8" y="36.8" extent="1-16" drill="0.254"/>
+<via x="17.7" y="36.8" extent="1-16" drill="0.254"/>
+<via x="8.1" y="36.2" extent="1-16" drill="0.254"/>
+<via x="8.1" y="37.3" extent="1-16" drill="0.254"/>
 <polygon width="0.127" layer="15" isolate="0.2" thermals="no" rank="6">
 <vertex x="30" y="44"/>
 <vertex x="30" y="0"/>
 <vertex x="0" y="0"/>
 <vertex x="0" y="44"/>
 </polygon>
-<via x="9.8" y="35.3" extent="1-16" drill="0.254"/>
+<via x="9.8" y="35.1" extent="1-16" drill="0.254"/>
 <polygon width="0.127" layer="1" thermals="no">
 <vertex x="0" y="38.3"/>
 <vertex x="5.3" y="38.3"/>
@@ -3401,10 +3413,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="9" y="31" extent="1-16" drill="0.35"/>
 <via x="11" y="31" extent="1-16" drill="0.35"/>
 <polygon width="0.127" layer="1" thermals="no">
-<vertex x="9.3" y="31.8"/>
-<vertex x="10.7" y="31.8"/>
-<vertex x="10.7" y="31"/>
-<vertex x="9.3" y="31"/>
+<vertex x="7.3" y="31.8"/>
+<vertex x="8.7" y="31.8"/>
+<vertex x="8.7" y="31"/>
+<vertex x="7.3" y="31"/>
 </polygon>
 <polygon width="0.127" layer="1" thermals="no">
 <vertex x="18.3" y="31.8"/>
@@ -3428,12 +3440,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="23" y="31" extent="1-16" drill="0.35"/>
 <via x="21" y="31" extent="1-16" drill="0.35"/>
 <via x="19" y="30.9" extent="1-16" drill="0.35"/>
-<via x="17.2" y="36.4" extent="1-16" drill="0.254"/>
-<via x="18.3" y="36.4" extent="1-16" drill="0.254"/>
-<via x="16.6" y="36" extent="1-16" drill="0.254"/>
-<via x="14.6" y="37.6" extent="1-16" drill="0.254"/>
-<via x="13.1" y="37.6" extent="1-16" drill="0.254"/>
-<via x="12.8" y="35.3" extent="1-16" drill="0.254"/>
+<via x="17.7" y="36.3" extent="1-16" drill="0.254"/>
+<via x="18.8" y="36.3" extent="1-16" drill="0.254"/>
+<via x="12.3" y="37.7" extent="1-16" drill="0.254"/>
+<via x="12.4" y="35.1" extent="1-16" drill="0.254"/>
 <via x="17.8" y="29.2" extent="1-16" drill="0.254"/>
 <contactref element="J4" pad="GND2"/>
 <contactref element="J4" pad="GND4"/>
@@ -3523,6 +3533,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="25" y="5" extent="1-16" drill="0.254"/>
 <via x="29" y="9" extent="1-16" drill="0.254"/>
 <via x="29" y="13" extent="1-16" drill="0.254"/>
+<wire x1="15.8" y1="34.55" x2="15.8" y2="33.1" width="0.3" layer="1"/>
+<wire x1="15.8" y1="33.1" x2="15.5" y2="32.8" width="0.3" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="LED2" pad="2"/>
@@ -3538,7 +3550,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C34" pad="1"/>
 <contactref element="JP6" pad="1"/>
 <contactref element="JP6" pad="2"/>
-<via x="8.2" y="40" extent="1-16" drill="0.254"/>
+<via x="7.3" y="39.7" extent="1-16" drill="0.254"/>
 <contactref element="C35" pad="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="17.5" y="1.9"/>
@@ -3555,16 +3567,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="15.4" y="9.5" extent="1-16" drill="0.254"/>
 <via x="15.4" y="10" extent="1-16" drill="0.254"/>
 <via x="15.4" y="10.5" extent="1-16" drill="0.254"/>
-<via x="8.2" y="39.4" extent="1-16" drill="0.254"/>
-<via x="8.2" y="38.8" extent="1-16" drill="0.254"/>
-<via x="7.7" y="39.4" extent="1-16" drill="0.254"/>
-<via x="7.7" y="40" extent="1-16" drill="0.254"/>
-<via x="7.7" y="38.8" extent="1-16" drill="0.254"/>
+<via x="7.3" y="39.1" extent="1-16" drill="0.254"/>
+<via x="7.3" y="38.5" extent="1-16" drill="0.254"/>
+<via x="6.8" y="39.1" extent="1-16" drill="0.254"/>
+<via x="6.8" y="39.7" extent="1-16" drill="0.254"/>
+<via x="6.8" y="38.5" extent="1-16" drill="0.254"/>
 <polygon width="0.2" layer="1" thermals="no">
-<vertex x="9.9" y="38.4"/>
-<vertex x="9.9" y="40.4"/>
-<vertex x="7.4" y="40.4"/>
-<vertex x="7.4" y="38.4"/>
+<vertex x="9" y="38.1"/>
+<vertex x="9" y="40.1"/>
+<vertex x="6.5" y="40.1"/>
+<vertex x="6.5" y="38.1"/>
 </polygon>
 <contactref element="SW1" pad="3"/>
 </signal>
@@ -3609,28 +3621,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C17" pad="1"/>
 <contactref element="C19" pad="1"/>
 <contactref element="C15" pad="1"/>
-<wire x1="19.2" y1="38.7" x2="18.3" y2="38.7" width="0.5" layer="1"/>
-<wire x1="19.2" y1="38.7" x2="19.4" y2="38.9" width="0.5" layer="1"/>
-<wire x1="18.3" y1="38.7" x2="17.2" y2="38.7" width="0.5" layer="1"/>
-<wire x1="17.2" y1="38.7" x2="15.21" y2="38.7" width="0.5" layer="1"/>
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="19.9" y="40.3"/>
-<vertex x="19.9" y="38.5"/>
-<vertex x="16.6" y="38.5"/>
+<wire x1="19.7" y1="38.6" x2="19.9" y2="38.8" width="0.5" layer="1"/>
+<polygon width="0.127" layer="1" isolate="0.2" thermals="no">
+<vertex x="20.4" y="40"/>
+<vertex x="20.4" y="38.4"/>
+<vertex x="16.5" y="38.4"/>
 <vertex x="16.494546875" y="38.394546875"/>
-<vertex x="13.00091875" y="38.394546875"/>
-<vertex x="12.4" y="37.799090625"/>
-<vertex x="12.4" y="35.8"/>
-<vertex x="10.5" y="35.8"/>
-<vertex x="10.5" y="40.3"/>
+<vertex x="11.5" y="38.394546875"/>
+<vertex x="11.5" y="35.6"/>
+<vertex x="9.6" y="35.6"/>
+<vertex x="9.6" y="40"/>
 </polygon>
 <contactref element="L5" pad="2"/>
 <contactref element="L2" pad="2"/>
-<wire x1="12.1" y1="36.4" x2="15.21" y2="38.7" width="0" layer="19" extent="1-1"/>
-<wire x1="10.8" y1="36.2" x2="12.1" y2="36.4" width="0" layer="19" extent="1-1"/>
-<wire x1="10.8" y1="37.3" x2="10.8" y2="36.2" width="0" layer="19" extent="1-1"/>
-<wire x1="11.15" y1="39.4" x2="10.8" y2="37.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.6" y1="-7" x2="10.8" y2="36.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="R19" pad="2"/>
@@ -3654,20 +3657,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="17.55" y1="32.7" x2="17.65" y2="32.7" width="0.127" layer="1"/>
 <contactref element="L3" pad="1"/>
 <contactref element="C21" pad="1"/>
-<wire x1="17.65" y1="32.2" x2="19" y2="32.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.45" y1="-3" x2="17.35" y2="32" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$25" class="1">
-<contactref element="C22" pad="1"/>
-<contactref element="L4" pad="2"/>
-<wire x1="10" y1="32.5" x2="10.95" y2="32.5" width="0.38" layer="1"/>
+<wire x1="19" y1="32.5" x2="17.85" y2="32.5" width="0.38" layer="1"/>
+<wire x1="17.85" y1="32.5" x2="17.65" y2="32.7" width="0.38" layer="1"/>
+<wire x1="19.95" y1="32.5" x2="19" y2="32.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$27" class="1">
 <contactref element="C20" pad="1"/>
 <contactref element="L3" pad="2"/>
 <contactref element="C23" pad="1"/>
-<wire x1="22" y1="32.5" x2="24.05" y2="32.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.55" y1="-3" x2="22" y2="32.5" width="0" layer="19" extent="1-1"/>
+<wire x1="20.85" y1="32.5" x2="21.8" y2="32.5" width="0.38" layer="1"/>
+<wire x1="22.75" y1="32.5" x2="21.8" y2="32.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$56" class="1">
 <contactref element="U10" pad="2"/>
@@ -3686,45 +3685,40 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13.15" y1="32" x2="13" y2="32.15" width="0.127" layer="1"/>
 <wire x1="13" y1="32.8" x2="12.8" y2="32.8" width="0.127" layer="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="-7.55" y1="-11" x2="12.8" y2="32.15" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$16">
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="15.3" y="35.5"/>
-<vertex x="16.4" y="36.6"/>
-<vertex x="16.4" y="37.7"/>
-<vertex x="15.2" y="37.7"/>
-<vertex x="15.2" y="36.6"/>
-<vertex x="15.3" y="36.5"/>
-</polygon>
+<wire x1="11.85" y1="32.5" x2="13.25" y2="32.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="R20" pad="1"/>
 <contactref element="U10" pad="16"/>
 <wire x1="16.3" y1="34.55" x2="16.3" y2="35.1" width="0.3" layer="1"/>
 <wire x1="16.55" y1="35.35" x2="16.3" y2="35.1" width="0.3" layer="1"/>
-<wire x1="18.55" y1="35.35" x2="16.55" y2="35.35" width="0.3" layer="1"/>
-<wire x1="18.55" y1="35.35" x2="19.4" y2="36.2" width="0.3" layer="1"/>
-<wire x1="19.4" y1="36.2" x2="19.4" y2="37.5" width="0.3" layer="1"/>
+<wire x1="19.05" y1="35.35" x2="16.55" y2="35.35" width="0.3" layer="1"/>
+<wire x1="19.05" y1="35.35" x2="19.9" y2="36.2" width="0.3" layer="1"/>
+<wire x1="19.9" y1="36.2" x2="19.9" y2="37.4" width="0.3" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="U10" pad="20"/>
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="14.3" y="34.5"/>
-<vertex x="14.3" y="37"/>
-<vertex x="13.4" y="37"/>
-<vertex x="13.4" y="35.4"/>
+<polygon width="0.127" layer="1" isolate="0.2" thermals="no">
+<vertex x="14.4" y="34.4"/>
+<vertex x="14.4" y="37.1"/>
+<vertex x="12.1" y="37.1"/>
+<vertex x="12.1" y="35.7"/>
+<vertex x="12.9" y="35.7"/>
+<vertex x="14.2" y="34.4"/>
 </polygon>
-<wire x1="14.3" y1="36.8" x2="14.3" y2="34.55" width="0.3" layer="1"/>
 <contactref element="L5" pad="1"/>
 </signal>
 <signal name="PA1_OUT" class="1">
 <contactref element="C20" pad="2"/>
 <contactref element="J1" pad="RF1"/>
-<wire x1="24.95" y1="32.5" x2="28.854" y2="32.5" width="0.38" layer="1"/>
+<wire x1="23.65" y1="32.5" x2="28.854" y2="32.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$1" class="1">
 <contactref element="J2" pad="RF1"/>
+<contactref element="C22" pad="1"/>
+<contactref element="L4" pad="2"/>
+<wire x1="8.2" y1="32.5" x2="9.15" y2="32.5" width="0.38" layer="1"/>
+<wire x1="8.2" y1="32.5" x2="1.146" y2="32.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$2" class="1">
 <contactref element="J4" pad="RF1"/>
@@ -3735,12 +3729,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$3">
 <contactref element="U10" pad="18"/>
 <contactref element="L2" pad="1"/>
-<wire x1="-6.4" y1="-7" x2="15.3" y2="34.55" width="0" layer="19" extent="1-1"/>
+<wire x1="15.3" y1="34.55" x2="15.3" y2="36.2" width="0.3" layer="1"/>
 </signal>
 <signal name="N$4" class="1">
 <contactref element="R1" pad="1"/>
 <contactref element="C22" pad="2"/>
-<wire x1="-8.45" y1="-11" x2="11.85" y2="32.5" width="0" layer="19" extent="1-1"/>
+<wire x1="10.95" y1="32.5" x2="10.05" y2="32.5" width="0.38" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -3758,19 +3752,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,38511ba86bc0cda5"/>
 <approved hash="5,1,d4e5a05dd7fa2b42"/>
 <approved hash="5,1,51f2fc70d68cc907"/>
-<approved hash="5,1,ec315c0ff09b95ec"/>
 <approved hash="5,1,56de2cf0e0f710af"/>
 <approved hash="5,1,a34690d6220be721"/>
 <approved hash="5,1,89e2bf8aef1b0ea1"/>
 <approved hash="5,1,26312674412347ce"/>
 <approved hash="5,1,cde61e8e241b5fa3"/>
 <approved hash="5,1,547e3eed2f82cdac"/>
-<approved hash="5,1,cceee6eec34d1ab7"/>
-<approved hash="5,1,5660e2b66f0858bd"/>
 <approved hash="5,1,c066dee55e5c83ba"/>
 <approved hash="5,1,85a88474c644cf09"/>
-<approved hash="5,1,dcbb921ed0b909bf"/>
-<approved hash="5,1,020e0f0545fe2d82"/>
 <approved hash="5,1,d5564777110faf2f"/>
 <approved hash="5,1,398331280f75307d"/>
 <approved hash="5,1,2f996f33e5379481"/>
@@ -3778,7 +3767,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,4d760687066a4b33"/>
 <approved hash="5,1,73e53b163bdb7542"/>
 <approved hash="5,1,489b03d402d7495e"/>
-<approved hash="5,1,163bb3efa551c664"/>
 <approved hash="5,1,2d196f72dd46a86f"/>
 <approved hash="5,1,733fa46a2df76e75"/>
 <approved hash="5,1,0fab92e16625ac33"/>
@@ -3789,7 +3777,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,c9bd521ed73f8a7d"/>
 <approved hash="5,1,0778898addbaed4f"/>
 <approved hash="5,1,aea52deee095c93d"/>
-<approved hash="5,1,4d46bfc0071dabc5"/>
 <approved hash="5,1,72d86ed67020bed1"/>
 <approved hash="5,1,89202bddffd785a8"/>
 <approved hash="5,1,3d5fadb195c1f7bb"/>
@@ -3808,26 +3795,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,3f5fadddacd5c0bb"/>
 <approved hash="5,1,7007db0a0d8b7198"/>
 <approved hash="5,1,73c80429602799b5"/>
-<approved hash="5,1,0666b2a57713f0b5"/>
 <approved hash="5,1,4b40a0638a520975"/>
 <approved hash="5,1,4d3db21c98516708"/>
-<approved hash="5,1,d7c3a9d0f2e98163"/>
 <approved hash="5,1,8aaf07117a006890"/>
 <approved hash="5,1,23dc2419459e429d"/>
-<approved hash="5,1,95ae947546452d0f"/>
 <approved hash="5,1,7fe3148e785cb142"/>
 <approved hash="5,1,094f50d391f8e22f"/>
 <approved hash="5,1,9a75188306b63795"/>
 <approved hash="5,1,bb0b007f07b5ac69"/>
 <approved hash="5,1,073b09296191c220"/>
 <approved hash="5,1,ccd1ff8a5cd1af2b"/>
-<approved hash="5,1,56a666ab643c13eb"/>
-<approved hash="5,1,b0bc5a9dd6a9a30d"/>
 <approved hash="5,1,3d67870edc05ec83"/>
 <approved hash="5,1,9e2f1bbeb3530cbc"/>
 <approved hash="5,1,286419284319cc52"/>
-<approved hash="5,1,9d9026ee27653a1d"/>
-<approved hash="5,1,f4aa96f0625ffd54"/>
 <approved hash="5,1,1d6d56e7911ee0a8"/>
 <approved hash="5,1,d78611b92daa7f30"/>
 <approved hash="5,1,b56ca2a33be348a9"/>
@@ -3842,9 +3822,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,77b052354f43b8c5"/>
 <approved hash="5,1,87410d07db4db996"/>
 <approved hash="5,1,c651ea8fd72597ab"/>
-<approved hash="5,1,281495f266debdb4"/>
 <approved hash="5,1,256c47b4408be00e"/>
-<approved hash="5,1,f0a74ac23eec1b17"/>
 <approved hash="5,1,a17bcbca74f3d624"/>
 <approved hash="5,1,18a218057c927a5f"/>
 <approved hash="5,1,9ea9d3f5278fb251"/>
@@ -3855,19 +3833,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,262d268a430d44ee"/>
 <approved hash="5,1,5e2980e8b6a83c6d"/>
 <approved hash="5,1,9a80b164168c57a3"/>
-<approved hash="5,1,d56e2fa1a49e9c0c"/>
 <approved hash="5,1,55630cdffc23e3ce"/>
-<approved hash="5,1,900e65ead6dcadf4"/>
-<approved hash="5,1,a5a8a474c644ad09"/>
-<approved hash="5,1,9b84292f1772547b"/>
-<approved hash="5,1,0b6a27e095df7b08"/>
-<approved hash="5,1,af9d71d572f55124"/>
-<approved hash="5,1,4daa4c7516459f0b"/>
-<approved hash="5,1,0b6c57f54dcad30e"/>
 <approved hash="5,1,22f2691b85bcd5f5"/>
 <approved hash="5,1,7d6e1cfd55dc4c4b"/>
 <approved hash="5,1,cadcd9ce11f5b72d"/>
-<approved hash="5,1,1b8319282774347c"/>
 <approved hash="5,1,bfdfbf23b45798aa"/>
 <approved hash="5,1,8c03af7b09ede1f5"/>
 <approved hash="5,1,051004814da04c49"/>
@@ -3883,16 +3852,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,b3eae1c1c78046b1"/>
 <approved hash="5,1,1368c1d59efa0c56"/>
 <approved hash="5,1,fd64ba57cc473016"/>
-<approved hash="5,1,87b9400f4c7a9238"/>
 <approved hash="5,1,569931620727b100"/>
 <approved hash="5,1,ab366356e19f229a"/>
 <approved hash="5,1,e24a65907c4c8d8c"/>
 <approved hash="5,1,12e8a5c196848db5"/>
 <approved hash="5,1,6de23fb264d63c20"/>
 <approved hash="5,1,c7ba7f1560ad74e6"/>
-<approved hash="5,1,0981c92af775007d"/>
 <approved hash="5,1,7eae733630001a60"/>
-<approved hash="5,1,3064e6f15248f7b8"/>
 <approved hash="5,1,9837a0ddfbd773c4"/>
 <approved hash="5,1,c7b8acbe2ffdd941"/>
 <approved hash="5,1,853661dfe75607c8"/>
@@ -3980,6 +3946,37 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,70bddf2ed713e45c"/>
 <approved hash="23,1,a44f6dbf6cd5a525"/>
 <approved hash="23,1,f44c00b800bcf448"/>
+<approved hash="5,1,b5a8b47522454309"/>
+<approved hash="5,1,b9ca39eb8d58c779"/>
+<approved hash="5,1,de54dc1c5d17937f"/>
+<approved hash="5,1,de54dc1c5d17937f"/>
+<approved hash="5,1,1466faa218182db9"/>
+<approved hash="5,1,3c133318b05d7742"/>
+<approved hash="5,1,c53c463b33b7ee7b"/>
+<approved hash="5,1,9cba769ad0aec105"/>
+<approved hash="5,1,020e1f04b5f9fd85"/>
+<approved hash="5,1,0607458e03841b1a"/>
+<approved hash="5,1,04643afcb045b5b9"/>
+<approved hash="5,1,2dab2c744a445b0a"/>
+<approved hash="5,1,020a0f07c5fe2d82"/>
+<approved hash="5,1,e1ea1623e81c9235"/>
+<approved hash="5,1,13d97b99268c7a54"/>
+<approved hash="5,1,1459bd77e81c91fb"/>
+<approved hash="5,1,4375b2204ef9305b"/>
+<approved hash="5,1,2cb596d9e8e60904"/>
+<approved hash="5,1,520c35ea4adf39b3"/>
+<approved hash="5,1,7c66dab10c0fd1bd"/>
+<approved hash="5,1,623637056dfe4582"/>
+<approved hash="5,1,1d839128af75cc7d"/>
+<approved hash="5,1,016c5fac06939a0e"/>
+<approved hash="5,1,ada9ac755a451b08"/>
+<approved hash="5,1,4a0a65eeaadea9f5"/>
+<approved hash="5,1,096c57e162defe0e"/>
+<approved hash="5,1,b59843d57ef56525"/>
+<approved hash="5,1,758319282774447c"/>
+<approved hash="5,1,8dd90bd30efa956a"/>
+<approved hash="5,1,516c9ff2fecdf20e"/>
+<approved hash="5,1,5d80712b4f757c7d"/>
 </errors>
 </board>
 </drawing>

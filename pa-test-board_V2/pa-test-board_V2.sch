@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -17478,15 +17478,6 @@ indicates +5VDC On</text>
 <junction x="163.83" y="119.38"/>
 </segment>
 </net>
-<net name="N$25" class="1">
-<segment>
-<pinref part="C22" gate="CE" pin="1"/>
-<wire x1="86.36" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="L4" gate="L" pin="2"/>
-<wire x1="83.82" y1="119.38" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
-<junction x="83.82" y="119.38"/>
-</segment>
-</net>
 <net name="N$27" class="1">
 <segment>
 <pinref part="C20" gate="CE" pin="1"/>
@@ -17538,7 +17529,11 @@ indicates +5VDC On</text>
 <net name="N$1" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="RF"/>
-<wire x1="71.12" y1="119.38" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C22" gate="CE" pin="1"/>
+<wire x1="86.36" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="L4" gate="L" pin="2"/>
+<wire x1="83.82" y1="119.38" x2="71.12" y2="119.38" width="0.1524" layer="91"/>
+<junction x="83.82" y="119.38"/>
 </segment>
 </net>
 <net name="PA_ENABLE" class="0">
@@ -17598,7 +17593,7 @@ indicates +5VDC On</text>
 </sheets>
 <errors>
 <approved hash="104,1,125.73,137.16,U10,VCC1,N$31,,,"/>
-<approved hash="104,1,132.08,137.16,U10,VCC2,N$16,,,"/>
+<approved hash="104,1,132.08,137.16,U10,VCC2,N$3,,,"/>
 <approved hash="104,1,138.43,137.16,U10,VBIAS,N$30,,,"/>
 <approved hash="206,1,148.59,123.19,N$24,,,,,"/>
 <approved hash="206,1,148.59,115.57,N$24,,,,,"/>
