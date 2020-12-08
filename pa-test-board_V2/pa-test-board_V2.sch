@@ -17599,7 +17599,7 @@ indicates +5VDC On</text>
 <approved hash="206,1,148.59,115.57,N$24,,,,,"/>
 <approved hash="206,1,148.59,119.38,N$24,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME3,,,,,"/>
-<approved hash="113,1,23.8929,162.786,JP6,,,,,"/>
+<approved hash="113,1,23.8929,162.756,JP6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
