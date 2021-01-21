@@ -18677,6 +18677,151 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </deviceset>
 </devicesets>
 </library>
+<library name="PCBA-WF-NP9202-wifi-adapter">
+<description>This library contains the symbols and footprints for the custom parts on the Handheld Ground Station backplane board. These parts interface in the way described on the associated block diagram.
+
+
+
+
+
+
+
+
+
+Noel Case - Created 6/16/20</description>
+<packages>
+<package name="WF-NP9202">
+<wire x1="-8.5" y1="-17" x2="-8.5" y2="17" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="17" x2="-8" y2="17.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8" y1="17.5" x2="8" y2="17.5" width="0.127" layer="21"/>
+<wire x1="8" y1="17.5" x2="8.5" y2="17" width="0.127" layer="21" curve="-90"/>
+<wire x1="8.5" y1="17" x2="8.5" y2="-17" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-17" x2="8" y2="-17.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="8" y1="-17.5" x2="-8" y2="-17.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="-17.5" x2="-8.5" y2="-17" width="0.127" layer="21" curve="-90"/>
+<rectangle x1="-8.5" y1="-17.5" x2="8.5" y2="17.5" layer="39"/>
+<hole x="-6" y="-15" drill="2.2"/>
+<hole x="6" y="-15" drill="2.2"/>
+<hole x="6" y="15" drill="2.2"/>
+<wire x1="-6.35" y1="16.51" x2="-6.35" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="2.54" y1="12.7" x2="2.54" y2="16.51" width="0.127" layer="21"/>
+<wire x1="2.54" y1="16.51" x2="-6.35" y2="16.51" width="0.127" layer="21"/>
+<circle x="1.27" y="-15" radius="1.27" width="0.127" layer="21"/>
+<circle x="1.3" y="-15" radius="0.4472125" width="0.127" layer="21"/>
+<text x="-5.08" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="WF-NP9202">
+<description>This is a Qualcomm Atheros AR9721 USB adapter. Its primary function is to translate 2.45 GHz RF to a digital USB A signal.
+
+The large circular pin in the center is the connection to the RF cable providing the RF input.</description>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="94"/>
+<text x="-2.54" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<circle x="0" y="-3.81" radius="2.54" width="0.1524" layer="94"/>
+<circle x="0" y="-3.81" radius="1.27" width="0.1524" layer="94"/>
+<wire x1="-5.715" y1="6.985" x2="1.905" y2="6.985" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="6.985" x2="1.905" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="-5.715" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-5.715" y1="3.175" x2="-5.715" y2="6.985" width="0.1524" layer="94"/>
+<text x="-6.35" y="1.27" size="1.27" layer="94">1mm USB/PWR</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="94">RF</text>
+<text x="-2.54" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WF-NP9202" prefix="PCBA">
+<gates>
+<gate name="G$1" symbol="WF-NP9202" x="0" y="0"/>
+</gates>
+<devices>
+<device name="WF" package="WF-NP9202">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin">
+<packages>
+<package name="CONN_SM06B-SRSS-TB_JST">
+<smd name="1" x="-2.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="2" x="-1.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="3" x="-0.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="4" x="0.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="5" x="1.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="6" x="2.5" y="2.5067" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="7" x="-3.8" y="-1.3683" dx="1.905" dy="1.2954" layer="1" rot="R90"/>
+<smd name="8" x="3.8" y="-1.3683" dx="1.905" dy="1.2954" layer="1" rot="R90"/>
+<wire x1="-2.8194" y1="-2.2352" x2="2.8194" y2="-2.2352" width="0.1524" layer="21"/>
+<wire x1="4.1148" y1="-0.0762" x2="4.1148" y2="2.2606" width="0.1524" layer="21"/>
+<wire x1="4.1148" y1="2.2606" x2="3.175" y2="2.2606" width="0.1524" layer="21"/>
+<wire x1="-4.1148" y1="2.2606" x2="-4.1148" y2="-0.0762" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.2606" x2="-4.1148" y2="2.2606" width="0.1524" layer="21"/>
+<wire x1="-4.0132" y1="-2.1082" x2="4.0132" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="4.0132" y1="-2.1082" x2="4.0132" y2="2.1336" width="0.1524" layer="51"/>
+<wire x1="4.0132" y1="2.1336" x2="-4.0132" y2="2.1336" width="0.1524" layer="51"/>
+<wire x1="-4.0132" y1="2.1336" x2="-4.0132" y2="-2.1082" width="0.1524" layer="51"/>
+<wire x1="-2.1082" y1="4.4196" x2="-2.8702" y2="4.4196" width="0.127" layer="21" curve="-180"/>
+<wire x1="-2.8702" y1="4.4196" x2="-2.1082" y2="4.4196" width="0.127" layer="21" curve="-180"/>
+<text x="5.08" y="0" size="0.635" layer="25" font="vector" ratio="20" rot="SR0">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CONN_SM06B-SRSS-TB_3">
+<pin name="1" x="-7.62" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="-7.62" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="3" x="-7.62" y="0" visible="pin" length="short" direction="pas"/>
+<pin name="4" x="-7.62" y="-2.54" visible="pin" length="short" direction="pas"/>
+<pin name="5" x="-7.62" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="6" x="-7.62" y="-7.62" visible="pin" length="short" direction="pas"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<text x="-5.08" y="10.16" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-5.08" y="7.62" size="1.778" layer="96" ratio="20">&gt;VALUE</text>
+<pin name="7" x="0" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SM06B-SRSS-TB(LF)(SN)" prefix="J">
+<gates>
+<gate name="A" symbol="CONN_SM06B-SRSS-TB_3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_SM06B-SRSS-TB_JST">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7 8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BUILT_BY" value="EMA_Justin" constant="no"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSR.pdf" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SM06B-SRSS-TB(LF)(SN)" constant="no"/>
+<attribute name="SOURCELIBRARY" value="JST_2020-02-24" constant="no"/>
+<attribute name="VENDOR" value="JST" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19192,6 +19337,8 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="U$2" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="PCBA1" library="PCBA-WF-NP9202-wifi-adapter" deviceset="WF-NP9202" device="WF"/>
+<part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19280,6 +19427,14 @@ unconnected?</text>
 </instance>
 <instance part="GND5" gate="1" x="193.04" y="64.77" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="195.58" y="62.23" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="PCBA1" gate="G$1" x="226.06" y="73.66" smashed="yes">
+<attribute name="NAME" x="223.52" y="63.5" size="1.778" layer="95"/>
+<attribute name="VALUE" x="223.52" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="A" x="254" y="76.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="259.08" y="86.36" size="1.778" layer="95" ratio="6" rot="SMR0"/>
+<attribute name="VALUE" x="259.08" y="83.82" size="1.778" layer="96" ratio="20" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -21001,7 +21156,7 @@ reserved on all oresat cards</text>
 </nets>
 </sheet>
 <sheet>
-<description>OSD3358 SD, eMMC, Camera, etc : SIP C, D</description>
+<description>OSD3358 SD, eMMC: SIP C, D</description>
 <plain>
 <text x="784.86" y="375.92" size="1.778" layer="97">SYSBOOT Jumper to config boot order
 must use very light pullups because 
