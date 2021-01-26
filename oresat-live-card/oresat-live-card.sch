@@ -19335,6 +19335,9 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PCBA1" library="PCBA-WF-NP9202-wifi-adapter" deviceset="WF-NP9202" device="WF"/>
 <part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
+<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -19427,10 +19430,6 @@ unconnected?</text>
 <instance part="PCBA1" gate="G$1" x="226.06" y="73.66" smashed="yes">
 <attribute name="NAME" x="223.52" y="63.5" size="1.778" layer="95"/>
 <attribute name="VALUE" x="223.52" y="60.96" size="1.778" layer="96"/>
-</instance>
-<instance part="J2" gate="A" x="254" y="76.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="259.08" y="86.36" size="1.778" layer="95" ratio="6" rot="SMR0"/>
-<attribute name="VALUE" x="259.08" y="83.82" size="1.778" layer="96" ratio="20" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -23040,6 +23039,19 @@ battery circuit</text>
 <attribute name="NAME" x="60.96" y="195.58" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="60.96" y="190.5" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
+<instance part="J2" gate="A" x="327.66" y="170.18" smashed="yes" rot="MR0">
+<attribute name="NAME" x="332.74" y="180.34" size="1.778" layer="95" ratio="6" rot="SMR0"/>
+<attribute name="VALUE" x="332.74" y="177.8" size="1.778" layer="96" ratio="20" rot="MR0"/>
+</instance>
+<instance part="GND33" gate="1" x="337.82" y="152.4" smashed="yes">
+<attribute name="VALUE" x="337.82" y="152.146" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="TP5" gate="G$1" x="340.36" y="165.1" smashed="yes">
+<attribute name="NAME" x="344.932" y="164.338" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP6" gate="G$1" x="340.36" y="162.56" smashed="yes">
+<attribute name="NAME" x="344.932" y="161.798" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23099,6 +23111,12 @@ battery circuit</text>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="JP100" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="137.16" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="4"/>
+<wire x1="335.28" y1="167.64" x2="337.82" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="337.82" y1="167.64" x2="337.82" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_USB" class="0">
@@ -23205,6 +23223,11 @@ battery circuit</text>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <wire x1="292.1" y1="68.58" x2="297.18" y2="68.58" width="0.1524" layer="91"/>
 <label x="297.18" y="68.58" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="1"/>
+<wire x1="335.28" y1="175.26" x2="337.82" y2="175.26" width="0.1524" layer="91"/>
+<label x="337.82" y="175.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$619" class="0">
@@ -23423,6 +23446,11 @@ battery circuit</text>
 <wire x1="165.1" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="81.28" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="335.28" y1="170.18" x2="337.82" y2="170.18" width="0.1524" layer="91"/>
+<label x="337.82" y="170.18" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="USB_HO_PX" class="0">
 <segment>
@@ -23436,6 +23464,11 @@ battery circuit</text>
 <junction x="248.92" y="63.5"/>
 <pinref part="U1" gate="G$1" pin="I3"/>
 <wire x1="165.1" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="2"/>
+<wire x1="335.28" y1="172.72" x2="337.82" y2="172.72" width="0.1524" layer="91"/>
+<label x="337.82" y="172.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -23563,6 +23596,20 @@ battery circuit</text>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="193.04" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
 <label x="50.8" y="193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$120" class="0">
+<segment>
+<pinref part="J2" gate="A" pin="5"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
+<wire x1="335.28" y1="165.1" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$121" class="0">
+<segment>
+<pinref part="J2" gate="A" pin="6"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
+<wire x1="335.28" y1="162.56" x2="340.36" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
