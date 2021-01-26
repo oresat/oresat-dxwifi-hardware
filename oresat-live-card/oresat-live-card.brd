@@ -5852,7 +5852,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="TP105" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="37.95" y="6.6625" smashed="yes" rot="MR0"/>
 <element name="TP124" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="38.10625" y="10.56875" smashed="yes" rot="MR0"/>
 <element name="TP120" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="41.0125" y="10.25625" smashed="yes" rot="MR0"/>
-<element name="TP125" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="49.325" y="10.6" smashed="yes" rot="MR0"/>
+<element name="TP125" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="49.625" y="11.2" smashed="yes" rot="MR0"/>
 <element name="TP114" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="50.04375" y="9.00625" smashed="yes" rot="MR0"/>
 <element name="TP111" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="52.41875" y="8.1" smashed="yes" rot="MR0"/>
 <element name="TP177" library="SparkFun-Connectors" package="PAD.03X.04" package3d_urn="urn:adsk.eagle:package:38287/1" value="TEST-POINT3X4" x="46.2" y="25.38125" smashed="yes" rot="MR0"/>
@@ -7771,25 +7771,60 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="46.8" y1="9.3" x2="46.845" y2="9.345" width="0.127" layer="1"/>
 <wire x1="46.845" y1="9.345" x2="47.415" y2="9.345" width="0.127" layer="1"/>
 </signal>
-<signal name="N$653" airwireshidden="yes">
+<signal name="N$653">
 <contactref element="U7" pad="P13"/>
 <contactref element="R2" pad="1"/>
-<wire x1="47.415" y1="10.615" x2="62.9" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="47.485" y1="10.615" x2="47.415" y2="10.615" width="0.1524" layer="1"/>
+<wire x1="62.9" y1="9.4" x2="61.9282" y2="8.4282" width="0.1524" layer="1"/>
+<wire x1="61.9282" y1="5.9057" x2="61.5225" y2="5.5" width="0.1524" layer="1"/>
+<wire x1="61.9282" y1="8.4282" x2="61.9282" y2="5.9057" width="0.1524" layer="1"/>
+<wire x1="58.8" y1="5.5" x2="58.5382" y2="5.7618" width="0.1524" layer="1"/>
+<wire x1="61.5225" y1="5.5" x2="58.8" y2="5.5" width="0.1524" layer="1"/>
+<wire x1="50.35728125" y1="5.7618" x2="48.2" y2="7.91908125" width="0.1524" layer="1"/>
+<wire x1="48.2" y1="9.9" x2="47.485" y2="10.615" width="0.1524" layer="1"/>
+<wire x1="58.5382" y1="5.7618" x2="50.35728125" y2="5.7618" width="0.1524" layer="1"/>
+<wire x1="48.2" y1="7.91908125" x2="48.2" y2="9.9" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$654" airwireshidden="yes">
+<signal name="N$654">
 <contactref element="U7" pad="T14"/>
 <contactref element="R3" pad="1"/>
-<wire x1="48.685" y1="8.075" x2="64.9" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9" y1="9.4" x2="64.1968" y2="10.1032" width="0.1524" layer="1"/>
+<wire x1="60.4079875" y1="10.1032" x2="60.1" y2="9.7952125" width="0.1524" layer="1"/>
+<wire x1="64.1968" y1="10.1032" x2="60.4079875" y2="10.1032" width="0.1524" layer="1"/>
+<wire x1="60.1" y1="9.7952125" x2="60.1" y2="7.568525" width="0.1524" layer="1"/>
+<wire x1="60.1" y1="7.568525" x2="58.572675" y2="6.0412" width="0.1524" layer="1"/>
+<wire x1="48.7412" y1="7.85760625" x2="48.7412" y2="8.0188" width="0.1524" layer="1"/>
+<wire x1="48.7412" y1="8.0188" x2="48.685" y2="8.075" width="0.1524" layer="1"/>
+<wire x1="50.55760625" y1="6.0412" x2="48.7412" y2="7.85760625" width="0.1524" layer="1"/>
+<wire x1="58.572675" y1="6.0412" x2="50.55760625" y2="6.0412" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$655" airwireshidden="yes">
+<signal name="N$655">
 <contactref element="U7" pad="R14"/>
 <contactref element="R4" pad="1"/>
-<wire x1="48.685" y1="9.345" x2="66.9" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="66.9" y1="9.4" x2="66.8952125" y2="9.4" width="0.1524" layer="1"/>
+<wire x1="66.8952125" y1="9.4" x2="65.9126125" y2="10.3826" width="0.1524" layer="1"/>
+<wire x1="60.29225" y1="10.3826" x2="59.8206" y2="9.91095" width="0.1524" layer="1"/>
+<wire x1="65.9126125" y1="10.3826" x2="60.29225" y2="10.3826" width="0.1524" layer="1"/>
+<wire x1="59.8206" y1="9.91095" x2="59.8206" y2="7.6842625" width="0.1524" layer="1"/>
+<wire x1="59.8206" y1="7.6842625" x2="58.4569375" y2="6.3206" width="0.1524" layer="1"/>
+<wire x1="48.685" y1="9.3356" x2="48.685" y2="9.345" width="0.1524" layer="1"/>
+<wire x1="49.2206" y1="8.8" x2="48.685" y2="9.3356" width="0.1524" layer="1"/>
+<wire x1="50.67334375" y1="6.3206" x2="49.2206" y2="7.77334375" width="0.1524" layer="1"/>
+<wire x1="49.2206" y1="7.77334375" x2="49.2206" y2="8.8" width="0.1524" layer="1"/>
+<wire x1="58.4569375" y1="6.3206" x2="50.67334375" y2="6.3206" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$656" airwireshidden="yes">
+<signal name="N$656">
 <contactref element="U7" pad="P14"/>
 <contactref element="R5" pad="1"/>
-<wire x1="48.685" y1="10.615" x2="68.9" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="68.9" y1="9.4" x2="67.638" y2="10.662" width="0.1524" layer="1"/>
+<wire x1="60.1765125" y1="10.662" x2="59.5412" y2="10.0266875" width="0.1524" layer="1"/>
+<wire x1="59.5412" y1="10.0266875" x2="59.5412" y2="7.8" width="0.1524" layer="1"/>
+<wire x1="67.638" y1="10.662" x2="60.1765125" y2="10.662" width="0.1524" layer="1"/>
+<wire x1="59.5412" y1="7.8" x2="58.3412" y2="6.6" width="0.1524" layer="1"/>
+<wire x1="50.78908125" y1="6.6" x2="49.5" y2="7.88908125" width="0.1524" layer="1"/>
+<wire x1="49.5" y1="9.8" x2="48.685" y2="10.615" width="0.1524" layer="1"/>
+<wire x1="58.3412" y1="6.6" x2="50.78908125" y2="6.6" width="0.1524" layer="1"/>
+<wire x1="49.5" y1="7.88908125" x2="49.5" y2="9.8" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$657">
 <contactref element="R19" pad="2"/>
@@ -8353,7 +8388,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="48.685" y1="11.885" x2="48.685" y2="11.24" width="0.127" layer="1"/>
 <wire x1="48.685" y1="11.24" x2="48.7" y2="11.225" width="0.127" layer="1"/>
 <via x="48.7" y="11.225" extent="1-16" drill="0.254"/>
-<wire x1="49.325" y1="10.6" x2="48.7" y2="11.225" width="0.127" layer="16"/>
+<wire x1="49.625" y1="11.2" x2="49.6" y2="11.225" width="0.127" layer="16"/>
+<wire x1="49.6" y1="11.225" x2="48.7" y2="11.225" width="0.127" layer="16"/>
 </signal>
 <signal name="N$42" airwireshidden="yes">
 <contactref element="TP114" pad="P$1"/>
@@ -9763,9 +9799,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R20" pad="1"/>
 <wire x1="19.3" y1="39.2" x2="19.3" y2="38.3" width="0.1524" layer="1"/>
 <via x="19.3" y="38.3" extent="1-16" drill="0.254"/>
-<wire x1="19.3" y1="38.3" x2="21.2" y2="36.4" width="0.1524" layer="16"/>
+<wire x1="19.3" y1="38.3" x2="19.3" y2="38.2" width="0.1524" layer="16"/>
+<wire x1="21.1" y1="36.4" x2="19.3" y2="38.2" width="0.1524" layer="16"/>
 <wire x1="22.1048625" y1="36.4" x2="23.55243125" y2="34.95243125" width="0.1524" layer="16"/>
-<wire x1="21.2" y1="36.4" x2="22.1048625" y2="36.4" width="0.1524" layer="16"/>
+<wire x1="21.1" y1="36.4" x2="22.1048625" y2="36.4" width="0.1524" layer="16"/>
 <wire x1="23.55243125" y1="34.95243125" x2="23.55243125" y2="34.93996875" width="0.1524" layer="16"/>
 <wire x1="23.55243125" y1="34.93996875" x2="34" y2="24.4924" width="0.1524" layer="16"/>
 <wire x1="34" y1="24.4924" x2="34" y2="22.6" width="0.1524" layer="16"/>
