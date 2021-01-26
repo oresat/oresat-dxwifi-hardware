@@ -18976,10 +18976,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND66" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C13" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
 <part name="GND68" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="JP111" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
-<part name="JP110" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
-<part name="JP103" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
-<part name="JP102" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
 <part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
@@ -21398,18 +21394,6 @@ DNP for now</text>
 <instance part="TP40" gate="G$1" x="243.84" y="515.62" smashed="yes">
 <attribute name="NAME" x="248.412" y="514.858" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="JP111" gate="G$1" x="182.88" y="353.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="180.34" y="352.679" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="JP110" gate="G$1" x="175.26" y="345.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="172.72" y="345.059" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="JP103" gate="G$1" x="167.64" y="337.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="165.1" y="337.439" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="JP102" gate="G$1" x="160.02" y="330.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="157.48" y="329.819" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
 <instance part="R30" gate="R" x="254" y="398.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="250.9266" y="400.812" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="255.27" y="400.558" size="1.778" layer="96" rot="R270"/>
@@ -22064,25 +22048,33 @@ DNP for now</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J100" gate="G$1" pin="DAT2"/>
-<pinref part="JP103" gate="G$1" pin="3"/>
-<wire x1="167.64" y1="342.9" x2="167.64" y2="403.86" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="337.82" x2="167.64" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="403.86" x2="121.92" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="11"/>
 <wire x1="121.92" y1="403.86" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="414.02" x2="121.92" y2="403.86" width="0.1524" layer="91"/>
 <junction x="121.92" y="403.86"/>
+<pinref part="U7" gate="C" pin="MMC0_DAT2"/>
+<wire x1="289.56" y1="347.98" x2="243.84" y2="347.98" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="347.98" x2="243.84" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="337.82" x2="175.26" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="337.82" x2="172.72" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="337.82" x2="172.72" y2="337.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J100" gate="G$1" pin="DAT3/CS"/>
-<pinref part="JP102" gate="G$1" pin="3"/>
-<wire x1="160.02" y1="335.28" x2="160.02" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="330.2" x2="160.02" y2="401.32" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="401.32" x2="127" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="22"/>
 <wire x1="127" y1="401.32" x2="106.68" y2="401.32" width="0.1524" layer="91"/>
 <wire x1="127" y1="414.02" x2="127" y2="401.32" width="0.1524" layer="91"/>
 <junction x="127" y="401.32"/>
+<pinref part="U7" gate="C" pin="MMC0_DAT3"/>
+<wire x1="289.56" y1="345.44" x2="246.38" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="345.44" x2="246.38" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="330.2" x2="160.02" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -22114,25 +22106,29 @@ DNP for now</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="J100" gate="G$1" pin="DAT0/DO"/>
-<pinref part="JP111" gate="G$1" pin="3"/>
 <wire x1="106.68" y1="388.62" x2="134.62" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="388.62" x2="182.88" y2="388.62" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="388.62" x2="182.88" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="388.62" x2="182.88" y2="353.06" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="77"/>
 <wire x1="134.62" y1="414.02" x2="134.62" y2="388.62" width="0.1524" layer="91"/>
 <junction x="134.62" y="388.62"/>
+<pinref part="U7" gate="C" pin="MMC0_DAT0"/>
+<wire x1="289.56" y1="353.06" x2="182.88" y2="353.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="J100" gate="G$1" pin="DAT1"/>
-<pinref part="JP110" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="350.52" x2="175.26" y2="386.08" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="345.44" x2="175.26" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="386.08" x2="137.16" y2="386.08" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="44"/>
 <wire x1="137.16" y1="386.08" x2="106.68" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="414.02" x2="137.16" y2="386.08" width="0.1524" layer="91"/>
 <junction x="137.16" y="386.08"/>
+<pinref part="U7" gate="C" pin="MMC0_DAT1"/>
+<wire x1="289.56" y1="350.52" x2="241.3" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="350.52" x2="241.3" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="345.44" x2="175.26" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -22195,40 +22191,6 @@ DNP for now</text>
 <pinref part="U11" gate="G$1" pin="CANL"/>
 <wire x1="213.36" y1="505.46" x2="198.12" y2="505.46" width="0.1524" layer="91"/>
 <label x="198.12" y="505.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="MMC0_DAT0"/>
-<pinref part="JP111" gate="G$1" pin="2"/>
-<wire x1="289.56" y1="353.06" x2="187.96" y2="353.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="MMC0_DAT1"/>
-<wire x1="289.56" y1="350.52" x2="241.3" y2="350.52" width="0.1524" layer="91"/>
-<pinref part="JP110" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="350.52" x2="241.3" y2="345.44" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="345.44" x2="180.34" y2="345.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="MMC0_DAT2"/>
-<wire x1="289.56" y1="347.98" x2="243.84" y2="347.98" width="0.1524" layer="91"/>
-<pinref part="JP103" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="347.98" x2="243.84" y2="337.82" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="337.82" x2="172.72" y2="337.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="MMC0_DAT3"/>
-<wire x1="289.56" y1="345.44" x2="246.38" y2="345.44" width="0.1524" layer="91"/>
-<pinref part="JP102" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="345.44" x2="246.38" y2="330.2" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="330.2" x2="165.1" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA_2" class="0">
