@@ -16838,16 +16838,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attribute name="MFR" value="AVX"/>
 <attribute name="MPN" value="04025U3R0BAT2A"/>
 </part>
-<part name="C22" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1.2pF">
+<part name="C22" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1.1pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="DESCRIPTION" value="Capacitor Thin Film 50V 1.2pF .02pFTol  0402"/>
+<attribute name="DESCRIPTION" value="50V 1.1pF .02pFTol ThinFilm 0402"/>
 <attribute name="MFR" value="AVX"/>
-<attribute name="MPN" value="04025J1R2PBSTR"/>
+<attribute name="MPN" value="04025J1R1PBSTR\500"/>
 </part>
 <part name="C23" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1.6pF">
 <spice>
