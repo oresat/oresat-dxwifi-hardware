@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -18976,9 +18976,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND66" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C13" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
 <part name="GND68" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
-<part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
-<part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="Q1" library="Q-Diodesinc-MMBT2907-PNP" deviceset="MMBT2907*" device="SMD" value="MMBT2907"/>
 <part name="U10" library="U-TI-TLVH431-Shunt-Regulator" deviceset="TLVH431" device="" value="TLVH431"/>
 <part name="R28" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
@@ -21194,8 +21191,6 @@ CAN1 TX --&gt; A11 --&gt; UART1_RXD </text>
 <wire x1="259.08" y1="480.06" x2="259.08" y2="551.18" width="0.1524" layer="97"/>
 <wire x1="259.08" y1="551.18" x2="177.8" y2="551.18" width="0.1524" layer="97"/>
 <wire x1="177.8" y1="551.18" x2="177.8" y2="480.06" width="0.1524" layer="97"/>
-<text x="238.76" y="414.02" size="1.27" layer="97">I2C2 SCL == UART1_RTSN == A10
-I2C2 SDA == UART1_CTSN == B10 </text>
 <text x="540.766" y="410.718" size="1.778" layer="97">GPIO -&gt; PIN map
 gpio3_9   == mii1_tx_clk
 gpio0_28 == mii1_txd0
@@ -21390,17 +21385,6 @@ DNP for now</text>
 </instance>
 <instance part="TP40" gate="G$1" x="243.84" y="515.62" smashed="yes">
 <attribute name="NAME" x="248.412" y="514.858" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="R30" gate="R" x="254" y="398.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="250.9266" y="400.812" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="255.27" y="400.558" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R29" gate="R" x="261.62" y="398.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="258.5466" y="400.304" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="263.398" y="400.558" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="3V-6" gate="G$1" x="254" y="408.94" smashed="yes">
-<attribute name="VALUE" x="253.365" y="409.575" size="1.27" layer="96"/>
 </instance>
 <instance part="TP22" gate="G$1" x="195.58" y="365.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="196.342" y="370.332" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -21674,15 +21658,6 @@ DNP for now</text>
 <pinref part="C31" gate="CE" pin="2"/>
 <wire x1="208.28" y1="528.32" x2="226.06" y2="528.32" width="0.1524" layer="91"/>
 <junction x="226.06" y="528.32"/>
-</segment>
-<segment>
-<pinref part="R30" gate="R" pin="1"/>
-<pinref part="3V-6" gate="G$1" pin="3.3V"/>
-<wire x1="254" y1="403.86" x2="254" y2="406.4" width="0.1524" layer="91"/>
-<pinref part="R29" gate="R" pin="1"/>
-<wire x1="261.62" y1="403.86" x2="261.62" y2="406.4" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="406.4" x2="254" y2="406.4" width="0.1524" layer="91"/>
-<junction x="254" y="406.4"/>
 </segment>
 <segment>
 <pinref part="3V-11" gate="G$1" pin="3.3V"/>
@@ -22177,24 +22152,6 @@ DNP for now</text>
 <pinref part="U11" gate="G$1" pin="CANL"/>
 <wire x1="213.36" y1="505.46" x2="198.12" y2="505.46" width="0.1524" layer="91"/>
 <label x="198.12" y="505.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SDA_2" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="UART1_CTSN"/>
-<wire x1="289.56" y1="386.08" x2="261.62" y2="386.08" width="0.1524" layer="91"/>
-<pinref part="R29" gate="R" pin="2"/>
-<label x="261.62" y="393.7" size="1.27" layer="95" xref="yes"/>
-<wire x1="261.62" y1="386.08" x2="261.62" y2="393.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SCL_2" class="0">
-<segment>
-<pinref part="U7" gate="C" pin="UART1_RTSN"/>
-<pinref part="R30" gate="R" pin="2"/>
-<wire x1="289.56" y1="383.54" x2="254" y2="383.54" width="0.1524" layer="91"/>
-<label x="254" y="393.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="254" y1="383.54" x2="254" y2="393.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART0_TX" class="0">
