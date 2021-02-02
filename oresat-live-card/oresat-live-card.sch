@@ -19332,7 +19332,7 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PCBA1" library="PCBA-WF-NP9202-wifi-adapter" deviceset="WF-NP9202" device="WF"/>
 <part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
-<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22983,12 +22983,12 @@ battery circuit</text>
 <attribute name="NAME" x="60.96" y="195.58" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="60.96" y="190.5" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="J2" gate="A" x="370.84" y="63.5" smashed="yes">
-<attribute name="NAME" x="365.76" y="73.66" size="1.778" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="365.76" y="71.12" size="1.778" layer="96" ratio="20"/>
+<instance part="J2" gate="A" x="353.06" y="60.96" smashed="yes" rot="MR180">
+<attribute name="NAME" x="347.98" y="50.8" size="1.778" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="347.98" y="53.34" size="1.778" layer="96" ratio="20" rot="MR180"/>
 </instance>
-<instance part="GND33" gate="1" x="360.68" y="43.18" smashed="yes">
-<attribute name="VALUE" x="360.68" y="42.926" size="1.778" layer="96" align="top-center"/>
+<instance part="GND34" gate="1" x="360.68" y="71.12" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="360.68" y="70.866" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -23051,15 +23051,16 @@ battery circuit</text>
 <wire x1="259.08" y1="137.16" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="A" pin="4"/>
-<wire x1="363.22" y1="60.96" x2="360.68" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="360.68" y1="60.96" x2="360.68" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="360.68" y1="73.66" x2="360.68" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="7"/>
-<wire x1="360.68" y1="48.26" x2="360.68" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="50.8" x2="370.84" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="48.26" x2="360.68" y2="48.26" width="0.1524" layer="91"/>
-<junction x="360.68" y="48.26"/>
+<wire x1="353.06" y1="76.2" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="345.44" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="60.96" x2="342.9" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
+<junction x="353.06" y="76.2"/>
 </segment>
 </net>
 <net name="VIN_USB" class="0">
@@ -23166,10 +23167,10 @@ battery circuit</text>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <label x="307.34" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
 <wire x1="292.1" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="68.58" x2="363.22" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="60.96" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="6"/>
+<wire x1="345.44" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
 <junction x="307.34" y="68.58"/>
-<pinref part="J2" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$619" class="0">
@@ -23377,20 +23378,20 @@ battery circuit</text>
 <net name="USB_HO_N" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="USB1_DM"/>
-<wire x1="251.46" y1="60.96" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="63.5" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="60.96" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="66.04" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
 <label x="302.26" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
 <wire x1="160.02" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="88.9" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="3"/>
-<wire x1="363.22" y1="63.5" x2="302.26" y2="63.5" width="0.1524" layer="91"/>
-<junction x="251.46" y="63.5"/>
-<wire x1="302.26" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="60.96" x2="302.26" y2="63.5" width="0.1524" layer="91"/>
-<junction x="302.26" y="63.5"/>
+<junction x="251.46" y="66.04"/>
+<wire x1="302.26" y1="66.04" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="I1"/>
 <wire x1="160.02" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="66.04" x2="302.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="5"/>
+<wire x1="302.26" y1="66.04" x2="345.44" y2="66.04" width="0.1524" layer="91"/>
+<junction x="302.26" y="66.04"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -23524,19 +23525,18 @@ battery circuit</text>
 <segment>
 <pinref part="U7" gate="B" pin="USB1_DP"/>
 <wire x1="231.14" y1="152.4" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="152.4" x2="248.92" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="152.4" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 <label x="297.18" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
-<wire x1="248.92" y1="66.04" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="63.5" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="2"/>
-<wire x1="363.22" y1="66.04" x2="297.18" y2="66.04" width="0.1524" layer="91"/>
-<junction x="248.92" y="66.04"/>
-<wire x1="297.18" y1="66.04" x2="248.92" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="60.96" x2="297.18" y2="66.04" width="0.1524" layer="91"/>
-<junction x="297.18" y="66.04"/>
+<junction x="248.92" y="63.5"/>
+<wire x1="297.18" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="60.96" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="I2"/>
 <wire x1="162.56" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="4"/>
+<wire x1="345.44" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
+<junction x="297.18" y="63.5"/>
 </segment>
 </net>
 </nets>
