@@ -22024,15 +22024,15 @@ DNP for now</text>
 <segment>
 <pinref part="J100" gate="G$1" pin="DAT2"/>
 <wire x1="167.64" y1="337.82" x2="167.64" y2="403.86" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="403.86" x2="121.92" y2="403.86" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="403.86" x2="127" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="MMC0_DAT2"/>
-<wire x1="121.92" y1="403.86" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
+<wire x1="127" y1="403.86" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="347.98" x2="243.84" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="347.98" x2="243.84" y2="337.82" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="337.82" x2="167.64" y2="337.82" width="0.1524" layer="91"/>
-<pinref part="R8" gate="A" pin="11"/>
-<wire x1="121.92" y1="414.02" x2="121.92" y2="403.86" width="0.1524" layer="91"/>
-<junction x="121.92" y="403.86"/>
+<pinref part="R8" gate="A" pin="22"/>
+<wire x1="127" y1="414.02" x2="127" y2="403.86" width="0.1524" layer="91"/>
+<junction x="127" y="403.86"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -22053,14 +22053,14 @@ DNP for now</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="J100" gate="G$1" pin="CMD/DI"/>
-<wire x1="106.68" y1="398.78" x2="127" y2="398.78" width="0.1524" layer="91"/>
-<wire x1="127" y1="398.78" x2="190.5" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="398.78" x2="132.08" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="398.78" x2="190.5" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="398.78" x2="190.5" y2="355.6" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="MMC0_CMD"/>
 <wire x1="190.5" y1="355.6" x2="289.56" y2="355.6" width="0.1524" layer="91"/>
-<pinref part="R8" gate="A" pin="22"/>
-<wire x1="127" y1="414.02" x2="127" y2="398.78" width="0.1524" layer="91"/>
-<junction x="127" y="398.78"/>
+<pinref part="R8" gate="A" pin="33"/>
+<wire x1="132.08" y1="414.02" x2="132.08" y2="398.78" width="0.1524" layer="91"/>
+<junction x="132.08" y="398.78"/>
 </segment>
 </net>
 <net name="N$7" class="0">
