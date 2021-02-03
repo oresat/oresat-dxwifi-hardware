@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -23392,15 +23392,15 @@ battery circuit</text>
 <wire x1="251.46" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
 <label x="302.26" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
 <wire x1="160.02" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="88.9" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 <junction x="251.46" y="66.04"/>
+<wire x1="160.02" y1="88.9" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="66.04" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="I1"/>
-<wire x1="160.02" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="66.04" x2="302.26" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="5"/>
 <wire x1="302.26" y1="66.04" x2="345.44" y2="66.04" width="0.1524" layer="91"/>
 <junction x="302.26" y="66.04"/>
+<pinref part="U1" gate="G$1" pin="I1"/>
+<wire x1="160.02" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -23541,11 +23541,11 @@ battery circuit</text>
 <junction x="248.92" y="63.5"/>
 <wire x1="297.18" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="60.96" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="I2"/>
-<wire x1="162.56" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="4"/>
 <wire x1="345.44" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
 <junction x="297.18" y="63.5"/>
+<pinref part="U1" gate="G$1" pin="I2"/>
+<wire x1="165.1" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
