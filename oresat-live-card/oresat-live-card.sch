@@ -8776,7 +8776,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="PAD.03X.04" urn="urn:adsk.eagle:footprint:37962/1">
+<package name="PAD.03X.04">
 <description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
 Used as a test point connection for pogo pins or other debugging tools. 
 &lt;p&gt;Specifications:
@@ -8807,51 +8807,6 @@ Used as a test point connection for pogo pins or other debugging tools.
 <text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <circle x="-1.905" y="0" radius="0.179603125" width="0.3302" layer="21"/>
-</package>
-<package name="PAD.02X.02" urn="urn:adsk.eagle:footprint:37959/1">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
-</package>
-<package name="PAD.03X.03" urn="urn:adsk.eagle:footprint:37960/1">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.05" urn="urn:adsk.eagle:footprint:37961/1">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="TP_15TH" urn="urn:adsk.eagle:footprint:37963/1">
-<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area:0.015"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
-<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
 </package>
 <package name="1X03" urn="urn:adsk.eagle:footprint:37678/1">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
@@ -9454,73 +9409,67 @@ No silk outline, but tDocu layer shows pin location.
 <text x="2.159" y="3.683" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="2.032" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="PAD.02X.02">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area:0.015"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
+<package name="1X01_NO_SILK">
+<description>&lt;h3&gt;Plated Through Hole - No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="PAD.03X.04" urn="urn:adsk.eagle:package:38287/1" type="box">
-<description>Electrically Conductive Pad 0.04" Circle
-Used as a test point connection for pogo pins or other debugging tools. 
-Specifications:
-Area: 0.04" x 0.04"
-
-Example device(s):
-TEST_POINT
-</description>
-<packageinstances>
-<packageinstance name="PAD.03X.04"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD.02X.02" urn="urn:adsk.eagle:package:38284/1" type="box">
-<description>Electrically Conductive Pad 0.02" Square
-Used as a test point connection for pogo pins or other debugging tools. 
-Specifications:
-Area: 0.02" x 0.02"
-
-Example device(s):
-TEST_POINT
-</description>
-<packageinstances>
-<packageinstance name="PAD.02X.02"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD.03X.03" urn="urn:adsk.eagle:package:38286/1" type="box">
-<description>Electrically Conductive Pad 0.03" Circle
-Used as a test point connection for pogo pins or other debugging tools. 
-Specifications:
-Area: 0.03" x 0.03"
-
-Example device(s):
-TEST_POINT
-</description>
-<packageinstances>
-<packageinstance name="PAD.03X.03"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD.03X.05" urn="urn:adsk.eagle:package:38285/1" type="box">
-<description>Electrically Conductive Pad 0.05" Circle
-Used as a test point connection for pogo pins or other debugging tools. 
-Specifications:
-Area: 0.05" x 0.05"
-
-Example device(s):
-TEST_POINT
-</description>
-<packageinstances>
-<packageinstance name="PAD.03X.05"/>
-</packageinstances>
-</package3d>
-<package3d name="TP_15TH" urn="urn:adsk.eagle:package:38288/1" type="box">
-<description>Electrically Conductive Via 0.015" Drill
-Used as a test point connection for pogo pins or other debugging tools. 
-Specifications:
-Area:0.015"
-
-Example device(s):
-TEST_POINT
-</description>
-<packageinstances>
-<packageinstance name="TP_15TH"/>
-</packageinstances>
-</package3d>
 <package3d name="1X03_LONGPADS" urn="urn:adsk.eagle:package:38068/1" locally_modified="yes" type="box">
 <description>Plated Through Hole - 3 Pin Long Pads
 Specifications:
@@ -9832,7 +9781,7 @@ CONN_03
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="TEST-POINT" urn="urn:adsk.eagle:symbol:37958/1">
+<symbol name="TEST-POINT">
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;Name</text>
@@ -9856,7 +9805,7 @@ CONN_03
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TEST-POINT" urn="urn:adsk.eagle:component:38391/1" prefix="TP">
+<deviceset name="TEST-POINT" prefix="TP">
 <description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
 &lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
@@ -9872,9 +9821,6 @@ CONN_03
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38284/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9883,9 +9829,6 @@ CONN_03
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38286/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9894,9 +9837,6 @@ CONN_03
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38285/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9905,9 +9845,6 @@ CONN_03
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38287/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9916,9 +9853,14 @@ CONN_03
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38288/1"/>
-</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POGO_PTH" package="1X01_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -18862,32 +18804,32 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="L1" library="L-ECS-MPI4040" deviceset="L-ECS-MPI4040" device="" value="6.8u"/>
 <part name="VBUSP1" library="oresat-supplies" deviceset="VBUSP" device=""/>
 <part name="U7" library="U-OSD3358-512M-BSM" deviceset="OSD3358-512M-BSM" device=""/>
-<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP130" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP129" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP130" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP129" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="3V-28" library="oresat-supplies" deviceset="3.3V" device=""/>
-<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP161" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP164" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP165" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP163" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP161" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP164" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP165" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP163" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="GND73" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND74" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP151" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP155" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP167" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP140" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP132" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP121" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP151" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP155" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP167" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP140" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP132" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP121" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="GND71" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP136" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP136" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="U4" library="U-TI-SN74LVC1G07DCK-Buffer" deviceset="SN74LVC1G07DCK" device="" value="SN74LVC1G07DCK"/>
 <part name="C18" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="TP14" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP14" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="GND70" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND72" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C22" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="18pF, 50V"/>
@@ -18970,8 +18912,8 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U11" library="U-TI-TCAN330-CAN-transceiver" deviceset="TCAN330" device=""/>
 <part name="3V-5" library="oresat-supplies" deviceset="3.3V" device=""/>
-<part name="TP35" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP40" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP35" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP40" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
 <part name="GND66" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C13" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
@@ -18984,62 +18926,62 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="3V-1" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="3V-2" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="3V-26" library="oresat-supplies" deviceset="5V" device=""/>
-<part name="TP22" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP30" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP180" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP104" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP123" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP115" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP105" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP124" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP120" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP125" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP114" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP111" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP177" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP178" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP162" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP153" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP152" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP159" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP143" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP174" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP158" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP147" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP137" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP149" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP135" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP156" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP154" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP160" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP166" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP173" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP157" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP172" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP150" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP145" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP39" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP38" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP181" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP175" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP176" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP169" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP179" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP141" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP139" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP101" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP126" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP118" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP100" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP106" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP22" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP30" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP180" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP104" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP123" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP115" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP105" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP124" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP120" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP125" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP114" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP111" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP177" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP178" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP162" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP153" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP152" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP159" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP143" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP174" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP158" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP147" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP137" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP149" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP135" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP156" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP154" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP160" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP166" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP173" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP157" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP172" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP150" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP145" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP39" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP38" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP181" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP175" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP176" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP169" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP179" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP141" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP139" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP101" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP126" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP118" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP100" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP106" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
-<part name="TP122" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP107" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP108" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP117" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP103" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP122" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP107" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP108" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP117" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP103" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="3V-11" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="R9" library="R-Panasonic-EXB_A10PXXXJ" deviceset="EXB-A10P391J" device="C_ARRAY_EXBA-M" value="10K">
 <attribute name="DPN" value="U7103CT-ND"/>
@@ -19051,16 +18993,16 @@ The large circular pin in the center is the connection to the RF cable providing
 <attribute name="DPN" value="U7103CT-ND"/>
 <attribute name="MPN" value="EXB-A10P103J"/>
 </part>
-<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="JP101" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
 <part name="JP104" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
-<part name="TP133" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP144" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP128" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP127" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP131" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP134" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP148" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP133" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP144" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP128" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP127" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP131" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP134" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP148" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R61" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
@@ -19256,38 +19198,36 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP42" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP44" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP184" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP183" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP62" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP61" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP60" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP59" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP58" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP184" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP183" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP62" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP61" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP60" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP59" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP58" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP51" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP170" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP25" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="C15" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
-<part name="GND75" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="TP170" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP25" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="R27" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
 <part name="C30" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="18pF, 50V"/>
 <part name="C29" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="18pF, 50V"/>
 <part name="Y2" library="OSD3358-SM-RED Platform" deviceset="ABS07-32.768KHZ-T" device=""/>
-<part name="TP168" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP168" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="R20" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="R22" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-25" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="R35" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="665k"/>
-<part name="TP110" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP109" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP110" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP109" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="J1" library="oresat-debug-connector" deviceset="ORESAT-DEBUG-CONNECTOR" device="-CARD"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="1uF"/>
 <part name="C10" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="1uF"/>
-<part name="TP102" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP112" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP182" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP171" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP138" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP102" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP112" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP182" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP171" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP138" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="JP100" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
 <part name="GND35" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
@@ -19296,8 +19236,8 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="JP108" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
 <part name="JP107" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_NO" device="_SILK"/>
 <part name="JP109" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
-<part name="TP142" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
-<part name="TP146" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP142" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP146" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="U13" library="U-Microchip-MIC842-Comparator" deviceset="MIC842L" device="YC5"/>
 <part name="U12" library="U-Microchip-MIC842-Comparator" deviceset="MIC842L" device="YC5"/>
 <part name="TP67" library="Tova" deviceset="TEST-POINT" device=""/>
@@ -19310,9 +19250,9 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="R60" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
 <part name="3V-29" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="TP69" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP69" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="VBUS2" library="oresat-supplies" deviceset="VBUS" device=""/>
-<part name="TP31" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4" package3d_urn="urn:adsk.eagle:package:38287/1"/>
+<part name="TP31" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="GND54" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C41" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -19340,15 +19280,15 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
 <part name="U5" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="TP5" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP6" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="C16" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="C17" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="1uF"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C20" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF"/>
-<part name="TP7" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="C20" library="oresat-rcl" deviceset="C-EU" device="C1210" value="22uF">
+<attribute name="MFG" value="Murata"/>
+<attribute name="MPN" value="GCJ32ER71C226KE01L"/>
+</part>
 <part name="R12" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="R14" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="NP">
 <attribute name="DIS" value="Digi-Key"/>
@@ -19359,15 +19299,16 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="L-ECS-MPI4040" deviceset="L-ECS-MPI4040" device="" value="6.8u"/>
 <part name="VBUSP3" library="oresat-supplies" deviceset="VBUSP" device=""/>
-<part name="3V-7" library="oresat-supplies" deviceset="5V" device=""/>
-<part name="3V-8" library="oresat-supplies" deviceset="5V" device=""/>
+<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 </parts>
 <sheets>
 <sheet>
 <description>Connectors</description>
 <plain>
-<text x="336.55" y="26.67" size="3.81" layer="94">OreSat Star Tracker: Connectors</text>
-<text x="416.56" y="6.35" size="3.81" layer="94">1.2</text>
+<text x="336.55" y="26.67" size="3.81" layer="94">OreSat DxWiFi: Connectors</text>
+<text x="416.56" y="6.35" size="3.81" layer="94">1.0</text>
 <text x="11.43" y="5.08" size="1.778" layer="97">All resistors 0402 +/- 1% unless marked</text>
 <text x="11.43" y="2.54" size="1.778" layer="97">All caps are 0402 ceramic 10% X5R Vw&gt;=16V unless marked</text>
 <wire x1="99.06" y1="236.22" x2="205.74" y2="236.22" width="0.1524" layer="97"/>
@@ -19818,7 +19759,7 @@ unconnected?</text>
 <wire x1="294.64" y1="114.3" x2="294.64" y2="43.18" width="0.1524" layer="97"/>
 <wire x1="294.64" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="97"/>
 <wire x1="185.42" y1="43.18" x2="185.42" y2="114.3" width="0.1524" layer="97"/>
-<text x="416.56" y="6.35" size="3.81" layer="94">1.2</text>
+<text x="416.56" y="6.35" size="3.81" layer="94">1.0</text>
 <text x="209.55" y="256.54" size="2.54" layer="97">Main Power Switch</text>
 <text x="132.08" y="129.54" size="2.54" layer="97" align="center">OreSat Power Enable
 (PEN)</text>
@@ -19841,7 +19782,7 @@ Power Supply (3.3V)</text>
 <text x="96.012" y="136.144" size="1.778" layer="97">Note: Address 0b0111110x is 
 reserved on all oresat cards</text>
 <text x="241.3" y="233.68" size="1.778" layer="97">0805</text>
-<text x="339.09" y="26.67" size="3.81" layer="94">OreSat Star Tracker: OPD v4.1</text>
+<text x="339.09" y="26.67" size="3.81" layer="94">OreSat DxWiFi: OPD v4.1</text>
 <text x="308.61" y="73.66" size="1.778" layer="97">0805</text>
 <text x="359.41" y="91.44" size="1.778" layer="97">ECS-MPI4040R4-6R8-R</text>
 <text x="327.66" y="109.22" size="3.81" layer="97">5V PA Switching Supply</text>
@@ -20387,12 +20328,6 @@ reserved on all oresat cards</text>
 <instance part="GND37" gate="1" x="350.52" y="53.34" smashed="yes">
 <attribute name="VALUE" x="347.98" y="50.8" size="1.778" layer="96"/>
 </instance>
-<instance part="TP5" gate="G$1" x="368.3" y="76.2" smashed="yes">
-<attribute name="NAME" x="364.49" y="72.39" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="TP6" gate="G$1" x="332.74" y="76.2" smashed="yes">
-<attribute name="NAME" x="328.93" y="72.39" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="C16" gate="CE" x="307.34" y="81.28" smashed="yes">
 <attribute name="NAME" x="308.61" y="81.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="308.61" y="76.2" size="1.778" layer="96"/>
@@ -20413,9 +20348,8 @@ reserved on all oresat cards</text>
 <instance part="C20" gate="CE" x="388.62" y="81.28" smashed="yes">
 <attribute name="NAME" x="389.89" y="81.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="389.89" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="TP7" gate="G$1" x="388.62" y="88.9" smashed="yes">
-<attribute name="NAME" x="391.16" y="87.63" size="1.778" layer="95" font="vector"/>
+<attribute name="MFG" x="388.62" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="388.62" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R12" gate="R" x="325.12" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="323.85" y="73.66" size="1.778" layer="95" rot="R90"/>
@@ -20439,11 +20373,14 @@ reserved on all oresat cards</text>
 <instance part="VBUSP3" gate="G$1" x="307.34" y="88.9" smashed="yes">
 <attribute name="VALUE" x="307.34" y="91.694" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="3V-7" gate="G$1" x="388.62" y="93.98" smashed="yes">
-<attribute name="VALUE" x="387.985" y="94.615" size="1.27" layer="96"/>
+<instance part="TP5" gate="G$1" x="332.74" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="327.66" y="76.2" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="3V-8" gate="G$1" x="403.86" y="93.98" smashed="yes">
-<attribute name="VALUE" x="403.225" y="94.615" size="1.27" layer="96"/>
+<instance part="TP6" gate="G$1" x="368.3" y="76.2" smashed="yes">
+<attribute name="NAME" x="373.38" y="76.2" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP7" gate="G$1" x="388.62" y="88.9" smashed="yes">
+<attribute name="NAME" x="391.16" y="91.44" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -20752,28 +20689,6 @@ reserved on all oresat cards</text>
 <pinref part="R62" gate="R" pin="2"/>
 <pinref part="3V-2" gate="G$1" pin="5V"/>
 <wire x1="287.02" y1="87.63" x2="287.02" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C20" gate="CE" pin="1"/>
-<wire x1="388.62" y1="83.82" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="FB"/>
-<wire x1="363.22" y1="81.28" x2="386.08" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="81.28" x2="386.08" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="86.36" x2="383.54" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="86.36" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
-<junction x="386.08" y="86.36"/>
-<junction x="388.62" y="86.36"/>
-<wire x1="388.62" y1="86.36" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="91.44" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="TP7" gate="G$1" pin="1"/>
-<pinref part="L2" gate="G$1" pin="2"/>
-<junction x="388.62" y="88.9"/>
-<pinref part="3V-7" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<pinref part="R11" gate="R" pin="2"/>
-<pinref part="3V-8" gate="G$1" pin="5V"/>
-<wire x1="403.86" y1="87.63" x2="403.86" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OPD_SDA" class="0">
@@ -21355,23 +21270,47 @@ reserved on all oresat cards</text>
 <net name="TPS62111-PG1" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PG"/>
-<pinref part="TP5" gate="G$1" pin="1"/>
 <wire x1="363.22" y1="76.2" x2="368.3" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="TPS62111-SYNC1" class="0">
 <segment>
-<pinref part="TP6" gate="G$1" pin="1"/>
 <pinref part="U5" gate="G$1" pin="SYNC"/>
 <wire x1="332.74" y1="76.2" x2="337.82" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="76.2" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
-<junction x="332.74" y="76.2"/>
 <pinref part="R14" gate="R" pin="2"/>
 <pinref part="R12" gate="R" pin="1"/>
 <wire x1="325.12" y1="68.58" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="71.12" x2="325.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="71.12" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
 <junction x="325.12" y="71.12"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
+<junction x="332.74" y="76.2"/>
+</segment>
+</net>
+<net name="5V_PA" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="FB"/>
+<wire x1="363.22" y1="81.28" x2="386.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="81.28" x2="386.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="86.36" x2="383.54" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
+<wire x1="388.62" y1="88.9" x2="388.62" y2="93.98" width="0.1524" layer="91"/>
+<junction x="388.62" y="88.9"/>
+<pinref part="C20" gate="CE" pin="1"/>
+<wire x1="388.62" y1="83.82" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
+<label x="388.62" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="388.62" y1="86.36" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="86.36" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="386.08" y="86.36"/>
+<junction x="388.62" y="86.36"/>
+</segment>
+<segment>
+<pinref part="R11" gate="R" pin="2"/>
+<wire x1="403.86" y1="87.63" x2="403.86" y2="93.98" width="0.1524" layer="91"/>
+<label x="403.86" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -21473,8 +21412,8 @@ SYSBOOT[2] LOW == SD Card</text>
 <text x="165.1" y="469.9" size="2.54" layer="97">SPI Flash/EEPROM
 For SPI boot
 DNP for now</text>
-<text x="764.54" y="27.94" size="3.81" layer="94">OreSat Star Tracker: Camera, eMMC</text>
-<text x="848.36" y="6.35" size="3.81" layer="94">1.2</text>
+<text x="764.54" y="27.94" size="3.81" layer="94">OreSat DxWiFi: eMMC, SD card</text>
+<text x="848.36" y="6.35" size="3.81" layer="94">1.0</text>
 </plain>
 <instances>
 <instance part="U7" gate="C" x="320.04" y="350.52" smashed="yes">
@@ -23027,8 +22966,8 @@ battery circuit</text>
 <wire x1="144.78" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="114.3" x2="93.98" y2="120.904" width="0.1524" layer="97"/>
 <text x="152.908" y="204.724" size="1.778" layer="102">1M if populated</text>
-<text x="331.47" y="26.67" size="3.81" layer="94">OreSat Star Tracker: USB, JTAG, OSC</text>
-<text x="415.29" y="6.35" size="3.81" layer="94">1.2</text>
+<text x="331.47" y="26.67" size="3.81" layer="94">OreSat DxWiFi: USB, JTAG, OSC</text>
+<text x="415.29" y="6.35" size="3.81" layer="94">1.0</text>
 </plain>
 <instances>
 <instance part="U7" gate="B" x="200.66" y="200.66" smashed="yes">
@@ -23404,10 +23343,10 @@ battery circuit</text>
 <segment>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <label x="307.34" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
-<wire x1="292.1" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="60.96" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="6"/>
-<wire x1="345.44" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="68.58" x2="345.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="60.96" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
 <junction x="307.34" y="68.58"/>
 </segment>
 </net>
@@ -23861,8 +23800,8 @@ pullup resistors, and the I2C0 ESD protection</text>
 I2C0 lines. This is required because
 these lines are routed externally so
 the internal EEPROM can be programmed.</text>
-<text x="102.87" y="-6.35" size="3.81" layer="94">OreSat Star Tracker: OSD Power/Misc</text>
-<text x="187.96" y="-26.67" size="3.81" layer="94">1.2</text>
+<text x="102.87" y="-6.35" size="3.81" layer="94">OreSat DxWiFi: OSD Power/Misc</text>
+<text x="187.96" y="-26.67" size="3.81" layer="94">1.0</text>
 </plain>
 <instances>
 <instance part="U7" gate="A" x="-88.9" y="96.52" smashed="yes">
@@ -24050,13 +23989,6 @@ the internal EEPROM can be programmed.</text>
 </instance>
 <instance part="TP25" gate="G$1" x="-48.26" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="-44.45" y="158.75" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="C15" gate="CE" x="-38.1" y="172.72" smashed="yes">
-<attribute name="NAME" x="-34.544" y="173.101" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-34.544" y="169.799" size="1.778" layer="96"/>
-</instance>
-<instance part="GND75" gate="1" x="-38.1" y="162.56" smashed="yes">
-<attribute name="VALUE" x="-38.1" y="162.306" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="TP110" gate="G$1" x="-40.64" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.942" y="22.098" size="1.778" layer="95" font="vector"/>
@@ -24511,9 +24443,6 @@ the internal EEPROM can be programmed.</text>
 <pinref part="SUPPLY3" gate="VDD" pin="VDD"/>
 <pinref part="TP3" gate="G$1" pin="1"/>
 <junction x="-48.26" y="175.26"/>
-<pinref part="C15" gate="CE" pin="1"/>
-<wire x1="-38.1" y1="175.26" x2="-43.18" y2="175.26" width="0.1524" layer="91"/>
-<junction x="-43.18" y="175.26"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -24780,11 +24709,6 @@ the internal EEPROM can be programmed.</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND71" gate="1" pin="GND"/>
 <wire x1="-15.24" y1="149.86" x2="-12.7" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C15" gate="CE" pin="2"/>
-<pinref part="GND75" gate="1" pin="GND"/>
-<wire x1="-38.1" y1="167.64" x2="-38.1" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
