@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -19271,8 +19271,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PCBA1" library="PCBA-WF-NP9202-wifi-adapter" deviceset="WF-NP9202" device="WF"/>
-<part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
-<part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="D9" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
@@ -19302,6 +19300,9 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
+<part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19395,6 +19396,13 @@ unconnected?</text>
 <attribute name="NAME" x="223.52" y="63.5" size="1.778" layer="95"/>
 <attribute name="VALUE" x="223.52" y="60.96" size="1.778" layer="96"/>
 </instance>
+<instance part="J2" gate="A" x="297.18" y="83.82" smashed="yes" rot="MR180">
+<attribute name="NAME" x="292.1" y="73.66" size="1.778" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="292.1" y="76.2" size="1.778" layer="96" ratio="20" rot="MR180"/>
+</instance>
+<instance part="GND34" gate="1" x="304.8" y="93.98" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="304.8" y="93.726" size="1.778" layer="96" rot="MR0" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19469,6 +19477,18 @@ unconnected?</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="154.94" y1="67.31" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 <junction x="154.94" y="68.58"/>
+</segment>
+<segment>
+<pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="304.8" y1="96.52" x2="304.8" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="7"/>
+<wire x1="297.18" y1="99.06" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="289.56" y1="83.82" x2="287.02" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="83.82" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="99.06" x2="297.18" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="99.06" x2="297.18" y2="99.06" width="0.1524" layer="91"/>
+<junction x="297.18" y="99.06"/>
 </segment>
 </net>
 <net name="OPD_SDA" class="0">
@@ -19670,12 +19690,22 @@ unconnected?</text>
 <wire x1="279.4" y1="175.26" x2="279.4" y2="182.88" width="0.1524" layer="91"/>
 <label x="279.4" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="A" pin="5"/>
+<wire x1="289.56" y1="88.9" x2="281.94" y2="88.9" width="0.1524" layer="91"/>
+<label x="281.94" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="USB_HO_P" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="HOST-D+"/>
 <wire x1="276.86" y1="175.26" x2="276.86" y2="182.88" width="0.1524" layer="91"/>
 <label x="276.86" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="4"/>
+<wire x1="289.56" y1="86.36" x2="281.94" y2="86.36" width="0.1524" layer="91"/>
+<label x="281.94" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$103" class="0">
@@ -19731,6 +19761,11 @@ unconnected?</text>
 <pinref part="J1" gate="G$1" pin="DEBUG-0"/>
 <wire x1="284.48" y1="175.26" x2="284.48" y2="182.88" width="0.1524" layer="91"/>
 <label x="284.48" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="6"/>
+<wire x1="289.56" y1="91.44" x2="281.94" y2="91.44" width="0.1524" layer="91"/>
+<label x="281.94" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="USB_CLI_VBUS" class="0">
@@ -23160,13 +23195,6 @@ battery circuit</text>
 <attribute name="NAME" x="60.96" y="195.58" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="60.96" y="190.5" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="J2" gate="A" x="353.06" y="60.96" smashed="yes" rot="MR180">
-<attribute name="NAME" x="347.98" y="50.8" size="1.778" layer="95" ratio="6" rot="SMR180"/>
-<attribute name="VALUE" x="347.98" y="53.34" size="1.778" layer="96" ratio="20" rot="MR180"/>
-</instance>
-<instance part="GND34" gate="1" x="360.68" y="71.12" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="360.68" y="70.866" size="1.778" layer="96" rot="MR0" align="top-center"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -23226,18 +23254,6 @@ battery circuit</text>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="JP100" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="137.16" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND34" gate="1" pin="GND"/>
-<wire x1="360.68" y1="73.66" x2="360.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="7"/>
-<wire x1="353.06" y1="76.2" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="3"/>
-<wire x1="345.44" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="60.96" x2="342.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
-<junction x="353.06" y="76.2"/>
 </segment>
 </net>
 <net name="VIN_USB" class="0">
@@ -23342,12 +23358,8 @@ battery circuit</text>
 <net name="USB_HO_VBUS" class="0">
 <segment>
 <pinref part="FB1" gate="G$1" pin="2"/>
-<label x="307.34" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
-<pinref part="J2" gate="A" pin="6"/>
-<wire x1="292.1" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="68.58" x2="345.44" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="60.96" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
-<junction x="307.34" y="68.58"/>
+<label x="297.18" y="68.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="292.1" y1="68.58" x2="297.18" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$619" class="0">
@@ -23558,17 +23570,13 @@ battery circuit</text>
 <wire x1="251.46" y1="60.96" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="66.04" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
-<label x="302.26" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
+<label x="297.18" y="66.04" size="1.27" layer="95" xref="yes"/>
 <wire x1="160.02" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
-<junction x="251.46" y="66.04"/>
 <wire x1="160.02" y1="88.9" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="66.04" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="66.04" x2="302.26" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="5"/>
-<wire x1="302.26" y1="66.04" x2="345.44" y2="66.04" width="0.1524" layer="91"/>
-<junction x="302.26" y="66.04"/>
 <pinref part="U1" gate="G$1" pin="I1"/>
 <wire x1="160.02" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="66.04" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
+<junction x="251.46" y="66.04"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -23703,15 +23711,11 @@ battery circuit</text>
 <pinref part="U7" gate="B" pin="USB1_DP"/>
 <wire x1="231.14" y1="152.4" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="152.4" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
-<label x="297.18" y="60.96" size="1.4224" layer="95" rot="R270" xref="yes"/>
+<label x="297.18" y="63.5" size="1.27" layer="95" xref="yes"/>
 <wire x1="248.92" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="63.5" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="248.92" y="63.5"/>
 <wire x1="297.18" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="60.96" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J2" gate="A" pin="4"/>
-<wire x1="345.44" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
-<junction x="297.18" y="63.5"/>
 <pinref part="U1" gate="G$1" pin="I2"/>
 <wire x1="165.1" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
@@ -24795,6 +24799,24 @@ the internal EEPROM can be programmed.</text>
 <junction x="-127" y="43.18"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="336.55" y="-161.29" size="3.81" layer="94">OreSat DxWiFi: RF</text>
+<text x="420.37" y="-181.61" size="3.81" layer="94">1.0</text>
+</plain>
+<instances>
+<instance part="FRAME6" gate="G$1" x="5.08" y="-187.96" smashed="yes"/>
+<instance part="FRAME6" gate="G$2" x="330.2" y="-187.96" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="342.9" y="-186.69" size="2.54" layer="94"/>
+<attribute name="SHEET" x="416.56" y="-186.69" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="347.98" y="-168.91" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
