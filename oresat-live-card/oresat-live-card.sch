@@ -22439,10 +22439,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attribute name="MFR" value="Vishay / Dale"/>
 <attribute name="MPN" value="CRCW04023R30FKED"/>
 </part>
-<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
-<part name="R86" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
-<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
-<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
+<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
+<part name="R86" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
+<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
+<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C15" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="100n"/>
