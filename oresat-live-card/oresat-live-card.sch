@@ -21721,8 +21721,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="No Pi Pad" current="yes"/>
-<variantdef name="Pi Pad"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -22441,16 +22439,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attribute name="MFR" value="Vishay / Dale"/>
 <attribute name="MPN" value="CRCW04023R30FKED"/>
 </part>
-<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A">
-<variant name="No Pi Pad" populate="no"/>
-</part>
+<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
 <part name="R86" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
-<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A">
-<variant name="No Pi Pad" populate="no"/>
-</part>
-<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A">
-<variant name="No Pi Pad" populate="no"/>
-</part>
+<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
+<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C15" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="100n"/>
@@ -22458,6 +22450,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="GND48" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND49" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="3.3V1" library="oresat-supplies" deviceset="3.3V" device=""/>
+<part name="R17" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
+<part name="GND50" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27992,19 +27986,19 @@ indicates Transmit</text>
 <instance part="GND43" gate="1" x="81.28" y="-96.52" smashed="yes">
 <attribute name="VALUE" x="81.28" y="-96.774" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="3.3V2" gate="G$1" x="43.18" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="40.64" y="-83.82" size="1.778" layer="96"/>
+<instance part="3.3V2" gate="G$1" x="40.64" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="38.1" y="-58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="J5" gate="G$1" x="45.72" y="-99.06" smashed="yes" rot="R90">
-<attribute name="VALUE" x="50.546" y="-101.6" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="40.132" y="-101.6" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="J5" gate="G$1" x="43.18" y="-71.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.006" y="-73.66" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="37.592" y="-73.66" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="R16" gate="R" x="60.96" y="-99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.4614" y="-102.87" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="64.262" y="-102.87" size="1.778" layer="96" rot="R90"/>
+<instance part="R16" gate="R" x="58.42" y="-53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.9186" y="-49.53" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="55.118" y="-49.53" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND45" gate="1" x="60.96" y="-111.76" smashed="yes">
-<attribute name="VALUE" x="60.96" y="-112.014" size="1.778" layer="96" align="top-center"/>
+<instance part="GND45" gate="1" x="58.42" y="-40.64" smashed="yes" rot="R180">
+<attribute name="VALUE" x="58.42" y="-40.386" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="GND46" gate="1" x="124.46" y="-86.36" smashed="yes">
 <attribute name="VALUE" x="124.46" y="-86.614" size="1.778" layer="96" align="top-center"/>
@@ -28194,6 +28188,13 @@ indicates Transmit</text>
 <instance part="3.3V1" gate="G$1" x="81.28" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="78.74" y="-43.18" size="1.778" layer="96"/>
 </instance>
+<instance part="R17" gate="R" x="58.42" y="-86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.9214" y="-90.17" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="61.722" y="-90.17" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND50" gate="1" x="58.42" y="-99.06" smashed="yes">
+<attribute name="VALUE" x="58.42" y="-99.314" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28207,7 +28208,7 @@ indicates Transmit</text>
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
 <pinref part="R16" gate="R" pin="1"/>
-<wire x1="60.96" y1="-109.22" x2="60.96" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-43.18" x2="58.42" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
@@ -28286,25 +28287,30 @@ indicates Transmit</text>
 <pinref part="GND47" gate="1" pin="GND"/>
 <wire x1="165.1" y1="-73.66" x2="165.1" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND50" gate="1" pin="GND"/>
+<pinref part="R17" gate="R" pin="1"/>
+<wire x1="58.42" y1="-96.52" x2="58.42" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$118" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="B"/>
-<wire x1="66.04" y1="-78.74" x2="60.96" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R16" gate="R" pin="2"/>
-<wire x1="60.96" y1="-78.74" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-73.66" x2="58.42" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="-88.9" x2="60.96" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-91.44" x2="45.72" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-88.9" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="60.96" y="-88.9"/>
+<wire x1="58.42" y1="-60.96" x2="58.42" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-63.5" x2="43.18" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-60.96" x2="58.42" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="58.42" y="-60.96"/>
+<pinref part="U6" gate="A" pin="A"/>
+<wire x1="66.04" y1="-73.66" x2="58.42" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
 <pinref part="3.3V2" gate="G$1" pin="3.3V"/>
-<wire x1="43.18" y1="-91.44" x2="43.18" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-63.5" x2="40.64" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="A" pin="VCC"/>
@@ -28527,6 +28533,14 @@ indicates Transmit</text>
 <pinref part="C49" gate="CE" pin="2"/>
 <wire x1="311.15" y1="2.54" x2="317.5" y2="2.54" width="0.1524" layer="91"/>
 <label x="317.5" y="2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R17" gate="R" pin="2"/>
+<wire x1="58.42" y1="-78.74" x2="58.42" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="U6" gate="A" pin="B"/>
+<wire x1="66.04" y1="-78.74" x2="58.42" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
