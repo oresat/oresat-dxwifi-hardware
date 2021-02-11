@@ -28646,7 +28646,7 @@ indicates Transmit</text>
 <junction x="58.42" y="-78.74"/>
 </segment>
 </net>
-<net name="PA_THERMISTER" class="0">
+<net name="PA_THERMISTOR" class="0">
 <segment>
 <pinref part="R18" gate="R" pin="2"/>
 <pinref part="C23" gate="CE" pin="1"/>
