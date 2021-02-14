@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -25046,16 +25046,16 @@ gpio3_2   == mii1_rx_er
 gpio3_4   == mii1_rx_dv
 
 gpio0_0   == mdio </text>
-<text x="508" y="386.08" size="1.778" layer="97">NOTE:
+<text x="490.22" y="386.08" size="1.778" layer="97">NOTE:
 All these signals are outputs with the
 exception of FLASH. Likewise, I put the
 outputs on GPIO2,3 and inputs on GPIO0.
 I am not sure if this is better, but it
 seemed logical</text>
-<wire x1="505.46" y1="403.86" x2="505.46" y2="383.54" width="0.1524" layer="97"/>
-<wire x1="505.46" y1="383.54" x2="556.26" y2="383.54" width="0.1524" layer="97"/>
-<wire x1="556.26" y1="383.54" x2="556.26" y2="403.86" width="0.1524" layer="97"/>
-<wire x1="556.26" y1="403.86" x2="505.46" y2="403.86" width="0.1524" layer="97"/>
+<wire x1="487.68" y1="403.86" x2="487.68" y2="383.54" width="0.1524" layer="97"/>
+<wire x1="487.68" y1="383.54" x2="538.48" y2="383.54" width="0.1524" layer="97"/>
+<wire x1="538.48" y1="383.54" x2="538.48" y2="403.86" width="0.1524" layer="97"/>
+<wire x1="538.48" y1="403.86" x2="487.68" y2="403.86" width="0.1524" layer="97"/>
 <wire x1="538.48" y1="408.178" x2="570.23" y2="408.178" width="0.1524" layer="97"/>
 <wire x1="570.23" y1="408.178" x2="570.23" y2="462.28" width="0.1524" layer="97"/>
 <wire x1="570.23" y1="462.28" x2="538.48" y2="462.28" width="0.1524" layer="97"/>
@@ -25285,8 +25285,8 @@ DNP for now</text>
 <instance part="TP158" gate="G$1" x="571.5" y="340.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="566.928" y="341.122" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="TP147" gate="G$1" x="571.5" y="388.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="566.928" y="389.382" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="TP147" gate="G$1" x="566.42" y="391.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="567.182" y="395.732" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="TP137" gate="G$1" x="571.5" y="386.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="566.928" y="386.842" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -26164,13 +26164,6 @@ DNP for now</text>
 <wire x1="571.5" y1="340.36" x2="574.04" y2="340.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
-<segment>
-<pinref part="TP147" gate="G$1" pin="1"/>
-<pinref part="U7" gate="D" pin="MII1_TX_CLK"/>
-<wire x1="571.5" y1="388.62" x2="574.04" y2="388.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="U7" gate="D" pin="MII1_TXD0"/>
@@ -26586,6 +26579,17 @@ DNP for now</text>
 <wire x1="772.16" y1="368.3" x2="680.72" y2="368.3" width="0.1524" layer="91"/>
 <pinref part="R25" gate="A" pin="66"/>
 <wire x1="680.72" y1="368.3" x2="680.72" y2="345.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PA_ENABLE" class="0">
+<segment>
+<pinref part="U7" gate="D" pin="MII1_TX_CLK"/>
+<wire x1="574.04" y1="388.62" x2="566.42" y2="388.62" width="0.1524" layer="91"/>
+<pinref part="TP147" gate="G$1" pin="1"/>
+<wire x1="566.42" y1="388.62" x2="566.42" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="566.42" y1="388.62" x2="558.8" y2="388.62" width="0.1524" layer="91"/>
+<junction x="566.42" y="388.62"/>
+<label x="558.8" y="388.62" size="1.3716" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
