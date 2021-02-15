@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -22938,6 +22938,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="1.8V-L2" library="oresat-supplies" deviceset="1.8V-L" device=""/>
 <part name="GND62" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="1.8V-L3" library="oresat-supplies" deviceset="1.8V-L" device=""/>
+<part name="1.8V-L4" library="oresat-supplies" deviceset="1.8V-L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26860,6 +26861,9 @@ battery circuit</text>
 <instance part="GND62" gate="1" x="269.24" y="198.12" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="269.24" y="197.866" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
+<instance part="1.8V-L4" gate="G$1" x="251.46" y="175.26" smashed="yes">
+<attribute name="VALUE" x="248.92" y="175.26" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -27157,12 +27161,6 @@ battery circuit</text>
 <junction x="261.62" y="68.58"/>
 </segment>
 </net>
-<net name="PMIC_MUX_IN" class="0">
-<segment>
-<wire x1="231.14" y1="167.64" x2="233.68" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
-</segment>
-</net>
 <net name="PA_THERMISTOR" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="AIN6"/>
@@ -27398,6 +27396,12 @@ battery circuit</text>
 <junction x="269.24" y="236.22"/>
 <wire x1="269.24" y1="236.22" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
 <junction x="269.24" y="246.38"/>
+</segment>
+<segment>
+<pinref part="1.8V-L4" gate="G$1" pin="1.8V-L"/>
+<wire x1="251.46" y1="172.72" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
+<wire x1="251.46" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
