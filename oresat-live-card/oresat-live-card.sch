@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -244,31 +244,12 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -20824,44 +20805,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </deviceset>
 </devicesets>
 </library>
-<library name="oresat-flight-marker">
-<packages>
-<package name="FLIGHTMARKER_NEW_BOARDS">
-<text x="0" y="0" size="1.27" layer="21" font="vector" ratio="15">FLIGHT HARDWARE IF NOT CHECKED</text>
-<wire x1="18.7" y1="-0.5" x2="22.4" y2="-0.5" width="0.1524" layer="21"/>
-<rectangle x1="31.5" y1="-0.3" x2="33.3" y2="1.5" layer="21"/>
-</package>
-<package name="FLIGHTMARKER_OLD_BOARDS">
-<text x="0" y="0" size="1.27" layer="21" font="vector" ratio="15">FLIGHT HARDWARE IF  NOT CHECKED</text>
-<rectangle x1="36" y1="-0.2" x2="37.8" y2="1.6" layer="21"/>
-<wire x1="22.077" y1="-0.381" x2="26.087" y2="-0.381" width="0.1524" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FLIGHTHARDWARE">
-<text x="0" y="0" size="2.54" layer="94">Flight Hardware Marker (on PCB)</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FLIGHMARKER">
-<gates>
-<gate name="G$1" symbol="FLIGHTHARDWARE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NEW" package="FLIGHTMARKER_NEW_BOARDS">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="OLD" package="FLIGHTMARKER_OLD_BOARDS">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="oresat-cards">
 <packages>
 <package name="ORESAT-CARD-V1.3-GENERIC-1RF-POS1">
@@ -22687,7 +22630,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="R75" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="100"/>
 <part name="C44" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="oresat-flight-marker" deviceset="FLIGHMARKER" device="NEW"/>
 <part name="PCB1" library="oresat-cards" deviceset="ORESAT-CARD-V1.3-GENERIC-1RF-POS1" device=""/>
 <part name="CM1" library="J-Molex-73300-003X-SMPM-M-edge-mount" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
 <part name="U$2" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
@@ -22736,7 +22678,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="GND46" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND47" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U8" library="U-Microchip-MIC94090YC6" deviceset="MIC94090YC6-TR" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C43" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -22928,17 +22869,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <part name="R18" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="0603"/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C25" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C26" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="0.1uF"/>
 <part name="1.8V-L1" library="oresat-supplies" deviceset="1.8V-L" device=""/>
-<part name="1.8V-L2" library="oresat-supplies" deviceset="1.8V-L" device=""/>
+<part name="1.8V-L2" library="oresat-supplies" deviceset="1.8V-L" device="" value="1.8V"/>
 <part name="GND62" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="1.8V-L3" library="oresat-supplies" deviceset="1.8V-L" device=""/>
+<part name="1.8V-L3" library="oresat-supplies" deviceset="1.8V-L" device="" value="1.8V"/>
 <part name="1.8V-L4" library="oresat-supplies" deviceset="1.8V-L" device=""/>
+<part name="3V-9" library="oresat-supplies" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23012,7 +22953,6 @@ unconnected?</text>
 <instance part="VBUS2" gate="1" x="129.54" y="165.1" smashed="yes">
 <attribute name="VALUE" x="129.54" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U$1" gate="G$1" x="246.38" y="2.54" smashed="yes"/>
 <instance part="PCB1" gate="G$1" x="114.3" y="2.54" smashed="yes"/>
 <instance part="CM1" gate="G$1" x="190.5" y="78.74" smashed="yes" rot="R270">
 <attribute name="NAME" x="186.69" y="73.66" size="1.27" layer="95" rot="R270"/>
@@ -28497,8 +28437,8 @@ the internal EEPROM can be programmed.</text>
 </sheet>
 <sheet>
 <plain>
-<text x="336.55" y="-161.29" size="3.81" layer="94">OreSat DxWiFi: RF</text>
-<text x="420.37" y="-181.61" size="3.81" layer="94">1.0</text>
+<text x="336.55" y="-153.67" size="3.81" layer="94">OreSat DxWiFi: RF</text>
+<text x="420.37" y="-173.99" size="3.81" layer="94">1.0</text>
 <text x="232.41" y="41.91" size="1.778" layer="97" rot="R90">0805</text>
 <text x="233.934" y="61.976" size="1.778" layer="97">0805</text>
 <text x="245.872" y="40.386" size="1.778" layer="97" rot="R90">0603</text>
@@ -28509,11 +28449,11 @@ indicates Transmit</text>
 <text x="239.268" y="43.688" size="1.778" layer="97" rot="R90">1008</text>
 </plain>
 <instances>
-<instance part="FRAME6" gate="G$1" x="5.08" y="-187.96" smashed="yes"/>
-<instance part="FRAME6" gate="G$2" x="330.2" y="-187.96" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="342.9" y="-186.69" size="2.54" layer="94"/>
-<attribute name="SHEET" x="416.56" y="-186.69" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="347.98" y="-168.91" size="2.54" layer="94"/>
+<instance part="FRAME6" gate="G$1" x="5.08" y="-180.34" smashed="yes"/>
+<instance part="FRAME6" gate="G$2" x="330.2" y="-180.34" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="342.9" y="-179.07" size="2.54" layer="94"/>
+<attribute name="SHEET" x="416.56" y="-179.07" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="347.98" y="-161.29" size="2.54" layer="94"/>
 </instance>
 <instance part="PCBA1" gate="G$1" x="35.56" y="71.12" smashed="yes">
 <attribute name="NAME" x="33.02" y="60.96" size="1.778" layer="95"/>
@@ -28548,9 +28488,6 @@ indicates Transmit</text>
 <instance part="U8" gate="A" x="144.78" y="-73.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="132.4356" y="-62.0014" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="131.8006" y="-64.5414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="P+1" gate="1" x="241.3" y="77.47" smashed="yes">
-<attribute name="VALUE" x="238.76" y="72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C43" gate="CE" x="203.2" y="41.91" smashed="yes">
 <attribute name="MPN" x="203.2" y="41.91" size="1.778" layer="96" display="off"/>
@@ -28756,9 +28693,6 @@ indicates Transmit</text>
 <attribute name="NAME" x="65.151" y="53.848" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="70.485" y="53.848" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="P+2" gate="1" x="68.58" y="83.82" smashed="yes">
-<attribute name="VALUE" x="66.04" y="78.74" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R21" gate="R" x="68.58" y="71.12" smashed="yes" rot="R270">
 <attribute name="NAME" x="70.0786" y="74.93" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="65.278" y="74.93" size="1.778" layer="96" rot="R270"/>
@@ -28769,6 +28703,9 @@ indicates Transmit</text>
 </instance>
 <instance part="1.8V-L3" gate="G$1" x="160.02" y="83.82" smashed="yes">
 <attribute name="VALUE" x="157.48" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="3V-9" gate="G$1" x="68.58" y="83.82" smashed="yes">
+<attribute name="VALUE" x="67.945" y="84.455" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -28930,22 +28867,10 @@ indicates Transmit</text>
 <wire x1="116.84" y1="-45.72" x2="124.46" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="124.46" y="-45.72"/>
 </segment>
-</net>
-<net name="+5V" class="0">
 <segment>
-<pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="R80" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="69.85" x2="241.3" y2="74.93" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<pinref part="R21" gate="R" pin="1"/>
-<wire x1="68.58" y1="81.28" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R29" gate="R" pin="1"/>
-<wire x1="68.58" y1="78.74" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="76.2" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="78.74" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
-<junction x="68.58" y="78.74"/>
+<wire x1="241.3" y1="69.85" x2="241.3" y2="73.66" width="0.1524" layer="91"/>
+<label x="241.3" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$134" class="0">
@@ -29183,6 +29108,18 @@ indicates Transmit</text>
 <pinref part="R18" gate="R" pin="1"/>
 <wire x1="160.02" y1="81.28" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="1.8V-L3" gate="G$1" pin="1.8V-L"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="R21" gate="R" pin="1"/>
+<wire x1="68.58" y1="81.28" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R29" gate="R" pin="1"/>
+<wire x1="68.58" y1="78.74" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="78.74" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<junction x="68.58" y="78.74"/>
+<pinref part="3V-9" gate="G$1" pin="5V"/>
 </segment>
 </net>
 </nets>
