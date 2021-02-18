@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -22146,6 +22146,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <class number="1" name="diff pair" width="0.1905" drill="0">
 <clearance class="1" value="0.1905"/>
 </class>
+<class number="2" name="RF" width="0" drill="0">
+<clearance class="2" value="0.8"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
@@ -23347,14 +23350,14 @@ unconnected?</text>
 <label x="241.3" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="TX_OUT" class="0">
+<net name="TX_OUT" class="2">
 <segment>
 <pinref part="CM1" gate="G$1" pin="CENTER"/>
 <wire x1="190.5" y1="73.66" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
 <label x="190.5" y="68.58" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="TX_IN" class="0">
+<net name="TX_IN" class="2">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <wire x1="205.74" y1="71.12" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
@@ -28919,7 +28922,7 @@ indicates Transmit</text>
 <junction x="241.3" y="-24.13"/>
 </segment>
 </net>
-<net name="N$136" class="1">
+<net name="N$136" class="2">
 <segment>
 <wire x1="265.43" y1="2.54" x2="273.05" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U19" gate="U" pin="RFOUT@14"/>
@@ -28938,7 +28941,7 @@ indicates Transmit</text>
 <junction x="273.05" y="2.54"/>
 </segment>
 </net>
-<net name="N$137" class="1">
+<net name="N$137" class="2">
 <segment>
 <pinref part="C49" gate="CE" pin="1"/>
 <wire x1="288.29" y1="2.54" x2="289.56" y2="2.54" width="0.1524" layer="91"/>
@@ -28949,7 +28952,7 @@ indicates Transmit</text>
 <junction x="289.56" y="2.54"/>
 </segment>
 </net>
-<net name="N$138" class="1">
+<net name="N$138" class="2">
 <segment>
 <pinref part="U19" gate="U" pin="RFIN@2"/>
 <wire x1="224.79" y1="6.35" x2="218.44" y2="6.35" width="0.1524" layer="91"/>
@@ -29011,7 +29014,7 @@ indicates Transmit</text>
 <wire x1="241.3" y1="20.32" x2="241.3" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$143" class="1">
+<net name="N$143" class="2">
 <segment>
 <pinref part="R84" gate="R" pin="1"/>
 <pinref part="C51" gate="CE" pin="2"/>
@@ -29025,7 +29028,7 @@ indicates Transmit</text>
 <wire x1="162.56" y1="-15.24" x2="162.56" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TX_IN" class="0">
+<net name="TX_IN" class="2">
 <segment>
 <pinref part="R87" gate="R" pin="1"/>
 <wire x1="162.56" y1="0" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
@@ -29036,7 +29039,7 @@ indicates Transmit</text>
 <label x="157.48" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$146" class="1">
+<net name="N$146" class="2">
 <segment>
 <pinref part="R86" gate="R" pin="1"/>
 <wire x1="175.26" y1="2.54" x2="177.8" y2="2.54" width="0.1524" layer="91"/>
@@ -29051,7 +29054,7 @@ indicates Transmit</text>
 <junction x="193.04" y="2.54"/>
 </segment>
 </net>
-<net name="TX_OUT" class="0">
+<net name="TX_OUT" class="2">
 <segment>
 <pinref part="C49" gate="CE" pin="2"/>
 <wire x1="311.15" y1="2.54" x2="317.5" y2="2.54" width="0.1524" layer="91"/>
