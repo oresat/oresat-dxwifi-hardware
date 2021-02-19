@@ -21913,26 +21913,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-1.46" y1="-1.395" x2="-1.46" y2="1.395" width="0.1" layer="51"/>
 <wire x1="0" y1="1.295" x2="0" y2="-1.295" width="0.2" layer="21"/>
 </package>
-<package name="LEDC1607X80N">
-<description>&lt;b&gt;LTST-C193KRKT-5A
-&lt;/b&gt;&lt;br&gt;</description>
-<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.85" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.9" dy="0.85" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.625" y1="0.9" x2="1.625" y2="0.9" width="0.05" layer="51"/>
-<wire x1="1.625" y1="0.9" x2="1.625" y2="-0.9" width="0.05" layer="51"/>
-<wire x1="1.625" y1="-0.9" x2="-1.625" y2="-0.9" width="0.05" layer="51"/>
-<wire x1="-1.625" y1="-0.9" x2="-1.625" y2="0.9" width="0.05" layer="51"/>
-<wire x1="-0.8" y1="0.35" x2="0.8" y2="0.35" width="0.1" layer="51"/>
-<wire x1="0.8" y1="0.35" x2="0.8" y2="-0.35" width="0.1" layer="51"/>
-<wire x1="0.8" y1="-0.35" x2="-0.8" y2="-0.35" width="0.1" layer="51"/>
-<wire x1="-0.8" y1="-0.35" x2="-0.8" y2="0.35" width="0.1" layer="51"/>
-<wire x1="-0.8" y1="0.117" x2="-0.567" y2="0.35" width="0.1" layer="51"/>
-<wire x1="0.75" y1="0.8" x2="-1.525" y2="0.8" width="0.2" layer="21"/>
-<wire x1="-1.525" y1="0.8" x2="-1.525" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="-1.525" y1="-0.8" x2="0.75" y2="-0.8" width="0.2" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="TQP9111">
@@ -21965,29 +21945,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="1" x="0" y="0" visible="off" length="middle"/>
 <pin name="2" x="20.32" y="0" visible="off" length="middle" rot="R180"/>
-</symbol>
-<symbol name="LTST-C193KRKT-5A">
-<wire x1="5.08" y1="0" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="6.604" y1="3.048" x2="4.064" y2="5.588" width="0.254" layer="94"/>
-<wire x1="8.636" y1="3.048" x2="6.096" y2="5.588" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
-<text x="12.7" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<pin name="K" x="0" y="0" length="short"/>
-<pin name="A" x="15.24" y="0" length="short" rot="R180"/>
-<polygon width="0.254" layer="94">
-<vertex x="5.588" y="4.826"/>
-<vertex x="4.826" y="4.064"/>
-<vertex x="4.064" y="5.588"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="7.62" y="4.826"/>
-<vertex x="6.858" y="4.064"/>
-<vertex x="6.096" y="5.588"/>
-</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -22041,28 +21998,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TQP9111.pdf"&
 <attribute name="MFR" value="COILCRAFT" constant="no"/>
 <attribute name="MPN" value="1008HQ-10NXJLB" constant="no"/>
 <attribute name="VALUE" value="10nH"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LTST-C193KRKT-5A" prefix="LED">
-<description>&lt;b&gt;LED,SMD,0603,Red, Lite-On LTST-C193KRKT-5A Red LED, 631 nm, 1608 (0603), Rectangle Lens SMD Package&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/0dc0/0900766b80dc02a7.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LTST-C193KRKT-5A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LEDC1607X80N">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="K" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="LED,SMD,0603,Red,Lite-On  1608 (0603), Rectangle Lens SMD Package" constant="no"/>
-<attribute name="MFR" value="Lite-On" constant="no"/>
-<attribute name="MPN" value="LTST-C193KRKT-5A" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -23192,19 +23127,6 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R83" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="1k">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DESCRIPTION" value="RES SMD 1K OHM 5% 1/10W 0402"/>
-<attribute name="MFR" value="Panasonic"/>
-<attribute name="MPN" value="ERJ-2GEJ102X"/>
-</part>
-<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="LED2" library="oresat-samacsys_Parts" deviceset="LTST-C193KRKT-5A" device=""/>
 <part name="U19" library="oresat-samacsys_Parts" deviceset="TQP9111" device=""/>
 <part name="L7" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.7nH">
 <attribute name="DESCRIPTION" value="1.7nH RF Inductor, ceramic core, 5% tol, SMT, RoHS"/>
@@ -23260,6 +23182,9 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="1.8V-A3" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28762,8 +28687,6 @@ the internal EEPROM can be programmed.</text>
 <text x="245.872" y="40.386" size="1.778" layer="97" rot="R90">0603</text>
 <text x="207.01" y="21.59" size="2.54" layer="97">Power Amplifier</text>
 <text x="207.01" y="17.78" size="1.778" layer="97">Gain ~28dB</text>
-<text x="226.06" y="-91.44" size="1.778" layer="97">Red LED On
-indicates Transmit</text>
 <text x="239.268" y="43.688" size="1.778" layer="97" rot="R90">1008</text>
 <wire x1="104.14" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="105.41" y1="1.27" x2="139.7" y2="1.27" width="0.1524" layer="97" style="shortdash"/>
@@ -28921,17 +28844,6 @@ indicates Transmit</text>
 <attribute name="MFR" x="234.95" y="36.83" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="234.95" y="36.83" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R83" gate="R" x="220.98" y="-101.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="218.2114" y="-100.33" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="217.932" y="-102.87" size="1.778" layer="96" rot="R180"/>
-<attribute name="MPN" x="220.98" y="-101.6" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFR" x="220.98" y="-101.6" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" x="220.98" y="-101.6" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="SUPPLY15" gate="GND" x="220.98" y="-111.76" smashed="yes"/>
-<instance part="LED2" gate="G$1" x="220.98" y="-93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="226.06" y="-85.09" size="1.778" layer="95"/>
-</instance>
 <instance part="L9" gate="L" x="283.21" y="2.54" smashed="yes">
 <attribute name="NAME" x="278.13" y="5.08" size="1.778" layer="95"/>
 <attribute name="VALUE" x="282.702" y="6.858" size="1.778" layer="96" align="top-left"/>
@@ -29042,6 +28954,17 @@ indicates Transmit</text>
 <instance part="1.8V-A3" gate="G$1" x="288.29" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="285.75" y="-20.32" size="1.778" layer="96"/>
 </instance>
+<instance part="LED1" gate="D1" x="220.98" y="-96.52" smashed="yes">
+<attribute name="NAME" x="217.551" y="-101.092" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="222.885" y="-101.092" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="R30" gate="R" x="220.98" y="-86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="222.4786" y="-82.55" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="217.678" y="-82.55" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND65" gate="1" x="220.98" y="-106.68" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="220.98" y="-106.934" size="1.778" layer="96" rot="MR0" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -29104,11 +29027,6 @@ indicates Transmit</text>
 <wire x1="193.04" y1="-15.24" x2="193.04" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R83" gate="R" pin="1"/>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="220.98" y1="-106.68" x2="220.98" y2="-109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R88" gate="R" pin="2"/>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
 <wire x1="162.56" y1="-25.4" x2="162.56" y2="-27.94" width="0.1524" layer="91"/>
@@ -29164,6 +29082,11 @@ indicates Transmit</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 <wire x1="152.4" y1="-2.54" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="D1" pin="C"/>
+<pinref part="GND65" gate="1" pin="GND"/>
+<wire x1="220.98" y1="-101.6" x2="220.98" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$118" class="0">
@@ -29331,8 +29254,6 @@ indicates Transmit</text>
 </net>
 <net name="PA_TOGGLE" class="0">
 <segment>
-<wire x1="220.98" y1="-78.74" x2="220.98" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
 <label x="214.63" y="-73.66" size="1.778" layer="95"/>
 <pinref part="R81" gate="R" pin="1"/>
 <wire x1="241.3" y1="-35.56" x2="241.3" y2="-38.1" width="0.1524" layer="91"/>
@@ -29345,13 +29266,8 @@ indicates Transmit</text>
 <pinref part="U8" gate="A" pin="VOUT"/>
 <wire x1="162.56" y1="-76.2" x2="220.98" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="220.98" y="-76.2"/>
-</segment>
-</net>
-<net name="N$141" class="0">
-<segment>
-<pinref part="R83" gate="R" pin="2"/>
-<wire x1="220.98" y1="-96.52" x2="220.98" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="K"/>
+<pinref part="R30" gate="R" pin="1"/>
+<wire x1="220.98" y1="-76.2" x2="220.98" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$142" class="0">
@@ -29498,6 +29414,13 @@ indicates Transmit</text>
 <pinref part="R18" gate="R" pin="1"/>
 <wire x1="288.29" y1="-22.86" x2="288.29" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="1.8V-A3" gate="G$1" pin="1.8V"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="R30" gate="R" pin="2"/>
+<pinref part="LED1" gate="D1" pin="A"/>
+<wire x1="220.98" y1="-91.44" x2="220.98" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
