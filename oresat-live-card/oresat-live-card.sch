@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -681,12 +681,12 @@ LED</description>
 <text x="0" y="0.254" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="3.3VA" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="1.8V-L">
+<symbol name="1.8V-A">
 <description>&lt;h3&gt;V Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-0.762" y2="-1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1.8V-L" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="1.8V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -768,10 +768,9 @@ LED</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.8V-L" prefix="1.8V-L">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<deviceset name="1.8V-A" prefix="1.8V-A">
 <gates>
-<gate name="G$1" symbol="1.8V-L" x="0" y="0"/>
+<gate name="G$1" symbol="1.8V-A" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -23253,13 +23252,13 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C25" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C26" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="0.1uF"/>
-<part name="1.8V-L1" library="oresat-supplies" deviceset="1.8V-L" device=""/>
-<part name="1.8V-L2" library="oresat-supplies" deviceset="1.8V-L" device="" value="1.8V"/>
 <part name="GND62" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="1.8V-L4" library="oresat-supplies" deviceset="1.8V-L" device=""/>
 <part name="3V-9" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="RT2" library="apdm" deviceset="THERMISTOR-" device="-0603-THERMISTOR-B" value="TDK NTCG163JX103DT1S"/>
-<part name="1.8V-L5" library="oresat-supplies" deviceset="1.8V-L" device="" value="1.8V"/>
+<part name="1.8V-A1" library="oresat-supplies" deviceset="1.8V-A" device=""/>
+<part name="1.8V-A2" library="oresat-supplies" deviceset="1.8V-A" device=""/>
+<part name="1.8V-A3" library="oresat-supplies" deviceset="1.8V-A" device=""/>
+<part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 </parts>
 <sheets>
 <sheet>
@@ -27108,14 +27107,17 @@ battery circuit</text>
 <attribute name="NAME" x="270.256" y="226.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="270.256" y="221.869" size="1.778" layer="96"/>
 </instance>
-<instance part="1.8V-L2" gate="G$1" x="269.24" y="256.54" smashed="yes">
-<attribute name="VALUE" x="266.7" y="256.54" size="1.778" layer="96"/>
-</instance>
 <instance part="GND62" gate="1" x="269.24" y="198.12" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="269.24" y="197.866" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="1.8V-L4" gate="G$1" x="251.46" y="175.26" smashed="yes">
+<instance part="1.8V-A1" gate="G$1" x="269.24" y="256.54" smashed="yes">
+<attribute name="VALUE" x="266.7" y="256.54" size="1.778" layer="96"/>
+</instance>
+<instance part="1.8V-A2" gate="G$1" x="251.46" y="175.26" smashed="yes">
 <attribute name="VALUE" x="248.92" y="175.26" size="1.778" layer="96"/>
+</instance>
+<instance part="TP8" gate="G$1" x="256.54" y="167.64" smashed="yes">
+<attribute name="NAME" x="261.112" y="166.878" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -27626,11 +27628,19 @@ battery circuit</text>
 <wire x1="165.1" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="1.8V-L" class="0">
+<net name="N$1" class="0">
+<segment>
+<pinref part="U7" gate="B" pin="AIN7"/>
+<wire x1="231.14" y1="177.8" x2="243.84" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="177.8" x2="243.84" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="U7" gate="B" pin="PMIC_MUX_OUT"/>
+<wire x1="243.84" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="1.8V" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="SYS_ADC_1P8V"/>
 <wire x1="231.14" y1="246.38" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="1.8V-L2" gate="G$1" pin="1.8V-L"/>
 <wire x1="269.24" y1="246.38" x2="269.24" y2="254" width="0.1524" layer="91"/>
 <pinref part="C26" gate="CE" pin="1"/>
 <wire x1="269.24" y1="228.6" x2="269.24" y2="236.22" width="0.1524" layer="91"/>
@@ -27649,21 +27659,16 @@ battery circuit</text>
 <junction x="269.24" y="236.22"/>
 <wire x1="269.24" y1="236.22" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
 <junction x="269.24" y="246.38"/>
+<pinref part="1.8V-A1" gate="G$1" pin="1.8V"/>
 </segment>
 <segment>
-<pinref part="1.8V-L4" gate="G$1" pin="1.8V-L"/>
-<wire x1="251.46" y1="172.72" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
+<wire x1="256.54" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
+<pinref part="1.8V-A2" gate="G$1" pin="1.8V"/>
 <wire x1="251.46" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U7" gate="B" pin="AIN7"/>
-<wire x1="231.14" y1="177.8" x2="243.84" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="177.8" x2="243.84" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U7" gate="B" pin="PMIC_MUX_OUT"/>
-<wire x1="243.84" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="172.72" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<junction x="251.46" y="167.64"/>
 </segment>
 </net>
 </nets>
@@ -27977,9 +27982,6 @@ the internal EEPROM can be programmed.</text>
 <instance part="R75" gate="R" x="-151.13" y="27.94" smashed="yes">
 <attribute name="NAME" x="-154.94" y="29.21" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-148.59" y="29.21" size="1.778" layer="96"/>
-</instance>
-<instance part="1.8V-L1" gate="G$1" x="-43.18" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-45.72" y="63.5" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -28709,7 +28711,7 @@ the internal EEPROM can be programmed.</text>
 <junction x="-127" y="43.18"/>
 </segment>
 </net>
-<net name="1.8V-L" class="0">
+<net name="N$3" class="0">
 <segment>
 <wire x1="-53.34" y1="58.42" x2="-48.26" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="40.64" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
@@ -28740,10 +28742,6 @@ the internal EEPROM can be programmed.</text>
 <pinref part="U7" gate="A" pin="SYS_VDD_1P8V@6"/>
 <pinref part="U7" gate="A" pin="SYS_VDD_1P8V@7"/>
 <pinref part="U7" gate="A" pin="SYS_VDD_1P8V@8"/>
-<junction x="-48.26" y="58.42"/>
-<pinref part="1.8V-L1" gate="G$1" pin="1.8V-L"/>
-<wire x1="-48.26" y1="58.42" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="58.42" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -29034,7 +29032,7 @@ indicates Transmit</text>
 <attribute name="NAME" x="279.4" y="-45.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="-48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="1.8V-L5" gate="G$1" x="288.29" y="-20.32" smashed="yes">
+<instance part="1.8V-A3" gate="G$1" x="288.29" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="285.75" y="-20.32" size="1.778" layer="96"/>
 </instance>
 </instances>
@@ -29488,11 +29486,11 @@ indicates Transmit</text>
 <label x="45.72" y="0" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="1.8V-L" class="0">
+<net name="1.8V" class="0">
 <segment>
 <pinref part="R18" gate="R" pin="1"/>
 <wire x1="288.29" y1="-22.86" x2="288.29" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="1.8V-L5" gate="G$1" pin="1.8V-L"/>
+<pinref part="1.8V-A3" gate="G$1" pin="1.8V"/>
 </segment>
 </net>
 </nets>
