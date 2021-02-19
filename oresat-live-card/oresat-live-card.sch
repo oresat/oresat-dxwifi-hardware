@@ -27113,11 +27113,11 @@ battery circuit</text>
 <instance part="1.8V-A1" gate="G$1" x="269.24" y="256.54" smashed="yes">
 <attribute name="VALUE" x="266.7" y="256.54" size="1.778" layer="96"/>
 </instance>
-<instance part="1.8V-A2" gate="G$1" x="251.46" y="175.26" smashed="yes">
-<attribute name="VALUE" x="248.92" y="175.26" size="1.778" layer="96"/>
+<instance part="1.8V-A2" gate="G$1" x="251.46" y="172.72" smashed="yes">
+<attribute name="VALUE" x="248.92" y="172.72" size="1.778" layer="96"/>
 </instance>
-<instance part="TP8" gate="G$1" x="256.54" y="167.64" smashed="yes">
-<attribute name="NAME" x="261.112" y="166.878" size="1.778" layer="95" font="vector"/>
+<instance part="TP8" gate="G$1" x="254" y="167.64" smashed="yes">
+<attribute name="NAME" x="258.572" y="166.878" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -27637,7 +27637,7 @@ battery circuit</text>
 <wire x1="243.84" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="1.8V" class="0">
+<net name="1.8V-A" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="SYS_ADC_1P8V"/>
 <wire x1="231.14" y1="246.38" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
@@ -27660,14 +27660,15 @@ battery circuit</text>
 <wire x1="269.24" y1="236.22" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
 <junction x="269.24" y="246.38"/>
 <pinref part="1.8V-A1" gate="G$1" pin="1.8V"/>
+<label x="266.7" y="256.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
-<wire x1="256.54" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="254" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
 <pinref part="1.8V-A2" gate="G$1" pin="1.8V"/>
 <wire x1="251.46" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="172.72" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="170.18" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <junction x="251.46" y="167.64"/>
 </segment>
 </net>
