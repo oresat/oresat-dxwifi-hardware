@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -441,7 +441,7 @@
 <wire x1="0.762" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-0.762" y2="-1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1.8V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="1.8V-A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21023,6 +21023,18 @@ Noel Case - Created 6/16/20</description>
 <circle x="1.3" y="-15" radius="0.4472125" width="0.127" layer="21"/>
 <text x="-5.08" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-5.08" y="5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<circle x="6" y="15" radius="2" width="0" layer="42"/>
+<circle x="6" y="15" radius="2" width="0" layer="30"/>
+<circle x="6" y="15" radius="2" width="0" layer="29"/>
+<circle x="6" y="15" radius="2" width="0" layer="41"/>
+<circle x="-6" y="-15" radius="2" width="0" layer="42"/>
+<circle x="-6" y="-15" radius="2" width="0" layer="30"/>
+<circle x="-6" y="-15" radius="2" width="0" layer="29"/>
+<circle x="-6" y="-15" radius="2" width="0" layer="41"/>
+<circle x="6" y="-15" radius="2" width="0" layer="42"/>
+<circle x="6" y="-15" radius="2" width="0" layer="30"/>
+<circle x="6" y="-15" radius="2" width="0" layer="29"/>
+<circle x="6" y="-15" radius="2" width="0" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -27360,14 +27372,14 @@ battery circuit</text>
 <junction x="269.24" y="236.22"/>
 <wire x1="269.24" y1="236.22" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
 <junction x="269.24" y="246.38"/>
-<pinref part="1.8V-A1" gate="G$1" pin="1.8V"/>
+<pinref part="1.8V-A1" gate="G$1" pin="1.8V-A"/>
 <label x="266.7" y="256.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
 <wire x1="254" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
-<pinref part="1.8V-A2" gate="G$1" pin="1.8V"/>
+<pinref part="1.8V-A2" gate="G$1" pin="1.8V-A"/>
 <wire x1="251.46" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="170.18" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <junction x="251.46" y="167.64"/>
@@ -29184,18 +29196,18 @@ the internal EEPROM can be programmed.</text>
 <label x="45.72" y="0" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="1.8V" class="0">
-<segment>
-<pinref part="R18" gate="R" pin="1"/>
-<wire x1="288.29" y1="-22.86" x2="288.29" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="1.8V-A3" gate="G$1" pin="1.8V"/>
-</segment>
-</net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R30" gate="R" pin="2"/>
 <pinref part="D11" gate="D1" pin="A"/>
 <wire x1="220.98" y1="-91.44" x2="220.98" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="1.8V-A" class="0">
+<segment>
+<pinref part="1.8V-A3" gate="G$1" pin="1.8V-A"/>
+<pinref part="R18" gate="R" pin="1"/>
+<wire x1="288.29" y1="-22.86" x2="288.29" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -29208,41 +29220,17 @@ the internal EEPROM can be programmed.</text>
 <approved hash="104,5,-124.46,144.78,U7A,VIN_BAT,N$401,,,"/>
 <approved hash="104,5,-124.46,142.24,U7A,VIN_BAT,N$401,,,"/>
 <approved hash="104,5,-53.34,139.7,U7A,SYS_VDD2_3P3V,N$405,,,"/>
-<approved hash="104,5,-53.34,58.42,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,55.88,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
 <approved hash="104,5,-53.34,175.26,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,172.72,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,157.48,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,154.94,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
-<approved hash="104,5,-53.34,53.34,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,50.8,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
 <approved hash="104,5,-124.46,170.18,U7A,VIN_AC,5V,,,"/>
 <approved hash="104,5,-124.46,139.7,U7A,VIN_BAT,N$401,,,"/>
-<approved hash="104,5,-53.34,71.12,U7A,VDDSHV5,N$26,,,"/>
-<approved hash="104,5,-53.34,81.28,U7A,VDDSHV1,N$26,,,"/>
-<approved hash="104,5,-53.34,78.74,U7A,VDDSHV2,N$26,,,"/>
-<approved hash="104,5,-53.34,76.2,U7A,VDDSHV3,N$26,,,"/>
-<approved hash="104,5,-53.34,73.66,U7A,VDDSHV4,N$26,,,"/>
-<approved hash="104,5,-53.34,68.58,U7A,VDDSHV6,N$26,,,"/>
 <approved hash="104,5,-53.34,170.18,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,167.64,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,152.4,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,149.86,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,137.16,U7A,SYS_VDD2_3P3V,N$405,,,"/>
-<approved hash="104,5,-53.34,48.26,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,45.72,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,109.22,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,43.18,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,127,U7A,SYS_RTC_1P8V,3.3VA,,,"/>
-<approved hash="104,5,-53.34,124.46,U7A,SYS_RTC_1P8V,3.3VA,,,"/>
-<approved hash="104,5,-53.34,40.64,U7A,SYS_VDD_1P8V,1.8V-L,,,"/>
-<approved hash="104,5,-53.34,106.68,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,104.14,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,101.6,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,99.06,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,96.52,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,93.98,U7A,SYS_VDD3_3P3V,N$26,,,"/>
-<approved hash="104,5,-53.34,91.44,U7A,SYS_VDD3_3P3V,N$26,,,"/>
 <approved hash="104,3,449.58,350.52,U3,VDDQ,3.3V,,,"/>
 <approved hash="104,3,447.04,350.52,U3,VDDIO,3.3V,,,"/>
 <approved hash="104,3,449.58,312.42,U3,VSSIO,GND,,,"/>
