@@ -20916,65 +20916,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </deviceset>
 </devicesets>
 </library>
-<library name="J-HRS-U.FL-R-SMT-1(10)-M-RF">
-<packages>
-<package name="U.FL-R-SMT">
-<smd name="P$1" x="0" y="1.525" dx="1" dy="1.05" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="P$3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<rectangle x1="-0.4" y1="1.1" x2="0.4" y2="1.95" layer="31"/>
-<rectangle x1="-1.95" y1="-1" x2="-1.05" y2="1" layer="31"/>
-<rectangle x1="1.05" y1="-1" x2="1.95" y2="1" layer="31"/>
-<polygon width="2" layer="29">
-<vertex x="-2" y="2"/>
-<vertex x="2" y="2"/>
-<vertex x="2" y="-2"/>
-<vertex x="-2" y="-2"/>
-</polygon>
-<text x="-2" y="-4" size="0.655" layer="25" font="vector" ratio="20" rot="R270">&gt;NAME</text>
-<text x="1" y="-4" size="0.655" layer="27" font="vector" ratio="20" rot="R270">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="U.FL-R-SMT">
-<pin name="P$1" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
-<pin name="P$2" x="-5.08" y="-5.08" visible="off" length="middle" rot="R90"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="4.318" width="0.381" layer="94"/>
-<wire x1="-5.08" y1="4.318" x2="-0.762" y2="0" width="0.381" layer="94" curve="90"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="4.318" width="0.381" layer="94"/>
-<wire x1="5.08" y1="4.318" x2="0.762" y2="0" width="0.381" layer="94" curve="-90"/>
-<wire x1="-0.508" y1="5.08" x2="-0.508" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="0.508" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0.508" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="0.508" x2="0.508" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.1524" layer="94"/>
-<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="U.FL-R-SMA">
-<description>Male SMA U.FL Connector:
-
-
-https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6oBoOdtqlGQpQrQ%3D%3D</description>
-<gates>
-<gate name="G$1" symbol="U.FL-R-SMT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="U.FL-R-SMT">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2 P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin">
 <packages>
 <package name="CONN_SM06B-SRSS-TB_JST">
@@ -22201,6 +22142,66 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="J-HRS-U.FL-R-SMT-1(10)-M-RF">
+<packages>
+<package name="U.FL-R-SMT">
+<smd name="1" x="0" y="1.525" dx="1" dy="1.05" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
+<rectangle x1="-0.57" y1="0.93" x2="0.57" y2="2.12" layer="29"/>
+<rectangle x1="-2.07" y1="-1.17" x2="-0.88" y2="1.17" layer="29"/>
+<rectangle x1="0.87" y1="-1.17" x2="2.07" y2="1.17" layer="29"/>
+<text x="-2" y="-2" size="0.655" layer="25" font="vector" ratio="20" rot="R270">&gt;NAME</text>
+<text x="-1" y="-2" size="0.655" layer="27" font="vector" ratio="20" rot="R270">&gt;VALUE</text>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-1.492" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="-1.492" x2="2.5" y2="-1.492" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-1.492" x2="2.5" y2="2.5" width="0.127" layer="39"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="39"/>
+<rectangle x1="-2" y1="-1.1" x2="-0.95" y2="1.1" layer="31"/>
+<rectangle x1="0.95" y1="-1.1" x2="2" y2="1.1" layer="31"/>
+<rectangle x1="-0.5" y1="1" x2="0.5" y2="2.05" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="U.FL-R-SMT">
+<pin name="P$1" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="P$2" x="-5.08" y="-5.08" visible="off" length="middle" rot="R90"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="4.318" width="0.381" layer="94"/>
+<wire x1="-5.08" y1="4.318" x2="-0.762" y2="0" width="0.381" layer="94" curve="90"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="4.318" width="0.381" layer="94"/>
+<wire x1="5.08" y1="4.318" x2="0.762" y2="0" width="0.381" layer="94" curve="-90"/>
+<wire x1="-0.508" y1="5.08" x2="-0.508" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="0.508" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.508" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="0.508" x2="0.508" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.1524" layer="94"/>
+<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="U.FL-R-SMA">
+<description>Male SMA U.FL Connector:
+
+
+https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6oBoOdtqlGQpQrQ%3D%3D</description>
+<gates>
+<gate name="G$1" symbol="U.FL-R-SMT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="U.FL-R-SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22705,9 +22706,7 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PCB1" library="oresat-cards" deviceset="ORESAT-CARD-V1.3-GENERIC-1RF-POS1" device=""/>
 <part name="CM1" library="J-Molex-73300-003X-SMPM-M-edge-mount" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
-<part name="U$2" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="D9" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
@@ -22927,7 +22926,7 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="C23" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1u"/>
 <part name="R18" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="LED3" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="D10" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
@@ -22941,7 +22940,7 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <part name="1.8V-A3" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="D11" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D6" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
@@ -22950,6 +22949,8 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
+<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$1" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28692,7 +28693,7 @@ the internal EEPROM can be programmed.</text>
 <instance part="GND61" gate="1" x="299.72" y="-50.8" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="299.72" y="-51.054" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="LED3" gate="D1" x="35.56" y="16.51" smashed="yes">
+<instance part="D10" gate="D1" x="35.56" y="16.51" smashed="yes">
 <attribute name="NAME" x="32.131" y="11.938" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="37.465" y="11.938" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -28714,13 +28715,6 @@ the internal EEPROM can be programmed.</text>
 <instance part="GND34" gate="1" x="74.93" y="-12.7" smashed="yes">
 <attribute name="VALUE" x="74.93" y="-12.954" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="147.32" y="2.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="142.24" y="12.7" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="GND5" gate="1" x="152.4" y="-7.62" smashed="yes">
-<attribute name="VALUE" x="149.86" y="-10.16" size="1.778" layer="96"/>
-</instance>
 <instance part="RT2" gate="RT" x="288.29" y="-44.45" smashed="yes" rot="MR270">
 <attribute name="NAME" x="279.4" y="-45.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="-48.26" size="1.778" layer="96"/>
@@ -28728,7 +28722,7 @@ the internal EEPROM can be programmed.</text>
 <instance part="1.8V-A3" gate="G$1" x="288.29" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="285.75" y="-20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="D1" x="220.98" y="-96.52" smashed="yes">
+<instance part="D11" gate="D1" x="220.98" y="-96.52" smashed="yes">
 <attribute name="NAME" x="217.551" y="-101.092" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="222.885" y="-101.092" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -28738,6 +28732,13 @@ the internal EEPROM can be programmed.</text>
 </instance>
 <instance part="GND65" gate="1" x="220.98" y="-106.68" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="220.98" y="-106.934" size="1.778" layer="96" rot="MR0" align="top-center"/>
+</instance>
+<instance part="GND5" gate="1" x="154.94" y="-8.89" smashed="yes">
+<attribute name="VALUE" x="154.94" y="-9.144" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$1" gate="G$1" x="147.32" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.97" y="12.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -28853,14 +28854,15 @@ the internal EEPROM can be programmed.</text>
 <junction x="74.93" y="-7.62"/>
 </segment>
 <segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="152.4" y1="-2.54" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="D1" pin="C"/>
+<pinref part="D11" gate="D1" pin="C"/>
 <pinref part="GND65" gate="1" pin="GND"/>
 <wire x1="220.98" y1="-101.6" x2="220.98" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="-2.54" x2="154.94" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="154.94" y1="-2.54" x2="154.94" y2="-6.35" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$118" class="0">
@@ -29071,10 +29073,9 @@ the internal EEPROM can be programmed.</text>
 <wire x1="162.56" y1="0" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R86" gate="R" pin="2"/>
 <wire x1="162.56" y1="2.54" x2="165.1" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="2.54" x2="157.48" y2="2.54" width="0.1524" layer="91"/>
 <junction x="162.56" y="2.54"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="152.4" y1="2.54" x2="157.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="2.54" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$146" class="2">
@@ -29128,7 +29129,7 @@ the internal EEPROM can be programmed.</text>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R21" gate="R" pin="2"/>
-<pinref part="LED3" gate="D1" pin="A"/>
+<pinref part="D10" gate="D1" pin="A"/>
 <wire x1="35.56" y1="20.32" x2="35.56" y2="19.05" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29143,7 +29144,7 @@ the internal EEPROM can be programmed.</text>
 </net>
 <net name="WIFI_STATUS" class="0">
 <segment>
-<pinref part="LED3" gate="D1" pin="C"/>
+<pinref part="D10" gate="D1" pin="C"/>
 <pinref part="J2" gate="A" pin="2"/>
 <label x="59.69" y="10.16" size="1.27" layer="95" rot="MR0"/>
 <wire x1="35.56" y1="11.43" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
@@ -29193,7 +29194,7 @@ the internal EEPROM can be programmed.</text>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R30" gate="R" pin="2"/>
-<pinref part="LED1" gate="D1" pin="A"/>
+<pinref part="D11" gate="D1" pin="A"/>
 <wire x1="220.98" y1="-91.44" x2="220.98" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
