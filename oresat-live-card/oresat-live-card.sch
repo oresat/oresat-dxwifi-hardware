@@ -22146,8 +22146,8 @@ IPC-7351-B high-density rules ("C" density, tighter packing, lower yield).</desc
 <packages>
 <package name="U.FL-R-SMT">
 <smd name="1" x="0" y="1.525" dx="1" dy="1.05" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-0.57" y1="0.93" x2="0.57" y2="2.12" layer="29"/>
 <rectangle x1="-2.07" y1="-1.17" x2="-0.88" y2="1.17" layer="29"/>
 <rectangle x1="0.87" y1="-1.17" x2="2.07" y2="1.17" layer="29"/>
@@ -22192,7 +22192,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <device name="" package="U.FL-R-SMT">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2 3"/>
+<connect gate="G$1" pin="P$2" pad="2 3" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
