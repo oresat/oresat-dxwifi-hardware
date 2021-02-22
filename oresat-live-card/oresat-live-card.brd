@@ -235,21 +235,21 @@
 <text x="16.5" y="58.7625" size="0.635" layer="22" font="vector" ratio="20" rot="MR0" align="bottom-center">2</text>
 <text x="19.5625" y="58.7625" size="0.635" layer="22" font="vector" ratio="20" rot="MR0" align="bottom-center">3</text>
 <text x="22.5625" y="58.7625" size="0.635" layer="22" font="vector" ratio="20" rot="MR0" align="bottom-center">4</text>
-<wire x1="141" y1="86.1" x2="111" y2="86.1" width="0.127" layer="22"/>
-<wire x1="111" y1="86.1" x2="111" y2="99.2875" width="0.127" layer="22"/>
-<wire x1="111" y1="99.2875" x2="141" y2="99.2875" width="0.127" layer="22"/>
-<wire x1="141" y1="99.2875" x2="141" y2="86.1" width="0.127" layer="22"/>
-<text x="140" y="97.6" size="1" layer="22" font="vector" ratio="15" rot="MR0">SYSBOOT [4:0]</text>
-<text x="140" y="96.1" size="1" layer="22" font="vector" ratio="15" rot="MR0">DEFAULT : 0b11x00</text>
-<text x="140" y="94.6" size="1" layer="22" font="vector" ratio="15" rot="MR0">eMMC    : 0b11100</text>
-<text x="140" y="93.1" size="1" layer="22" font="vector" ratio="15" rot="MR0">uSD     : 0b11000</text>
+<wire x1="30.7" y1="30.5" x2="5" y2="30.5" width="0.127" layer="22"/>
+<wire x1="5" y1="30.5" x2="5" y2="43.6875" width="0.127" layer="22"/>
+<wire x1="5" y1="43.6875" x2="30.7" y2="43.6875" width="0.127" layer="22"/>
+<wire x1="30.7" y1="43.6875" x2="30.7" y2="30.5" width="0.127" layer="22"/>
+<text x="29.7" y="42" size="1" layer="22" font="vector" ratio="15" rot="MR0">SYSBOOT [4:0]</text>
+<text x="29.7" y="40.5" size="1" layer="22" font="vector" ratio="15" rot="MR0">DEFAULT : 0b11x00</text>
+<text x="29.7" y="39" size="1" layer="22" font="vector" ratio="15" rot="MR0">eMMC    : 0b11100</text>
+<text x="29.7" y="37.5" size="1" layer="22" font="vector" ratio="15" rot="MR0">uSD     : 0b11000</text>
 <text x="16.5" y="61.075" size="0.635" layer="22" font="vector" ratio="20" rot="MR0" align="bottom-center">DEFAULT : 0b11x00</text>
 <text x="22.4375" y="59.8875" size="0.635" layer="22" font="vector" ratio="20" rot="MR0">NOTE: SYSBOOT[2] UNSET</text>
-<text x="140" y="86.6" size="1" layer="22" font="vector" ratio="15" rot="MR0">NOTE: SYSBOOT[2] is not set by 
+<text x="29.7" y="31" size="1" layer="22" font="vector" ratio="15" rot="MR0">NOTE: SYSBOOT[2] is not set by 
 default. It must be set with J3 or 
 JP107, BUT NOT BOTH. See AM335x 
 TRM Table 26-7 for details.</text>
-<rectangle x1="131.325" y1="0.275" x2="139.825" y2="51.775" layer="21"/>
+<rectangle x1="32.025" y1="45.7" x2="40.525" y2="54.2" layer="21"/>
 <circle x="49.9" y="49.8" locked="yes" radius="2.5" width="0.001" layer="50"/>
 <circle x="33.008140625" y="66.71198125" locked="yes" radius="1.1" width="0.001" layer="50"/>
 <circle x="33.008140625" y="32.91198125" locked="yes" radius="1.1" width="0.001" layer="50"/>
@@ -6658,7 +6658,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="TP51" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="31" y="75.9" smashed="yes">
 <attribute name="NAME" x="29.5875" y="77.0875" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="U$3" library="psas-logo" package="PSAS_LOGO_10X10" value="" x="116.3" y="70.6" smashed="yes"/>
+<element name="U$3" library="psas-logo" package="PSAS_LOGO_10X10" value="" x="86.4" y="63.1" smashed="yes"/>
 <element name="TP25" library="SparkFun-Connectors" package="PAD.03X.04" value="TEST-POINT3X4" x="10.51875" y="64.775" smashed="yes"/>
 <element name="R27" library="oresat-rcl" package=".0603-A" value="DNP" x="37.8875" y="29.7875" smashed="yes">
 <attribute name="NAME" x="38.6875" y="28.825" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -7134,7 +7134,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="29.325" y="4.625" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="27.525" y="6.125" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="U$4" library="oresat-flight-marker" package="FLIGHTMARKER_NEW_BOARDS" value="" x="104" y="57.9" smashed="yes"/>
+<element name="U$4" library="oresat-flight-marker" package="FLIGHTMARKER_NEW_BOARDS" value="" x="33.25" y="34.9" smashed="yes"/>
 <element name="RT2" library="apdm" package="0603-THERMISTOR-B" value="TDK NTCG163JX103DT1S" x="80" y="42.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.2" y="41.7" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="80" y="42.6" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
@@ -11414,14 +11414,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="78.7" y1="9.95" x2="78.7" y2="9" width="0.254" layer="1"/>
 <via x="78.7" y="9" extent="1-16" drill="0.254"/>
 <polygon width="0.127" layer="1" orphans="yes">
-<vertex x="109.8" y="74.1"/>
-<vertex x="109.8" y="67.6"/>
-<vertex x="112.8" y="64.6"/>
-<vertex x="119.3" y="64.6"/>
-<vertex x="122.3" y="67.6"/>
-<vertex x="122.3" y="74.1"/>
-<vertex x="119.8" y="76.6"/>
-<vertex x="112.3" y="76.6"/>
+<vertex x="79.9" y="66.6"/>
+<vertex x="79.9" y="60.1"/>
+<vertex x="82.9" y="57.1"/>
+<vertex x="89.4" y="57.1"/>
+<vertex x="92.4" y="60.1"/>
+<vertex x="92.4" y="66.6"/>
+<vertex x="89.9" y="69.1"/>
+<vertex x="82.4" y="69.1"/>
 </polygon>
 <via x="9.5" y="47.1" extent="1-16" drill="0.254"/>
 <wire x1="12.825" y1="64.2" x2="12.825" y2="65.4125" width="0.4064" layer="1"/>
@@ -11480,10 +11480,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="81.2" y1="82.7375" x2="82.275" y2="82.7375" width="0.254" layer="1"/>
 <wire x1="82.275" y1="82.7375" x2="82.75" y2="82.7375" width="0.254" layer="1"/>
 <wire x1="82.75" y1="82.7375" x2="83.075" y2="83.0625" width="0.254" layer="1"/>
-<wire x1="85.15" y1="84.0375" x2="84.1" y2="84.0375" width="0.254" layer="1"/>
-<wire x1="84.1" y1="84.0375" x2="84.075" y2="84.0625" width="0.254" layer="1"/>
-<wire x1="84.15" y1="85.0375" x2="84.15" y2="84.1375" width="0.254" layer="1"/>
-<wire x1="84.15" y1="84.1375" x2="84.075" y2="84.0625" width="0.254" layer="1"/>
 <contactref element="J2" pad="8"/>
 <contactref element="J2" pad="7"/>
 <contactref element="J2" pad="3"/>
@@ -11757,7 +11753,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="89.5" y="38.7" extent="1-16" drill="0.254"/>
 <via x="92.5" y="38.7" extent="1-16" drill="0.254"/>
 <via x="95.5" y="38.7" extent="1-16" drill="0.254"/>
-<wire x1="84.15" y1="85.0375" x2="84" y2="83.9" width="0" layer="19" extent="1-1"/>
+<wire x1="83.175" y1="83.0625" x2="83.175" y2="83.075" width="0.254" layer="1"/>
+<wire x1="83.175" y1="83.075" x2="84" y2="83.9" width="0.254" layer="1"/>
+<wire x1="85.15" y1="84.0375" x2="85.0125" y2="83.9" width="0.254" layer="1"/>
+<wire x1="85.0125" y1="83.9" x2="84.2" y2="83.9" width="0.254" layer="1"/>
+<wire x1="84.2" y1="83.9" x2="84" y2="83.9" width="0.254" layer="1"/>
+<wire x1="84.15" y1="85.0375" x2="84.15" y2="83.95" width="0.254" layer="1"/>
+<wire x1="84.15" y1="83.95" x2="84.2" y2="83.9" width="0.254" layer="1"/>
 </signal>
 <signal name="N$110">
 <contactref element="U17" pad="3"/>
@@ -12956,7 +12958,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,b760046a84ef2237"/>
 <approved hash="19,16,75f47584199019e0"/>
 <approved hash="23,1,77fc98089888777c"/>
-<approved hash="23,1,acd052ae528eacf0"/>
 <approved hash="23,1,57ab9b5b9a635693"/>
 <approved hash="7,39,10800adb4e721ad0"/>
 <approved hash="7,39,9c99a01520151c99"/>
@@ -12973,7 +12974,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="7,39,96748159e38df27e"/>
 <approved hash="7,39,78c77558f558f8c7"/>
 <approved hash="7,39,6219621193ef93e7"/>
-<approved hash="7,39,976d9ae01ae0176d"/>
 <approved hash="7,39,621d621e93e093e3"/>
 <approved hash="7,39,a344fd079e35cb08"/>
 <approved hash="7,39,f222a007b025ff7e"/>
