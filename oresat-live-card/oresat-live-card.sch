@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22232,6 +22232,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="D8" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
+<attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-12017-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURE_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22277,7 +22280,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="TP140" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP132" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP121" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
+<attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-12017-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
+</part>
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="GND71" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP136" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
@@ -22721,7 +22729,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
-<part name="D9" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
+<part name="D9" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
+<attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-12017-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
+</part>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
 <part name="U5" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
@@ -22938,7 +22951,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="C23" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1u"/>
 <part name="R18" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="D10" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="D10" library="SparkFun-LED" deviceset="LED" device="0603" value="GREEN">
+<attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-12017-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
+</part>
 <part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
@@ -22952,7 +22970,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="1.8V-A3" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="D11" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="D11" library="SparkFun-LED" deviceset="LED" device="0603" value="GREEN">
+<attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="732-12017-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
+</part>
 <part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
 <part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D6" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
@@ -23446,6 +23469,9 @@ reserved on all oresat cards</text>
 <attribute name="NAME" x="283.591" y="67.818" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="288.925" y="67.818" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 <attribute name="MANUFACTURE_PART_NUMBER" x="287.02" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="287.02" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" x="287.02" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="287.02" y="72.39" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND24" gate="1" x="287.02" y="62.23" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="289.56" y="59.69" size="1.778" layer="96" rot="MR0"/>
@@ -23958,6 +23984,10 @@ reserved on all oresat cards</text>
 <instance part="D9" gate="G$1" x="403.86" y="72.39" smashed="yes">
 <attribute name="NAME" x="400.431" y="67.818" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="405.765" y="67.818" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="DESCRIPTION" x="403.86" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" x="403.86" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="403.86" y="72.39" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" x="403.86" y="72.39" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND36" gate="1" x="403.86" y="62.23" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="406.4" y="59.69" size="1.778" layer="96" rot="MR0"/>
@@ -27528,6 +27558,10 @@ the internal EEPROM can be programmed.</text>
 <instance part="D1" gate="G$1" x="-20.32" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="-15.748" y="146.431" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-15.748" y="151.765" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="DESCRIPTION" x="-20.32" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" x="-20.32" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" x="-20.32" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" x="-20.32" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R1" gate="R" x="-33.02" y="149.86" smashed="yes">
 <attribute name="NAME" x="-36.83" y="151.3586" size="1.778" layer="95"/>
@@ -28708,6 +28742,10 @@ the internal EEPROM can be programmed.</text>
 <instance part="D10" gate="D1" x="35.56" y="16.51" smashed="yes">
 <attribute name="NAME" x="32.131" y="11.938" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="37.465" y="11.938" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="DESCRIPTION" x="35.56" y="16.51" size="1.778" layer="96" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" x="35.56" y="16.51" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="35.56" y="16.51" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" x="35.56" y="16.51" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R21" gate="R" x="35.56" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.0586" y="29.21" size="1.778" layer="95" rot="R270"/>
@@ -28737,6 +28775,10 @@ the internal EEPROM can be programmed.</text>
 <instance part="D11" gate="D1" x="220.98" y="-96.52" smashed="yes">
 <attribute name="NAME" x="217.551" y="-101.092" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="222.885" y="-101.092" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="DESCRIPTION" x="220.98" y="-96.52" size="1.778" layer="96" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" x="220.98" y="-96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="220.98" y="-96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" x="220.98" y="-96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R30" gate="R" x="220.98" y="-86.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="222.4786" y="-82.55" size="1.778" layer="95" rot="R270"/>
