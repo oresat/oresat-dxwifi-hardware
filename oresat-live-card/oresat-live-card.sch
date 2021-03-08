@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -29262,17 +29262,41 @@ the internal EEPROM can be programmed.</text>
 <approved hash="104,5,-124.46,144.78,U7A,VIN_BAT,N$401,,,"/>
 <approved hash="104,5,-124.46,142.24,U7A,VIN_BAT,N$401,,,"/>
 <approved hash="104,5,-53.34,139.7,U7A,SYS_VDD2_3P3V,N$405,,,"/>
+<approved hash="104,5,-53.34,58.42,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,55.88,U7A,SYS_VDD_1P8V,N$3,,,"/>
 <approved hash="104,5,-53.34,175.26,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,172.72,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,157.48,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,154.94,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
+<approved hash="104,5,-53.34,53.34,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,50.8,U7A,SYS_VDD_1P8V,N$3,,,"/>
 <approved hash="104,5,-124.46,170.18,U7A,VIN_AC,5V,,,"/>
 <approved hash="104,5,-124.46,139.7,U7A,VIN_BAT,N$401,,,"/>
+<approved hash="104,5,-53.34,71.12,U7A,VDDSHV5,3.3VA,,,"/>
+<approved hash="104,5,-53.34,81.28,U7A,VDDSHV1,3.3VA,,,"/>
+<approved hash="104,5,-53.34,78.74,U7A,VDDSHV2,3.3VA,,,"/>
+<approved hash="104,5,-53.34,76.2,U7A,VDDSHV3,3.3VA,,,"/>
+<approved hash="104,5,-53.34,73.66,U7A,VDDSHV4,3.3VA,,,"/>
+<approved hash="104,5,-53.34,68.58,U7A,VDDSHV6,3.3VA,,,"/>
 <approved hash="104,5,-53.34,170.18,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,167.64,U7A,SYS_VOUT,VDD,,,"/>
 <approved hash="104,5,-53.34,152.4,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,149.86,U7A,SYS_VDD1_3P3V,3.3V,,,"/>
 <approved hash="104,5,-53.34,137.16,U7A,SYS_VDD2_3P3V,N$405,,,"/>
+<approved hash="104,5,-53.34,48.26,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,45.72,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,109.22,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,43.18,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,127,U7A,SYS_RTC_1P8V,N$53,,,"/>
+<approved hash="104,5,-53.34,124.46,U7A,SYS_RTC_1P8V,N$53,,,"/>
+<approved hash="104,5,-53.34,40.64,U7A,SYS_VDD_1P8V,N$3,,,"/>
+<approved hash="104,5,-53.34,106.68,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,104.14,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,101.6,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,99.06,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,96.52,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,93.98,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
+<approved hash="104,5,-53.34,91.44,U7A,SYS_VDD3_3P3V,3.3VA,,,"/>
 <approved hash="104,3,449.58,350.52,U3,VDDQ,3.3V,,,"/>
 <approved hash="104,3,447.04,350.52,U3,VDDIO,3.3V,,,"/>
 <approved hash="104,3,449.58,312.42,U3,VSSIO,GND,,,"/>
