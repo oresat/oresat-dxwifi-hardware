@@ -21138,6 +21138,7 @@ The large circular pin in the center is the connection to the RF cable providing
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
 <text x="-0.8666" y="-2.475" size="0.635" layer="25" font="vector" ratio="20" rot="SR0">&gt;NAME</text>
 <circle x="-1.6" y="1.8" radius="0.316225" width="0.127" layer="21"/>
+<circle x="-0.4" y="0.9" radius="0.1" width="0.2" layer="21"/>
 </package>
 <package name="DBV5-M">
 <smd name="1" x="-1.46245" y="0.95" dx="1.1723" dy="0.508" layer="1"/>
@@ -21366,6 +21367,7 @@ OR</text>
 <wire x1="-0.8128" y1="-1.27" x2="0.8128" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.8128" y1="1.27" x2="-0.8128" y2="1.27" width="0.1524" layer="21"/>
 <text x="-0.7366" y="1.905" size="0.6096" layer="25" font="vector" ratio="15" rot="SR0">&gt;Name</text>
+<circle x="-0.3" y="0.6" radius="0.1" width="0.2032" layer="21"/>
 </package>
 <package name="SC-70-6_MCH-M">
 <smd name="1" x="-1.21285" y="0.65" dx="1.0795" dy="0.3556" layer="1"/>
@@ -21452,8 +21454,8 @@ OR</text>
 <wire x1="-0.8128" y1="-1.27" x2="0.8128" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.8128" y1="1.27" x2="-0.8128" y2="1.27" width="0.1524" layer="21"/>
 <text x="-1.8288" y="0.8382" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-2.8972" y="-3.175" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-2.9" y="-4.445" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 <symbols>
