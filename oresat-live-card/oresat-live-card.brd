@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -186,8 +186,8 @@
 </layers>
 <board>
 <plain>
-<text x="3.8" y="26.8" size="2" layer="21" font="vector" ratio="15" rot="SR90" align="top-left">OreSat DxWiFi Test Board v1.0</text>
-<text x="9.5" y="26.6" size="0.75" layer="21" font="vector" ratio="15" rot="SR90">2021/01/25</text>
+<text x="3.8" y="26.8" size="2" layer="21" font="vector" ratio="15" rot="SR90" align="top-left">OreSat DxWiFi Test Board v1.1</text>
+<text x="9.5" y="26.6" size="0.75" layer="21" font="vector" ratio="15" rot="SR90">2021/04/21</text>
 <text x="-55" y="41" size="1.4224" layer="48"></text>
 <wire x1="50.5" y1="87.4" x2="52" y2="87.4" width="0" layer="48"/>
 <wire x1="50" y1="87.4" x2="50" y2="88.4" width="0" layer="48"/>
@@ -5270,9 +5270,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <library name="oresat-flight-marker">
 <packages>
 <package name="FLIGHTMARKER_NEW_BOARDS">
-<text x="0" y="0" size="1.27" layer="21" font="vector" ratio="15">FLIGHT HARDWARE IF NOT CHECKED</text>
-<wire x1="18.7" y1="-0.5" x2="22.4" y2="-0.5" width="0.1524" layer="21"/>
-<rectangle x1="31.5" y1="-0.3" x2="33.3" y2="1.5" layer="21"/>
+<text x="2.54" y="0" size="1.27" layer="21" font="vector" ratio="15">NOT FLIGHT HARDWARE</text>
+<wire x1="2.19" y1="-0.5" x2="5.89" y2="-0.5" width="0.1524" layer="21"/>
+<rectangle x1="-0.25" y1="-0.3" x2="1.55" y2="1.5" layer="21"/>
 </package>
 </packages>
 </library>
@@ -6454,6 +6454,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R63" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100m" x="45.53125" y="81.36875" smashed="yes">
 <attribute name="NAME" x="44.6675" y="82.88875" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="POPULARITY" value="19" x="45.53125" y="81.36875" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="33.53125" y="18.36875" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="44.26125" y="78.82875" size="1.27" layer="27"/>
 </element>
@@ -7007,6 +7008,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Panasonic" x="70.1" y="34.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ERJ-6GEY0R00V" x="70.1" y="34.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="68.97171875" y="34.39506875" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="POPULARITY" value="85" x="70.1" y="34.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="70.1" y="34.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="69.56" y="35.035" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -7149,7 +7151,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="29.325" y="4.625" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="27.525" y="6.125" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="U$4" library="oresat-flight-marker" package="FLIGHTMARKER_NEW_BOARDS" value="" x="33.25" y="34.9" smashed="yes"/>
+<element name="U$4" library="oresat-flight-marker" package="FLIGHTMARKER_NEW_BOARDS" value="" x="38.35" y="34.8" smashed="yes"/>
 <element name="RT2" library="apdm" package="0603-THERMISTOR-B" value="TDK NTCG163JX103DT1S" x="80" y="42.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.2" y="41.7" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="80" y="42.6" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
@@ -8514,8 +8516,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U3" pad="A4"/>
 <contactref element="U7" pad="R2"/>
 <contactref element="R10" pad="8"/>
-<wire x1="18.25" y1="29.85" x2="18.8" y2="30.4" width="0.127" layer="1"/>
-<wire x1="23.7674" y1="30.4" x2="24.0018375" y2="30.1655625" width="0.127" layer="1"/>
+<wire x1="24.0018375" y1="30.1655625" x2="23.7674" y2="30.4" width="0.127" layer="1"/>
 <wire x1="24.0018375" y1="30.1655625" x2="24.0018375" y2="29.851253125" width="0.127" layer="1" curve="-90"/>
 <wire x1="24.0018375" y1="29.851253125" x2="23.83901875" y2="29.688434375" width="0.127" layer="1"/>
 <wire x1="23.83901875" y1="29.688434375" x2="23.83901875" y2="29.374125" width="0.127" layer="1" curve="90"/>
@@ -8556,7 +8557,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="27.006571875" y1="26.52088125" x2="27.169390625" y2="26.6837" width="0.127" layer="1"/>
 <wire x1="27.169390625" y1="26.6837" x2="27.4837" y2="26.6837" width="0.127" layer="1" curve="-90"/>
 <wire x1="27.4837" y1="26.6837" x2="27.8" y2="26.3674" width="0.127" layer="1"/>
-<wire x1="18.8" y1="30.4" x2="23.7674" y2="30.4" width="0.127" layer="1"/>
 <wire x1="27.8" y1="26.3674" x2="27.8" y2="19.1748" width="0.127" layer="1"/>
 <wire x1="27.8" y1="19.1748" x2="26.3" y2="17.6748" width="0.127" layer="1"/>
 <wire x1="26.3" y1="16.5748" x2="26.3" y2="17.6748" width="0.127" layer="1"/>
@@ -8571,12 +8571,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="33.045" y1="9.345" x2="33.445" y2="9.345" width="0.127" layer="1"/>
 <wire x1="33.045" y1="9.345" x2="32.8" y2="9.59" width="0.127" layer="1"/>
 <wire x1="32.8" y1="9.6" x2="32.8" y2="9.59" width="0.127" layer="1"/>
+<wire x1="20.1" y1="30.4" x2="20" y2="30.5" width="0.127" layer="1"/>
+<wire x1="20" y1="30.5" x2="18.9" y2="30.5" width="0.127" layer="1"/>
+<wire x1="23.7674" y1="30.4" x2="20.1" y2="30.4" width="0.127" layer="1"/>
+<wire x1="18.9" y1="30.5" x2="18.25" y2="29.85" width="0.127" layer="1"/>
 </signal>
 <signal name="N$643">
 <contactref element="U3" pad="A5"/>
 <contactref element="U7" pad="R1"/>
-<wire x1="22.95" y1="29.85" x2="18.75" y2="29.85" width="0.127" layer="1"/>
+<wire x1="22.95" y1="29.85" x2="20.2174" y2="29.85" width="0.127" layer="1"/>
 <contactref element="R10" pad="3"/>
+<wire x1="19.7174" y1="29.85" x2="19.7" y2="29.85" width="0.127" layer="1"/>
 <wire x1="26.3" y1="14.81479375" x2="26.3" y2="13.4252" width="0.127" layer="1"/>
 <wire x1="26.3" y1="14.81479375" x2="25.6539" y2="15.46089375" width="0.127" layer="1"/>
 <wire x1="26.3" y1="13.4252" x2="26.3" y2="12.1" width="0.127" layer="1"/>
@@ -8638,6 +8643,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="26.2" y1="19.6" x2="26.2" y2="19.5" width="0.127" layer="1"/>
 <wire x1="25.6539" y1="15.46089375" x2="25.6539" y2="18.9539" width="0.127" layer="1"/>
 <wire x1="26.2" y1="26.6" x2="22.95" y2="29.85" width="0.127" layer="1"/>
+<wire x1="19.8869" y1="30.1805" x2="20.2174" y2="29.85" width="0.127" layer="1"/>
+<wire x1="18.7826" y1="29.85" x2="18.75" y2="29.85" width="0.127" layer="1"/>
+<wire x1="18.75" y1="29.85" x2="19.0805" y2="30.1805" width="0.127" layer="1"/>
+<wire x1="19.0805" y1="30.1805" x2="19.8869" y2="30.1805" width="0.127" layer="1"/>
+<wire x1="18.7826" y1="29.85" x2="19.7" y2="29.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$644">
 <contactref element="U3" pad="B2"/>
@@ -11781,6 +11791,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="84.15" y1="83.95" x2="84.2" y2="83.9" width="0.254" layer="1"/>
 <via x="80.5" y="41.3" extent="1-16" drill="0.254"/>
 <via x="80.5" y="38.7" extent="1-16" drill="0.254"/>
+<contactref element="U3" pad="A6" route="any" routetag="U.VSSIO"/>
 </signal>
 <signal name="N$110">
 <contactref element="U17" pad="3"/>
