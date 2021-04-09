@@ -22319,7 +22319,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="C22" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="12pF, 50V"/>
 <part name="C19" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="12pF, 50V"/>
 <part name="R13" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1M"/>
-<part name="J102" library="J-Samtec-FTSH-105-XXX-DV-K-ARM-SWD" deviceset="FTSH-105-XX-X-DV-K" device=""/>
+<part name="J8" library="J-Samtec-FTSH-105-XXX-DV-K-ARM-SWD" deviceset="FTSH-105-XX-X-DV-K" device=""/>
 <part name="3V-24" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND57" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
@@ -22390,7 +22390,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="Y1" library="X-ECS-240-12-30BQ-AEN-TR" deviceset="ECS-240-12-30BQ-AEN-TR" device="" value="24MHz"/>
 <part name="GND56" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J100" library="J-Hirose-DM3BT-DSF-PEJS" deviceset="DM3BT-DSF-PEJS" device=""/>
+<part name="J7" library="J-Hirose-DM3BT-DSF-PEJS" deviceset="DM3BT-DSF-PEJS" device=""/>
 <part name="C31" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22746,7 +22746,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="C44" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PCB1" library="oresat-cards" deviceset="ORESAT-CARD-V1.3-GENERIC-1RF-POS1" device=""/>
-<part name="CM1" library="J-Molex-73300-003X-SMPM-M-edge-mount" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
+<part name="J6" library="J-Molex-73300-003X-SMPM-M-edge-mount" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3V-6" library="oresat-supplies" deviceset="3.3V" device=""/>
@@ -23006,7 +23006,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U$1" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
+<part name="J9" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="JP107" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
 </parts>
 <sheets>
@@ -23082,7 +23082,7 @@ unconnected?</text>
 <attribute name="VALUE" x="129.54" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="PCB1" gate="G$1" x="114.3" y="2.54" smashed="yes"/>
-<instance part="CM1" gate="G$1" x="261.62" y="137.16" smashed="yes">
+<instance part="J6" gate="G$1" x="261.62" y="137.16" smashed="yes">
 <attribute name="NAME" x="266.7" y="133.35" size="1.27" layer="95"/>
 <attribute name="VALUE" x="266.7" y="130.81" size="1.27" layer="95"/>
 </instance>
@@ -23141,18 +23141,18 @@ unconnected?</text>
 <junction x="307.34" y="165.1"/>
 </segment>
 <segment>
-<pinref part="CM1" gate="G$1" pin="SHIELD2"/>
+<pinref part="J6" gate="G$1" pin="SHIELD2"/>
 <wire x1="266.7" y1="132.08" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD3"/>
+<pinref part="J6" gate="G$1" pin="SHIELD3"/>
 <wire x1="266.7" y1="129.54" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="129.54" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="129.54" x2="256.54" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD1"/>
+<pinref part="J6" gate="G$1" pin="SHIELD1"/>
 <wire x1="259.08" y1="132.08" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
 <junction x="259.08" y="129.54"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD"/>
+<pinref part="J6" gate="G$1" pin="SHIELD"/>
 <wire x1="264.16" y1="132.08" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
 <junction x="264.16" y="129.54"/>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -23431,7 +23431,7 @@ unconnected?</text>
 </net>
 <net name="TX_OUT" class="2">
 <segment>
-<pinref part="CM1" gate="G$1" pin="CENTER"/>
+<pinref part="J6" gate="G$1" pin="CENTER"/>
 <wire x1="266.7" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
 <label x="271.78" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -25235,7 +25235,7 @@ DNP for now</text>
 <attribute name="NAME" x="511.556" y="333.375" size="1.778" layer="95"/>
 <attribute name="VALUE" x="511.556" y="328.549" size="1.778" layer="96"/>
 </instance>
-<instance part="J100" gate="G$1" x="91.44" y="393.7" smashed="yes" rot="MR0">
+<instance part="J7" gate="G$1" x="91.44" y="393.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="104.14" y="378.46" size="1.778" layer="95" ratio="12" rot="MR0"/>
 </instance>
 <instance part="C31" gate="CE" x="208.28" y="523.24" smashed="yes" rot="MR180">
@@ -25521,7 +25521,7 @@ DNP for now</text>
 <wire x1="447.04" y1="353.06" x2="447.04" y2="350.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J100" gate="G$1" pin="VDD"/>
+<pinref part="J7" gate="G$1" pin="VDD"/>
 <wire x1="106.68" y1="396.24" x2="114.3" y2="396.24" width="0.1524" layer="91"/>
 <pinref part="3V-3" gate="G$1" pin="3.3V"/>
 <wire x1="114.3" y1="396.24" x2="114.3" y2="414.02" width="0.1524" layer="91"/>
@@ -25898,7 +25898,7 @@ DNP for now</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="DAT2"/>
+<pinref part="J7" gate="G$1" pin="DAT2"/>
 <wire x1="167.64" y1="337.82" x2="167.64" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="403.86" x2="127" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="MMC0_DAT2"/>
@@ -25913,7 +25913,7 @@ DNP for now</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="DAT3/CS"/>
+<pinref part="J7" gate="G$1" pin="DAT3/CS"/>
 <wire x1="160.02" y1="330.2" x2="160.02" y2="401.32" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="401.32" x2="124.46" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="MMC0_DAT3"/>
@@ -25928,7 +25928,7 @@ DNP for now</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="CMD/DI"/>
+<pinref part="J7" gate="G$1" pin="CMD/DI"/>
 <wire x1="106.68" y1="398.78" x2="132.08" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="398.78" x2="190.5" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="398.78" x2="190.5" y2="355.6" width="0.1524" layer="91"/>
@@ -25941,7 +25941,7 @@ DNP for now</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="CLK"/>
+<pinref part="J7" gate="G$1" pin="CLK"/>
 <wire x1="106.68" y1="393.7" x2="129.54" y2="393.7" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="393.7" x2="187.96" y2="393.7" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="393.7" x2="187.96" y2="358.14" width="0.1524" layer="91"/>
@@ -25954,7 +25954,7 @@ DNP for now</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="DAT0/DO"/>
+<pinref part="J7" gate="G$1" pin="DAT0/DO"/>
 <wire x1="106.68" y1="388.62" x2="137.16" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="388.62" x2="182.88" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="388.62" x2="182.88" y2="353.06" width="0.1524" layer="91"/>
@@ -25967,7 +25967,7 @@ DNP for now</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="DAT1"/>
+<pinref part="J7" gate="G$1" pin="DAT1"/>
 <wire x1="175.26" y1="345.44" x2="175.26" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="386.08" x2="134.62" y2="386.08" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="MMC0_DAT1"/>
@@ -25982,7 +25982,7 @@ DNP for now</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="CD#"/>
+<pinref part="J7" gate="G$1" pin="CD#"/>
 <pinref part="TP22" gate="G$1" pin="1"/>
 <pinref part="U7" gate="C" pin="SPI0_CS1"/>
 <wire x1="106.68" y1="383.54" x2="139.7" y2="383.54" width="0.1524" layer="91"/>
@@ -26363,7 +26363,7 @@ DNP for now</text>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="60.96" y1="391.16" x2="60.96" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="373.38" x2="71.12" y2="373.38" width="0.1524" layer="91"/>
-<pinref part="J100" gate="G$1" pin="CGND"/>
+<pinref part="J7" gate="G$1" pin="CGND"/>
 <wire x1="71.12" y1="373.38" x2="88.9" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="378.46" x2="88.9" y2="373.38" width="0.1524" layer="91"/>
 <junction x="88.9" y="373.38"/>
@@ -26372,7 +26372,7 @@ DNP for now</text>
 <junction x="71.12" y="373.38"/>
 <wire x1="88.9" y1="373.38" x2="114.3" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="373.38" x2="114.3" y2="391.16" width="0.1524" layer="91"/>
-<pinref part="J100" gate="G$1" pin="VSS"/>
+<pinref part="J7" gate="G$1" pin="VSS"/>
 <wire x1="114.3" y1="391.16" x2="106.68" y2="391.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -26698,7 +26698,7 @@ battery circuit</text>
 <attribute name="NAME" x="139.192" y="239.014" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="140.208" y="239.014" size="1.27" layer="96" rot="MR90"/>
 </instance>
-<instance part="J102" gate="A" x="68.58" y="162.56" smashed="yes" rot="R180">
+<instance part="J8" gate="A" x="68.58" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.93" y="144.145" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="3V-24" gate="G$1" x="66.04" y="139.7" smashed="yes">
@@ -26890,15 +26890,15 @@ battery circuit</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="GNDDET"/>
+<pinref part="J8" gate="A" pin="GNDDET"/>
 <wire x1="76.2" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="167.64" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J102" gate="A" pin="GND@2"/>
+<pinref part="J8" gate="A" pin="GND@2"/>
 <wire x1="83.82" y1="157.48" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="152.4" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="157.48" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
 <junction x="83.82" y="157.48"/>
-<pinref part="J102" gate="A" pin="GND"/>
+<pinref part="J8" gate="A" pin="GND"/>
 <wire x1="76.2" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <junction x="83.82" y="152.4"/>
 <pinref part="GND57" gate="1" pin="GND"/>
@@ -26988,7 +26988,7 @@ battery circuit</text>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="VTREF"/>
+<pinref part="J8" gate="A" pin="VTREF"/>
 <wire x1="76.2" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="147.32" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="137.16" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
@@ -27007,7 +27007,7 @@ battery circuit</text>
 </net>
 <net name="N$530" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="SWO/TDO"/>
+<pinref part="J8" gate="A" pin="SWO/TDO"/>
 <wire x1="99.06" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U7" gate="B" pin="TDO"/>
 <wire x1="99.06" y1="160.02" x2="99.06" y2="180.34" width="0.1524" layer="91"/>
@@ -27016,7 +27016,7 @@ battery circuit</text>
 </net>
 <net name="N$533" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="SWDCLK/TCK"/>
+<pinref part="J8" gate="A" pin="SWDCLK/TCK"/>
 <wire x1="76.2" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U7" gate="B" pin="TCK"/>
 <wire x1="101.6" y1="154.94" x2="101.6" y2="177.8" width="0.1524" layer="91"/>
@@ -27025,7 +27025,7 @@ battery circuit</text>
 </net>
 <net name="N$534" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="SWDIO/TMS"/>
+<pinref part="J8" gate="A" pin="SWDIO/TMS"/>
 <wire x1="76.2" y1="149.86" x2="104.14" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U7" gate="B" pin="TMS"/>
 <wire x1="104.14" y1="149.86" x2="104.14" y2="175.26" width="0.1524" layer="91"/>
@@ -27096,7 +27096,7 @@ battery circuit</text>
 </net>
 <net name="N$621" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="NC/TDI"/>
+<pinref part="J8" gate="A" pin="NC/TDI"/>
 <wire x1="76.2" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U7" gate="B" pin="TDI"/>
 <wire x1="96.52" y1="165.1" x2="96.52" y2="182.88" width="0.1524" layer="91"/>
@@ -27365,7 +27365,7 @@ battery circuit</text>
 </net>
 <net name="N$112" class="0">
 <segment>
-<pinref part="J102" gate="A" pin="!RESET"/>
+<pinref part="J8" gate="A" pin="!RESET"/>
 <wire x1="76.2" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="170.18" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -28812,7 +28812,7 @@ the internal EEPROM can be programmed.</text>
 <instance part="GND5" gate="1" x="154.94" y="-8.89" smashed="yes">
 <attribute name="VALUE" x="154.94" y="-9.144" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U$1" gate="G$1" x="147.32" y="2.54" smashed="yes" rot="R90">
+<instance part="J9" gate="G$1" x="147.32" y="2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="140.97" y="12.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="10.16" size="1.778" layer="96"/>
 </instance>
@@ -28938,7 +28938,7 @@ the internal EEPROM can be programmed.</text>
 <wire x1="152.4" y1="-2.54" x2="154.94" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="154.94" y1="-2.54" x2="154.94" y2="-6.35" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="J9" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$118" class="0">
@@ -29151,7 +29151,7 @@ the internal EEPROM can be programmed.</text>
 <wire x1="162.56" y1="2.54" x2="165.1" y2="2.54" width="0.1524" layer="91"/>
 <junction x="162.56" y="2.54"/>
 <wire x1="152.4" y1="2.54" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="J9" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$146" class="2">
