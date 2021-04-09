@@ -22788,7 +22788,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="PCBA1" library="PCBA-WF-NP9202-wifi-adapter" deviceset="WF-NP9202" device="WF"/>
 <part name="U6" library="U-TI-SN74LVC1G32QDBVR-2in-single-OR-gate-SOT23-5" deviceset="SN74LVC1G32QDBVRQ1" device=""/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="3V-8" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="3.3V2" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="R16" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
@@ -23014,7 +23013,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <description>Connectors</description>
 <plain>
 <text x="336.55" y="26.67" size="3.81" layer="94">OreSat DxWiFi: Connectors</text>
-<text x="416.56" y="6.35" size="3.81" layer="94">1.0</text>
+<text x="416.56" y="6.35" size="3.81" layer="94">1.1</text>
 <text x="11.43" y="5.08" size="1.778" layer="97">All resistors 0402 +/- 1% unless marked</text>
 <text x="11.43" y="2.54" size="1.778" layer="97">All caps are 0402 ceramic 10% X5R Vw&gt;=16V unless marked</text>
 <wire x1="99.06" y1="236.22" x2="205.74" y2="236.22" width="0.1524" layer="97"/>
@@ -23081,7 +23080,7 @@ unconnected?</text>
 <instance part="VBUS2" gate="1" x="129.54" y="165.1" smashed="yes">
 <attribute name="VALUE" x="129.54" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="PCB1" gate="G$1" x="114.3" y="2.54" smashed="yes"/>
+<instance part="PCB1" gate="G$1" x="116.84" y="2.54" smashed="yes"/>
 <instance part="J6" gate="G$1" x="261.62" y="137.16" smashed="yes">
 <attribute name="NAME" x="266.7" y="133.35" size="1.27" layer="95"/>
 <attribute name="VALUE" x="266.7" y="130.81" size="1.27" layer="95"/>
@@ -23448,7 +23447,7 @@ unconnected?</text>
 <wire x1="294.64" y1="114.3" x2="294.64" y2="43.18" width="0.1524" layer="97"/>
 <wire x1="294.64" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="97"/>
 <wire x1="185.42" y1="43.18" x2="185.42" y2="114.3" width="0.1524" layer="97"/>
-<text x="416.56" y="6.35" size="3.81" layer="94">1.0</text>
+<text x="416.56" y="6.35" size="3.81" layer="94">1.1</text>
 <text x="209.55" y="256.54" size="2.54" layer="97">Main Power Switch</text>
 <text x="132.08" y="129.54" size="2.54" layer="97" align="center">OreSat Power Enable
 (PEN)</text>
@@ -25118,7 +25117,7 @@ SYSBOOT[2] LOW == SD Card</text>
 For SPI boot
 DNP for now</text>
 <text x="764.54" y="27.94" size="3.81" layer="94">OreSat DxWiFi: eMMC, SD card</text>
-<text x="848.36" y="6.35" size="3.81" layer="94">1.0</text>
+<text x="848.36" y="6.35" size="3.81" layer="94">1.1</text>
 </plain>
 <instances>
 <instance part="U7" gate="C" x="320.04" y="350.52" smashed="yes">
@@ -25468,9 +25467,6 @@ DNP for now</text>
 </instance>
 <instance part="3V-6" gate="G$1" x="721.36" y="365.76" smashed="yes">
 <attribute name="VALUE" x="721.36" y="366.014" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="3V-8" gate="G$1" x="154.94" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="154.305" y="-27.305" size="1.27" layer="96"/>
 </instance>
 <instance part="JP107" gate="G$1" x="741.68" y="398.78" smashed="yes" rot="MR180">
 <attribute name="NAME" x="744.22" y="398.399" size="1.778" layer="95" font="vector" rot="MR180"/>
@@ -26679,7 +26675,7 @@ battery circuit</text>
 <wire x1="93.98" y1="114.3" x2="93.98" y2="120.904" width="0.1524" layer="97"/>
 <text x="152.908" y="204.724" size="1.778" layer="102">1M if populated</text>
 <text x="331.47" y="26.67" size="3.81" layer="94">OreSat DxWiFi: USB, JTAG, OSC</text>
-<text x="415.29" y="6.35" size="3.81" layer="94">1.0</text>
+<text x="415.29" y="6.35" size="3.81" layer="94">1.1</text>
 </plain>
 <instances>
 <instance part="U7" gate="B" x="200.66" y="200.66" smashed="yes">
@@ -27522,7 +27518,7 @@ I2C0 lines. This is required because
 these lines are routed externally so
 the internal EEPROM can be programmed.</text>
 <text x="102.87" y="-6.35" size="3.81" layer="94">OreSat DxWiFi: OSD Power/Misc</text>
-<text x="187.96" y="-26.67" size="3.81" layer="94">1.0</text>
+<text x="187.96" y="-26.67" size="3.81" layer="94">1.1</text>
 </plain>
 <instances>
 <instance part="U7" gate="A" x="-88.9" y="96.52" smashed="yes">
@@ -28524,7 +28520,7 @@ the internal EEPROM can be programmed.</text>
 <sheet>
 <plain>
 <text x="336.55" y="-153.67" size="3.81" layer="94">OreSat DxWiFi: RF</text>
-<text x="420.37" y="-173.99" size="3.81" layer="94">1.0</text>
+<text x="420.37" y="-173.99" size="3.81" layer="94">1.1</text>
 <text x="232.41" y="41.91" size="1.778" layer="97" rot="R90">0805</text>
 <text x="233.934" y="61.976" size="1.778" layer="97">0805</text>
 <text x="245.872" y="40.386" size="1.778" layer="97" rot="R90">0603</text>
