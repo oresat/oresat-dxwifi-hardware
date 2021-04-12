@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -22431,7 +22431,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="TP143" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP174" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP158" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="TP147" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP137" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP149" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP135" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
@@ -22450,7 +22449,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="TP175" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP176" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP169" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="TP179" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP141" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP139" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP101" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
@@ -22779,9 +22777,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="L-ECS-MPI4040" deviceset="L-ECS-MPI4040" device="" value="6.8u"/>
 <part name="VBUSP3" library="oresat-supplies" deviceset="VBUSP" device=""/>
-<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
-<part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="J2" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
@@ -22988,7 +22983,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="1.8V-A1" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="1.8V-A2" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="1.8V-A3" library="oresat-supplies" deviceset="1.8V-A" device=""/>
-<part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="D11" library="SparkFun-LED" deviceset="LED" device="0603" value="GREEN">
 <attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
@@ -23007,6 +23001,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J9" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="JP107" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK"/>
+<part name="TP6" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP5" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP7" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP8" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP11" library="Tova" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24069,15 +24069,6 @@ reserved on all oresat cards</text>
 <instance part="VBUSP3" gate="G$1" x="307.34" y="88.9" smashed="yes">
 <attribute name="VALUE" x="307.34" y="91.694" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="TP5" gate="G$1" x="332.74" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="327.66" y="76.2" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="TP6" gate="G$1" x="368.3" y="76.2" smashed="yes">
-<attribute name="NAME" x="373.38" y="76.2" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="TP7" gate="G$1" x="388.62" y="88.9" smashed="yes">
-<attribute name="NAME" x="391.16" y="91.44" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="D6" gate="G$1" x="226.06" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="230.632" y="194.691" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="230.632" y="200.025" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
@@ -24085,6 +24076,15 @@ reserved on all oresat cards</text>
 <attribute name="DIGI-KEY_PART_NUMBER" x="226.06" y="198.12" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" x="226.06" y="198.12" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" x="226.06" y="198.12" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="TP6" gate="G$1" x="368.3" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="370.84" y="74.93" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP5" gate="G$1" x="332.74" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="330.2" y="83.82" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP7" gate="G$1" x="393.7" y="90.17" smashed="yes" rot="R90">
+<attribute name="NAME" x="396.24" y="88.9" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -24971,25 +24971,19 @@ reserved on all oresat cards</text>
 <pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="TPS62111-PG1" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="PG"/>
-<wire x1="363.22" y1="76.2" x2="368.3" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="TP6" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="TPS62111-SYNC1" class="0">
 <segment>
+<pinref part="R12" gate="R" pin="1"/>
+<pinref part="R14" gate="R" pin="2"/>
+<wire x1="325.12" y1="68.58" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="SYNC"/>
+<wire x1="325.12" y1="71.12" x2="325.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="76.2" x2="337.82" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="76.2" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R14" gate="R" pin="2"/>
-<pinref part="R12" gate="R" pin="1"/>
-<wire x1="325.12" y1="68.58" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="71.12" x2="325.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="71.12" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="71.12" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
 <junction x="325.12" y="71.12"/>
 <pinref part="TP5" gate="G$1" pin="1"/>
+<wire x1="332.74" y1="81.28" x2="332.74" y2="76.2" width="0.1524" layer="91"/>
 <junction x="332.74" y="76.2"/>
 </segment>
 </net>
@@ -25000,21 +24994,34 @@ reserved on all oresat cards</text>
 <wire x1="386.08" y1="81.28" x2="386.08" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="86.36" x2="383.54" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="2"/>
-<pinref part="TP7" gate="G$1" pin="1"/>
-<wire x1="388.62" y1="88.9" x2="388.62" y2="93.98" width="0.1524" layer="91"/>
-<junction x="388.62" y="88.9"/>
+<wire x1="388.62" y1="86.36" x2="388.62" y2="90.17" width="0.1524" layer="91"/>
 <pinref part="C20" gate="CE" pin="1"/>
+<wire x1="388.62" y1="90.17" x2="388.62" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="388.62" y1="83.82" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
 <label x="388.62" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="388.62" y1="86.36" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="86.36" x2="388.62" y2="86.36" width="0.1524" layer="91"/>
 <junction x="386.08" y="86.36"/>
 <junction x="388.62" y="86.36"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
+<wire x1="393.7" y1="90.17" x2="388.62" y2="90.17" width="0.1524" layer="91"/>
+<junction x="388.62" y="90.17"/>
 </segment>
 <segment>
 <pinref part="R11" gate="R" pin="2"/>
 <wire x1="403.86" y1="87.63" x2="403.86" y2="93.98" width="0.1524" layer="91"/>
 <label x="403.86" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="BOOT1" class="0">
+<segment>
+<wire x1="-63.5" y1="226.06" x2="-36.068" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="PG"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
+<wire x1="363.22" y1="76.2" x2="368.3" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25323,9 +25330,6 @@ DNP for now</text>
 <instance part="TP158" gate="G$1" x="571.5" y="340.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="566.928" y="341.122" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="TP147" gate="G$1" x="566.42" y="391.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="567.182" y="395.732" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
 <instance part="TP137" gate="G$1" x="571.5" y="386.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="566.928" y="386.842" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -25470,6 +25474,9 @@ DNP for now</text>
 </instance>
 <instance part="JP107" gate="G$1" x="741.68" y="398.78" smashed="yes" rot="MR180">
 <attribute name="NAME" x="744.22" y="398.399" size="1.778" layer="95" font="vector" rot="MR180"/>
+</instance>
+<instance part="TP11" gate="G$1" x="565.15" y="393.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="567.69" y="392.43" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -26619,12 +26626,12 @@ DNP for now</text>
 <net name="PA_ENABLE" class="0">
 <segment>
 <pinref part="U7" gate="D" pin="MII1_TX_CLK"/>
-<wire x1="574.04" y1="388.62" x2="566.42" y2="388.62" width="0.1524" layer="91"/>
-<pinref part="TP147" gate="G$1" pin="1"/>
-<wire x1="566.42" y1="388.62" x2="566.42" y2="391.16" width="0.1524" layer="91"/>
-<wire x1="566.42" y1="388.62" x2="558.8" y2="388.62" width="0.1524" layer="91"/>
-<junction x="566.42" y="388.62"/>
+<wire x1="574.04" y1="388.62" x2="565.15" y2="388.62" width="0.1524" layer="91"/>
 <label x="558.8" y="388.62" size="1.3716" layer="95" rot="R180" xref="yes"/>
+<pinref part="TP11" gate="G$1" pin="1"/>
+<wire x1="565.15" y1="388.62" x2="558.8" y2="388.62" width="0.1524" layer="91"/>
+<wire x1="565.15" y1="393.7" x2="565.15" y2="388.62" width="0.1524" layer="91"/>
+<junction x="565.15" y="388.62"/>
 </segment>
 </net>
 </nets>
@@ -26784,9 +26791,6 @@ battery circuit</text>
 <instance part="TP169" gate="G$1" x="233.68" y="182.88" smashed="yes">
 <attribute name="NAME" x="238.252" y="182.118" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP179" gate="G$1" x="254" y="182.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="254.762" y="187.452" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
 <instance part="TP141" gate="G$1" x="167.64" y="147.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="163.068" y="148.082" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -26877,8 +26881,11 @@ battery circuit</text>
 <instance part="1.8V-A2" gate="G$1" x="251.46" y="172.72" smashed="yes">
 <attribute name="VALUE" x="248.92" y="172.72" size="1.778" layer="96"/>
 </instance>
-<instance part="TP8" gate="G$1" x="254" y="167.64" smashed="yes">
-<attribute name="NAME" x="258.572" y="166.878" size="1.778" layer="95" font="vector"/>
+<instance part="TP10" gate="G$1" x="254" y="185.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="256.54" y="184.15" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP8" gate="G$1" x="256.54" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="259.08" y="166.37" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -27180,11 +27187,11 @@ battery circuit</text>
 <net name="PA_THERMISTOR" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="AIN6"/>
-<pinref part="TP179" gate="G$1" pin="1"/>
-<wire x1="254" y1="182.88" x2="254" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="254" y1="180.34" x2="231.14" y2="180.34" width="0.1524" layer="91"/>
-<label x="259.08" y="180.34" size="1.27" layer="95" xref="yes"/>
 <wire x1="259.08" y1="180.34" x2="254" y2="180.34" width="0.1524" layer="91"/>
+<label x="259.08" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP10" gate="G$1" pin="1"/>
+<wire x1="254" y1="180.34" x2="231.14" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="254" y1="185.42" x2="254" y2="180.34" width="0.1524" layer="91"/>
 <junction x="254" y="180.34"/>
 </segment>
 </net>
@@ -27425,11 +27432,11 @@ battery circuit</text>
 </segment>
 <segment>
 <pinref part="U7" gate="B" pin="PMIC_MUX_IN"/>
-<wire x1="254" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="TP8" gate="G$1" pin="1"/>
 <pinref part="1.8V-A2" gate="G$1" pin="1.8V-A"/>
 <wire x1="251.46" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="170.18" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <junction x="251.46" y="167.64"/>
 </segment>
 </net>
