@@ -22361,9 +22361,10 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="C8" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="3V-23" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND51" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R8" library="R-Panasonic-EXB_A10PXXXJ" deviceset="EXB-A10P391J" device="C_ARRAY_EXBA-M" value="10K">
+<part name="R8" library="R-Panasonic-EXB_A10PXXXJ" deviceset="EXB-A10P391J" device="C_ARRAY_EXBA-M" value="10k">
 <attribute name="DPN" value="U7103CT-ND"/>
 <attribute name="MPN" value="EXB-A10P103J"/>
+<attribute name="RESISTANCE" value="10K"/>
 </part>
 <part name="R24" library="R-Panasonic-EXB_A10PXXXJ" deviceset="EXB-A10P391J" device="C_ARRAY_EXBA-M" value="100K">
 <attribute name="DPN" value="U7104CT-ND"/>
@@ -25209,6 +25210,7 @@ DNP for now</text>
 <attribute name="VALUE" x="119.4816" y="429.3108" size="1.778" layer="96" font="vector" ratio="10" rot="SR0"/>
 <attribute name="NAME" x="119.3292" y="431.8508" size="1.778" layer="95" font="vector" ratio="10" rot="SR0"/>
 <attribute name="DPN" x="121.92" y="426.72" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="RESISTANCE" x="121.92" y="426.72" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R24" gate="A" x="711.2" y="429.26" smashed="yes" rot="R90">
 <attribute name="VALUE" x="711.3016" y="431.8508" size="1.778" layer="96" font="vector" ratio="10" rot="SR0"/>

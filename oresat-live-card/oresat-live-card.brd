@@ -22,16 +22,16 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="61" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -187,7 +187,7 @@
 <board>
 <plain>
 <text x="3.8" y="26.8" size="2" layer="21" font="vector" ratio="15" rot="SR90" align="top-left">OreSat DxWiFi Test Board v1.1</text>
-<text x="9.5" y="26.6" size="0.75" layer="21" font="vector" ratio="15" rot="SR90">2021/04/21</text>
+<text x="9.5" y="26.6" size="0.75" layer="21" font="vector" ratio="15" rot="SR90">2021/04/11</text>
 <text x="-55" y="41" size="1.4224" layer="48"></text>
 <wire x1="50.5" y1="87.4" x2="52" y2="87.4" width="0" layer="48"/>
 <wire x1="50" y1="87.4" x2="50" y2="88.4" width="0" layer="48"/>
@@ -6131,11 +6131,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="65.5" y="23.7" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="66.9" y="25.45" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R8" library="R-Panasonic-EXB_A10PXXXJ" package="ARRAY_EXBA-M" value="10K" x="68" y="26.6" smashed="yes" rot="MR0">
+<element name="R8" library="R-Panasonic-EXB_A10PXXXJ" package="ARRAY_EXBA-M" value="10k" x="68" y="26.6" smashed="yes" rot="MR0">
 <attribute name="DPN" value="U7103CT-ND" x="68" y="26.6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MFR" value="Panasonic Electronic Components" x="68" y="26.6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="EXB-A10P103J" x="68" y="26.6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="67.8" y="23" size="0.635" layer="26" font="vector" ratio="20" rot="SMR180"/>
+<attribute name="RESISTANCE" value="10K" x="68" y="26.6" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R24" library="R-Panasonic-EXB_A10PXXXJ" package="ARRAY_EXBA-M" value="100K" x="13.5" y="56.7" smashed="yes" rot="R90">
 <attribute name="DPN" value="U7104CT-ND" x="13.5" y="56.7" size="1.778" layer="27" rot="R90" display="off"/>
