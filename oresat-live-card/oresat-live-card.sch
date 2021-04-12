@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -22949,10 +22949,26 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MFR" value="Vishay / Dale"/>
 <attribute name="MPN" value="CRCW04023R30FKED"/>
 </part>
-<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
-<part name="R86" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
-<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
-<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="DNP"/>
+<part name="R85" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="82.5">
+<attribute name="DESCRIPTION" value="82.5 Ohms, 1%, 0603"/>
+<attribute name="MFN" value="Panasonic"/>
+<attribute name="MPN" value="ERJ-3EKF82R5V"/>
+</part>
+<part name="R86" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="93.1">
+<attribute name="DESCRIPTION" value="93.1 Ohms, 1%, 0603"/>
+<attribute name="MFN" value="Panasonic"/>
+<attribute name="MPN" value="ERJ-3EKF93R1V"/>
+</part>
+<part name="R87" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="41.2">
+<attribute name="DESCRIPTION" value="41.2 Ohms, 1%, 0603"/>
+<attribute name="MFR" value="Panasonic"/>
+<attribute name="MPN" value="ERJ-3EKF41R2V"/>
+</part>
+<part name="R88" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="41.2">
+<attribute name="DESCRIPTION" value="41.2 Ohms, 1%, 0603"/>
+<attribute name="MFR" value="Panasonic"/>
+<attribute name="MPN" value="ERJ-3EKF41R2V"/>
+</part>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C15" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="100n"/>
@@ -28711,18 +28727,30 @@ the internal EEPROM can be programmed.</text>
 <instance part="R85" gate="R" x="177.8" y="-5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="176.3014" y="-8.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="181.102" y="-8.89" size="1.778" layer="96" rot="R90"/>
+<attribute name="DESCRIPTION" x="177.8" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFN" x="177.8" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="177.8" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R86" gate="R" x="170.18" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="173.99" y="1.0414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="173.99" y="5.842" size="1.778" layer="96" rot="R180"/>
+<attribute name="DESCRIPTION" x="170.18" y="2.54" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="170.18" y="2.54" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="170.18" y="2.54" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R87" gate="R" x="162.56" y="-5.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="164.0586" y="-1.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="159.258" y="-1.27" size="1.778" layer="96" rot="R270"/>
+<attribute name="MPN" x="162.56" y="-5.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFR" x="162.56" y="-5.08" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" x="162.56" y="-5.08" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R88" gate="R" x="162.56" y="-20.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="164.0586" y="-16.51" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="159.258" y="-16.51" size="1.778" layer="96" rot="R270"/>
+<attribute name="MPN" x="162.56" y="-20.32" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFR" x="162.56" y="-20.32" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" x="162.56" y="-20.32" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="SUPPLY16" gate="GND" x="162.56" y="-30.48" smashed="yes"/>
 <instance part="SUPPLY17" gate="GND" x="177.8" y="-15.24" smashed="yes"/>
