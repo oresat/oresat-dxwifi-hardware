@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -22476,7 +22476,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="DPN" value="U7103CT-ND"/>
 <attribute name="MPN" value="EXB-A10P103J"/>
 </part>
-<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="JP101" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
 <part name="JP104" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
 <part name="TP144" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
@@ -23024,6 +23023,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP8" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP11" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP1" library="Tova" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26825,9 +26825,6 @@ battery circuit</text>
 <attribute name="NAME" x="165.1" y="99.06" size="1.27" layer="95"/>
 <attribute name="VALUE" x="165.1" y="96.52" size="1.27" layer="95"/>
 </instance>
-<instance part="TP1" gate="G$1" x="261.62" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="259.08" y="70.485" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
 <instance part="TP144" gate="G$1" x="233.68" y="147.32" smashed="yes">
 <attribute name="NAME" x="238.252" y="146.558" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -26904,6 +26901,9 @@ battery circuit</text>
 </instance>
 <instance part="TP8" gate="G$1" x="256.54" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="259.08" y="166.37" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP1" gate="G$1" x="261.62" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="259.08" y="71.12" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
