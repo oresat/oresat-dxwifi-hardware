@@ -22260,7 +22260,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURE_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R62" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
+<part name="R62" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="U15" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22308,7 +22308,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
 <part name="GND71" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP136" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="U4" library="U-TI-SN74LVC1G07DCK-Buffer" deviceset="SN74LVC1G07DCK" device="" value="SN74LVC1G07DCK"/>
@@ -22491,7 +22491,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R61" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
+<part name="R61" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="J4" library="J-Samtec-TFM-120-X1-XXX-D-RA" deviceset="J-SAMTEC-TFM-120-X1-XXX-D-RA" device="" value="TFM-120-01-L-D-RA"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U16" library="U-Maxim-MAX7310-I2C-GPIO-expander" deviceset="MAX7310" device="" package3d_urn="urn:adsk.eagle:package:8018497/1" value="MAX7310ATE">
@@ -22659,7 +22659,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="TP66" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP65" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R49" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
+<part name="R49" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="R43" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="665k"/>
 <part name="TP52" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP53" library="Tova" deviceset="TEST-POINT" device=""/>
@@ -22755,7 +22755,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
+<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="U5" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C16" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
@@ -22988,13 +22988,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
-<part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
+<part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C25" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C26" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="0.1uF"/>
 <part name="GND62" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="3V-9" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="RT2" library="apdm" deviceset="THERMISTOR-" device="-0603-THERMISTOR-B" value="TDK NTCG163JX103DT1S"/>
 <part name="1.8V-A1" library="oresat-supplies" deviceset="1.8V-A" device=""/>
 <part name="1.8V-A2" library="oresat-supplies" deviceset="1.8V-A" device=""/>
@@ -23006,7 +23005,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D6" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
 <attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
@@ -28810,9 +28809,6 @@ the internal EEPROM can be programmed.</text>
 <attribute name="NAME" x="47.2186" y="29.21" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="42.418" y="29.21" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="3V-9" gate="G$1" x="35.56" y="38.1" smashed="yes">
-<attribute name="VALUE" x="34.925" y="38.735" size="1.27" layer="96"/>
-</instance>
 <instance part="J2" gate="A" x="74.93" y="7.62" smashed="yes">
 <attribute name="NAME" x="69.85" y="17.78" size="1.778" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="69.85" y="15.24" size="1.778" layer="96" ratio="20"/>
@@ -29260,18 +29256,6 @@ the internal EEPROM can be programmed.</text>
 <wire x1="35.56" y1="10.16" x2="67.31" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="5V" class="0">
-<segment>
-<pinref part="R21" gate="R" pin="1"/>
-<wire x1="35.56" y1="35.56" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R29" gate="R" pin="1"/>
-<wire x1="35.56" y1="33.02" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<junction x="35.56" y="33.02"/>
-<pinref part="3V-9" gate="G$1" pin="5V"/>
-</segment>
-</net>
 <net name="USB_HO_N" class="0">
 <segment>
 <pinref part="J2" gate="A" pin="5"/>
@@ -29289,8 +29273,18 @@ the internal EEPROM can be programmed.</text>
 <net name="USB_HO_VBUS" class="0">
 <segment>
 <pinref part="J2" gate="A" pin="6"/>
-<wire x1="67.31" y1="0" x2="45.72" y2="0" width="0.1524" layer="91"/>
-<label x="45.72" y="0" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="19.05" y="38.1" size="1.27" layer="95" rot="MR90" xref="yes"/>
+<wire x1="19.05" y1="38.1" x2="19.05" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="33.02" x2="19.05" y2="0" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="0" x2="67.31" y2="0" width="0.1524" layer="91"/>
+<pinref part="R21" gate="R" pin="1"/>
+<pinref part="R29" gate="R" pin="1"/>
+<wire x1="35.56" y1="33.02" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="30.48" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="19.05" y2="33.02" width="0.1524" layer="91"/>
+<junction x="35.56" y="33.02"/>
+<junction x="19.05" y="33.02"/>
 </segment>
 </net>
 <net name="N$26" class="0">
