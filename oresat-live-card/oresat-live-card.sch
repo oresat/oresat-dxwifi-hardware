@@ -24096,8 +24096,8 @@ reserved on all oresat cards</text>
 <instance part="TP6" gate="G$1" x="368.3" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="370.84" y="74.93" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="TP5" gate="G$1" x="332.74" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="330.2" y="83.82" size="1.778" layer="95" font="vector"/>
+<instance part="TP5" gate="G$1" x="332.74" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="330.2" y="78.74" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="TP7" gate="G$1" x="393.7" y="90.17" smashed="yes" rot="R90">
 <attribute name="NAME" x="396.24" y="88.9" size="1.778" layer="95" font="vector"/>
@@ -24999,7 +24999,6 @@ reserved on all oresat cards</text>
 <wire x1="325.12" y1="71.12" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
 <junction x="325.12" y="71.12"/>
 <pinref part="TP5" gate="G$1" pin="1"/>
-<wire x1="332.74" y1="81.28" x2="332.74" y2="76.2" width="0.1524" layer="91"/>
 <junction x="332.74" y="76.2"/>
 </segment>
 </net>
