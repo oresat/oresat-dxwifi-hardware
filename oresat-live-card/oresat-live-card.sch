@@ -23591,6 +23591,10 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND80" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C42" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF, 50V"/>
 <part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF, 50V"/>
+<part name="FB3" library="SparkFun-Coils" deviceset="FERRITE_BEAD" device="-0603" value="30Ω/1.8A">
+<attribute name="DPN" value="490-14027-1-ND"/>
+<attribute name="MPN" value="BLM18KG300JH1D"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -27541,6 +27545,11 @@ battery circuit</text>
 <attribute name="NAME" x="226.06" y="35.56" size="1.778" layer="95"/>
 <attribute name="VALUE" x="226.06" y="33.02" size="1.778" layer="96"/>
 </instance>
+<instance part="FB3" gate="G$1" x="199.39" y="128.27" smashed="yes" rot="R90">
+<attribute name="NAME" x="197.485" y="130.81" size="1.778" layer="95" font="vector"/>
+<attribute name="MPN" x="199.39" y="128.27" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DPN" x="199.39" y="128.27" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28199,11 +28208,15 @@ battery circuit</text>
 <pinref part="U7" gate="B" pin="USB0_VBUS"/>
 <wire x1="229.87" y1="156.21" x2="207.01" y2="156.21" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="118.11" x2="207.01" y2="118.11" width="0.1524" layer="91"/>
-<wire x1="207.01" y1="118.11" x2="207.01" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="118.11" x2="207.01" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="FB2" gate="G$1" pin="2"/>
+<wire x1="207.01" y1="128.27" x2="207.01" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="207.01" y1="134.62" x2="207.01" y2="156.21" width="0.1524" layer="91"/>
 <wire x1="204.47" y1="134.62" x2="207.01" y2="134.62" width="0.1524" layer="91"/>
 <junction x="207.01" y="134.62"/>
+<pinref part="FB3" gate="G$1" pin="2"/>
+<wire x1="204.47" y1="128.27" x2="207.01" y2="128.27" width="0.1524" layer="91"/>
+<junction x="207.01" y="128.27"/>
 </segment>
 </net>
 <net name="N$74" class="0">
@@ -28246,6 +28259,13 @@ battery circuit</text>
 <pinref part="C42" gate="CE" pin="2"/>
 <wire x1="228.6" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
 <junction x="226.06" y="58.42"/>
+</segment>
+</net>
+<net name="USB_CAM_VBUS" class="0">
+<segment>
+<pinref part="FB3" gate="G$1" pin="1"/>
+<wire x1="194.31" y1="128.27" x2="191.77" y2="128.27" width="0.1524" layer="91"/>
+<label x="191.77" y="128.27" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
