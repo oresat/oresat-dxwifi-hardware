@@ -23595,6 +23595,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="DPN" value="490-14027-1-ND"/>
 <attribute name="MPN" value="BLM18KG300JH1D"/>
 </part>
+<part name="3V-7" library="oresat-supplies" deviceset="3.3V" device=""/>
+<part name="C54" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="GND81" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27489,8 +27492,8 @@ battery circuit</text>
 <instance part="GND75" gate="1" x="179.07" y="19.05" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="179.07" y="18.796" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="3V-8" gate="G$1" x="179.07" y="95.25" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="179.705" y="95.885" size="1.27" layer="96" rot="MR0"/>
+<instance part="3V-8" gate="G$1" x="179.07" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="179.705" y="109.855" size="1.27" layer="96" rot="MR0"/>
 </instance>
 <instance part="U20" gate="A" x="74.93" y="86.36" smashed="yes">
 <attribute name="NAME" x="82.6516" y="75.1586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -27549,6 +27552,16 @@ battery circuit</text>
 <attribute name="NAME" x="197.485" y="130.81" size="1.778" layer="95" font="vector"/>
 <attribute name="MPN" x="199.39" y="128.27" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="DPN" x="199.39" y="128.27" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="3V-7" gate="G$1" x="218.44" y="76.2" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="219.075" y="76.835" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="C54" gate="CE" x="186.69" y="97.79" smashed="yes" rot="MR180">
+<attribute name="NAME" x="188.214" y="97.409" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="188.214" y="102.489" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND81" gate="1" x="186.69" y="91.44" smashed="yes">
+<attribute name="VALUE" x="186.69" y="91.186" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -27681,6 +27694,11 @@ battery circuit</text>
 <wire x1="233.68" y1="48.26" x2="240.03" y2="48.26" width="0.1524" layer="91"/>
 <junction x="240.03" y="48.26"/>
 </segment>
+<segment>
+<pinref part="GND81" gate="1" pin="GND"/>
+<pinref part="C54" gate="CE" pin="1"/>
+<wire x1="186.69" y1="93.98" x2="186.69" y2="95.25" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -27703,7 +27721,12 @@ battery circuit</text>
 <segment>
 <pinref part="3V-8" gate="G$1" pin="3.3V"/>
 <pinref part="U9" gate="A" pin="VCC"/>
-<wire x1="179.07" y1="92.71" x2="179.07" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="106.68" x2="179.07" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C54" gate="CE" pin="2"/>
+<wire x1="179.07" y1="104.14" x2="179.07" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="102.87" x2="186.69" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="104.14" x2="179.07" y2="104.14" width="0.1524" layer="91"/>
+<junction x="179.07" y="104.14"/>
 </segment>
 <segment>
 <pinref part="J10" gate="G$1" pin="2"/>
@@ -27711,6 +27734,12 @@ battery circuit</text>
 <wire x1="233.68" y1="113.03" x2="243.84" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="113.03" x2="243.84" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="3V-9" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="!RESET"/>
+<wire x1="207.01" y1="69.85" x2="218.44" y2="69.85" width="0.1524" layer="91"/>
+<pinref part="3V-7" gate="G$1" pin="3.3V"/>
+<wire x1="218.44" y1="69.85" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$533" class="0">

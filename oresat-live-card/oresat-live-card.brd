@@ -7729,6 +7729,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PROD_ID" value="NDUC-13805" x="-0.2" y="-54.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="0.2" y="-55.462" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="C54" library="oresat-rcl" package=".0603-A" value="0.1uF" x="-0.1" y="-58.2" smashed="yes">
+<attribute name="NAME" x="-1.5" y="-57.25" size="0.6096" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-0.1" y="-58.2" size="0.3" layer="33" ratio="15" align="center"/>
+<attribute name="VALUE" x="-1.5" y="-59.95" size="0.8" layer="27" font="vector" ratio="15"/>
+</element>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -7955,9 +7960,24 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U9" pad="3"/>
 <contactref element="U9" pad="25"/>
 <contactref element="J10" pad="2"/>
-<wire x1="0.625" y1="-9.25" x2="2.34" y2="-21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="4.850440625" y1="-7.525" x2="0.625" y2="-9.25" width="0" layer="19" extent="1-1"/>
-<wire x1="20.94" y1="13.5252" x2="4.850440625" y2="-7.525" width="0" layer="19" extent="1-1"/>
+<contactref element="U9" pad="4"/>
+<contactref element="C54" pad="2"/>
+<wire x1="67.7" y1="24.6" x2="66.4" y2="25.9" width="0" layer="19" extent="1-1"/>
+<wire x1="38.525" y1="20.775" x2="38.55" y2="20.15" width="0" layer="19" extent="1-1"/>
+<wire x1="39.795" y1="20.775" x2="39.8" y2="20.15" width="0" layer="19" extent="1-1"/>
+<wire x1="38.525" y1="19.505" x2="39.15" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="39.795" y1="19.505" x2="39.15" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.775" y1="25.88125" x2="13.7" y2="25.8" width="0" layer="19" extent="1-1"/>
+<wire x1="12.775" y1="24.0375" x2="13.7" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="12.775" y1="20.38125" x2="13.7" y2="20.4" width="0" layer="19" extent="1-1"/>
+<wire x1="12.775" y1="22.225" x2="13.7" y2="22.2" width="0" layer="19" extent="1-1"/>
+<wire x1="12.775" y1="18.475" x2="13.8" y2="18.4" width="0" layer="19" extent="1-1"/>
+<wire x1="66.4" y1="23.7" x2="67.7" y2="24.6" width="0" layer="19" extent="1-1"/>
+<wire x1="4.850440625" y1="-7.525" x2="20.94" y2="13.5252" width="0" layer="19" extent="1-1"/>
+<wire x1="0.625" y1="-9.25" x2="4.850440625" y2="-7.525" width="0" layer="19" extent="1-1"/>
+<wire x1="0.625" y1="-9.75" x2="0.625" y2="-9.25" width="0" layer="19" extent="1-1"/>
+<wire x1="2.34" y1="-21.5" x2="0.625" y2="-9.75" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8" y1="-58.2" x2="2.34" y2="-21.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDAOPT2">
 </signal>
@@ -12276,6 +12296,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C53" pad="1"/>
 <contactref element="Y3" pad="3"/>
 <contactref element="Y3" pad="1"/>
+<contactref element="C54" pad="1"/>
 <wire x1="84.6" y1="88.3" x2="87.4" y2="87.5625" width="0" layer="19" extent="1-1"/>
 <wire x1="84.6" y1="86.6" x2="84.6" y2="88.3" width="0" layer="19" extent="1-1"/>
 <wire x1="84.15" y1="85.0375" x2="84.6" y2="86.6" width="0" layer="19" extent="1-1"/>
@@ -12429,6 +12450,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="5.7" y1="-41.97" x2="-0.3" y2="-39.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-1" y1="-46.6" x2="-0.3" y2="-39.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-1" y1="-50.7" x2="-1" y2="-46.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-1" y1="-58.2" x2="-1" y2="-50.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$110">
 <contactref element="U17" pad="3"/>
