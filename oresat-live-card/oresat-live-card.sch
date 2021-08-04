@@ -22694,6 +22694,97 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </deviceset>
 </devicesets>
 </library>
+<library name="X-ECS-060-18-20BM-JEN-TR">
+<packages>
+<package name="ECS_ECS-060-18-20BM-JEN-TR">
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.25" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-0.25" x2="-3.5" y2="0.25" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-0.25" x2="3.5" y2="0.25" width="0.127" layer="21"/>
+<circle x="-4.5" y="-1.27" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-3.75" y1="-2.75" x2="3.75" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="3.75" y1="-2.75" x2="3.75" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="3.75" y1="-2.25" x2="4.25" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="4.25" y1="-2.25" x2="4.25" y2="2.25" width="0.05" layer="39"/>
+<wire x1="4.25" y1="2.25" x2="3.75" y2="2.25" width="0.05" layer="39"/>
+<wire x1="3.75" y1="2.25" x2="3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="3.75" y1="2.75" x2="-3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.75" x2="-3.75" y2="2.25" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.25" x2="-4.25" y2="2.25" width="0.05" layer="39"/>
+<wire x1="-4.25" y1="2.25" x2="-4.25" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="-4.25" y1="-2.25" x2="-3.75" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="-2.25" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
+<text x="-3.51033125" y="2.87846875" size="0.702065625" layer="25">&gt;NAME</text>
+<text x="-3.507959375" y="-3.55808125" size="0.70159375" layer="27">&gt;VALUE</text>
+<smd name="1" x="-3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="2" x="3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="4" x="-3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL_WITH_GND">
+<description>&lt;h3&gt;Crystal (no ground pin)&lt;/h3&gt;</description>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<text x="0" y="9.652" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="8.128" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="0" y="-4.064" size="1.27" layer="97" font="vector" align="bottom-center">GND</text>
+<pin name="X1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="X2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECS-060-18-20BM-JEN-TR" prefix="Y">
+<description>Crystal  4-SMD, No Lead &lt;a href="https://pricing.snapeda.com/parts/ECS-060-18-20BM-JEN-TR/ECS%20Inc./view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL_WITH_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECS_ECS-060-18-20BM-JEN-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="1 3"/>
+<connect gate="G$1" pin="X1" pad="2"/>
+<connect gate="G$1" pin="X2" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 6MHz ±20ppm Crystal 18pF 70 Ohms 4-SMD, No Lead "/>
+<attribute name="MF" value="ECS Inc."/>
+<attribute name="MP" value="ECS-060-18-20BM-JEN-TR"/>
+<attribute name="PACKAGE" value="SMD-4 ECS International"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ECS-060-18-20BM-JEN-TR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23496,6 +23587,10 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="3V-9" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND79" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="Y3" library="X-ECS-060-18-20BM-JEN-TR" deviceset="ECS-060-18-20BM-JEN-TR" device=""/>
+<part name="GND80" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C42" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF, 50V"/>
+<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF, 50V"/>
 </parts>
 <sheets>
 <sheet>
@@ -27129,7 +27224,7 @@ DNP for now</text>
 <description>OSD3358 USB, JTAG, XTAL, etc : SIP B</description>
 <plain>
 <text x="179.07" y="247.65" size="1.778" layer="97">taken verbatim from PB,</text>
-<text x="30.48" y="180.34" size="1.778" layer="97">VBUS goes to VIN_USB
+<text x="105.41" y="129.54" size="1.778" layer="97">VBUS goes to VIN_USB
 on OSD3358</text>
 <text x="259.08" y="102.87" size="1.778" layer="97">USB ESD
 protection</text>
@@ -27160,11 +27255,11 @@ battery circuit</text>
 <text x="214.63" y="242.57" size="1.778" layer="97">XTALIN</text>
 <text x="214.63" y="227.33" size="1.778" layer="97">XTALOUT</text>
 <text x="214.63" y="222.25" size="1.778" layer="97">VSS_OSC</text>
-<text x="30.48" y="189.23" size="1.778" layer="97">VIN_USB Provides power to the OSD335x</text>
-<wire x1="27.94" y1="193.294" x2="78.74" y2="193.294" width="0.1524" layer="97"/>
-<wire x1="78.74" y1="193.294" x2="78.74" y2="186.69" width="0.1524" layer="97"/>
-<wire x1="78.74" y1="186.69" x2="27.94" y2="186.69" width="0.1524" layer="97"/>
-<wire x1="27.94" y1="186.69" x2="27.94" y2="193.294" width="0.1524" layer="97"/>
+<text x="105.41" y="123.19" size="1.778" layer="97">VIN_USB Provides power to the OSD335x</text>
+<wire x1="102.87" y1="127.254" x2="153.67" y2="127.254" width="0.1524" layer="97"/>
+<wire x1="153.67" y1="127.254" x2="153.67" y2="120.65" width="0.1524" layer="97"/>
+<wire x1="153.67" y1="120.65" x2="102.87" y2="120.65" width="0.1524" layer="97"/>
+<wire x1="102.87" y1="120.65" x2="102.87" y2="127.254" width="0.1524" layer="97"/>
 <text x="212.598" y="203.454" size="1.778" layer="102">1M if populated</text>
 <text x="331.47" y="26.67" size="3.81" layer="94">OreSat DxWiFi: USB, JTAG, OSC</text>
 <text x="415.29" y="6.35" size="3.81" layer="94">1.1</text>
@@ -27174,7 +27269,6 @@ this will likely be below 5V
 as this input will come the 
 battery circuit</text>
 <text x="62.865" y="95.885" size="1.778" layer="97">USB Power Switch</text>
-<text x="218.44" y="36.83" size="2.54" layer="97">FC8AQCCMM6.0-T1</text>
 </plain>
 <instances>
 <instance part="U7" gate="B" x="260.35" y="199.39" smashed="yes">
@@ -27432,6 +27526,21 @@ battery circuit</text>
 <instance part="GND79" gate="1" x="218.44" y="60.96" smashed="yes">
 <attribute name="VALUE" x="218.44" y="60.706" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="Y3" gate="G$1" x="226.06" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="243.84" y="50.038" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="260.35" y="52.578" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND80" gate="1" x="240.03" y="29.21" smashed="yes">
+<attribute name="VALUE" x="240.03" y="28.956" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C42" gate="CE" x="233.68" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="226.06" y="64.77" size="1.778" layer="95"/>
+<attribute name="VALUE" x="226.06" y="62.23" size="1.778" layer="96"/>
+</instance>
+<instance part="C53" gate="CE" x="233.68" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="226.06" y="35.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="226.06" y="33.02" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -27548,6 +27657,20 @@ battery circuit</text>
 <wire x1="207.01" y1="67.31" x2="218.44" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="67.31" x2="218.44" y2="64.77" width="0.1524" layer="91"/>
 <junction x="218.44" y="64.77"/>
+</segment>
+<segment>
+<pinref part="C42" gate="CE" pin="1"/>
+<wire x1="236.22" y1="58.42" x2="240.03" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="240.03" y1="58.42" x2="240.03" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C53" gate="CE" pin="1"/>
+<wire x1="240.03" y1="48.26" x2="240.03" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="240.03" y1="38.1" x2="240.03" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="38.1" x2="240.03" y2="38.1" width="0.1524" layer="91"/>
+<junction x="240.03" y="38.1"/>
+<pinref part="Y3" gate="G$1" pin="GND"/>
+<wire x1="233.68" y1="48.26" x2="240.03" y2="48.26" width="0.1524" layer="91"/>
+<junction x="240.03" y="48.26"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -28097,6 +28220,32 @@ battery circuit</text>
 <wire x1="226.06" y1="133.35" x2="217.17" y2="133.35" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="133.35" x2="217.17" y2="133.35" width="0.1524" layer="91"/>
 <junction x="217.17" y="133.35"/>
+</segment>
+</net>
+<net name="N$120" class="0">
+<segment>
+<pinref part="U9" gate="A" pin="XTAL2"/>
+<wire x1="207.01" y1="57.15" x2="209.55" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="57.15" x2="209.55" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="Y3" gate="G$1" pin="X1"/>
+<wire x1="226.06" y1="38.1" x2="226.06" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C53" gate="CE" pin="2"/>
+<wire x1="228.6" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<junction x="226.06" y="38.1"/>
+</segment>
+</net>
+<net name="N$121" class="0">
+<segment>
+<pinref part="Y3" gate="G$1" pin="X2"/>
+<wire x1="226.06" y1="55.88" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="58.42" x2="212.09" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="58.42" x2="212.09" y2="59.69" width="0.1524" layer="91"/>
+<pinref part="U9" gate="A" pin="XTAL1"/>
+<wire x1="212.09" y1="59.69" x2="207.01" y2="59.69" width="0.1524" layer="91"/>
+<pinref part="C42" gate="CE" pin="2"/>
+<wire x1="228.6" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
+<junction x="226.06" y="58.42"/>
 </segment>
 </net>
 </nets>
