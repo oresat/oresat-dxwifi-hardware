@@ -25542,15 +25542,15 @@ battery circuit</text>
 <junction x="231.14" y="215.9"/>
 </segment>
 <segment>
-<pinref part="J10" gate="A" pin="4"/>
-<wire x1="223.52" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="96.52" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="J10" gate="A" pin="7"/>
 <wire x1="226.06" y1="83.82" x2="231.14" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="83.82" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND91" gate="1" pin="GND"/>
 <wire x1="226.06" y1="81.28" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J10" gate="A" pin="3"/>
+<wire x1="223.52" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="99.06" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <junction x="226.06" y="83.82"/>
 </segment>
 </net>
@@ -26263,9 +26263,9 @@ battery circuit</text>
 <label x="337.82" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J10" gate="A" pin="3"/>
-<wire x1="223.52" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
-<label x="220.98" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J10" gate="A" pin="5"/>
+<wire x1="223.52" y1="93.98" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="215.9" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="USB_CAM_P" class="1">
@@ -26283,9 +26283,9 @@ battery circuit</text>
 <label x="396.24" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J10" gate="A" pin="2"/>
-<wire x1="223.52" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
-<label x="220.98" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J10" gate="A" pin="4"/>
+<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<label x="215.9" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="USB_HO_N" class="1">
@@ -26372,9 +26372,9 @@ battery circuit</text>
 <junction x="515.62" y="256.54"/>
 </segment>
 <segment>
-<pinref part="J10" gate="A" pin="1"/>
-<wire x1="223.52" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
-<label x="220.98" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J10" gate="A" pin="6"/>
+<wire x1="223.52" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
+<label x="215.9" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$90" class="0">
