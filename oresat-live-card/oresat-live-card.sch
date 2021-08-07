@@ -19820,370 +19820,64 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </library>
 <library name="U-TUSB2046IBVF-USBHub">
 <packages>
-<package name="RHB32_3P45X3P45_TEX">
-<smd name="1" x="-2.475" y="1.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="2" x="-2.475" y="1.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="3" x="-2.475" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="4" x="-2.475" y="0.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="5" x="-2.475" y="-0.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="6" x="-2.475" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="7" x="-2.475" y="-1.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="8" x="-2.475" y="-1.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="9" x="-1.750440625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="10" x="-1.250315625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="11" x="-0.7501875" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="12" x="-0.2500625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="13" x="0.2500625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="14" x="0.7501875" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="15" x="1.250315625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="16" x="1.750440625" y="-2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="17" x="2.475" y="-1.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="18" x="2.475" y="-1.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="19" x="2.475" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="20" x="2.475" y="-0.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="21" x="2.475" y="0.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="22" x="2.475" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="23" x="2.475" y="1.25" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="24" x="2.475" y="1.75" dx="0.28" dy="0.85" layer="1" rot="R270"/>
-<smd name="25" x="1.750440625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="26" x="1.250315625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="27" x="0.7501875" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="28" x="0.2500625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="29" x="-0.2500625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="30" x="-0.7501875" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="31" x="-1.250315625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="32" x="-1.750440625" y="2.475" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="33" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
-<pad name="V" x="-1.1684" y="-1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_1" x="-1.1684" y="-0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_2" x="-1.1684" y="0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_3" x="-1.1684" y="1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_4" x="-0.4064" y="-1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_5" x="-0.4064" y="-0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_6" x="-0.4064" y="0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_7" x="-0.4064" y="1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_8" x="0.4064" y="-1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_9" x="0.4064" y="-0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_10" x="0.4064" y="0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_11" x="0.4064" y="1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_12" x="1.1684" y="-1.1684" drill="0.254" diameter="0.508"/>
-<pad name="V_13" x="1.1684" y="-0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_14" x="1.1684" y="0.4064" drill="0.254" diameter="0.508"/>
-<pad name="V_15" x="1.1684" y="1.1684" drill="0.254" diameter="0.508"/>
-<wire x1="-2.9464" y1="-2.9464" x2="-2.2098" y2="-2.9464" width="0.1524" layer="21"/>
-<wire x1="2.9464" y1="-2.9464" x2="2.9464" y2="-2.2098" width="0.1524" layer="21"/>
-<wire x1="2.9464" y1="2.9464" x2="2.2098" y2="2.9464" width="0.1524" layer="21"/>
-<wire x1="-2.9464" y1="2.9464" x2="-2.9464" y2="2.2098" width="0.1524" layer="21"/>
-<wire x1="-2.9464" y1="-2.2098" x2="-2.9464" y2="-2.9464" width="0.1524" layer="21"/>
-<wire x1="2.2098" y1="-2.9464" x2="2.9464" y2="-2.9464" width="0.1524" layer="21"/>
-<wire x1="2.9464" y1="2.2098" x2="2.9464" y2="2.9464" width="0.1524" layer="21"/>
-<wire x1="-2.2098" y1="2.9464" x2="-2.9464" y2="2.9464" width="0.1524" layer="21"/>
-<polygon width="0.0254" layer="21">
-<vertex x="-1.440815625" y="-3.154"/>
-<vertex x="-1.440815625" y="-3.408"/>
-<vertex x="-1.059815625" y="-3.408"/>
-<vertex x="-1.059815625" y="-3.154"/>
-</polygon>
-<polygon width="0.0254" layer="21">
-<vertex x="3.408" y="-0.0595"/>
-<vertex x="3.408" y="-0.4405"/>
-<vertex x="3.154" y="-0.4405"/>
-<vertex x="3.154" y="-0.0595"/>
-</polygon>
-<polygon width="0.0254" layer="21">
-<vertex x="-0.9406875" y="3.154"/>
-<vertex x="-0.9406875" y="3.408"/>
-<vertex x="-0.5596875" y="3.408"/>
-<vertex x="-0.5596875" y="3.154"/>
-</polygon>
-<text x="-4.1148" y="1.7526" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.650071875" y="1.650071875"/>
-<vertex x="-1.650071875" y="1.2811"/>
-<vertex x="-1.422521875" y="1.2811"/>
-<vertex x="-1.2811" y="1.422521875"/>
-<vertex x="-1.2811" y="1.650071875"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.650071875" y="1.0811"/>
-<vertex x="-1.650071875" y="0.4937"/>
-<vertex x="-1.422521875" y="0.4937"/>
-<vertex x="-1.2811" y="0.635121875"/>
-<vertex x="-1.2811" y="0.939678125"/>
-<vertex x="-1.422521875" y="1.0811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.650071875" y="0.2937"/>
-<vertex x="-1.650071875" y="-0.2937"/>
-<vertex x="-1.422521875" y="-0.2937"/>
-<vertex x="-1.2811" y="-0.152278125"/>
-<vertex x="-1.2811" y="0.152278125"/>
-<vertex x="-1.422521875" y="0.2937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.650071875" y="-0.4937"/>
-<vertex x="-1.650071875" y="-1.0811"/>
-<vertex x="-1.422521875" y="-1.0811"/>
-<vertex x="-1.2811" y="-0.939678125"/>
-<vertex x="-1.2811" y="-0.635121875"/>
-<vertex x="-1.422521875" y="-0.4937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.650071875" y="-1.2811"/>
-<vertex x="-1.650071875" y="-1.650071875"/>
-<vertex x="-1.2811" y="-1.650071875"/>
-<vertex x="-1.2811" y="-1.422521875"/>
-<vertex x="-1.422521875" y="-1.2811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.0811" y="1.650071875"/>
-<vertex x="-1.0811" y="1.422521875"/>
-<vertex x="-0.939678125" y="1.2811"/>
-<vertex x="-0.635121875" y="1.2811"/>
-<vertex x="-0.4937" y="1.422521875"/>
-<vertex x="-0.4937" y="1.650071875"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.939678125" y="1.0811"/>
-<vertex x="-1.0811" y="0.939678125"/>
-<vertex x="-1.0811" y="0.635121875"/>
-<vertex x="-0.939678125" y="0.4937"/>
-<vertex x="-0.635121875" y="0.4937"/>
-<vertex x="-0.4937" y="0.635121875"/>
-<vertex x="-0.4937" y="0.939678125"/>
-<vertex x="-0.635121875" y="1.0811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.939678125" y="0.2937"/>
-<vertex x="-1.0811" y="0.152278125"/>
-<vertex x="-1.0811" y="-0.152278125"/>
-<vertex x="-0.939678125" y="-0.2937"/>
-<vertex x="-0.635121875" y="-0.2937"/>
-<vertex x="-0.4937" y="-0.152278125"/>
-<vertex x="-0.4937" y="0.152278125"/>
-<vertex x="-0.635121875" y="0.2937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.939678125" y="-0.4937"/>
-<vertex x="-1.0811" y="-0.635121875"/>
-<vertex x="-1.0811" y="-0.939678125"/>
-<vertex x="-0.939678125" y="-1.0811"/>
-<vertex x="-0.635121875" y="-1.0811"/>
-<vertex x="-0.4937" y="-0.939678125"/>
-<vertex x="-0.4937" y="-0.635121875"/>
-<vertex x="-0.635121875" y="-0.4937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.939678125" y="-1.2811"/>
-<vertex x="-1.0811" y="-1.422521875"/>
-<vertex x="-1.0811" y="-1.650071875"/>
-<vertex x="-0.4937" y="-1.650071875"/>
-<vertex x="-0.4937" y="-1.422521875"/>
-<vertex x="-0.635121875" y="-1.2811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.2937" y="1.650071875"/>
-<vertex x="-0.2937" y="1.422521875"/>
-<vertex x="-0.152278125" y="1.2811"/>
-<vertex x="0.152278125" y="1.2811"/>
-<vertex x="0.2937" y="1.422521875"/>
-<vertex x="0.2937" y="1.650071875"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.152278125" y="1.0811"/>
-<vertex x="-0.2937" y="0.939678125"/>
-<vertex x="-0.2937" y="0.635121875"/>
-<vertex x="-0.152278125" y="0.4937"/>
-<vertex x="0.152278125" y="0.4937"/>
-<vertex x="0.2937" y="0.635121875"/>
-<vertex x="0.2937" y="0.939678125"/>
-<vertex x="0.152278125" y="1.0811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.152278125" y="0.2937"/>
-<vertex x="-0.2937" y="0.152278125"/>
-<vertex x="-0.2937" y="-0.152278125"/>
-<vertex x="-0.152278125" y="-0.2937"/>
-<vertex x="0.152278125" y="-0.2937"/>
-<vertex x="0.2937" y="-0.152278125"/>
-<vertex x="0.2937" y="0.152278125"/>
-<vertex x="0.152278125" y="0.2937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.152278125" y="-0.4937"/>
-<vertex x="-0.2937" y="-0.635121875"/>
-<vertex x="-0.2937" y="-0.939678125"/>
-<vertex x="-0.152278125" y="-1.0811"/>
-<vertex x="0.152278125" y="-1.0811"/>
-<vertex x="0.2937" y="-0.939678125"/>
-<vertex x="0.2937" y="-0.635121875"/>
-<vertex x="0.152278125" y="-0.4937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.152278125" y="-1.2811"/>
-<vertex x="-0.2937" y="-1.422521875"/>
-<vertex x="-0.2937" y="-1.650071875"/>
-<vertex x="0.2937" y="-1.650071875"/>
-<vertex x="0.2937" y="-1.422521875"/>
-<vertex x="0.152278125" y="-1.2811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.4937" y="1.650071875"/>
-<vertex x="0.4937" y="1.422521875"/>
-<vertex x="0.635121875" y="1.2811"/>
-<vertex x="0.939678125" y="1.2811"/>
-<vertex x="1.0811" y="1.422521875"/>
-<vertex x="1.0811" y="1.650071875"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.635121875" y="1.0811"/>
-<vertex x="0.4937" y="0.939678125"/>
-<vertex x="0.4937" y="0.635121875"/>
-<vertex x="0.635121875" y="0.4937"/>
-<vertex x="0.939678125" y="0.4937"/>
-<vertex x="1.0811" y="0.635121875"/>
-<vertex x="1.0811" y="0.939678125"/>
-<vertex x="0.939678125" y="1.0811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.635121875" y="0.2937"/>
-<vertex x="0.4937" y="0.152278125"/>
-<vertex x="0.4937" y="-0.152278125"/>
-<vertex x="0.635121875" y="-0.2937"/>
-<vertex x="0.939678125" y="-0.2937"/>
-<vertex x="1.0811" y="-0.152278125"/>
-<vertex x="1.0811" y="0.152278125"/>
-<vertex x="0.939678125" y="0.2937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.635121875" y="-0.4937"/>
-<vertex x="0.4937" y="-0.635121875"/>
-<vertex x="0.4937" y="-0.939678125"/>
-<vertex x="0.635121875" y="-1.0811"/>
-<vertex x="0.939678125" y="-1.0811"/>
-<vertex x="1.0811" y="-0.939678125"/>
-<vertex x="1.0811" y="-0.635121875"/>
-<vertex x="0.939678125" y="-0.4937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.635121875" y="-1.2811"/>
-<vertex x="0.4937" y="-1.422521875"/>
-<vertex x="0.4937" y="-1.650071875"/>
-<vertex x="1.0811" y="-1.650071875"/>
-<vertex x="1.0811" y="-1.422521875"/>
-<vertex x="0.939678125" y="-1.2811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.2811" y="1.650071875"/>
-<vertex x="1.2811" y="1.422521875"/>
-<vertex x="1.422521875" y="1.2811"/>
-<vertex x="1.650071875" y="1.2811"/>
-<vertex x="1.650071875" y="1.650071875"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.422521875" y="1.0811"/>
-<vertex x="1.2811" y="0.939678125"/>
-<vertex x="1.2811" y="0.635121875"/>
-<vertex x="1.422521875" y="0.4937"/>
-<vertex x="1.650071875" y="0.4937"/>
-<vertex x="1.650071875" y="1.0811"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.422521875" y="0.2937"/>
-<vertex x="1.2811" y="0.152278125"/>
-<vertex x="1.2811" y="-0.152278125"/>
-<vertex x="1.422521875" y="-0.2937"/>
-<vertex x="1.650071875" y="-0.2937"/>
-<vertex x="1.650071875" y="0.2937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.422521875" y="-0.4937"/>
-<vertex x="1.2811" y="-0.635121875"/>
-<vertex x="1.2811" y="-0.939678125"/>
-<vertex x="1.422521875" y="-1.0811"/>
-<vertex x="1.650071875" y="-1.0811"/>
-<vertex x="1.650071875" y="-0.4937"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.422521875" y="-1.2811"/>
-<vertex x="1.2811" y="-1.422521875"/>
-<vertex x="1.2811" y="-1.650071875"/>
-<vertex x="1.650071875" y="-1.650071875"/>
-<vertex x="1.650071875" y="-1.2811"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="1.7885"/>
-<vertex x="1.7885" y="1.7885"/>
-<vertex x="1.7885" y="1.3811"/>
-<vertex x="-1.7885" y="1.3811"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="0.9811"/>
-<vertex x="1.7885" y="0.9811"/>
-<vertex x="1.7885" y="0.5937"/>
-<vertex x="-1.7885" y="0.5937"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="0.1937"/>
-<vertex x="1.7885" y="0.1937"/>
-<vertex x="1.7885" y="-0.1937"/>
-<vertex x="-1.7885" y="-0.1937"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="-0.5937"/>
-<vertex x="1.7885" y="-0.5937"/>
-<vertex x="1.7885" y="-0.9811"/>
-<vertex x="-1.7885" y="-0.9811"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="-1.3811"/>
-<vertex x="1.7885" y="-1.3811"/>
-<vertex x="1.7885" y="-1.7885"/>
-<vertex x="-1.7885" y="-1.7885"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.7885" y="1.7885"/>
-<vertex x="-1.3811" y="1.7885"/>
-<vertex x="-1.3811" y="-1.7885"/>
-<vertex x="-1.7885" y="-1.7885"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-0.5937" y="1.7885"/>
-<vertex x="-0.9811" y="1.7885"/>
-<vertex x="-0.9811" y="-1.7885"/>
-<vertex x="-0.5937" y="-1.7885"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.1937" y="1.7885"/>
-<vertex x="-0.1937" y="1.7885"/>
-<vertex x="-0.1937" y="-1.7885"/>
-<vertex x="0.1937" y="-1.7885"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.9811" y="1.7885"/>
-<vertex x="0.5937" y="1.7885"/>
-<vertex x="0.5937" y="-1.7885"/>
-<vertex x="0.9811" y="-1.7885"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.3811" y="1.7885"/>
-<vertex x="1.7885" y="1.7885"/>
-<vertex x="1.7885" y="-1.7885"/>
-<vertex x="1.3811" y="-1.7885"/>
-</polygon>
-<wire x1="-2.5654" y1="1.2954" x2="-1.2954" y2="2.5654" width="0.1524" layer="51"/>
-<wire x1="-2.5654" y1="-2.5654" x2="2.5654" y2="-2.5654" width="0.1524" layer="51"/>
-<wire x1="2.5654" y1="-2.5654" x2="2.5654" y2="2.5654" width="0.1524" layer="51"/>
-<wire x1="2.5654" y1="2.5654" x2="-2.5654" y2="2.5654" width="0.1524" layer="51"/>
-<wire x1="-2.5654" y1="2.5654" x2="-2.5654" y2="-2.5654" width="0.1524" layer="51"/>
-<text x="-2.3622" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<package name="QFP80P900X900X160-32N">
+<text x="-5" y="-5.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-5" y="5.5" size="1.27" layer="25">&gt;NAME</text>
+<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="21"/>
+<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.39" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.39" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.39" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.39" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="-3.39" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="3.39" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.39" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="3.39" width="0.127" layer="21"/>
+<wire x1="-5.21" y1="-5.21" x2="5.21" y2="-5.21" width="0.05" layer="39"/>
+<wire x1="-5.21" y1="5.21" x2="5.21" y2="5.21" width="0.05" layer="39"/>
+<wire x1="-5.21" y1="-5.21" x2="-5.21" y2="5.21" width="0.05" layer="39"/>
+<wire x1="5.21" y1="-5.21" x2="5.21" y2="5.21" width="0.05" layer="39"/>
+<smd name="9" x="-2.8" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="-2" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-1.2" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="-0.4" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="0.4" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="1.2" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="15" x="2" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="2.8" y="-4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="25" x="2.8" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="26" x="2" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="27" x="1.2" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="28" x="0.4" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="29" x="-0.4" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="30" x="-1.2" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="31" x="-2" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="32" x="-2.8" y="4.18" dx="1.56" dy="0.54" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-4.18" y="2.8" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="2" x="-4.18" y="2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="3" x="-4.18" y="1.2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="4" x="-4.18" y="0.4" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="5" x="-4.18" y="-0.4" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="6" x="-4.18" y="-1.2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="7" x="-4.18" y="-2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="8" x="-4.18" y="-2.8" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="17" x="4.18" y="-2.8" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="18" x="4.18" y="-2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="19" x="4.18" y="-1.2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="20" x="4.18" y="-0.4" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="21" x="4.18" y="0.4" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="22" x="4.18" y="1.2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="23" x="4.18" y="2" dx="1.56" dy="0.54" layer="1" roundness="25"/>
+<smd name="24" x="4.18" y="2.8" dx="1.56" dy="0.54" layer="1" roundness="25"/>
 </package>
 </packages>
 <symbols>
 <symbol name="TUSB2046IBVF">
-<pin name="!EXTMEM" x="-27.94" y="-5.08" length="middle" direction="in"/>
+<pin name="!EXTMEM" x="-27.94" y="-7.62" length="middle" direction="in"/>
 <pin name="!OVRCUR4" x="25.4" y="10.16" length="middle" direction="in" rot="R180"/>
 <pin name="!RESET" x="-27.94" y="12.7" length="middle" direction="in"/>
 <pin name="BUSPWR" x="-27.94" y="10.16" length="middle" direction="in"/>
@@ -20193,8 +19887,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <pin name="DM2" x="25.4" y="-5.08" length="middle" rot="R180"/>
 <pin name="DM3" x="25.4" y="-12.7" length="middle" rot="R180"/>
 <pin name="DM4" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="EEDATA/GANGED" x="-27.94" y="-7.62" length="middle"/>
-<pin name="EPAD" x="-27.94" y="-10.16" length="middle" direction="pas"/>
+<pin name="EEDATA/GANGED" x="-27.94" y="-10.16" length="middle"/>
 <pin name="TSTMODE" x="-27.94" y="-17.78" length="middle" direction="pas"/>
 <pin name="TSTPLL/48MCLK" x="-27.94" y="-20.32" length="middle" direction="pas"/>
 <pin name="!OVRCUR1" x="25.4" y="25.4" length="middle" direction="out" rot="R180"/>
@@ -20206,7 +19899,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <pin name="!PWRON4" x="25.4" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="EECLK" x="-27.94" y="-12.7" length="middle" direction="out"/>
 <pin name="SUSPND" x="-27.94" y="7.62" length="middle" direction="out"/>
-<pin name="XTAL2" x="-27.94" y="0" length="middle" direction="out"/>
+<pin name="XTAL2" x="-27.94" y="-2.54" length="middle" direction="out"/>
 <pin name="DP0" x="-27.94" y="20.32" length="middle"/>
 <pin name="DP1" x="25.4" y="0" length="middle" rot="R180"/>
 <pin name="DP2" x="25.4" y="-7.62" length="middle" rot="R180"/>
@@ -20228,7 +19921,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <gate name="A" symbol="TUSB2046IBVF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RHB32_3P45X3P45_TEX">
+<device name="" package="QFP80P900X900X160-32N">
 <connects>
 <connect gate="A" pin="!EXTMEM" pad="26"/>
 <connect gate="A" pin="!OVRCUR1" pad="10"/>
@@ -20253,7 +19946,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <connect gate="A" pin="DP4" pad="24"/>
 <connect gate="A" pin="EECLK" pad="5"/>
 <connect gate="A" pin="EEDATA/GANGED" pad="6"/>
-<connect gate="A" pin="EPAD" pad="33"/>
 <connect gate="A" pin="GND" pad="7 28"/>
 <connect gate="A" pin="SUSPND" pad="32"/>
 <connect gate="A" pin="TSTMODE" pad="31"/>
@@ -20263,13 +19955,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <connect gate="A" pin="XTAL2" pad="29"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." constant="no"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-48466-ND" constant="no"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="TUSB2046IBVF-ND" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="TUSB2046IBVF" constant="no"/>
-<attribute name="MFR_NAME" value="Texas Instruments" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -20287,7 +19973,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="-1.016" y1="-1.651" x2="1.016" y2="-1.651" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="-0.3556" x2="1.016" y2="0.3556" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
-<text x="-2.1844" y="1.3208" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-0.6858" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-0.6858" x2="0.8636" y2="0.6858" width="0.1524" layer="51"/>
@@ -20320,9 +20005,8 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="1.4986" y1="0.6858" x2="1.4986" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.1938" y="0.3556" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-2.1766" y="1.965" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-2.2272" y="3.265" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
 <package name="DBV5-M">
 <smd name="1" x="-1.46245" y="0.95" dx="1.1723" dy="0.508" layer="1"/>
@@ -20333,7 +20017,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="-1.016" y1="-1.651" x2="1.016" y2="-1.651" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="-0.3556" x2="1.016" y2="0.3556" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
-<text x="-2.286" y="1.3208" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-0.6858" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-0.6858" x2="0.8636" y2="0.6858" width="0.1524" layer="51"/>
@@ -20366,7 +20049,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="1.4986" y1="0.6858" x2="1.4986" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.1938" y="0.3556" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
@@ -20379,7 +20061,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="-1.016" y1="-1.651" x2="1.016" y2="-1.651" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="-0.381" x2="1.016" y2="0.381" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
-<text x="-2.0828" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-0.6858" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-0.6858" x2="0.8636" y2="0.6858" width="0.1524" layer="51"/>
@@ -20412,7 +20093,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="1.4986" y1="0.6858" x2="1.4986" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.1938" y="0.3048" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
@@ -21859,14 +21539,14 @@ unconnected?</text>
 <wire x1="137.16" y1="205.74" x2="121.92" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_HO_N" class="0">
+<net name="USB_HO_N" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="HOST-D-"/>
 <wire x1="279.4" y1="175.26" x2="279.4" y2="182.88" width="0.1524" layer="91"/>
 <label x="279.4" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="USB_HO_P" class="0">
+<net name="USB_HO_P" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="HOST-D+"/>
 <wire x1="276.86" y1="175.26" x2="276.86" y2="182.88" width="0.1524" layer="91"/>
@@ -25937,8 +25617,8 @@ battery circuit</text>
 <pinref part="U2" gate="A" pin="BUSPWR"/>
 <wire x1="236.22" y1="246.38" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="!EXTMEM"/>
-<wire x1="236.22" y1="231.14" x2="233.68" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="231.14" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="228.6" x2="233.68" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="228.6" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
 <junction x="233.68" y="246.38"/>
 <pinref part="R97" gate="R" pin="1"/>
 <wire x1="223.52" y1="261.62" x2="223.52" y2="264.16" width="0.1524" layer="91"/>
@@ -26312,7 +25992,7 @@ battery circuit</text>
 <junction x="515.62" y="314.96"/>
 </segment>
 </net>
-<net name="N$90" class="0">
+<net name="USB1_P" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="USB1_DP"/>
 <wire x1="233.68" y1="295.91" x2="210.82" y2="295.91" width="0.1524" layer="91"/>
@@ -26321,7 +26001,7 @@ battery circuit</text>
 <wire x1="233.68" y1="256.54" x2="233.68" y2="295.91" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$120" class="0">
+<net name="USB1_N" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="USB1_DM"/>
 <wire x1="231.14" y1="298.45" x2="210.82" y2="298.45" width="0.1524" layer="91"/>
@@ -26468,7 +26148,7 @@ battery circuit</text>
 <junction x="444.5" y="256.54"/>
 </segment>
 </net>
-<net name="USB_WIFI_N" class="0">
+<net name="USB_WIFI_N" class="1">
 <segment>
 <pinref part="C57" gate="CE" pin="1"/>
 <wire x1="330.2" y1="236.22" x2="330.2" y2="238.76" width="0.1524" layer="91"/>
@@ -26498,14 +26178,14 @@ battery circuit</text>
 <label x="396.24" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$133" class="0">
+<net name="USB1_H_N" class="1">
 <segment>
 <pinref part="R77" gate="R" pin="2"/>
 <pinref part="U2" gate="A" pin="DM1"/>
 <wire x1="289.56" y1="238.76" x2="307.34" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$131" class="0">
+<net name="USB1_H_P" class="1">
 <segment>
 <pinref part="R79" gate="R" pin="2"/>
 <wire x1="365.76" y1="238.76" x2="363.22" y2="238.76" width="0.1524" layer="91"/>
@@ -26523,7 +26203,7 @@ battery circuit</text>
 <wire x1="447.04" y1="254" x2="289.56" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$129" class="0">
+<net name="USB3_H_P" class="1">
 <segment>
 <pinref part="U2" gate="A" pin="DP3"/>
 <wire x1="289.56" y1="220.98" x2="297.18" y2="220.98" width="0.1524" layer="91"/>
@@ -26534,7 +26214,7 @@ battery circuit</text>
 <wire x1="297.18" y1="220.98" x2="297.18" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$141" class="0">
+<net name="USB3_H_N" class="1">
 <segment>
 <pinref part="U2" gate="A" pin="DM3"/>
 <wire x1="289.56" y1="223.52" x2="299.72" y2="223.52" width="0.1524" layer="91"/>
@@ -26543,7 +26223,7 @@ battery circuit</text>
 <wire x1="299.72" y1="172.72" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$145" class="0">
+<net name="USB2_H_P" class="1">
 <segment>
 <pinref part="U2" gate="A" pin="DP2"/>
 <wire x1="289.56" y1="228.6" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
@@ -26554,7 +26234,7 @@ battery circuit</text>
 <wire x1="363.22" y1="180.34" x2="363.22" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$147" class="0">
+<net name="USB2_H_N" class="1">
 <segment>
 <pinref part="U2" gate="A" pin="DM2"/>
 <wire x1="289.56" y1="231.14" x2="304.8" y2="231.14" width="0.1524" layer="91"/>
@@ -26563,7 +26243,7 @@ battery circuit</text>
 <wire x1="307.34" y1="205.74" x2="304.8" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_CAM_N" class="0">
+<net name="USB_CAM_N" class="1">
 <segment>
 <pinref part="C59" gate="CE" pin="1"/>
 <wire x1="330.2" y1="203.2" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
@@ -26583,7 +26263,7 @@ battery circuit</text>
 <label x="220.98" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="USB_CAM_P" class="0">
+<net name="USB_CAM_P" class="1">
 <segment>
 <pinref part="C60" gate="CE" pin="1"/>
 <wire x1="388.62" y1="203.2" x2="388.62" y2="205.74" width="0.1524" layer="91"/>
@@ -26603,7 +26283,7 @@ battery circuit</text>
 <label x="220.98" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="USB_HO_N" class="0">
+<net name="USB_HO_N" class="1">
 <segment>
 <pinref part="C61" gate="CE" pin="1"/>
 <wire x1="330.2" y1="170.18" x2="330.2" y2="172.72" width="0.1524" layer="91"/>
@@ -26618,7 +26298,7 @@ battery circuit</text>
 <label x="337.82" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="USB_HO_P" class="0">
+<net name="USB_HO_P" class="1">
 <segment>
 <pinref part="C62" gate="CE" pin="1"/>
 <wire x1="388.62" y1="170.18" x2="388.62" y2="172.72" width="0.1524" layer="91"/>
@@ -26651,9 +26331,9 @@ battery circuit</text>
 <pinref part="Y3" gate="G$1" pin="X2"/>
 <wire x1="195.58" y1="228.6" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="226.06" x2="205.74" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="226.06" x2="205.74" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="226.06" x2="205.74" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="XTAL2"/>
-<wire x1="205.74" y1="236.22" x2="236.22" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="233.68" x2="236.22" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C64" gate="CE" pin="1"/>
 <wire x1="190.5" y1="226.06" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
 <junction x="195.58" y="226.06"/>
@@ -28512,7 +28192,7 @@ the internal EEPROM can be programmed.</text>
 <label x="45.72" y="5.08" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="USB_WIFI_N" class="0">
+<net name="USB_WIFI_N" class="1">
 <segment>
 <pinref part="J2" gate="A" pin="5"/>
 <wire x1="67.31" y1="2.54" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
