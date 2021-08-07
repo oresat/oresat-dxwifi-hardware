@@ -20196,7 +20196,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="-3.5" y1="2.5" x2="-3.5" y2="2.25" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-0.25" x2="-3.5" y2="0.25" width="0.127" layer="21"/>
 <wire x1="3.5" y1="-0.25" x2="3.5" y2="0.25" width="0.127" layer="21"/>
-<circle x="-4.5" y="-1.27" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.1" y="-2.47" radius="0.1" width="0.2" layer="21"/>
 <wire x1="-3.75" y1="-2.75" x2="3.75" y2="-2.75" width="0.05" layer="39"/>
 <wire x1="3.75" y1="-2.75" x2="3.75" y2="-2.25" width="0.05" layer="39"/>
 <wire x1="3.75" y1="-2.25" x2="4.25" y2="-2.25" width="0.05" layer="39"/>
@@ -20211,10 +20211,10 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="-3.75" y1="-2.25" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
 <text x="-3.51033125" y="2.87846875" size="0.702065625" layer="25">&gt;NAME</text>
 <text x="-3.507959375" y="-3.55808125" size="0.70159375" layer="27">&gt;VALUE</text>
-<smd name="1" x="-3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
-<smd name="2" x="3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
-<smd name="4" x="-3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
-<smd name="3" x="3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="4" x="-3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="1" x="-3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="2" x="3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -20253,9 +20253,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <devices>
 <device name="" package="ECS_ECS-060-18-20BM-JEN-TR">
 <connects>
-<connect gate="G$1" pin="GND" pad="1 3"/>
-<connect gate="G$1" pin="X1" pad="2"/>
-<connect gate="G$1" pin="X2" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="X1" pad="3"/>
+<connect gate="G$1" pin="X2" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
