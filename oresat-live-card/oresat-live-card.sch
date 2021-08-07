@@ -21208,6 +21208,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="J10" library="J-JST-SM06B-SRSS-TB(LF)(SN)-1mm-smt-6pin" deviceset="SM06B-SRSS-TB(LF)(SN)" device=""/>
 <part name="GND91" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="my_library" deviceset="3X1_TH_JUMPER" device=""/>
+<part name="R98" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1.5k"/>
 </parts>
 <sheets>
 <sheet>
@@ -25313,6 +25314,10 @@ battery circuit</text>
 <instance part="GND91" gate="1" x="226.06" y="78.74" smashed="yes">
 <attribute name="VALUE" x="226.06" y="78.486" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="R98" gate="R" x="215.9" y="233.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="214.884" y="230.378" size="1.27" layer="95"/>
+<attribute name="VALUE" x="214.884" y="229.362" size="1.27" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26332,11 +26337,11 @@ battery circuit</text>
 <wire x1="195.58" y1="228.6" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="226.06" x2="205.74" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="226.06" x2="205.74" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="XTAL2"/>
-<wire x1="205.74" y1="233.68" x2="236.22" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C64" gate="CE" pin="1"/>
 <wire x1="190.5" y1="226.06" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
 <junction x="195.58" y="226.06"/>
+<wire x1="205.74" y1="233.68" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="R98" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$150" class="0">
@@ -26370,6 +26375,13 @@ battery circuit</text>
 <pinref part="J10" gate="A" pin="1"/>
 <wire x1="223.52" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
 <label x="220.98" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$90" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="XTAL2"/>
+<wire x1="220.98" y1="233.68" x2="236.22" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="R98" gate="R" pin="1"/>
 </segment>
 </net>
 </nets>
