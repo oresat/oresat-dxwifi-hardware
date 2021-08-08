@@ -21146,7 +21146,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-9" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="120uF"/>
+<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND75" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U20" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C28" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21156,7 +21156,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R7" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-12" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C42" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="120uF"/>
+<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND79" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U21" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C54" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21166,33 +21166,33 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R76" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-14" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C55" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="120uF"/>
+<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND82" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
 <part name="R77" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R78" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C57" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C57" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND83" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R79" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R83" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C58" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C58" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND84" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="3V-8" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="R89" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R90" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C59" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C59" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND85" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R91" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R92" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C60" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C60" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND86" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R93" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R94" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C61" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C61" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND87" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R95" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
 <part name="R96" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
-<part name="C62" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
+<part name="C62" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="50pF"/>
 <part name="GND88" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP13" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP15" library="Tova" deviceset="TEST-POINT" device=""/>
@@ -21209,6 +21209,12 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND91" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="my_library" deviceset="3X1_TH_JUMPER" device=""/>
 <part name="R98" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1.5k"/>
+<part name="R99" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
+<part name="TP18" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP19" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="TP20" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
+<part name="C65" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="4.7uF"/>
+<part name="GND92" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25063,11 +25069,11 @@ battery circuit</text>
 <attribute name="NAME" x="272.1356" y="268.1986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="271.5006" y="265.6586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="3V-7" gate="G$1" x="264.16" y="274.32" smashed="yes">
-<attribute name="VALUE" x="263.525" y="274.955" size="1.27" layer="96"/>
+<instance part="3V-7" gate="G$1" x="264.16" y="294.64" smashed="yes">
+<attribute name="VALUE" x="263.525" y="295.275" size="1.27" layer="96"/>
 </instance>
-<instance part="GND63" gate="1" x="264.16" y="198.12" smashed="yes">
-<attribute name="VALUE" x="264.16" y="197.866" size="1.778" layer="96" align="top-center"/>
+<instance part="GND63" gate="1" x="264.16" y="200.66" smashed="yes">
+<attribute name="VALUE" x="264.16" y="200.406" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U9" gate="A" x="462.28" y="314.96" smashed="yes">
 <attribute name="NAME" x="475.3356" y="324.0786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -25276,36 +25282,36 @@ battery circuit</text>
 <instance part="TP15" gate="G$1" x="515.62" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="513.08" y="200.66" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="Y3" gate="G$1" x="195.58" y="236.22" smashed="yes" rot="R270">
-<attribute name="NAME" x="195.58" y="248.412" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="195.58" y="251.968" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="Y3" gate="G$1" x="190.5" y="236.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="190.5" y="248.412" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="190.5" y="251.968" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="C63" gate="CE" x="187.96" y="246.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="180.34" y="243.84" size="1.778" layer="95"/>
-<attribute name="VALUE" x="180.34" y="241.3" size="1.778" layer="96"/>
+<instance part="C63" gate="CE" x="182.88" y="246.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="175.26" y="243.84" size="1.778" layer="95"/>
+<attribute name="VALUE" x="175.26" y="241.3" size="1.778" layer="96"/>
 </instance>
-<instance part="C64" gate="CE" x="187.96" y="226.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="180.34" y="223.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="180.34" y="220.98" size="1.778" layer="96"/>
+<instance part="C64" gate="CE" x="182.88" y="226.06" smashed="yes" rot="R270">
+<attribute name="NAME" x="175.26" y="223.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="175.26" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="GND89" gate="1" x="172.72" y="220.98" smashed="yes">
-<attribute name="VALUE" x="172.72" y="220.726" size="1.778" layer="96" align="top-center"/>
+<instance part="GND89" gate="1" x="167.64" y="220.98" smashed="yes">
+<attribute name="VALUE" x="167.64" y="220.726" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="3V-16" gate="G$1" x="218.44" y="269.24" smashed="yes">
-<attribute name="VALUE" x="217.805" y="269.875" size="1.27" layer="96"/>
+<instance part="3V-16" gate="G$1" x="220.98" y="269.24" smashed="yes">
+<attribute name="VALUE" x="220.345" y="269.875" size="1.27" layer="96"/>
 </instance>
 <instance part="GND90" gate="1" x="231.14" y="210.82" smashed="yes">
 <attribute name="VALUE" x="231.14" y="210.566" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="R97" gate="R" x="223.52" y="256.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="225.044" y="258.318" size="1.27" layer="95"/>
-<attribute name="VALUE" x="225.044" y="257.302" size="1.27" layer="96" rot="MR180"/>
+<instance part="R97" gate="R" x="226.06" y="256.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="227.584" y="258.318" size="1.27" layer="95"/>
+<attribute name="VALUE" x="227.584" y="257.302" size="1.27" layer="96" rot="MR180"/>
 </instance>
-<instance part="TP16" gate="G$1" x="231.14" y="243.84" smashed="yes" rot="R180">
-<attribute name="NAME" x="226.568" y="244.602" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="TP16" gate="G$1" x="233.68" y="243.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="229.108" y="244.602" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="TP17" gate="G$1" x="215.9" y="248.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="211.328" y="249.682" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="TP17" gate="G$1" x="213.36" y="248.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="208.788" y="249.682" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J10" gate="A" x="231.14" y="99.06" smashed="yes">
 <attribute name="NAME" x="226.06" y="109.22" size="1.778" layer="95" ratio="6" rot="SR0"/>
@@ -25314,9 +25320,29 @@ battery circuit</text>
 <instance part="GND91" gate="1" x="226.06" y="78.74" smashed="yes">
 <attribute name="VALUE" x="226.06" y="78.486" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="R98" gate="R" x="215.9" y="233.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="214.884" y="230.378" size="1.27" layer="95"/>
-<attribute name="VALUE" x="214.884" y="229.362" size="1.27" layer="96" rot="MR180"/>
+<instance part="R98" gate="R" x="208.28" y="233.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="207.264" y="230.378" size="1.27" layer="95"/>
+<attribute name="VALUE" x="207.264" y="229.362" size="1.27" layer="96" rot="MR180"/>
+</instance>
+<instance part="R99" gate="R" x="215.9" y="256.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="217.424" y="258.318" size="1.27" layer="95"/>
+<attribute name="VALUE" x="217.424" y="257.302" size="1.27" layer="96" rot="MR180"/>
+</instance>
+<instance part="TP18" gate="G$1" x="213.36" y="246.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="208.788" y="247.142" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP19" gate="G$1" x="233.68" y="226.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="229.108" y="226.822" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP20" gate="G$1" x="233.68" y="223.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="229.108" y="224.282" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="C65" gate="CE" x="271.78" y="284.48" smashed="yes">
+<attribute name="NAME" x="272.796" y="285.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="272.796" y="280.289" size="1.778" layer="96"/>
+</instance>
+<instance part="GND92" gate="1" x="271.78" y="274.32" smashed="yes">
+<attribute name="VALUE" x="271.78" y="274.066" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -25386,7 +25412,6 @@ battery circuit</text>
 <segment>
 <pinref part="U2" gate="A" pin="GND"/>
 <pinref part="GND63" gate="1" pin="GND"/>
-<wire x1="264.16" y1="203.2" x2="264.16" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND67" gate="1" pin="GND"/>
@@ -25519,17 +25544,17 @@ battery circuit</text>
 </segment>
 <segment>
 <pinref part="GND89" gate="1" pin="GND"/>
-<wire x1="172.72" y1="223.52" x2="172.72" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="223.52" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="C63" gate="CE" pin="2"/>
-<wire x1="172.72" y1="226.06" x2="172.72" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="236.22" x2="172.72" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="246.38" x2="182.88" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="226.06" x2="167.64" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="236.22" x2="167.64" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="246.38" x2="177.8" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="Y3" gate="G$1" pin="GND"/>
-<wire x1="187.96" y1="236.22" x2="172.72" y2="236.22" width="0.1524" layer="91"/>
-<junction x="172.72" y="236.22"/>
+<wire x1="182.88" y1="236.22" x2="167.64" y2="236.22" width="0.1524" layer="91"/>
+<junction x="167.64" y="236.22"/>
 <pinref part="C64" gate="CE" pin="2"/>
-<wire x1="182.88" y1="226.06" x2="172.72" y2="226.06" width="0.1524" layer="91"/>
-<junction x="172.72" y="226.06"/>
+<wire x1="177.8" y1="226.06" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
+<junction x="167.64" y="226.06"/>
 </segment>
 <segment>
 <pinref part="GND90" gate="1" pin="GND"/>
@@ -25552,6 +25577,11 @@ battery circuit</text>
 <wire x1="220.98" y1="99.06" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <junction x="226.06" y="83.82"/>
+</segment>
+<segment>
+<pinref part="C65" gate="CE" pin="2"/>
+<pinref part="GND92" gate="1" pin="GND"/>
+<wire x1="271.78" y1="279.4" x2="271.78" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_USB" class="0">
@@ -25597,7 +25627,12 @@ battery circuit</text>
 <segment>
 <pinref part="3V-7" gate="G$1" pin="3.3V"/>
 <pinref part="U2" gate="A" pin="VCC"/>
-<wire x1="264.16" y1="271.78" x2="264.16" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="292.1" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="C65" gate="CE" pin="1"/>
+<wire x1="264.16" y1="289.56" x2="264.16" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="287.02" x2="271.78" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
+<junction x="264.16" y="289.56"/>
 </segment>
 <segment>
 <pinref part="R6" gate="R" pin="2"/>
@@ -25615,20 +25650,18 @@ battery circuit</text>
 <pinref part="3V-14" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="3V-16" gate="G$1" pin="3.3V"/>
-<wire x1="218.44" y1="266.7" x2="218.44" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="264.16" x2="218.44" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="246.38" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="BUSPWR"/>
-<wire x1="236.22" y1="246.38" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="!EXTMEM"/>
-<wire x1="236.22" y1="228.6" x2="233.68" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="228.6" x2="233.68" y2="246.38" width="0.1524" layer="91"/>
-<junction x="233.68" y="246.38"/>
+<pinref part="R99" gate="R" pin="1"/>
+<wire x1="215.9" y1="261.62" x2="215.9" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="264.16" x2="220.98" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="R97" gate="R" pin="1"/>
-<wire x1="223.52" y1="261.62" x2="223.52" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="264.16" x2="218.44" y2="264.16" width="0.1524" layer="91"/>
-<junction x="218.44" y="264.16"/>
+<wire x1="220.98" y1="264.16" x2="226.06" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="264.16" x2="226.06" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="264.16" x2="220.98" y2="266.7" width="0.1524" layer="91"/>
+<junction x="220.98" y="264.16"/>
+<pinref part="3V-16" gate="G$1" pin="3.3V"/>
+<pinref part="U2" gate="A" pin="!EXTMEM"/>
+<wire x1="236.22" y1="228.6" x2="220.98" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="228.6" x2="220.98" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$530" class="0">
@@ -26052,7 +26085,7 @@ battery circuit</text>
 <junction x="490.22" y="314.96"/>
 </segment>
 </net>
-<net name="N$123" class="0">
+<net name="WIFI_!OVERCUR" class="0">
 <segment>
 <pinref part="U20" gate="A" pin="!OC"/>
 <wire x1="447.04" y1="198.12" x2="444.5" y2="198.12" width="0.1524" layer="91"/>
@@ -26095,7 +26128,7 @@ battery circuit</text>
 <junction x="490.22" y="256.54"/>
 </segment>
 </net>
-<net name="N$128" class="0">
+<net name="CAM_!PWRON" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="!EN"/>
 <wire x1="447.04" y1="312.42" x2="424.18" y2="312.42" width="0.1524" layer="91"/>
@@ -26104,7 +26137,7 @@ battery circuit</text>
 <wire x1="424.18" y1="259.08" x2="289.56" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$132" class="0">
+<net name="WIFI_!PWRON" class="0">
 <segment>
 <pinref part="U20" gate="A" pin="!EN"/>
 <wire x1="421.64" y1="195.58" x2="421.64" y2="248.92" width="0.1524" layer="91"/>
@@ -26119,7 +26152,7 @@ battery circuit</text>
 <wire x1="863.6" y1="-7.62" x2="871.22" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$121" class="0">
+<net name="CAM_!OVERCUR" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="!OC"/>
 <wire x1="421.64" y1="261.62" x2="421.64" y2="314.96" width="0.1524" layer="91"/>
@@ -26132,7 +26165,7 @@ battery circuit</text>
 <wire x1="289.56" y1="261.62" x2="421.64" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$125" class="0">
+<net name="HO_!OVERCUR" class="0">
 <segment>
 <pinref part="U21" gate="A" pin="!OC"/>
 <wire x1="447.04" y1="256.54" x2="444.5" y2="256.54" width="0.1524" layer="91"/>
@@ -26161,7 +26194,7 @@ battery circuit</text>
 <wire x1="363.22" y1="213.36" x2="363.22" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$130" class="0">
+<net name="HO_!PWRON" class="0">
 <segment>
 <pinref part="U21" gate="A" pin="!EN"/>
 <pinref part="U2" gate="A" pin="!PWRON2"/>
@@ -26281,45 +26314,45 @@ battery circuit</text>
 <net name="N$148" class="0">
 <segment>
 <pinref part="Y3" gate="G$1" pin="X1"/>
-<wire x1="195.58" y1="243.84" x2="195.58" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="246.38" x2="205.74" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="246.38" x2="205.74" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="243.84" x2="190.5" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="246.38" x2="200.66" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="246.38" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="XTAL1"/>
-<wire x1="205.74" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="C63" gate="CE" pin="1"/>
-<wire x1="190.5" y1="246.38" x2="195.58" y2="246.38" width="0.1524" layer="91"/>
-<junction x="195.58" y="246.38"/>
+<wire x1="185.42" y1="246.38" x2="190.5" y2="246.38" width="0.1524" layer="91"/>
+<junction x="190.5" y="246.38"/>
 </segment>
 </net>
 <net name="N$149" class="0">
 <segment>
 <pinref part="Y3" gate="G$1" pin="X2"/>
-<wire x1="195.58" y1="228.6" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="226.06" x2="205.74" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="226.06" x2="205.74" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="228.6" x2="190.5" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="226.06" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="226.06" x2="200.66" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C64" gate="CE" pin="1"/>
-<wire x1="190.5" y1="226.06" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
-<junction x="195.58" y="226.06"/>
-<wire x1="205.74" y1="233.68" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="226.06" x2="190.5" y2="226.06" width="0.1524" layer="91"/>
+<junction x="190.5" y="226.06"/>
+<wire x1="200.66" y1="233.68" x2="203.2" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="R98" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$150" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="!RESET"/>
-<wire x1="236.22" y1="248.92" x2="223.52" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="R97" gate="R" pin="2"/>
-<wire x1="223.52" y1="248.92" x2="223.52" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="248.92" x2="226.06" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="TP17" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="248.92" x2="223.52" y2="248.92" width="0.1524" layer="91"/>
-<junction x="223.52" y="248.92"/>
+<pinref part="R97" gate="R" pin="2"/>
+<wire x1="226.06" y1="248.92" x2="213.36" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="251.46" x2="226.06" y2="248.92" width="0.1524" layer="91"/>
+<junction x="226.06" y="248.92"/>
 </segment>
 </net>
 <net name="N$151" class="0">
 <segment>
 <pinref part="TP16" gate="G$1" pin="1"/>
 <pinref part="U2" gate="A" pin="SUSPND"/>
-<wire x1="231.14" y1="243.84" x2="236.22" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="243.84" x2="236.22" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_CAM_VBUS" class="0">
@@ -26340,7 +26373,7 @@ battery circuit</text>
 <net name="N$90" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="XTAL2"/>
-<wire x1="220.98" y1="233.68" x2="236.22" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="233.68" x2="236.22" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="R98" gate="R" pin="1"/>
 </segment>
 </net>
@@ -26382,6 +26415,31 @@ battery circuit</text>
 <pinref part="TP13" gate="G$1" pin="1"/>
 <wire x1="515.62" y1="256.54" x2="520.7" y2="256.54" width="0.1524" layer="91"/>
 <junction x="515.62" y="256.54"/>
+</segment>
+</net>
+<net name="N$121" class="0">
+<segment>
+<wire x1="215.9" y1="246.38" x2="236.22" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="BUSPWR"/>
+<pinref part="R99" gate="R" pin="2"/>
+<wire x1="215.9" y1="246.38" x2="215.9" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="TP18" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="246.38" x2="215.9" y2="246.38" width="0.1524" layer="91"/>
+<junction x="215.9" y="246.38"/>
+</segment>
+</net>
+<net name="N$123" class="0">
+<segment>
+<pinref part="TP19" gate="G$1" pin="1"/>
+<pinref part="U2" gate="A" pin="EEDATA/GANGED"/>
+<wire x1="233.68" y1="226.06" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$125" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="EECLK"/>
+<pinref part="TP20" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="223.52" x2="233.68" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -28279,7 +28337,6 @@ the internal EEPROM can be programmed.</text>
 <approved hash="104,3,452.12,312.42,U3,VSSQ,GND,,,"/>
 <approved hash="104,3,452.12,350.52,U3,VDDI,N$640,,,"/>
 <approved hash="104,3,226.06,523.24,U11,VCC,3.3V,,,"/>
-<approved hash="104,4,175.26,96.52,U1,VCC,VIN_USB,,,"/>
 <approved hash="104,2,132.08,170.18,U16,V+,VPD,,,"/>
 <approved hash="104,2,288.29,231.14,U14,VCC,ON/!OFF,,,"/>
 <approved hash="104,2,142.24,63.5,U13,VDD,VPD,,,"/>
@@ -28297,11 +28354,8 @@ the internal EEPROM can be programmed.</text>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME2,,,,,"/>
 <approved hash="113,3,431.8,279.296,FRAME3,,,,,"/>
-<approved hash="113,4,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,5,-12.804,106.576,FRAME5,,,,,"/>
-<approved hash="113,3,727.117,356.802,J3,,,,,"/>
 <approved hash="113,6,220.876,-40.744,FRAME6,,,,,"/>
-<approved hash="113,6,43.2477,-53.9327,J5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
