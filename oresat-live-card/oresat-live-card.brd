@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0625" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -22,15 +22,15 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="61" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -8165,15 +8165,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="83.4" y="69.8" extent="1-16" drill="0.254"/>
 <wire x1="84.8875" y1="69.6625" x2="83.5375" y2="69.6625" width="0.3048" layer="1"/>
 <wire x1="83.5375" y1="69.6625" x2="83.4" y2="69.8" width="0.3048" layer="1"/>
+<wire x1="54.2" y1="35.6" x2="33.1" y2="35.6" width="0.3048" layer="16"/>
+<via x="33.1" y="35.6" extent="1-16" drill="0.254"/>
+<wire x1="31.7" y1="35.9" x2="32.8" y2="35.9" width="0.3048" layer="1"/>
+<wire x1="32.8" y1="35.9" x2="33.1" y2="35.6" width="0.3048" layer="1"/>
 <wire x1="71.1" y1="76.6" x2="72.1" y2="75.6" width="0" layer="19" extent="1-1"/>
 <wire x1="70.1" y1="75.6" x2="71.1" y2="76.6" width="0" layer="19" extent="1-1"/>
 <wire x1="71.1" y1="74.6" x2="72.1" y2="75.6" width="0" layer="19" extent="1-1"/>
 <wire x1="72.1" y1="73.6" x2="71.1" y2="74.6" width="0" layer="19" extent="1-1"/>
 <wire x1="71.1" y1="72.6" x2="72.1" y2="73.6" width="0" layer="19" extent="1-1"/>
-<wire x1="72.1" y1="71.6" x2="71.1" y2="72.6" width="0" layer="19" extent="1-1"/>
 <wire x1="70.1" y1="71.6" x2="71.1" y2="72.6" width="0" layer="19" extent="1-1"/>
 <wire x1="70.1" y1="73.6" x2="71.1" y2="74.6" width="0" layer="19" extent="1-1"/>
-<wire x1="71.1" y1="70.6" x2="72.1" y2="71.6" width="0" layer="19" extent="1-1"/>
+<wire x1="72.1" y1="71.6" x2="71.1" y2="72.6" width="0" layer="19" extent="1-1"/>
+<wire x1="71.1" y1="70.6" x2="70.1" y2="71.6" width="0" layer="19" extent="1-1"/>
 <wire x1="72.1" y1="69.6" x2="71.1" y2="70.6" width="0" layer="19" extent="1-1"/>
 <wire x1="70.1" y1="69.6" x2="71.1" y2="70.6" width="0" layer="19" extent="1-1"/>
 <wire x1="67.5" y1="78.2" x2="70.1" y2="75.6" width="0" layer="19" extent="1-1"/>
@@ -8183,11 +8187,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="55.8" y1="38.8" x2="59.15625" y2="71.0875" width="0" layer="19" extent="1-1"/>
 <wire x1="54.2" y1="38.8" x2="55.8" y2="38.8" width="0" layer="19" extent="1-1"/>
 <wire x1="54.2" y1="37.2" x2="54.2" y2="38.8" width="0" layer="19" extent="1-1"/>
-<wire x1="54.2" y1="35.6" x2="54.2" y2="37.2" width="0" layer="19" extent="1-1"/>
 <wire x1="55.8" y1="37.2" x2="55.8" y2="38.8" width="0" layer="19" extent="1-1"/>
-<wire x1="55.8" y1="35.6" x2="54.2" y2="35.6" width="0" layer="19" extent="1-1"/>
+<wire x1="55.8" y1="35.6" x2="55.8" y2="37.2" width="0" layer="19" extent="1-1"/>
 <wire x1="55.8" y1="34" x2="55.8" y2="35.6" width="0" layer="19" extent="1-1"/>
-<wire x1="54.2" y1="34" x2="54.2" y2="35.6" width="0" layer="19" extent="1-1"/>
+<wire x1="54.2" y1="34" x2="55.8" y2="34" width="0" layer="19" extent="1-1"/>
+<wire x1="54.2" y1="35.6" x2="54.2" y2="37.2" width="0" layer="19" extent="1-1"/>
 <wire x1="61.2" y1="34.9" x2="55.8" y2="35.6" width="0" layer="19" extent="1-1"/>
 <wire x1="43.605" y1="10.615" x2="54.2" y2="34" width="0" layer="19" extent="1-1"/>
 <wire x1="44.1375" y1="10.25625" x2="43.605" y2="10.615" width="0" layer="19" extent="1-1"/>
@@ -8198,7 +8202,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="43.605" y1="8.075" x2="43.45" y2="8.725" width="0" layer="19" extent="1-1"/>
 <wire x1="44.1375" y1="8.725" x2="43.45" y2="8.725" width="0" layer="19" extent="1-1"/>
 <wire x1="45.475" y1="4.75" x2="43.605" y2="8.075" width="0" layer="19" extent="1-1"/>
-<wire x1="31.7" y1="35.9" x2="45.475" y2="4.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$405" airwireshidden="yes">
 <contactref element="TP161" pad="1"/>
