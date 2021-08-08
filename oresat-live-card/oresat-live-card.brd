@@ -22,21 +22,21 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="61" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -6183,8 +6183,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U3" library="U-Generic-eMMC-153pin" package="BGA-153(11.5X13)(EMMC-BA)" value="THGBMJG7C2LBAU8" x="20" y="26.6" smashed="yes">
 <attribute name="DPN" value="THGBMJG7C2LBAU8-ND" x="20" y="26.6" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="THGBMJG7C2LBAU8" x="20" y="26.6" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="20" y="26.6" size="1.5" layer="33" ratio="15" align="center"/>
 <attribute name="NAME" x="14.425" y="19.1125" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="20" y="26.6" size="1.5" layer="33" ratio="15" align="center"/>
 <attribute name="VALUE" x="14.4" y="19" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="C9" library="oresat-rcl" package=".0603-A" value="1uF" x="11.875" y="25.88125" smashed="yes" rot="R180">
@@ -7093,24 +7093,24 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DESCRIPTION" value="1.7nH RF Inductor, ceramic core, 5% tol, SMT, RoHS" x="77.15" y="33.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Coilcraft" x="77.15" y="33.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0402DC-1N7XJRU" x="77.15" y="33.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="77.15" y="33.3" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="NAME" x="79.65" y="33.5" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="77.15" y="33.3" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="77.85" y="34.7" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="L8" library="oresat-rcl" package=".0805-C-NOSILK" value="6.8nH" x="72.8" y="36.9" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="Fixed Inductors 0805CS 6.8 nH 5 % 0.6 A" x="72.8" y="36.9" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Coilcraft" x="72.8" y="36.9" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0805CS-060XJLC" x="72.8" y="36.9" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="72.8" y="36.9" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="NAME" x="71.95" y="35.75" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="72.8" y="36.9" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="71.15" y="38.15" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="L9" library="oresat-rcl" package=".0402-C-NOSILK" value="1.0nH" x="76.7" y="45.5" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="FIXED IND 1NH 500MA 100 MOHM SMD" x="76.7" y="45.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="76.7" y="45.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MLK1005S1N0ST000" x="76.7" y="45.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="79.45" y="45.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="76.7" y="45.5" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="79.45" y="45.1" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="77.95" y="44.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="L10" library="oresat-samacsys_Parts" package="INDC2928X203N" value="10nH" x="71.6" y="40.4" smashed="yes" rot="R180">
@@ -7124,40 +7124,40 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DESCRIPTION" value="Resistor- SMD 1/16watt 3.3ohms 1% 100ppm" x="76.7" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Vishay / Dale" x="76.7" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CRCW04023R30FKED" x="76.7" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="76.7" y="36.5" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 <attribute name="NAME" x="79.45" y="36.2" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="76.7" y="36.5" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="77.95" y="35.8" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R85" library="oresat-rcl" package=".0603-A" value="82.5" x="75.8" y="31.1" smashed="yes">
 <attribute name="DESCRIPTION" value="82.5 Ohms, 1%, 0603" x="75.8" y="31.1" size="1.778" layer="27" display="off"/>
 <attribute name="MFN" value="Panasonic" x="75.8" y="31.1" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF82R5V" x="75.8" y="31.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="75.8" y="31.1" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="NAME" x="73.65" y="31.85" size="0.6096" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="75.8" y="31.1" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="VALUE" x="74.4" y="29.35" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R86" library="oresat-rcl" package=".0603-A" value="93.1" x="76.7" y="28.1" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value="93.1 Ohms, 1%, 0603" x="76.7" y="28.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFN" value="Panasonic" x="76.7" y="28.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF93R1V" x="76.7" y="28.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="76.7" y="28.1" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="NAME" x="74.35" y="28.1" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="76.7" y="28.1" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="74.95" y="29.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R87" library="oresat-rcl" package=".0603-A" value="41.2" x="75.8" y="25.1" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="41.2 Ohms, 1%, 0603" x="75.8" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Panasonic" x="75.8" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF41R2V" x="75.8" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="75.8" y="25.1" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="NAME" x="70.35" y="25.85" size="0.6096" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="75.8" y="25.1" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="77.2" y="26.85" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R88" library="oresat-rcl" package=".0603-A" value="41.2" x="72.6" y="25.1" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value="41.2 Ohms, 1%, 0603" x="72.6" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Panasonic" x="72.6" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ERJ-3EKF41R2V" x="72.6" y="25.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="72.6" y="25.1" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="NAME" x="69.45" y="25.85" size="0.6096" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="72.6" y="25.1" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="74" y="26.85" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C15" library="oresat-rcl" package=".0603-A" value="100n" x="68" y="57.9" smashed="yes">
@@ -7791,6 +7791,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13.1" y1="38.1" x2="13.9" y2="38.9" width="0.1905" layer="1"/>
 <wire x1="8.4" y1="70.7" x2="8.4" y2="64.7" width="0.4064" layer="16"/>
 <wire x1="8.4" y1="64.7" x2="9.4" y2="63.7" width="0.4064" layer="16"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="10" y="47.2"/>
+<vertex x="10" y="45.6"/>
+<vertex x="11.8" y="45.6"/>
+<vertex x="11.8" y="47.2"/>
+</polygon>
 </signal>
 <signal name="SDAOPT2">
 </signal>
@@ -8170,7 +8176,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C54" pad="1"/>
 <contactref element="U9" pad="5"/>
 <contactref element="C1" pad="1"/>
-<wire x1="68.721625" y1="26.978375" x2="68.721625" y2="18" width="0.3048" layer="1"/>
 <wire x1="84.8875" y1="69.6625" x2="84.8875" y2="68.17495" width="0.3048" layer="1"/>
 <wire x1="84.8875" y1="68.17495" x2="84.8375" y2="68.12495" width="0.3048" layer="1"/>
 <wire x1="30.06245" y1="36.95" x2="30.06245" y2="36.53755" width="0.3048" layer="1"/>
@@ -8190,9 +8195,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="31.7" y1="35.9" x2="32.8" y2="35.9" width="0.3048" layer="1"/>
 <wire x1="32.8" y1="35.9" x2="33.1" y2="35.6" width="0.3048" layer="1"/>
 <wire x1="68.721625" y1="18" x2="70.171625" y2="16.55" width="0.3048" layer="1"/>
-<wire x1="68.721625" y1="26.978375" x2="63.9" y2="31.8" width="0.3048" layer="1"/>
-<wire x1="63.9" y1="31.8" x2="63.9" y2="32.5" width="0.3048" layer="1"/>
-<wire x1="63.9" y1="32.5" x2="61.5" y2="34.9" width="0.3048" layer="1"/>
+<wire x1="68.721625" y1="18" x2="68.721625" y2="27.678375" width="0.3048" layer="1"/>
+<wire x1="68.721625" y1="27.678375" x2="61.5" y2="34.9" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$405">
 <contactref element="TP161" pad="1"/>
