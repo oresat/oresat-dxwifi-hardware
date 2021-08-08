@@ -19823,8 +19823,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <package name="QFP80P900X900X160-32N">
 <text x="-5" y="-5.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 <text x="-5" y="5.5" size="1.27" layer="25">&gt;NAME</text>
-<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="21"/>
-<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="51"/>
+<circle x="-4.44" y="4" radius="0.1" width="0.2" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>

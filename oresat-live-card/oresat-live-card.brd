@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0625" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="61" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5598,8 +5598,7 @@ Vision reference for SMD placement equipment</description>
 <package name="QFP80P900X900X160-32N">
 <text x="-5" y="-5.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 <text x="-5" y="5.5" size="1.27" layer="25">&gt;NAME</text>
-<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="21"/>
-<circle x="-5.94" y="2.8" radius="0.1" width="0.2" layer="51"/>
+<circle x="-4.44" y="4" radius="0.1" width="0.2" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
@@ -7295,7 +7294,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="84.9" y="10.138" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="U2" library="U-TUSB2046IBVF-USBHub" package="QFP80P900X900X160-32N" value="TUSB2046IBVF" x="15.1" y="44" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.6234" y="39.565" size="0.6096" layer="25" font="vector" ratio="15" rot="SR0"/>
+<attribute name="NAME" x="19.0234" y="47.665" size="0.6096" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="15.735" y="42.2728" size="1.27" layer="27" ratio="6" rot="SR90"/>
 </element>
 <element name="U9" library="U-TPS2041BQDBVRQ1-USB_power_switch" package="DBV5" value="TPS2041BQDBVRQ1" x="28.7" y="36" smashed="yes">
@@ -7509,7 +7508,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="17.95" y="55.4" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R97" library="oresat-rcl" package=".0603-A" value="10k" x="12.1" y="37.9" smashed="yes">
-<attribute name="NAME" x="10.4" y="38.15" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="9.85" y="38.1" size="0.6096" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="12.1" y="37.9" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="VALUE" x="10.7" y="36.15" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
@@ -7531,7 +7530,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="12.4" y="48.45" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R99" library="oresat-rcl" package=".0603-A" value="10k" x="15.2" y="37.9" smashed="yes">
-<attribute name="NAME" x="16.8" y="37.65" size="0.6096" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="14.5" y="36.25" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="15.2" y="37.9" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="VALUE" x="13.8" y="36.15" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
