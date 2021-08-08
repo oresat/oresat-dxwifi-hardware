@@ -25658,16 +25658,6 @@ battery circuit</text>
 <wire x1="83.82" y1="318.77" x2="149.86" y2="318.77" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_HO_VBUS" class="0">
-<segment>
-<pinref part="FB1" gate="G$1" pin="2"/>
-<label x="520.7" y="198.12" size="1.27" layer="95" xref="yes"/>
-<wire x1="510.54" y1="198.12" x2="515.62" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="TP15" gate="G$1" pin="1"/>
-<wire x1="515.62" y1="198.12" x2="520.7" y2="198.12" width="0.1524" layer="91"/>
-<junction x="515.62" y="198.12"/>
-</segment>
-</net>
 <net name="N$621" class="0">
 <segment>
 <pinref part="J8" gate="A" pin="NC/TDI"/>
@@ -25989,12 +25979,12 @@ battery circuit</text>
 </net>
 <net name="USB_WIFI_VBUS" class="0">
 <segment>
-<pinref part="FB3" gate="G$1" pin="2"/>
-<wire x1="510.54" y1="314.96" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
-<label x="520.7" y="314.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="515.62" y1="314.96" x2="520.7" y2="314.96" width="0.1524" layer="91"/>
-<junction x="515.62" y="314.96"/>
+<pinref part="FB1" gate="G$1" pin="2"/>
+<label x="520.7" y="198.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="510.54" y1="198.12" x2="515.62" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="TP15" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="198.12" x2="520.7" y2="198.12" width="0.1524" layer="91"/>
+<junction x="515.62" y="198.12"/>
 </segment>
 </net>
 <net name="USB1_P" class="0">
@@ -26220,45 +26210,10 @@ battery circuit</text>
 </net>
 <net name="USB_CAM_N" class="1">
 <segment>
-<pinref part="C59" gate="CE" pin="1"/>
-<wire x1="330.2" y1="203.2" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R89" gate="R" pin="1"/>
-<wire x1="330.2" y1="205.74" x2="320.04" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R90" gate="R" pin="2"/>
-<wire x1="320.04" y1="205.74" x2="317.5" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="203.2" x2="320.04" y2="205.74" width="0.1524" layer="91"/>
-<junction x="320.04" y="205.74"/>
-<wire x1="330.2" y1="205.74" x2="337.82" y2="205.74" width="0.1524" layer="91"/>
-<junction x="330.2" y="205.74"/>
-<label x="337.82" y="205.74" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J10" gate="A" pin="5"/>
 <wire x1="223.52" y1="93.98" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
 <label x="215.9" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="USB_CAM_P" class="1">
-<segment>
-<pinref part="C60" gate="CE" pin="1"/>
-<wire x1="388.62" y1="203.2" x2="388.62" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R91" gate="R" pin="1"/>
-<wire x1="388.62" y1="205.74" x2="378.46" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R92" gate="R" pin="2"/>
-<wire x1="378.46" y1="205.74" x2="375.92" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="203.2" x2="378.46" y2="205.74" width="0.1524" layer="91"/>
-<junction x="378.46" y="205.74"/>
-<wire x1="388.62" y1="205.74" x2="396.24" y2="205.74" width="0.1524" layer="91"/>
-<junction x="388.62" y="205.74"/>
-<label x="396.24" y="205.74" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J10" gate="A" pin="4"/>
-<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
-<label x="215.9" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="USB_HO_N" class="1">
 <segment>
 <pinref part="C57" gate="CE" pin="1"/>
 <wire x1="330.2" y1="236.22" x2="330.2" y2="238.76" width="0.1524" layer="91"/>
@@ -26273,7 +26228,12 @@ battery circuit</text>
 <label x="337.82" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="USB_HO_P" class="1">
+<net name="USB_CAM_P" class="1">
+<segment>
+<pinref part="J10" gate="A" pin="4"/>
+<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<label x="215.9" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 <segment>
 <pinref part="C58" gate="CE" pin="1"/>
 <wire x1="388.62" y1="236.22" x2="388.62" y2="238.76" width="0.1524" layer="91"/>
@@ -26286,6 +26246,36 @@ battery circuit</text>
 <wire x1="388.62" y1="238.76" x2="396.24" y2="238.76" width="0.1524" layer="91"/>
 <junction x="388.62" y="238.76"/>
 <label x="396.24" y="238.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HO_N" class="1">
+<segment>
+<pinref part="C59" gate="CE" pin="1"/>
+<wire x1="330.2" y1="203.2" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R89" gate="R" pin="1"/>
+<wire x1="330.2" y1="205.74" x2="320.04" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R90" gate="R" pin="2"/>
+<wire x1="320.04" y1="205.74" x2="317.5" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="203.2" x2="320.04" y2="205.74" width="0.1524" layer="91"/>
+<junction x="320.04" y="205.74"/>
+<wire x1="330.2" y1="205.74" x2="337.82" y2="205.74" width="0.1524" layer="91"/>
+<junction x="330.2" y="205.74"/>
+<label x="337.82" y="205.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HO_P" class="1">
+<segment>
+<pinref part="C60" gate="CE" pin="1"/>
+<wire x1="388.62" y1="203.2" x2="388.62" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R91" gate="R" pin="1"/>
+<wire x1="388.62" y1="205.74" x2="378.46" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R92" gate="R" pin="2"/>
+<wire x1="378.46" y1="205.74" x2="375.92" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="203.2" x2="378.46" y2="205.74" width="0.1524" layer="91"/>
+<junction x="378.46" y="205.74"/>
+<wire x1="388.62" y1="205.74" x2="396.24" y2="205.74" width="0.1524" layer="91"/>
+<junction x="388.62" y="205.74"/>
+<label x="396.24" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$148" class="0">
@@ -26334,17 +26324,17 @@ battery circuit</text>
 </net>
 <net name="USB_CAM_VBUS" class="0">
 <segment>
-<pinref part="FB4" gate="G$1" pin="2"/>
-<wire x1="510.54" y1="256.54" x2="515.62" y2="256.54" width="0.1524" layer="91"/>
-<label x="520.7" y="256.54" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP13" gate="G$1" pin="1"/>
-<wire x1="515.62" y1="256.54" x2="520.7" y2="256.54" width="0.1524" layer="91"/>
-<junction x="515.62" y="256.54"/>
-</segment>
-<segment>
 <pinref part="J10" gate="A" pin="6"/>
 <wire x1="223.52" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
 <label x="215.9" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="FB3" gate="G$1" pin="2"/>
+<wire x1="510.54" y1="314.96" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
+<label x="520.7" y="314.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="314.96" x2="520.7" y2="314.96" width="0.1524" layer="91"/>
+<junction x="515.62" y="314.96"/>
 </segment>
 </net>
 <net name="N$90" class="0">
@@ -26369,7 +26359,7 @@ battery circuit</text>
 <label x="337.82" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="USB_WIFI_P" class="0">
+<net name="USB_WIFI_P" class="1">
 <segment>
 <pinref part="C62" gate="CE" pin="1"/>
 <wire x1="388.62" y1="170.18" x2="388.62" y2="172.72" width="0.1524" layer="91"/>
@@ -26382,6 +26372,16 @@ battery circuit</text>
 <wire x1="388.62" y1="172.72" x2="396.24" y2="172.72" width="0.1524" layer="91"/>
 <junction x="388.62" y="172.72"/>
 <label x="396.24" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_HO_VBUS" class="0">
+<segment>
+<pinref part="FB4" gate="G$1" pin="2"/>
+<wire x1="510.54" y1="256.54" x2="515.62" y2="256.54" width="0.1524" layer="91"/>
+<label x="520.7" y="256.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP13" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="256.54" x2="520.7" y2="256.54" width="0.1524" layer="91"/>
+<junction x="515.62" y="256.54"/>
 </segment>
 </net>
 </nets>
@@ -28197,7 +28197,7 @@ the internal EEPROM can be programmed.</text>
 <wire x1="288.29" y1="-22.86" x2="288.29" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_WIFI_P" class="0">
+<net name="USB_WIFI_P" class="1">
 <segment>
 <pinref part="J2" gate="A" pin="4"/>
 <wire x1="67.31" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
