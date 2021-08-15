@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -74,7 +74,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -21159,6 +21159,11 @@ unconnected?</text>
 <wire x1="312.42" y1="154.94" x2="312.42" y2="220.98" width="0.1524" layer="97"/>
 <wire x1="312.42" y1="220.98" x2="233.68" y2="220.98" width="0.1524" layer="97"/>
 <wire x1="233.68" y1="220.98" x2="233.68" y2="154.94" width="0.1524" layer="97"/>
+<text x="246.38" y="139.7" size="1.778" layer="97">DEVICE
+For connecting the Octavo to a host computer
+
+HOST
+For connecting devices to the Octavo</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21205,12 +21210,12 @@ unconnected?</text>
 <attribute name="VALUE" x="129.54" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="PCB1" gate="G$1" x="116.84" y="2.54" smashed="yes"/>
-<instance part="J6" gate="G$1" x="261.62" y="137.16" smashed="yes">
-<attribute name="NAME" x="266.7" y="133.35" size="1.27" layer="95"/>
-<attribute name="VALUE" x="266.7" y="130.81" size="1.27" layer="95"/>
+<instance part="J6" gate="G$1" x="175.26" y="101.6" smashed="yes">
+<attribute name="NAME" x="180.34" y="97.79" size="1.27" layer="95"/>
+<attribute name="VALUE" x="180.34" y="95.25" size="1.27" layer="95"/>
 </instance>
-<instance part="GND4" gate="1" x="261.62" y="125.73" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="264.16" y="123.19" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND4" gate="1" x="175.26" y="90.17" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="177.8" y="87.63" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -21265,22 +21270,22 @@ unconnected?</text>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="SHIELD2"/>
-<wire x1="266.7" y1="132.08" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="SHIELD3"/>
-<wire x1="266.7" y1="129.54" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="129.54" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="129.54" x2="256.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="93.98" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="SHIELD1"/>
-<wire x1="259.08" y1="132.08" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
-<junction x="259.08" y="129.54"/>
+<wire x1="172.72" y1="96.52" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
+<junction x="172.72" y="93.98"/>
 <pinref part="J6" gate="G$1" pin="SHIELD"/>
-<wire x1="264.16" y1="132.08" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
-<junction x="264.16" y="129.54"/>
+<wire x1="177.8" y1="96.52" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<junction x="177.8" y="93.98"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="261.62" y1="128.27" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
-<junction x="261.62" y="129.54"/>
+<wire x1="175.26" y1="92.71" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<junction x="175.26" y="93.98"/>
 </segment>
 </net>
 <net name="OPD_SDA" class="0">
@@ -21534,8 +21539,8 @@ unconnected?</text>
 <net name="TX_OUT" class="2">
 <segment>
 <pinref part="J6" gate="G$1" pin="CENTER"/>
-<wire x1="266.7" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
-<label x="271.78" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="180.34" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
+<label x="185.42" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_DEV_P" class="0">
@@ -24767,24 +24772,18 @@ protection</text>
 <wire x1="40.64" y1="255.27" x2="40.64" y2="186.69" width="0.1524" layer="97"/>
 <wire x1="40.64" y1="186.69" x2="149.86" y2="186.69" width="0.1524" layer="97"/>
 <wire x1="149.86" y1="186.69" x2="149.86" y2="255.27" width="0.1524" layer="97"/>
-<text x="279.4" y="347.98" size="2.54" layer="97">USB Host Circuit
-NOTE: if VIN_BAT is used,
-this will likely be below 5V
-as this input will come the 
-battery circuit</text>
 <wire x1="71.12" y1="270.51" x2="71.12" y2="326.39" width="0.1524" layer="97"/>
 <wire x1="71.12" y1="326.39" x2="22.86" y2="326.39" width="0.1524" layer="97"/>
 <wire x1="22.86" y1="326.39" x2="22.86" y2="270.51" width="0.1524" layer="97"/>
 <wire x1="22.86" y1="270.51" x2="71.12" y2="270.51" width="0.1524" layer="97"/>
 <text x="30.48" y="321.31" size="2.54" layer="97">JTAG connector</text>
-<text x="110.998" y="250.952" size="2.54" layer="97">USB Client Circuit</text>
+<text x="106.68" y="251.46" size="2.54" layer="97">USB Device Circuit</text>
 <text x="53.594" y="377.444" size="1.778" layer="97">24MHz RTC XO</text>
 <wire x1="50.8" y1="382.27" x2="50.8" y2="374.65" width="0.1524" layer="97"/>
 <wire x1="50.8" y1="374.65" x2="73.66" y2="374.65" width="0.1524" layer="97"/>
 <wire x1="73.66" y1="374.65" x2="73.66" y2="382.27" width="0.1524" layer="97"/>
 <wire x1="73.66" y1="382.27" x2="50.8" y2="382.27" width="0.1524" layer="97"/>
 <text x="50.8" y="196.85" size="1.778" layer="97">See Connectors Sheet</text>
-<text x="80.01" y="168.91" size="1.778" layer="97">See Connectors Sheet</text>
 <text x="78.74" y="397.51" size="1.778" layer="97">TODO add optional resistors from AM335X datasheet?</text>
 <text x="134.62" y="387.35" size="1.778" layer="97">XTALIN</text>
 <text x="134.62" y="372.11" size="1.778" layer="97">XTALOUT</text>
@@ -24797,7 +24796,27 @@ battery circuit</text>
 <text x="132.588" y="348.234" size="1.778" layer="102">1M if populated</text>
 <text x="458.47" y="26.67" size="3.81" layer="94">OreSat DxWiFi: USB, JTAG, OSC</text>
 <text x="542.29" y="6.35" size="3.81" layer="94">1.1</text>
-<text x="213.36" y="119.38" size="2.54" layer="97">USB camera connector</text>
+<text x="276.86" y="83.82" size="2.54" layer="97">USB camera connector</text>
+<text x="106.68" y="246.38" size="1.778" layer="97">The Octavo will appear as a device
+when plugged into a host computer</text>
+<wire x1="419.1" y1="170.18" x2="419.1" y2="365.76" width="0.1524" layer="97"/>
+<wire x1="419.1" y1="365.76" x2="546.1" y2="365.76" width="0.1524" layer="97"/>
+<wire x1="546.1" y1="365.76" x2="546.1" y2="170.18" width="0.1524" layer="97"/>
+<wire x1="546.1" y1="170.18" x2="419.1" y2="170.18" width="0.1524" layer="97"/>
+<text x="421.64" y="360.68" size="2.54" layer="97">USB Host Power</text>
+<text x="421.64" y="350.52" size="1.778" layer="97">This provides power to 
+* The camera
+* The WiFi adapter
+* An external device through the debug connector</text>
+<wire x1="416.56" y1="139.7" x2="416.56" y2="304.8" width="0.1524" layer="97"/>
+<wire x1="416.56" y1="304.8" x2="256.54" y2="304.8" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="304.8" x2="256.54" y2="271.78" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="271.78" x2="160.02" y2="271.78" width="0.1524" layer="97"/>
+<wire x1="160.02" y1="271.78" x2="160.02" y2="139.7" width="0.1524" layer="97"/>
+<wire x1="160.02" y1="139.7" x2="416.56" y2="139.7" width="0.1524" layer="97"/>
+<text x="325.12" y="299.72" size="2.54" layer="97">USB Host Circuit</text>
+<text x="325.12" y="294.64" size="1.778" layer="97">Devices connected here will appear 
+as a usable device for the Octavo</text>
 </plain>
 <instances>
 <instance part="U7" gate="B" x="180.34" y="344.17" smashed="yes">
@@ -25224,12 +25243,12 @@ battery circuit</text>
 <instance part="TP17" gate="G$1" x="213.36" y="248.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="208.788" y="249.682" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J10" gate="A" x="231.14" y="99.06" smashed="yes">
-<attribute name="NAME" x="226.06" y="109.22" size="1.778" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="226.06" y="106.68" size="1.778" layer="96" ratio="20"/>
+<instance part="J10" gate="A" x="294.64" y="63.5" smashed="yes">
+<attribute name="NAME" x="289.56" y="73.66" size="1.778" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="289.56" y="71.12" size="1.778" layer="96" ratio="20"/>
 </instance>
-<instance part="GND91" gate="1" x="226.06" y="78.74" smashed="yes">
-<attribute name="VALUE" x="226.06" y="78.486" size="1.778" layer="96" align="top-center"/>
+<instance part="GND91" gate="1" x="289.56" y="43.18" smashed="yes">
+<attribute name="VALUE" x="289.56" y="42.926" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R98" gate="R" x="208.28" y="233.68" smashed="yes" rot="R180">
 <attribute name="NAME" x="207.264" y="230.378" size="1.27" layer="95"/>
@@ -25491,15 +25510,15 @@ battery circuit</text>
 </segment>
 <segment>
 <pinref part="J10" gate="A" pin="7"/>
-<wire x1="226.06" y1="83.82" x2="231.14" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="83.82" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="48.26" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="48.26" x2="294.64" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND91" gate="1" pin="GND"/>
-<wire x1="226.06" y1="81.28" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="45.72" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="J10" gate="A" pin="3"/>
-<wire x1="223.52" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="99.06" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
-<junction x="226.06" y="83.82"/>
+<wire x1="287.02" y1="63.5" x2="284.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="63.5" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="48.26" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
+<junction x="289.56" y="48.26"/>
 </segment>
 <segment>
 <pinref part="C65" gate="CE" pin="2"/>
@@ -26177,8 +26196,8 @@ battery circuit</text>
 <net name="USB_CAM_N" class="1">
 <segment>
 <pinref part="J10" gate="A" pin="5"/>
-<wire x1="223.52" y1="93.98" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
-<label x="215.9" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="287.02" y1="58.42" x2="279.4" y2="58.42" width="0.1524" layer="91"/>
+<label x="279.4" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C57" gate="CE" pin="1"/>
@@ -26197,8 +26216,8 @@ battery circuit</text>
 <net name="USB_CAM_P" class="1">
 <segment>
 <pinref part="J10" gate="A" pin="4"/>
-<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
-<label x="215.9" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="287.02" y1="60.96" x2="279.4" y2="60.96" width="0.1524" layer="91"/>
+<label x="279.4" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C58" gate="CE" pin="1"/>
@@ -26291,8 +26310,8 @@ battery circuit</text>
 <net name="USB_CAM_VBUS" class="0">
 <segment>
 <pinref part="J10" gate="A" pin="6"/>
-<wire x1="223.52" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
-<label x="215.9" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="287.02" y1="55.88" x2="279.4" y2="55.88" width="0.1524" layer="91"/>
+<label x="279.4" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="FB3" gate="G$1" pin="2"/>
