@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -81,73 +81,13 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="no"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="no"/>
-<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
-<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="10" fill="10" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="11" fill="10" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="12" fill="10" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="13" fill="10" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="14" fill="10" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="15" fill="10" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="16" fill="10" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="17" fill="10" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -156,22 +96,11 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -20166,6 +20095,97 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </deviceset>
 </devicesets>
 </library>
+<library name="X-ECS-060-18-20BM-JEN-TR">
+<packages>
+<package name="ECS_ECS-060-18-20BM-JEN-TR">
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.25" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-0.25" x2="-3.5" y2="0.25" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-0.25" x2="3.5" y2="0.25" width="0.127" layer="21"/>
+<circle x="-4.1" y="-2.47" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-3.75" y1="-2.75" x2="3.75" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="3.75" y1="-2.75" x2="3.75" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="3.75" y1="-2.25" x2="4.25" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="4.25" y1="-2.25" x2="4.25" y2="2.25" width="0.05" layer="39"/>
+<wire x1="4.25" y1="2.25" x2="3.75" y2="2.25" width="0.05" layer="39"/>
+<wire x1="3.75" y1="2.25" x2="3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="3.75" y1="2.75" x2="-3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.75" x2="-3.75" y2="2.25" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.25" x2="-4.25" y2="2.25" width="0.05" layer="39"/>
+<wire x1="-4.25" y1="2.25" x2="-4.25" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="-4.25" y1="-2.25" x2="-3.75" y2="-2.25" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="-2.25" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
+<text x="-3.51033125" y="2.87846875" size="0.702065625" layer="25">&gt;NAME</text>
+<text x="-3.507959375" y="-3.55808125" size="0.70159375" layer="27">&gt;VALUE</text>
+<smd name="4" x="-3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="1" x="-3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+<smd name="2" x="3" y="-1.27" dx="1.4" dy="2" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL_WITH_GND">
+<description>&lt;h3&gt;Crystal (no ground pin)&lt;/h3&gt;</description>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<text x="0" y="9.652" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="8.128" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="0" y="-4.064" size="1.27" layer="97" font="vector" align="bottom-center">GND</text>
+<pin name="X1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="X2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECS-060-18-20BM-JEN-TR" prefix="Y">
+<description>Crystal  4-SMD, No Lead &lt;a href="https://pricing.snapeda.com/parts/ECS-060-18-20BM-JEN-TR/ECS%20Inc./view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL_WITH_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECS_ECS-060-18-20BM-JEN-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="X1" pad="3"/>
+<connect gate="G$1" pin="X2" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 6MHz ±20ppm Crystal 18pF 70 Ohms 4-SMD, No Lead "/>
+<attribute name="MF" value="ECS Inc."/>
+<attribute name="MP" value="ECS-060-18-20BM-JEN-TR"/>
+<attribute name="PACKAGE" value="SMD-4 ECS International"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ECS-060-18-20BM-JEN-TR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="my_library">
 <packages>
 <package name="3X1">
@@ -20244,56 +20264,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </deviceset>
 </devicesets>
 </library>
-<library name="X-FOX-FC8AQCCMM6.0-T1-6MHz">
-<packages>
-<package name="CRYSTAL_10X4.5">
-<smd name="P$1" x="-4.25" y="0" dx="2.5" dy="3" layer="1"/>
-<smd name="P$2" x="4.25" y="0" dx="2.5" dy="3" layer="1"/>
-<wire x1="-5.75" y1="2.5" x2="5.75" y2="2.5" width="0.1524" layer="21"/>
-<wire x1="5.75" y1="2.5" x2="5.75" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="5.75" y1="-2.5" x2="-5.75" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="-5.75" y1="-2.5" x2="-5.75" y2="2.5" width="0.1524" layer="21"/>
-<text x="-5.5" y="3" size="0.6096" layer="21" font="vector" distance="15">&gt;NAME</text>
-<text x="-5.5" y="-3.5" size="0.6096" layer="21" font="vector" distance="15">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="Q">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="-3.302" y="2.286" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.556" y="-4.572" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FC8AQCCMM6.0-T1" prefix="Y">
-<gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL_10X4.5">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20318,7 +20288,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURE_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R62" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R62" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="U15" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -20366,7 +20336,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="2.7k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="GND71" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP136" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="U4" library="U-TI-SN74LVC1G07DCK-Buffer" deviceset="SN74LVC1G07DCK" device="" value="SN74LVC1G07DCK"/>
@@ -20381,14 +20351,14 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="3V-24" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND57" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="D4" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="D5" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="1k"/>
+<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="R15" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND69" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND59" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -20539,7 +20509,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R61" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R61" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="J4" library="J-Samtec-TFM-120-X1-XXX-D-RA" deviceset="J-SAMTEC-TFM-120-X1-XXX-D-RA" device="" value="TFM-120-01-L-D-RA"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U16" library="U-Maxim-MAX7310-I2C-GPIO-expander" deviceset="MAX7310" device="" package3d_urn="urn:adsk.eagle:package:8018497/1" value="MAX7310ATE">
@@ -20552,7 +20522,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R71" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="100"/>
 <part name="U14" library="U-Maxim-MAX4211-power-monitor" deviceset="MAX4211" device="" package3d_urn="urn:adsk.eagle:package:8018497/1" value="MAX4211FETE"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R57" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="NP">
+<part name="R57" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k">
 <attribute name="DIS" value="Digi-Key"/>
 <attribute name="DPN" value="1276-4275-1-ND"/>
 <attribute name="MFR" value="Samsung"/>
@@ -20577,7 +20547,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MPN" value="RC1005F6653CS"/>
 </part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R55" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="NP">
+<part name="R55" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k">
 <attribute name="DIS" value="Digi-Key"/>
 <attribute name="DPN" value="1276-4275-1-ND"/>
 <attribute name="MFR" value="Samsung"/>
@@ -20614,7 +20584,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MFR" value="Samsung"/>
 <attribute name="MPN" value="RC1005F6653CS"/>
 </part>
-<part name="R54" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="NP">
+<part name="R54" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k">
 <attribute name="DIS" value="Digi-Key"/>
 <attribute name="DPN" value="1276-4275-1-ND"/>
 <attribute name="MFR" value="Samsung"/>
@@ -20638,7 +20608,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R39" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R50" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="0"/>
-<part name="R51" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="NP">
+<part name="R51" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k">
 <attribute name="DIS" value="Digi-Key"/>
 <attribute name="DPN" value="1276-4275-1-ND"/>
 <attribute name="MFR" value="Samsung"/>
@@ -20802,7 +20772,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="U5" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS62112"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C16" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
@@ -21035,7 +21005,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R21" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="R29" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
 <part name="C24" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
 <part name="C25" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="1nF"/>
@@ -21052,7 +21022,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="150060VS55040"/>
 </part>
-<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="4.7k"/>
+<part name="R30" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D6" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
 <attribute name="DESCRIPTION" value="Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)"/>
@@ -21139,6 +21109,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND88" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP13" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP15" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="Y3" library="X-ECS-060-18-20BM-JEN-TR" deviceset="ECS-060-18-20BM-JEN-TR" device="" value="6MHz"/>
 <part name="C63" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF"/>
 <part name="C64" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="20pF"/>
 <part name="GND89" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -21160,7 +21131,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R100" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
 <part name="R101" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="15k"/>
 <part name="GND93" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="Y3" library="X-FOX-FC8AQCCMM6.0-T1-6MHz" deviceset="FC8AQCCMM6.0-T1" device="" value="6MHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -21189,11 +21159,6 @@ unconnected?</text>
 <wire x1="312.42" y1="154.94" x2="312.42" y2="220.98" width="0.1524" layer="97"/>
 <wire x1="312.42" y1="220.98" x2="233.68" y2="220.98" width="0.1524" layer="97"/>
 <wire x1="233.68" y1="220.98" x2="233.68" y2="154.94" width="0.1524" layer="97"/>
-<text x="246.38" y="139.7" size="1.778" layer="97">DEVICE
-For connecting the Octavo to a host computer
-
-HOST
-For connecting devices to the Octavo</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21240,12 +21205,12 @@ For connecting devices to the Octavo</text>
 <attribute name="VALUE" x="129.54" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="PCB1" gate="G$1" x="116.84" y="2.54" smashed="yes"/>
-<instance part="J6" gate="G$1" x="175.26" y="101.6" smashed="yes">
-<attribute name="NAME" x="180.34" y="97.79" size="1.27" layer="95"/>
-<attribute name="VALUE" x="180.34" y="95.25" size="1.27" layer="95"/>
+<instance part="J6" gate="G$1" x="261.62" y="137.16" smashed="yes">
+<attribute name="NAME" x="266.7" y="133.35" size="1.27" layer="95"/>
+<attribute name="VALUE" x="266.7" y="130.81" size="1.27" layer="95"/>
 </instance>
-<instance part="GND4" gate="1" x="175.26" y="90.17" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="177.8" y="87.63" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND4" gate="1" x="261.62" y="125.73" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="264.16" y="123.19" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -21300,22 +21265,22 @@ For connecting devices to the Octavo</text>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="SHIELD2"/>
-<wire x1="180.34" y1="96.52" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="132.08" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="SHIELD3"/>
-<wire x1="180.34" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="93.98" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="129.54" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="129.54" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="129.54" x2="256.54" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="SHIELD1"/>
-<wire x1="172.72" y1="96.52" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
-<junction x="172.72" y="93.98"/>
+<wire x1="259.08" y1="132.08" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
+<junction x="259.08" y="129.54"/>
 <pinref part="J6" gate="G$1" pin="SHIELD"/>
-<wire x1="177.8" y1="96.52" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<junction x="177.8" y="93.98"/>
+<wire x1="264.16" y1="132.08" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
+<junction x="264.16" y="129.54"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="175.26" y1="92.71" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-<junction x="175.26" y="93.98"/>
+<wire x1="261.62" y1="128.27" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
+<junction x="261.62" y="129.54"/>
 </segment>
 </net>
 <net name="OPD_SDA" class="0">
@@ -21569,8 +21534,8 @@ For connecting devices to the Octavo</text>
 <net name="TX_OUT" class="2">
 <segment>
 <pinref part="J6" gate="G$1" pin="CENTER"/>
-<wire x1="180.34" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
-<label x="185.42" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="266.7" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
+<label x="271.78" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_DEV_P" class="0">
@@ -24802,18 +24767,24 @@ protection</text>
 <wire x1="40.64" y1="255.27" x2="40.64" y2="186.69" width="0.1524" layer="97"/>
 <wire x1="40.64" y1="186.69" x2="149.86" y2="186.69" width="0.1524" layer="97"/>
 <wire x1="149.86" y1="186.69" x2="149.86" y2="255.27" width="0.1524" layer="97"/>
+<text x="279.4" y="347.98" size="2.54" layer="97">USB Host Circuit
+NOTE: if VIN_BAT is used,
+this will likely be below 5V
+as this input will come the 
+battery circuit</text>
 <wire x1="71.12" y1="270.51" x2="71.12" y2="326.39" width="0.1524" layer="97"/>
 <wire x1="71.12" y1="326.39" x2="22.86" y2="326.39" width="0.1524" layer="97"/>
 <wire x1="22.86" y1="326.39" x2="22.86" y2="270.51" width="0.1524" layer="97"/>
 <wire x1="22.86" y1="270.51" x2="71.12" y2="270.51" width="0.1524" layer="97"/>
 <text x="30.48" y="321.31" size="2.54" layer="97">JTAG connector</text>
-<text x="106.68" y="251.46" size="2.54" layer="97">USB Device Circuit</text>
+<text x="110.998" y="250.952" size="2.54" layer="97">USB Client Circuit</text>
 <text x="53.594" y="377.444" size="1.778" layer="97">24MHz RTC XO</text>
 <wire x1="50.8" y1="382.27" x2="50.8" y2="374.65" width="0.1524" layer="97"/>
 <wire x1="50.8" y1="374.65" x2="73.66" y2="374.65" width="0.1524" layer="97"/>
 <wire x1="73.66" y1="374.65" x2="73.66" y2="382.27" width="0.1524" layer="97"/>
 <wire x1="73.66" y1="382.27" x2="50.8" y2="382.27" width="0.1524" layer="97"/>
 <text x="50.8" y="196.85" size="1.778" layer="97">See Connectors Sheet</text>
+<text x="80.01" y="168.91" size="1.778" layer="97">See Connectors Sheet</text>
 <text x="78.74" y="397.51" size="1.778" layer="97">TODO add optional resistors from AM335X datasheet?</text>
 <text x="134.62" y="387.35" size="1.778" layer="97">XTALIN</text>
 <text x="134.62" y="372.11" size="1.778" layer="97">XTALOUT</text>
@@ -24826,27 +24797,7 @@ protection</text>
 <text x="132.588" y="348.234" size="1.778" layer="102">1M if populated</text>
 <text x="458.47" y="26.67" size="3.81" layer="94">OreSat DxWiFi: USB, JTAG, OSC</text>
 <text x="542.29" y="6.35" size="3.81" layer="94">1.1</text>
-<text x="276.86" y="83.82" size="2.54" layer="97">USB camera connector</text>
-<text x="106.68" y="246.38" size="1.778" layer="97">The Octavo will appear as a device
-when plugged into a host computer</text>
-<wire x1="419.1" y1="170.18" x2="419.1" y2="365.76" width="0.1524" layer="97"/>
-<wire x1="419.1" y1="365.76" x2="546.1" y2="365.76" width="0.1524" layer="97"/>
-<wire x1="546.1" y1="365.76" x2="546.1" y2="170.18" width="0.1524" layer="97"/>
-<wire x1="546.1" y1="170.18" x2="419.1" y2="170.18" width="0.1524" layer="97"/>
-<text x="421.64" y="360.68" size="2.54" layer="97">USB Host Power</text>
-<text x="421.64" y="350.52" size="1.778" layer="97">This provides power to 
-* The camera
-* The WiFi adapter
-* An external device through the debug connector</text>
-<wire x1="416.56" y1="139.7" x2="416.56" y2="304.8" width="0.1524" layer="97"/>
-<wire x1="416.56" y1="304.8" x2="256.54" y2="304.8" width="0.1524" layer="97"/>
-<wire x1="256.54" y1="304.8" x2="256.54" y2="271.78" width="0.1524" layer="97"/>
-<wire x1="256.54" y1="271.78" x2="160.02" y2="271.78" width="0.1524" layer="97"/>
-<wire x1="160.02" y1="271.78" x2="160.02" y2="139.7" width="0.1524" layer="97"/>
-<wire x1="160.02" y1="139.7" x2="416.56" y2="139.7" width="0.1524" layer="97"/>
-<text x="325.12" y="299.72" size="2.54" layer="97">USB Host Circuit</text>
-<text x="325.12" y="294.64" size="1.778" layer="97">Devices connected here will appear 
-as a usable device for the Octavo</text>
+<text x="213.36" y="119.38" size="2.54" layer="97">USB camera connector</text>
 </plain>
 <instances>
 <instance part="U7" gate="B" x="180.34" y="344.17" smashed="yes">
@@ -25242,16 +25193,20 @@ as a usable device for the Octavo</text>
 <instance part="TP15" gate="G$1" x="515.62" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="513.08" y="200.66" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="C63" gate="CE" x="182.88" y="243.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="175.26" y="241.3" size="1.778" layer="95"/>
-<attribute name="VALUE" x="175.26" y="238.76" size="1.778" layer="96"/>
+<instance part="Y3" gate="G$1" x="190.5" y="236.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="190.5" y="248.412" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="190.5" y="251.968" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="C64" gate="CE" x="182.88" y="228.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="175.26" y="226.06" size="1.778" layer="95"/>
-<attribute name="VALUE" x="175.26" y="223.52" size="1.778" layer="96"/>
+<instance part="C63" gate="CE" x="182.88" y="246.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="175.26" y="243.84" size="1.778" layer="95"/>
+<attribute name="VALUE" x="175.26" y="241.3" size="1.778" layer="96"/>
 </instance>
-<instance part="GND89" gate="1" x="170.18" y="220.98" smashed="yes">
-<attribute name="VALUE" x="170.18" y="220.726" size="1.778" layer="96" align="top-center"/>
+<instance part="C64" gate="CE" x="182.88" y="226.06" smashed="yes" rot="R270">
+<attribute name="NAME" x="175.26" y="223.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="175.26" y="220.98" size="1.778" layer="96"/>
+</instance>
+<instance part="GND89" gate="1" x="167.64" y="220.98" smashed="yes">
+<attribute name="VALUE" x="167.64" y="220.726" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="3V-16" gate="G$1" x="220.98" y="269.24" smashed="yes">
 <attribute name="VALUE" x="220.345" y="269.875" size="1.27" layer="96"/>
@@ -25269,12 +25224,12 @@ as a usable device for the Octavo</text>
 <instance part="TP17" gate="G$1" x="213.36" y="248.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="208.788" y="249.682" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J10" gate="A" x="294.64" y="63.5" smashed="yes">
-<attribute name="NAME" x="289.56" y="73.66" size="1.778" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="289.56" y="71.12" size="1.778" layer="96" ratio="20"/>
+<instance part="J10" gate="A" x="231.14" y="99.06" smashed="yes">
+<attribute name="NAME" x="226.06" y="109.22" size="1.778" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="226.06" y="106.68" size="1.778" layer="96" ratio="20"/>
 </instance>
-<instance part="GND91" gate="1" x="289.56" y="43.18" smashed="yes">
-<attribute name="VALUE" x="289.56" y="42.926" size="1.778" layer="96" align="top-center"/>
+<instance part="GND91" gate="1" x="226.06" y="78.74" smashed="yes">
+<attribute name="VALUE" x="226.06" y="78.486" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R98" gate="R" x="208.28" y="233.68" smashed="yes" rot="R180">
 <attribute name="NAME" x="207.264" y="230.378" size="1.27" layer="95"/>
@@ -25310,10 +25265,6 @@ as a usable device for the Octavo</text>
 </instance>
 <instance part="GND93" gate="1" x="285.75" y="185.42" smashed="yes">
 <attribute name="VALUE" x="285.75" y="185.166" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="Y3" gate="G$1" x="187.96" y="236.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="190.5" y="236.22" size="1.778" layer="95"/>
-<attribute name="VALUE" x="190.5" y="233.68" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -25516,13 +25467,17 @@ as a usable device for the Octavo</text>
 </segment>
 <segment>
 <pinref part="GND89" gate="1" pin="GND"/>
-<wire x1="170.18" y1="223.52" x2="170.18" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="223.52" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="C63" gate="CE" pin="2"/>
-<wire x1="170.18" y1="228.6" x2="170.18" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="243.84" x2="177.8" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="226.06" x2="167.64" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="236.22" x2="167.64" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="246.38" x2="177.8" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="Y3" gate="G$1" pin="GND"/>
+<wire x1="182.88" y1="236.22" x2="167.64" y2="236.22" width="0.1524" layer="91"/>
+<junction x="167.64" y="236.22"/>
 <pinref part="C64" gate="CE" pin="2"/>
-<wire x1="177.8" y1="228.6" x2="170.18" y2="228.6" width="0.1524" layer="91"/>
-<junction x="170.18" y="228.6"/>
+<wire x1="177.8" y1="226.06" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
+<junction x="167.64" y="226.06"/>
 </segment>
 <segment>
 <pinref part="GND90" gate="1" pin="GND"/>
@@ -25536,15 +25491,15 @@ as a usable device for the Octavo</text>
 </segment>
 <segment>
 <pinref part="J10" gate="A" pin="7"/>
-<wire x1="289.56" y1="48.26" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="48.26" x2="294.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="83.82" x2="231.14" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="83.82" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND91" gate="1" pin="GND"/>
-<wire x1="289.56" y1="45.72" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="81.28" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="J10" gate="A" pin="3"/>
-<wire x1="287.02" y1="63.5" x2="284.48" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="63.5" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="48.26" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
-<junction x="289.56" y="48.26"/>
+<wire x1="223.52" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="99.06" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
+<junction x="226.06" y="83.82"/>
 </segment>
 <segment>
 <pinref part="C65" gate="CE" pin="2"/>
@@ -26222,8 +26177,8 @@ as a usable device for the Octavo</text>
 <net name="USB_CAM_N" class="1">
 <segment>
 <pinref part="J10" gate="A" pin="5"/>
-<wire x1="287.02" y1="58.42" x2="279.4" y2="58.42" width="0.1524" layer="91"/>
-<label x="279.4" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="93.98" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="215.9" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C57" gate="CE" pin="1"/>
@@ -26242,8 +26197,8 @@ as a usable device for the Octavo</text>
 <net name="USB_CAM_P" class="1">
 <segment>
 <pinref part="J10" gate="A" pin="4"/>
-<wire x1="287.02" y1="60.96" x2="279.4" y2="60.96" width="0.1524" layer="91"/>
-<label x="279.4" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<label x="215.9" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C58" gate="CE" pin="1"/>
@@ -26291,28 +26246,28 @@ as a usable device for the Octavo</text>
 </net>
 <net name="TUSB_XTAL1" class="0">
 <segment>
-<wire x1="185.42" y1="243.84" x2="187.96" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="243.84" x2="200.66" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="243.84" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="Y3" gate="G$1" pin="X1"/>
+<wire x1="190.5" y1="243.84" x2="190.5" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="246.38" x2="200.66" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="246.38" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="XTAL1"/>
 <wire x1="200.66" y1="238.76" x2="238.76" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="C63" gate="CE" pin="1"/>
-<pinref part="Y3" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="238.76" x2="187.96" y2="243.84" width="0.1524" layer="91"/>
-<junction x="187.96" y="243.84"/>
+<wire x1="185.42" y1="246.38" x2="190.5" y2="246.38" width="0.1524" layer="91"/>
+<junction x="190.5" y="246.38"/>
 </segment>
 </net>
 <net name="N$149" class="0">
 <segment>
-<wire x1="185.42" y1="228.6" x2="187.96" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="228.6" x2="200.66" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="228.6" x2="200.66" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="Y3" gate="G$1" pin="X2"/>
+<wire x1="190.5" y1="228.6" x2="190.5" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="226.06" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="226.06" x2="200.66" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C64" gate="CE" pin="1"/>
+<wire x1="185.42" y1="226.06" x2="190.5" y2="226.06" width="0.1524" layer="91"/>
+<junction x="190.5" y="226.06"/>
 <wire x1="200.66" y1="233.68" x2="203.2" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="R98" gate="R" pin="2"/>
-<pinref part="Y3" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="233.68" x2="187.96" y2="228.6" width="0.1524" layer="91"/>
-<junction x="187.96" y="228.6"/>
 </segment>
 </net>
 <net name="TUSB_!RESET" class="0">
@@ -26336,8 +26291,8 @@ as a usable device for the Octavo</text>
 <net name="USB_CAM_VBUS" class="0">
 <segment>
 <pinref part="J10" gate="A" pin="6"/>
-<wire x1="287.02" y1="55.88" x2="279.4" y2="55.88" width="0.1524" layer="91"/>
-<label x="279.4" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
+<label x="215.9" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="FB3" gate="G$1" pin="2"/>
