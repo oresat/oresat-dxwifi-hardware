@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -21059,7 +21059,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-9" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
+<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="GND75" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U20" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C28" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21069,7 +21069,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R7" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-12" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C42" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
+<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="GND79" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U21" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C54" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21079,7 +21079,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R76" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-14" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C55" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
+<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
 <part name="GND82" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
 <part name="R77" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
@@ -25248,12 +25248,12 @@ battery circuit</text>
 <instance part="TP20" gate="G$1" x="233.68" y="223.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="229.108" y="224.282" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="C65" gate="CE" x="271.78" y="284.48" smashed="yes">
-<attribute name="NAME" x="272.796" y="285.115" size="1.778" layer="95"/>
-<attribute name="VALUE" x="272.796" y="280.289" size="1.778" layer="96"/>
+<instance part="C65" gate="CE" x="309.88" y="284.48" smashed="yes">
+<attribute name="NAME" x="310.896" y="285.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="310.896" y="280.289" size="1.778" layer="96"/>
 </instance>
-<instance part="GND92" gate="1" x="271.78" y="274.32" smashed="yes">
-<attribute name="VALUE" x="271.78" y="274.066" size="1.778" layer="96" align="top-center"/>
+<instance part="GND92" gate="1" x="309.88" y="274.32" smashed="yes">
+<attribute name="VALUE" x="309.88" y="274.066" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R100" gate="R" x="281.94" y="195.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="283.464" y="197.358" size="1.27" layer="95"/>
@@ -25504,7 +25504,7 @@ battery circuit</text>
 <segment>
 <pinref part="C65" gate="CE" pin="2"/>
 <pinref part="GND92" gate="1" pin="GND"/>
-<wire x1="271.78" y1="279.4" x2="271.78" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="279.4" x2="309.88" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R100" gate="R" pin="1"/>
@@ -25562,16 +25562,16 @@ battery circuit</text>
 <pinref part="3V-7" gate="G$1" pin="3.3V"/>
 <pinref part="U2" gate="A" pin="VCC"/>
 <wire x1="264.16" y1="292.1" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
-<pinref part="C65" gate="CE" pin="1"/>
 <wire x1="264.16" y1="289.56" x2="264.16" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="287.02" x2="271.78" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
 <junction x="264.16" y="289.56"/>
+<pinref part="C65" gate="CE" pin="1"/>
+<wire x1="309.88" y1="289.56" x2="297.18" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="287.02" x2="309.88" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="!OVRCUR4"/>
-<wire x1="287.02" y1="246.38" x2="298.45" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="298.45" y1="246.38" x2="298.45" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="298.45" y1="289.56" x2="271.78" y2="289.56" width="0.1524" layer="91"/>
-<junction x="271.78" y="289.56"/>
+<wire x1="287.02" y1="246.38" x2="297.18" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="246.38" x2="297.18" y2="289.56" width="0.1524" layer="91"/>
+<junction x="297.18" y="289.56"/>
 </segment>
 <segment>
 <pinref part="R6" gate="R" pin="2"/>
