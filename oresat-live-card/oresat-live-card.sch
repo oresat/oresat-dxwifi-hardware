@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -81,13 +81,88 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="no"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="no"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="no"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="no"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="no"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="no"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="no"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="no"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="no"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="no"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -96,11 +171,22 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -20189,13 +20275,13 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <library name="my_library">
 <packages>
 <package name="3X1">
-<pad name="P$3" x="1.5" y="0" drill="0.9"/>
-<pad name="P$2" x="0" y="0" drill="0.9"/>
-<pad name="P$1" x="-1.5" y="0" drill="0.9" shape="square"/>
+<pad name="P$3" x="1.4" y="0" drill="0.7366"/>
+<pad name="P$2" x="0" y="0" drill="0.7366"/>
+<pad name="P$1" x="-1.4" y="0" drill="0.7366" shape="square"/>
 </package>
 <package name="2X1">
-<pad name="P$1" x="-0.8" y="0" drill="0.9" shape="square"/>
-<pad name="P$2" x="0.7" y="0" drill="0.9"/>
+<pad name="P$1" x="-0.8" y="0" drill="0.7366" shape="square"/>
+<pad name="P$2" x="0.7" y="0" drill="0.7366"/>
 </package>
 </packages>
 <symbols>
@@ -21059,7 +21145,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-9" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
+<part name="C27" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND75" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U20" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C28" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21069,7 +21155,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R7" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-12" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C42" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
+<part name="C53" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND79" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U21" library="U-TPS2041BQDBVRQ1-USB_power_switch" deviceset="TPS2041BQDBVRQ1" device=""/>
 <part name="C54" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
@@ -21079,7 +21165,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R76" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="10k"/>
 <part name="3V-14" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C55" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="0.1uF"/>
-<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0805-B" value="10uF"/>
+<part name="C56" library="oresat-rcl" deviceset="C-EU" device="0603-A" value="10uF"/>
 <part name="GND82" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
 <part name="R77" library="oresat-rcl" deviceset="R-US_" device="0603-A" value="22"/>
@@ -25248,12 +25334,12 @@ battery circuit</text>
 <instance part="TP20" gate="G$1" x="233.68" y="223.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="229.108" y="224.282" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="C65" gate="CE" x="309.88" y="284.48" smashed="yes">
-<attribute name="NAME" x="310.896" y="285.115" size="1.778" layer="95"/>
-<attribute name="VALUE" x="310.896" y="280.289" size="1.778" layer="96"/>
+<instance part="C65" gate="CE" x="271.78" y="284.48" smashed="yes">
+<attribute name="NAME" x="272.796" y="285.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="272.796" y="280.289" size="1.778" layer="96"/>
 </instance>
-<instance part="GND92" gate="1" x="309.88" y="274.32" smashed="yes">
-<attribute name="VALUE" x="309.88" y="274.066" size="1.778" layer="96" align="top-center"/>
+<instance part="GND92" gate="1" x="271.78" y="274.32" smashed="yes">
+<attribute name="VALUE" x="271.78" y="274.066" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R100" gate="R" x="281.94" y="195.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="283.464" y="197.358" size="1.27" layer="95"/>
@@ -25504,7 +25590,7 @@ battery circuit</text>
 <segment>
 <pinref part="C65" gate="CE" pin="2"/>
 <pinref part="GND92" gate="1" pin="GND"/>
-<wire x1="309.88" y1="279.4" x2="309.88" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="279.4" x2="271.78" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R100" gate="R" pin="1"/>
@@ -25562,16 +25648,16 @@ battery circuit</text>
 <pinref part="3V-7" gate="G$1" pin="3.3V"/>
 <pinref part="U2" gate="A" pin="VCC"/>
 <wire x1="264.16" y1="292.1" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="289.56" x2="264.16" y2="266.7" width="0.1524" layer="91"/>
-<junction x="264.16" y="289.56"/>
 <pinref part="C65" gate="CE" pin="1"/>
-<wire x1="309.88" y1="289.56" x2="297.18" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="287.02" x2="309.88" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="289.56" x2="264.16" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="287.02" x2="271.78" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="289.56" x2="264.16" y2="289.56" width="0.1524" layer="91"/>
+<junction x="264.16" y="289.56"/>
 <pinref part="U2" gate="A" pin="!OVRCUR4"/>
-<wire x1="287.02" y1="246.38" x2="297.18" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="246.38" x2="297.18" y2="289.56" width="0.1524" layer="91"/>
-<junction x="297.18" y="289.56"/>
+<wire x1="287.02" y1="246.38" x2="298.45" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="298.45" y1="246.38" x2="298.45" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="298.45" y1="289.56" x2="271.78" y2="289.56" width="0.1524" layer="91"/>
+<junction x="271.78" y="289.56"/>
 </segment>
 <segment>
 <pinref part="R6" gate="R" pin="2"/>
