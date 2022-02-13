@@ -544,14 +544,14 @@
         )
       )
     )
-    (symbol "oresat-live-card-eagle-import:TEST-POINT3X4" (in_bom yes) (on_board yes)
-      (property "Reference" "TP" (id 0) (at -2.54 2.54 0)
+    (symbol "oresat-live-card-eagle-import:TEST-POINT" (in_bom yes) (on_board yes)
+      (property "Reference" "TP" (id 0) (at -5.08 2.54 0)
         (effects (font (size 1.778 1.778)) (justify left bottom))
       )
-      (property "Value" "TEST-POINT3X4" (id 1) (at -2.54 -2.54 0)
-        (effects (font (size 1.778 1.778)) (justify left bottom))
+      (property "Value" "TEST-POINT" (id 1) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Footprint" "oresat-live-card:PAD.03X.04" (id 2) (at 0 0 0)
+      (property "Footprint" "oresat-live-card:2MM-TEST-POINT" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at 0 0 0)
@@ -560,20 +560,40 @@
       (property "ki_locked" "" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)))
       )
-      (symbol "TEST-POINT3X4_1_0"
+      (symbol "TEST-POINT_1_0"
         (polyline
           (pts
-            (xy 2.54 0)
-            (xy 0 0)
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
           )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (arc (start 3.302 -0.762) (mid 4.064 0) (end 3.302 0.762)
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (polyline
+          (pts
+            (xy -1.27 1.27)
+            (xy 1.27 1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (pin bidirectional line (at 0 0 180) (length 0)
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy -1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (pin passive line (at 0 0 0) (length 0)
           (name "1" (effects (font (size 0 0))))
           (number "1" (effects (font (size 0 0))))
         )
@@ -1334,7 +1354,7 @@
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 81.28 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 81.28 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 10af6c28-d01c-4dba-b1a5-3e68422805ec)
     (property "Reference" "TP61" (id 0) (at 159.512 82.042 0)
@@ -1444,7 +1464,7 @@
     (pin "1" (uuid f4d4d0b5-c4d1-497d-ace4-6e351ce28b13))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 76.2 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 76.2 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5880080c-14df-4f2e-b1e6-6a00ef6ec03d)
     (property "Reference" "TP62" (id 0) (at 159.512 76.962 0)
@@ -1480,7 +1500,7 @@
     (pin "1" (uuid f8cb3553-fe07-4641-9b7e-fb997495697c))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 162.56 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 162.56 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 60fabe2e-c18d-4d49-8460-7dcfca564713)
     (property "Reference" "TP183" (id 0) (at 159.512 163.322 0)
@@ -1573,7 +1593,7 @@
     (pin "1" (uuid 57a572ae-a8f5-4f21-915a-d274f8126638))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 96.52 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ccdbcd10-3e40-40c9-ab0c-ca0856cf8674)
     (property "Reference" "TP58" (id 0) (at 159.512 97.282 0)
@@ -1591,7 +1611,7 @@
     (pin "1" (uuid d21248f2-dfc9-4a77-bedd-d9792c9540d6))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 157.48 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 157.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid de11158d-e1cb-416e-aaaf-87ca0d1cdef8)
     (property "Reference" "TP184" (id 0) (at 159.512 158.242 0)
@@ -1609,7 +1629,7 @@
     (pin "1" (uuid 945ecf06-a8ba-49f9-9a39-f83d76690957))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 86.36 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 86.36 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e1d8592e-5ed2-41df-8aea-1b138b06cd4b)
     (property "Reference" "TP60" (id 0) (at 159.512 87.122 0)
@@ -1627,7 +1647,7 @@
     (pin "1" (uuid 4b8a7927-4f28-43c6-a8d8-bb35a32b6332))
   )
 
-  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT3X4") (at 154.94 91.44 0) (unit 1)
+  (symbol (lib_id "oresat-live-card-eagle-import:TEST-POINT") (at 154.94 91.44 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e5dd13dc-53a0-40c7-8e8b-f7364ee5bb0d)
     (property "Reference" "TP59" (id 0) (at 159.512 92.202 0)
