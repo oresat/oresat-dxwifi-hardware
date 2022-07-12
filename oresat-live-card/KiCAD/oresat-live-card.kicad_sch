@@ -2,7 +2,7 @@
 
   (uuid 748bdd2d-da0a-4240-ba60-0bf881d2ec56)
 
-  (paper "A" portrait)
+  (paper "B")
 
   (title_block
     (title "Oresat DxWifi Card")
@@ -299,6 +299,9 @@
     (path "/53f1a01a-ab00-470b-871b-16512f4395a9/5a26b56e-3a94-44c4-ae7e-38dc0cdecc7c"
       (reference "#GND032") (unit 1) (value "GND") (footprint "oresat-live-card:")
     )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/ac818a13-2e6b-4a55-9c8e-e518bb03ccc3"
+      (reference "#GND033") (unit 1) (value "GND") (footprint "oresat-live-card:")
+    )
     (path "/49f5f571-d1f9-4350-855b-6ca6690b0a90/e2ea097b-b9a0-46aa-8521-578a7c0b572c"
       (reference "#GND035") (unit 1) (value "GND") (footprint "oresat-live-card:")
     )
@@ -310,9 +313,6 @@
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/f37521fe-b5fe-45cd-b033-364431b0b1f4"
       (reference "#GND038") (unit 1) (value "GND") (footprint "oresat-live-card:")
-    )
-    (path "/800b750c-a739-41c9-892a-b7b25d00c873/bff1b96e-6dcf-48d7-8dd8-464f0530ee57"
-      (reference "#GND039") (unit 1) (value "GND") (footprint "oresat-live-card:")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/c34e0428-4eeb-425b-b34f-c2830f570e4e"
       (reference "#GND040") (unit 1) (value "GND") (footprint "oresat-live-card:")
@@ -591,16 +591,16 @@
       (reference "C12") (unit 1) (value "1u") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/7c9c8fbf-83c8-4463-803c-a3967b810f93/e45fc406-c5ad-49e4-82e9-338c91ac0691"
-      (reference "C13") (unit 1) (value "22u") (footprint "Resistor_SMD:R_1210_3225Metric")
+      (reference "C13") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
     )
     (path "/7c9c8fbf-83c8-4463-803c-a3967b810f93/0a241af1-c09a-4343-b3ec-b685987a396c"
-      (reference "C14") (unit 1) (value "22u") (footprint "Resistor_SMD:R_1210_3225Metric")
+      (reference "C14") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
     )
     (path "/05da2a2f-8aac-4f69-92b0-4622cd97ee54/e53d234c-34ee-414a-bc81-a886319740b6"
       (reference "C15") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/800b750c-a739-41c9-892a-b7b25d00c873/e63e888b-66f2-415b-b21c-a938a9a84469"
-      (reference "C16") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/040ffb90-0c22-4edc-8395-e28b04afb4f9"
+      (reference "C16") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/955fd4ee-c484-4e5c-9520-e1f0bed04977"
       (reference "C17") (unit 1) (value "2u2") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -611,8 +611,8 @@
     (path "/49f5f571-d1f9-4350-855b-6ca6690b0a90/b40906be-9b57-4e7e-aa40-5ee1ccbb0850"
       (reference "C19") (unit 1) (value "12pF, 50V") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/800b750c-a739-41c9-892a-b7b25d00c873/d2da8f27-36ce-4490-9366-f03b09eb7000"
-      (reference "C20") (unit 1) (value "47u") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/dbd1d9ef-c672-4b70-a7d3-69a6285ba78f"
+      (reference "C20") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/05da2a2f-8aac-4f69-92b0-4622cd97ee54/788521bc-4095-4218-9193-0b55643d08c2"
       (reference "C21") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -660,16 +660,19 @@
       (reference "C35") (unit 1) (value "1u") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/8bbeba5a-ae47-4cf9-ac2d-6c46d97e7125"
-      (reference "C36") (unit 1) (value "47u") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C36") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/c966c02c-da63-43c8-8d03-b6b9c2f8fc9d"
       (reference "C37") (unit 1) (value "2u2") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/800b750c-a739-41c9-892a-b7b25d00c873/df9a3f1b-06ee-456d-8961-1b91204b37cf"
-      (reference "C38") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/0940da07-0118-4630-bb2b-0f7bf7ed945d"
+      (reference "C38") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/bf6dc725-6473-4761-bd5b-778a165ef529"
       (reference "C39") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/ed65fbec-6a8a-4bfe-aa03-d323ed2e8e0b"
+      (reference "C40") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
     )
     (path "/7c9c8fbf-83c8-4463-803c-a3967b810f93/a16e660b-43f8-4265-b699-0ee760a4240d"
       (reference "C41") (unit 1) (value "100n") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -785,6 +788,21 @@
     (path "/53f1a01a-ab00-470b-871b-16512f4395a9/6cd5bdbc-4cb6-4357-ac87-06d5195a1598"
       (reference "C78") (unit 1) (value "1u") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/bf334f37-50d3-4d26-a649-24365965ebf5"
+      (reference "C79") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/8e53413c-fa64-48e0-b63c-aaa50a60bc74"
+      (reference "C80") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/6cb19fc6-0b99-4c11-8384-609df5c54731"
+      (reference "C81") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/4a890af1-ed5d-40cf-a9ed-b6ee5cbc614e"
+      (reference "C82") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
+    (path "/800b750c-a739-41c9-892a-b7b25d00c873/814febd9-f201-4ae5-a297-ad347acfa867"
+      (reference "C83") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_1210_3225Metric")
+    )
     (path "/7c9c8fbf-83c8-4463-803c-a3967b810f93/13a43682-2acb-4afd-abed-12d02fe09afb"
       (reference "D1") (unit 1) (value "GREEN") (footprint "oresat-live-card:LED-0603")
     )
@@ -885,10 +903,10 @@
       (reference "JP109") (unit 1) (value "JUMPER-SMT_3_1-NC_TRACE_SILK") (footprint "oresat-live-card:SMT-JUMPER_3_1-NC_TRACE_SILK")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/6cda7f90-ac63-4a40-ba5b-bdf1640e6087"
-      (reference "L1") (unit 1) (value "3u3") (footprint "Inductor_SMD:L_Coilcraft_XxL4030")
+      (reference "L1") (unit 1) (value "3u3") (footprint "oresat-footprints:L_ECS-MPI4040")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/7e4a054b-b85e-4946-97df-fed567c2c37c"
-      (reference "L2") (unit 1) (value "3u3") (footprint "Inductor_SMD:L_Coilcraft_XxL4030")
+      (reference "L2") (unit 1) (value "3u3") (footprint "oresat-footprints:L_ECS-MPI4040")
     )
     (path "/05da2a2f-8aac-4f69-92b0-4622cd97ee54/5ff1e15c-8dac-45b6-b3a7-55213e23f67d"
       (reference "L7") (unit 1) (value "1.7n") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -1425,7 +1443,7 @@
       (reference "U4") (unit 1) (value "SN74LVC1G07DCK") (footprint "oresat-live-card:C70(TI-DCK)")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/f3e63a42-302d-4e44-a1f0-c31c754cf5ff"
-      (reference "U5") (unit 1) (value "LTC3624") (footprint "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias")
+      (reference "U5") (unit 1) (value "LTC3624-5") (footprint "oresat-footprints:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias0.3mm")
     )
     (path "/05da2a2f-8aac-4f69-92b0-4622cd97ee54/4d4d2254-5f76-4651-8cae-91eaead3025f"
       (reference "U6") (unit 1) (value "SN74LVC1G32QDBVRQ1") (footprint "oresat-live-card:DBV5")
@@ -1470,7 +1488,7 @@
       (reference "U14") (unit 1) (value "MAX4211FETE") (footprint "oresat-live-card:QFN65P400X400X80-17T210")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/c7dbb8b5-f759-4b20-a342-df5e98b504ef"
-      (reference "U15") (unit 1) (value "LTC3624") (footprint "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias")
+      (reference "U15") (unit 1) (value "LTC3624-5") (footprint "oresat-footprints:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias0.3mm")
     )
     (path "/800b750c-a739-41c9-892a-b7b25d00c873/6f358e43-79f9-4a38-b453-0c34277a27de"
       (reference "U16") (unit 1) (value "MAX7310ATE") (footprint "oresat-live-card:QFN65P400X400X80-17T210")
