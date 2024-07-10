@@ -1,674 +1,241 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid c58960d9-4cac-4036-ad2e-1aef26946dae)
-
-  (paper "A2")
-
-  (lib_symbols
-  )
-
-
-  (sheet (at 228.6 25.4) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 12554e39-b7e9-4dde-b2ac-5bdee0a95112)
-    (property "Sheet name" "Antenna Select Switch" (id 0) (at 228.6 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "Antenna_Select_Switch.kicad_sch" (id 1) (at 228.6 29.7946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 25.4 25.4) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 3b3d2d84-2ac8-47cd-8dba-03b5f636c156)
-    (property "Sheet name" "TX/RX Control" (id 0) (at 25.4 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "TX%2fRX_Control.kicad_sch" (id 1) (at 25.4 29.7946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 127 25.4) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 481216d5-b80b-4cc5-9ced-a9b7689cce71)
-    (property "Sheet name" "LNA and RX Bandpass Filters" (id 0) (at 127 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "LNA_and_RX_Bandpass_Filters.kicad_sch" (id 1) (at 127 29.7946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 177.8 25.4) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 76d384a4-98a7-41cb-9c07-a4294de84d79)
-    (property "Sheet name" "TX/RX Switch" (id 0) (at 177.8 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "TX%2fRX_Switch.kicad_sch" (id 1) (at 177.8 29.7946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 25.4 76.2) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid b52aca0a-4dca-4364-ac02-44ef270daf41)
-    (property "Sheet name" "Power" (id 0) (at 25.4 75.4884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "Power.kicad_sch" (id 1) (at 25.4 80.5946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 76.2 25.4) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid f0171ac8-a0fb-47d8-8b5b-b5e6f52da220)
-    (property "Sheet name" "Power Amplifier" (id 0) (at 76.2 24.6884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "Power_Amplifier.kicad_sch" (id 1) (at 76.2 29.7946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page ""))
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156" (page ""))
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41" (page ""))
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220" (page ""))
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71" (page ""))
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79" (page ""))
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112" (page ""))
-  )
-
-  (symbol_instances
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/e1d2d27f-1d9b-4489-8009-acbd89eb68bd"
-      (reference "#P+01") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7f4cfeae-964a-4567-879b-03dbbac6ee65"
-      (reference "#P+02") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/6cf77a8f-b6e2-4c86-80e3-e5160be183d1"
-      (reference "#P+03") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/8e44d28a-a092-48bf-81b3-e4844a145186"
-      (reference "#P+04") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/750644c1-86f5-4c6e-9b7f-55b5431e304f"
-      (reference "#P+05") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/5c4ef3fb-31b1-4cc2-b877-62be82f2b495"
-      (reference "#P+06") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/0be6aa73-0585-4a81-a074-3cea864d55e2"
-      (reference "#P+07") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/2e3cdf77-70fa-4689-bb1c-908e0df9b623"
-      (reference "#P+08") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/639ff5ca-19c7-4840-989d-4e2fbafcd8f8"
-      (reference "#P+09") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/394e1e13-28f8-4ced-a2d9-0b0e847e2ba7"
-      (reference "#P+010") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/af222ede-15a1-480a-a68f-046c5727ab62"
-      (reference "#P+011") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/e1605231-4776-43cb-bbce-dd1eaa56060c"
-      (reference "#P+012") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/77ec979a-bbed-4878-a6e4-46946d314fef"
-      (reference "#P+013") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/3f881838-2d91-44d0-9264-bfaaaf0089bb"
-      (reference "#P+014") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/007c9269-a186-4438-9be8-cd028e3955bf"
-      (reference "#P+015") (unit 1) (value "+5V") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/959515dd-32a5-4c45-9397-74bbfcecd51e"
-      (reference "#SUPPLY01") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/e412785b-4527-40b0-a133-202e6c25d7ad"
-      (reference "#SUPPLY02") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/d94772bc-24d5-4084-a116-79cfd5ce463b"
-      (reference "#SUPPLY03") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/10eda7e0-58cb-4103-9491-731ead664fb6"
-      (reference "#SUPPLY04") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/2fdd0155-aa4a-445c-a81e-55a7d6115848"
-      (reference "#SUPPLY05") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/461ea6a6-1c8c-4a40-93fd-fe807bf8de70"
-      (reference "#SUPPLY06") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/fade7e8a-567f-48a0-80a0-084bb672c228"
-      (reference "#SUPPLY07") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/30a5898d-4bac-46ac-b409-1a5087097191"
-      (reference "#SUPPLY08") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/b284832d-7ebb-45ab-a1bb-1c3767c33b6a"
-      (reference "#SUPPLY09") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/9231f031-834c-43ea-bccc-14701d558eb5"
-      (reference "#SUPPLY010") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/4d3ed626-fb55-4347-ad19-5dc3d0da3d16"
-      (reference "#SUPPLY011") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/de0c33d8-d6f2-4627-908a-fad2987cc03b"
-      (reference "#SUPPLY012") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/7f266cef-09f2-48dc-a0d2-75438b615a65"
-      (reference "#SUPPLY013") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/610252ed-7b0f-4d11-b8dc-aeb617cf8b56"
-      (reference "#SUPPLY014") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/f666fbff-335c-474a-b875-c13ad06abcbe"
-      (reference "#SUPPLY015") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/136dcc7b-7931-4aa9-af01-bd6853fb3726"
-      (reference "#SUPPLY016") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/0ef85940-4adb-41a4-83fc-003701079c89"
-      (reference "#SUPPLY017") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/ee11cad2-1209-482b-aef9-afe5eeef9131"
-      (reference "#SUPPLY018") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/594e6540-6208-46c1-b5d4-dcb0989d0555"
-      (reference "#SUPPLY019") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/ff053595-254e-4a92-9b35-d27b80d283b1"
-      (reference "#SUPPLY020") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/494d55a2-ad9a-4bf0-bbf7-1a7cb99de5df"
-      (reference "#SUPPLY021") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/a020bf6e-574c-4ecb-89ab-06ce8f4215f3"
-      (reference "#SUPPLY022") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/ccdab3c6-4679-4a05-8105-d580b4b8c4a3"
-      (reference "#SUPPLY023") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/9259a944-3fbe-4710-912e-c818d1125aa8"
-      (reference "#SUPPLY024") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/fa692854-dd08-41fa-b134-218ab0c1ae8e"
-      (reference "#SUPPLY025") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/38a93a09-6a8b-4819-ac8e-9c6f13062e58"
-      (reference "#SUPPLY026") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/dd00503d-8df4-435b-bfc3-85ca3fa156c1"
-      (reference "#SUPPLY027") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/a86c0538-075e-45a8-b87e-cdc35a79de0e"
-      (reference "#SUPPLY028") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/c00a6ff3-d367-48aa-9987-c597c23d6ece"
-      (reference "#SUPPLY029") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/ac400113-5b0c-4ba3-90f5-fba5c1ab46ed"
-      (reference "#SUPPLY030") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/431b662a-2cf2-490e-b264-a23ba33824ec"
-      (reference "#SUPPLY031") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/6642c728-e354-416e-b080-02e03ff244a9"
-      (reference "#SUPPLY032") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/81596297-554a-4de2-8067-66e2218b2a33"
-      (reference "#SUPPLY033") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/72dea49f-a659-4192-8474-1d00e22d82f9"
-      (reference "#SUPPLY034") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/b02f6423-1a09-47dc-9704-077bacf2b269"
-      (reference "#SUPPLY035") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/a3c554b3-eab3-4645-9075-14ef062ef6c5"
-      (reference "#SUPPLY036") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7cf72dd7-746a-434c-8387-58881fc4baab"
-      (reference "#SUPPLY037") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/4be58d4e-ca21-49a0-8c0d-288b1ff6c928"
-      (reference "#SUPPLY038") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/be018165-e64e-479e-b052-7d78eaa03fff"
-      (reference "#SUPPLY039") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/1e58ffc7-8d50-4250-bea4-a79ddbf6a0f0"
-      (reference "#SUPPLY040") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/20cf0c08-e332-4a8c-b3c4-79dc756d878b"
-      (reference "#SUPPLY041") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/0f733580-5b91-4bca-b709-bd216e3b7eef"
-      (reference "#SUPPLY042") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/449c80fe-e391-40ac-9b79-7ce070d272f3"
-      (reference "#SUPPLY043") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/18cf4fb6-ca92-44ec-95f1-2adb5dfd4536"
-      (reference "#SUPPLY044") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/fc14d469-c804-4bf8-a3cf-018bda51c02f"
-      (reference "#SUPPLY045") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/c64623ea-1b89-43ec-92c6-a2d8ff19adad"
-      (reference "#SUPPLY046") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/a86f34a7-9793-4735-ac95-aaea2e6de655"
-      (reference "#SUPPLY047") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/bcd21354-8675-4c3c-9733-46fb5a2aed5e"
-      (reference "#SUPPLY048") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/e0acb921-ea02-4d94-bc81-5859e8c5322f"
-      (reference "#SUPPLY049") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/9ed9df9e-4356-4894-b3a5-62e8b047d882"
-      (reference "#SUPPLY050") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/0822ca37-715d-4e56-a8e3-be77335446d8"
-      (reference "#SUPPLY051") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/8d4c482b-c37a-47ca-8580-9a0af7f9dca1"
-      (reference "#SUPPLY052") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/e4bb9a9d-3f07-45c4-8505-94f130a7639d"
-      (reference "#SUPPLY053") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/c93092f3-ad93-4616-a7d6-461e3ba02b31"
-      (reference "#SUPPLY054") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/56486356-64f4-4148-b335-6b45c342341d"
-      (reference "#SUPPLY055") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/5dfe42c6-01b7-4abd-b9a5-6c91c2956ce9"
-      (reference "#SUPPLY056") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/4d7b40ad-9283-4faf-8a3d-826e75194715"
-      (reference "#SUPPLY057") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/068e0483-275b-46cc-982a-0ff1786c3d41"
-      (reference "#SUPPLY060") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/9ecd62a1-028b-4302-8a84-a4e34c950174"
-      (reference "#SUPPLY061") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/844915b2-b6e7-4758-945e-f5b5342afdba"
-      (reference "#SUPPLY062") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/a79ba571-c51f-4b9a-b540-ffe850e1a04c"
-      (reference "#SUPPLY071") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/a2c3fba0-71ad-480c-83c8-acc9360a30c9"
-      (reference "#SUPPLY078") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/7db33adc-acba-4000-a6b8-df45409e9a61"
-      (reference "#SUPPLY079") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/a5341750-b486-45f5-bb4e-3da98ba69466"
-      (reference "#SUPPLY082") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/709f660e-e6d0-4bd1-827f-32aca80578cf"
-      (reference "#SUPPLY085") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/e12c0ccb-fcea-4a8b-916b-ad9f925d6730"
-      (reference "#SUPPLY087") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/80249f38-3d6f-4942-bb6e-3ecff896cc8d"
-      (reference "#SUPPLY089") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/cfaac833-ee95-4a6c-a968-02252b228900"
-      (reference "#SUPPLY090") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/08951927-dcdb-48ef-a4ba-b24fecadcc5f"
-      (reference "#SUPPLY092") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/168f41d0-4927-4001-8390-27338686940d"
-      (reference "#SUPPLY093") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/c665e327-9f83-49b4-b895-f3233e9d99c8"
-      (reference "#SUPPLY0106") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/55ec0dcc-5991-432a-aba9-13b6651905bb"
-      (reference "#SUPPLY0107") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/11cfd7a4-372f-449d-a57b-0ced845bf0ee"
-      (reference "#SUPPLY0108") (unit 1) (value "GND") (footprint "Bidirectional_Amp:")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/599933e2-df6e-401d-9ecb-f6cfacedd087"
-      (reference "C1") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/093e9e63-fe1e-4feb-bbbe-9d5002218a03"
-      (reference "C2") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/87167cdd-cfab-4814-a3b0-d049553a15cb"
-      (reference "C3") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/e8623586-c035-4557-bb05-dccb494757ad"
-      (reference "C4") (unit 1) (value "1uF") (footprint "Bidirectional_Amp:.0603-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/3c24ab61-861f-414b-bf23-eb9f1d4e8369"
-      (reference "C5") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/da959f72-6281-40f3-a701-501288021aec"
-      (reference "C6") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/4f5c7825-f151-475a-994f-314420c1d9e4"
-      (reference "C7") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/c3830ef6-be43-4bda-a92d-9603c4d4a53f"
-      (reference "C8") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/bcbddad0-7fad-4cd6-8dd1-d1d4f8020323"
-      (reference "C9") (unit 1) (value "100p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/d8fbfc94-1654-403c-a92f-f39f91b311ce"
-      (reference "C10") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/e5e79495-b4dc-46b0-953d-bf53907e0d7c"
-      (reference "C11") (unit 1) (value "DNP") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/dea83fa6-d8fd-4b2d-92ed-580f5767e39d"
-      (reference "C12") (unit 1) (value "100p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/31e6c9f5-82ae-4301-bfa0-506b67b64648"
-      (reference "C14") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/e61112af-6140-44f5-b7a6-941c2d3d06cd"
-      (reference "C15") (unit 1) (value "100nF") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/60740de8-9b7d-46a3-983e-2b60d3dfd97b"
-      (reference "C16") (unit 1) (value "100nF") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/066403ff-b6e2-416f-826a-61b431c3e41e"
-      (reference "C17") (unit 1) (value "100nF") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/4b2bd551-ac9c-461d-83b5-b0e48139d320"
-      (reference "C18") (unit 1) (value "100pF") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/8f1980cf-17d4-499a-9160-7b3fb6f5be43"
-      (reference "C19") (unit 1) (value "1000pF") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/4f4df253-634f-42c8-aaa5-1ea87996b9c7"
-      (reference "C20") (unit 1) (value "100pF") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/f341cc8d-f0b2-4738-917e-2a4bc6c6fbcd"
-      (reference "C21") (unit 1) (value "3.0pF") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/b4f3deb9-ff7a-4ab8-aa63-bde787a78d58"
-      (reference "C22") (unit 1) (value "2.2pF") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/b31f38ac-b940-4846-9b48-43ebbd4f4b50"
-      (reference "C23") (unit 1) (value "1.6pF") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/f5edecff-c7e4-4ade-b33f-898c336b9ff1"
-      (reference "C24") (unit 1) (value "4.7pF") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/b0f3c26f-a516-4d34-802a-9992a1d59159"
-      (reference "C26") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/42dfcfdc-f5fb-40d3-80dc-3b68897fd0c1"
-      (reference "C27") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7b17e7f4-21d7-46c7-abe6-3f17b6471acc"
-      (reference "C28") (unit 1) (value "15p") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7db2a4b9-f872-48cc-a2a7-1f09e20dda1e"
-      (reference "C29") (unit 1) (value "1uF") (footprint "Bidirectional_Amp:.0603-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/9ad5defa-c581-4f70-9c55-cd0f30004b84"
-      (reference "C30") (unit 1) (value "100p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/77a39290-cbef-4417-92dd-bd19a64a03da"
-      (reference "C31") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/1c532554-e3f6-4e01-a2c0-98ff5e46b00d"
-      (reference "C32") (unit 1) (value "DNP") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/20cacce9-1b7d-4738-81e3-37a364d9a212"
-      (reference "C33") (unit 1) (value "100p") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/25854ac8-4e1c-4b0e-a82a-fdd3b767f562"
-      (reference "C34") (unit 1) (value "4.7uF") (footprint "Bidirectional_Amp:C1206")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/92c77f0c-2710-4f04-beb9-081284a231f1"
-      (reference "C35") (unit 1) (value "22uF") (footprint "Bidirectional_Amp:C1210")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/cd562bae-2426-44e6-8196-59eee5439809"
-      (reference "C39") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/abb0809b-06bb-4421-8ce2-56e12207b876"
-      (reference "C41") (unit 1) (value "100n") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/8959787f-6134-42a9-bd2d-e7f7a1af74c6"
-      (reference "FL1") (unit 1) (value "QPQ1907") (footprint "Bidirectional_Amp:FIL_B39162B9417K610")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/db3e8e2d-38e0-44e0-969f-fe042827f6c4"
-      (reference "FL2") (unit 1) (value "QPQ1907") (footprint "Bidirectional_Amp:FIL_B39162B9417K610")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/df5486e5-2dda-4607-88ce-0ab88846dbb7"
-      (reference "H1") (unit 1) (value "STAND-OFFTIGHT") (footprint "Bidirectional_Amp:STAND-OFF-TIGHT")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/40bd0573-3c41-4804-a39b-2ef5d2f9e69e"
-      (reference "H2") (unit 1) (value "STAND-OFFTIGHT") (footprint "Bidirectional_Amp:STAND-OFF-TIGHT")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/60250710-b6ec-448a-9a76-47c76eda6bc6"
-      (reference "H3") (unit 1) (value "STAND-OFFTIGHT") (footprint "Bidirectional_Amp:STAND-OFF-TIGHT")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/a46bbdfb-1282-44e8-9ec3-18b8ffefa335"
-      (reference "H4") (unit 1) (value "STAND-OFFTIGHT") (footprint "Bidirectional_Amp:STAND-OFF-TIGHT")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/160d7da3-6a0c-4973-a861-fc6711fb21ee"
-      (reference "J1") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/aa7c0a7c-9074-484b-9343-5acf98c9bf0a"
-      (reference "J2") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/9262c7d3-8469-461f-b560-6292a46b6254"
-      (reference "J3") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/3126424b-5087-4b26-9561-f2e5d1deb677"
-      (reference "J4") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/a51a620d-094b-4382-ad5b-e94776e053bd"
-      (reference "J6") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/40fa4023-a0c8-402d-a858-ca969f49d733"
-      (reference "J7") (unit 1) (value "142-0701-851_ALT") (footprint "Bidirectional_Amp:142-0701-851")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/2c25634f-0d1e-4c95-a734-cfa5017b9a2b"
-      (reference "JP1") (unit 1) (value "PINHD-1X3") (footprint "Bidirectional_Amp:1X03")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/4b1ab2ff-7fb8-4c40-91c1-ac601e4375fa"
-      (reference "JP3") (unit 1) (value "PINHD-1X3") (footprint "Bidirectional_Amp:1X03")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/91fc54ff-4276-41b0-a00a-1e9cd1288e91"
-      (reference "JP4") (unit 1) (value "PINHD-1X3") (footprint "Bidirectional_Amp:1X03")
-    )
-    (path "/b52aca0a-4dca-4364-ac02-44ef270daf41/b2242582-8a2a-4dd7-9028-8eff339cc1b0"
-      (reference "JP6") (unit 1) (value "PINHD-1X4") (footprint "Bidirectional_Amp:1X04")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/ca5218cb-dd0d-46db-a2b9-396537593985"
-      (reference "L1") (unit 1) (value "1008HQ-10NXJLB1008_IMPERIAL_2520_METRIC") (footprint "Bidirectional_Amp:INDC2520X120N")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/08eed42f-b0b5-4dbc-8033-da3ce74644a6"
-      (reference "L2") (unit 1) (value "6.8nH") (footprint "Bidirectional_Amp:0805CS")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/52bf8c9f-a7b7-4b89-8df7-108d979d1b8c"
-      (reference "L3") (unit 1) (value "1.2nH") (footprint "Bidirectional_Amp:0402CS1N2XJLW")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/c804502d-9093-4d5d-ab28-0e2e8f4bcfa9"
-      (reference "L4") (unit 1) (value "68nH") (footprint "Bidirectional_Amp:0603CS-68NXJLW")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/9d05a6cf-a6f3-4790-ad14-ba1a64d0a8b7"
-      (reference "L5") (unit 1) (value "68nH") (footprint "Bidirectional_Amp:0603CS-68NXJLW")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/42151424-72de-42e9-bb72-9aab531a324c"
-      (reference "LED1") (unit 1) (value "LTST-C193KRKT-5A") (footprint "Bidirectional_Amp:LEDC1607X80N")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/eeee06f1-b1d6-4a0a-9afb-bc6f990265ed"
-      (reference "LED2") (unit 1) (value "LTST-C193KGKT-5A") (footprint "Bidirectional_Amp:LEDC1607X80N")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/b3875ce7-9b02-4372-805c-4ee8d43b1097"
-      (reference "R1") (unit 1) (value "147") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/0797c66f-ceb9-4e97-aebd-deb488997a28"
-      (reference "R2") (unit 1) (value "147") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/a620e621-1b7e-4b19-8287-961a171e5b5f"
-      (reference "R3") (unit 1) (value "17.8") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/52343ac2-4969-42df-af1e-ed7deb794aea"
-      (reference "R4") (unit 1) (value "294") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/5db7acb6-8a8d-4fd8-a275-1b22d7703766"
-      (reference "R5") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/6707b221-21a1-482b-a9e0-e56d0908d37f"
-      (reference "R6") (unit 1) (value "17.8") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/04a67e5f-b8a7-437e-9b6f-1b3edf30dbe6"
-      (reference "R7") (unit 1) (value "294") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/0bb79875-05c7-4b8a-9d2d-5fca0ef83c84"
-      (reference "R8") (unit 1) (value "294") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/fa52629e-3ea5-4a5e-a7dc-9119b807e272"
-      (reference "R9") (unit 1) (value "17.8") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/08584984-41e2-4306-a11a-2c92beeab496"
-      (reference "R10") (unit 1) (value "294") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/ca7dc9cb-c16e-4c37-970c-27b942a5a7e8"
-      (reference "R11") (unit 1) (value "499k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/afb43903-35e9-4979-b900-1894511bea86"
-      (reference "R12") (unit 1) (value "499k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7d328d81-b03a-46b4-9434-cb80d367ff66"
-      (reference "R13") (unit 1) (value "294") (footprint "Bidirectional_Amp:.0402-C-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/3338a2c5-067c-47fe-9cba-1b5a40c37bf5"
-      (reference "R14") (unit 1) (value "0") (footprint "Bidirectional_Amp:.0603-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/58c9a520-7aea-473c-b038-4a0475c58e86"
-      (reference "R15") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/57e0ad9e-0c72-4850-bb3f-59e185b7503d"
-      (reference "R16") (unit 1) (value "5.62k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/fccf2c44-52fa-4770-b86c-c998258c418e"
-      (reference "R17") (unit 1) (value "0") (footprint "Bidirectional_Amp:R0805")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/33878cb0-de93-49ba-844f-9667b0ba12b2"
-      (reference "R18") (unit 1) (value "1.2") (footprint "Bidirectional_Amp:R0402")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/46a06217-e928-45d4-88d4-ea964c6b2de4"
-      (reference "R19") (unit 1) (value "110") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/8fbfcd09-9c09-4387-bd00-860fc9adc9cf"
-      (reference "R20") (unit 1) (value "220") (footprint "Bidirectional_Amp:.0603-C-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/de24c447-8775-4eb8-aa36-c3535149a263"
-      (reference "R21") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/1faae0b3-000f-4a5b-98b6-e693a547e9a8"
-      (reference "R22") (unit 1) (value "5.62k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/2894bc9b-9bd8-48c6-8471-dc813ff5b0ea"
-      (reference "R23") (unit 1) (value "0") (footprint "Bidirectional_Amp:.0603-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/9ef2c0bd-0176-4f0e-b213-c48663ceb734"
-      (reference "R24") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/a001f9b3-d55c-45e5-82b3-54c3c57f50f4"
-      (reference "R25") (unit 1) (value "5.62k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/bb96a9d3-a014-46a3-a2c6-1b7e39aeeaa1"
-      (reference "R26") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/08c9fb3a-987c-44fb-95be-3a52bb335067"
-      (reference "R27") (unit 1) (value "5.62k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/364ea6d5-81d6-485d-af85-ad66a6d4fe3f"
-      (reference "R28") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/4f28bce8-cbce-4bf4-86e5-c68d6f15e557"
-      (reference "R29") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/7bd5faee-e4b9-458a-949c-5399f7441628"
-      (reference "R30") (unit 1) (value "33k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/91f4375e-13a6-4343-9f53-7b08366312cb"
-      (reference "R31") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/bac7fbd1-68f8-4b6f-a8f9-bb12a8130667"
-      (reference "R32") (unit 1) (value "1k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/b4df3032-1614-4d87-8bc4-5dfe3ecf8672"
-      (reference "R36") (unit 1) (value "1k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/32b2bf14-b129-4ca5-97b7-f506ab93cf88"
-      (reference "R37") (unit 1) (value "10k") (footprint "Bidirectional_Amp:.0402-B-NOSILK")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/71070041-e598-4cf8-9b6e-932bbf134d95"
-      (reference "SW1") (unit 1) (value "TL36PO") (footprint "Bidirectional_Amp:TL3XPO")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/550d6148-b27f-4819-913a-1187ee8f2e67"
-      (reference "U1") (unit 1) (value "SN74LVC1G32DBVR") (footprint "Bidirectional_Amp:DBV5")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/50581b30-3b51-44ee-a91b-60b6946454b3"
-      (reference "U2") (unit 1) (value "LTC6994-1") (footprint "Bidirectional_Amp:TSOT-23_S6")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/78e9fb0c-04a5-4088-a599-fae1a0fda152"
-      (reference "U3") (unit 1) (value "LTC6994-1") (footprint "Bidirectional_Amp:TSOT-23_S6")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/e4c46226-7b35-4875-ac0e-124e67d7599d"
-      (reference "U4") (unit 1) (value "TQP3M9037") (footprint "Bidirectional_Amp:DFN8-2X2-WITH-PAD")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/5cd70b7b-0f7f-40d0-b802-af0f41233514"
-      (reference "U5") (unit 1) (value "TQP3M9037") (footprint "Bidirectional_Amp:DFN8-2X2-WITH-PAD")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/f6aa633b-aef8-450c-a675-7a9541ec9f83"
-      (reference "U6") (unit 1) (value "SN74LV1T34DBVR") (footprint "Bidirectional_Amp:SOT95P280X145-5N")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/7f41f14a-270d-4a24-9f0d-58cea090d007"
-      (reference "U7") (unit 1) (value "QPC1022") (footprint "Bidirectional_Amp:QPC1022")
-    )
-    (path "/76d384a4-98a7-41cb-9c07-a4294de84d79/05c22087-f0be-4bf7-8f3e-adf8b92618f3"
-      (reference "U8") (unit 1) (value "QPC1022") (footprint "Bidirectional_Amp:QPC1022")
-    )
-    (path "/12554e39-b7e9-4dde-b2ac-5bdee0a95112/67ca95c5-3f12-4820-be7b-08f81e21f7df"
-      (reference "U9") (unit 1) (value "SN74LV1T34DBVR") (footprint "Bidirectional_Amp:SOT95P280X145-5N")
-    )
-    (path "/f0171ac8-a0fb-47d8-8b5b-b5e6f52da220/ce6d32c6-6d41-4605-b4f3-081551060a5b"
-      (reference "U10") (unit 1) (value "TQP9111") (footprint "Bidirectional_Amp:QFN50P400X400X102-21N")
-    )
-    (path "/3b3d2d84-2ac8-47cd-8dba-03b5f636c156/e77f1d56-c211-430d-accf-66e21b6abde1"
-      (reference "U11") (unit 1) (value "SN74LV1T34DBVR") (footprint "Bidirectional_Amp:SOT95P280X145-5N")
-    )
-    (path "/481216d5-b80b-4cc5-9ced-a9b7689cce71/33d2cf6a-17a8-43d8-8e4d-4b0233bee5d3"
-      (reference "U12") (unit 1) (value "SN74LVC1G32DBVR") (footprint "Bidirectional_Amp:DBV5")
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "84135cda-59d4-4a99-8829-1fd8a8d33d71")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 127 25.4)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "04e0545f-ddc0-4018-960f-884da0dc3614")
+		(property "Sheetname" "LNA and RX Bandpass Filters"
+			(at 127 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LNA_and_RX_Bandpass_Filters.kicad_sch"
+			(at 127 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 76.2)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "430a535d-2c67-4305-9bb4-fd0989f97199")
+		(property "Sheetname" "Power"
+			(at 25.4 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 25.4 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 25.4)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4a15db9f-0219-41d4-a5ec-f2aff6594779")
+		(property "Sheetname" "TX/RX Control"
+			(at 25.4 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TX%2fRX_Control.kicad_sch"
+			(at 25.4 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 25.4)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "67f80b08-5cbc-467e-8cd9-a858382d05ab")
+		(property "Sheetname" "Power Amplifier"
+			(at 76.2 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_Amplifier.kicad_sch"
+			(at 76.2 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 25.4)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7e5299fd-aa18-4645-94fd-363c55fa2d15")
+		(property "Sheetname" "Antenna Select Switch"
+			(at 228.6 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Antenna_Select_Switch.kicad_sch"
+			(at 228.6 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 25.4)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "959d3c1c-7969-4acc-bd57-65a80d79a628")
+		(property "Sheetname" "TX/RX Switch"
+			(at 177.8 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TX%2fRX_Switch.kicad_sch"
+			(at 177.8 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Bidirectional_Amp"
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

@@ -1,889 +1,3496 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid c7335ccf-c114-4670-bb9b-2fe738581c01)
-
-  (paper "A2")
-
-  (lib_symbols
-    (symbol "Bidirectional_Amp-eagle-import:+5V" (power) (in_bom yes) (on_board yes)
-      (property "Reference" "#P+" (id 0) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (id 1) (at -2.54 -5.08 90)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Footprint" "Bidirectional_Amp:" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "+5V_1_0"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy -1.27 -1.905)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.905)
-            (xy 0 0)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (pin power_in line (at 0 -2.54 90) (length 2.54)
-          (name "+5V" (effects (font (size 0 0))))
-          (number "1" (effects (font (size 0 0))))
-        )
-      )
-    )
-    (symbol "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK" (in_bom yes) (on_board yes)
-      (property "Reference" "C" (id 0) (at 1.524 0.381 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Value" "C-EU0402-B-NOSILK" (id 1) (at 1.524 -4.699 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "C-EU0402-B-NOSILK_1_0"
-        (rectangle (start -2.032 -2.032) (end 2.032 -1.524)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type outline))
-        )
-        (rectangle (start -2.032 -1.016) (end 2.032 -0.508)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy 0 -2.032)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -0.508)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (pin passive line (at 0 2.54 270) (length 2.54)
-          (name "1" (effects (font (size 0 0))))
-          (number "1" (effects (font (size 0 0))))
-        )
-        (pin passive line (at 0 -5.08 90) (length 2.54)
-          (name "2" (effects (font (size 0 0))))
-          (number "2" (effects (font (size 0 0))))
-        )
-      )
-    )
-    (symbol "Bidirectional_Amp-eagle-import:GND" (power) (in_bom yes) (on_board yes)
-      (property "Reference" "#SUPPLY" (id 0) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (id 1) (at -1.905 -3.175 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Footprint" "Bidirectional_Amp:" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "GND_1_0"
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy 1.27 0)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy -1.27 0)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (pin power_in line (at 0 2.54 270) (length 2.54)
-          (name "GND" (effects (font (size 0 0))))
-          (number "1" (effects (font (size 0 0))))
-        )
-      )
-    )
-    (symbol "Bidirectional_Amp-eagle-import:QPC1022" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (id 0) (at -20.32 10.16 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Value" "QPC1022" (id 1) (at -20.32 -12.7 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Footprint" "Bidirectional_Amp:QPC1022" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "QPC1022_1_0"
-        (polyline
-          (pts
-            (xy -13.97 -8.89)
-            (xy -13.97 8.89)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -13.97 8.89)
-            (xy 13.97 8.89)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 13.97 -8.89)
-            (xy -13.97 -8.89)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 13.97 8.89)
-            (xy 13.97 -8.89)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (pin power_in line (at 0 -13.97 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 0 0))))
-        )
-        (pin bidirectional line (at -19.05 0 0) (length 5.08)
-          (name "RF_COM" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -13.97 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 0 0))))
-        )
-        (pin bidirectional line (at 19.05 -5.08 180) (length 5.08)
-          (name "RF1" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 5.08 13.97 270) (length 5.08)
-          (name "CTRL" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 0 13.97 270) (length 5.08)
-          (name "EN" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -5.08 13.97 270) (length 5.08)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 19.05 5.08 180) (length 5.08)
-          (name "RF2" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -13.97 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 0 0))))
-        )
-      )
-    )
-    (symbol "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK" (in_bom yes) (on_board yes)
-      (property "Reference" "R" (id 0) (at -3.81 1.4986 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Value" "R-US_0402-B-NOSILK" (id 1) (at -3.81 -3.302 0)
-        (effects (font (size 1.778 1.5113)) (justify left bottom))
-      )
-      (property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "R-US_0402-B-NOSILK_1_0"
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -2.159 1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.159 1.016)
-            (xy -1.524 -1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 -1.016)
-            (xy -0.889 1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.889 1.016)
-            (xy -0.254 -1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.254 -1.016)
-            (xy 0.381 1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.381 1.016)
-            (xy 1.016 -1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.016)
-            (xy 1.651 1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.651 1.016)
-            (xy 2.286 -1.016)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -1.016)
-            (xy 2.54 0)
-          )
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "1" (effects (font (size 0 0))))
-          (number "1" (effects (font (size 0 0))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "2" (effects (font (size 0 0))))
-          (number "2" (effects (font (size 0 0))))
-        )
-      )
-    )
-  )
-
-  (junction (at 163.83 97.79) (diameter 0) (color 0 0 0 0)
-    (uuid 140d0eb0-b351-4d05-9c80-941550e1dece)
-  )
-  (junction (at 125.73 96.52) (diameter 0) (color 0 0 0 0)
-    (uuid 49c055b7-01e1-48d7-9e7a-e99fd5b60bf5)
-  )
-  (junction (at 163.83 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid 6f61b7f1-6f97-449d-9855-231f77064329)
-  )
-  (junction (at 137.16 82.55) (diameter 0) (color 0 0 0 0)
-    (uuid 778f725e-f4ed-46cf-bf2f-d1a6c4ee0d7b)
-  )
-  (junction (at 137.16 96.52) (diameter 0) (color 0 0 0 0)
-    (uuid cc2f772d-66f5-4ef2-bf72-bf4cabe8468e)
-  )
-  (junction (at 125.73 82.55) (diameter 0) (color 0 0 0 0)
-    (uuid cc9a9312-38fc-4d00-b848-012061dcb89c)
-  )
-  (junction (at 125.73 104.14) (diameter 0) (color 0 0 0 0)
-    (uuid e925b71b-8515-40e6-bf4b-cd5d59ed0aa4)
-  )
-
-  (wire (pts (xy 137.16 96.52) (xy 137.16 107.95))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 070e0d81-a149-4bfe-9739-d93b5c04a929)
-  )
-  (wire (pts (xy 165.1 97.79) (xy 163.83 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 082e3919-f056-4fdc-9242-61d00df680f6)
-  )
-  (wire (pts (xy 137.16 82.55) (xy 137.16 96.52))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 2a722e3b-fca7-48c9-bcd2-6b10073f1f23)
-  )
-  (wire (pts (xy 125.73 104.14) (xy 113.03 104.14))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 42334922-2c29-448c-a4d1-8e8058a0b973)
-  )
-  (wire (pts (xy 125.73 96.52) (xy 124.46 96.52))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 43606ef2-14fd-4069-ae54-3abba668fc58)
-  )
-  (wire (pts (xy 127 106.68) (xy 163.83 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 4bf62714-11c6-4848-bc8e-d277bf6e893d)
-  )
-  (wire (pts (xy 163.83 106.68) (xy 163.83 109.22))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 4edec9ef-9965-4702-9134-eb10065af78f)
-  )
-  (wire (pts (xy 163.83 97.79) (xy 163.83 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5b0d194e-8006-4f60-b614-a7daa5913b1a)
-  )
-  (wire (pts (xy 163.83 97.79) (xy 160.02 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5e1cc5ff-95e5-4266-9fe3-7ca3d4246e0d)
-  )
-  (wire (pts (xy 125.73 82.55) (xy 111.76 82.55))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 8118897a-716e-4a85-89b5-b4cc3f6f7315)
-  )
-  (wire (pts (xy 137.16 82.55) (xy 125.73 82.55))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 81bc28fc-d79d-45fd-ace2-0a9b01445cbf)
-  )
-  (wire (pts (xy 113.03 127) (xy 86.36 127))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 878d500e-41a8-4a2f-b3a1-3d4bb11333d8)
-  )
-  (wire (pts (xy 113.03 116.84) (xy 73.66 116.84))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 926e5054-a7db-4302-93ca-21a1590ea448)
-  )
-  (wire (pts (xy 175.26 97.79) (xy 199.39 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 9eff35ec-3de5-4fd4-bf44-234e80c240ea)
-  )
-  (wire (pts (xy 137.16 81.28) (xy 137.16 82.55))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid b0fa1b17-40d6-4888-9106-6a049f5a2ba7)
-  )
-  (wire (pts (xy 132.08 104.14) (xy 132.08 107.95))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ccb01023-5167-4550-bdf3-9f5d286db7e2)
-  )
-  (wire (pts (xy 148.59 97.79) (xy 149.86 97.79))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid cec2c00d-b786-4841-9416-8e713ad0e1ca)
-  )
-  (wire (pts (xy 132.08 137.16) (xy 132.08 135.89))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid d11bdf8f-bc1a-4e02-852a-5ff8ca074f8b)
-  )
-  (wire (pts (xy 114.3 96.52) (xy 113.03 96.52))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid d9578c44-559c-4121-9098-135bc34b67fb)
-  )
-  (wire (pts (xy 127 96.52) (xy 125.73 96.52))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid dba793d2-6772-45fd-ab4a-10b0299ea321)
-  )
-  (wire (pts (xy 125.73 96.52) (xy 125.73 104.14))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid e4825e0a-b389-4078-aca2-eef102d72b5a)
-  )
-  (wire (pts (xy 127 107.95) (xy 127 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid e767caba-e612-4dcc-a078-b1cde1c31e4c)
-  )
-  (wire (pts (xy 125.73 104.14) (xy 132.08 104.14))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid edbbadf1-f3c9-4b1d-a5b1-19178ca2b99b)
-  )
-  (wire (pts (xy 151.13 121.92) (xy 195.58 121.92))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f0c15bb4-4b6d-4194-8150-d6cef8956486)
-  )
-
-  (text "Output to LNAs and Filters" (at 58.928 113.538 180)
-    (effects (font (size 1.778 1.5113)) (justify left bottom))
-    (uuid 36aa1fd7-b18f-4274-a6ae-63297517b6bc)
-  )
-  (text "TX/RX Switching" (at 212.09 205.74 180)
-    (effects (font (size 2.54 2.159)) (justify left bottom))
-    (uuid 3ba273b9-26e1-49e8-8a69-79bbf9c9fb99)
-  )
-  (text "1%" (at 122.428 102.616 180)
-    (effects (font (size 1.778 1.5113)) (justify right bottom))
-    (uuid 72e50c6a-bd2b-46f6-a8a2-af4912f3bbfd)
-  )
-  (text "Input from Power Amplifier" (at 58.42 132.08 180)
-    (effects (font (size 1.778 1.5113)) (justify left bottom))
-    (uuid 81702a78-7d0f-4d80-a531-635ca2b9b5c4)
-  )
-  (text "All passives size 0402 unless\notherwise noted" (at 31.75 213.36 180)
-    (effects (font (size 2.54 2.159)) (justify left bottom))
-    (uuid 83769fbe-00d5-44bf-984c-6bcd6444feac)
-  )
-  (text "1%" (at 173.99 104.14 180)
-    (effects (font (size 1.778 1.5113)) (justify right bottom))
-    (uuid 8aed9946-fbec-4ad9-ad42-a12ea0775cda)
-  )
-  (text "TX/RX Switch" (at 160.02 138.43 180)
-    (effects (font (size 2.54 2.159)) (justify right bottom))
-    (uuid 8ecf5bc6-ac0b-4482-bbd8-f9db21406510)
-  )
-  (text "1%" (at 135.636 102.362 180)
-    (effects (font (size 1.778 1.5113)) (justify right bottom))
-    (uuid b1405261-eb86-47b8-9253-a1825fbfdde1)
-  )
-  (text "To Antenna Select Switch" (at 196.85 118.11 180)
-    (effects (font (size 1.778 1.5113)) (justify left bottom))
-    (uuid c2de7d31-8990-4253-895f-7075df5cf968)
-  )
-  (text "1%" (at 157.988 103.886 180)
-    (effects (font (size 1.778 1.5113)) (justify right bottom))
-    (uuid de656b59-cf48-4e18-86c8-e0ec1cd318a4)
-  )
-  (text "Control Input" (at 204.47 95.25 180)
-    (effects (font (size 1.778 1.5113)) (justify left bottom))
-    (uuid fa57705f-3f48-4b59-8a34-249eed8b27e0)
-  )
-
-  (global_label "TX_RX_COMMON" (shape bidirectional) (at 195.58 121.92 0) (fields_autoplaced)
-    (effects (font (size 1.2446 1.2446)) (justify left))
-    (uuid 25376085-331e-4dfa-8f24-4a8f1f7a65bf)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "RX_IN" (shape bidirectional) (at 73.66 116.84 0) (fields_autoplaced)
-    (effects (font (size 1.2446 1.2446)) (justify left))
-    (uuid 3127e269-87d1-40dd-a113-1194cff0bb16)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 -233.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "TX_RX_CTL" (shape bidirectional) (at 199.39 97.79 180) (fields_autoplaced)
-    (effects (font (size 1.2446 1.2446)) (justify right))
-    (uuid bbcf5189-1ac9-4a49-a73c-c3ac8cc940d8)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 363.22 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PA_MATCH_OUT" (shape bidirectional) (at 86.36 127 0) (fields_autoplaced)
-    (effects (font (size 1.2446 1.2446)) (justify left))
-    (uuid f7b503fc-584c-4aef-a4a9-414ab02a4476)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 -213.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:QPC1022") (at 132.08 121.92 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 05c22087-f0be-4bf7-8f3e-adf8b92618f3)
-    (property "Reference" "U8" (id 0) (at 151.13 114.3 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 152.4 134.62 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 132.08 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 132.08 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3321feb0-e25c-48f1-b417-843cc0d0fc5d))
-    (pin "2" (uuid 48ffa39d-adda-4d9d-99bf-b54fa3fc4beb))
-    (pin "3" (uuid 9c6faf73-17a6-4de9-87e9-d629e939d419))
-    (pin "4" (uuid aaf5283a-c22d-4b03-a805-070b14b8cb76))
-    (pin "5" (uuid b49f564c-98fb-412a-addf-30790a07cc53))
-    (pin "6" (uuid 1b2afd57-d1a0-4fee-a173-2bd4ec4407d2))
-    (pin "7" (uuid 02a08a24-751b-4ad4-b6b1-621603af88cc))
-    (pin "8" (uuid 9cf208e8-00e0-47b5-9285-5ce79e785d0c))
-    (pin "9" (uuid 63420c3c-6801-4759-a776-ff81ba2f37e9))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 132.08 139.7 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 068e0483-275b-46cc-982a-0ff1786c3d41)
-    (property "Reference" "#SUPPLY60" (id 0) (at 132.08 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 133.985 142.875 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 132.08 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 132.08 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a9461d93-f1d1-4497-961f-3d8b4917a96e))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK") (at 154.94 97.79 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 08c9fb3a-987c-44fb-95be-3a52bb335067)
-    (property "Reference" "R27" (id 0) (at 158.75 96.2914 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 158.75 101.092 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 154.94 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 154.94 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 154.94 97.79 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 154.94 97.79 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid a837f2d3-1377-423d-9e05-10ed8bfdd4d3))
-    (pin "2" (uuid a9690b8a-291c-4e4b-9507-2678d734eb14))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK") (at 163.83 111.76 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 1c532554-e3f6-4e01-a2c0-98ff5e46b00d)
-    (property "Reference" "C32" (id 0) (at 159.766 112.649 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 159.766 115.189 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 163.83 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 163.83 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1b6028e0-82f3-4874-9e6d-94f87c957dbf))
-    (pin "2" (uuid 2725b094-0b62-4b60-bf9e-8f5e8ba23cf2))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK") (at 113.03 106.68 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 20cacce9-1b7d-4738-81e3-37a364d9a212)
-    (property "Reference" "C33" (id 0) (at 108.966 107.569 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 108.966 110.109 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 113.03 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 113.03 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 113.03 106.68 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 113.03 106.68 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 0c98809c-a692-42d0-93f2-681cf2e2d1a0))
-    (pin "2" (uuid 6c1a8a3c-f787-40e4-8cd3-77048eeb28fc))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:+5V") (at 137.16 78.74 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 394e1e13-28f8-4ced-a2d9-0b0e847e2ba7)
-    (property "Reference" "#P+10" (id 0) (at 137.16 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 138.43 77.47 90)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 137.16 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 137.16 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1d9f6ec6-e3bc-4477-a158-fdb4e35456c7))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 125.73 92.71 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 4d7b40ad-9283-4faf-8a3d-826e75194715)
-    (property "Reference" "#SUPPLY57" (id 0) (at 125.73 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 127.635 95.885 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 125.73 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 125.73 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b747b346-728a-4375-a6c4-7daa541af23d))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 111.76 92.71 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 56486356-64f4-4148-b335-6b45c342341d)
-    (property "Reference" "#SUPPLY55" (id 0) (at 111.76 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 113.665 95.885 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 111.76 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 111.76 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4a8a7ae8-e1f4-43bc-bf27-d27128fb055b))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 148.59 100.33 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 5dfe42c6-01b7-4abd-b9a5-6c91c2956ce9)
-    (property "Reference" "#SUPPLY56" (id 0) (at 148.59 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 150.495 103.505 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 148.59 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 148.59 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e8d10dd9-8704-49a4-a13d-a15e386d14a6))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK") (at 111.76 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 77a39290-cbef-4417-92dd-bd19a64a03da)
-    (property "Reference" "C31" (id 0) (at 107.696 85.979 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 107.696 88.519 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 111.76 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 111.76 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 111.76 85.09 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 111.76 85.09 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 8a20e107-c777-4cf0-8e5c-d18e3f660c5d))
-    (pin "2" (uuid ce4ba6fd-3071-4764-967a-ee436749fde0))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 113.03 114.3 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 844915b2-b6e7-4758-945e-f5b5342afdba)
-    (property "Reference" "#SUPPLY62" (id 0) (at 113.03 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 114.935 117.475 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 113.03 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 113.03 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 67c46f8a-8ebb-479c-86bc-a810cd66bb92))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK") (at 125.73 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 9ad5defa-c581-4f70-9c55-cd0f30004b84)
-    (property "Reference" "C30" (id 0) (at 121.666 85.979 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 121.666 88.519 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 125.73 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 125.73 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 125.73 85.09 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 125.73 85.09 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 2c7c1079-e048-49db-adf7-4d95f85bdc35))
-    (pin "2" (uuid e7f4acb8-f855-4a3a-9929-0e8677706c0e))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 163.83 119.38 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 9ecd62a1-028b-4302-8a84-a4e34c950174)
-    (property "Reference" "#SUPPLY61" (id 0) (at 163.83 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 165.735 122.555 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 163.83 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 163.83 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid aa278a0d-9aaa-400e-a711-4ffb24eae2b6))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK") (at 132.08 96.52 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 9ef2c0bd-0176-4f0e-b213-c48663ceb734)
-    (property "Reference" "R24" (id 0) (at 135.89 95.0214 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 135.89 99.822 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 132.08 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 132.08 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 132.08 96.52 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 132.08 96.52 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 4770ef60-21bb-4d72-93b1-855cef6e8fb9))
-    (pin "2" (uuid 209b39ed-1521-46f3-985b-6f682af8a636))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK") (at 119.38 96.52 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid a001f9b3-d55c-45e5-82b3-54c3c57f50f4)
-    (property "Reference" "R25" (id 0) (at 123.19 95.0214 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 123.19 99.822 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 119.38 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 119.38 96.52 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 119.38 96.52 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 207c4811-314a-47bb-ae18-2f9379831b81))
-    (pin "2" (uuid cc4f0b33-ccfd-419b-9659-a88488fda9d5))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK") (at 170.18 97.79 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid bb96a9d3-a014-46a3-a2c6-1b7e39aeeaa1)
-    (property "Reference" "R26" (id 0) (at 173.99 96.2914 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Value" "" (id 1) (at 173.99 101.092 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom))
-    )
-    (property "Footprint" "" (id 2) (at 170.18 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 170.18 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 170.18 97.79 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Value" "" (id 1) (at 170.18 97.79 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 4001bfeb-6931-41ed-964c-6ab4ad04afff))
-    (pin "2" (uuid 702a88a3-43ee-4616-860f-1d168f9ca33a))
-  )
-
-  (symbol (lib_id "Bidirectional_Amp-eagle-import:GND") (at 113.03 99.06 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid c93092f3-ad93-4616-a7d6-461e3ba02b31)
-    (property "Reference" "#SUPPLY54" (id 0) (at 113.03 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "" (id 1) (at 114.935 102.235 0)
-      (effects (font (size 1.778 1.5113)) (justify left bottom) hide)
-    )
-    (property "Footprint" "" (id 2) (at 113.03 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 113.03 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18c97c17-4686-4762-ac2f-547b5b999ca9))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "46bdc7fa-cd20-4fc4-8136-6305073c54f9")
+	(paper "User" 317.5 254.127)
+	(lib_symbols
+		(symbol "Bidirectional_Amp-eagle-import:+5V"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#P+"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -5.08 90)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_1_0"
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.27 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "+5V"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 1.524 0.381 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at 1.524 -4.699 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CAPACITOR, European symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C-EU0402-B-NOSILK_1_0"
+				(rectangle
+					(start -2.032 -2.032)
+					(end 2.032 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.032 -1.016)
+					(end 2.032 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bidirectional_Amp-eagle-import:FRAME_A_L"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FRAME"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "FRAME A Size , 8 1/2 x 11 INCH, Landscape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FRAME_A_L_1_0"
+				(polyline
+					(pts
+						(xy 0 43.18) (xy 3.81 43.18)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 86.36) (xy 3.81 86.36)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 129.54) (xy 3.81 129.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 172.72) (xy 3.81 172.72)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 3.81 212.09)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 46.5667 0) (xy 46.5667 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 93.1333 0) (xy 93.1333 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 139.7 0) (xy 139.7 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 186.2667 0) (xy 186.2667 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 232.8333 0) (xy 232.8333 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 3.81) (xy 275.59 212.09)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 43.18) (xy 279.4 43.18)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 86.36) (xy 279.4 86.36)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 129.54) (xy 279.4 129.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 172.72) (xy 279.4 172.72)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 275.59 212.09) (xy 3.81 212.09)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 279.4 0) (xy 279.4 215.9) (xy 0 215.9) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "1"
+					(at 23.2833 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "2"
+					(at 69.85 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "3"
+					(at 116.4167 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "4"
+					(at 162.9833 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "5"
+					(at 209.55 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "6"
+					(at 256.1167 213.995 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "A"
+					(at 1.905 194.31 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "A"
+					(at 277.495 194.31 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "B"
+					(at 1.905 151.13 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "B"
+					(at 277.495 151.13 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "C"
+					(at 1.905 107.95 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "C"
+					(at 277.495 107.95 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "D"
+					(at 1.905 64.77 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "D"
+					(at 277.495 64.77 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "E"
+					(at 1.905 21.59 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+				(text "E"
+					(at 277.495 21.59 0)
+					(effects
+						(font
+							(size 2.54 2.286)
+						)
+					)
+				)
+			)
+			(symbol "FRAME_A_L_2_0"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 71.12 0)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 15.24)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 71.12 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 15.24) (xy 0 22.86)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 22.86) (xy 0 35.56)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 22.86) (xy 101.6 22.86)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 71.12 0) (xy 101.6 0)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 71.12 5.08) (xy 71.12 0)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 71.12 5.08) (xy 87.63 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 87.63 5.08) (xy 101.6 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 87.63 15.24) (xy 0 15.24)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 87.63 15.24) (xy 87.63 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 5.08) (xy 101.6 0)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 15.24) (xy 87.63 15.24)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 15.24) (xy 101.6 5.08)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 22.86) (xy 101.6 15.24)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 35.56) (xy 0 35.56)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 101.6 35.56) (xy 101.6 22.86)
+					)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "${#}/${##}"
+					(at 86.36 1.27 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "${CURRENT_DATE}"
+					(at 12.7 1.27 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "${PROJECTNAME}"
+					(at 17.78 19.05 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "Date:"
+					(at 1.27 1.27 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "Document Number:"
+					(at 1.27 11.43 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "REV:"
+					(at 88.9 11.43 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "Sheet:"
+					(at 72.39 1.27 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "TITLE:"
+					(at 1.27 19.05 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+			)
+		)
+		(symbol "Bidirectional_Amp-eagle-import:GND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at -1.905 -3.175 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_1_0"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bidirectional_Amp-eagle-import:QPC1022"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -20.32 10.16 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -20.32 -12.7 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Bidirectional_Amp:QPC1022"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "QPC1022_1_0"
+				(polyline
+					(pts
+						(xy -13.97 -8.89) (xy -13.97 8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -13.97 8.89) (xy 13.97 8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 13.97 -8.89) (xy -13.97 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 13.97 8.89) (xy 13.97 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -13.97 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -19.05 0 0)
+					(length 5.08)
+					(name "RF_COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -13.97 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 19.05 -5.08 180)
+					(length 5.08)
+					(name "RF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 5.08 13.97 270)
+					(length 5.08)
+					(name "CTRL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 13.97 270)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 13.97 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 19.05 5.08 180)
+					(length 5.08)
+					(name "RF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -13.97 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at -3.81 1.4986 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -3.81 -3.302 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RESISTOR, American symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R-US_0402-B-NOSILK_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.159 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.159 1.016) (xy -1.524 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -1.016) (xy -0.889 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.016) (xy 0.381 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy 1.651 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 1.016) (xy 2.286 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.016) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 163.83 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "023b1497-01aa-4efa-ae59-b974a63d9d42")
+	)
+	(junction
+		(at 125.73 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "135f641c-07f2-48f6-ab54-637d96c10a22")
+	)
+	(junction
+		(at 137.16 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "411eda51-ece2-436c-a9da-30c73d22896f")
+	)
+	(junction
+		(at 125.73 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6846a300-2af4-4e5d-84dd-16985d798b78")
+	)
+	(junction
+		(at 125.73 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "791306d2-917d-493f-8a39-319faba8f0fb")
+	)
+	(junction
+		(at 163.83 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "978a290e-bad6-4b0e-a85a-4082dd07f979")
+	)
+	(junction
+		(at 137.16 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5208f11-b9ee-416d-a077-7f34ae5cf27c")
+	)
+	(wire
+		(pts
+			(xy 137.16 82.55) (xy 125.73 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "095a577b-a95a-4e04-8122-a0961bf2b31d")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 132.08 104.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "281b60b7-e506-4207-8162-64458f645dcf")
+	)
+	(wire
+		(pts
+			(xy 113.03 127) (xy 86.36 127)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "30e74283-3c15-4113-a2c9-94fcc9ddf63b")
+	)
+	(wire
+		(pts
+			(xy 163.83 97.79) (xy 163.83 106.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3ad66a6b-e192-44c3-8a0b-f95ce0f24a28")
+	)
+	(wire
+		(pts
+			(xy 127 106.68) (xy 163.83 106.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3d63972c-4d12-4c79-8016-5c9b925570e6")
+	)
+	(wire
+		(pts
+			(xy 125.73 96.52) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4f47fa31-73f0-48e4-a692-c338fc6cba89")
+	)
+	(wire
+		(pts
+			(xy 114.3 96.52) (xy 113.03 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5034c9f2-bd5e-4ce1-ad54-d36da6116d6a")
+	)
+	(wire
+		(pts
+			(xy 125.73 96.52) (xy 125.73 104.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6e7a34b5-47b9-4ef9-ac12-38e7e9db26d8")
+	)
+	(wire
+		(pts
+			(xy 151.13 121.92) (xy 195.58 121.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "86248fcd-257a-4927-ad2a-6e8c3eb3da6c")
+	)
+	(wire
+		(pts
+			(xy 175.26 97.79) (xy 199.39 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ae797bea-ceaf-4a7a-a0ca-3112c8b03fc3")
+	)
+	(wire
+		(pts
+			(xy 127 107.95) (xy 127 106.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b030e4d5-f2bd-4625-96e9-2227e14e1f63")
+	)
+	(wire
+		(pts
+			(xy 163.83 97.79) (xy 160.02 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b56336fb-352d-4234-b3eb-c1b937d573ed")
+	)
+	(wire
+		(pts
+			(xy 113.03 116.84) (xy 73.66 116.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ceee13af-4920-4d06-98d5-c63145facf17")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 113.03 104.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d8d237cf-ad7f-4c40-8720-88e14f900be9")
+	)
+	(wire
+		(pts
+			(xy 163.83 106.68) (xy 163.83 109.22)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dba3e9f2-4de1-4191-a1bb-2001f78ef72c")
+	)
+	(wire
+		(pts
+			(xy 165.1 97.79) (xy 163.83 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dfcf670f-7b34-4002-a5fc-8521fbbd6ce6")
+	)
+	(wire
+		(pts
+			(xy 127 96.52) (xy 125.73 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e1b37aba-9d0e-470a-8fee-b4f61a0672f0")
+	)
+	(wire
+		(pts
+			(xy 125.73 82.55) (xy 111.76 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e240eb55-5038-43ff-83ef-9f6637c053e5")
+	)
+	(wire
+		(pts
+			(xy 132.08 104.14) (xy 132.08 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e25fcf40-de3a-402a-baca-fcea75078a5d")
+	)
+	(wire
+		(pts
+			(xy 137.16 81.28) (xy 137.16 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e92c21ac-a2da-43d5-b512-5bab5159d0ef")
+	)
+	(wire
+		(pts
+			(xy 137.16 96.52) (xy 137.16 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ea8a42ae-f1a3-4e37-b0ab-7b8731ebfaa5")
+	)
+	(wire
+		(pts
+			(xy 132.08 137.16) (xy 132.08 135.89)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "eb21ab5b-ea70-4a85-800a-f5745df6234e")
+	)
+	(wire
+		(pts
+			(xy 148.59 97.79) (xy 149.86 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "eb2595eb-d42e-45fb-a166-9b345062c62f")
+	)
+	(wire
+		(pts
+			(xy 137.16 82.55) (xy 137.16 96.52)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "fd6cf352-a446-4391-b5b9-af8cdbd0c885")
+	)
+	(text "TX/RX Switching"
+		(exclude_from_sim no)
+		(at 212.09 205.74 0)
+		(effects
+			(font
+				(size 2.54 2.159)
+			)
+			(justify left bottom)
+		)
+		(uuid "100de8c8-0265-41d3-a662-7a34568b6c26")
+	)
+	(text "1%"
+		(exclude_from_sim no)
+		(at 135.636 102.362 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify right bottom)
+		)
+		(uuid "1f9b930f-917d-48d3-ae47-85cdd3d811b0")
+	)
+	(text "1%"
+		(exclude_from_sim no)
+		(at 173.99 104.14 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify right bottom)
+		)
+		(uuid "2b7ee760-a403-466a-8bb8-d87d33a86dd1")
+	)
+	(text "Output to LNAs and Filters"
+		(exclude_from_sim no)
+		(at 58.928 113.538 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "3187de72-ab93-4b2d-bda8-569cf670e767")
+	)
+	(text "Control Input"
+		(exclude_from_sim no)
+		(at 204.47 95.25 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "31c94137-2b80-4875-9e6c-32bbf5b53486")
+	)
+	(text "All passives size 0402 unless\notherwise noted"
+		(exclude_from_sim no)
+		(at 31.75 213.36 0)
+		(effects
+			(font
+				(size 2.54 2.159)
+			)
+			(justify left bottom)
+		)
+		(uuid "430db391-7693-46c6-b791-7531037c2e92")
+	)
+	(text "1%"
+		(exclude_from_sim no)
+		(at 157.988 103.886 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify right bottom)
+		)
+		(uuid "5b4a45d8-22dd-4b5f-affa-2eba27e5ab5b")
+	)
+	(text "Input from Power Amplifier"
+		(exclude_from_sim no)
+		(at 58.42 132.08 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "62b0efe5-7e21-4e9f-8cdb-379b45c40c0c")
+	)
+	(text "TX/RX Switch"
+		(exclude_from_sim no)
+		(at 160.02 138.43 0)
+		(effects
+			(font
+				(size 2.54 2.159)
+			)
+			(justify right bottom)
+		)
+		(uuid "6689c92a-2d69-483f-9655-ea442a9d8b00")
+	)
+	(text "To Antenna Select Switch"
+		(exclude_from_sim no)
+		(at 196.85 118.11 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "6aabf334-b255-4dfa-b9ef-ecfe7b57769b")
+	)
+	(text "1%"
+		(exclude_from_sim no)
+		(at 122.428 102.616 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify right bottom)
+		)
+		(uuid "da59a563-b903-472f-9e49-743dfa8ca475")
+	)
+	(global_label "TX_RX_CTL"
+		(shape bidirectional)
+		(at 199.39 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify right)
+		)
+		(uuid "3d0de5ac-d7a6-4b79-816c-fa2a9b7d4fbd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.7153 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA_MATCH_OUT"
+		(shape bidirectional)
+		(at 86.36 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left)
+		)
+		(uuid "65868ed8-8c1f-439f-863b-dc33aa3cdd04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.1243 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX_IN"
+		(shape bidirectional)
+		(at 73.66 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left)
+		)
+		(uuid "7e34e553-fa41-4469-b501-9eaf3f33f477")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.949 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TX_RX_COMMON"
+		(shape bidirectional)
+		(at 195.58 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left)
+		)
+		(uuid "dd42c2d9-d517-4af6-99f8-9ca3eade4af6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.0554 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 113.03 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13f52b35-0219-4fe1-be73-19ca69f41fc5")
+		(property "Reference" "#SUPPLY62"
+			(at 113.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.935 117.475 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2cfe761-4751-46a1-86bd-fd8a37749e36")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK")
+		(at 132.08 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17405232-8b76-4dc8-a9bd-cc47ae026bbd")
+		(property "Reference" "R24"
+			(at 135.89 95.0214 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "R-US_0402-B-NOSILK"
+			(at 135.89 99.822 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1002X"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef669e14-e7f4-442a-8a7a-7a70a9244111")
+		)
+		(pin "2"
+			(uuid "bd3ee5c5-01c5-4790-8073-984c18ebd8cc")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK")
+		(at 111.76 85.09 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2825a8da-a8c0-4a24-ab34-f12f70d358e8")
+		(property "Reference" "C31"
+			(at 107.696 85.979 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "C-EU0402-B-NOSILK"
+			(at 107.696 88.519 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 111.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation"
+			(at 111.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CGA2B1X7R1C104K050BC"
+			(at 111.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac8f2ca4-2639-4034-9754-d121e565eb1f")
+		)
+		(pin "2"
+			(uuid "e941ad8c-9e0e-4af4-a443-fd25c66fb445")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 113.03 99.06 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b93f806-5e06-4bd4-879a-0dcdeb8ae4d2")
+		(property "Reference" "#SUPPLY54"
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.935 102.235 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d25bbc1e-d272-4c29-8d87-4774a687865c")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK")
+		(at 125.73 85.09 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "503f4404-31cf-43a5-97cc-04062931a775")
+		(property "Reference" "C30"
+			(at 121.666 85.979 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "C-EU0402-B-NOSILK"
+			(at 121.666 88.519 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata"
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H101JA16D "
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebf3e9ee-a5c6-4419-96fe-212f00e16ca3")
+		)
+		(pin "2"
+			(uuid "845f5a6a-2c6a-4f87-b887-77a935c3b83d")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK")
+		(at 170.18 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61a879f3-1fca-48d6-b754-e1f11b56035f")
+		(property "Reference" "R26"
+			(at 173.99 96.2914 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "R-US_0402-B-NOSILK"
+			(at 173.99 101.092 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic"
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1002X"
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d626dc83-1a6e-4def-a885-97b1bae25c7c")
+		)
+		(pin "2"
+			(uuid "862b7665-3f6f-46b5-b675-7df9cee0d7b8")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK")
+		(at 154.94 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b529932-c9ec-4880-993b-e80401026b68")
+		(property "Reference" "R27"
+			(at 158.75 96.2914 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "R-US_0402-B-NOSILK"
+			(at 158.75 101.092 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF5621X"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f60173c-bb51-4c78-93f3-9e175d1389d6")
+		)
+		(pin "2"
+			(uuid "99a8ebbe-d946-4a08-b5a7-ca24954a91e1")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 125.73 92.71 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "703b923a-2d5a-42ad-8274-ac0a98af67a0")
+		(property "Reference" "#SUPPLY57"
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127.635 95.885 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6357753-a44e-44f3-8f5e-e4460e336ed2")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 148.59 100.33 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c386399-1add-4e36-8255-94d269de3bb1")
+		(property "Reference" "#SUPPLY56"
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 150.495 103.505 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e07e214d-59c2-443d-894c-799eecc7482f")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 132.08 139.7 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e35802d-f592-4a43-a9a2-16f94269b51f")
+		(property "Reference" "#SUPPLY60"
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.985 142.875 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "145649e2-136d-42c1-b4ff-750f000299f4")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:QPC1022")
+		(at 132.08 121.92 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e4f0477-efcf-40e4-b226-21d6096eaa7d")
+		(property "Reference" "U8"
+			(at 151.13 114.3 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "QPC1022"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:QPC1022"
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df596ce2-8c96-486d-a700-1b24aafe07cc")
+		)
+		(pin "2"
+			(uuid "32f37fa7-07de-4137-9644-ffeb17f2d7f7")
+		)
+		(pin "3"
+			(uuid "8459617d-c686-4c04-9905-351b168c7985")
+		)
+		(pin "4"
+			(uuid "45e5189c-5ebf-4ac8-aee7-d9ae3f6b0889")
+		)
+		(pin "5"
+			(uuid "76dce59f-2a92-46a9-bcef-ae80f03171d1")
+		)
+		(pin "6"
+			(uuid "50a64b26-2f5e-422e-b8dc-955f0942dd14")
+		)
+		(pin "7"
+			(uuid "3bc90032-717c-444d-bbf0-8f8864edbd42")
+		)
+		(pin "8"
+			(uuid "7f603aef-55eb-4251-b390-2d7fe9fed35f")
+		)
+		(pin "9"
+			(uuid "db54c110-7e3f-40ed-ab6d-5a104e55382a")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:FRAME_A_L")
+		(at 17.78 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "991c7931-9471-4545-8ec8-d95493d3a93f")
+		(property "Reference" "#FRAME5"
+			(at 17.78 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FRAME_A_L"
+			(at 17.78 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 17.78 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#FRAME5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:+5V")
+		(at 137.16 78.74 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd75b062-264a-478c-9670-39a6d4854a5b")
+		(property "Reference" "#P+10"
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 138.43 77.47 90)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f413c70-979f-42c3-972d-c71c02f4d563")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#P+10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK")
+		(at 113.03 106.68 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bff1d9d5-37c0-426a-85ff-612f9cf82202")
+		(property "Reference" "C33"
+			(at 108.966 107.569 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "C-EU0402-B-NOSILK"
+			(at 108.966 110.109 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata"
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H101JA16D "
+			(at 113.03 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d60d0250-1255-422a-8298-9fe15636da3e")
+		)
+		(pin "2"
+			(uuid "86fac0ee-6e89-4a11-91e6-7708b971621e")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:R-US_0402-B-NOSILK")
+		(at 119.38 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d494b539-b9a9-408d-be92-1a801c9a60b0")
+		(property "Reference" "R25"
+			(at 123.19 95.0214 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "R-US_0402-B-NOSILK"
+			(at 123.19 99.822 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF5621X"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b689e449-fd4d-4af7-9e39-acf0f974d9ef")
+		)
+		(pin "2"
+			(uuid "e6442048-305c-41a9-ad74-14771b14ea54")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 111.76 92.71 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4d08a26-ae97-4da6-8767-f76f4abeea2e")
+		(property "Reference" "#SUPPLY55"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.665 95.885 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c11f7b6-324e-425f-93a9-ee4039a7a4a9")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:GND")
+		(at 163.83 119.38 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de8cc00d-2593-4598-b171-59e0b95732ee")
+		(property "Reference" "#SUPPLY61"
+			(at 163.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.735 122.555 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00a753cb-7506-4c25-a20f-637eb58b9cc2")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#SUPPLY61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:FRAME_A_L")
+		(at 190.5 233.68 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f036e83e-944d-4d73-add1-8f1a82c91479")
+		(property "Reference" "#FRAME5"
+			(at 190.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FRAME_A_L"
+			(at 190.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "#FRAME5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Bidirectional_Amp-eagle-import:C-EU0402-B-NOSILK")
+		(at 163.83 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f09c5e1c-e8b2-4abd-ac45-678a4fd5cdb2")
+		(property "Reference" "C32"
+			(at 159.766 112.649 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "C-EU0402-B-NOSILK"
+			(at 159.766 115.189 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bidirectional_Amp:.0402-B-NOSILK"
+			(at 163.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bc5b8f9-f824-4b92-923c-9b1d2231d0de")
+		)
+		(pin "2"
+			(uuid "e166b1b1-f8f2-47b6-a362-5b26294077d4")
+		)
+		(instances
+			(project ""
+				(path "/84135cda-59d4-4a99-8829-1fd8a8d33d71/959d3c1c-7969-4acc-bd57-65a80d79a628"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
