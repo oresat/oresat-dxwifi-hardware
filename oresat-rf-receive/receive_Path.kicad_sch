@@ -3437,7 +3437,29 @@
 		)
 		(uuid "fe378942-f45e-434f-aa10-141629e33b78")
 	)
-	(label "RF_OUT"
+	(label "RF_LNA1_OUT1"
+		(at 116.84 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05f40226-fa61-4356-9de9-941c800d4808")
+	)
+	(label "RF_ATTEN1_OUT1"
+		(at 161.29 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c205b65-fffe-41f4-995e-9dd18a18e631")
+	)
+	(label "RF_OUT1"
 		(at 349.25 105.41 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3447,6 +3469,50 @@
 			(justify left bottom)
 		)
 		(uuid "152ef6cb-8215-4b6d-9445-84608fc04059")
+	)
+	(label "RF_BPF_OUT2"
+		(at 76.2 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ebc8422-1531-4d17-9848-1fbc27f42e49")
+	)
+	(label "RF_IN"
+		(at 22.86 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e91cacd-a351-4dd9-a1e7-ece9f5e7c4db")
+	)
+	(label "RF_ATTEN2_OUT1"
+		(at 226.06 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4695205d-30a4-476d-abfe-bf04ae8f61ba")
+	)
+	(label "RF_BPF2_OUT"
+		(at 199.39 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52209cda-3720-40c2-bd72-733dba530992")
 	)
 	(label "PWR_DET_OUT"
 		(at 374.65 135.89 0)
@@ -3459,8 +3525,8 @@
 		)
 		(uuid "719b6441-58a6-441b-8cb7-ba33e7765973")
 	)
-	(label "RF_IN"
-		(at 22.86 107.95 0)
+	(label "RF_ATTEN2_OUT2"
+		(at 299.72 107.95 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3468,7 +3534,62 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "cd3b6425-1ff7-471e-8867-ce98b508d1db")
+		(uuid "812a6f8d-bdca-4307-96b8-f76b76abcf81")
+	)
+	(label "RF_ATTEN2_OUT2"
+		(at 238.76 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "deb74262-0c11-4dc1-81ba-587086fce8fd")
+	)
+	(label "PWR_DET_IN"
+		(at 335.28 116.84 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e5fd1328-a362-4f2f-9287-f41ff20531f7")
+	)
+	(label "RF_BPF_OUT1"
+		(at 63.5 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9727187-7ab1-48dd-a064-183eada8c334")
+	)
+	(label "RF_LNA1_OUT2"
+		(at 134.62 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef5c3aaf-d4d8-4338-8c19-543586d47908")
+	)
+	(label "RF_ATTEN2_OUT1"
+		(at 279.4 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4e5d548-0d4a-4a54-84ec-9875a21c2f61")
 	)
 	(symbol
 		(lib_id "RF:PAT1220-C-3DB")
@@ -3574,7 +3695,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U4")
 					(unit 1)
@@ -3686,7 +3807,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C1")
 					(unit 1)
@@ -3759,7 +3880,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR012")
 					(unit 1)
@@ -3831,7 +3952,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA05")
 					(unit 1)
@@ -3904,7 +4025,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR013")
 					(unit 1)
@@ -4015,7 +4136,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C10")
 					(unit 1)
@@ -4127,7 +4248,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U2")
 					(unit 1)
@@ -4200,7 +4321,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR014")
 					(unit 1)
@@ -4273,7 +4394,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR020")
 					(unit 1)
@@ -4384,7 +4505,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C11")
 					(unit 1)
@@ -4495,7 +4616,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C2")
 					(unit 1)
@@ -4568,7 +4689,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR09")
 					(unit 1)
@@ -4641,7 +4762,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR06")
 					(unit 1)
@@ -4714,7 +4835,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR02")
 					(unit 1)
@@ -4787,7 +4908,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR04")
 					(unit 1)
@@ -4898,7 +5019,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C8")
 					(unit 1)
@@ -5009,7 +5130,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "R3")
 					(unit 1)
@@ -5082,7 +5203,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR07")
 					(unit 1)
@@ -5206,7 +5327,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U6")
 					(unit 1)
@@ -5278,7 +5399,7 @@
 			(uuid "803f355b-1372-47e5-9889-efb246af0f12")
 		)
 		(instances
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "J6")
 					(unit 1)
@@ -5389,7 +5510,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C5")
 					(unit 1)
@@ -5500,7 +5621,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C3")
 					(unit 1)
@@ -5621,7 +5742,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U7")
 					(unit 1)
@@ -5694,7 +5815,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR010")
 					(unit 1)
@@ -5767,7 +5888,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR08")
 					(unit 1)
@@ -5838,7 +5959,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA07")
 					(unit 1)
@@ -5911,7 +6032,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR01")
 					(unit 1)
@@ -6022,7 +6143,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "R5")
 					(unit 1)
@@ -6165,7 +6286,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR015")
 					(unit 1)
@@ -6238,7 +6359,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR018")
 					(unit 1)
@@ -6350,7 +6471,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "L2")
 					(unit 1)
@@ -6461,7 +6582,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C9")
 					(unit 1)
@@ -6572,7 +6693,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C6")
 					(unit 1)
@@ -6644,7 +6765,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA01")
 					(unit 1)
@@ -6717,7 +6838,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR019")
 					(unit 1)
@@ -6837,7 +6958,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U3")
 					(unit 1)
@@ -6948,7 +7069,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C7")
 					(unit 1)
@@ -7020,7 +7141,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA02")
 					(unit 1)
@@ -7132,7 +7253,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "L1")
 					(unit 1)
@@ -7253,7 +7374,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "FL1")
 					(unit 1)
@@ -7364,7 +7485,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "R1")
 					(unit 1)
@@ -7475,7 +7596,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "R4")
 					(unit 1)
@@ -7548,7 +7669,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR03")
 					(unit 1)
@@ -7621,7 +7742,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR05")
 					(unit 1)
@@ -7754,7 +7875,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U1")
 					(unit 1)
@@ -7825,7 +7946,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA06")
 					(unit 1)
@@ -7936,7 +8057,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "R2")
 					(unit 1)
@@ -8008,7 +8129,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA03")
 					(unit 1)
@@ -8129,7 +8250,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "FL2")
 					(unit 1)
@@ -8241,7 +8362,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "J3")
 					(unit 1)
@@ -8352,7 +8473,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "J5")
 					(unit 1)
@@ -8425,7 +8546,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR017")
 					(unit 1)
@@ -8498,7 +8619,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR022")
 					(unit 1)
@@ -8571,7 +8692,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR021")
 					(unit 1)
@@ -8644,7 +8765,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR016")
 					(unit 1)
@@ -8716,7 +8837,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#5VA04")
 					(unit 1)
@@ -8789,7 +8910,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "#PWR011")
 					(unit 1)
@@ -8922,7 +9043,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "U5")
 					(unit 1)
@@ -9040,7 +9161,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "J2")
 					(unit 1)
@@ -9151,7 +9272,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "receive_Path"
 				(path "/7b213b9d-ec60-40bb-9d89-aeb6916c3ceb"
 					(reference "C4")
 					(unit 1)
