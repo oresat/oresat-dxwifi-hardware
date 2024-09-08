@@ -2586,6 +2586,12 @@
 		(uuid "5f27fdf8-a332-432b-be23-ace4e60889b2")
 	)
 	(junction
+		(at 224.79 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63b53f7d-37e6-469c-974d-48c948e2980f")
+	)
+	(junction
 		(at 198.12 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2596,12 +2602,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c9b9d6d-f28c-42a5-befd-96e41b2d3e88")
-	)
-	(junction
-		(at 180.34 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cd94c44-d149-4079-9820-3a3714e0bd62")
 	)
 	(junction
 		(at 128.27 81.28)
@@ -2659,7 +2659,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 181.61) (xy 224.79 181.61)
+			(xy 208.28 181.61) (xy 210.82 181.61)
 		)
 		(stroke
 			(width 0)
@@ -2959,16 +2959,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 137.16) (xy 224.79 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f150193-72c2-4157-aac5-8ff345bd3563")
-	)
-	(wire
-		(pts
 			(xy 317.5 119.38) (xy 320.04 119.38)
 		)
 		(stroke
@@ -2999,7 +2989,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 137.16) (xy 180.34 137.16)
+			(xy 77.47 137.16) (xy 224.79 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3159,16 +3149,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 139.7) (xy 180.34 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c863487-cda0-4440-94b4-9aaa0eb69387")
-	)
-	(wire
-		(pts
 			(xy 52.07 147.32) (xy 52.07 149.86)
 		)
 		(stroke
@@ -3209,7 +3189,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 151.13) (xy 180.34 149.86)
+			(xy 224.79 193.04) (xy 224.79 191.77)
 		)
 		(stroke
 			(width 0)
@@ -3559,7 +3539,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 137.16) (xy 224.79 163.83)
+			(xy 224.79 137.16) (xy 224.79 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3589,16 +3569,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 181.61) (xy 224.79 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2e77f9f-3699-4816-9b21-6d11b786ce80")
-	)
-	(wire
-		(pts
 			(xy 36.83 152.4) (xy 40.64 152.4)
 		)
 		(stroke
@@ -3616,6 +3586,16 @@
 			(type default)
 		)
 		(uuid "e8674993-dcc5-4109-a562-5f27e28a8646")
+	)
+	(wire
+		(pts
+			(xy 220.98 181.61) (xy 224.79 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e90dda28-f7c4-4829-98ea-3129b9ac7b96")
 	)
 	(wire
 		(pts
@@ -3696,6 +3676,16 @@
 			(type default)
 		)
 		(uuid "fe378942-f45e-434f-aa10-141629e33b78")
+	)
+	(text "5V from lab power supply"
+		(exclude_from_sim no)
+		(at 29.718 141.224 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "75bae8eb-8a81-4041-8a02-e998615a3a9a")
 	)
 	(label "RF_LNA1_OUT1"
 		(at 116.84 107.95 90)
@@ -4077,7 +4067,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 151.13 0)
+		(at 224.79 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4086,7 +4076,7 @@
 		(fields_autoplaced yes)
 		(uuid "0843742e-c7f1-48e3-a53e-fc25813c1616")
 		(property "Reference" "#PWR022"
-			(at 180.34 157.48 0)
+			(at 224.79 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,7 +4085,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 156.21 0)
+			(at 224.79 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4104,7 +4094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 151.13 0)
+			(at 224.79 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +4103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 151.13 0)
+			(at 224.79 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4122,7 +4112,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 151.13 0)
+			(at 224.79 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5289,7 +5279,7 @@
 	)
 	(symbol
 		(lib_id "oresat-passives:R-US")
-		(at 180.34 144.78 90)
+		(at 224.79 186.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5297,7 +5287,7 @@
 		(dnp no)
 		(uuid "34ebb2d8-eae1-49fd-9ff2-63ac7a1eaacb")
 		(property "Reference" "R87"
-			(at 178.8414 148.59 0)
+			(at 223.2914 190.5 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5306,7 +5296,7 @@
 			)
 		)
 		(property "Value" "33K"
-			(at 183.642 148.59 0)
+			(at 228.092 190.5 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5315,7 +5305,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C-NOSILK"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5324,7 +5314,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5333,7 +5323,7 @@
 			)
 		)
 		(property "Description" "RES SMD 33K OHM 5% 1/10W 0603"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5342,7 +5332,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5351,7 +5341,7 @@
 			)
 		)
 		(property "MPN" "ERJ-3GEYJ333V"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5360,7 +5350,7 @@
 			)
 		)
 		(property "MFR" "Panasonic Electronic Components"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5369,7 +5359,7 @@
 			)
 		)
 		(property "DPN" "P33KGCT-ND"
-			(at 180.34 144.78 0)
+			(at 224.79 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5604,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_Coaxial_142-0711-201"
+		(property "Value" "142-0711-201"
 			(at 16.8274 104.14 0)
 			(effects
 				(font
@@ -7188,7 +7178,7 @@
 		(dnp no)
 		(uuid "8a9d4846-703b-451f-a358-37498002ddd9")
 		(property "Reference" "U28"
-			(at 200.66 195.58 0)
+			(at 192.786 167.894 0)
 			(effects
 				(font
 					(size 2.0828 1.7703)
@@ -7197,7 +7187,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1G32QDBVRQ1"
-			(at 200.66 198.12 0)
+			(at 166.37 171.45 0)
 			(effects
 				(font
 					(size 2.0828 1.7703)
@@ -7827,7 +7817,7 @@
 	)
 	(symbol
 		(lib_id "oresat-passives:R-US")
-		(at 224.79 168.91 90)
+		(at 215.9 181.61 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7835,7 +7825,7 @@
 		(dnp no)
 		(uuid "9074775d-0cae-48fe-943d-d9d32cc180ea")
 		(property "Reference" "R88"
-			(at 223.2914 172.72 0)
+			(at 219.71 183.1086 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -7844,7 +7834,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 228.092 172.72 0)
+			(at 219.71 178.308 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -7853,7 +7843,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C-NOSILK"
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7862,7 +7852,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7871,7 +7861,7 @@
 			)
 		)
 		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7880,7 +7870,7 @@
 			)
 		)
 		(property "Distributor" "Digi-Key"
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7889,7 +7879,7 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7898,7 +7888,7 @@
 			)
 		)
 		(property "MFR" "Panasonic Electronic Components "
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7907,7 +7897,7 @@
 			)
 		)
 		(property "DPN" "P10.0KHCT-ND"
-			(at 224.79 168.91 0)
+			(at 215.9 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
