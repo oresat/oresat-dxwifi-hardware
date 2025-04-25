@@ -7,7 +7,7 @@
 	(title_block
 		(title "Oresat DxWifi Card")
 		(date "2024-01-02")
-		(rev "1.3")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -9376,6 +9376,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "USB ESD\nprotection"
 		(exclude_from_sim no)
@@ -10132,6 +10233,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.08 219.71) (xy 386.08 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0289c842-31a4-4d1d-9ee6-cd6f18b06abc")
+	)
+	(wire
+		(pts
 			(xy 292.1 148.59) (xy 292.1 151.13)
 		)
 		(stroke
@@ -10859,16 +10970,6 @@
 			(type default)
 		)
 		(uuid "3b1b0aac-14be-4776-8518-97f9b9fbe1bb")
-	)
-	(wire
-		(pts
-			(xy 384.81 217.17) (xy 384.81 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ba89c93-fbad-4c99-8f3c-5d833067a594")
 	)
 	(wire
 		(pts
@@ -11792,7 +11893,7 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 215.9) (xy 379.73 215.9)
+			(xy 379.73 215.9) (xy 386.08 215.9)
 		)
 		(stroke
 			(width 0)
@@ -13152,7 +13253,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 72.39) (xy 190.5 76.2)
+			(xy 190.5 72.39) (xy 190.5 74.93)
 		)
 		(stroke
 			(width 0)
@@ -13826,16 +13927,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 81.28 241.3 0)
+		(lib_id "power:GND")
+		(at 208.28 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0455737d-5424-40a1-a8ad-803b6cd7a23a")
-		(property "Reference" "#GND051"
-			(at 81.28 241.3 0)
+		(fields_autoplaced yes)
+		(uuid "00bad606-6e35-4d68-bf2b-6e51d35040b5")
+		(property "Reference" "#PWR053"
+			(at 208.28 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13844,16 +13946,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 243.84 0)
+			(at 208.28 68.58 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 81.28 241.3 0)
+		(property "Footprint" ""
+			(at 208.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13862,7 +13963,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 241.3 0)
+			(at 208.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13870,8 +13971,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 81.28 241.3 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13880,12 +13981,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "13ca6563-1e40-4491-bdc6-84516bdb3af9")
+			(uuid "11833690-2f13-4b77-946d-712ec701bf8b")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND051")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -14121,73 +14222,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 208.28 63.5 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "080d5939-1f86-478d-ae49-549cde8218f6")
-		(property "Reference" "#GND0103"
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 208.28 66.04 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "670fbbfa-fa04-4dc6-99dd-cba08aa6056d")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "oresat-passives:R-US")
 		(at 111.76 242.57 90)
 		(unit 1)
@@ -14269,140 +14303,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "R89")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 367.03 163.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0cebbfe0-45eb-45b6-9bd0-f1c7779e81ee")
-		(property "Reference" "#GND091"
-			(at 367.03 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 367.03 166.37 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 367.03 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 367.03 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 367.03 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be31637d-12b3-474b-b19e-15a2bfce77eb")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND091")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 384.81 143.51 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d7e67e8-a60e-459b-b70a-97222caf4f2e")
-		(property "Reference" "#GND0109"
-			(at 384.81 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 384.81 146.05 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 384.81 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 384.81 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 384.81 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a056e7c3-8b35-4d9c-961d-157589fb8ca3")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND0109")
 					(unit 1)
 				)
 			)
@@ -14577,6 +14477,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "R98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 384.81 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17a7da66-bc85-45ec-b960-a44126e50674")
+		(property "Reference" "#PWR060"
+			(at 384.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 384.81 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 384.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 384.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 384.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc86dc89-87d5-4608-b580-95a039514867")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -15205,17 +15171,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 353.06 240.03 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 118.11 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2b468f09-3599-4d63-a684-7529b144739b")
-		(property "Reference" "#GND0110"
-			(at 353.06 240.03 0)
+		(fields_autoplaced yes)
+		(uuid "2dc5f049-e881-4720-8679-b320111dbc92")
+		(property "Reference" "#PWR061"
+			(at 118.11 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15224,16 +15190,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.06 242.57 0)
+			(at 118.11 182.88 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 353.06 240.03 0)
+		(property "Footprint" ""
+			(at 118.11 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15242,7 +15207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 353.06 240.03 0)
+			(at 118.11 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,8 +15215,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 353.06 240.03 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15260,12 +15225,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cce71183-b496-4aef-ba25-f8d1f72cfeaf")
+			(uuid "9c1e3a0b-22d9-4b7a-82b2-e05b9a2eb15d")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND0110")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -15425,17 +15390,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 190.5 76.2 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 292.1 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "333dcd23-da35-44ec-a74a-0d7154ec365b")
-		(property "Reference" "#GND0102"
-			(at 190.5 76.2 0)
+		(fields_autoplaced yes)
+		(uuid "30c36816-c4bc-4f99-bf55-11afabd88cce")
+		(property "Reference" "#PWR070"
+			(at 292.1 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15444,16 +15409,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 78.74 0)
+			(at 292.1 245.11 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 190.5 76.2 0)
+		(property "Footprint" ""
+			(at 292.1 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15462,7 +15426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 76.2 0)
+			(at 292.1 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15470,74 +15434,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 190.5 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e96ce23-7f4b-4c86-bc73-828ea4ceaf1e")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 264.16 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "34c8e48c-df20-4761-b3de-cb194cc8b5a9")
-		(property "Reference" "#GND067"
-			(at 264.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 264.16 166.37 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 264.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 264.16 163.83 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 292.1 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15546,12 +15444,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e4434c72-a770-4f1b-8ff6-cff25b249845")
+			(uuid "fdb886b0-757f-4ef2-b111-0cc0893294d2")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND067")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -16206,6 +16104,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 264.16 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4061cc89-076c-4f52-bb84-3a2a455c4d97")
+		(property "Reference" "#PWR056"
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "858d3322-7815-4860-a5c7-fb4df031adfb")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-power:3.3V")
 		(at 96.52 231.14 0)
 		(unit 1)
@@ -16272,6 +16236,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 353.06 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43ae37d1-5a83-4031-80f8-5a82cfd53c1f")
+		(property "Reference" "#PWR071"
+			(at 353.06 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 353.06 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 353.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 353.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 353.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b52cb35c-27b0-4376-9547-c9b511dce249")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-power:GND")
 		(at 93.98 135.89 0)
 		(unit 1)
@@ -16332,73 +16362,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "#GND059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 85.09 204.47 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "43c1b6ec-7c70-4b6b-8469-d0ae2ab53f6e")
-		(property "Reference" "#GND080"
-			(at 85.09 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 85.09 207.01 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 85.09 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 85.09 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bed3cd76-7e03-4d21-9218-5587c00b0a1b")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND080")
 					(unit 1)
 				)
 			)
@@ -16493,6 +16456,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 292.1 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "446dc68d-162f-4586-8d61-469b8a96a2cd")
+		(property "Reference" "#PWR057"
+			(at 292.1 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 292.1 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.1 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 292.1 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 292.1 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d8077a5-5903-465c-ae63-046cfecd3933")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 264.16 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4767da14-856f-46d4-8381-81fc4efa6cca")
+		(property "Reference" "#PWR069"
+			(at 264.16 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e877756-31e9-44af-81f5-48d9bf68954f")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
 		(at 317.5 148.59 90)
 		(unit 1)
@@ -16553,72 +16648,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 292.1 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "51e80bcb-c185-4d00-b3ba-a5e436bb178a")
-		(property "Reference" "#GND075"
-			(at 292.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 292.1 166.37 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 292.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 292.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "efe342be-ed18-4eb3-a1b0-0cdfee2d40f8")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND075")
 					(unit 1)
 				)
 			)
@@ -16712,16 +16741,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 118.11 177.8 0)
+		(lib_id "power:GND")
+		(at 59.69 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5709b0fa-bc78-46a9-8567-40b4a8f5ed05")
-		(property "Reference" "#GND083"
-			(at 118.11 177.8 0)
+		(fields_autoplaced yes)
+		(uuid "552e6feb-65a0-497b-9c0f-0645beebaa8e")
+		(property "Reference" "#PWR052"
+			(at 59.69 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16730,82 +16760,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 180.34 0)
+			(at 59.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 118.11 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "983a324e-490f-4d83-aa95-76bc3a9c0167")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 52.07 241.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "57ac315a-5565-46fc-a817-c760ad53b66b")
-		(property "Reference" "#GND089"
-			(at 52.07 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 52.07 243.84 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 52.07 241.3 0)
+		(property "Footprint" ""
+			(at 59.69 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16814,7 +16777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 241.3 0)
+			(at 59.69 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16822,8 +16785,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 52.07 241.3 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16832,12 +16795,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fc51b51-26b5-4d73-97c0-6609d5f1eb4f")
+			(uuid "01610ada-59c0-4998-af2e-be20b2757e2a")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND089")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -17211,72 +17174,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 148.59 252.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5deb52c7-b4e4-4cb7-b0e1-6f5f2d46d26b")
-		(property "Reference" "#GND063"
-			(at 148.59 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 255.27 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 148.59 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b0b4726e-2db0-44b7-89f9-18ddacbccb83")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
 		(at 189.23 130.81 0)
 		(unit 1)
@@ -17425,6 +17322,138 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "C63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a8c27df-33c6-4956-87c5-ef8c1b8a50e0")
+		(property "Reference" "#PWR058"
+			(at 271.78 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "436650da-9ea7-4e61-91ad-b80feab53f5c")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bd32108-1c53-44b9-9864-b3a23bbd147e")
+		(property "Reference" "#PWR068"
+			(at 52.07 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ea9f2dc-ec1a-49de-a808-ca0a82a8d873")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -17605,16 +17634,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 179.07 177.8 0)
+		(lib_id "power:GND")
+		(at 96.52 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6f4cda1a-c23e-4292-961b-a2d0e7b773b5")
-		(property "Reference" "#GND084"
-			(at 179.07 177.8 0)
+		(fields_autoplaced yes)
+		(uuid "6df8aa45-275f-46a0-a8da-81c805acb2f1")
+		(property "Reference" "#PWR064"
+			(at 96.52 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17623,16 +17653,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 180.34 0)
+			(at 96.52 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 179.07 177.8 0)
+		(property "Footprint" ""
+			(at 96.52 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17641,7 +17670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 177.8 0)
+			(at 96.52 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17649,8 +17678,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 179.07 177.8 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17659,12 +17688,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ef02ad3-dbd5-411c-95c7-136a293b4f63")
+			(uuid "a1c6a648-b567-44cd-a331-e7820647224e")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND084")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -17752,72 +17781,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "C72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 118.11 250.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73fa29b5-edba-425a-8c5b-493c03784c52")
-		(property "Reference" "#GND082"
-			(at 118.11 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 252.73 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 118.11 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdbc7531-e3f0-4c82-b3aa-90142cc21396")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND082")
 					(unit 1)
 				)
 			)
@@ -18167,6 +18130,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 367.03 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8091f534-a463-4d90-9af3-cc5cf86548ce")
+		(property "Reference" "#PWR059"
+			(at 367.03 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 367.03 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 367.03 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 367.03 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 367.03 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96c93ab4-752c-4682-8bb5-411a868bbf4c")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -18535,6 +18564,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87a0aa6b-19b3-4486-ac29-81120d44b337")
+		(property "Reference" "#PWR067"
+			(at 81.28 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be16858c-0a09-4d5b-a337-c0198e53d3f2")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -19021,6 +19116,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 190.5 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91f1a017-a450-4782-adc4-22c1bab1163e")
+		(property "Reference" "#PWR054"
+			(at 190.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "586a127c-f029-4fbd-bcac-7874b1f30a56")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 156.21 167.64 0)
 		(unit 1)
@@ -19429,6 +19590,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "C70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 386.08 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a02efb19-19c6-4e5e-9967-1e7eb0ec77d8")
+		(property "Reference" "#PWR072"
+			(at 386.08 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 386.08 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 386.08 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 386.08 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 386.08 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab5aaa16-446f-4810-9da6-1425b42c42bc")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -20306,6 +20533,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b32b87af-8e30-4e7d-abda-c2b082865cbc")
+		(property "Reference" "#PWR055"
+			(at 203.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6dc12c5-c923-4426-b126-137e3c290139")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -21575,139 +21868,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 96.52 204.47 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b9fcaf61-7422-4014-be09-c189e0a0f7fc")
-		(property "Reference" "#GND081"
-			(at 96.52 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 96.52 207.01 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 96.52 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 96.52 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18f6abd6-8848-4a3d-b34b-ad9d91f18603")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND081")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 292.1 240.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba37cdf1-0bfb-42e5-971d-3cb89af90b0e")
-		(property "Reference" "#GND079"
-			(at 292.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 292.1 242.57 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 292.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 292.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "49e3a7d1-5025-4d69-a257-7ad753d7d2d9")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
 		(at 125.73 203.2 90)
 		(unit 1)
@@ -21862,16 +22022,17 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 59.69 58.42 0)
+		(lib_id "power:GND")
+		(at 148.59 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf0512ad-01d9-4538-aaf9-f6048fc190c0")
-		(property "Reference" "#GND056"
-			(at 59.69 58.42 0)
+		(fields_autoplaced yes)
+		(uuid "c0be16b5-a9b5-4a2b-9452-cd65136055f4")
+		(property "Reference" "#PWR065"
+			(at 148.59 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21880,16 +22041,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 60.96 0)
+			(at 148.59 257.81 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
-			(at 59.69 58.42 0)
+		(property "Footprint" ""
+			(at 148.59 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21898,7 +22058,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 58.42 0)
+			(at 148.59 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21906,8 +22066,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 59.69 58.42 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21916,12 +22076,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "83f398ab-4539-47c5-b26a-93ca54378770")
+			(uuid "99ff07eb-7186-403c-a3a0-65d1017b0aab")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND056")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -22009,72 +22169,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "C68")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 264.16 240.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb2fc9f9-8eb7-43b4-94ed-9cca8a6a87c7")
-		(property "Reference" "#GND078"
-			(at 264.16 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 264.16 242.57 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 264.16 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 264.16 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ea836426-b0d7-41a8-b4b7-ed5f0833c8b5")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND078")
 					(unit 1)
 				)
 			)
@@ -22316,73 +22410,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "FB2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:GND")
-		(at 203.2 139.7 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e2ea097b-b9a0-46aa-8521-578a7c0b572c")
-		(property "Reference" "#GND035"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 142.24 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "23a7bf2e-f5c2-4555-a037-8acaadfb40ca")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND035")
 					(unit 1)
 				)
 			)
@@ -22703,73 +22730,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 384.81 217.17 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e5cebc7d-b85b-4744-99d7-546067abcfc4")
-		(property "Reference" "#GND0111"
-			(at 384.81 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 384.81 219.71 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 384.81 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 384.81 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 384.81 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "69880858-d4f3-4c7b-9f4c-54dda1ee95cc")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND0111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "oresat-passives:R-US")
 		(at 106.68 234.95 0)
 		(unit 1)
@@ -22851,6 +22811,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 250.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e94f1ebb-22fe-470e-9568-a8f7dc256add")
+		(property "Reference" "#PWR066"
+			(at 118.11 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "712ed249-4de5-47c5-b155-ae61636305bb")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -23338,72 +23364,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
-		(at 271.78 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6a958fd-6a8e-4420-b743-553c5681739b")
-		(property "Reference" "#GND064"
-			(at 271.78 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 271.78 139.7 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "oresat-live-card:"
-			(at 271.78 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 271.78 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 271.78 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a59beaac-ad6b-4af7-8712-34460574c822")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
-					(reference "#GND064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 71.12 49.53 90)
 		(unit 1)
@@ -23710,6 +23670,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 179.07 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fab81540-9f8d-4f1a-b8ed-8146e0186198")
+		(property "Reference" "#PWR062"
+			(at 179.07 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bf27e17-3cf8-453b-95f6-129e398d9de4")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 208.28 167.64 0)
 		(unit 1)
@@ -23860,6 +23886,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc4c3b41-c650-4152-be40-5131a6b02386")
+		(property "Reference" "#PWR063"
+			(at 85.09 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7d74299-dc57-4367-b7b1-e282e03c6691")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/49f5f571-d1f9-4350-855b-6ca6690b0a90"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
