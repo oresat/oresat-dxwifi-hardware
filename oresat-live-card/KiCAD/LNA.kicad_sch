@@ -5,6 +5,7 @@
 	(uuid "22f05f70-013e-437d-828d-ba8ed48a3828")
 	(paper "B")
 	(title_block
+		(date "2025-05-28")
 		(rev "2")
 	)
 	(lib_symbols
@@ -2245,6 +2246,26 @@
 		)
 		(uuid "2797c2ce-3253-4321-9800-8c1971cbb9fc")
 	)
+	(text "ADD 9202 GRAPHIC"
+		(exclude_from_sim no)
+		(at 307.848 81.026 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "941eaa56-a2a9-478b-a310-70543db73e50")
+	)
+	(text "COPY R71 HERE\n"
+		(exclude_from_sim no)
+		(at 236.728 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cdaf312e-36d7-40c4-9fa0-d27097e2b1ff")
+	)
 	(junction
 		(at 262.89 149.86)
 		(diameter 0)
@@ -2330,10 +2351,22 @@
 		(uuid "9385ed50-a14c-4920-9e8e-bc52442634f8")
 	)
 	(junction
+		(at 232.41 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a65bf17-dac4-4e75-9cf7-1df84c9dc7e5")
+	)
+	(junction
 		(at 307.34 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0a93de5-8a61-43df-b639-4098d99b9661")
+	)
+	(junction
+		(at 232.41 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0329e5b-d71b-4246-9e21-01522b1bc4be")
 	)
 	(junction
 		(at 148.59 76.2)
@@ -2432,6 +2465,16 @@
 			(type default)
 		)
 		(uuid "11373113-f3ce-41e2-93c3-9f5f0b75501b")
+	)
+	(wire
+		(pts
+			(xy 232.41 85.09) (xy 246.38 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13cd203a-d5e4-4d7b-b132-d1fb3ddb0520")
 	)
 	(wire
 		(pts
@@ -2535,7 +2578,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 78.74) (xy 246.38 149.86)
+			(xy 246.38 85.09) (xy 246.38 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2625,7 +2668,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 78.74) (xy 233.68 78.74)
+			(xy 224.79 85.09) (xy 232.41 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2692,16 +2735,6 @@
 			(type default)
 		)
 		(uuid "5b0bd284-134c-4ad3-91b8-f18fb32eb9f0")
-	)
-	(wire
-		(pts
-			(xy 241.3 78.74) (xy 246.38 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c5b3c54-e41f-44f5-af95-12785f1d4340")
 	)
 	(wire
 		(pts
@@ -2885,17 +2918,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 73.66) (xy 289.56 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "940de278-5f3f-4cd9-b39a-16d08b27d84a")
-	)
-	(wire
-		(pts
-			(xy 222.25 73.66) (xy 227.33 73.66)
+			(xy 222.25 73.66) (xy 232.41 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2922,6 +2945,16 @@
 			(type default)
 		)
 		(uuid "a05a04fd-3394-4220-9779-5b94c1c19646")
+	)
+	(wire
+		(pts
+			(xy 232.41 73.66) (xy 232.41 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3119a25-9425-4d28-8d2f-201a2a73a410")
 	)
 	(wire
 		(pts
@@ -2962,6 +2995,16 @@
 			(type default)
 		)
 		(uuid "b420f9c6-9aff-434a-918f-8ce2060ef11a")
+	)
+	(wire
+		(pts
+			(xy 224.79 85.09) (xy 224.79 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b663a2af-dcb7-4238-a5a6-6f4a472ed552")
 	)
 	(wire
 		(pts
@@ -3065,6 +3108,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 73.66) (xy 289.56 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d782b751-7a76-439a-9cac-59c0bc1ba16d")
+	)
+	(wire
+		(pts
 			(xy 307.34 121.92) (xy 307.34 134.62)
 		)
 		(stroke
@@ -3092,6 +3145,16 @@
 			(type default)
 		)
 		(uuid "e1ea40bb-a474-4cb2-826e-ff5d94db7182")
+	)
+	(wire
+		(pts
+			(xy 232.41 82.55) (xy 232.41 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36de849-2be5-4b6f-a59d-57a917c41c33")
 	)
 	(wire
 		(pts
@@ -3132,6 +3195,16 @@
 			(type default)
 		)
 		(uuid "eaa5c630-af16-4e00-b299-f45d24982f7f")
+	)
+	(wire
+		(pts
+			(xy 224.79 78.74) (xy 222.25 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebdb5e2c-7814-4f4b-b7a4-bde95a985e88")
 	)
 	(wire
 		(pts
@@ -4825,74 +4898,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 231.14 73.66 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77901d54-dcde-4dbd-8317-48b495cdb8fa")
-		(property "Reference" "R107"
-			(at 231.14 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 231.14 69.85 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 230.886 74.676 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 231.14 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bb925434-3977-457c-8189-4ed6a129ad50")
-		)
-		(pin "1"
-			(uuid "3b1b63f3-5e49-437b-90f9-9a1a924879d4")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
-					(reference "R107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 294.64 73.66 0)
 		(unit 1)
@@ -4954,73 +4959,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
 					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 237.49 78.74 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b65320f-f4ef-48e1-89b3-9062b465159a")
-		(property "Reference" "R108"
-			(at 237.49 81.788 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 237.49 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.236 79.756 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 237.49 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 237.49 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ddc222d1-fdd4-42f6-987b-feaefe9ab71a")
-		)
-		(pin "1"
-			(uuid "d814ad42-67a0-40a8-8068-da42c1f31cf4")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
-					(reference "R108")
 					(unit 1)
 				)
 			)
@@ -5669,7 +5607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power Divider 50ohm 2300 - 2800 MHz"
+		(property "Description" "Power Divider"
 			(at 205.74 68.58 0)
 			(effects
 				(font

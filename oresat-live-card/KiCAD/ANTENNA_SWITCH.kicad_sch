@@ -5,6 +5,7 @@
 	(uuid "738ac75c-69bc-46ec-b3a7-f6f3695f881b")
 	(paper "B")
 	(title_block
+		(date "2025-05-28")
 		(rev "2")
 	)
 	(lib_symbols
@@ -1292,6 +1293,77 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "INSTALL JUMPER TO SELECT TURNSTILE ANTENNA\n"
+		(exclude_from_sim no)
+		(at 112.268 80.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1cfeb270-79db-4bac-815d-396e28328e24")
+	)
+	(text "CTRL    OUTPUT\nHIGH    TURNSTILE ANTENNA(RF1)\nLOW     HELIX ANTENNA (RF2)"
+		(exclude_from_sim no)
+		(at 280.416 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ffe31aa-8b2e-4041-81ef-53e7a02fad30")
+	)
+	(text "VERIFY LOGIC MATCHES TABLE AND DEFAULTS TO HELIX"
+		(exclude_from_sim no)
+		(at 288.544 207.518 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4c618184-d88e-4c25-a12c-b1a354a50023")
+	)
+	(text "ADD 10K PULL DOWN"
+		(exclude_from_sim no)
+		(at 149.606 77.724 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6a28ed27-dbda-4866-85af-563b2f0fed7b")
+	)
+	(text "MAKE LOOK BETTER\n"
+		(exclude_from_sim no)
+		(at 289.56 220.218 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6d908a7a-f7c1-4ec5-a3b3-c8d3dab89473")
+	)
+	(text "3.3V TO 5.0V LEVEL TRANSLATE"
+		(exclude_from_sim no)
+		(at 89.154 113.284 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aa962da3-bca5-4af8-bc8c-5f1a4804c2bf")
+	)
+	(text "1K SERIES?"
+		(exclude_from_sim no)
+		(at 111.506 70.866 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c15eae43-468e-443e-831c-95225de68f8d")
+	)
 	(junction
 		(at 254 168.91)
 		(diameter 0)
@@ -1866,7 +1938,7 @@
 		)
 		(uuid "ff9b1403-0c05-47ed-9119-4185f2638cad")
 	)
-	(global_label "TURNSTILE_ANTENNA"
+	(global_label "HELIX_ANTENNA"
 		(shape input)
 		(at 297.18 210.82 0)
 		(fields_autoplaced yes)
@@ -1876,9 +1948,30 @@
 			)
 			(justify left)
 		)
-		(uuid "8fa74857-645f-4dc8-be92-005924510cb3")
+		(uuid "204175e4-c4ad-403a-9433-58cbd2df70f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 319.2757 210.82 0)
+			(at 314.74 210.82 0)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "TURNSTILE_ANTENNA"
+		(shape input)
+		(at 297.18 200.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a78fa33-91a6-4868-8468-d3c19fc5f305")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 319.2757 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1905,27 +1998,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "HELIX_ANTENNA"
-		(shape input)
-		(at 297.18 200.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e7020987-71c5-4c49-91fa-9b8675167707")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.74 200.66 0)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
 			)
 		)
 	)
