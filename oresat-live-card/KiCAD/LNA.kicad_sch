@@ -179,6 +179,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -2246,6 +2388,16 @@
 		)
 		(uuid "2797c2ce-3253-4321-9800-8c1971cbb9fc")
 	)
+	(text "2.54MM HEADER FOR SCOPE PROBE"
+		(exclude_from_sim no)
+		(at 407.924 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "76435ab3-31ee-4738-8b1c-2f6dc2741efd")
+	)
 	(text "ADD 9202 GRAPHIC"
 		(exclude_from_sim no)
 		(at 307.848 81.026 0)
@@ -2363,6 +2515,12 @@
 		(uuid "a0a93de5-8a61-43df-b639-4098d99b9661")
 	)
 	(junction
+		(at 387.35 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8ba487d-ff96-4dd4-b8fd-3606749706cd")
+	)
+	(junction
 		(at 232.41 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2458,7 +2616,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 162.56) (xy 328.93 162.56)
+			(xy 323.85 162.56) (xy 328.93 162.56)
 		)
 		(stroke
 			(width 0)
@@ -2518,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 154.94) (xy 318.77 154.94)
+			(xy 323.85 154.94) (xy 318.77 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2638,7 +2796,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 144.78) (xy 295.91 144.78)
+			(xy 283.21 144.78) (xy 295.91 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2738,7 +2896,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 162.56) (xy 321.31 154.94)
+			(xy 323.85 162.56) (xy 323.85 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2778,6 +2936,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 133.35) (xy 394.97 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a9c90f2-7545-4d0f-941d-b89946b85e85")
+	)
+	(wire
+		(pts
 			(xy 342.9 162.56) (xy 342.9 165.1)
 		)
 		(stroke
@@ -2798,7 +2966,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 140.97) (xy 287.02 144.78)
+			(xy 283.21 140.97) (xy 283.21 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2815,6 +2983,16 @@
 			(type default)
 		)
 		(uuid "713c8881-ad62-49d1-96a3-45c2029b1b79")
+	)
+	(wire
+		(pts
+			(xy 283.21 129.54) (xy 283.21 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71aa1700-d5f6-42de-9631-4ebce7358b92")
 	)
 	(wire
 		(pts
@@ -2948,6 +3126,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 146.05) (xy 387.35 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28eb30d-489c-4348-bf6d-ab08a3bbac8a")
+	)
+	(wire
+		(pts
 			(xy 232.41 73.66) (xy 232.41 74.93)
 		)
 		(stroke
@@ -2965,6 +3153,16 @@
 			(type default)
 		)
 		(uuid "a432e269-e2dc-4ee2-9798-2edd49468816")
+	)
+	(wire
+		(pts
+			(xy 389.89 143.51) (xy 387.35 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4510cf1-a97b-43e1-9264-3e19872291ef")
 	)
 	(wire
 		(pts
@@ -2998,6 +3196,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 146.05) (xy 389.89 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b62a1134-ea43-4b0b-a266-103c71d42039")
+	)
+	(wire
+		(pts
 			(xy 224.79 85.09) (xy 224.79 78.74)
 		)
 		(stroke
@@ -3028,13 +3236,13 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 133.35) (xy 287.02 129.54)
+			(xy 387.35 133.35) (xy 387.35 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c2b7ecd1-fc17-4afb-91aa-2cb3f1aadf48")
+		(uuid "c21232f3-cb38-4c6f-9b0a-235730fafc75")
 	)
 	(wire
 		(pts
@@ -3328,7 +3536,7 @@
 	)
 	(global_label "PWR_DET_OUT"
 		(shape input)
-		(at 387.35 133.35 0)
+		(at 394.97 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3338,7 +3546,7 @@
 		)
 		(uuid "1a9b9ed3-cc2b-4d7f-9912-4ec31640bc36")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.277 133.35 0)
+			(at 410.897 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,6 +3798,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
 					(reference "C114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 387.35 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e953a2f-eeb8-45f1-9731-2de074f6923e")
+		(property "Reference" "#PWR0147"
+			(at 387.35 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 387.35 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 387.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 387.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af74f58c-bcf4-44c1-9b51-2d123048ab44")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -3901,6 +4175,76 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
 					(reference "C91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 394.97 146.05 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "291c360e-00c6-4c6f-9544-516553d35df6")
+		(property "Reference" "J14"
+			(at 397.51 146.0501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 397.51 143.5101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 394.97 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 394.97 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 394.97 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4093b91c-c896-492e-b4ec-77a2dbe08ae6")
+		)
+		(pin "1"
+			(uuid "9b199cb9-b7dd-4804-9691-a1deb35e8d63")
+		)
+		(instances
+			(project ""
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/a5fda779-e414-42e8-9a92-7f656a51cc1f"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -5032,7 +5376,7 @@
 	)
 	(symbol
 		(lib_id "oresat-power:5VA")
-		(at 287.02 129.54 0)
+		(at 283.21 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5041,7 +5385,7 @@
 		(fields_autoplaced yes)
 		(uuid "85fee42c-bc35-4cf8-8f2f-5a9f5d8e5c74")
 		(property "Reference" "#5VA07"
-			(at 287.02 133.35 0)
+			(at 283.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +5394,7 @@
 			)
 		)
 		(property "Value" "5VA"
-			(at 287.02 124.46 0)
+			(at 283.21 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 287.02 129.54 0)
+			(at 283.21 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +5411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 287.02 129.54 0)
+			(at 283.21 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5420,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 287.02 129.54 0)
+			(at 283.21 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6705,7 +7049,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 287.02 137.16 0)
+		(at 283.21 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6714,7 +7058,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6d7fdc5-50c9-4d4c-9ee4-8c7d77666846")
 		(property "Reference" "R118"
-			(at 289.56 135.8899 0)
+			(at 285.75 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,7 +7067,7 @@
 			)
 		)
 		(property "Value" "4.99k"
-			(at 289.56 138.4299 0)
+			(at 285.75 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6732,7 +7076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 288.036 137.414 90)
+			(at 284.226 137.414 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6741,7 +7085,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 137.16 0)
+			(at 283.21 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6750,7 +7094,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 287.02 137.16 0)
+			(at 283.21 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
