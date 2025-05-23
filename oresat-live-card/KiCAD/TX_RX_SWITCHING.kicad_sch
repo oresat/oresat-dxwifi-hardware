@@ -1503,26 +1503,6 @@
 		)
 		(uuid "2bdde919-6a13-4891-beea-4ee80c023f8b")
 	)
-	(text "MAKE LOOK BETTER\n"
-		(exclude_from_sim no)
-		(at 351.282 208.026 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4696279d-09c6-4f70-bc32-0c269d680f10")
-	)
-	(text "ADD 10K PULL DOWN"
-		(exclude_from_sim no)
-		(at 101.6 38.354 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "49c574f8-e4be-4bfe-8f68-00f842d0d437")
-	)
 	(text "RF SWITCH HOLD TIMER"
 		(exclude_from_sim no)
 		(at 196.596 138.938 0)
@@ -1543,20 +1523,9 @@
 		)
 		(uuid "8126bf4b-3626-4391-8d77-58555cd57a23")
 	)
-	(text "CTRL    OUTPUT\nHIGH    TX (RF1)\nLOW     RX (RF2)"
-		(exclude_from_sim no)
-		(at 342.646 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a4f32e65-fd5a-4170-a54e-df33b1a37fa1")
-	)
 	(text "VERIFY LOGIC MATCHES TABLE AND DEFAULTS TO RX\n"
 		(exclude_from_sim no)
-		(at 271.526 204.216 0)
+		(at 247.396 202.438 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1573,16 +1542,6 @@
 			)
 		)
 		(uuid "be28ffbe-1480-4b39-9524-8cc8ba3fa023")
-	)
-	(text "1K SERIES?"
-		(exclude_from_sim no)
-		(at 67.818 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cb3f512b-b3b5-44e1-b9f0-c2976524e543")
 	)
 	(junction
 		(at 334.01 196.85)
@@ -1668,6 +1627,12 @@
 		(color 0 0 0 0)
 		(uuid "ff36ef14-770f-4546-b601-1c996b17468d")
 	)
+	(junction
+		(at 93.98 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff376168-0171-49de-a162-3d92374a869a")
+	)
 	(wire
 		(pts
 			(xy 313.69 165.1) (xy 313.69 180.34)
@@ -1737,6 +1702,16 @@
 			(type default)
 		)
 		(uuid "1328c454-2de0-4f1f-b3db-b57b3822c4a4")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "136bfcd4-d259-49ed-a08d-fe08d49a56ad")
 	)
 	(wire
 		(pts
@@ -1860,6 +1835,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 31.75) (xy 68.58 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3421f839-d963-4382-a9fc-e1f38a576bcc")
+	)
+	(wire
+		(pts
 			(xy 63.5 64.77) (xy 63.5 74.93)
 		)
 		(stroke
@@ -1907,6 +1892,16 @@
 			(type default)
 		)
 		(uuid "42590868-7690-45b0-bdcd-c1f1bd485cbc")
+	)
+	(wire
+		(pts
+			(xy 93.98 39.37) (xy 102.87 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44f02eb8-3ffa-4ffc-ae91-fedd5a18a436")
 	)
 	(wire
 		(pts
@@ -2330,7 +2325,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 29.21) (xy 68.58 39.37)
+			(xy 68.58 20.32) (xy 68.58 24.13)
 		)
 		(stroke
 			(width 0)
@@ -2347,6 +2342,16 @@
 			(type default)
 		)
 		(uuid "d1ef0e00-9349-4822-a0db-becbd84d8b77")
+	)
+	(wire
+		(pts
+			(xy 110.49 39.37) (xy 118.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4bbc289-7f19-43c4-a6b4-ee94439aef6c")
 	)
 	(wire
 		(pts
@@ -2487,6 +2492,131 @@
 			(type default)
 		)
 		(uuid "fab869fd-d746-42e3-b22f-b78ba2f7add0")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 11.43 11.43)
+		(row_heights 3.175 3.175 3.175)
+		(cells
+			(table_cell "CTRL"
+				(exclude_from_sim no)
+				(at 342.9 205.74 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
+			)
+			(table_cell "OUTPUT"
+				(exclude_from_sim no)
+				(at 354.33 205.74 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
+			)
+			(table_cell "HIGH"
+				(exclude_from_sim no)
+				(at 342.9 208.915 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
+			)
+			(table_cell "TX (RF1)"
+				(exclude_from_sim no)
+				(at 354.33 208.915 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
+			)
+			(table_cell "LOW"
+				(exclude_from_sim no)
+				(at 342.9 212.09 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
+			)
+			(table_cell "RX (RF2)"
+				(exclude_from_sim no)
+				(at 354.33 212.09 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "021b12b4-ae06-439e-8fcf-6af9517e1059")
+			)
+		)
 	)
 	(global_label "RX_IN"
 		(shape input)
@@ -3402,6 +3532,74 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 106.68 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "424eca5c-8cdd-4db2-840c-b142aec310c0")
+		(property "Reference" "R104"
+			(at 106.68 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 106.68 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.934 38.354 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 106.68 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85be40c9-0030-47b9-9635-8f6daefcdee9")
+		)
+		(pin "2"
+			(uuid "6e698081-8425-45e7-b9d9-5ea2cbdb4c21")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 165.1 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3465,6 +3663,76 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "R87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 68.58 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56c5af69-f88f-45f5-9286-3edb7d494bc8")
+		(property "Reference" "R103"
+			(at 71.12 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 71.12 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.596 28.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 68.58 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0c0247d-2808-44c4-9b55-8268f27ee572")
+		)
+		(pin "2"
+			(uuid "e612f6b4-1f20-43eb-bf5c-61ef936bfe76")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -4872,7 +5140,7 @@
 	)
 	(symbol
 		(lib_id "oresat-power:5V")
-		(at 68.58 29.21 0)
+		(at 68.58 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4880,7 +5148,7 @@
 		(dnp no)
 		(uuid "b841e145-f96c-4651-ab8f-37ecf205b431")
 		(property "Reference" "#5V011"
-			(at 68.58 29.21 0)
+			(at 68.58 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,7 +5157,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 67.31 26.67 0)
+			(at 67.31 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.0795)
@@ -4898,7 +5166,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:"
-			(at 68.58 29.21 0)
+			(at 68.58 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4907,7 +5175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 29.21 0)
+			(at 68.58 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +5184,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 29.21 0)
+			(at 68.58 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,6 +5286,72 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "C89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d824f0b3-fd03-4670-8c37-18bb035fb275")
+		(property "Reference" "#PWR0150"
+			(at 118.11 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "388c496e-8dc1-45ad-a357-addd42ac3170")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)

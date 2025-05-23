@@ -1303,46 +1303,15 @@
 		)
 		(uuid "1cfeb270-79db-4bac-815d-396e28328e24")
 	)
-	(text "CTRL    OUTPUT\nHIGH    TURNSTILE ANTENNA(RF1)\nLOW     HELIX ANTENNA (RF2)"
-		(exclude_from_sim no)
-		(at 280.416 226.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1ffe31aa-8b2e-4041-81ef-53e7a02fad30")
-	)
 	(text "VERIFY LOGIC MATCHES TABLE AND DEFAULTS TO HELIX"
 		(exclude_from_sim no)
-		(at 288.544 207.518 0)
+		(at 311.912 206.248 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "4c618184-d88e-4c25-a12c-b1a354a50023")
-	)
-	(text "ADD 10K PULL DOWN"
-		(exclude_from_sim no)
-		(at 149.606 77.724 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6a28ed27-dbda-4866-85af-563b2f0fed7b")
-	)
-	(text "MAKE LOOK BETTER\n"
-		(exclude_from_sim no)
-		(at 289.56 220.218 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6d908a7a-f7c1-4ec5-a3b3-c8d3dab89473")
 	)
 	(text "3.3V TO 5.0V LEVEL TRANSLATE"
 		(exclude_from_sim no)
@@ -1353,16 +1322,6 @@
 			)
 		)
 		(uuid "aa962da3-bca5-4af8-bc8c-5f1a4804c2bf")
-	)
-	(text "1K SERIES?"
-		(exclude_from_sim no)
-		(at 111.506 70.866 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c15eae43-468e-443e-831c-95225de68f8d")
 	)
 	(junction
 		(at 254 168.91)
@@ -1418,6 +1377,12 @@
 		(color 0 0 0 0)
 		(uuid "f4b3649f-f692-4c4e-a8de-81af57122db0")
 	)
+	(junction
+		(at 137.16 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f833427f-4936-4bcd-8457-34176f54d30e")
+	)
 	(wire
 		(pts
 			(xy 106.68 128.27) (xy 106.68 130.81)
@@ -1450,7 +1415,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 67.31) (xy 111.76 77.47)
+			(xy 111.76 58.42) (xy 111.76 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1630,6 +1595,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 77.47) (xy 161.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5487865f-0256-438c-a00d-85ec3376a303")
+	)
+	(wire
+		(pts
 			(xy 283.21 133.35) (xy 283.21 205.74)
 		)
 		(stroke
@@ -1697,6 +1672,26 @@
 			(type default)
 		)
 		(uuid "857f8e88-98d4-4e72-9f3d-afabb80eb143")
+	)
+	(wire
+		(pts
+			(xy 111.76 68.58) (xy 111.76 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d5d378a-3088-4f39-904f-055afff9b111")
+	)
+	(wire
+		(pts
+			(xy 153.67 77.47) (xy 161.29 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9276093a-7d61-4505-b50d-794f3c9c05e1")
 	)
 	(wire
 		(pts
@@ -1870,6 +1865,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 77.47) (xy 146.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e2a9c2-efc7-4de2-93a7-327940fbe5bb")
+	)
+	(wire
+		(pts
 			(xy 115.57 102.87) (xy 118.11 102.87)
 		)
 		(stroke
@@ -1937,6 +1942,131 @@
 			(type default)
 		)
 		(uuid "ff9b1403-0c05-47ed-9119-4185f2638cad")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 11.43 27.94)
+		(row_heights 3.175 3.175 3.175)
+		(cells
+			(table_cell "CTRL"
+				(exclude_from_sim no)
+				(at 275.59 217.17 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
+			)
+			(table_cell "OUTPUT"
+				(exclude_from_sim no)
+				(at 287.02 217.17 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
+			)
+			(table_cell "HIGH"
+				(exclude_from_sim no)
+				(at 275.59 220.345 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
+			)
+			(table_cell "TURNSTILE ANTENNA (RF1)"
+				(exclude_from_sim no)
+				(at 287.02 220.345 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
+			)
+			(table_cell "LOW"
+				(exclude_from_sim no)
+				(at 275.59 223.52 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
+			)
+			(table_cell "HELIX ANTENNA (RF2)"
+				(exclude_from_sim no)
+				(at 287.02 223.52 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "021b12b4-ae06-439e-8fcf-6af9517e1059")
+			)
+		)
 	)
 	(global_label "HELIX_ANTENNA"
 		(shape input)
@@ -2177,7 +2307,7 @@
 	)
 	(symbol
 		(lib_id "oresat-power:5V")
-		(at 111.76 67.31 0)
+		(at 111.76 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2185,7 +2315,7 @@
 		(dnp no)
 		(uuid "128ebe76-92a7-47f1-9c02-83b3f02b8b34")
 		(property "Reference" "#5V013"
-			(at 111.76 67.31 0)
+			(at 111.76 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2194,7 +2324,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 110.49 64.77 0)
+			(at 110.49 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.0795)
@@ -2203,7 +2333,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:"
-			(at 111.76 67.31 0)
+			(at 111.76 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,7 +2342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 67.31 0)
+			(at 111.76 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,7 +2351,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 67.31 0)
+			(at 111.76 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2712,6 +2842,74 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
 					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 149.86 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3136297f-9e30-47eb-bb18-2dc0ca424579")
+		(property "Reference" "R102"
+			(at 149.86 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 149.86 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 150.114 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 149.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "600b5690-206d-4315-b9fd-88b49452d678")
+		)
+		(pin "2"
+			(uuid "c8794f36-1bc0-4f00-a038-47836ba9c173")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -3999,6 +4197,142 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
 					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 111.76 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d77d6c39-2c4b-4b56-8085-9be2427c1814")
+		(property "Reference" "R101"
+			(at 114.3 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 114.3 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 112.776 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cad45e1f-af2f-473a-a504-69a33982966f")
+		)
+		(pin "2"
+			(uuid "f5423a14-57aa-486b-b7ff-65ebf4db7b82")
+		)
+		(instances
+			(project ""
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
+					(reference "R101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d82631c5-c727-421e-8458-8195a23d1f81")
+		(property "Reference" "#PWR0149"
+			(at 161.29 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c521e83-0d22-4dbc-b381-8e8e45de3a33")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
