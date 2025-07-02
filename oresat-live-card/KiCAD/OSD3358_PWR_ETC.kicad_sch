@@ -204,6 +204,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -307,187 +316,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Q_PNP_BEC"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_PNP_BEC"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "PNP transistor, base/emitter/collector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor PNP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Q_PNP_BEC_0_1"
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778) (xy 2.286 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "Q_PNP_BEC_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -626,6 +454,199 @@
 					(at 0 -2.54 90)
 					(length 1.016)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_BJT:Q_PNP_BEC"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PNP_BEC"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PNP transistor, base/emitter/collector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PNP_BEC_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PNP_BEC_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1591,7 +1612,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -35.56 38.1 0)
 					(length 5.08)
 					(name "PMIC_BAT_SENSE"
@@ -1915,7 +1936,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 78.74 180)
 					(length 5.08)
 					(name "SYS_VOUT@1"
@@ -1933,7 +1954,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 76.2 180)
 					(length 5.08)
 					(name "SYS_VOUT@2"
@@ -1951,7 +1972,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 73.66 180)
 					(length 5.08)
 					(name "SYS_VOUT@3"
@@ -1969,7 +1990,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 71.12 180)
 					(length 5.08)
 					(name "SYS_VOUT@4"
@@ -1987,7 +2008,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 60.96 180)
 					(length 5.08)
 					(name "SYS_VDD1_3P3V@1"
@@ -2005,7 +2026,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 58.42 180)
 					(length 5.08)
 					(name "SYS_VDD1_3P3V@2"
@@ -2023,7 +2044,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 55.88 180)
 					(length 5.08)
 					(name "SYS_VDD1_3P3V@3"
@@ -2041,7 +2062,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 53.34 180)
 					(length 5.08)
 					(name "SYS_VDD1_3P3V@4"
@@ -2059,7 +2080,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 43.18 180)
 					(length 5.08)
 					(name "SYS_VDD2_3P3V@1"
@@ -2077,7 +2098,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 40.64 180)
 					(length 5.08)
 					(name "SYS_VDD2_3P3V@2"
@@ -2095,7 +2116,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 30.48 180)
 					(length 5.08)
 					(name "SYS_RTC_1P8V@1"
@@ -2113,7 +2134,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 27.94 180)
 					(length 5.08)
 					(name "SYS_RTC_1P8V@2"
@@ -2131,7 +2152,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 12.7 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@1"
@@ -2149,7 +2170,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 10.16 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@2"
@@ -2167,7 +2188,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 7.62 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@3"
@@ -2185,7 +2206,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 5.08 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@4"
@@ -2203,7 +2224,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 2.54 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@5"
@@ -2221,7 +2242,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 0 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@6"
@@ -2239,7 +2260,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 -2.54 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@7"
@@ -2257,7 +2278,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 35.56 -5.08 180)
 					(length 5.08)
 					(name "SYS_VDD3_3P3V@8"
@@ -2952,7 +2973,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -30.48 43.18 0)
 					(length 5.08)
 					(name "OSC0_IN"
@@ -2970,7 +2991,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 27.94 0)
 					(length 5.08)
 					(name "OSC0_OUT"
@@ -2988,7 +3009,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 22.86 0)
 					(length 5.08)
 					(name "OSC0_GND"
@@ -3006,7 +3027,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at -30.48 12.7 0)
 					(length 5.08)
 					(name "OSC1_IN"
@@ -3024,7 +3045,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 -2.54 0)
 					(length 5.08)
 					(name "OSC1_OUT"
@@ -3042,7 +3063,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -7.62 0)
 					(length 5.08)
 					(name "OSC1_GND"
@@ -3294,7 +3315,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at 30.48 45.72 180)
 					(length 5.08)
 					(name "SYS_ADC_1P8V"
@@ -3312,7 +3333,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 35.56 180)
 					(length 5.08)
 					(name "VREFP"
@@ -3330,7 +3351,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 15.24 180)
 					(length 5.08)
 					(name "AGND_ADC"
@@ -3348,7 +3369,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 5.08 180)
 					(length 5.08)
 					(name "VREFN"
@@ -3366,7 +3387,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -5.08 180)
 					(length 5.08)
 					(name "AIN0"
@@ -3384,7 +3405,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -7.62 180)
 					(length 5.08)
 					(name "AIN1"
@@ -3402,7 +3423,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -10.16 180)
 					(length 5.08)
 					(name "AIN2"
@@ -3420,7 +3441,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -12.7 180)
 					(length 5.08)
 					(name "AIN3"
@@ -3438,7 +3459,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -15.24 180)
 					(length 5.08)
 					(name "AIN4"
@@ -3456,7 +3477,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -17.78 180)
 					(length 5.08)
 					(name "AIN5"
@@ -3474,7 +3495,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -20.32 180)
 					(length 5.08)
 					(name "AIN6"
@@ -3492,7 +3513,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 30.48 -22.86 180)
 					(length 5.08)
 					(name "AIN7"
@@ -3725,7 +3746,7 @@
 						(justify left bottom)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 55.88 0)
 					(length 5.08)
 					(name "UART0_TXD"
@@ -3743,7 +3764,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -30.48 53.34 0)
 					(length 5.08)
 					(name "UART0_RXD"
@@ -3761,7 +3782,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 50.8 0)
 					(length 5.08)
 					(name "UART0_CTSN"
@@ -3779,7 +3800,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -30.48 48.26 0)
 					(length 5.08)
 					(name "UART0_RTSN"
@@ -3797,7 +3818,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 40.64 0)
 					(length 5.08)
 					(name "UART1_TXD"
@@ -3815,7 +3836,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -30.48 38.1 0)
 					(length 5.08)
 					(name "UART1_RXD"
@@ -3833,7 +3854,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 35.56 0)
 					(length 5.08)
 					(name "UART1_CTSN"
@@ -3851,7 +3872,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -30.48 33.02 0)
 					(length 5.08)
 					(name "UART1_RTSN"
@@ -3869,7 +3890,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 25.4 0)
 					(length 5.08)
 					(name "SPI0_SCLK"
@@ -3959,7 +3980,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -30.48 7.62 0)
 					(length 5.08)
 					(name "MMC0_CLK"
@@ -5838,7 +5859,7 @@
 						(justify bottom)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 25.4 0)
 					(length 5.08)
 					(name "DGND@1"
@@ -5856,7 +5877,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 22.86 0)
 					(length 5.08)
 					(name "DGND@2"
@@ -5874,7 +5895,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 17.78 0)
 					(length 5.08)
 					(name "DGND@3"
@@ -5892,7 +5913,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 15.24 0)
 					(length 5.08)
 					(name "DGND@4"
@@ -5910,7 +5931,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 12.7 0)
 					(length 5.08)
 					(name "DGND@5"
@@ -5928,7 +5949,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 10.16 0)
 					(length 5.08)
 					(name "DGND@6"
@@ -5946,7 +5967,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 7.62 0)
 					(length 5.08)
 					(name "DGND@7"
@@ -5964,7 +5985,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 5.08 0)
 					(length 5.08)
 					(name "DGND@8"
@@ -5982,7 +6003,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 2.54 0)
 					(length 5.08)
 					(name "DGND@9"
@@ -6000,7 +6021,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 0 0)
 					(length 5.08)
 					(name "DGND@10"
@@ -6018,7 +6039,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -5.08 0)
 					(length 5.08)
 					(name "DGND@11"
@@ -6036,7 +6057,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -7.62 0)
 					(length 5.08)
 					(name "DGND@12"
@@ -6054,7 +6075,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -12.7 0)
 					(length 5.08)
 					(name "DGND@13"
@@ -6072,7 +6093,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -15.24 0)
 					(length 5.08)
 					(name "DGND@14"
@@ -6090,7 +6111,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -20.32 0)
 					(length 5.08)
 					(name "DGND@15"
@@ -6108,7 +6129,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -22.86 0)
 					(length 5.08)
 					(name "DGND@16"
@@ -6126,7 +6147,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -25.4 0)
 					(length 5.08)
 					(name "DGND@17"
@@ -6144,7 +6165,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at -30.48 -27.94 0)
 					(length 5.08)
 					(name "DGND@18"
@@ -6162,7 +6183,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 25.4 180)
 					(length 5.08)
 					(name "DGND@19"
@@ -6180,7 +6201,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 22.86 180)
 					(length 5.08)
 					(name "DGND@20"
@@ -6198,7 +6219,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 20.32 180)
 					(length 5.08)
 					(name "DGND@21"
@@ -6216,7 +6237,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 17.78 180)
 					(length 5.08)
 					(name "DGND@22"
@@ -6234,7 +6255,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 12.7 180)
 					(length 5.08)
 					(name "DGND@23"
@@ -6252,7 +6273,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 10.16 180)
 					(length 5.08)
 					(name "DGND@24"
@@ -6270,7 +6291,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 5.08 180)
 					(length 5.08)
 					(name "DGND@25"
@@ -6288,7 +6309,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 2.54 180)
 					(length 5.08)
 					(name "DGND@26"
@@ -6306,7 +6327,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -2.54 180)
 					(length 5.08)
 					(name "DGND@27"
@@ -6324,7 +6345,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -5.08 180)
 					(length 5.08)
 					(name "DGND@28"
@@ -6342,7 +6363,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -7.62 180)
 					(length 5.08)
 					(name "DGND@29"
@@ -6360,7 +6381,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -10.16 180)
 					(length 5.08)
 					(name "DGND@30"
@@ -6378,7 +6399,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -12.7 180)
 					(length 5.08)
 					(name "DGND@31"
@@ -6396,7 +6417,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -15.24 180)
 					(length 5.08)
 					(name "DGND@32"
@@ -6414,7 +6435,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -17.78 180)
 					(length 5.08)
 					(name "DGND@33"
@@ -6432,7 +6453,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -20.32 180)
 					(length 5.08)
 					(name "DGND@34"
@@ -6450,7 +6471,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -25.4 180)
 					(length 5.08)
 					(name "DGND@35"
@@ -6468,7 +6489,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 30.48 -27.94 180)
 					(length 5.08)
 					(name "DGND@36"
@@ -6628,7 +6649,7 @@
 						(justify bottom)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 20.32 0)
 					(length 5.08)
 					(name "VDDS_DDR"
@@ -6646,7 +6667,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 15.24 0)
 					(length 5.08)
 					(name "VDD_CORE"
@@ -6664,7 +6685,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 10.16 0)
 					(length 5.08)
 					(name "VDD_MPU"
@@ -6682,7 +6703,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 5.08 0)
 					(length 5.08)
 					(name "VDDS_PLL"
@@ -6700,7 +6721,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 -5.08 0)
 					(length 5.08)
 					(name "CAP_VDD_RTC"
@@ -6718,7 +6739,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_out line
 					(at -27.94 -10.16 0)
 					(length 5.08)
 					(name "VPP"
@@ -6736,7 +6757,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin no_connect line
 					(at 27.94 -5.08 180)
 					(length 5.08)
 					(name "NC@1"
@@ -6754,7 +6775,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin no_connect line
 					(at 27.94 -7.62 180)
 					(length 5.08)
 					(name "NC@2"
@@ -6772,7 +6793,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin no_connect line
 					(at 27.94 -10.16 180)
 					(length 5.08)
 					(name "NC@3"
@@ -6865,6 +6886,18 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -1.27 -2.54) (xy 2.54 0) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
 					)
 				)
 				(polyline
@@ -7023,7 +7056,7 @@
 						(justify bottom)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "A"
@@ -7041,7 +7074,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 0 2.54 0)
 					(length 0)
 					(name "VCC"
@@ -7059,7 +7092,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 0 -2.54 0)
 					(length 0)
 					(name "GND"
@@ -7096,7 +7129,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "Y"
@@ -7588,15 +7621,19 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-power:3.3V"
+		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#3V3"
+			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -7605,7 +7642,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "3.3V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -7631,7 +7668,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -7640,7 +7677,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7649,7 +7686,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "3.3V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -7687,12 +7724,11 @@
 					)
 				)
 			)
-			(symbol "3.3V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "3.3V"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7710,15 +7746,19 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-power:3.3VA"
+		(symbol "power:+3.3VA"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#3V3A"
+			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -7727,7 +7767,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "3.3VA"
+			(property "Value" "+3.3VA"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -7753,7 +7793,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"3.3VA\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -7762,7 +7802,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7771,7 +7811,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "3.3VA_0_1"
+			(symbol "+3.3VA_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -7809,12 +7849,11 @@
 					)
 				)
 			)
-			(symbol "3.3VA_1_1"
+			(symbol "+3.3VA_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "3.3VA"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7832,15 +7871,19 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-power:5V"
+		(symbol "power:+5V"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#5V"
+			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -7849,7 +7892,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "5V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -7884,7 +7927,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7893,7 +7936,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "5V_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -7931,124 +7974,11 @@
 					)
 				)
 			)
-			(symbol "5V_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "oresat-power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -2.54 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "power-flag"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_1"
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -1.905 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 270)
-					(length 1.27)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8068,8 +7998,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -8145,8 +8079,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8418,12 +8351,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d558693-7ea1-4300-b487-7eb362eea176")
-	)
-	(junction
-		(at 184.15 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ecd3312-a30e-476c-b001-755f0f0d8b48")
 	)
 	(junction
 		(at 398.78 40.64)
@@ -9873,6 +9800,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 210.82) (xy 189.23 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f33bcf1-ec1c-48d9-811a-237b2e73f06c")
+	)
+	(wire
+		(pts
 			(xy 110.49 190.5) (xy 110.49 193.04)
 		)
 		(stroke
@@ -10000,16 +9937,6 @@
 			(type default)
 		)
 		(uuid "6971b61c-46ff-446f-89c8-b29af8ebdd1b")
-	)
-	(wire
-		(pts
-			(xy 189.23 210.82) (xy 184.15 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a4973c9-0423-41c3-b091-dc55ef4e4dc8")
 	)
 	(wire
 		(pts
@@ -11647,7 +11574,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_PNP_BEC")
+		(lib_id "Transistor_BJT:Q_PNP_BEC")
 		(at 219.71 137.16 0)
 		(mirror y)
 		(unit 1)
@@ -11665,7 +11592,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MMBT2907"
+		(property "Value" "PMBT2907"
 			(at 219.71 142.24 0)
 			(effects
 				(font
@@ -11710,7 +11637,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MMBT2907A-7-F"
+		(property "MPN" "PMBT2907A,215 "
+			(at 219.71 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "1727-2958-1-ND "
+			(at 219.71 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Nexperia USA Inc. "
 			(at 219.71 137.16 0)
 			(effects
 				(font
@@ -11738,7 +11683,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:5V")
+		(lib_id "power:+5V")
 		(at 87.63 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11746,8 +11691,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "035cb8b0-8133-4752-b3bd-7bd4926e7e54")
-		(property "Reference" "#5V06"
-			(at 87.63 55.88 0)
+		(property "Reference" "#PWR0173"
+			(at 87.63 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11755,16 +11700,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 86.36 53.34 0)
+		(property "Value" "+5V"
+			(at 87.63 52.324 0)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 87.63 55.88 0)
 			(effects
 				(font
@@ -11782,7 +11726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 87.63 55.88 0)
 			(effects
 				(font
@@ -11797,7 +11741,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#5V06")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -11915,7 +11859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
+		(property "Description" "CAP CER 22UF 16V X7R 1210"
 			(at 87.63 63.5 0)
 			(effects
 				(font
@@ -11933,7 +11877,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CGA6P1X7R1C226M250AC"
+		(property "MPN" "CGA6P1X7R1C226M250AC "
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5723-1-ND "
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
 			(at 87.63 63.5 0)
 			(effects
 				(font
@@ -12040,7 +12002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "126310f2-3cd6-42d9-9900-f994fe0315e0")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR76"
 			(at 91.44 232.41 0)
 			(effects
 				(font
@@ -12090,7 +12052,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR076")
+					(reference "#PWR76")
 					(unit 1)
 				)
 			)
@@ -12114,7 +12076,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "150060VS55040"
+		(property "Value" "GREEN"
 			(at 212.09 86.36 90)
 			(effects
 				(font
@@ -12169,6 +12131,33 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "732-150060GS75020CT-ND "
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Würth Elektronik "
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "73df49b5-3217-4205-a971-8515ae52f250")
 		)
@@ -12185,7 +12174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:3.3V")
+		(lib_id "power:+3.3V")
 		(at 231.14 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12194,7 +12183,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17e8a517-1b2d-40a9-a9b3-6af754a278d0")
-		(property "Reference" "#3V01"
+		(property "Reference" "#PWR0165"
 			(at 231.14 218.44 0)
 			(effects
 				(font
@@ -12203,7 +12192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3.3V"
+		(property "Value" "+3.3V"
 			(at 231.14 209.55 0)
 			(effects
 				(font
@@ -12229,7 +12218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 231.14 214.63 0)
 			(effects
 				(font
@@ -12250,7 +12239,7 @@
 			)
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#3V01")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -12351,7 +12340,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 227.33 0)
 			(effects
 				(font
@@ -12369,7 +12358,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
+			(at 231.14 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5667-1-ND "
+			(at 231.14 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 231.14 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
+			(at 231.14 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 231.14 227.33 0)
 			(effects
 				(font
@@ -12543,7 +12568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20fa7f09-facb-44d8-9b4c-c7ec790eb06e")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR78"
 			(at 207.01 223.52 0)
 			(effects
 				(font
@@ -12593,14 +12618,14 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR078")
+					(reference "#PWR78")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:3.3VA")
+		(lib_id "power:+3.3VA")
 		(at 196.85 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12626,7 +12651,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 196.85 165.1 0)
 			(effects
 				(font
@@ -12644,7 +12669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
 			(at 196.85 165.1 0)
 			(effects
 				(font
@@ -12729,6 +12754,24 @@
 			)
 		)
 		(property "MPN" "OSD3358-512M-BSM"
+			(at 148.59 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "1676-1002-ND "
+			(at 148.59 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Octavo Systems "
 			(at 148.59 139.7 0)
 			(effects
 				(font
@@ -13586,6 +13629,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4badb4f9-3164-4e9d-b6d9-6f1fb51d1177")
 		)
@@ -13686,7 +13747,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -13732,6 +13793,24 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF4701V"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "ERJ-3EKF4701V"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
 			(at 200.66 86.36 0)
 			(effects
 				(font
@@ -13867,7 +13946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
 			(at 219.71 205.74 0)
 			(effects
 				(font
@@ -13885,7 +13964,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "CGA3E2X7R1E104K080AA "
+			(at 219.71 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5667-1-ND "
+			(at 219.71 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
 			(at 219.71 205.74 0)
 			(effects
 				(font
@@ -13910,7 +14007,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
+		(lib_id "power:GND")
 		(at 398.78 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13918,8 +14015,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "550f0640-8047-4233-9ef3-d7771db4169c")
-		(property "Reference" "#GND074"
-			(at 398.78 83.82 0)
+		(property "Reference" "#PWR0189"
+			(at 398.78 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13928,15 +14025,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 398.78 86.36 0)
+			(at 398.78 87.63 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 398.78 83.82 0)
 			(effects
 				(font
@@ -13954,7 +14050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 398.78 83.82 0)
 			(effects
 				(font
@@ -13969,79 +14065,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#GND074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 184.15 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55d67ad4-fb52-4757-9beb-8afa6a3e052d")
-		(property "Reference" "#FLG09"
-			(at 184.15 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 184.15 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "69124af7-c7d2-43e5-86d7-17d2d4fc9807")
-		)
-		(instances
-			(project "oresat-gps-card"
-				(path "/65d12cdd-c326-4033-9053-c59fa4e0b25e/0c1da208-2d1c-4d05-9cc7-59584e50a6ac"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#FLG09")
+					(reference "#PWR0189")
 					(unit 1)
 				)
 			)
@@ -14130,7 +14154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "693440dc-2c07-4e94-bf5b-218681847f85")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR80"
 			(at 231.14 237.49 0)
 			(effects
 				(font
@@ -14180,14 +14204,14 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR080")
+					(reference "#PWR80")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:3.3V")
+		(lib_id "power:+3.3V")
 		(at 193.04 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14195,8 +14219,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "715d37ea-5a71-47b3-80f7-1a42a8b131cc")
-		(property "Reference" "#3V0120"
-			(at 193.04 81.28 0)
+		(property "Reference" "#PWR0164"
+			(at 193.04 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14204,16 +14228,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 190.5 78.74 0)
+		(property "Value" "+3.3V"
+			(at 193.04 77.724 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 193.04 81.28 0)
 			(effects
 				(font
@@ -14231,7 +14254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 193.04 81.28 0)
 			(effects
 				(font
@@ -14246,7 +14269,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#3V0120")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -14362,7 +14385,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+			(at 231.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 231.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 231.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 231.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
 			(at 231.14 218.44 0)
 			(effects
 				(font
@@ -14410,7 +14469,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "SN74LVC1G07DCK"
+		(property "Value" "SN74AUC1G07"
 			(at 186.69 206.502 0)
 			(effects
 				(font
@@ -14437,7 +14496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC BUF NON-INVERT 5.5V SC70-5"
+		(property "Description" "IC BUFF NON-INVERT 2.7V SC-70-5"
 			(at 207.01 210.82 0)
 			(effects
 				(font
@@ -14455,7 +14514,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SN74LVC1G07DCK3"
+		(property "MPN" "SN74AUC1G07DCKR "
+			(at 207.01 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "296-12464-1-ND "
+			(at 207.01 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Texas Instruments "
 			(at 207.01 210.82 0)
 			(effects
 				(font
@@ -14498,7 +14575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b67dfde-cfec-47d9-b87b-94dcd2c86587")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR75"
 			(at 218.44 95.25 0)
 			(effects
 				(font
@@ -14548,7 +14625,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR075")
+					(reference "#PWR75")
 					(unit 1)
 				)
 			)
@@ -14564,7 +14641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d7fe2f4-97f3-4300-9338-f11fd8949948")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR0187"
 			(at 99.06 232.41 0)
 			(effects
 				(font
@@ -14614,7 +14691,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR077")
+					(reference "#PWR0187")
 					(unit 1)
 				)
 			)
@@ -14684,6 +14761,24 @@
 			)
 		)
 		(property "MPN" "OSD3358-512M-BSM"
+			(at 363.22 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "1676-1002-ND "
+			(at 363.22 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Octavo Systems "
 			(at 363.22 50.8 0)
 			(effects
 				(font
@@ -15479,7 +15574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9012a249-063c-4b93-93a6-47c309efc6c5")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR73"
 			(at 87.63 77.47 0)
 			(effects
 				(font
@@ -15529,7 +15624,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR073")
+					(reference "#PWR73")
 					(unit 1)
 				)
 			)
@@ -15741,6 +15836,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 250.19 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 250.19 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06724e8a-7778-4297-beca-632ebe3186f8")
 		)
@@ -15820,6 +15933,24 @@
 			)
 		)
 		(property "MPN" "OSD3358-512M-BSM"
+			(at 341.63 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "1676-1002-ND "
+			(at 341.63 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Octavo Systems "
 			(at 341.63 204.47 0)
 			(effects
 				(font
@@ -16606,7 +16737,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:GND")
+		(lib_id "power:GND")
 		(at 327.66 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16614,8 +16745,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7a718f4-55c7-4017-9e11-5e975c83d135")
-		(property "Reference" "#GND073"
-			(at 327.66 83.82 0)
+		(property "Reference" "#PWR0188"
+			(at 327.66 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16624,15 +16755,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 327.66 86.36 0)
+			(at 327.66 87.63 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 327.66 83.82 0)
 			(effects
 				(font
@@ -16650,7 +16780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 327.66 83.82 0)
 			(effects
 				(font
@@ -16665,7 +16795,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#GND073")
+					(reference "#PWR0188")
 					(unit 1)
 				)
 			)
@@ -16743,6 +16873,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "P40.2KHCT-ND "
+			(at 250.19 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 250.19 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a0511634-26c5-4d29-aaa5-344d78f56a37")
 		)
@@ -16768,7 +16916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c29ca366-2af7-4f35-bfee-7312ab7930f1")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR74"
 			(at 92.71 95.25 0)
 			(effects
 				(font
@@ -16818,7 +16966,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR074")
+					(reference "#PWR74")
 					(unit 1)
 				)
 			)
@@ -16869,7 +17017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC VREF SHUNT 18V 0.5% SOT23-3"
+		(property "Description" "IC VREF SHUNT ADJ 0.5% SOT23-3"
 			(at 232.41 125.73 0)
 			(effects
 				(font
@@ -16887,8 +17035,26 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TLVH431BQDBZRQ1"
+		(property "MPN" "TLVH431BQDBZRQ1 "
 			(at 232.41 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "296-36778-1-ND "
+			(at 232.41 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Texas Instruments "
+			(at 232.41 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16924,7 +17090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1c278f2-0534-4611-83ca-69acba9f630e")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR79"
 			(at 219.71 215.9 0)
 			(effects
 				(font
@@ -16974,7 +17140,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93"
-					(reference "#PWR079")
+					(reference "#PWR79")
 					(unit 1)
 				)
 			)
@@ -17092,7 +17258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X7R 1210 (3225 Metric)"
+		(property "Description" "CAP CER 22UF 16V X7R 1210"
 			(at 92.71 81.28 0)
 			(effects
 				(font
@@ -17110,7 +17276,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CGA6P1X7R1C226M250AC"
+		(property "MPN" "CGA6P1X7R1C226M250AC "
+			(at 92.71 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5723-1-ND "
+			(at 92.71 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
 			(at 92.71 81.28 0)
 			(effects
 				(font
@@ -17266,6 +17450,24 @@
 		)
 		(property "MPN" "ERJ-3EKF4990V"
 			(at 232.41 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P499HCT-ND "
+			(at 232.41 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 232.41 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)

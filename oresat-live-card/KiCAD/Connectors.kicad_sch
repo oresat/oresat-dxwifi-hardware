@@ -1967,124 +1967,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-live-card-eagle-import:ORESAT-CARD-V1.3-GENERIC-1RF-POS1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "PCB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "ORESAT-CARD-V1.3-GENERIC-1RF-POS1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "oresat-live-card:ORESAT-CARD-V1.3-GENERIC-1RF-POS1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "ORESAT-CARD-V1.3-GENERIC-1RF-POS1_1_0"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "OreSat Card v1.3: Generic Card w/1RF @ Pos 1"
-					(at 2.54 -1.27 0)
-					(effects
-						(font
-							(size 2.54 2.159)
-						)
-						(justify left bottom)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "oresat-misc:Test-Point-1mm-round"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2203,16 +2085,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-power:VBUS"
-			(power)
-			(pin_names
-				(offset 0)
-			)
+		(symbol "oresat-pcbs:ORESAT-CARD-V1.3-2RF-LEFT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#VBUS"
-				(at 0 -3.81 0)
+			(property "Reference" "PCB"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2220,16 +2098,17 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
+			(property "Value" "ORESAT-CARD-V1.3-2RF-LEFT"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "oresat-pcbs:ORESAT-CARD-V1.3-2RF-LEFT"
+				(at 0 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2246,7 +2125,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2255,70 +2134,26 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
+			(symbol "ORESAT-CARD-V1.3-2RF-LEFT_1_0"
+				(rectangle
+					(start -20.32 2.54)
+					(end 20.32 -2.54)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
+			(symbol "ORESAT-CARD-V1.3-2RF-LEFT_1_1"
+				(text "OreSat Card v1.3 with RF Connectors 1,2"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(bold yes)
 						)
 					)
 				)
@@ -2527,6 +2362,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "OreSat Power Domain signals\n(See power sheet)"
 		(exclude_from_sim no)
@@ -2572,7 +2532,7 @@
 		)
 		(uuid "d20b5475-6d94-4c4b-a373-fc7ebbf25df6")
 	)
-	(text "All caps are 0603 ceramic 10% X5R Vw>=16V unless marked"
+	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
 		(exclude_from_sim no)
 		(at 125.73 196.85 0)
 		(effects
@@ -2593,16 +2553,6 @@
 			(justify left bottom)
 		)
 		(uuid "f169d972-4c3b-4635-a95e-46985b782073")
-	)
-	(text "WHY IS THIS TEXT SMALLER?\n"
-		(exclude_from_sim no)
-		(at 272.542 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fe1161d3-250e-4f08-99b0-93d96e8261f8")
 	)
 	(junction
 		(at 138.43 107.95)
@@ -4130,7 +4080,7 @@
 			)
 		)
 	)
-	(global_label "TURNSTILE_ANTENNA"
+	(global_label "PATCH_ANTENNA"
 		(shape input)
 		(at 297.18 186.69 180)
 		(fields_autoplaced yes)
@@ -4142,7 +4092,7 @@
 		)
 		(uuid "74e690f3-c7f6-4257-98ba-0a88f30dffda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.0843 186.69 0)
+			(at 279.0152 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4508,7 +4458,7 @@
 			)
 		)
 	)
-	(global_label "HELIX_ANTENNA"
+	(global_label "HELICAL_ANTENNA"
 		(shape input)
 		(at 297.18 165.1 180)
 		(fields_autoplaced yes)
@@ -4520,10 +4470,10 @@
 		)
 		(uuid "ec889af5-80d5-423b-9a6b-ed724e30516e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 279.62 165.1 0)
+			(at 277.4428 165.1 0)
 			(effects
 				(font
-					(size 0.889 0.889)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -4963,8 +4913,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-live-card-eagle-import:ORESAT-CARD-V1.3-GENERIC-1RF-POS1")
-		(at 233.68 218.44 0)
+		(lib_id "oresat-pcbs:ORESAT-CARD-V1.3-2RF-LEFT")
+		(at 293.37 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4972,7 +4922,7 @@
 		(dnp no)
 		(uuid "28255c8c-927e-4af5-b004-bbbb99c953b5")
 		(property "Reference" "PCB1"
-			(at 233.68 218.44 0)
+			(at 293.37 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,7 +4931,7 @@
 			)
 		)
 		(property "Value" "ORESAT-CARD-V1.3-GENERIC-1RF-POS1"
-			(at 233.68 218.44 0)
+			(at 293.37 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4989,8 +4939,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "oresat-live-card:ORESAT-CARD-V1.3-GENERIC-1RF-POS1"
-			(at 233.68 218.44 0)
+		(property "Footprint" "oresat-pcbs:ORESAT-CARD-V1.3-2RF-LEFT"
+			(at 293.37 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4999,7 +4949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 218.44 0)
+			(at 293.37 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +4958,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 218.44 0)
+			(at 293.37 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,8 +5021,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES SMD 10 OHM 1% 1/10W 0603"
 			(at 299.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0HCT-ND "
+			(at 299.72 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 299.72 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 299.72 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF10R0V "
+			(at 299.72 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5182,7 @@
 			)
 		)
 		(property "Value" "TFM-120-01-L-D-RA"
-			(at 133.35 179.07 0)
+			(at 145.034 179.832 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5241,6 +5227,24 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "SAM10145-ND "
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Samtec Inc. "
 			(at 127 124.46 0)
 			(effects
 				(font
@@ -5460,7 +5464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43241a7a-e1cc-4a5c-85ce-22f985924a47")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR3"
 			(at 276.86 151.13 0)
 			(effects
 				(font
@@ -5510,7 +5514,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/1bdb8d5b-8060-49dd-b753-8985e7684076"
-					(reference "#PWR03")
+					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -5656,7 +5660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:VBUS")
+		(lib_id "power:VBUS")
 		(at 182.88 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5664,8 +5668,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "741dbb48-3dad-4440-9d34-7b8f4d42191b")
-		(property "Reference" "#VBUS0101"
-			(at 182.88 132.08 0)
+		(property "Reference" "#PWR101"
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5674,12 +5678,11 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 182.88 129.54 0)
+			(at 182.88 128.524 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -5700,7 +5703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 182.88 132.08 0)
 			(effects
 				(font
@@ -5715,7 +5718,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/1bdb8d5b-8060-49dd-b753-8985e7684076"
-					(reference "#VBUS0101")
+					(reference "#PWR101")
 					(unit 1)
 				)
 			)
@@ -6092,7 +6095,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "ORESAT-DEBUG-CONNECTOR-CARD"
+		(property "Value" "ORESAT-DEBUG-CONNECTOR"
 			(at 276.86 104.14 0)
 			(effects
 				(font
@@ -6129,6 +6132,14 @@
 			)
 		)
 		(property "MPN" "2-1734592-0"
+			(at 267.208 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor" "DigiKey"
 			(at 276.86 104.14 0)
 			(effects
 				(font
@@ -6137,7 +6148,16 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
+		(property "DPN" "A100287CT-ND "
+			(at 276.86 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TE Connectivity AMP Connectors "
 			(at 276.86 104.14 0)
 			(effects
 				(font
@@ -6312,7 +6332,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "J-MOLEX-SMPM-73300-003X"
+		(property "Value" "SMPM"
 			(at 302.26 193.04 0)
 			(effects
 				(font
@@ -6339,7 +6359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN SMPM PLUG STR EDGEMNT"
+		(property "Description" "CONN SMPM PLUG STR 50OHM EDGEMNT"
 			(at 307.34 180.34 0)
 			(effects
 				(font
@@ -6359,6 +6379,24 @@
 		)
 		(property "Distributor" "DigiKey"
 			(at 307.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "WM10772-ND "
+			(at 307.34 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "MOLEX"
+			(at 307.34 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6658,7 +6696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdae8067-639d-486a-8bb4-be304ca50086")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR2"
 			(at 184.15 157.48 0)
 			(effects
 				(font
@@ -6708,7 +6746,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/1bdb8d5b-8060-49dd-b753-8985e7684076"
-					(reference "#PWR02")
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
@@ -7137,7 +7175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7c1cc0f-a200-4dd9-aef9-5ea48e62ff0a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR4"
 			(at 307.34 180.34 0)
 			(effects
 				(font
@@ -7187,7 +7225,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/1bdb8d5b-8060-49dd-b753-8985e7684076"
-					(reference "#PWR04")
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -7212,7 +7250,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "J-MOLEX-SMPM-73300-003X"
+		(property "Value" "SMPM"
 			(at 302.26 171.45 0)
 			(effects
 				(font
@@ -7239,7 +7277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN SMPM PLUG STR EDGEMNT"
+		(property "Description" "CONN SMPM PLUG STR 50OHM EDGEMNT"
 			(at 307.34 158.75 0)
 			(effects
 				(font
@@ -7259,6 +7297,24 @@
 		)
 		(property "Distributor" "DigiKey"
 			(at 307.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "WM10772-ND "
+			(at 307.34 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "MOLEX"
+			(at 307.34 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7291,7 +7347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5fd1087-09fb-43c9-896b-6d485500788f")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR5"
 			(at 307.34 201.93 0)
 			(effects
 				(font
@@ -7341,7 +7397,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/1bdb8d5b-8060-49dd-b753-8985e7684076"
-					(reference "#PWR05")
+					(reference "#PWR5")
 					(unit 1)
 				)
 			)

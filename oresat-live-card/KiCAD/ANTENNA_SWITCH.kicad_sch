@@ -955,17 +955,6 @@
 				)
 			)
 			(symbol "SN74LVC1G32QDBVRQ1_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(text "74LVC1G32\nOR"
 					(at 0 0 0)
 					(effects
@@ -976,6 +965,17 @@
 				)
 			)
 			(symbol "SN74LVC1G32QDBVRQ1_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(pin input line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -1069,15 +1069,19 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-power:5V"
+		(symbol "power:+5V"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#5V"
+			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -1086,7 +1090,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "5V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1121,7 +1125,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1130,7 +1134,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "5V_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1168,12 +1172,11 @@
 					)
 				)
 			)
-			(symbol "5V_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "5V"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1293,7 +1296,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "INSTALL JUMPER TO SELECT TURNSTILE ANTENNA\n"
+	(text "INSTALL JUMPER TO SELECT PATCH ANTENNA\n"
 		(exclude_from_sim no)
 		(at 112.268 80.772 0)
 		(effects
@@ -1303,7 +1306,7 @@
 		)
 		(uuid "1cfeb270-79db-4bac-815d-396e28328e24")
 	)
-	(text "VERIFY LOGIC MATCHES TABLE AND DEFAULTS TO HELIX"
+	(text "VERIFY LOGIC MATCHES TABLE AND DEFAULTS TO HELICAL"
 		(exclude_from_sim no)
 		(at 311.912 206.248 0)
 		(effects
@@ -1313,7 +1316,7 @@
 		)
 		(uuid "4c618184-d88e-4c25-a12c-b1a354a50023")
 	)
-	(text "3.3V TO 5.0V LEVEL TRANSLATE"
+	(text "3.3V TO 5.0V LEVEL TRANSLATOR\n"
 		(exclude_from_sim no)
 		(at 89.154 113.284 0)
 		(effects
@@ -2015,7 +2018,7 @@
 				)
 				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
 			)
-			(table_cell "TURNSTILE ANTENNA (RF1)"
+			(table_cell "PATCH ANTENNA (RF1)"
 				(exclude_from_sim no)
 				(at 287.02 220.345 0)
 				(size 27.94 3.175)
@@ -2049,7 +2052,7 @@
 				)
 				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
 			)
-			(table_cell "HELIX ANTENNA (RF2)"
+			(table_cell "HELICAL ANTENNA (RF2)"
 				(exclude_from_sim no)
 				(at 287.02 223.52 0)
 				(size 27.94 3.175)
@@ -2068,7 +2071,7 @@
 			)
 		)
 	)
-	(global_label "HELIX_ANTENNA"
+	(global_label "HELICAL_ANTENNA"
 		(shape input)
 		(at 297.18 210.82 0)
 		(fields_autoplaced yes)
@@ -2089,7 +2092,7 @@
 			)
 		)
 	)
-	(global_label "TURNSTILE_ANTENNA"
+	(global_label "PATCH_ANTENNA"
 		(shape input)
 		(at 297.18 200.66 0)
 		(fields_autoplaced yes)
@@ -2101,7 +2104,7 @@
 		)
 		(uuid "3a78fa33-91a6-4868-8468-d3c19fc5f305")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 319.2757 200.66 0)
+			(at 315.3448 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2162,7 +2165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0027313f-bdd6-484b-a6ef-4a57575f5ba3")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR129"
 			(at 205.74 152.4 0)
 			(effects
 				(font
@@ -2212,7 +2215,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0129")
+					(reference "#PWR129")
 					(unit 1)
 				)
 			)
@@ -2263,7 +2266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
 			(at 156.21 97.79 0)
 			(effects
 				(font
@@ -2281,8 +2284,26 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 156.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5667-1-ND "
+			(at 156.21 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
+			(at 156.21 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2306,7 +2327,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:5V")
+		(lib_id "power:+5V")
 		(at 111.76 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2314,8 +2335,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "128ebe76-92a7-47f1-9c02-83b3f02b8b34")
-		(property "Reference" "#5V013"
-			(at 111.76 58.42 0)
+		(property "Reference" "#PWR0183"
+			(at 111.76 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2323,16 +2344,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 110.49 55.88 0)
+		(property "Value" "+5V"
+			(at 111.76 54.864 0)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 111.76 58.42 0)
 			(effects
 				(font
@@ -2350,7 +2370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 111.76 58.42 0)
 			(effects
 				(font
@@ -2365,7 +2385,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#5V013")
+					(reference "#PWR0183")
 					(unit 1)
 				)
 			)
@@ -2381,7 +2401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12a1c231-4a96-41f1-87b7-19ab21841a03")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR125"
 			(at 149.86 137.16 0)
 			(effects
 				(font
@@ -2431,14 +2451,14 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0125")
+					(reference "#PWR125")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:5V")
+		(lib_id "power:+5V")
 		(at 247.65 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2446,8 +2466,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "176f78de-07fa-4050-b757-469edf9c3529")
-		(property "Reference" "#5V015"
-			(at 247.65 165.1 0)
+		(property "Reference" "#PWR0181"
+			(at 247.65 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2455,16 +2475,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 246.38 162.56 0)
+		(property "Value" "+5V"
+			(at 247.65 161.544 0)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 247.65 165.1 0)
 			(effects
 				(font
@@ -2482,7 +2501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 247.65 165.1 0)
 			(effects
 				(font
@@ -2497,7 +2516,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#5V015")
+					(reference "#PWR0181")
 					(unit 1)
 				)
 			)
@@ -2531,7 +2550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 227.33 214.63 0)
 			(effects
 				(font
@@ -2549,7 +2568,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 100PF 50V C0G/NP0 0402"
+			(at 227.33 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-GCM1555C1H101GA16DCT-ND "
+			(at 227.33 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 227.33 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 227.33 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H101GA16D "
 			(at 227.33 214.63 0)
 			(effects
 				(font
@@ -2590,7 +2645,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LV1T34DCK"
+		(property "Value" "SN74LV1T34"
 			(at 120.65 116.7698 0)
 			(effects
 				(font
@@ -2616,7 +2671,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-353"
+		(property "Description" "IC BUFF NON-INVERT 5.5V SC-70-5"
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "296-SN74LV1T34QDCKRQ1CT-ND "
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Texas Instruments "
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LV1T34QDCKRQ1 "
 			(at 106.68 120.65 0)
 			(effects
 				(font
@@ -2659,7 +2750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28d8989b-554c-48f8-812e-cd1fa123f3a5")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR133"
 			(at 265.43 186.69 0)
 			(effects
 				(font
@@ -2709,14 +2800,14 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0133")
+					(reference "#PWR133")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:5V")
+		(lib_id "power:+5V")
 		(at 149.86 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2724,8 +2815,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28f0de31-19dd-44e6-bb44-00507214bc83")
-		(property "Reference" "#5V014"
-			(at 149.86 92.71 0)
+		(property "Reference" "#PWR0180"
+			(at 149.86 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,16 +2824,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 148.59 90.17 0)
+		(property "Value" "+5V"
+			(at 149.86 89.154 0)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 149.86 92.71 0)
 			(effects
 				(font
@@ -2760,7 +2850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 149.86 92.71 0)
 			(effects
 				(font
@@ -2775,7 +2865,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#5V014")
+					(reference "#PWR0180")
 					(unit 1)
 				)
 			)
@@ -2791,7 +2881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a895387-c8fe-4f18-9a1d-9648a795235f")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR127"
 			(at 247.65 227.33 0)
 			(effects
 				(font
@@ -2841,7 +2931,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0127")
+					(reference "#PWR127")
 					(unit 1)
 				)
 			)
@@ -2865,7 +2955,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 149.86 73.66 90)
 			(effects
 				(font
@@ -2873,7 +2963,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 150.114 76.454 90)
 			(effects
 				(font
@@ -2891,8 +2981,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
 			(at 149.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 149.86 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 149.86 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 149.86 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
+			(at 149.86 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2916,7 +3042,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-power:5V")
+		(lib_id "power:+5V")
 		(at 106.68 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2924,8 +3050,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35bf930f-fbfe-40af-9d40-a64fac85ebf0")
-		(property "Reference" "#5V012"
-			(at 106.68 97.79 0)
+		(property "Reference" "#PWR0182"
+			(at 106.68 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,16 +3059,15 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 105.41 95.25 0)
+		(property "Value" "+5V"
+			(at 106.68 94.234 0)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:"
+		(property "Footprint" ""
 			(at 106.68 97.79 0)
 			(effects
 				(font
@@ -2960,7 +3085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 106.68 97.79 0)
 			(effects
 				(font
@@ -2975,7 +3100,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#5V012")
+					(reference "#PWR0182")
 					(unit 1)
 				)
 			)
@@ -3000,25 +3125,15 @@
 			)
 		)
 		(property "Value" "SN74LVC1G32QDBVRQ1"
-			(at 158.496 114.3 0)
+			(at 161.29 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "oresat-live-card:DBV5"
-			(at 149.86 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G32QDBVRQ1?qs=7kv20MEVUlg16yKvxVArgw%3D%3D"
-			(at 149.86 118.11 0)
+		(property "Footprint" ""
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,8 +3141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC GATE OR 1CH 2-INP SOT23-5"
-			(at 149.86 118.11 0)
+		(property "Datasheet" ""
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3035,16 +3150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 149.86 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC1G32QDBVRQ1"
+		(property "Description" ""
 			(at 149.86 118.11 0)
 			(effects
 				(font
@@ -3105,7 +3211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 265.43 175.26 0)
 			(effects
 				(font
@@ -3123,7 +3229,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
+			(at 265.43 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5667-1-ND "
+			(at 265.43 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 265.43 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
+			(at 265.43 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 265.43 175.26 0)
 			(effects
 				(font
@@ -3157,7 +3299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68ce9c2b-920d-43a2-a662-81fcdee2659a")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR132"
 			(at 254 186.69 0)
 			(effects
 				(font
@@ -3207,7 +3349,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0132")
+					(reference "#PWR132")
 					(unit 1)
 				)
 			)
@@ -3223,7 +3365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c4c79dd-26c9-4b9b-ba3c-992e04ac50d2")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR123"
 			(at 106.68 137.16 0)
 			(effects
 				(font
@@ -3273,7 +3415,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0123")
+					(reference "#PWR123")
 					(unit 1)
 				)
 			)
@@ -3307,7 +3449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 254 175.26 0)
 			(effects
 				(font
@@ -3325,7 +3467,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 100PF 50V C0G/NP0 0402"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-GCM1555C1H101GA16DCT-ND "
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H101GA16D "
 			(at 254 175.26 0)
 			(effects
 				(font
@@ -3395,7 +3573,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "5-6000 MHZ LOW DISTORTION SPDT S"
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2312-QPC1022TR7CT-ND "
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Qorvo "
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "QPC1022TR7 "
 			(at 247.65 205.74 0)
 			(effects
 				(font
@@ -3466,7 +3680,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 221.234 183.134 90)
 			(effects
 				(font
@@ -3484,8 +3698,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0603"
 			(at 220.98 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P5.62KHCT-ND "
+			(at 220.98 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 220.98 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 220.98 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF5621V "
+			(at 220.98 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,7 +3853,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 233.934 183.134 90)
 			(effects
 				(font
@@ -3621,8 +3871,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
 			(at 233.68 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 233.68 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 233.68 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 233.68 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
+			(at 233.68 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,7 +3941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac528287-4c8e-47fb-b844-6d0652278ef6")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR126"
 			(at 161.29 105.41 0)
 			(effects
 				(font
@@ -3705,7 +3991,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0126")
+					(reference "#PWR126")
 					(unit 1)
 				)
 			)
@@ -3721,7 +4007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0b55193-9045-4f20-b122-bcdb3434c75e")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR130"
 			(at 227.33 226.06 0)
 			(effects
 				(font
@@ -3771,7 +4057,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0130")
+					(reference "#PWR130")
 					(unit 1)
 				)
 			)
@@ -3787,7 +4073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf626c38-cffe-459a-9458-f9317ac608f2")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR124"
 			(at 118.11 110.49 0)
 			(effects
 				(font
@@ -3837,7 +4123,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0124")
+					(reference "#PWR124")
 					(unit 1)
 				)
 			)
@@ -3871,7 +4157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 206.756 127.254 90)
 			(effects
 				(font
@@ -3889,7 +4175,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+			(at 205.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 205.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 205.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 205.74 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
 			(at 205.74 127 0)
 			(effects
 				(font
@@ -3923,7 +4245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a8bce8-fa42-493c-adf4-679aac92c2fe")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR128"
 			(at 262.89 232.41 0)
 			(effects
 				(font
@@ -3973,7 +4295,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0128")
+					(reference "#PWR128")
 					(unit 1)
 				)
 			)
@@ -4024,7 +4346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
 			(at 113.03 102.87 0)
 			(effects
 				(font
@@ -4042,8 +4364,26 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "445-5667-1-ND "
+			(at 113.03 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TDK Corporation "
+			(at 113.03 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4076,7 +4416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8ffe55d-14b9-4338-9fb8-e205a8c20187")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR131"
 			(at 214.63 194.31 0)
 			(effects
 				(font
@@ -4126,7 +4466,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0131")
+					(reference "#PWR131")
 					(unit 1)
 				)
 			)
@@ -4160,7 +4500,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 204.724 139.446 90)
 			(effects
 				(font
@@ -4178,7 +4518,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0603"
+			(at 205.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P5.62KHCT-ND "
+			(at 205.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 205.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 205.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF5621V "
 			(at 205.74 139.7 0)
 			(effects
 				(font
@@ -4221,7 +4597,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1k"
 			(at 114.3 66.0399 0)
 			(effects
 				(font
@@ -4230,7 +4606,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 112.776 65.024 90)
 			(effects
 				(font
@@ -4248,7 +4624,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES SMD 1K OHM 1% 1/10W 0603"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P1.00KHCT-ND "
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1001V "
 			(at 111.76 64.77 0)
 			(effects
 				(font
@@ -4282,7 +4694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d82631c5-c727-421e-8458-8195a23d1f81")
-		(property "Reference" "#PWR0149"
+		(property "Reference" "#PWR149"
 			(at 161.29 86.36 0)
 			(effects
 				(font
@@ -4332,7 +4744,7 @@
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/be7cb0bc-9b84-4141-bfc2-8b666588ddb1"
-					(reference "#PWR0149")
+					(reference "#PWR149")
 					(unit 1)
 				)
 			)
@@ -4366,7 +4778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 262.89 220.98 0)
 			(effects
 				(font
@@ -4384,7 +4796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 100PF 50V C0G/NP0 0402"
 			(at 262.89 220.98 0)
 			(effects
 				(font
@@ -4393,7 +4805,34 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GCM1555C1H101JA16D "
+		(property "MPN" "GCM1555C1H101GA16D "
+			(at 262.89 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-GCM1555C1H101GA16DCT-ND "
+			(at 262.89 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 262.89 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata Electronics"
 			(at 262.89 220.98 0)
 			(effects
 				(font
