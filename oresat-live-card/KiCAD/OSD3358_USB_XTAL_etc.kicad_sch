@@ -913,6 +913,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TPS2041BQDBVRQ1_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U9"
+				(at 13.0556 9.1186 0)
+				(effects
+					(font
+						(size 2.0828 1.7703)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TPS2041BQDBVRQ1"
+				(at 12.4206 6.5786 0)
+				(effects
+					(font
+						(size 2.0828 1.7703)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "oresat-live-card:DBV5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2041b-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1651525711603&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps2041b-q1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power Switch/Driver 1:1 N-Channel 500mA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Distributor" "DigiKey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "TPS2041BQDBVRQ1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS2041BQDBVRQ1_1_1_0"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin open_collector line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "~{OC}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "~{EN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "oresat-connectors:SM06B-SRSS-TB(LF)(SN)"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7549,52 +7729,15 @@
 				)
 			)
 			(symbol "TPS2041BQDBVRQ1_1_0"
-				(polyline
-					(pts
-						(xy -10.16 5.08) (xy -10.16 -10.16)
-					)
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -10.16)
 					(stroke
-						(width 0.1524)
-						(type default)
+						(width 0)
+						(type solid)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -10.16) (xy 10.16 -10.16)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 5.08) (xy -10.16 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 10.16 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(pin open_collector line
@@ -13919,6 +14062,7 @@
 		)
 	)
 	(symbol
+		(lib_name "TPS2041BQDBVRQ1_1")
 		(lib_id "oresat-ics:TPS2041BQDBVRQ1")
 		(at 264.16 148.59 0)
 		(unit 1)
@@ -13963,7 +14107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC PWR SWITCH N-CHAN 1:1 SOT23-5"
+		(property "Description" "Power Switch/Driver 1:1 N-Channel 500mA"
 			(at 264.16 148.59 0)
 			(effects
 				(font
@@ -13981,7 +14125,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TPS2041BQDBVRQ1 "
+		(property "MPN" "TPS2041BQDBVRQ1"
 			(at 264.16 148.59 0)
 			(effects
 				(font
@@ -14458,7 +14602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC PWR SWITCH N-CHAN 1:1 SOT23-5"
+		(property "Description" "Power Switch/Driver 1:1 N-Channel 500mA"
 			(at 264.16 223.52 0)
 			(effects
 				(font
@@ -14476,7 +14620,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TPS2041BQDBVRQ1 "
+		(property "MPN" "TPS2041BQDBVRQ1"
 			(at 264.16 223.52 0)
 			(effects
 				(font
