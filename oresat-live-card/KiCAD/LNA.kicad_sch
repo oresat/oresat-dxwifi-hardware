@@ -2989,6 +2989,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 237.49 139.7)
+		(end 266.7 172.72)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a5f3145f-99dd-4b0e-852c-3ce0c00d90a1)
+	)
+	(text "I assume all the values here are from testing..."
+		(exclude_from_sim no)
+		(at 158.242 43.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "05da04f7-10c1-4c73-b9fb-bf51af2cd215")
+	)
 	(text "Same PCBA1 for TX"
 		(exclude_from_sim no)
 		(at 327.66 52.07 0)
@@ -2999,6 +3023,30 @@
 		)
 		(uuid "45084cf4-fc35-4c34-abb3-643f7bf7f562")
 	)
+	(text "missing 2.7nH inductor on RF_IN? pg 10 on LNA datasheet"
+		(exclude_from_sim no)
+		(at 114.3 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "601eb48c-7166-4027-88b7-64f554282069")
+	)
+	(text "operating freq. is ~10GHz, shouldn't we go with PAT1632?"
+		(exclude_from_sim no)
+		(at 173.736 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "749140ae-4d71-4057-927e-675a3ac565e7")
+	)
 	(text "2.54MM HEADER FOR SCOPE PROBE"
 		(exclude_from_sim no)
 		(at 397.002 160.02 0)
@@ -3008,6 +3056,42 @@
 			)
 		)
 		(uuid "76435ab3-31ee-4738-8b1c-2f6dc2741efd")
+	)
+	(text "?????"
+		(exclude_from_sim no)
+		(at 238.7267 138.3976 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "84b22476-bd1c-4754-a887-3654940e5040")
+	)
+	(text "R88 and R105 values swapped?"
+		(exclude_from_sim no)
+		(at 122.682 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "9fb4d214-baac-41a2-854e-8d34aef7de16")
+	)
+	(text "Relabel to RX_DET_OUT?"
+		(exclude_from_sim no)
+		(at 397.51 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "b048834f-6182-4328-9aec-22eed7344d0b")
 	)
 	(text "Connection to J12\nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
 		(exclude_from_sim no)
@@ -4191,6 +4275,131 @@
 			(type default)
 		)
 		(uuid "ffa51445-d2df-43d2-8ef2-8dca051a056f")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 17.78 19.05)
+		(row_heights 3.175 3.175 3.175)
+		(cells
+			(table_cell "LNA SHUTDOWN"
+				(exclude_from_sim no)
+				(at 106.68 101.6 0)
+				(size 17.78 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 124.46 101.6 0)
+				(size 19.05 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
+			)
+			(table_cell "ON"
+				(exclude_from_sim no)
+				(at 106.68 104.775 0)
+				(size 17.78 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
+			)
+			(table_cell "(0, x, 0.4) V"
+				(exclude_from_sim no)
+				(at 124.46 104.775 0)
+				(size 19.05 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
+			)
+			(table_cell "OFF"
+				(exclude_from_sim no)
+				(at 106.68 107.95 0)
+				(size 17.78 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
+			)
+			(table_cell "(2.5, 3.3, VDD) V"
+				(exclude_from_sim no)
+				(at 124.46 107.95 0)
+				(size 19.05 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "021b12b4-ae06-439e-8fcf-6af9517e1059")
+			)
+		)
 	)
 	(global_label "PWR_DET_OUT"
 		(shape input)
@@ -7642,7 +7851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.65x2.38mm"
 			(at 307.34 149.86 0)
 			(effects
 				(font
@@ -7651,7 +7860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/5538f.pdf"
 			(at 307.34 149.86 0)
 			(effects
 				(font
@@ -8384,7 +8593,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "oresat-ics:QPQ1907SR"
 			(at 88.9 168.58 0)
 			(effects
 				(font
