@@ -69,7 +69,20 @@
           "width": 0.4318
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "items_not_allowed|169023648|90385193|9f159d52-4c5c-4b42-a976-b186a26565f2|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|181023648|120385193|54f3c79b-ff12-459f-957a-628c82b21ff6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|181023648|90385193|33ac2cf2-d15a-4e37-bfb9-f211169bee8e|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -653,6 +666,22 @@
       {
         "netclass": "RF",
         "pattern": "Net-(FL2-INPUT)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U19-RFOUT@12)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U19-RFIN@2)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(J9-In)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(J12-In)"
       }
     ]
   },
