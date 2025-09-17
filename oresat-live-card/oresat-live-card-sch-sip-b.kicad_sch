@@ -7834,9 +7834,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "oresat-ics:TUSB4020BI"
-			(pin_numbers
-				(hide yes)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -7857,7 +7854,7 @@
 				)
 			)
 			(property "Footprint" "Package_QFP:TQFP-48-1EP_7x7mm_P0.5mm_EP5x5mm"
-				(at 0 -49.53 0)
+				(at -0.508 55.118 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7875,12 +7872,11 @@
 				)
 			)
 			(property "Description" "2-Port USB 2.0 Hub"
-				(at 0 0 0)
+				(at 0.508 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TUSB4020BI_0_0"
@@ -8067,24 +8063,6 @@
 				(pin input line
 					(at -5.08 35.56 270)
 					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 35.56 270)
-					(length 2.54)
 					(hide yes)
 					(name "VDD"
 						(effects
@@ -8177,44 +8155,7 @@
 						)
 					)
 				)
-				(pin input line
-					(at 0 -36.83 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "49"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 35.56 270)
-					(length 2.54)
-					(hide yes)
-					(name "VDD33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
+				(pin power_in line
 					(at 5.08 35.56 270)
 					(length 2.54)
 					(hide yes)
@@ -8245,24 +8186,6 @@
 						)
 					)
 					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 35.56 270)
-					(length 2.54)
-					(name "VDD33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8320,25 +8243,6 @@
 						)
 					)
 					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 35.56 270)
-					(length 2.54)
-					(hide yes)
-					(name "VDD33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8483,6 +8387,328 @@
 						)
 					)
 					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TUSB4020BI_1_0"
+				(pin power_in line
+					(at -5.08 35.56 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(hide yes)
+					(name "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -36.83 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 35.56 270)
+					(length 2.54)
+					(hide yes)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 35.56 270)
+					(length 2.54)
+					(hide yes)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 35.56 270)
+					(length 2.54)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -16970,7 +17196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC USB 2.0 2PORT HUB IND 48HTQFP"
+		(property "Description" "2-Port USB 2.0 Hub"
 			(at 148.59 210.82 0)
 			(effects
 				(font
@@ -17125,6 +17351,42 @@
 		)
 		(pin "39"
 			(uuid "8418579f-ccf0-4842-a1de-d065d7f3b19b")
+		)
+		(pin "16"
+			(uuid "ef2529e5-331a-4763-b8d3-930b725361d5")
+		)
+		(pin "17"
+			(uuid "dfa7aa59-67c4-41cf-8781-8feadb84fa6d")
+		)
+		(pin "19"
+			(uuid "e4bccb71-bc8d-418a-8760-2081298535ae")
+		)
+		(pin "20"
+			(uuid "1a6581bb-25c2-45e2-a148-3bb137dfb130")
+		)
+		(pin "28"
+			(uuid "14a3ba4f-a81b-40b8-9d55-355b3bd9ef61")
+		)
+		(pin "29"
+			(uuid "7050e02e-08d7-4877-b16c-32a64380e3a9")
+		)
+		(pin "31"
+			(uuid "316eb65b-a395-4273-b775-5b2b341bc57d")
+		)
+		(pin "32"
+			(uuid "f0ff5d0c-370d-442e-91d4-8ba3b7daef59")
+		)
+		(pin "43"
+			(uuid "403e0270-4545-42e3-912e-ed6ff82239c1")
+		)
+		(pin "44"
+			(uuid "4d1c886a-ebf1-4e2c-ba39-51a6ef95fae4")
+		)
+		(pin "46"
+			(uuid "1939b2a1-03ce-4b0f-be97-78ba1aba0872")
+		)
+		(pin "47"
+			(uuid "0edbae48-17fe-4a6c-bd05-a6ee95ed9a3c")
 		)
 		(instances
 			(project "oresat-live-card"
