@@ -6,7 +6,7 @@
 	(paper "B")
 	(title_block
 		(title "Oresat DxWifi Card")
-		(date "2025-07-06")
+		(date "2025-09-15")
 		(rev "2")
 	)
 	(lib_symbols
@@ -6268,12 +6268,6 @@
 		(uuid "3f18c604-5455-42d3-a43b-4f7ac3c71d41")
 	)
 	(junction
-		(at 372.11 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ff08185-52fe-4eab-ac2e-69fc3598df05")
-	)
-	(junction
 		(at 275.59 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6508,6 +6502,12 @@
 		(uuid "a5b1874e-dc09-4186-8793-a74cdaca538e")
 	)
 	(junction
+		(at 372.11 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7b03437-09a6-4578-9921-c24bec8f391d")
+	)
+	(junction
 		(at 93.98 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6518,12 +6518,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3b3c884-d0fb-4f65-8ea8-09d11c7bbf89")
-	)
-	(junction
-		(at 372.11 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3d131ad-117e-498e-b2b4-d82d603c33f1")
 	)
 	(junction
 		(at 83.82 132.08)
@@ -7491,16 +7485,6 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 151.13) (xy 372.11 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f168ee3-1ee8-44f1-a8fd-196039d283d5")
-	)
-	(wire
-		(pts
 			(xy 229.87 40.64) (xy 288.29 40.64)
 		)
 		(stroke
@@ -7531,7 +7515,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 152.4) (xy 372.11 156.21)
+			(xy 372.11 151.13) (xy 372.11 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9021,6 +9005,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 156.21) (xy 372.11 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ada74be8-5a4b-4609-aba4-ad435104cb57")
+	)
+	(wire
+		(pts
 			(xy 261.62 226.06) (xy 261.62 228.6)
 		)
 		(stroke
@@ -9308,16 +9302,6 @@
 			(type default)
 		)
 		(uuid "bcb67212-43f5-4e07-b1c3-f0b869a834a5")
-	)
-	(wire
-		(pts
-			(xy 372.11 176.53) (xy 372.11 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcc9a48e-3764-4088-96db-0d79243c0c70")
 	)
 	(wire
 		(pts
@@ -10028,16 +10012,6 @@
 			(type default)
 		)
 		(uuid "ea37bdd5-b42f-4000-b9b2-da7945e5f290")
-	)
-	(wire
-		(pts
-			(xy 372.11 166.37) (xy 372.11 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ead88494-4078-418e-99dd-f77f143e44b8")
 	)
 	(wire
 		(pts
@@ -11678,6 +11652,73 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
 					(reference "TP23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 402.59 218.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bf4e416-f116-4e5d-901f-717c2c744bb5")
+		(property "Reference" "#FLG05"
+			(at 404.495 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 405.765 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 402.59 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 402.59 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a467f7d-210c-4876-97e2-e5d634e68890")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -14669,72 +14710,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
 					(reference "#PWR0185")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 372.11 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "449646f2-67fe-4a0c-8b47-d75836dc4e45")
-		(property "Reference" "#PWR23"
-			(at 372.11 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 372.11 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 372.11 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 372.11 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 372.11 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b0e4ae0-9343-443a-bd6b-a92016a88752")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
-					(reference "#PWR23")
 					(unit 1)
 				)
 			)
@@ -18903,111 +18878,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
 					(reference "C83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 372.11 161.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "82157e1b-82e6-49ba-91a4-33758db8867d")
-		(property "Reference" "R62"
-			(at 373.6086 157.48 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 368.808 157.48 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "ERJ-3EKF4701V"
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "ERJ-3EKF4701V"
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Panasonic "
-			(at 372.11 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2d084b2-8b58-4f23-a32c-1289ea3944ec")
-		)
-		(pin "2"
-			(uuid "a7846f90-ea0b-48de-b0c2-df6f5d9177b5")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
-					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -23748,121 +23618,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 372.11 172.72 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d46cd1c9-5fdd-4411-834e-c820d3bd4a83")
-		(property "Reference" "D12"
-			(at 375.285 170.815 0)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "GREEN"
-			(at 372.11 172.72 90)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Green 525nm LED 3.2V 0603"
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "150060GS75020"
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "732-150060GS75020CT-ND "
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Würth Elektronik "
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 372.11 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "09daa575-ae1f-48ac-afed-268dd1480e57")
-		)
-		(pin "1"
-			(uuid "3f3130de-3ac9-43bb-9fef-30c8c2006bfa")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
 		(at 149.86 243.84 180)
 		(unit 1)
@@ -24488,7 +24243,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 372.11 152.4 270)
+		(at 373.38 156.21 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24497,7 +24252,7 @@
 		(fields_autoplaced yes)
 		(uuid "dcd9c52e-3cc1-4468-8121-e68eaee0943d")
 		(property "Reference" "#FLG03"
-			(at 374.015 152.4 0)
+			(at 375.285 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24506,7 +24261,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 375.285 152.4 90)
+			(at 376.555 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24515,7 +24270,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 372.11 152.4 0)
+			(at 373.38 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24524,7 +24279,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 372.11 152.4 0)
+			(at 373.38 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24533,7 +24288,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 372.11 152.4 0)
+			(at 373.38 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)

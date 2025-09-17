@@ -6,7 +6,7 @@
 	(paper "B")
 	(title_block
 		(title "Oresat DxWifi Card")
-		(date "2025-07-06")
+		(date "2025-09-15")
 		(rev "2")
 	)
 	(lib_symbols
@@ -3034,18 +3034,6 @@
 		)
 		(uuid "84b22476-bd1c-4754-a887-3654940e5040")
 	)
-	(text "R88 and R105 values were swapped according to the reference design"
-		(exclude_from_sim no)
-		(at 125.222 115.824 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "9fb4d214-baac-41a2-854e-8d34aef7de16")
-	)
 	(text "Connection to J12\nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
 		(exclude_from_sim no)
 		(at 309.88 72.39 0)
@@ -4329,32 +4317,34 @@
 				(type solid)
 			)
 		)
-		(column_widths 17.78 19.05)
+		(column_widths 21.59 19.05)
 		(row_heights 3.175 3.175 3.175)
 		(cells
 			(table_cell "LNA SHUTDOWN"
 				(exclude_from_sim no)
-				(at 88.9 101.6 0)
-				(size 17.78 3.175)
+				(at 90.17 100.33 0)
+				(size 40.64 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
+				(span 2 1)
 				(fill
 					(type none)
 				)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
 					)
-					(justify left top)
+					(justify top)
 				)
 				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
 			)
-			(table_cell ""
+			(table_cell "rgb(240, 240, 240)"
 				(exclude_from_sim no)
-				(at 106.68 101.6 0)
+				(at 111.76 100.33 0)
 				(size 19.05 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
+				(span 0 0)
 				(fill
 					(type none)
 				)
@@ -4366,10 +4356,10 @@
 				)
 				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
 			)
-			(table_cell "ON"
+			(table_cell "HIGH - LNA ENABLE"
 				(exclude_from_sim no)
-				(at 88.9 104.775 0)
-				(size 17.78 3.175)
+				(at 90.17 103.505 0)
+				(size 21.59 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -4385,7 +4375,7 @@
 			)
 			(table_cell "(0, x, 0.4) V"
 				(exclude_from_sim no)
-				(at 106.68 104.775 0)
+				(at 111.76 103.505 0)
 				(size 19.05 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -4400,10 +4390,10 @@
 				)
 				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
 			)
-			(table_cell "OFF"
+			(table_cell "LOW - LNA DISABLE"
 				(exclude_from_sim no)
-				(at 88.9 107.95 0)
-				(size 17.78 3.175)
+				(at 90.17 106.68 0)
+				(size 21.59 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -4419,7 +4409,7 @@
 			)
 			(table_cell "(2.5, 3.3, VDD) V"
 				(exclude_from_sim no)
-				(at 106.68 107.95 0)
+				(at 111.76 106.68 0)
 				(size 19.05 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)

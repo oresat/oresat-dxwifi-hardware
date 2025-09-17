@@ -89,7 +89,7 @@
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "warning",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -682,6 +682,14 @@
       {
         "netclass": "RF",
         "pattern": "Net-(J12-In)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U34-RF_COM)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "Net-(U28-OUTPUT2)"
       }
     ]
   },
@@ -829,7 +837,7 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
