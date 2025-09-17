@@ -2396,131 +2396,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+1V8"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+1V8"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+1V8\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+1V8_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+1V8_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2724,7 +2599,7 @@
 	)
 	(text "Measuring temp of PA, using the Octavo ADC Converter Pin"
 		(exclude_from_sim no)
-		(at 338.836 149.86 0)
+		(at 320.04 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2813,12 +2688,6 @@
 		(uuid "34a0573a-8971-4a6a-98f1-3d4ff7c9fae3")
 	)
 	(junction
-		(at 312.42 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "49bb3f52-58f2-4e61-8ab2-e8eba920437f")
-	)
-	(junction
 		(at 247.65 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2889,12 +2758,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e523c41c-4b04-4cee-b799-647f0d2c5305")
-	)
-	(junction
-		(at 300.99 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e85c4447-3920-41c1-9510-9b728cc2c9bd")
 	)
 	(junction
 		(at 254 143.51)
@@ -3041,26 +2904,6 @@
 			(type default)
 		)
 		(uuid "21ec46c3-43b9-40f0-9b83-10c2f9b72683")
-	)
-	(wire
-		(pts
-			(xy 312.42 153.67) (xy 312.42 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27ca45b9-c275-4628-856d-ae0261f758e0")
-	)
-	(wire
-		(pts
-			(xy 300.99 152.4) (xy 300.99 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27fce470-7fe4-4798-81d6-a284a5f04654")
 	)
 	(wire
 		(pts
@@ -3474,16 +3317,6 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 139.7) (xy 300.99 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "919a1dcf-b894-437f-918f-b43d771f4c7a")
-	)
-	(wire
-		(pts
 			(xy 254 143.51) (xy 266.7 143.51)
 		)
 		(stroke
@@ -3501,16 +3334,6 @@
 			(type default)
 		)
 		(uuid "950b8d1c-8e99-48ee-aa09-70de4445d10f")
-	)
-	(wire
-		(pts
-			(xy 300.99 153.67) (xy 312.42 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9afaf780-6c11-40cf-b158-d068efaa0066")
 	)
 	(wire
 		(pts
@@ -3664,16 +3487,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 161.29) (xy 312.42 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb55595f-24bf-40fc-b449-765b43174dcd")
-	)
-	(wire
-		(pts
 			(xy 260.35 87.63) (xy 260.35 96.52)
 		)
 		(stroke
@@ -3704,7 +3517,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 153.67) (xy 320.04 153.67)
+			(xy 300.99 153.67) (xy 304.8 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3931,7 +3744,7 @@
 	)
 	(global_label "PA_THERMISTOR"
 		(shape input)
-		(at 320.04 153.67 0)
+		(at 304.8 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3941,7 +3754,7 @@
 		)
 		(uuid "66072683-8e7d-4248-b258-49c75d4b9566")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 337.9023 153.67 0)
+			(at 322.6623 153.67 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -4370,112 +4183,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
 					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 300.99 147.32 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1f6f1c8a-6664-4038-9ab0-eaaf3f06d882")
-		(property "Reference" "R18"
-			(at 299.4914 143.51 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "10k"
-			(at 304.292 143.51 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "ERJ-3EKF1002V"
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "P10.0KHCT-ND "
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Panasonic "
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "DigiKey"
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14e00f54-8ee0-4fe5-8979-eb7a90a583eb")
-		)
-		(pin "2"
-			(uuid "54ca9c59-f9d4-4e6c-b4fc-da35c48301ad")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4923,178 +4630,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
 					(reference "#PWR91")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 312.42 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4312c6e8-a45e-4b93-a4cb-9ccbd539b368")
-		(property "Reference" "#PWR92"
-			(at 312.42 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 312.42 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6106057d-3476-4264-ab26-5e9656b9e52a")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
-					(reference "#PWR92")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 312.42 158.75 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "46351e3c-040d-4a6b-aa69-fd5f7fe8c80a")
-		(property "Reference" "C23"
-			(at 318.77 158.75 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "100n"
-			(at 320.04 162.56 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CGA3E2X7R1E104K080AA "
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "445-5667-1-ND "
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "TDK Corporation "
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "DigiKey"
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7456cd68-0af0-45f4-a68b-4daacdef7472")
-		)
-		(pin "2"
-			(uuid "4574ea61-9318-4696-912e-66107addb1a9")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
-					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -6779,71 +6314,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
 					(reference "#5VA01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V8")
-		(at 300.99 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "adf496a2-b1d1-4408-a764-eaacdf8ff9f4")
-		(property "Reference" "#1V0101"
-			(at 300.99 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+1V8"
-			(at 300.99 136.144 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 300.99 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 300.99 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 300.99 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "633bc358-0da6-47dc-8462-c21314670b75")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/05da2a2f-8aac-4f69-92b0-4622cd97ee54"
-					(reference "#1V0101")
 					(unit 1)
 				)
 			)
