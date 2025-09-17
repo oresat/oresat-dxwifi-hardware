@@ -5,9 +5,9 @@
 	(uuid "bdb38742-8b64-4654-b225-19637ac8b86b")
 	(paper "B")
 	(title_block
-		(title "Oresat DxWifi Card")
+		(title "Oresat Live Card")
 		(date "2025-09-15")
-		(rev "2")
+		(rev "2.1")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -2625,7 +2625,7 @@
 	)
 	(text "Connection to PCBA1 \nvia USB cable from J2\n(see pg 4)\n\n"
 		(exclude_from_sim no)
-		(at 101.6 88.9 0)
+		(at 123.19 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2645,9 +2645,9 @@
 		)
 		(uuid "03fd334e-586a-4017-adc6-17c29da2217a")
 	)
-	(text "High side power switch.  Cuts bias current to disable amp."
+	(text "High side power switch.\nCuts bias current to \ndisable amp."
 		(exclude_from_sim no)
-		(at 177.165 191.77 0)
+		(at 207.01 185.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2669,7 +2669,7 @@
 	)
 	(text "0402\n"
 		(exclude_from_sim no)
-		(at 206.502 131.572 0)
+		(at 199.39 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2680,7 +2680,7 @@
 	)
 	(text "Connection to J9 \nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
 		(exclude_from_sim no)
-		(at 132.08 113.03 0)
+		(at 149.86 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2711,6 +2711,17 @@
 		)
 		(uuid "3e1f01ab-100f-4406-8f48-f1ff93933284")
 	)
+	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
+		(exclude_from_sim no)
+		(at 115.57 264.16 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "47c00895-5403-467f-a16f-153124ba8702")
+	)
 	(text "Measuring temp of PA, using the Octavo ADC Converter Pin"
 		(exclude_from_sim no)
 		(at 338.836 149.86 0)
@@ -2722,6 +2733,17 @@
 			)
 		)
 		(uuid "6a6b3a53-3fbe-4028-bea2-9f0b457fd22b")
+	)
+	(text "All resistors 0603 +/- 1% unless marked"
+		(exclude_from_sim no)
+		(at 115.57 261.62 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "847c60a1-a8e7-40ba-9980-621c2303bc0d")
 	)
 	(text "0402\n"
 		(exclude_from_sim no)
@@ -2779,7 +2801,7 @@
 		(uuid "d0dc4e17-dc45-4bc4-bbdf-dc61187a4514")
 	)
 	(junction
-		(at 91.44 199.39)
+		(at 190.5 199.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2096298a-e197-4315-a481-063486acce57")
@@ -2797,7 +2819,7 @@
 		(uuid "49bb3f52-58f2-4e61-8ab2-e8eba920437f")
 	)
 	(junction
-		(at 233.68 193.04)
+		(at 247.65 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a94a8a9-bfbd-49c9-99c6-40120c6d26ea")
@@ -2815,7 +2837,7 @@
 		(uuid "a0334aa5-23a4-4f37-ae72-350c9c2f7f6b")
 	)
 	(junction
-		(at 151.13 177.8)
+		(at 200.66 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9faa831-d463-4370-a1bf-15759a1abb18")
@@ -2962,7 +2984,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 193.04) (xy 233.68 198.12)
+			(xy 247.65 193.04) (xy 247.65 194.31)
 		)
 		(stroke
 			(width 0)
@@ -3002,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 125.73) (xy 205.74 133.35)
+			(xy 205.74 120.65) (xy 205.74 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3042,7 +3064,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 185.42) (xy 143.51 190.5)
+			(xy 195.58 187.96) (xy 195.58 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3072,17 +3094,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 193.04) (xy 247.65 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ae8d970-d579-467d-8ed5-296c3f7f5f51")
-	)
-	(wire
-		(pts
-			(xy 153.67 119.38) (xy 153.67 121.92)
+			(xy 163.83 119.38) (xy 163.83 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3212,7 +3224,7 @@
 	)
 	(polyline
 		(pts
-			(xy 101.6 87.63) (xy 101.6 92.71)
+			(xy 123.19 87.63) (xy 123.19 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3222,7 +3234,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 217.17) (xy 91.44 212.09)
+			(xy 190.5 212.09) (xy 190.5 214.63)
 		)
 		(stroke
 			(width 0)
@@ -3252,7 +3264,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 199.39) (xy 91.44 199.39)
+			(xy 185.42 199.39) (xy 190.5 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3282,7 +3294,7 @@
 	)
 	(polyline
 		(pts
-			(xy 105.41 114.3) (xy 153.67 114.3)
+			(xy 127 114.3) (xy 163.83 114.3)
 		)
 		(stroke
 			(width 0.254)
@@ -3312,7 +3324,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 114.3) (xy 205.74 120.65)
+			(xy 205.74 114.3) (xy 205.74 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3322,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 208.28) (xy 233.68 210.82)
+			(xy 247.65 204.47) (xy 247.65 205.74)
 		)
 		(stroke
 			(width 0)
@@ -3392,7 +3404,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 193.04) (xy 233.68 193.04)
+			(xy 222.25 193.04) (xy 247.65 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3432,7 +3444,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 193.04) (xy 154.94 193.04)
+			(xy 200.66 193.04) (xy 201.93 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3534,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 180.34) (xy 143.51 177.8)
+			(xy 195.58 182.88) (xy 195.58 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3572,7 +3584,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 177.8) (xy 151.13 193.04)
+			(xy 200.66 181.61) (xy 200.66 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3582,7 +3594,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 218.44) (xy 233.68 220.98)
+			(xy 247.65 213.36) (xy 247.65 214.63)
 		)
 		(stroke
 			(width 0)
@@ -3592,7 +3604,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 207.01) (xy 165.1 208.28)
+			(xy 212.09 207.01) (xy 212.09 208.28)
 		)
 		(stroke
 			(width 0)
@@ -3672,7 +3684,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 114.3) (xy 175.26 114.3)
+			(xy 168.91 114.3) (xy 175.26 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3732,7 +3744,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 177.8) (xy 151.13 177.8)
+			(xy 195.58 181.61) (xy 200.66 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3742,7 +3754,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 199.39) (xy 154.94 199.39)
+			(xy 190.5 199.39) (xy 201.93 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3762,7 +3774,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 177.8) (xy 151.13 175.26)
+			(xy 200.66 181.61) (xy 200.66 180.34)
 		)
 		(stroke
 			(width 0)
@@ -3772,7 +3784,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 199.39) (xy 91.44 201.93)
+			(xy 190.5 199.39) (xy 190.5 201.93)
 		)
 		(stroke
 			(width 0)
@@ -3940,7 +3952,7 @@
 	)
 	(global_label "PA_ON_LNA_OFF"
 		(shape input)
-		(at 81.28 199.39 180)
+		(at 185.42 199.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3950,7 +3962,7 @@
 		)
 		(uuid "bb0d0c9e-c769-49ee-ae4e-4345ef380035")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.4175 199.39 0)
+			(at 167.5575 199.39 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -4042,15 +4054,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 185.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Susumu "
 			(at 185.42 116.84 0)
 			(effects
@@ -4061,6 +4064,15 @@
 			)
 		)
 		(property "MPN" "PAT1220-C-3DB-T5 "
+			(at 185.42 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 185.42 116.84 0)
 			(effects
 				(font
@@ -4141,15 +4153,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 210.82 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "04025J1R1PBSTR\\500"
 			(at 210.82 114.3 0)
 			(effects
@@ -4169,6 +4172,15 @@
 			)
 		)
 		(property "MFR" "KYOCERA AVX "
+			(at 210.82 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 210.82 114.3 90)
 			(effects
 				(font
@@ -4260,7 +4272,7 @@
 	)
 	(symbol
 		(lib_id "oresat-passives:R-US")
-		(at 233.68 203.2 270)
+		(at 247.65 199.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4268,7 +4280,7 @@
 		(dnp no)
 		(uuid "1a741299-6b39-4a7f-bf68-ea7ab1be4e57")
 		(property "Reference" "R30"
-			(at 235.1786 199.39 0)
+			(at 250.19 199.39 90)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -4277,7 +4289,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 230.378 199.39 0)
+			(at 250.19 201.93 90)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -4286,7 +4298,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4304,16 +4316,7 @@
 			)
 		)
 		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
-			(at 233.68 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4325,7 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF4701V"
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +4334,7 @@
 			)
 		)
 		(property "DPN" "ERJ-3EKF4701V"
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +4343,16 @@
 			)
 		)
 		(property "MFR" "Panasonic "
-			(at 233.68 203.2 0)
+			(at 247.65 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 247.65 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,15 +4430,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 300.99 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF1002V"
 			(at 300.99 147.32 0)
 			(effects
@@ -4446,6 +4449,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 300.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 300.99 147.32 0)
 			(effects
 				(font
@@ -4589,15 +4601,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 266.7 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 266.7 74.93 0)
 			(effects
@@ -4617,6 +4620,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 266.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 266.7 74.93 0)
 			(effects
 				(font
@@ -4694,15 +4706,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 215.9 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 215.9 74.93 0)
 			(effects
@@ -4722,6 +4725,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 215.9 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 215.9 74.93 0)
 			(effects
 				(font
@@ -4799,15 +4811,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 285.75 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "04025U3R0BAT2A "
 			(at 285.75 118.11 0)
 			(effects
@@ -4827,6 +4830,15 @@
 			)
 		)
 		(property "MFR" "KYOCERA AVX "
+			(at 285.75 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 285.75 118.11 0)
 			(effects
 				(font
@@ -5037,15 +5049,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 312.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 312.42 158.75 0)
 			(effects
@@ -5065,6 +5068,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 312.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 312.42 158.75 0)
 			(effects
 				(font
@@ -5142,15 +5154,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 266.7 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 266.7 149.86 0)
 			(effects
@@ -5170,6 +5173,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 266.7 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 266.7 149.86 0)
 			(effects
 				(font
@@ -5261,7 +5273,7 @@
 	)
 	(symbol
 		(lib_id "oresat-passives:R-US")
-		(at 91.44 207.01 90)
+		(at 190.5 207.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5269,7 +5281,7 @@
 		(dnp no)
 		(uuid "57ec59f3-b99a-4c95-983c-8cc00d7b030c")
 		(property "Reference" "R17"
-			(at 89.9414 210.82 0)
+			(at 189.0014 210.82 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5278,7 +5290,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 94.742 210.82 0)
+			(at 193.802 210.82 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5287,7 +5299,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5296,7 +5308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5305,16 +5317,7 @@
 			)
 		)
 		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
-			(at 91.44 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5326,7 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +5335,7 @@
 			)
 		)
 		(property "DPN" "P10.0KHCT-ND "
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5344,16 @@
 			)
 		)
 		(property "MFR" "Panasonic "
-			(at 91.44 207.01 0)
+			(at 190.5 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 190.5 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5418,15 +5430,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 229.87 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA2B2NP01H102J050BA "
 			(at 229.87 74.93 0)
 			(effects
@@ -5454,6 +5457,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" "DigiKey"
+			(at 229.87 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9fe08dcc-65c5-4814-b272-ae94a09cb9e4")
 		)
@@ -5471,7 +5483,8 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 205.74 123.19 180)
+		(at 205.74 118.11 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5479,25 +5492,25 @@
 		(dnp no)
 		(uuid "5ff1e15c-8dac-45b6-b3a7-55213e23f67d")
 		(property "Reference" "L7"
-			(at 210.566 122.174 0)
+			(at 199.39 118.11 0)
 			(effects
 				(font
 					(size 1.5113 1.5113)
 				)
-				(justify left bottom)
+				(justify left top)
 			)
 		)
 		(property "Value" "1.7n"
-			(at 212.344 124.714 0)
+			(at 199.39 120.65 0)
 			(effects
 				(font
 					(size 1.5113 1.5113)
 				)
-				(justify left bottom)
+				(justify left top)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,7 +5519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,16 +5528,7 @@
 			)
 		)
 		(property "Description" "1.7nH RF Inductor, ceramic core, 5% tol"
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "Mouser"
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +5537,7 @@
 			)
 		)
 		(property "MPN" "0402DC-1N7XJRU"
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,7 +5546,7 @@
 			)
 		)
 		(property "DPN" "994-0402DC-1N7XJRW"
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,7 +5555,16 @@
 			)
 		)
 		(property "MFR" "Coilcraft "
-			(at 205.74 123.19 0)
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
+			(at 205.74 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5576,7 +5589,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 233.68 214.63 90)
+		(at 247.65 209.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5584,26 +5597,25 @@
 		(dnp no)
 		(uuid "6938b0fc-191c-422b-9e32-8ac1a9694359")
 		(property "Reference" "D11"
-			(at 241.3 213.36 90)
+			(at 250.19 209.55 90)
 			(effects
 				(font
 					(size 1.778 1.778)
 				)
-				(justify left bottom)
+				(justify right top)
 			)
 		)
-		(property "Value" "GREEN"
-			(at 233.68 214.63 90)
+		(property "Value" "GRN"
+			(at 250.19 212.09 90)
 			(effects
 				(font
 					(size 1.778 1.778)
 				)
-				(justify left bottom)
-				(hide yes)
+				(justify right top)
 			)
 		)
 		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 233.68 214.63 0)
+			(at 247.65 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,7 +5624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 214.63 0)
+			(at 247.65 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,7 +5633,7 @@
 			)
 		)
 		(property "Description" "Green 525nm LED 3.2V 0603"
-			(at 233.68 214.63 0)
+			(at 247.65 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5630,16 +5642,7 @@
 			)
 		)
 		(property "MPN" "150060GS75020"
-			(at 233.68 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 233.68 214.63 0)
+			(at 247.65 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,7 +5651,7 @@
 			)
 		)
 		(property "DPN" "732-150060GS75020CT-ND "
-			(at 233.68 214.63 90)
+			(at 247.65 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5657,7 +5660,7 @@
 			)
 		)
 		(property "MFR" "Würth Elektronik "
-			(at 233.68 214.63 90)
+			(at 247.65 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5666,7 +5669,16 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 233.68 214.63 0)
+			(at 247.65 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 247.65 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5809,15 +5821,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 247.65 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "0805CS-060XJLC"
 			(at 247.65 81.28 0)
 			(effects
@@ -5837,6 +5840,15 @@
 			)
 		)
 		(property "MFR" "Coilcraft "
+			(at 247.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 247.65 81.28 0)
 			(effects
 				(font
@@ -5923,15 +5935,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 254 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "2312-TQP9111CT-ND "
 			(at 254 114.3 0)
 			(effects
@@ -5942,6 +5945,15 @@
 			)
 		)
 		(property "MFR" "Qorvo "
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 254 114.3 0)
 			(effects
 				(font
@@ -6024,16 +6036,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 133.35 0)
+		(at 205.74 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "77192e4a-a60b-4723-96d0-657fd9d7b1de")
 		(property "Reference" "#PWR83"
-			(at 205.74 139.7 0)
+			(at 205.74 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6042,7 +6053,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 138.43 0)
+			(at 205.74 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,7 +6061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 133.35 0)
+			(at 205.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,7 +6070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 133.35 0)
+			(at 205.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6068,7 +6079,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 133.35 0)
+			(at 205.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,7 +6101,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 143.51 182.88 0)
+		(at 195.58 185.42 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6098,25 +6110,25 @@
 		(dnp no)
 		(uuid "788521bc-4095-4218-9193-0b55643d08c2")
 		(property "Reference" "C21"
-			(at 145.034 182.499 0)
+			(at 187.96 185.42 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify left bottom)
+				(justify right bottom)
 			)
 		)
 		(property "Value" "100n"
-			(at 145.034 187.579 0)
+			(at 187.96 187.96 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify left bottom)
+				(justify right bottom)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6125,7 +6137,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6134,16 +6146,7 @@
 			)
 		)
 		(property "Description" "CAP CER 0.1UF 25V X7R 0603"
-			(at 143.51 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6152,7 +6155,7 @@
 			)
 		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6161,7 +6164,7 @@
 			)
 		)
 		(property "DPN" "445-5667-1-ND "
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6170,7 +6173,16 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
-			(at 143.51 182.88 0)
+			(at 195.58 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 195.58 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6248,15 +6260,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 300.99 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "NTCG163JX103DT1S"
 			(at 300.99 161.29 0)
 			(effects
@@ -6276,6 +6279,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 300.99 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 300.99 161.29 90)
 			(effects
 				(font
@@ -6353,15 +6365,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 254 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-2RKF1100X"
 			(at 254 149.86 0)
 			(effects
@@ -6381,6 +6384,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 254 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 254 149.86 90)
 			(effects
 				(font
@@ -6524,15 +6536,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 294.64 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "MLK1005S1N0ST000"
 			(at 294.64 114.3 0)
 			(effects
@@ -6560,6 +6563,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" "DigiKey"
+			(at 294.64 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "52ff7738-5fff-464c-aba1-3cc0be5b94aa")
 		)
@@ -6577,7 +6589,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 153.67 121.92 0)
+		(at 163.83 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6586,7 +6598,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a764298-26b7-4f70-8017-e2edd205bc21")
 		(property "Reference" "#PWR81"
-			(at 153.67 128.27 0)
+			(at 163.83 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,7 +6607,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 127 0)
+			(at 163.83 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6603,7 +6615,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 121.92 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6612,7 +6624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 121.92 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6621,7 +6633,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 121.92 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6709,16 +6721,15 @@
 	)
 	(symbol
 		(lib_id "oresat-power:5VA")
-		(at 151.13 175.26 0)
+		(at 200.66 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4e4bf65-31ed-4f35-b33b-8940ea4535c0")
 		(property "Reference" "#5VA01"
-			(at 151.13 179.07 0)
+			(at 200.66 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6727,7 +6738,7 @@
 			)
 		)
 		(property "Value" "5VA"
-			(at 151.13 170.18 0)
+			(at 200.66 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6735,7 +6746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 175.26 0)
+			(at 200.66 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +6755,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 175.26 0)
+			(at 200.66 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6753,7 +6764,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.13 175.26 0)
+			(at 200.66 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,16 +6851,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 220.98 0)
+		(at 247.65 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "af44c933-9585-495a-b8e5-dc620ec60fd9")
 		(property "Reference" "#PWR93"
-			(at 233.68 227.33 0)
+			(at 247.65 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6858,7 +6868,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 226.06 0)
+			(at 247.65 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6866,7 +6876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 220.98 0)
+			(at 247.65 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6875,7 +6885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 220.98 0)
+			(at 247.65 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6884,7 +6894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 220.98 0)
+			(at 247.65 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,16 +6916,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 190.5 0)
+		(at 195.58 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "af7067be-839f-4068-80e9-f15a67d0f44f")
 		(property "Reference" "#PWR0190"
-			(at 143.51 196.85 0)
+			(at 195.58 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,7 +6933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 195.58 0)
+			(at 195.58 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6932,7 +6941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 190.5 0)
+			(at 195.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6941,7 +6950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 190.5 0)
+			(at 195.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,7 +6959,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 190.5 0)
+			(at 195.58 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7033,15 +7042,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 302.26 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "581-04025U1R6BAT2A"
 			(at 302.26 118.11 0)
 			(effects
@@ -7052,6 +7052,15 @@
 			)
 		)
 		(property "MFR" "KYOCERA AVX "
+			(at 302.26 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 302.26 118.11 0)
 			(effects
 				(font
@@ -7129,15 +7138,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 280.67 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 280.67 74.93 0)
 			(effects
@@ -7157,6 +7157,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 280.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 280.67 74.93 0)
 			(effects
 				(font
@@ -7234,15 +7243,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-6GEY0R00V"
 			(at 254 52.07 0)
 			(effects
@@ -7262,6 +7262,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 254 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 254 52.07 90)
 			(effects
 				(font
@@ -7339,15 +7348,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Coilcraft"
-			(at 254 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "1008HQ-10NXJLC "
 			(at 254 81.28 0)
 			(effects
@@ -7367,6 +7367,15 @@
 			)
 		)
 		(property "MFR" "Coilcraft "
+			(at 254 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 254 81.28 0)
 			(effects
 				(font
@@ -7458,7 +7467,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 153.67 114.3 0)
+		(at 163.83 114.3 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7467,7 +7476,7 @@
 		(dnp no)
 		(uuid "c3dba1ad-e3c9-4a52-b34d-49dacb5081cf")
 		(property "Reference" "J9"
-			(at 156.845 115.57 0)
+			(at 167.005 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7475,7 +7484,7 @@
 			)
 		)
 		(property "Value" "U.FL"
-			(at 161.925 117.475 0)
+			(at 167.64 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7483,7 +7492,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7492,7 +7501,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7501,7 +7510,7 @@
 			)
 		)
 		(property "Description" "CONN U.FL RCPT STR 50 OHM SMD"
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7510,16 +7519,7 @@
 			)
 		)
 		(property "DPN" "H11891CT-ND "
-			(at 153.67 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7528,7 +7528,7 @@
 			)
 		)
 		(property "MFR" "Hirose Electric Co Ltd "
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7537,7 +7537,16 @@
 			)
 		)
 		(property "MPN" "U.FL-R-SMT-1(10) "
-			(at 153.67 114.3 0)
+			(at 163.83 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7562,16 +7571,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 208.28 0)
+		(at 212.09 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c8d1455b-665b-45df-8c0e-ea866bd23a8b")
 		(property "Reference" "#PWR94"
-			(at 165.1 214.63 0)
+			(at 212.09 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +7588,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 213.36 0)
+			(at 212.09 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,7 +7596,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 208.28 0)
+			(at 212.09 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7597,7 +7605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 208.28 0)
+			(at 212.09 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7606,7 +7614,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 208.28 0)
+			(at 212.09 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7680,15 +7688,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 318.77 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "GCM1555C1H101GA16D "
 			(at 318.77 114.3 0)
 			(effects
@@ -7708,6 +7707,15 @@
 			)
 		)
 		(property "MFR" "Murata Electronics"
+			(at 318.77 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 318.77 114.3 90)
 			(effects
 				(font
@@ -7917,15 +7925,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 223.52 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CRCW04023R30FKED"
 			(at 223.52 114.3 0)
 			(effects
@@ -7945,6 +7944,15 @@
 			)
 		)
 		(property "MFR" "Vishay Dale "
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 223.52 114.3 0)
 			(effects
 				(font
@@ -8022,15 +8030,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 260.35 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF2200V"
 			(at 260.35 82.55 0)
 			(effects
@@ -8058,6 +8057,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" "DigiKey"
+			(at 260.35 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0648d0b9-23c7-4084-a714-20e5bc8e02a0")
 		)
@@ -8075,16 +8083,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 217.17 0)
+		(at 190.5 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eb2f8d5b-d43f-422e-980a-85b966b12f3b")
 		(property "Reference" "#PWR96"
-			(at 91.44 223.52 0)
+			(at 190.5 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8093,7 +8100,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 222.25 0)
+			(at 190.5 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8101,7 +8108,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 217.17 0)
+			(at 190.5 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,7 +8117,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 217.17 0)
+			(at 190.5 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8119,7 +8126,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 217.17 0)
+			(at 190.5 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8141,7 +8148,7 @@
 	)
 	(symbol
 		(lib_id "oresat-pcbs:WF-NP9202WF")
-		(at 104.14 105.41 0)
+		(at 125.73 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8149,7 +8156,7 @@
 		(dnp no)
 		(uuid "eba80735-76d6-4c13-bf60-27cb0a255bb1")
 		(property "Reference" "PCBA1"
-			(at 96.52 119.38 0)
+			(at 118.11 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8158,7 +8165,7 @@
 			)
 		)
 		(property "Value" "WF-NP9202WF"
-			(at 96.52 121.92 0)
+			(at 118.11 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8167,7 +8174,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:WF-NP9202"
-			(at 104.14 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8175,8 +8182,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 104.14 105.41 0)
+		(property "Datasheet" "N/A"
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8184,8 +8191,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 104.14 105.41 0)
+		(property "Description" "AR9271 USB to WiFi daughter board"
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "N/A"
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "N/A"
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Unknown"
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Unknown"
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8270,7 +8313,7 @@
 	)
 	(symbol
 		(lib_id "oresat-ics:MIC94090YC6-TR")
-		(at 165.1 196.85 0)
+		(at 212.09 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8278,25 +8321,25 @@
 		(dnp no)
 		(uuid "f975e9be-1aa0-4d25-80bc-b4e61d3bc4f3")
 		(property "Reference" "U8"
-			(at 160.02 205.74 0)
+			(at 218.44 208.28 0)
 			(effects
 				(font
 					(size 2.0828 1.7703)
 				)
-				(justify right top)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "MIC94070YC6-TR"
-			(at 160.02 209.55 0)
+			(at 218.44 212.09 0)
 			(effects
 				(font
 					(size 2.0828 1.7703)
 				)
-				(justify right top)
+				(justify left bottom)
 			)
 		)
 		(property "Footprint" "oresat-live-card:SC-70-6_MCH"
-			(at 146.05 175.26 0)
+			(at 193.04 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8305,7 +8348,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/mic9409x.pdf"
-			(at 165.1 163.83 0)
+			(at 212.09 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8314,16 +8357,7 @@
 			)
 		)
 		(property "Description" "IC PWR SWITCH P-CHAN 1:1 SC70-6"
-			(at 148.59 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 132.08 166.37 0)
+			(at 195.58 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8332,7 +8366,7 @@
 			)
 		)
 		(property "MPN" "MIC94070YC6-TR "
-			(at 130.81 176.53 0)
+			(at 177.8 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8341,7 +8375,7 @@
 			)
 		)
 		(property "DPN" "576-3006-1-ND "
-			(at 165.1 196.85 0)
+			(at 212.09 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8350,7 +8384,16 @@
 			)
 		)
 		(property "MFR" "Microchip Technology "
-			(at 165.1 196.85 0)
+			(at 212.09 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 212.09 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)

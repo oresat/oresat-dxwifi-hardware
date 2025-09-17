@@ -5,9 +5,9 @@
 	(uuid "272479f9-f63e-4698-89a3-7a4ce91b7e7e")
 	(paper "B")
 	(title_block
-		(title "Oresat DxWifi Card")
+		(title "Oresat Live Card")
 		(date "2025-09-15")
-		(rev "2")
+		(rev "2.1")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC1G32"
@@ -2265,6 +2265,17 @@
 		)
 		(uuid "4cab5c7f-7b85-4987-817e-6f72df61d98a")
 	)
+	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
+		(exclude_from_sim no)
+		(at 116.84 265.43 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "4dc7a0c7-45ea-4508-b1f1-b4118de6c7b5")
+	)
 	(text "Antenna Switch Control"
 		(exclude_from_sim no)
 		(at 312.166 248.92 0)
@@ -2287,6 +2298,17 @@
 			)
 		)
 		(uuid "8126bf4b-3626-4391-8d77-58555cd57a23")
+	)
+	(text "All resistors 0603 +/- 1% unless marked"
+		(exclude_from_sim no)
+		(at 116.84 262.89 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d20fa7a-65fd-42d1-a435-694a7d0b29b3")
 	)
 	(text "INSTALL JUMPER TO FORCE TRANSMIT"
 		(exclude_from_sim no)
@@ -4331,6 +4353,135 @@
 		)
 	)
 	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 11.43 27.94)
+		(row_heights 3.175 3.175 3.175)
+		(cells
+			(table_cell "CTRL"
+				(exclude_from_sim no)
+				(at 300.99 250.19 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify left top)
+				)
+				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
+			)
+			(table_cell "RF Path"
+				(exclude_from_sim no)
+				(at 312.42 250.19 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify left top)
+				)
+				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
+			)
+			(table_cell "HIGH"
+				(exclude_from_sim no)
+				(at 300.99 253.365 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
+			)
+			(table_cell "PATCH ANTENNA (RF1)"
+				(exclude_from_sim no)
+				(at 312.42 253.365 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
+			)
+			(table_cell "LOW"
+				(exclude_from_sim no)
+				(at 300.99 256.54 0)
+				(size 11.43 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
+			)
+			(table_cell "HELICAL ANTENNA (RF2)"
+				(exclude_from_sim no)
+				(at 312.42 256.54 0)
+				(size 27.94 3.175)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "021b12b4-ae06-439e-8fcf-6af9517e1059")
+			)
+		)
+	)
+	(table
 		(column_count 5)
 		(border
 			(external yes)
@@ -4703,135 +4854,6 @@
 			)
 		)
 	)
-	(table
-		(column_count 2)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 11.43 27.94)
-		(row_heights 3.175 3.175 3.175)
-		(cells
-			(table_cell "CTRL"
-				(exclude_from_sim no)
-				(at 300.99 250.19 0)
-				(size 11.43 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify left top)
-				)
-				(uuid "0ff1ec82-1090-402f-885a-70ffc304eac6")
-			)
-			(table_cell "RF Path"
-				(exclude_from_sim no)
-				(at 312.42 250.19 0)
-				(size 27.94 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify left top)
-				)
-				(uuid "d775c612-252d-4d5a-99be-a5efb88e1049")
-			)
-			(table_cell "HIGH"
-				(exclude_from_sim no)
-				(at 300.99 253.365 0)
-				(size 11.43 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "b1a5cec3-8661-47e3-bd16-a76c59611949")
-			)
-			(table_cell "PATCH ANTENNA (RF1)"
-				(exclude_from_sim no)
-				(at 312.42 253.365 0)
-				(size 27.94 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "4c95242d-d744-4b7d-99c0-5c507c873b29")
-			)
-			(table_cell "LOW"
-				(exclude_from_sim no)
-				(at 300.99 256.54 0)
-				(size 11.43 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "3a8f9dad-c417-4dfb-a728-a91d44404f9c")
-			)
-			(table_cell "HELICAL ANTENNA (RF2)"
-				(exclude_from_sim no)
-				(at 312.42 256.54 0)
-				(size 27.94 3.175)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "021b12b4-ae06-439e-8fcf-6af9517e1059")
-			)
-		)
-	)
 	(global_label "RX_IN"
 		(shape input)
 		(at 190.5 215.9 180)
@@ -5099,15 +5121,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 160.02 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 160.02 73.66 0)
 			(effects
@@ -5127,6 +5140,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 160.02 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 160.02 73.66 90)
 			(effects
 				(font
@@ -5399,6 +5421,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3415d3c2-b06b-4ca3-8954-80f12bd5bab4")
 		)
@@ -5487,15 +5518,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 349.25 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 349.25 110.49 0)
 			(effects
@@ -5506,6 +5528,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
+			(at 349.25 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 349.25 110.49 0)
 			(effects
 				(font
@@ -5591,15 +5622,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 264.16 204.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 264.16 204.47 90)
 			(effects
@@ -5611,6 +5633,15 @@
 		)
 		(property "MPN" "ERJ-3EKF5621V "
 			(at 264.16 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 264.16 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5762,15 +5793,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 294.64 204.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 294.64 204.47 90)
 			(effects
@@ -5782,6 +5804,15 @@
 		)
 		(property "MPN" "ERJ-3EKF5621V "
 			(at 294.64 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 294.64 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5877,7 +5908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
+		(property "MFR" "Murata Electronics"
 			(at 337.82 236.22 0)
 			(effects
 				(font
@@ -5886,7 +5917,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "Murata Electronics"
+		(property "DIS" "DigiKey"
 			(at 337.82 236.22 0)
 			(effects
 				(font
@@ -6022,6 +6053,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 325.12 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 325.12 88.9 0)
 			(effects
 				(font
@@ -6305,6 +6345,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 182.88 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "cc46aded-3360-4bac-8bda-7ab69a50d33c")
 		)
@@ -6460,15 +6509,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 259.08 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Murata Electronics"
 			(at 259.08 229.87 0)
 			(effects
@@ -6479,6 +6519,15 @@
 			)
 		)
 		(property "MPN" "GCM1555C1H101GA16D "
+			(at 259.08 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 259.08 229.87 0)
 			(effects
 				(font
@@ -6563,15 +6612,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 281.94 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Texas Instruments "
 			(at 281.94 91.44 0)
 			(effects
@@ -6582,6 +6622,15 @@
 			)
 		)
 		(property "MPN" "SN74LV1T34QDCKRQ1 "
+			(at 281.94 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 281.94 91.44 0)
 			(effects
 				(font
@@ -6678,15 +6727,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 340.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "TDK Corporation "
 			(at 340.36 190.5 0)
 			(effects
@@ -6697,6 +6737,15 @@
 			)
 		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
+			(at 340.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 340.36 190.5 0)
 			(effects
 				(font
@@ -6782,15 +6831,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 104.14 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 104.14 50.8 90)
 			(effects
@@ -6801,6 +6841,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
+			(at 104.14 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 104.14 50.8 90)
 			(effects
 				(font
@@ -6888,15 +6937,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 128.27 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 128.27 158.75 0)
 			(effects
@@ -6907,6 +6947,15 @@
 			)
 		)
 		(property "MPN" "ERJ-U03F4993V"
+			(at 128.27 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 128.27 158.75 0)
 			(effects
 				(font
@@ -6994,15 +7043,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 349.25 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 349.25 124.46 0)
 			(effects
@@ -7013,6 +7053,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF5621V "
+			(at 349.25 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 349.25 124.46 0)
 			(effects
 				(font
@@ -7100,16 +7149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 66.04 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Panasonic"
+		(property "MFR" "Panasonic "
 			(at 66.04 39.37 0)
 			(effects
 				(font
@@ -7119,6 +7159,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1001V "
+			(at 66.04 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 66.04 39.37 0)
 			(effects
 				(font
@@ -7274,15 +7323,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 195.58 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "TDK Corporation "
 			(at 195.58 121.92 0)
 			(effects
@@ -7293,6 +7333,15 @@
 			)
 		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
+			(at 195.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 195.58 121.92 0)
 			(effects
 				(font
@@ -7712,15 +7761,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 322.58 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Qorvo "
 			(at 322.58 220.98 0)
 			(effects
@@ -7731,6 +7771,15 @@
 			)
 		)
 		(property "MPN" "QPC1022TR7 "
+			(at 322.58 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 322.58 220.98 0)
 			(effects
 				(font
@@ -7829,15 +7878,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 288.29 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 288.29 73.66 0)
 			(effects
@@ -7857,6 +7897,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 288.29 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 288.29 73.66 90)
 			(effects
 				(font
@@ -8077,15 +8126,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 222.25 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "TDK Corporation "
 			(at 222.25 190.5 0)
 			(effects
@@ -8096,6 +8136,15 @@
 			)
 		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
+			(at 222.25 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 222.25 190.5 0)
 			(effects
 				(font
@@ -8182,15 +8231,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 238.76 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Qorvo "
 			(at 238.76 220.98 0)
 			(effects
@@ -8201,6 +8241,15 @@
 			)
 		)
 		(property "MPN" "QPC1022TR7 "
+			(at 238.76 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 238.76 220.98 0)
 			(effects
 				(font
@@ -8309,15 +8358,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 302.26 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Murata Electronics"
 			(at 302.26 229.87 0)
 			(effects
@@ -8328,6 +8368,15 @@
 			)
 		)
 		(property "MPN" "GCM1555C1H101GA16D "
+			(at 302.26 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 302.26 229.87 0)
 			(effects
 				(font
@@ -8405,15 +8454,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 110.49 71.12 0)
 			(effects
@@ -8433,6 +8473,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 110.49 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 110.49 71.12 90)
 			(effects
 				(font
@@ -8518,15 +8567,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 325.12 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 325.12 48.26 90)
 			(effects
@@ -8537,6 +8577,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
+			(at 325.12 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 325.12 48.26 90)
 			(effects
 				(font
@@ -8747,15 +8796,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 331.47 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 331.47 68.58 0)
 			(effects
@@ -8775,6 +8815,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 331.47 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 331.47 68.58 90)
 			(effects
 				(font
@@ -8992,15 +9041,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 264.16 194.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 264.16 194.31 90)
 			(effects
@@ -9012,6 +9052,15 @@
 		)
 		(property "MPN" "ERJ-3EKF1002V"
 			(at 264.16 194.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 264.16 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9099,15 +9148,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 233.68 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Murata Electronics"
 			(at 233.68 190.5 0)
 			(effects
@@ -9118,6 +9158,15 @@
 			)
 		)
 		(property "MPN" "GCM1555C1H101GA16D "
+			(at 233.68 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 233.68 190.5 0)
 			(effects
 				(font
@@ -9205,15 +9254,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 207.01 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 207.01 154.94 0)
 			(effects
@@ -9224,6 +9264,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1002V"
+			(at 207.01 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 207.01 154.94 0)
 			(effects
 				(font
@@ -9575,15 +9624,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 294.64 193.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 294.64 193.04 90)
 			(effects
@@ -9595,6 +9635,15 @@
 		)
 		(property "MPN" "ERJ-3EKF1002V"
 			(at 294.64 193.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 294.64 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,15 +10060,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 140.97 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 140.97 102.87 0)
 			(effects
@@ -10030,6 +10070,15 @@
 			)
 		)
 		(property "MPN" "ERJ-U03F4993V"
+			(at 140.97 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 140.97 102.87 0)
 			(effects
 				(font
@@ -10247,15 +10296,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 328.93 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Murata Electronics"
 			(at 328.93 190.5 0)
 			(effects
@@ -10266,6 +10306,15 @@
 			)
 		)
 		(property "MPN" "GCM1555C1H101GA16D "
+			(at 328.93 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 328.93 190.5 0)
 			(effects
 				(font
@@ -10351,15 +10400,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 63.5 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Texas Instruments "
 			(at 63.5 93.98 0)
 			(effects
@@ -10370,6 +10410,15 @@
 			)
 		)
 		(property "MPN" "SN74LV1T34QDCKRQ1 "
+			(at 63.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 63.5 93.98 0)
 			(effects
 				(font
@@ -10465,15 +10514,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 147.32 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 147.32 129.54 0)
 			(effects
@@ -10493,6 +10533,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 147.32 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 147.32 129.54 90)
 			(effects
 				(font
@@ -10581,15 +10630,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 207.01 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Murata Electronics"
 			(at 207.01 121.92 0)
 			(effects
@@ -10600,6 +10640,15 @@
 			)
 		)
 		(property "MPN" "GCM1555C1H101GA16D "
+			(at 207.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 207.01 121.92 0)
 			(effects
 				(font
@@ -10743,15 +10792,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 67.31 76.2 0)
 			(effects
@@ -10771,6 +10811,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 67.31 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 67.31 76.2 90)
 			(effects
 				(font
@@ -10858,16 +10907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 287.02 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Panasonic"
+		(property "MFR" "Panasonic "
 			(at 287.02 35.56 0)
 			(effects
 				(font
@@ -10877,6 +10917,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF1001V "
+			(at 287.02 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 287.02 35.56 0)
 			(effects
 				(font
@@ -11020,6 +11069,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9cfd93f3-4c87-4d4b-8dd5-41a6b955395f")
 		)
@@ -11081,6 +11139,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 299.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 299.72 48.26 0)
 			(effects
 				(font
@@ -11561,15 +11628,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 153.67 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Analog Devices "
 			(at 153.67 91.44 0)
 			(effects
@@ -11580,6 +11638,15 @@
 			)
 		)
 		(property "MPN" "LTC6994IS6-1#TRPBF "
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 153.67 91.44 0)
 			(effects
 				(font
@@ -11742,15 +11809,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 140.97 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Analog Devices "
 			(at 140.97 147.32 0)
 			(effects
@@ -11761,6 +11819,15 @@
 			)
 		)
 		(property "MPN" "LTC6994IS6-1#TRPBF "
+			(at 140.97 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 140.97 147.32 0)
 			(effects
 				(font
@@ -11926,15 +11993,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 207.01 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFR" "Panasonic "
 			(at 207.01 167.64 0)
 			(effects
@@ -11945,6 +12003,15 @@
 			)
 		)
 		(property "MPN" "ERJ-3EKF5621V "
+			(at 207.01 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 207.01 167.64 0)
 			(effects
 				(font

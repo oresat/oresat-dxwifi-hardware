@@ -5,9 +5,9 @@
 	(uuid "97ee546b-c124-496c-a249-30d6d3e123b7")
 	(paper "B")
 	(title_block
-		(title "Oresat DxWifi Card")
+		(title "Oresat Live Card")
 		(date "2025-09-15")
-		(rev "2")
+		(rev "2.1")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -11717,16 +11717,16 @@
 		)
 		(uuid "066428f4-9b73-4b75-975b-942365cc84c6")
 	)
-	(text "CAN1 RX --> B11 --> UART1_TXD\nCAN1 TX --> A11 --> UART1_RXD"
+	(text "All resistors 0603 +/- 1% unless marked"
 		(exclude_from_sim no)
-		(at 50.8 38.1 0)
+		(at 114.3 264.16 0)
 		(effects
 			(font
-				(size 2.54 2.159)
+				(size 1.778 1.5113)
 			)
 			(justify left bottom)
 		)
-		(uuid "07d84adc-bd74-4f63-b888-5b007a8c7b8c")
+		(uuid "150e16a8-a83a-447d-afdb-44dd144c91fe")
 	)
 	(text "USR LEDs"
 		(exclude_from_sim no)
@@ -11771,6 +11771,17 @@
 			(justify left bottom)
 		)
 		(uuid "4e8d4cc0-fd0c-40fd-aaa2-8e0cd92720ab")
+	)
+	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
+		(exclude_from_sim no)
+		(at 114.3 266.7 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ee8ff82-b0ea-49d6-924e-0386e61aded8")
 	)
 	(text "Need ~{2.2uF} here, but using two 1uF for simplicity"
 		(exclude_from_sim no)
@@ -14926,15 +14937,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 350.52 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 350.52 181.61 0)
 			(effects
@@ -14954,6 +14956,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 350.52 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 350.52 181.61 0)
 			(effects
 				(font
@@ -15032,15 +15043,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 81.28 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "TCAN330GDCNR "
 			(at 81.28 66.04 0)
 			(effects
@@ -15060,6 +15062,15 @@
 			)
 		)
 		(property "MFR" "Texas Instruments "
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 81.28 66.04 0)
 			(effects
 				(font
@@ -15148,6 +15159,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 152.4 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 152.4 129.54 0)
 			(effects
 				(font
@@ -15288,6 +15308,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 137.16 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "518dd289-dd09-499b-a959-5caca8e3196e")
 		)
@@ -15420,15 +15449,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 185.42 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "OSD3358-512M-BSM"
 			(at 185.42 190.5 0)
 			(effects
@@ -15448,6 +15468,15 @@
 			)
 		)
 		(property "MFR" "Octavo Systems "
+			(at 185.42 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 185.42 190.5 0)
 			(effects
 				(font
@@ -16287,15 +16316,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 373.38 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 373.38 181.61 0)
 			(effects
@@ -16315,6 +16335,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 373.38 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 373.38 181.61 0)
 			(effects
 				(font
@@ -16392,15 +16421,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 314.96 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3GEY0R00V "
 			(at 314.96 180.34 0)
 			(effects
@@ -16420,6 +16440,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 314.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 314.96 180.34 0)
 			(effects
 				(font
@@ -16573,15 +16602,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 281.94 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "732-150060BS75020CT-ND "
 			(at 281.94 115.57 0)
 			(effects
@@ -16601,6 +16621,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 281.94 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 281.94 115.57 0)
 			(effects
 				(font
@@ -16678,15 +16707,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 267.97 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF4701V"
 			(at 267.97 130.81 0)
 			(effects
@@ -16706,6 +16726,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 267.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 267.97 130.81 0)
 			(effects
 				(font
@@ -16783,15 +16812,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 358.14 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 358.14 181.61 0)
 			(effects
@@ -16811,6 +16831,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 358.14 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 358.14 181.61 0)
 			(effects
 				(font
@@ -16888,15 +16917,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 381 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 381 181.61 0)
 			(effects
@@ -16916,6 +16936,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 381 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 381 181.61 0)
 			(effects
 				(font
@@ -16993,15 +17022,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 267.97 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF4701V"
 			(at 267.97 107.95 0)
 			(effects
@@ -17021,6 +17041,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 267.97 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 267.97 107.95 0)
 			(effects
 				(font
@@ -17098,15 +17127,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 86.36 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "EXB-A10P103J"
 			(at 86.36 114.3 0)
 			(effects
@@ -17126,6 +17146,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 86.36 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 86.36 114.3 90)
 			(effects
 				(font
@@ -17227,15 +17256,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 25.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA4J1X7S1C106M125AC "
 			(at 25.4 144.78 0)
 			(effects
@@ -17255,6 +17275,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 25.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 25.4 144.78 0)
 			(effects
 				(font
@@ -17332,15 +17361,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 267.97 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF4701V"
 			(at 267.97 115.57 0)
 			(effects
@@ -17360,6 +17380,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 267.97 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 267.97 115.57 0)
 			(effects
 				(font
@@ -17430,6 +17459,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 154.94 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 154.94 129.54 0)
 			(effects
 				(font
@@ -17570,15 +17608,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 342.9 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 342.9 181.61 0)
 			(effects
@@ -17598,6 +17627,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 342.9 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 342.9 181.61 0)
 			(effects
 				(font
@@ -17740,15 +17778,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 267.97 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "ERJ-3EKF4701V"
 			(at 267.97 123.19 0)
 			(effects
@@ -17768,6 +17797,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 267.97 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 267.97 123.19 0)
 			(effects
 				(font
@@ -17912,6 +17950,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 152.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ddea02df-ae9a-496d-a524-adea2506ffa0")
 		)
@@ -17971,6 +18018,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 152.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 152.4 142.24 0)
 			(effects
 				(font
@@ -18317,15 +18373,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 281.94 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "732-150060BS75020CT-ND "
 			(at 281.94 107.95 0)
 			(effects
@@ -18345,6 +18392,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 281.94 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 281.94 107.95 0)
 			(effects
 				(font
@@ -18422,15 +18478,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 251.46 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "EXB-A10P103J"
 			(at 251.46 175.26 0)
 			(effects
@@ -18450,6 +18497,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 251.46 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 251.46 175.26 90)
 			(effects
 				(font
@@ -18561,15 +18617,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 281.94 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "732-150060BS75020CT-ND "
 			(at 281.94 130.81 0)
 			(effects
@@ -18589,6 +18636,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 281.94 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 281.94 130.81 0)
 			(effects
 				(font
@@ -18666,15 +18722,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 365.76 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E1X7R1C105K080AC "
 			(at 365.76 181.61 0)
 			(effects
@@ -18694,6 +18741,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 365.76 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 365.76 181.61 0)
 			(effects
 				(font
@@ -18772,6 +18828,15 @@
 				(hide yes)
 			)
 		)
+		(property "DIS" ""
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e087e25a-ac1a-476d-8d3e-61fee90c75ad")
 		)
@@ -18838,15 +18903,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 271.78 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "EXB-A10P103J"
 			(at 271.78 175.26 0)
 			(effects
@@ -18866,6 +18922,15 @@
 			)
 		)
 		(property "MFR" "Panasonic "
+			(at 271.78 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 271.78 175.26 90)
 			(effects
 				(font
@@ -18967,15 +19032,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 35.56 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 35.56 144.78 0)
 			(effects
@@ -18995,6 +19051,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 35.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 35.56 144.78 0)
 			(effects
 				(font
@@ -19083,15 +19148,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 55.88 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "HR1942CT-ND "
 			(at 55.88 147.32 0)
 			(effects
@@ -19102,6 +19158,15 @@
 			)
 		)
 		(property "MFR" "Hirose Electric Co Ltd "
+			(at 55.88 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 55.88 147.32 0)
 			(effects
 				(font
@@ -19231,15 +19296,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 281.94 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DPN" "732-150060BS75020CT-ND "
 			(at 281.94 123.19 0)
 			(effects
@@ -19259,6 +19315,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 281.94 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 281.94 123.19 0)
 			(effects
 				(font
@@ -19337,15 +19402,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 63.5 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA3E2X7R1E104K080AA "
 			(at 63.5 50.8 0)
 			(effects
@@ -19365,6 +19421,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 63.5 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 63.5 50.8 0)
 			(effects
 				(font
@@ -19442,15 +19507,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "Mouser"
-			(at 314.96 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "THGBMJG7C2LBAU8"
 			(at 314.96 208.28 0)
 			(effects
@@ -19470,6 +19526,15 @@
 			)
 		)
 		(property "MFR" "Kioxia "
+			(at 314.96 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" ""
 			(at 314.96 208.28 0)
 			(effects
 				(font
@@ -20000,15 +20065,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" "DigiKey"
-			(at 388.62 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "CGA4J1X7S1C106M125AC "
 			(at 388.62 181.61 0)
 			(effects
@@ -20028,6 +20084,15 @@
 			)
 		)
 		(property "MFR" "TDK Corporation "
+			(at 388.62 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
 			(at 388.62 181.61 0)
 			(effects
 				(font
