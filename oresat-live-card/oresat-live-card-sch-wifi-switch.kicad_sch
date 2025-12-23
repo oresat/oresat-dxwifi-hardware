@@ -2032,6 +2032,12 @@
 		(uuid "b53ea11d-e62d-411e-8614-6a529442d2fa")
 	)
 	(junction
+		(at 213.36 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca7597d2-ac81-4876-96d0-e479dffba7c7")
+	)
+	(junction
 		(at 118.11 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2130,6 +2136,16 @@
 			(type default)
 		)
 		(uuid "0ca3011b-7995-4de2-9707-a9aa26c1bf3d")
+	)
+	(wire
+		(pts
+			(xy 213.36 234.95) (xy 213.36 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de5271d-1b3a-46d4-aa18-733b90d97a95")
 	)
 	(wire
 		(pts
@@ -3090,6 +3106,16 @@
 			(type default)
 		)
 		(uuid "b44c9e0a-504b-45f4-a5e0-9ee9a799525f")
+	)
+	(wire
+		(pts
+			(xy 213.36 220.98) (xy 213.36 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b54cb515-b5e1-4881-8ee5-191a5084a7c2")
 	)
 	(wire
 		(pts
@@ -5283,6 +5309,73 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "R124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 237.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e0b1e54-358e-4e70-a193-ce14639295ed")
+		(property "Reference" "#PWR045"
+			(at 213.36 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "372ee6ee-b979-46c8-adca-9bff176dbf6c")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -9508,6 +9601,113 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "#5VA05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 213.36 232.41 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acdbdb93-9492-40e5-9cc1-97e521c7e022")
+		(property "Reference" "C24"
+			(at 210.82 231.1462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100p"
+			(at 210.82 233.6862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "oresat-passives:0402-C"
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 100PF 50V C0G/NP0 0402"
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-GCM1555C1H101GA16DCT-ND "
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H101GA16D "
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 213.36 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0021fb49-0c1a-49e7-8d02-ab5861e6f7a1")
+		)
+		(pin "1"
+			(uuid "829c3e44-5f78-4366-9e17-a17667219913")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "C24")
 					(unit 1)
 				)
 			)
