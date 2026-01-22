@@ -1530,6 +1530,201 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "oresat-passives:R-US"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R-US_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.159 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.159 1.016) (xy -1.524 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -1.016) (xy -0.889 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.016) (xy 0.381 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy 1.651 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 1.016) (xy 2.286 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.016) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "oresat-power:5VA"
 			(power)
 			(pin_names
@@ -1924,6 +2119,12 @@
 		(uuid "06d0620d-c930-47ad-aaa9-fc11b868ab6a")
 	)
 	(junction
+		(at 266.7 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a7884d8-f0ac-47eb-8661-43de069149cc")
+	)
+	(junction
 		(at 328.93 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1940,6 +2141,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3395abce-6478-4f59-989e-91983b6716b0")
+	)
+	(junction
+		(at 43.18 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a274871-86bc-4d9f-93a9-b94e9272dd4a")
 	)
 	(junction
 		(at 153.67 73.66)
@@ -2359,6 +2566,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 91.44) (xy 275.59 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3678f39c-e745-44d0-b175-bfbd5ddf3e81")
+	)
+	(wire
+		(pts
 			(xy 341.63 88.9) (xy 349.25 88.9)
 		)
 		(stroke
@@ -2409,6 +2626,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 106.68) (xy 266.7 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "439d51f1-87c3-462e-a4c0-9385e44b6a7d")
+	)
+	(wire
+		(pts
 			(xy 80.01 50.8) (xy 86.36 50.8)
 		)
 		(stroke
@@ -2439,7 +2666,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 93.98) (xy 54.61 93.98)
+			(xy 35.56 93.98) (xy 43.18 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2719,6 +2946,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 93.98) (xy 43.18 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af5e7c2-94d3-4642-8e65-ec6c8fc08b6e")
+	)
+	(wire
+		(pts
 			(xy 207.01 151.13) (xy 207.01 147.32)
 		)
 		(stroke
@@ -2806,6 +3043,16 @@
 			(type default)
 		)
 		(uuid "787b728c-4ac6-460d-8ab5-b83d88d37698")
+	)
+	(wire
+		(pts
+			(xy 43.18 93.98) (xy 54.61 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fdc7bc9-226f-4575-977f-03b22f615f1b")
 	)
 	(wire
 		(pts
@@ -2906,6 +3153,16 @@
 			(type default)
 		)
 		(uuid "916226d1-2dec-4e8c-a7e3-3661f1a4df64")
+	)
+	(wire
+		(pts
+			(xy 266.7 91.44) (xy 266.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91dd8106-2d3c-495c-ace3-9ee9b529a829")
 	)
 	(wire
 		(pts
@@ -3359,7 +3616,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 91.44) (xy 275.59 91.44)
+			(xy 257.81 91.44) (xy 266.7 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3516,6 +3773,16 @@
 			(type default)
 		)
 		(uuid "f269d389-93a1-4e89-bf91-4972804cad37")
+	)
+	(wire
+		(pts
+			(xy 43.18 109.22) (xy 43.18 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34faef1-a66f-43b4-9246-46c7671576a1")
 	)
 	(wire
 		(pts
@@ -4864,6 +5131,71 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09311624-5529-49b2-98d6-343e9d93d28a")
+		(property "Reference" "#PWR0125"
+			(at 266.7 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f95a64b-a003-44b1-b162-adda34280b77")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -8912,6 +9244,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 43.18 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e39d6c8-8648-4ad7-bdcf-9bc8456e1884")
+		(property "Reference" "#PWR054"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3742e968-a5ed-476d-8a2b-a21c31701fbf")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 152.4 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9209,6 +9606,111 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "R125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat-passives:R-US")
+		(at 266.7 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a4084e4-6333-405e-b3b1-569dd7ab74fa")
+		(property "Reference" "R62"
+			(at 267.97 97.79 90)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "10k"
+			(at 267.97 99.06 90)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "oresat-passives:0603-C"
+			(at 266.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+			(at 266.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
+			(at 266.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 266.7 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 266.7 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 266.7 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5bffcfd-7fea-428d-91fb-ae714979d584")
+		)
+		(pin "2"
+			(uuid "53f005da-66ae-4859-a24a-71ffd9ce040c")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -11426,6 +11928,111 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
 					(reference "U24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat-passives:R-US")
+		(at 43.18 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edca0e41-c3d2-48d4-9d02-2425031c5c00")
+		(property "Reference" "R16"
+			(at 44.45 100.33 90)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "10k"
+			(at 44.45 101.6 90)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "oresat-passives:0603-C"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF1002V"
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "P10.0KHCT-ND "
+			(at 43.18 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Panasonic "
+			(at 43.18 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 43.18 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8be6b783-922d-4eb9-a038-d005ec8694f0")
+		)
+		(pin "2"
+			(uuid "108a499f-9f3a-494d-862d-315928cc8944")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7775cd78-d12a-44cc-8e12-abb8a937a463"
+					(reference "R16")
 					(unit 1)
 				)
 			)
