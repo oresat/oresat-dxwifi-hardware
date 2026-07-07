@@ -166,12 +166,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
+		(symbol "Device:LED_Small_Filled"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -180,23 +180,228 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0 2.54 0)
+				(at -1.27 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small_Filled"
+				(at -4.445 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
+			(property "Datasheet" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol, filled shape"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_Small_Filled_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_Filled_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -221,7 +426,7 @@
 					)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -232,7 +437,7 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -243,7 +448,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "LED diode"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -254,21 +459,10 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_0_1"
+			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -280,7 +474,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -290,48 +484,10 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
 				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -347,9 +503,9 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -986,7 +1142,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U3"
+			(property "Reference" "U"
 				(at 8.89 -19.05 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11393,213 +11549,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-passives:R-US"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R-US_1_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.159 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.159 1.016) (xy -1.524 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -1.016) (xy -0.889 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.889 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 -1.016) (xy 0.381 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.381 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.016) (xy 1.651 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.651 1.016) (xy 2.286 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.016) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -12455,13 +12404,13 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 110.49) (xy 275.59 110.49)
+			(xy 267.97 110.49) (xy 276.86 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0aecde81-77d9-432b-9e52-41e415cbf6bc")
+		(uuid "0adbf4f4-563d-4938-9d44-430076278e1d")
 	)
 	(wire
 		(pts
@@ -12485,7 +12434,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 110.49) (xy 260.35 110.49)
+			(xy 254 110.49) (xy 262.89 110.49)
 		)
 		(stroke
 			(width 0)
@@ -12525,7 +12474,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 118.11) (xy 260.35 118.11)
+			(xy 256.54 118.11) (xy 262.89 118.11)
 		)
 		(stroke
 			(width 0)
@@ -12642,16 +12591,6 @@
 			(type default)
 		)
 		(uuid "27f02444-3b5e-49bc-8dee-039531ca7ec4")
-	)
-	(wire
-		(pts
-			(xy 270.51 95.25) (xy 275.59 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29dfec68-21d9-4598-91a1-5b316dff1071")
 	)
 	(wire
 		(pts
@@ -13005,16 +12944,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 118.11) (xy 275.59 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52857a4b-da0e-4182-9b7c-2af05a75ae66")
-	)
-	(wire
-		(pts
 			(xy 93.98 118.11) (xy 93.98 128.27)
 		)
 		(stroke
@@ -13065,7 +12994,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 95.25) (xy 260.35 95.25)
+			(xy 248.92 95.25) (xy 262.89 95.25)
 		)
 		(stroke
 			(width 0)
@@ -13112,6 +13041,16 @@
 			(type default)
 		)
 		(uuid "628eb438-d5bb-4402-bd99-0b1a6e155de9")
+	)
+	(wire
+		(pts
+			(xy 267.97 102.87) (xy 276.86 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6400b228-9f78-4dbc-88c2-f1bbefbcdc86")
 	)
 	(wire
 		(pts
@@ -13222,6 +13161,26 @@
 			(type default)
 		)
 		(uuid "72ba5379-3b80-4878-986f-07fdd8f44b9f")
+	)
+	(wire
+		(pts
+			(xy 267.97 95.25) (xy 276.86 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76f62274-93f2-4f4d-8e63-fc3f554979a5")
+	)
+	(wire
+		(pts
+			(xy 267.97 118.11) (xy 276.86 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aebb6df-52b5-4453-8fd9-0bcdce0c837d")
 	)
 	(wire
 		(pts
@@ -13345,16 +13304,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 102.87) (xy 275.59 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8880da5f-9538-4661-a9ff-afd9a2629e07")
-	)
-	(wire
-		(pts
 			(xy 391.16 151.13) (xy 391.16 152.4)
 		)
 		(stroke
@@ -13382,6 +13331,16 @@
 			(type default)
 		)
 		(uuid "89ede464-e6b8-4679-a2ef-c170a3ee41f9")
+	)
+	(wire
+		(pts
+			(xy 281.94 102.87) (xy 288.29 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0b26ef-0100-42b6-9404-8e96993e5c9f")
 	)
 	(wire
 		(pts
@@ -13485,6 +13444,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 95.25) (xy 288.29 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a602ac-ef4d-410e-9839-cffc124c5ac3")
+	)
+	(wire
+		(pts
 			(xy 115.57 128.27) (xy 93.98 128.27)
 		)
 		(stroke
@@ -13512,16 +13481,6 @@
 			(type default)
 		)
 		(uuid "9cdeb0ca-6244-4a2a-bb4a-22ee93904baa")
-	)
-	(wire
-		(pts
-			(xy 283.21 95.25) (xy 288.29 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e20b975-a6d7-45d8-ada5-ec2a777ec847")
 	)
 	(wire
 		(pts
@@ -13665,6 +13624,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 110.49) (xy 288.29 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acfec44a-cd12-43f4-9d7f-ad034d66b6b8")
+	)
+	(wire
+		(pts
 			(xy 189.23 72.39) (xy 189.23 73.66)
 		)
 		(stroke
@@ -13732,16 +13701,6 @@
 			(type default)
 		)
 		(uuid "b6e2c8ea-ec2b-4fba-a60b-206f80a4b472")
-	)
-	(wire
-		(pts
-			(xy 283.21 118.11) (xy 288.29 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b82df952-3fb3-4e09-9ff8-6b87cc7e46fc")
 	)
 	(wire
 		(pts
@@ -13985,16 +13944,6 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 102.87) (xy 288.29 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d79a6777-5713-496d-9f38-50f4810229ef")
-	)
-	(wire
-		(pts
 			(xy 360.68 151.13) (xy 360.68 152.4)
 		)
 		(stroke
@@ -14002,16 +13951,6 @@
 			(type default)
 		)
 		(uuid "d8bbe83b-d06f-447f-bec5-588fe958a835")
-	)
-	(wire
-		(pts
-			(xy 283.21 110.49) (xy 288.29 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da1095f8-aed8-4c43-9d2b-cb65e823c5e3")
 	)
 	(wire
 		(pts
@@ -14095,6 +14034,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 118.11) (xy 288.29 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea5d0f4a-048f-4c78-9161-bed899ca94bc")
+	)
+	(wire
+		(pts
 			(xy 383.54 157.48) (xy 383.54 165.1)
 		)
 		(stroke
@@ -14125,7 +14074,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 102.87) (xy 260.35 102.87)
+			(xy 251.46 102.87) (xy 262.89 102.87)
 		)
 		(stroke
 			(width 0)
@@ -14313,120 +14262,60 @@
 		)
 		(uuid "d10cf425-875b-4687-b11c-e16b8cf3fd47")
 	)
-	(global_label "CAN2_L"
-		(shape input)
-		(at 207.01 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left)
-		)
-		(uuid "211c9aaf-9963-4ddb-a424-f70e78728f6d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 213.5251 64.7145 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GRSTz"
-		(shape input)
-		(at 229.87 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "269f707a-f786-4cb2-8f45-131c8394d543")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.0283 138.3506 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "UART0_Rx"
+	(hierarchical_label "UART0_RX"
 		(shape input)
 		(at 154.94 100.33 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "3a516ca8-d646-4bc1-bae8-e6ba3d7ed0d7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.94 88.2129 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
+		(uuid "239bbc70-f40e-435c-a7d5-571a017dbd22")
 	)
-	(global_label "UART0_Tx"
-		(shape input)
-		(at 157.48 100.33 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93fbcb15-f62b-481e-ac5a-860cdeecb839")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.48 88.5153 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "CAN2_H"
+	(hierarchical_label "CAN2_H"
 		(shape input)
 		(at 207.01 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 0.889 0.889)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "c629dfaa-37af-4767-afa6-bfe5d03347b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 213.7368 59.6345 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
+		(uuid "4cc0a7a8-de2c-4736-a6a4-99fe8e784fd1")
+	)
+	(hierarchical_label "GRSTz"
+		(shape input)
+		(at 229.87 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
+		(uuid "78394b69-18da-48d4-97a1-a250cc5c197b")
+	)
+	(hierarchical_label "UART0_TX"
+		(shape input)
+		(at 157.48 100.33 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a7d45ff-36e9-4793-9941-489990b20824")
+	)
+	(hierarchical_label "CAN2_L"
+		(shape input)
+		(at 207.01 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8cc481a4-1986-4b6c-8b8c-6db2d6f83e1e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -16340,7 +16229,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "Device:LED_Small_Filled")
 		(at 279.4 102.87 180)
 		(unit 1)
 		(body_style 1)
@@ -16374,7 +16263,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 279.4 102.87 0)
+			(at 279.4 102.87 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16385,7 +16274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 102.87 0)
+			(at 279.4 102.87 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16395,7 +16284,7 @@
 				)
 			)
 		)
-		(property "Description" "Blue 470nm LED 3.2V 0603"
+		(property "Description" "Light emitting diode, small symbol, filled shape"
 			(at 279.4 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -16477,8 +16366,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 265.43 118.11 0)
+		(lib_id "Device:R_Small_US")
+		(at 265.43 118.11 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16488,7 +16377,7 @@
 		(dnp no)
 		(uuid "588c1e41-6e7d-4663-9833-3ee3d386ce28")
 		(property "Reference" "R5"
-			(at 260.35 116.84 0)
+			(at 266.7 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16499,7 +16388,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 264.16 116.84 0)
+			(at 268.478 123.444 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16531,7 +16420,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 265.43 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16852,8 +16741,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 265.43 95.25 0)
+		(lib_id "Device:R_Small_US")
+		(at 265.43 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16863,7 +16752,7 @@
 		(dnp no)
 		(uuid "738e1548-f4bb-4d2a-93ec-e9befdfff9f0")
 		(property "Reference" "R2"
-			(at 260.35 93.98 0)
+			(at 270.764 89.916 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16874,7 +16763,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 264.16 93.98 0)
+			(at 272.542 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16906,7 +16795,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 265.43 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -17251,8 +17140,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 265.43 102.87 0)
+		(lib_id "Device:R_Small_US")
+		(at 265.43 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17262,7 +17151,7 @@
 		(dnp no)
 		(uuid "8943ef13-a48e-4f3f-8043-3f9fcd6a7c80")
 		(property "Reference" "R3"
-			(at 260.35 101.6 0)
+			(at 271.018 98.552 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17273,7 +17162,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 264.16 101.6 0)
+			(at 272.796 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17305,7 +17194,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 265.43 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -17668,8 +17557,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 265.43 110.49 0)
+		(lib_id "Device:R_Small_US")
+		(at 265.43 110.49 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17679,7 +17568,7 @@
 		(dnp no)
 		(uuid "996fc7f7-99ad-4216-a57d-020c3725e766")
 		(property "Reference" "R4"
-			(at 260.35 109.22 0)
+			(at 271.018 105.918 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17690,7 +17579,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 264.16 109.22 0)
+			(at 272.796 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17722,7 +17611,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 4.7K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 265.43 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -18360,7 +18249,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "Device:LED_Small_Filled")
 		(at 279.4 95.25 180)
 		(unit 1)
 		(body_style 1)
@@ -18394,7 +18283,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 279.4 95.25 0)
+			(at 279.4 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18405,7 +18294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 95.25 0)
+			(at 279.4 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18415,7 +18304,7 @@
 				)
 			)
 		)
-		(property "Description" "Blue 470nm LED 3.2V 0603"
+		(property "Description" "Light emitting diode, small symbol, filled shape"
 			(at 279.4 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -18646,7 +18535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "Device:LED_Small_Filled")
 		(at 279.4 118.11 180)
 		(unit 1)
 		(body_style 1)
@@ -18680,7 +18569,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 279.4 118.11 0)
+			(at 279.4 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18691,7 +18580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 118.11 0)
+			(at 279.4 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18701,7 +18590,7 @@
 				)
 			)
 		)
-		(property "Description" "Blue 470nm LED 3.2V 0603"
+		(property "Description" "Light emitting diode, small symbol, filled shape"
 			(at 279.4 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -19351,7 +19240,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "Device:LED_Small_Filled")
 		(at 279.4 110.49 180)
 		(unit 1)
 		(body_style 1)
@@ -19385,7 +19274,7 @@
 			)
 		)
 		(property "Footprint" "oresat-live-card:LED-0603"
-			(at 279.4 110.49 0)
+			(at 279.4 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19396,7 +19285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 110.49 0)
+			(at 279.4 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19406,7 +19295,7 @@
 				)
 			)
 		)
-		(property "Description" "Blue 470nm LED 3.2V 0603"
+		(property "Description" "Light emitting diode, small symbol, filled shape"
 			(at 279.4 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -19667,7 +19556,7 @@
 				)
 			)
 		)
-		(property "Description" "IC FLASH 32GB EMMC 153FBGA"
+		(property "Description" "IC FLASH 16GBIT EMMC 153FBGA"
 			(at 317.5 181.61 0)
 			(hide yes)
 			(show_name no)

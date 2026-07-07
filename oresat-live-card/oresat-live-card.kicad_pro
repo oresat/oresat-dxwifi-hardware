@@ -297,6 +297,22 @@
   "erc": {
     "erc_exclusions": [
       [
+        "lib_symbol_mismatch|2844800|914400|b6e95e30-daa6-4217-ab40-6c7f63678787|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|635000|939800|c2ff0add-8319-4447-937a-9b99d8b4ffec|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "pin_not_driven|1574800|1257300|a2e977b9-6800-45b4-ae87-35d4429567ec|00000000-0000-0000-0000-000000000000|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9|",
+        ""
+      ],
+      [
+        "pin_to_pin|1765300|596900|5a4c59a6-12d9-4862-be95-d2bbaba1d2bf|f2be5d42-df5c-4a4a-8834-2bf8607644b3|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9",
+        ""
+      ],
+      [
         "pin_to_pin|1841500|1092200|2f24a34a-4e96-4098-acf4-bc8fc7ec75d8|4d03471d-d7c8-4cf0-b13b-ddf59166143b|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/7c9c8fbf-83c8-4463-803c-a3967b810f93",
         ""
       ],
@@ -370,6 +386,10 @@
       ],
       [
         "pin_to_pin|2806700|660400|9dc2ce14-766a-4107-9077-4b8e406cbd7f|2194fa89-e497-4dbf-876e-5ad67042f440|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873",
+        ""
+      ],
+      [
+        "pin_to_pin|2806700|723900|9dc2ce14-766a-4107-9077-4b8e406cbd7f|2194fa89-e497-4dbf-876e-5ad67042f440|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873|/748bdd2d-da0a-4240-ba60-0bf881d2ec56/800b750c-a739-41c9-892a-b7b25d00c873",
         ""
       ]
     ],
@@ -852,24 +872,6 @@
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "DIS",
           "name": "DIS",
           "show": true
@@ -879,6 +881,24 @@
           "label": "DPN",
           "name": "DPN",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         },
         {
           "group_by": false,
@@ -939,7 +959,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "$ORESAT_LIBRARIES/title-blocks/oresat-schematic-title-block.kicad_wks",
+    "page_layout_descr_file": "kicad-embed://oresat-schematic-title-block.kicad_wks",
     "plot_directory": "./",
     "reuse_designators": true,
     "space_save_all_events": true,
@@ -964,8 +984,8 @@
   },
   "sheets": [
     [
-      "1bdb8d5b-8060-49dd-b753-8985e7684076",
-      "Connectors"
+      "748bdd2d-da0a-4240-ba60-0bf881d2ec56",
+      "oresat-live-card"
     ],
     [
       "800b750c-a739-41c9-892a-b7b25d00c873",
@@ -977,7 +997,7 @@
     ],
     [
       "49f5f571-d1f9-4350-855b-6ca6690b0a90",
-      "SIP B: USB + ADC + Crystals"
+      "SIP B: ADC + Crystals"
     ],
     [
       "53f1a01a-ab00-470b-871b-16512f4395a9",
@@ -1004,8 +1024,8 @@
       "WiFi Switching"
     ],
     [
-      "748bdd2d-da0a-4240-ba60-0bf881d2ec56",
-      "oresat-live-card"
+      "dd131ce9-16b2-41eb-97a4-546378c1e915",
+      "USB HUB"
     ]
   ],
   "text_variables": {},

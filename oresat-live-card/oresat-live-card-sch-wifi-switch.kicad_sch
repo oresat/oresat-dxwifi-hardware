@@ -865,12 +865,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_US"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -878,27 +879,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 2.54 0 90)
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "R_US"
-				(at -2.54 0 90)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 1.016 -0.254 90)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -919,7 +922,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, US symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -930,7 +933,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -952,10 +955,10 @@
 					)
 				)
 			)
-			(symbol "R_US_0_1"
+			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 0 2.54)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -967,7 +970,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -977,47 +980,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_US_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 2.54 270)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -1034,8 +999,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
+					(at 0 -2.54 90)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -1207,6 +1172,245 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "QPC1022_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 6.35 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "QPC1022"
+				(at 6.35 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "oresat-ics:QPC1022"
+				(at 0 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/1081/1/QPC1022_Data_Sheet.pdf"
+				(at 0 30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "QPC1022_1_1_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "RF_COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "RF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "CTRL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "RF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1461,7 +1665,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.qorvo.com/products/d/da005900"
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/1081/1/QPC1022_Data_Sheet.pdf"
 				(at 0 30.48 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1655,213 +1859,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "oresat-passives:R-US"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R-US_1_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.159 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.159 1.016) (xy -1.524 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -1.016) (xy -0.889 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.889 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 -1.016) (xy 0.381 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.381 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.016) (xy 1.651 1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.651 1.016) (xy 2.286 -1.016)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.016) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -2448,16 +2445,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 198.12) (xy 264.16 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "004346a4-c6d7-489b-8626-bfbb6e939371")
-	)
-	(wire
-		(pts
 			(xy 293.37 74.93) (xy 293.37 73.66)
 		)
 		(stroke
@@ -2465,6 +2452,16 @@
 			(type default)
 		)
 		(uuid "0143116b-e620-4075-a260-de9d315b38a3")
+	)
+	(wire
+		(pts
+			(xy 264.16 199.39) (xy 264.16 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058507d5-6a8c-407e-8b0a-858a604aa4cd")
 	)
 	(wire
 		(pts
@@ -2485,6 +2482,16 @@
 			(type default)
 		)
 		(uuid "0751ee3c-f099-45bf-9c5d-24fb6ad353a3")
+	)
+	(wire
+		(pts
+			(xy 266.7 101.6) (xy 266.7 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a477fc9-2754-4a9e-aa3e-c91e1341d840")
 	)
 	(wire
 		(pts
@@ -2568,6 +2575,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 199.39) (xy 294.64 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12a4b7f7-0043-42ab-a792-3fa6101fbe65")
+	)
+	(wire
+		(pts
 			(xy 332.74 215.9) (xy 383.54 215.9)
 		)
 		(stroke
@@ -2625,16 +2642,6 @@
 			(type default)
 		)
 		(uuid "1a7ec881-efe6-49c9-bdcd-3a034429b1f4")
-	)
-	(wire
-		(pts
-			(xy 207.01 158.75) (xy 207.01 160.02)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "1be199f7-d491-440c-97b4-87724af68d4c")
 	)
 	(wire
 		(pts
@@ -2728,7 +2735,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 43.18) (xy 66.04 50.8)
+			(xy 66.04 41.91) (xy 66.04 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2798,16 +2805,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 106.68) (xy 266.7 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439d51f1-87c3-462e-a4c0-9385e44b6a7d")
-	)
-	(wire
-		(pts
 			(xy 80.01 50.8) (xy 86.36 50.8)
 		)
 		(stroke
@@ -2858,7 +2855,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 39.37) (xy 287.02 48.26)
+			(xy 287.02 38.1) (xy 287.02 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2885,6 +2882,16 @@
 			(type default)
 		)
 		(uuid "46e85a10-ece8-46fd-bd6c-42521667eedb")
+	)
+	(wire
+		(pts
+			(xy 128.27 161.29) (xy 128.27 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49252716-8387-4427-88ff-728f55a55247")
 	)
 	(wire
 		(pts
@@ -2948,7 +2955,17 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 209.55) (xy 264.16 208.28)
+			(xy 106.68 50.8) (xy 115.57 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b50a98-19f5-453f-893d-01ab2409e55b")
+	)
+	(wire
+		(pts
+			(xy 264.16 207.01) (xy 264.16 209.55)
 		)
 		(stroke
 			(width 0)
@@ -2988,7 +3005,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 189.23) (xy 294.64 186.69)
+			(xy 294.64 186.69) (xy 294.64 190.5)
 		)
 		(stroke
 			(width 0)
@@ -3048,6 +3065,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 170.18) (xy 207.01 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "607465eb-6e30-4b81-ab40-0296d5031f3d")
+	)
+	(wire
+		(pts
 			(xy 238.76 180.34) (xy 238.76 184.15)
 		)
 		(stroke
@@ -3075,16 +3102,6 @@
 			(type default)
 		)
 		(uuid "6267011b-b7b1-4929-83eb-aa27cf2eebcb")
-	)
-	(wire
-		(pts
-			(xy 294.64 209.55) (xy 294.64 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e6aaab-994d-4839-b4bf-e2d79988690b")
 	)
 	(wire
 		(pts
@@ -3118,7 +3135,17 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 93.98) (xy 43.18 96.52)
+			(xy 294.64 207.01) (xy 294.64 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "686ffc74-6b86-44fe-a7ac-e52e99f9dc57")
+	)
+	(wire
+		(pts
+			(xy 43.18 93.98) (xy 43.18 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3128,7 +3155,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 151.13) (xy 207.01 147.32)
+			(xy 207.01 147.32) (xy 207.01 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3138,7 +3165,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 196.85) (xy 294.64 199.39)
+			(xy 294.64 195.58) (xy 294.64 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3178,6 +3205,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 91.44) (xy 266.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75b4fdda-83c2-4eb0-9bf9-454bd63b0fb4")
+	)
+	(wire
+		(pts
 			(xy 222.25 187.96) (xy 222.25 184.15)
 		)
 		(stroke
@@ -3208,13 +3245,13 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 186.69) (xy 264.16 190.5)
+			(xy 207.01 157.48) (xy 207.01 160.02)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "787b728c-4ac6-460d-8ab5-b83d88d37698")
+		(uuid "7c50427b-c97d-4b2f-8092-366254b7abbb")
 	)
 	(wire
 		(pts
@@ -3258,6 +3295,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 149.86) (xy 128.27 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b4a48d-1ad4-45c7-b61a-ffd6e8e5e863")
+	)
+	(wire
+		(pts
 			(xy 302.26 199.39) (xy 302.26 215.9)
 		)
 		(stroke
@@ -3275,6 +3322,16 @@
 			(type default)
 		)
 		(uuid "852c2309-4aa3-40d8-8631-769d0b1988a1")
+	)
+	(wire
+		(pts
+			(xy 140.97 93.98) (xy 140.97 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86010faf-0267-4692-ae39-e8febaa42799")
 	)
 	(wire
 		(pts
@@ -3308,36 +3365,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 149.86) (xy 128.27 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e9de81a-49b7-49ac-9cf3-cd3b69310f0d")
-	)
-	(wire
-		(pts
-			(xy 207.01 171.45) (xy 207.01 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "916226d1-2dec-4e8c-a7e3-3661f1a4df64")
-	)
-	(wire
-		(pts
-			(xy 266.7 91.44) (xy 266.7 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91dd8106-2d3c-495c-ace3-9ee9b529a829")
-	)
-	(wire
-		(pts
 			(xy 153.67 68.58) (xy 153.67 73.66)
 		)
 		(stroke
@@ -3348,13 +3375,13 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 93.98) (xy 140.97 96.52)
+			(xy 264.16 186.69) (xy 264.16 191.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9449e599-54fd-440b-af86-385de83d9e74")
+		(uuid "932069ef-9745-48ad-8fe4-36eaee01c5e6")
 	)
 	(wire
 		(pts
@@ -3378,16 +3405,6 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 29.21) (xy 287.02 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e16cb71-3aa2-4c19-b357-a1a79bc7f0c6")
-	)
-	(wire
-		(pts
 			(xy 60.96 76.2) (xy 64.77 76.2)
 		)
 		(stroke
@@ -3408,17 +3425,17 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 165.1) (xy 128.27 162.56)
+			(xy 327.66 48.26) (xy 336.55 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f9aa618-4589-4ddb-a3da-f6281be597b1")
+		(uuid "9fa2e36f-f59b-4d15-8bdf-9bb99e6b8bf1")
 	)
 	(wire
 		(pts
-			(xy 349.25 114.3) (xy 349.25 118.11)
+			(xy 349.25 113.03) (xy 349.25 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3428,7 +3445,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 128.27) (xy 349.25 130.81)
+			(xy 349.25 127) (xy 349.25 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3508,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 88.9) (xy 349.25 106.68)
+			(xy 349.25 88.9) (xy 349.25 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3548,7 +3565,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 105.41) (xy 140.97 104.14)
+			(xy 207.01 160.02) (xy 207.01 165.1)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b59e06c0-ebba-4a02-8c61-831acee6cffd")
+	)
+	(wire
+		(pts
+			(xy 140.97 102.87) (xy 140.97 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3608,23 +3635,23 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 48.26) (xy 336.55 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c923c15e-3403-436b-92b3-13d51ced8d65")
-	)
-	(wire
-		(pts
-			(xy 66.04 31.75) (xy 66.04 35.56)
+			(xy 66.04 31.75) (xy 66.04 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cb0b5a68-3b05-43e8-b764-59e9aa0cd496")
+	)
+	(wire
+		(pts
+			(xy 287.02 29.21) (xy 287.02 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca25e19-9d55-4d0d-bb8c-03ee12bb48a1")
 	)
 	(wire
 		(pts
@@ -3668,6 +3695,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 196.85) (xy 264.16 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d23a58fe-52ba-49a9-9add-02ef4c1dc318")
+	)
+	(wire
+		(pts
 			(xy 328.93 184.15) (xy 340.36 184.15)
 		)
 		(stroke
@@ -3675,16 +3712,6 @@
 			(type default)
 		)
 		(uuid "d270ae4e-fe02-4df7-a90c-c2a375a81056")
-	)
-	(wire
-		(pts
-			(xy 107.95 50.8) (xy 115.57 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4bbc289-7f19-43c4-a6b4-ee94439aef6c")
 	)
 	(wire
 		(pts
@@ -3705,6 +3732,16 @@
 			(type default)
 		)
 		(uuid "d7a9d4d6-40ef-4f16-a255-cfebc3a8310e")
+	)
+	(wire
+		(pts
+			(xy 43.18 104.14) (xy 43.18 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d89dfc6c-c217-45c4-8070-12a99b6ca50a")
 	)
 	(wire
 		(pts
@@ -3758,17 +3795,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 200.66) (xy 294.64 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daae2c5c-80c9-48c4-85c8-bc2bc21834ec")
-	)
-	(wire
-		(pts
-			(xy 312.42 48.26) (xy 321.31 48.26)
+			(xy 312.42 48.26) (xy 322.58 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3828,16 +3855,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 160.02) (xy 207.01 163.83)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "e5d82a66-21b8-4a54-bbef-e3b7ca2596d5")
-	)
-	(wire
-		(pts
 			(xy 128.27 144.78) (xy 128.27 137.16)
 		)
 		(stroke
@@ -3878,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 118.11) (xy 349.25 120.65)
+			(xy 349.25 118.11) (xy 349.25 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3898,7 +3915,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 50.8) (xy 100.33 50.8)
+			(xy 86.36 50.8) (xy 101.6 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3948,16 +3965,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 109.22) (xy 43.18 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f34faef1-a66f-43b4-9246-46c7671576a1")
-	)
-	(wire
-		(pts
 			(xy 200.66 147.32) (xy 207.01 147.32)
 		)
 		(stroke
@@ -3965,16 +3972,6 @@
 			(type default)
 		)
 		(uuid "f51dda3c-b203-45c7-87ff-2ba4bc2b35cf")
-	)
-	(wire
-		(pts
-			(xy 264.16 199.39) (xy 264.16 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f60ff9a9-ac66-49c2-903b-bca8484ce0e7")
 	)
 	(wire
 		(pts
@@ -4749,166 +4746,82 @@
 			)
 		)
 	)
-	(global_label "RX_IN"
+	(hierarchical_label "PA_ON_LNA_OFF"
 		(shape input)
-		(at 190.5 215.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7c10295e-a7f3-4cd4-9337-518aa13adbb0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.1324 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "HELICAL_ANTENNA"
-		(shape bidirectional)
-		(at 383.54 226.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9ccfea56-8f95-4d50-bb4c-f12a640ba61e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 404.3885 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "PATCH_ANTENNA"
-		(shape bidirectional)
-		(at 383.54 215.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a220d631-53b2-4f6a-b3f0-08284ebfe033")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.8161 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "PA_ON_LNA_OFF"
-		(shape output)
 		(at 198.12 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "ab0fedb1-1d5b-424c-9347-5fe029e968cf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9825 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "07415055-4a16-418c-bcb9-47b7be616941")
 	)
-	(global_label "ANT_SEL"
+	(hierarchical_label "ANT_SEL"
 		(shape input)
 		(at 257.81 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "b5999b93-462f-4767-a0a0-13925794cb9a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.0839 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "3fb8a744-86c7-4f4c-8c68-897fee0ab19c")
 	)
-	(global_label "PA_MATCH_OUT"
-		(shape input)
-		(at 190.5 226.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dc079941-d420-4143-86e6-7f362c0fd8e6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.4843 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "TRANSMIT"
+	(hierarchical_label "TRANSMIT"
 		(shape input)
 		(at 35.56 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "eaf5f824-457f-498f-83c9-236811011bc9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.6848 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+		(uuid "44c6127c-d832-4f4a-ab23-455000c3e4ff")
+	)
+	(hierarchical_label "HELICAL_ANTENNA"
+		(shape input)
+		(at 383.54 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
+		(uuid "8f177ea3-b335-4d92-be98-acb5528fb865")
+	)
+	(hierarchical_label "PATCH_ANTENNA"
+		(shape input)
+		(at 383.54 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d5f6777-6188-441c-a3f0-782cfb616d43")
+	)
+	(hierarchical_label "RX_IN"
+		(shape input)
+		(at 190.5 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf7039ca-5ce4-4df2-9919-20398a8dc6ac")
+	)
+	(hierarchical_label "PA_MATCH_OUT"
+		(shape input)
+		(at 190.5 226.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fce28776-4a12-4f31-9b45-fe6bda9b9ee4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5555,7 +5468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 349.25 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -5589,7 +5502,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 350.266 110.744 90)
+			(at 349.25 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5610,7 +5523,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 349.25 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5681,7 +5594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 264.16 204.47 0)
 		(mirror y)
 		(unit 1)
@@ -5713,7 +5626,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0402-C"
-			(at 263.144 204.724 90)
+			(at 264.16 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5734,7 +5647,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0402"
+		(property "Description" "Resistor, small US symbol"
 			(at 264.16 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -5882,7 +5795,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 294.64 204.47 180)
 		(unit 1)
 		(body_style 1)
@@ -5915,7 +5828,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0402-C"
-			(at 293.624 204.216 90)
+			(at 294.64 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5936,7 +5849,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0402"
+		(property "Description" "Resistor, small US symbol"
 			(at 294.64 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -7121,7 +7034,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 104.14 50.8 90)
 		(unit 1)
 		(body_style 1)
@@ -7153,7 +7066,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 104.394 49.784 90)
+			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7174,7 +7087,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 104.14 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7322,7 +7235,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 128.27 158.75 0)
 		(unit 1)
 		(body_style 1)
@@ -7356,7 +7269,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 129.286 159.004 90)
+			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7377,7 +7290,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 499K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -7448,7 +7361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 349.25 124.46 180)
 		(unit 1)
 		(body_style 1)
@@ -7482,7 +7395,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 348.234 124.206 90)
+			(at 349.25 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7503,7 +7416,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 349.25 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7574,7 +7487,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 66.04 39.37 0)
 		(unit 1)
 		(body_style 1)
@@ -7608,7 +7521,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 67.056 39.624 90)
+			(at 66.04 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7629,7 +7542,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 1K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 66.04 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8340,7 +8253,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.qorvo.com/products/d/da005900"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/1081/1/QPC1022_Data_Sheet.pdf"
 			(at 322.58 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -8849,6 +8762,7 @@
 		)
 	)
 	(symbol
+		(lib_name "QPC1022_1")
 		(lib_id "oresat-ics:QPC1022")
 		(at 238.76 220.98 0)
 		(mirror y)
@@ -8892,7 +8806,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.qorvo.com/products/d/da005900"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/1081/1/QPC1022_Data_Sheet.pdf"
 			(at 238.76 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -9246,7 +9160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 325.12 48.26 90)
 		(unit 1)
 		(body_style 1)
@@ -9278,7 +9192,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 325.374 47.244 90)
+			(at 325.12 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9299,7 +9213,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 325.12 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -9729,7 +9643,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 264.16 194.31 0)
 		(mirror y)
 		(unit 1)
@@ -9763,7 +9677,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0402-C"
-			(at 263.144 194.564 90)
+			(at 264.16 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9784,7 +9698,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0402"
+		(property "Description" "Resistor, small US symbol"
 			(at 264.16 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -10059,7 +9973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 207.01 154.94 180)
 		(unit 1)
 		(body_style 1)
@@ -10093,7 +10007,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 205.994 154.686 90)
+			(at 207.01 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10114,7 +10028,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 207.01 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10574,7 +10488,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 294.64 193.04 180)
 		(unit 1)
 		(body_style 1)
@@ -10586,7 +10500,7 @@
 		(fields_autoplaced yes)
 		(uuid "96b9167e-2249-4d4f-b610-f4848b7e5f98")
 		(property "Reference" "R125"
-			(at 296.291 191.8278 0)
+			(at 297.18 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10597,7 +10511,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 296.291 194.2521 0)
+			(at 297.18 194.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10608,7 +10522,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0402-C"
-			(at 293.624 192.786 90)
+			(at 294.64 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10629,7 +10543,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0402"
+		(property "Description" "Resistor, small US symbol"
 			(at 294.64 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -10700,8 +10614,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 266.7 99.06 90)
+		(lib_id "Device:R_Small_US")
+		(at 266.7 99.06 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10711,25 +10625,25 @@
 		(dnp no)
 		(uuid "9a4084e4-6333-405e-b3b1-569dd7ab74fa")
 		(property "Reference" "R62"
-			(at 267.97 97.79 90)
+			(at 274.066 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify right top)
+				(justify left top)
 			)
 		)
 		(property "Value" "10k"
-			(at 267.97 99.06 90)
+			(at 273.558 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify right bottom)
+				(justify left bottom)
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
@@ -10754,7 +10668,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 266.7 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11570,7 +11484,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 140.97 100.33 0)
 		(unit 1)
 		(body_style 1)
@@ -11604,7 +11518,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 141.986 100.584 90)
+			(at 140.97 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11625,7 +11539,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 499K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 140.97 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12618,7 +12532,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 287.02 35.56 0)
 		(unit 1)
 		(body_style 1)
@@ -12652,7 +12566,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 288.036 35.814 90)
+			(at 287.02 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12673,7 +12587,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 1K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 287.02 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -13450,8 +13364,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:R-US")
-		(at 43.18 101.6 90)
+		(lib_id "Device:R_Small_US")
+		(at 43.18 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13461,25 +13375,25 @@
 		(dnp no)
 		(uuid "edca0e41-c3d2-48d4-9d02-2425031c5c00")
 		(property "Reference" "R16"
-			(at 44.45 100.33 90)
+			(at 49.784 105.664 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify right top)
+				(justify left top)
 			)
 		)
 		(property "Value" "10k"
-			(at 44.45 101.6 90)
+			(at 49.276 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify right bottom)
+				(justify left bottom)
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
@@ -13504,7 +13418,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 43.18 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13865,7 +13779,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
+		(lib_id "Device:R_Small_US")
 		(at 207.01 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -13899,7 +13813,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-C"
-			(at 208.026 167.894 90)
+			(at 207.01 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13920,7 +13834,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 5.62K OHM 1% 1/10W 0603"
+		(property "Description" "Resistor, small US symbol"
 			(at 207.01 167.64 0)
 			(hide yes)
 			(show_name no)
