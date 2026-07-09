@@ -2715,16 +2715,16 @@
 		(uuid "06e04f83-a6a9-42a6-840d-4ac7974d2867")
 	)
 	(junction
-		(at 171.45 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25925ece-98a3-494b-bbdf-8e10a66bdea5")
-	)
-	(junction
 		(at 349.25 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3827ccbc-a890-48ba-b90c-d608ea2933d0")
+	)
+	(junction
+		(at 171.45 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "442af464-d75e-46b6-85a7-64beb9252ad4")
 	)
 	(junction
 		(at 58.42 87.63)
@@ -3013,6 +3013,16 @@
 			(type default)
 		)
 		(uuid "0e153bd4-b89d-4c73-9d7e-eb633e2ed8ca")
+	)
+	(wire
+		(pts
+			(xy 408.94 265.43) (xy 502.92 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb47e7c-c1a2-4f12-a220-b80e9ecce836")
 	)
 	(wire
 		(pts
@@ -3496,13 +3506,13 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 265.43) (xy 502.92 265.43)
+			(xy 408.94 267.97) (xy 502.92 267.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65c0f7ce-681a-4a45-b895-c5d108df207d")
+		(uuid "69eb7fad-c255-4793-85fa-11f7832c8728")
 	)
 	(wire
 		(pts
@@ -3516,7 +3526,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 143.51) (xy 190.5 143.51)
+			(xy 171.45 138.43) (xy 190.5 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3803,16 +3813,6 @@
 			(type default)
 		)
 		(uuid "addf435f-d91b-442d-8802-597be9b7db5a")
-	)
-	(wire
-		(pts
-			(xy 408.94 267.97) (xy 502.92 267.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adea73ce-649c-4968-b485-64541a50843f")
 	)
 	(wire
 		(pts
@@ -4106,7 +4106,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 96.52) (xy 171.45 143.51)
+			(xy 171.45 96.52) (xy 171.45 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4206,7 +4206,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 143.51) (xy 171.45 170.18)
+			(xy 171.45 138.43) (xy 171.45 170.18)
 		)
 		(stroke
 			(width 0)
@@ -7050,26 +7050,6 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_RX" input
-			(at 190.5 140.97 180)
-			(uuid "4418a09d-5105-4049-9234-50c1203593b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART0_TX" input
-			(at 190.5 143.51 180)
-			(uuid "1f5ccace-d924-41b9-97f7-40e5dda6a93f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "GRSTz" input
 			(at 238.76 170.18 0)
 			(uuid "888c9e7e-9187-4113-a694-b95f29b46bb6")
@@ -7078,6 +7058,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "UART0_Rx" input
+			(at 190.5 140.97 180)
+			(uuid "9de89edb-808f-4c3d-b608-c9e71c0cd2d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0_Tx" input
+			(at 190.5 138.43 180)
+			(uuid "aa3774c8-a744-4a53-97cd-e1b08c2aaf3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -7449,29 +7449,29 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_RX" output
-			(at 190.5 99.06 180)
-			(uuid "4ec600b1-4382-44d0-968d-5a11ed6df39c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART0_TX" output
-			(at 190.5 96.52 180)
-			(uuid "77b32704-a29f-453e-9705-45c5ed0da355")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "OPD_PWR" input
 			(at 190.5 85.09 180)
 			(uuid "eb77a719-4844-4bda-8fb4-5cd9ca4772e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0_Rx" output
+			(at 190.5 96.52 180)
+			(uuid "fbf19a3f-58ba-4e5d-b7bc-0df402945cae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0_Tx" output
+			(at 190.5 99.06 180)
+			(uuid "398eafc9-6f87-4e58-b9ca-73bac080ac72")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7686,7 +7686,7 @@
 			)
 		)
 		(pin "CAMERA_USB_P" output
-			(at 408.94 265.43 0)
+			(at 408.94 267.97 0)
 			(uuid "1eea1489-fe37-4fa4-90a1-2f22a4129ea2")
 			(effects
 				(font
@@ -7696,7 +7696,7 @@
 			)
 		)
 		(pin "CAMERA_USB_N" output
-			(at 408.94 267.97 0)
+			(at 408.94 265.43 0)
 			(uuid "8f380425-6d61-4bbd-b84d-f862825842f9")
 			(effects
 				(font
