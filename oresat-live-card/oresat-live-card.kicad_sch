@@ -10,6 +10,192 @@
 		(rev "2.1")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -203,24 +389,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "SHLD"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "SHLD"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "SIG"
@@ -230,7 +398,25 @@
 							)
 						)
 					)
-					(number "SIG"
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "SHLD"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -2365,6 +2551,253 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "oresat-pcbs:WF-NP9202WF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PCBA"
+				(at 2.54 -13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "WF-NP9202WF"
+				(at 2.794 -15.494 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "oresat-live-card:WF-NP9202"
+				(at 0 16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "WF-NP9202WF_0_1"
+				(rectangle
+					(start -7.366 5.588)
+					(end 7.366 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -6.35 13.97)
+					(end 0.635 10.795)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -6.35 -3.048)
+					(end -3.81 -5.588)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -5.715 -8.89)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.254 -7.62)
+					(end 2.794 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 11.43)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 11.43)
+					(radius 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 -8.89)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "WF-NP9202WF_1_0"
+				(circle
+					(center -5.08 -4.318)
+					(radius 0.568)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -5.08 -4.318)
+					(radius 1.0473)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 -8.89)
+					(radius 0.568)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 -8.89)
+					(radius 1.0473)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "1mm USB/PWR"
+					(at -6.35 7.112 0)
+					(effects
+						(font
+							(size 1.27 1.0795)
+						)
+						(justify left bottom)
+					)
+				)
+			)
+			(symbol "WF-NP9202WF_1_1"
+				(rectangle
+					(start -7.62 13.97)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "RX"
+					(at -3.048 -4.318 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "TX/RX"
+					(at -1.524 -8.89 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2656,6 +3089,50 @@
 		)
 		(uuid "6b73c3b0-d462-49e3-afc0-9e2c92cdba31")
 	)
+	(text "Connection to J12\nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
+		(exclude_from_sim no)
+		(at 504.19 204.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "77432753-2b58-4d25-9311-ebee436a1fad")
+	)
+	(text "Connection to J9 \nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
+		(exclude_from_sim no)
+		(at 502.412 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "7dc4e8f6-18e4-43cf-bd92-b494ca381364")
+	)
+	(text "AR9271 Single-Chip 1x1 MAC/BB/Radio/PA/LNA with USB \nInterface for 802.11n 2.4 GHz WLANs"
+		(exclude_from_sim no)
+		(at 479.806 225.298 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7eee5a36-f759-4643-8e26-6f2c6a335d30")
+	)
+	(text "Connection to PCBA1 \nvia USB cable from J2\n"
+		(exclude_from_sim no)
+		(at 528.574 150.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "aa335297-ddab-49c2-ad2f-1d72d69f9f79")
+	)
 	(text "Cable to wifi:\nJST A06SR06SR30K51A"
 		(exclude_from_sim no)
 		(at 527.05 299.72 0)
@@ -2691,7 +3168,7 @@
 	)
 	(text "RF Connectors"
 		(exclude_from_sim no)
-		(at 488.95 93.98 0)
+		(at 490.22 68.58 0)
 		(effects
 			(font
 				(size 3 3)
@@ -3074,6 +3551,16 @@
 		)
 		(uuid "183d24f9-076d-467b-ac46-ea98ffe60d96")
 	)
+	(polyline
+		(pts
+			(xy 525.78 157.48) (xy 488.95 157.48)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "19a2b5f8-9c20-4399-b4b6-1f26a20f0f6d")
+	)
 	(wire
 		(pts
 			(xy 408.94 303.53) (xy 502.92 303.53)
@@ -3114,6 +3601,16 @@
 		)
 		(uuid "1d86ce0c-ed57-4348-b241-c8d1658b5773")
 	)
+	(polyline
+		(pts
+			(xy 524.764 209.55) (xy 524.764 213.868)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "1efee1df-0a80-4516-9792-daa3fd5e87f6")
+	)
 	(wire
 		(pts
 			(xy 58.42 80.01) (xy 58.42 78.74)
@@ -3144,6 +3641,16 @@
 		)
 		(uuid "23e59287-7f95-4c29-8994-b6fc460156c3")
 	)
+	(polyline
+		(pts
+			(xy 534.416 213.868) (xy 524.764 213.868)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "23e85039-6bec-4018-afac-3eb28ca11be2")
+	)
 	(wire
 		(pts
 			(xy 254 243.84) (xy 254 170.18)
@@ -3173,6 +3680,16 @@
 			(type default)
 		)
 		(uuid "2965ef0e-15b3-4835-929b-647b4db27199")
+	)
+	(wire
+		(pts
+			(xy 455.93 205.74) (xy 455.93 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b293d6a-9451-4a05-8759-70b039186071")
 	)
 	(wire
 		(pts
@@ -3286,16 +3803,6 @@
 	)
 	(wire
 		(pts
-			(xy 461.01 74.93) (xy 461.01 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d8fbb78-0ea7-428d-a400-54de5e9c962e")
-	)
-	(wire
-		(pts
 			(xy 290.83 280.67) (xy 290.83 125.73)
 		)
 		(stroke
@@ -3336,6 +3843,16 @@
 	)
 	(wire
 		(pts
+			(xy 488.95 210.82) (xy 488.95 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468b2a76-da3b-4168-8073-84d9702aaa71")
+	)
+	(wire
+		(pts
 			(xy 365.76 243.84) (xy 254 243.84)
 		)
 		(stroke
@@ -3343,6 +3860,16 @@
 			(type default)
 		)
 		(uuid "486cc1ab-e519-451c-822d-4ba306298618")
+	)
+	(wire
+		(pts
+			(xy 407.67 190.5) (xy 455.93 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49791de8-4798-4a38-8bac-1ac524581706")
 	)
 	(wire
 		(pts
@@ -3386,17 +3913,7 @@
 	)
 	(wire
 		(pts
-			(xy 515.62 123.19) (xy 457.2 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dbd8e48-8965-4819-b986-71eae4dd1b48")
-	)
-	(wire
-		(pts
-			(xy 415.29 74.93) (xy 461.01 74.93)
+			(xy 415.29 74.93) (xy 516.89 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3436,7 +3953,7 @@
 	)
 	(wire
 		(pts
-			(xy 520.7 105.41) (xy 520.7 109.22)
+			(xy 521.97 80.01) (xy 521.97 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3446,7 +3963,7 @@
 	)
 	(wire
 		(pts
-			(xy 457.2 123.19) (xy 457.2 77.47)
+			(xy 458.47 97.79) (xy 458.47 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3504,6 +4021,16 @@
 		)
 		(uuid "6444a775-bc1f-4248-9f8c-60ea99b8cc37")
 	)
+	(polyline
+		(pts
+			(xy 525.78 157.48) (xy 534.416 157.48)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "67248a95-43c2-4c77-95ab-50fc1297e7c9")
+	)
 	(wire
 		(pts
 			(xy 408.94 267.97) (xy 502.92 267.97)
@@ -3543,6 +4070,16 @@
 			(type default)
 		)
 		(uuid "706aa96f-b7df-4de5-b757-37213ffcf993")
+	)
+	(polyline
+		(pts
+			(xy 527.812 152.146) (xy 527.812 157.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "720d2de3-1ad9-4582-9ccd-089bdd7b56e1")
 	)
 	(wire
 		(pts
@@ -3594,6 +4131,16 @@
 		)
 		(uuid "833e9c8b-362e-43cc-b5ef-274d8530593b")
 	)
+	(polyline
+		(pts
+			(xy 488.95 205.74) (xy 518.16 205.74)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "834b24e9-bfd1-45b0-a5d4-a7ddfac8bda8")
+	)
 	(wire
 		(pts
 			(xy 190.5 91.44) (xy 166.37 91.44)
@@ -3603,6 +4150,16 @@
 			(type default)
 		)
 		(uuid "8719f685-ff2a-42d8-b3e0-777f2c79e745")
+	)
+	(wire
+		(pts
+			(xy 407.67 140.97) (xy 436.88 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87df4cd4-f6ed-4e6d-a234-4efac3546d11")
 	)
 	(wire
 		(pts
@@ -3623,6 +4180,16 @@
 			(type default)
 		)
 		(uuid "8d090068-a5f8-432e-8461-2fd49c546b7b")
+	)
+	(wire
+		(pts
+			(xy 458.47 97.79) (xy 516.89 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d16a924-f5a5-41c5-a8fd-bae07ab98cee")
 	)
 	(wire
 		(pts
@@ -3703,6 +4270,26 @@
 			(type default)
 		)
 		(uuid "98990c15-86e1-45e4-b28d-bfa1dcb4373e")
+	)
+	(polyline
+		(pts
+			(xy 534.416 157.48) (xy 534.416 213.868)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "98fe2b2e-d3f3-46ca-a9b6-49fc986629e1")
+	)
+	(wire
+		(pts
+			(xy 483.87 157.48) (xy 436.88 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6954e0-e6f4-41e6-a85a-0d2079466607")
 	)
 	(wire
 		(pts
@@ -3916,6 +4503,16 @@
 	)
 	(wire
 		(pts
+			(xy 488.95 162.56) (xy 488.95 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec2bc8c-29ce-4c08-87f4-1529381d47ef")
+	)
+	(wire
+		(pts
 			(xy 50.8 378.46) (xy 50.8 386.08)
 		)
 		(stroke
@@ -4026,6 +4623,16 @@
 	)
 	(wire
 		(pts
+			(xy 436.88 157.48) (xy 436.88 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f4ac55-a8a3-43f3-964b-e8f51a8dd3e1")
+	)
+	(wire
+		(pts
 			(xy 330.2 64.77) (xy 364.49 64.77)
 		)
 		(stroke
@@ -4063,6 +4670,16 @@
 			(type default)
 		)
 		(uuid "d8e26249-09e2-434f-a863-2c8e825ee089")
+	)
+	(polyline
+		(pts
+			(xy 518.16 204.978) (xy 518.16 205.74)
+		)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(uuid "dd2f0171-ac4e-45f6-8a15-91176de314c2")
 	)
 	(wire
 		(pts
@@ -4126,17 +4743,7 @@
 	)
 	(wire
 		(pts
-			(xy 461.01 100.33) (xy 515.62 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed5f9f44-c136-497c-94c5-3a236b0e46ab")
-	)
-	(wire
-		(pts
-			(xy 520.7 128.27) (xy 520.7 132.08)
+			(xy 521.97 102.87) (xy 521.97 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4186,7 +4793,7 @@
 	)
 	(wire
 		(pts
-			(xy 457.2 77.47) (xy 415.29 77.47)
+			(xy 458.47 77.47) (xy 415.29 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4274,6 +4881,16 @@
 		)
 		(uuid "fd4569a3-ca4c-413a-be9a-9cf485e177cd")
 	)
+	(wire
+		(pts
+			(xy 483.87 205.74) (xy 455.93 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffe05d2d-4210-4681-af61-03b49112842e")
+	)
 	(label "CAN2_H"
 		(at 60.96 87.63 0)
 		(effects
@@ -4283,6 +4900,16 @@
 			(justify left bottom)
 		)
 		(uuid "4f69d147-e9d5-45c1-8a0a-af9a1aa8857c")
+	)
+	(label "Helical_Antenna"
+		(at 500.38 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5209eea6-30d3-42b0-8468-05da928172a1")
 	)
 	(label "USB_DEV_VBUS"
 		(at 54.61 340.36 0)
@@ -4373,6 +5000,16 @@
 			(justify left bottom)
 		)
 		(uuid "c80f85a0-0858-4df2-8cae-594df416b65d")
+	)
+	(label "Patch_Antenna"
+		(at 500.38 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d568be61-ed6f-470d-ad54-9d326bff5c28")
 	)
 	(label "USB_DEV_N"
 		(at 54.61 347.98 0)
@@ -5083,6 +5720,125 @@
 		)
 	)
 	(symbol
+		(lib_id "oresat-pcbs:WF-NP9202WF")
+		(at 523.24 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f72101d-c176-4ae1-a959-d1678f32a9f8")
+		(property "Reference" "PCBA1"
+			(at 515.62 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "WF-NP9202WF"
+			(at 515.62 217.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "oresat-live-card:WF-NP9202"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "AR9271 USB to WiFi daughter board"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "N/A"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "N/A"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Unknown"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Unknown"
+			(at 523.24 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
+					(reference "PCBA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Fiducial")
 		(at 527.05 406.4 0)
 		(unit 1)
@@ -5336,7 +6092,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 520.7 109.22 0)
+		(at 488.95 165.1 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5344,10 +6101,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b1bd6f2-78ff-4ba1-b573-8f73c856a89c")
-		(property "Reference" "#PWR04"
-			(at 520.7 115.57 0)
+		(uuid "422b13c9-ae32-4ffa-b653-c520fce6519c")
+		(property "Reference" "#PWR081"
+			(at 488.95 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,7 +6114,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 520.7 114.3 0)
+			(at 488.95 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5368,7 +6124,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 520.7 109.22 0)
+			(at 488.95 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5379,7 +6135,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 520.7 109.22 0)
+			(at 488.95 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5390,7 +6146,85 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 520.7 109.22 0)
+			(at 488.95 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "503ea854-0c3d-4ac4-aa74-c9fb9b670649")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 521.97 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b1bd6f2-78ff-4ba1-b573-8f73c856a89c")
+		(property "Reference" "#PWR04"
+			(at 521.97 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 521.97 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 521.97 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 521.97 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 521.97 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5551,6 +6385,83 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 488.95 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74834a3b-c860-4fa9-8921-89efc46c7ddf")
+		(property "Reference" "#PWR0119"
+			(at 488.95 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 488.95 217.932 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 488.95 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 488.95 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 488.95 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8493df4b-4b9e-4490-b279-3160ac924a86")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -5866,6 +6777,129 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 488.95 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad639950-8e35-4d4a-a47c-6fb1aac09970")
+		(property "Reference" "J12"
+			(at 488.95 199.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U.FL"
+			(at 488.95 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN U.FL RCPT STR 50 OHM SMD"
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "H11891CT-ND "
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Hirose Electric Co Ltd "
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "U.FL-R-SMT-1(10) "
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 488.95 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "552d86ea-d0be-4dab-a9d6-9df8bfa4c871")
+		)
+		(pin "2"
+			(uuid "6fd53bfb-d4f1-4178-bc15-4a8198f9e610")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Fiducial")
 		(at 527.05 411.48 0)
 		(unit 1)
@@ -6041,7 +7075,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 520.7 132.08 0)
+		(at 521.97 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6052,7 +7086,7 @@
 		(fields_autoplaced yes)
 		(uuid "c819e9a4-6274-4b45-80fb-5c912889d134")
 		(property "Reference" "#PWR05"
-			(at 520.7 138.43 0)
+			(at 521.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6063,7 +7097,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 520.7 137.16 0)
+			(at 521.97 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6073,7 +7107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 520.7 132.08 0)
+			(at 521.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6084,7 +7118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 520.7 132.08 0)
+			(at 521.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6095,7 +7129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 520.7 132.08 0)
+			(at 521.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6197,7 +7231,7 @@
 	)
 	(symbol
 		(lib_id "oresat-connectors:J-MOLEX-SMPM-73300-002X")
-		(at 520.7 123.19 0)
+		(at 521.97 97.79 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6208,7 +7242,7 @@
 		(dnp no)
 		(uuid "d520d7a0-6347-4302-b981-df19c63a162f")
 		(property "Reference" "J8"
-			(at 515.62 127 0)
+			(at 516.89 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6219,7 +7253,7 @@
 			)
 		)
 		(property "Value" "SMPM"
-			(at 515.62 129.54 0)
+			(at 516.89 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6230,7 +7264,7 @@
 			)
 		)
 		(property "Footprint" "oresat-connectors:J-MOLEX-SMPM-073300-002X"
-			(at 520.7 116.84 0)
+			(at 521.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +7275,7 @@
 			)
 		)
 		(property "Datasheet" "https://tools.molex.com/pdm_docs/sd/733000020_sd.pdf"
-			(at 520.7 114.3 0)
+			(at 521.97 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6251,8 +7285,8 @@
 				)
 			)
 		)
-		(property "Description" "CONN SMPM PLUG STR 50OHM EDGEMNT"
-			(at 520.7 116.84 0)
+		(property "Description" "SMPM Connector Plug, Male Pin 50Ohm Board Edge, Cutout; Surface Mount Solder"
+			(at 521.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6263,7 +7297,7 @@
 			)
 		)
 		(property "MPN" "0733000020"
-			(at 520.7 115.57 0)
+			(at 521.97 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6274,7 +7308,7 @@
 			)
 		)
 		(property "DPN" "WM10772-ND "
-			(at 520.7 123.19 0)
+			(at 521.97 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6285,7 +7319,7 @@
 			)
 		)
 		(property "MFR" "MOLEX"
-			(at 520.7 123.19 0)
+			(at 521.97 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6296,7 +7330,7 @@
 			)
 		)
 		(property "DIS" "DigiKey"
-			(at 520.7 123.19 0)
+			(at 521.97 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6306,16 +7340,139 @@
 				)
 			)
 		)
-		(pin "SIG"
+		(pin "1"
 			(uuid "04dd7c8f-dcf5-4c06-84d0-bde52c895fcc")
 		)
-		(pin "SHLD"
+		(pin "2"
 			(uuid "984ddf0d-9923-4fd9-aad6-9aff8761c435")
 		)
 		(instances
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 488.95 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de4aad8d-fbb5-4118-b210-4197ed003b3e")
+		(property "Reference" "J9"
+			(at 485.775 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U.FL"
+			(at 485.14 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN U.FL RCPT STR 50 OHM SMD"
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "H11891CT-ND "
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Hirose Electric Co Ltd "
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "U.FL-R-SMT-1(10) "
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 488.95 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "994a6926-28a4-44ab-ae90-b8bfafc1d079")
+		)
+		(pin "2"
+			(uuid "b17dd638-7f17-481a-8b88-8961812dff35")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -6401,7 +7558,7 @@
 	)
 	(symbol
 		(lib_id "oresat-connectors:J-MOLEX-SMPM-73300-002X")
-		(at 520.7 100.33 0)
+		(at 521.97 74.93 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6412,7 +7569,7 @@
 		(dnp no)
 		(uuid "eae56ef8-39ad-4189-8740-6dfc78f19978")
 		(property "Reference" "J6"
-			(at 515.62 104.14 0)
+			(at 516.89 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6423,7 +7580,7 @@
 			)
 		)
 		(property "Value" "SMPM"
-			(at 515.62 106.68 0)
+			(at 516.89 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6434,7 +7591,7 @@
 			)
 		)
 		(property "Footprint" "oresat-connectors:J-MOLEX-SMPM-073300-002X"
-			(at 520.7 93.98 0)
+			(at 521.97 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6445,7 +7602,7 @@
 			)
 		)
 		(property "Datasheet" "https://tools.molex.com/pdm_docs/sd/733000020_sd.pdf"
-			(at 520.7 91.44 0)
+			(at 521.97 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6455,8 +7612,8 @@
 				)
 			)
 		)
-		(property "Description" "CONN SMPM PLUG STR 50OHM EDGEMNT"
-			(at 520.7 93.98 0)
+		(property "Description" "SMPM Connector Plug, Male Pin 50Ohm Board Edge, Cutout; Surface Mount Solder"
+			(at 521.97 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6467,7 +7624,7 @@
 			)
 		)
 		(property "MPN" "0733000020"
-			(at 520.7 92.71 0)
+			(at 521.97 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6478,7 +7635,7 @@
 			)
 		)
 		(property "DPN" "WM10772-ND "
-			(at 520.7 100.33 0)
+			(at 521.97 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6489,7 +7646,7 @@
 			)
 		)
 		(property "MFR" "MOLEX"
-			(at 520.7 100.33 0)
+			(at 521.97 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6500,7 +7657,7 @@
 			)
 		)
 		(property "DIS" "DigiKey"
-			(at 520.7 100.33 0)
+			(at 521.97 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6510,10 +7667,10 @@
 				)
 			)
 		)
-		(pin "SIG"
+		(pin "2"
 			(uuid "6c0f2d60-de19-4db3-bf64-748660964fac")
 		)
-		(pin "SHLD"
+		(pin "1"
 			(uuid "b34acf25-6bd2-4e47-91cb-bb7b9bdb1aab")
 		)
 		(instances
@@ -6807,19 +7964,9 @@
 				(justify left top)
 			)
 		)
-		(pin "PA_THERMISTOR" input
+		(pin "PA_THERMISTOR" output
 			(at 364.49 125.73 180)
 			(uuid "9ce1d198-997b-4e69-b32f-a0d3b6f6716c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PA_MATCH_OUT" input
-			(at 364.49 118.11 180)
-			(uuid "6d503983-191f-4197-a250-e9d8dda89ce8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6830,6 +7977,26 @@
 		(pin "PA_ON_LNA_OFF" input
 			(at 364.49 120.65 180)
 			(uuid "bbb056c9-09d3-46e7-b904-d345c55c585b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_TX{slash}RX" bidirectional
+			(at 407.67 140.97 0)
+			(uuid "b2113606-d117-44d2-aac6-957b0d84892a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RF_TX{slash}RX_AMP" output
+			(at 364.49 118.11 180)
+			(uuid "94396b81-dd61-4cbd-bdd0-9a8a7ef59957")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,9 +8314,9 @@
 				(justify right)
 			)
 		)
-		(pin "TRANSMIT" output
+		(pin "TX{slash}RX_SWITCH" output
 			(at 330.2 64.77 0)
-			(uuid "c1abbd58-80b8-4085-a387-85064eb565b0")
+			(uuid "ab095cc0-a5d6-4643-a636-fae303357fa4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7205,7 +8372,7 @@
 				(justify left top)
 			)
 		)
-		(pin "RX_IN" input
+		(pin "RX_IN" output
 			(at 415.29 88.9 0)
 			(uuid "7219ceac-a02c-44bc-bc47-77f6c5ee8e56")
 			(effects
@@ -7213,16 +8380,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "PA_MATCH_OUT" input
-			(at 364.49 81.28 180)
-			(uuid "3fddc0ac-1673-4358-9fc7-66c5bf905a26")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "PA_ON_LNA_OFF" input
@@ -7235,17 +8392,7 @@
 				(justify left)
 			)
 		)
-		(pin "TRANSMIT" input
-			(at 364.49 64.77 180)
-			(uuid "23917d53-036d-42b0-885c-235f6486aaaf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PATCH_ANTENNA" input
+		(pin "PATCH_ANTENNA" bidirectional
 			(at 415.29 77.47 0)
 			(uuid "ea1bcbdf-db2d-45b7-9c04-95079bec3049")
 			(effects
@@ -7255,7 +8402,7 @@
 				(justify right)
 			)
 		)
-		(pin "HELICAL_ANTENNA" input
+		(pin "HELICAL_ANTENNA" bidirectional
 			(at 415.29 74.93 0)
 			(uuid "7f052804-6e3e-404d-bba4-9bf7027defcc")
 			(effects
@@ -7268,6 +8415,26 @@
 		(pin "ANT_SEL" input
 			(at 364.49 62.23 180)
 			(uuid "47e0f857-56f0-4c5b-ad9e-1c2cd6e52cc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TX{slash}RX_SWITCH" input
+			(at 364.49 64.77 180)
+			(uuid "7f04b42d-06dd-415e-b91b-30926cb8a7f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_TX{slash}RX_AMP" bidirectional
+			(at 364.49 81.28 180)
+			(uuid "b5c9dcf3-8651-4098-b274-ad17eab3f2bb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7527,7 +8694,7 @@
 				(justify left top)
 			)
 		)
-		(pin "RX_DET_OUT" input
+		(pin "RX_DET_OUT" output
 			(at 363.22 168.91 180)
 			(uuid "bd92d706-16fe-4051-9efe-3eb5e478837f")
 			(effects
@@ -7555,6 +8722,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "RF_DET_IN" input
+			(at 407.67 190.5 0)
+			(uuid "1b4f4cdf-0252-45d0-bb2c-b55b3ffbc99f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

@@ -8121,19 +8121,19 @@
 		(at 127 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3234e554-fe84-40f8-8ee9-f15898e02d72")
+		(uuid "2e32b86d-4e96-4644-b9ac-cfec4ea6de0f")
+	)
+	(junction
+		(at 127 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83bcdcc2-8239-448d-aa63-5f843ab5e3f7")
 	)
 	(junction
 		(at 265.43 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc284853-4083-490e-bd30-4a63e088159e")
-	)
-	(junction
-		(at 127 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8dd1046-5e02-4f8b-b73d-7a28c64f59bf")
 	)
 	(junction
 		(at 237.49 172.72)
@@ -8295,16 +8295,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 114.3) (xy 127 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b14576c-8971-4ae6-93e9-fb4fb56ab026")
-	)
-	(wire
-		(pts
 			(xy 196.85 132.08) (xy 219.71 132.08)
 		)
 		(stroke
@@ -8325,6 +8315,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 114.3) (xy 135.89 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23ff1c42-7a75-415d-8868-538165af4995")
+	)
+	(wire
+		(pts
 			(xy 224.79 170.18) (xy 224.79 172.72)
 		)
 		(stroke
@@ -8332,6 +8332,16 @@
 			(type default)
 		)
 		(uuid "287ecb8d-bb55-4e9f-802b-411229d32ff7")
+	)
+	(wire
+		(pts
+			(xy 127 111.76) (xy 135.89 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3364b25d-ea9e-4d86-91a9-36155a869e79")
 	)
 	(wire
 		(pts
@@ -8425,16 +8435,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 106.68) (xy 127 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69fe1b1e-4c0c-4736-9b0b-4379a39a282e")
-	)
-	(wire
-		(pts
 			(xy 196.85 134.62) (xy 222.25 134.62)
 		)
 		(stroke
@@ -8482,16 +8482,6 @@
 			(type default)
 		)
 		(uuid "74c5cf20-1342-4ee5-908a-1403095a9576")
-	)
-	(wire
-		(pts
-			(xy 127 114.3) (xy 135.89 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "796fd48e-37c6-4ef5-ac61-e850a6f6938d")
 	)
 	(wire
 		(pts
@@ -8625,23 +8615,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 111.76) (xy 127 111.76)
+			(xy 120.65 111.76) (xy 127 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a3c0bc1b-99e6-41a3-b1e2-786264f14887")
-	)
-	(wire
-		(pts
-			(xy 127 111.76) (xy 120.65 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa5e381f-9af5-4fa9-8bc8-1fe45b001137")
 	)
 	(wire
 		(pts
@@ -9089,7 +9069,7 @@
 			)
 		)
 	)
-	(hierarchical_label "TRANSMIT"
+	(hierarchical_label "TX{slash}RX_SWITCH"
 		(shape output)
 		(at 120.65 111.76 180)
 		(effects
@@ -9124,7 +9104,7 @@
 	)
 	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
-		(at 127 106.68 90)
+		(at 127 111.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9134,7 +9114,7 @@
 		(dnp no)
 		(uuid "0198389f-ded3-4139-9be7-55b6d334ec9a")
 		(property "Reference" "TP11"
-			(at 125.73 105.41 90)
+			(at 129.794 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9145,7 +9125,7 @@
 			)
 		)
 		(property "Value" "TEST-POINT3X4"
-			(at 129.54 109.22 0)
+			(at 129.54 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9157,7 +9137,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:TestPoint_Pad_D1.0mm"
-			(at 116.84 106.68 0)
+			(at 116.84 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9168,7 +9148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 106.68 0)
+			(at 127 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9179,7 +9159,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 106.68 0)
+			(at 127 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9190,7 +9170,7 @@
 			)
 		)
 		(property "DIS" ""
-			(at 127 106.68 90)
+			(at 127 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9214,7 +9194,7 @@
 	)
 	(symbol
 		(lib_id "oresat-misc:Test-Point-1mm-round")
-		(at 127 119.38 90)
+		(at 127 114.3 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9224,7 +9204,7 @@
 		(dnp no)
 		(uuid "01d243f6-32bb-4254-9407-9eb1099489dd")
 		(property "Reference" "TP25"
-			(at 125.73 118.11 90)
+			(at 129.286 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9235,7 +9215,7 @@
 			)
 		)
 		(property "Value" "TEST-POINT3X4"
-			(at 129.54 121.92 0)
+			(at 129.54 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9247,7 +9227,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:TestPoint_Pad_D1.0mm"
-			(at 116.84 119.38 0)
+			(at 127 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9258,7 +9238,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 119.38 0)
+			(at 127 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9269,7 +9249,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 119.38 0)
+			(at 127 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9280,7 +9260,7 @@
 			)
 		)
 		(property "DIS" ""
-			(at 127 119.38 90)
+			(at 127 114.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
