@@ -1,0 +1,7 @@
+(version 1)
+
+(rule "Ignore RF50 clearance"
+    (severity ignore)
+    (condition "A.hasNetclass('RF-50-min') || B.hasNetclass('RF-50-min') || A.hasNetclass('RF-50-max') || B.hasNetclass('RF-50-max')")
+    (constraint clearance)
+)

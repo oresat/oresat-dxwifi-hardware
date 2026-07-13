@@ -196,6 +196,141 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "J-MOLEX-SMPM-73300-002X_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "733000020"
+				(at 5.08 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "oresat-connectors:J-MOLEX-SMPM-073300-002X"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://tools.molex.com/pdm_docs/sd/733000020_sd.pdf"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SMPM Connector Plug, Male Pin 50Ohm Board Edge, Cutout; Surface Mount Solder"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "J-MOLEX-SMPM-73300-002X_1_1_0"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 3.556 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "SIG"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "SHLD"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -3091,7 +3226,7 @@
 	)
 	(text "Connection to J12\nU.FL to U.FL coax\n90 - 100 mm long \nE.g., TE 2118651-6"
 		(exclude_from_sim no)
-		(at 504.19 204.47 0)
+		(at 481.838 196.596 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3124,7 +3259,7 @@
 	)
 	(text "Connection to PCBA1 \nvia USB cable from J2\n"
 		(exclude_from_sim no)
-		(at 528.574 150.622 0)
+		(at 524.002 151.638 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3135,7 +3270,7 @@
 	)
 	(text "Cable to wifi:\nJST A06SR06SR30K51A"
 		(exclude_from_sim no)
-		(at 527.05 299.72 0)
+		(at 530.098 293.116 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3401,6 +3536,16 @@
 		)
 		(uuid "044b33df-1242-41a8-867f-6cfa5d47b568")
 	)
+	(polyline
+		(pts
+			(xy 514.35 199.39) (xy 514.35 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0482def9-a777-4f99-94c2-83bca53209db")
+	)
 	(wire
 		(pts
 			(xy 234.95 307.34) (xy 365.76 307.34)
@@ -3553,10 +3698,10 @@
 	)
 	(polyline
 		(pts
-			(xy 525.78 157.48) (xy 488.95 157.48)
+			(xy 513.08 157.48) (xy 488.95 157.48)
 		)
 		(stroke
-			(width 0.254)
+			(width 0)
 			(type solid)
 		)
 		(uuid "19a2b5f8-9c20-4399-b4b6-1f26a20f0f6d")
@@ -3601,16 +3746,6 @@
 		)
 		(uuid "1d86ce0c-ed57-4348-b241-c8d1658b5773")
 	)
-	(polyline
-		(pts
-			(xy 524.764 209.55) (xy 524.764 213.868)
-		)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(uuid "1efee1df-0a80-4516-9792-daa3fd5e87f6")
-	)
 	(wire
 		(pts
 			(xy 58.42 80.01) (xy 58.42 78.74)
@@ -3640,16 +3775,6 @@
 			(type default)
 		)
 		(uuid "23e59287-7f95-4c29-8994-b6fc460156c3")
-	)
-	(polyline
-		(pts
-			(xy 534.416 213.868) (xy 524.764 213.868)
-		)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(uuid "23e85039-6bec-4018-afac-3eb28ca11be2")
 	)
 	(wire
 		(pts
@@ -3803,6 +3928,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 99.06) (xy 190.5 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e3ac914-7fd6-49cc-a835-516ca12c4ddc")
+	)
+	(wire
+		(pts
 			(xy 290.83 280.67) (xy 290.83 125.73)
 		)
 		(stroke
@@ -3813,7 +3948,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 287.02) (xy 298.45 168.91)
+			(xy 298.45 287.02) (xy 298.45 190.5)
 		)
 		(stroke
 			(width 0)
@@ -4021,16 +4156,6 @@
 		)
 		(uuid "6444a775-bc1f-4248-9f8c-60ea99b8cc37")
 	)
-	(polyline
-		(pts
-			(xy 525.78 157.48) (xy 534.416 157.48)
-		)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(uuid "67248a95-43c2-4c77-95ab-50fc1297e7c9")
-	)
 	(wire
 		(pts
 			(xy 408.94 267.97) (xy 502.92 267.97)
@@ -4043,16 +4168,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 99.06) (xy 190.5 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b106da1-2d12-4d3a-9ae3-181185a49a6e")
-	)
-	(wire
-		(pts
 			(xy 171.45 138.43) (xy 190.5 138.43)
 		)
 		(stroke
@@ -4061,9 +4176,29 @@
 		)
 		(uuid "6c03e87a-be9c-4fae-83e9-5cc7bec13148")
 	)
+	(polyline
+		(pts
+			(xy 542.925 205.105) (xy 542.925 300.355)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c4c5a6c-426b-4077-97d6-e513a7fa5793")
+	)
+	(polyline
+		(pts
+			(xy 535.94 203.2) (xy 542.925 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d861721-490e-4986-a1e6-d9affbf59407")
+	)
 	(wire
 		(pts
-			(xy 298.45 168.91) (xy 363.22 168.91)
+			(xy 298.45 190.5) (xy 363.22 190.5)
 		)
 		(stroke
 			(width 0)
@@ -4073,7 +4208,7 @@
 	)
 	(polyline
 		(pts
-			(xy 527.812 152.146) (xy 527.812 157.226)
+			(xy 514.35 152.4) (xy 514.35 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4090,6 +4225,16 @@
 			(type default)
 		)
 		(uuid "7401dd26-f6b5-41fc-b0a0-b2ff172443ca")
+	)
+	(polyline
+		(pts
+			(xy 513.08 300.355) (xy 542.925 300.355)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786709dd-0fab-4490-a66c-451ed5075281")
 	)
 	(wire
 		(pts
@@ -4213,7 +4358,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 99.06) (xy 175.26 140.97)
+			(xy 175.26 96.52) (xy 175.26 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4271,16 +4416,6 @@
 		)
 		(uuid "98990c15-86e1-45e4-b28d-bfa1dcb4373e")
 	)
-	(polyline
-		(pts
-			(xy 534.416 157.48) (xy 534.416 213.868)
-		)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(uuid "98fe2b2e-d3f3-46ca-a9b6-49fc986629e1")
-	)
 	(wire
 		(pts
 			(xy 483.87 157.48) (xy 436.88 157.48)
@@ -4311,6 +4446,16 @@
 		)
 		(uuid "9d043ece-d343-4e13-947b-61e2a8ce16e2")
 	)
+	(polyline
+		(pts
+			(xy 514.35 157.48) (xy 513.08 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dc48847-713b-4f0c-8f5e-9d951f6c49ca")
+	)
 	(wire
 		(pts
 			(xy 77.47 127) (xy 77.47 92.71)
@@ -4340,16 +4485,6 @@
 			(type default)
 		)
 		(uuid "a220071b-e063-4d7f-af5f-e6108de392db")
-	)
-	(wire
-		(pts
-			(xy 171.45 96.52) (xy 190.5 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a58e88f2-c1f5-48c4-91f8-f0ae3472c115")
 	)
 	(wire
 		(pts
@@ -4441,6 +4576,16 @@
 		)
 		(uuid "b521e4da-0010-4fbb-a1ad-b6c6205178c9")
 	)
+	(polyline
+		(pts
+			(xy 542.925 203.2) (xy 542.925 205.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6866595-d094-4aa9-a3f6-0d0b860088ac")
+	)
 	(wire
 		(pts
 			(xy 52.07 138.43) (xy 163.83 138.43)
@@ -4450,6 +4595,16 @@
 			(type default)
 		)
 		(uuid "b9c4234b-acf5-4cef-9e60-070ab92bd2be")
+	)
+	(wire
+		(pts
+			(xy 171.45 99.06) (xy 171.45 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba6c40cc-bf89-429d-b0d2-a1a04d09df14")
 	)
 	(wire
 		(pts
@@ -4643,6 +4798,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 96.52) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42c172c-bcac-4c36-ad7f-b25171bae1b2")
+	)
+	(wire
+		(pts
 			(xy 49.53 374.65) (xy 54.61 374.65)
 		)
 		(stroke
@@ -4673,7 +4838,7 @@
 	)
 	(polyline
 		(pts
-			(xy 518.16 204.978) (xy 518.16 205.74)
+			(xy 518.795 205.74) (xy 518.16 205.74)
 		)
 		(stroke
 			(width 0.254)
@@ -4720,16 +4885,6 @@
 			(type default)
 		)
 		(uuid "e7b70244-79d5-4794-82f4-2e752b0f3e0c")
-	)
-	(wire
-		(pts
-			(xy 171.45 96.52) (xy 171.45 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebebd951-38e8-4f69-8d0b-b1a965d2bf25")
 	)
 	(wire
 		(pts
@@ -4901,7 +5056,7 @@
 		)
 		(uuid "4f69d147-e9d5-45c1-8a0a-af9a1aa8857c")
 	)
-	(label "Helical_Antenna"
+	(label "HEL_ANT"
 		(at 500.38 74.93 0)
 		(effects
 			(font
@@ -5001,7 +5156,7 @@
 		)
 		(uuid "c80f85a0-0858-4df2-8cae-594df416b65d")
 	)
-	(label "Patch_Antenna"
+	(label "PATCH_ANT"
 		(at 500.38 97.79 0)
 		(effects
 			(font
@@ -5721,7 +5876,8 @@
 	)
 	(symbol
 		(lib_id "oresat-pcbs:WF-NP9202WF")
-		(at 523.24 200.66 0)
+		(at 523.24 200.66 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5731,7 +5887,7 @@
 		(dnp no)
 		(uuid "2f72101d-c176-4ae1-a959-d1678f32a9f8")
 		(property "Reference" "PCBA1"
-			(at 515.62 214.63 0)
+			(at 523.494 186.944 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5742,7 +5898,7 @@
 			)
 		)
 		(property "Value" "WF-NP9202WF"
-			(at 515.62 217.17 0)
+			(at 523.494 189.484 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7340,10 +7496,10 @@
 				)
 			)
 		)
-		(pin "1"
+		(pin "2"
 			(uuid "04dd7c8f-dcf5-4c06-84d0-bde52c895fcc")
 		)
-		(pin "2"
+		(pin "1"
 			(uuid "984ddf0d-9923-4fd9-aad6-9aff8761c435")
 		)
 		(instances
@@ -7557,6 +7713,7 @@
 		)
 	)
 	(symbol
+		(lib_name "J-MOLEX-SMPM-73300-002X_1")
 		(lib_id "oresat-connectors:J-MOLEX-SMPM-73300-002X")
 		(at 521.97 74.93 0)
 		(mirror y)
@@ -7974,9 +8131,9 @@
 				(justify left)
 			)
 		)
-		(pin "PA_ON_LNA_OFF" input
-			(at 364.49 120.65 180)
-			(uuid "bbb056c9-09d3-46e7-b904-d345c55c585b")
+		(pin "RF_TX_AMP" output
+			(at 364.49 118.11 180)
+			(uuid "57fb82dd-3225-49ae-ba2b-0da139fbfb47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7984,9 +8141,9 @@
 				(justify left)
 			)
 		)
-		(pin "RF_TX{slash}RX" bidirectional
+		(pin "RF_TX" input
 			(at 407.67 140.97 0)
-			(uuid "b2113606-d117-44d2-aac6-957b0d84892a")
+			(uuid "ce54de25-40da-47cc-9e42-10819ca20236")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7994,9 +8151,9 @@
 				(justify right)
 			)
 		)
-		(pin "RF_TX{slash}RX_AMP" output
-			(at 364.49 118.11 180)
-			(uuid "94396b81-dd61-4cbd-bdd0-9a8a7ef59957")
+		(pin "TOGGLE_PA" input
+			(at 364.49 120.65 180)
+			(uuid "fd8d9278-9c18-4e5c-b890-989efa2a8d45")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8090,16 +8247,6 @@
 				(justify left)
 			)
 		)
-		(pin "RX_DET_OUT" input
-			(at 234.95 287.02 0)
-			(uuid "e4b3d05b-9026-47c1-9d50-b8552901d411")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "PA_THERMISTOR" input
 			(at 234.95 280.67 0)
 			(uuid "cba9196e-d595-4074-a7cf-d9926f019e83")
@@ -8143,6 +8290,16 @@
 		(pin "USB_VBUS" output
 			(at 234.95 307.34 0)
 			(uuid "3ff7a8ff-4754-4aa3-b59a-5f2d7bec5f44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RF{slash}RX_IN_DETECTED" input
+			(at 234.95 287.02 0)
+			(uuid "ec8a880e-2650-4634-9eb9-424410084c4b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8227,7 +8384,7 @@
 				(justify right)
 			)
 		)
-		(pin "UART0_Rx" input
+		(pin "UART0_RX" input
 			(at 190.5 140.97 180)
 			(uuid "9de89edb-808f-4c3d-b608-c9e71c0cd2d7")
 			(effects
@@ -8237,7 +8394,7 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_Tx" input
+		(pin "UART0_TX" input
 			(at 190.5 138.43 180)
 			(uuid "aa3774c8-a744-4a53-97cd-e1b08c2aaf3e")
 			(effects
@@ -8382,7 +8539,7 @@
 				(justify right)
 			)
 		)
-		(pin "PA_ON_LNA_OFF" input
+		(pin "PA_ON_LNA_OFF" output
 			(at 364.49 78.74 180)
 			(uuid "30b93c1b-8dfa-4399-87cb-bce7e88f1e98")
 			(effects
@@ -8432,9 +8589,9 @@
 				(justify left)
 			)
 		)
-		(pin "RF_TX{slash}RX_AMP" bidirectional
+		(pin "RF_TX_AMP" input
 			(at 364.49 81.28 180)
-			(uuid "b5c9dcf3-8651-4098-b274-ad17eab3f2bb")
+			(uuid "565314bc-9df0-498d-867a-78c0a13e6e82")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8626,7 +8783,7 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_Rx" output
+		(pin "UART0_RX" output
 			(at 190.5 96.52 180)
 			(uuid "fbf19a3f-58ba-4e5d-b7bc-0df402945cae")
 			(effects
@@ -8636,7 +8793,7 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_Tx" output
+		(pin "UART0_TX" output
 			(at 190.5 99.06 180)
 			(uuid "398eafc9-6f87-4e58-b9ca-73bac080ac72")
 			(effects
@@ -8694,16 +8851,6 @@
 				(justify left top)
 			)
 		)
-		(pin "RX_DET_OUT" output
-			(at 363.22 168.91 180)
-			(uuid "bd92d706-16fe-4051-9efe-3eb5e478837f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "RX_IN" input
 			(at 407.67 163.83 0)
 			(uuid "f1b72087-ff22-4594-9fa9-4646984c28f6")
@@ -8714,16 +8861,6 @@
 				(justify right)
 			)
 		)
-		(pin "PA_ON_LNA_OFF" input
-			(at 363.22 165.1 180)
-			(uuid "0d1fa4cb-5c79-41e6-91e5-48e94ebf49d2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "RF_DET_IN" input
 			(at 407.67 190.5 0)
 			(uuid "1b4f4cdf-0252-45d0-bb2c-b55b3ffbc99f")
@@ -8732,6 +8869,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "LNA_SHUTDOWN" input
+			(at 363.22 165.1 180)
+			(uuid "d91cd895-1e63-4aa0-a797-db69ca83b4cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF{slash}RX_IN_DETECTED" output
+			(at 363.22 190.5 180)
+			(uuid "384c582a-5a66-4b7e-ada8-926e17bc3136")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -8822,7 +8979,7 @@
 				(justify right)
 			)
 		)
-		(pin "WIFI_USB_P" output
+		(pin "WIFI_USB_P" bidirectional
 			(at 408.94 298.45 0)
 			(uuid "a97c34b3-5e24-41f1-9ec6-abfb87d09ed5")
 			(effects
@@ -8832,7 +8989,7 @@
 				(justify right)
 			)
 		)
-		(pin "WIFI_USB_N" output
+		(pin "WIFI_USB_N" bidirectional
 			(at 408.94 295.91 0)
 			(uuid "4341f41d-67c7-4abb-b23f-a8ad27dc8569")
 			(effects
@@ -8862,7 +9019,7 @@
 				(justify right)
 			)
 		)
-		(pin "CAMERA_USB_P" output
+		(pin "CAMERA_USB_P" bidirectional
 			(at 408.94 267.97 0)
 			(uuid "1eea1489-fe37-4fa4-90a1-2f22a4129ea2")
 			(effects
@@ -8872,7 +9029,7 @@
 				(justify right)
 			)
 		)
-		(pin "CAMERA_USB_N" output
+		(pin "CAMERA_USB_N" bidirectional
 			(at 408.94 265.43 0)
 			(uuid "8f380425-6d61-4bbd-b84d-f862825842f9")
 			(effects
@@ -8882,7 +9039,7 @@
 				(justify right)
 			)
 		)
-		(pin "UP_P" input
+		(pin "UP_P" bidirectional
 			(at 365.76 309.88 180)
 			(uuid "a70089c1-0b9b-45c2-a6d7-b706865eb725")
 			(effects
@@ -8892,7 +9049,7 @@
 				(justify left)
 			)
 		)
-		(pin "UP_N" input
+		(pin "UP_N" bidirectional
 			(at 365.76 312.42 180)
 			(uuid "71732ea5-90ca-419a-9afc-05b1cf984b4d")
 			(effects
