@@ -6338,7 +6338,7 @@
 		)
 		(symbol "oresat-misc:Test-Point-1mm-round"
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
@@ -7829,6 +7829,17 @@
 		)
 		(uuid "05269399-9e3a-4ac1-914c-ca5386440b2f")
 	)
+	(text "All resistors 0603 +/- 1% unless marked and AEQ certified unless otherwise marked.\nAll caps are 0603 10% X5R or better and Vw >= 25 V and AEQ certified unless otherwise marked."
+		(exclude_from_sim no)
+		(at 113.284 265.43 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+			)
+			(justify left bottom)
+		)
+		(uuid "22203da7-d6d7-4e8b-85b8-35d996a0ae6b")
+	)
 	(text "1"
 		(exclude_from_sim no)
 		(at 203.2 116.84 0)
@@ -7933,7 +7944,7 @@
 		(at 74.676 182.88 0)
 		(effects
 			(font
-				(size 1.778 1.5113)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
@@ -7971,17 +7982,6 @@
 			(justify left bottom)
 		)
 		(uuid "976a27c2-83d9-4e7e-aa84-83f0286fd11b")
-	)
-	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
-		(exclude_from_sim no)
-		(at 119.38 264.16 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "97ecf3de-8e35-49c9-be75-42fa1e0891c6")
 	)
 	(text "SYSBOOT Jumper to config boot order\nmust use very light pullups because\nboot config is latched at boot and then\nthe pins a used for other purposes"
 		(exclude_from_sim no)
@@ -8050,17 +8050,6 @@
 			(justify left bottom)
 		)
 		(uuid "cc07aae6-6cda-43c6-a855-eb461be07584")
-	)
-	(text "All resistors 0603 +/- 1% unless marked"
-		(exclude_from_sim no)
-		(at 119.38 261.62 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfa882b3-d603-436a-89c2-6781a63cf285")
 	)
 	(text "Default Sysboot Pins\nSYSBOOT[4 : 0] == 0b11x00\nSYSBOOT[2] HIGH == eMMC\nSYSBOOT[2] LOW == SD Card"
 		(exclude_from_sim no)
@@ -9108,7 +9097,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9198,7 +9187,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)

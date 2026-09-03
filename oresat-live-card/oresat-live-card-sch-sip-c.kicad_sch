@@ -10324,7 +10324,7 @@
 		)
 		(symbol "oresat-misc:Test-Point-1mm-round"
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
@@ -11817,17 +11817,6 @@
 		)
 		(uuid "066428f4-9b73-4b75-975b-942365cc84c6")
 	)
-	(text "All resistors 0603 +/- 1% unless marked"
-		(exclude_from_sim no)
-		(at 125.73 261.62 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "150e16a8-a83a-447d-afdb-44dd144c91fe")
-	)
 	(text "USER LEDs"
 		(exclude_from_sim no)
 		(at 260.35 86.36 0)
@@ -11852,27 +11841,27 @@
 		)
 		(uuid "1b972543-7e37-4876-9a6c-c88a5e10d17b")
 	)
-	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
-		(exclude_from_sim no)
-		(at 125.73 264.16 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ee8ff82-b0ea-49d6-924e-0386e61aded8")
-	)
 	(text "Need ~{2.2uF} here, but using two 1uF for simplicity"
 		(exclude_from_sim no)
 		(at 347.98 175.26 0)
 		(effects
 			(font
-				(size 1.27 1.0795)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "57f0421f-3182-45ac-9e15-58a61c1c4ca6")
+	)
+	(text "All resistors 0603 +/- 1% unless marked and AEQ certified unless otherwise marked.\nAll caps are 0603 10% X5R or better and Vw >= 25 V and AEQ certified unless otherwise marked."
+		(exclude_from_sim no)
+		(at 113.792 265.684 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3e7d854-3021-4dd5-82c9-1db9f52406ed")
 	)
 	(text "eMMC"
 		(exclude_from_sim no)
@@ -14643,7 +14632,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -14654,7 +14643,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -14768,7 +14757,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -14779,7 +14768,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -14901,7 +14890,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -14912,7 +14901,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -15189,7 +15178,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
@@ -15200,7 +15189,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16076,7 +16065,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16087,7 +16076,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16278,7 +16267,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16415,7 +16404,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16426,7 +16415,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16540,7 +16529,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16551,7 +16540,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16665,7 +16654,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16676,7 +16665,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16790,7 +16779,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16801,7 +16790,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -16915,7 +16904,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -16926,7 +16915,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -17064,7 +17053,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17075,7 +17064,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17189,7 +17178,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17200,7 +17189,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17303,7 +17292,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -17314,7 +17303,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17437,7 +17426,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17448,7 +17437,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17639,7 +17628,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17650,7 +17639,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17830,7 +17819,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -17841,7 +17830,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -17920,7 +17909,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -17931,7 +17920,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18331,7 +18320,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18468,7 +18457,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -18479,7 +18468,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18617,7 +18606,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18754,7 +18743,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18765,7 +18754,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -18879,7 +18868,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -18890,7 +18879,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -19028,7 +19017,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -19039,7 +19028,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -19154,7 +19143,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -19322,7 +19311,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -19459,7 +19448,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -19470,7 +19459,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -20162,7 +20151,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -20173,7 +20162,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)

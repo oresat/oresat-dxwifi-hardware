@@ -7315,7 +7315,7 @@
 		)
 		(symbol "oresat-misc:Test-Point-1mm-round"
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
@@ -7713,36 +7713,25 @@
 	)
 	(text "VIN_USB can power the OSD335x"
 		(exclude_from_sim no)
-		(at 157.48 147.32 0)
+		(at 115.062 147.32 0)
 		(effects
 			(font
-				(size 1.778 1.5113)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "2b1410c8-731d-49f2-a5e5-c2c59289da3b")
 	)
-	(text "All caps are 0603 ceramic 10% X7R Vw>=16V unless marked"
+	(text "All resistors 0603 +/- 1% unless marked and AEQ certified unless otherwise marked.\nAll caps are 0603 10% X5R or better and Vw >= 25 V and AEQ certified unless otherwise marked."
 		(exclude_from_sim no)
-		(at 126.238 264.922 0)
+		(at 112.776 265.938 0)
 		(effects
 			(font
 				(size 1.778 1.5113)
 			)
 			(justify left bottom)
 		)
-		(uuid "2d8dee3a-2988-40df-b406-0358715d9d74")
-	)
-	(text "All resistors 0603 +/- 1% unless marked"
-		(exclude_from_sim no)
-		(at 126.238 262.382 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "c7329c00-5193-4834-83e7-5d943008eaf1")
+		(uuid "51dc5da8-b57e-45a6-b217-a596f881a808")
 	)
 	(text "ALL ADC INPUTS MUST\nBE <= 1.8V MAXIMUM"
 		(exclude_from_sim no)
@@ -9080,7 +9069,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9091,7 +9080,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9182,7 +9171,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9193,7 +9182,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9293,6 +9282,7 @@
 	(symbol
 		(lib_id "Device:Crystal_GND24")
 		(at 166.37 88.9 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9302,23 +9292,23 @@
 		(dnp no)
 		(uuid "298ae890-ed2c-4287-9d68-42108332ab84")
 		(property "Reference" "Y1"
-			(at 166.37 74.93 90)
+			(at 166.37 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify bottom)
 			)
 		)
 		(property "Value" "24MHz"
-			(at 166.37 76.2 90)
+			(at 166.37 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify top)
 			)
@@ -9427,7 +9417,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9438,7 +9428,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -9683,7 +9673,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9694,7 +9684,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9808,7 +9798,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -9819,7 +9809,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10011,7 +10001,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10022,7 +10012,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
@@ -10125,7 +10115,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10136,7 +10126,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10226,7 +10216,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10237,7 +10227,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10351,7 +10341,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10362,7 +10352,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10554,7 +10544,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -10565,7 +10555,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -10668,7 +10658,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10679,7 +10669,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -10758,7 +10748,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10769,7 +10759,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -11013,7 +11003,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -11024,7 +11014,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -11138,7 +11128,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
@@ -11149,7 +11139,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12014,7 +12004,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12025,7 +12015,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -12114,7 +12104,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -12229,7 +12219,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12240,7 +12230,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12319,7 +12309,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12330,7 +12320,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.778)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12420,7 +12410,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12431,7 +12421,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12447,7 +12437,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "-- mixed values --"
+		(property "Datasheet" ""
 			(at 142.24 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12557,7 +12547,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12568,7 +12558,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left bottom)
 			)
@@ -12682,7 +12672,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -12693,7 +12683,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right bottom)
 			)
@@ -12807,7 +12797,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -12818,7 +12808,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify right top)
 			)
@@ -12932,7 +12922,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
@@ -12943,7 +12933,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
