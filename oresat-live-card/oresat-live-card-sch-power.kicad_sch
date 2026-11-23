@@ -5836,6 +5836,12 @@
 		(uuid "2d5d5fc4-84da-4a54-85f6-87eaca191272")
 	)
 	(junction
+		(at 147.32 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2df16705-55dc-49ce-95ad-63dcc86a27ec")
+	)
+	(junction
 		(at 251.46 217.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5876,12 +5882,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43de97d4-5b28-40d6-b51c-e5bc2f9e32cf")
-	)
-	(junction
-		(at 147.32 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "467b0da7-313d-430b-887f-0f6892c08226")
 	)
 	(junction
 		(at 93.98 104.14)
@@ -6442,16 +6442,6 @@
 			(type default)
 		)
 		(uuid "07cc8d4b-080c-48fc-9ab6-79711e391ecf")
-	)
-	(wire
-		(pts
-			(xy 147.32 118.11) (xy 154.94 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "089b10ce-da7d-48c1-8837-3297bbbf0407")
 	)
 	(wire
 		(pts
@@ -8615,6 +8605,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 130.81) (xy 152.4 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a91604eb-0564-4f9d-b10b-6919049a951a")
+	)
+	(wire
+		(pts
 			(xy 110.49 166.37) (xy 110.49 171.45)
 		)
 		(stroke
@@ -10195,7 +10195,7 @@
 	)
 	(hierarchical_label "SYSBOOT2"
 		(shape output)
-		(at 154.94 118.11 0)
+		(at 152.4 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11958,7 +11958,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "161ec2e8-6d72-45b4-9551-58644f9ac558")
 		(property "Reference" "R51"
 			(at 343.916 54.8386 0)
@@ -16863,8 +16863,8 @@
 				(justify right top)
 			)
 		)
-		(property "Value" "0"
-			(at 319.786 56.642 90)
+		(property "Value" "100"
+			(at 322.58 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17356,7 +17356,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100"
 			(at 330.454 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25560,7 +25560,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "100m"
+		(property "Value" "15m"
 			(at 284.734 34.036 90)
 			(show_name no)
 			(do_not_autoplace no)

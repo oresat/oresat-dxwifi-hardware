@@ -77,7 +77,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|183650000|106150000|acebf331-9351-4def-bca0-a9043ecb53c1|00000000-0000-0000-0000-000000000000",
+          "Removed mounting hole for just this board, modified footprint."
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -183,6 +188,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,6 +200,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -205,6 +212,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -679,8 +687,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "RF-50-min",
@@ -1008,7 +1016,7 @@
         "uuid": "748bdd2d-da0a-4240-ba60-0bf881d2ec56"
       }
     ],
-    "used_designators": "#PWR3,#PWR52,#PWR166,C75,C100,R94,TP26",
+    "used_designators": "#PWR3,#PWR52-53,#PWR166,C75,C100,R94,TP26",
     "variants": []
   },
   "sheets": [
