@@ -523,7 +523,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_CAN_LIN:TCAN330"
+		(symbol "Interface_CAN_LIN:TCAN337G"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -540,7 +540,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TCAN330"
+			(property "Value" "TCAN337G"
 				(at 2.54 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -574,7 +574,7 @@
 					)
 				)
 			)
-			(property "Description" "High-Speed CAN Transceiver, 1Mbps, 3.3V supply, silent mode, shutdown mode, SOT-23-8/SOIC-8"
+			(property "Description" "High-Speed CAN Transceiver with CAN FD, 5Mbps, 3.3V supply, silent mode, fault output, SOT-23-8/SOIC-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -607,7 +607,7 @@
 					)
 				)
 			)
-			(symbol "TCAN330_0_1"
+			(symbol "TCAN337G_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -7.62)
@@ -620,7 +620,7 @@
 					)
 				)
 			)
-			(symbol "TCAN330_1_1"
+			(symbol "TCAN337G_1_1"
 				(pin input line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -693,10 +693,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin open_collector line
 					(at -12.7 -2.54 0)
 					(length 2.54)
-					(name "SHDN"
+					(name "FAULT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14626,6 +14626,151 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_CAN_LIN:TCAN337G")
+		(at 189.23 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "128d1d4c-10ed-4131-b978-1a84f36757d1")
+		(property "Reference" "U1"
+			(at 191.3733 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TCAN337G"
+			(at 191.3733 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
+			(at 189.23 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan337.pdf"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1/1 Transceiver CANbus SOT-23-8"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "296-48971-1-ND"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Texas Instruments"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TCAN337GDCNR"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "29b3e12b-61ab-42af-9f87-a53abb70a3bd")
+		)
+		(pin "1"
+			(uuid "16fa4fd7-420d-48d5-8e7b-c047701ee5ae")
+		)
+		(pin "3"
+			(uuid "fcfab6b7-97df-4e98-86e2-a83378278bb0")
+		)
+		(pin "5"
+			(uuid "96b50451-13cb-4974-82ed-78542145ebf5")
+		)
+		(pin "6"
+			(uuid "b2f047ae-8b16-46bb-83fb-dc903df253da")
+		)
+		(pin "7"
+			(uuid "7e7cab77-7983-4335-b319-19930a8173aa")
+		)
+		(pin "4"
+			(uuid "4b703357-e461-4378-91ab-e69f0e55a5a3")
+		)
+		(pin "8"
+			(uuid "e7f6197b-0080-4cb3-bc47-bffe3c913bf8")
+		)
+		(instances
+			(project "oresat-live-card"
+				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 353.06 154.94 0)
 		(unit 1)
@@ -14745,150 +14890,6 @@
 			(project "oresat-live-card"
 				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:TCAN330")
-		(at 189.23 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1e17b69a-d9f4-4a90-bfc1-7088dcfef6ad")
-		(property "Reference" "U11"
-			(at 193.04 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "TCAN330G"
-			(at 193.04 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "oresat-live-card:SOT23-8_TI-DCN"
-			(at 189.23 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tcan337.pdf"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "High-Speed CAN Transceiver, 1Mbps, 3.3V supply, silent mode, shutdown mode, SOT-23-8/SOIC-8"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TCAN330GDCNR"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "296-TCAN330GDCNRCT-ND"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Texas Instruments"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIS" "DigiKey"
-			(at 189.23 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f31d22c3-2600-46b1-be13-be71577b1598")
-		)
-		(pin "2"
-			(uuid "8a17e471-398d-4b5e-8789-ff2c7b5ebc0d")
-		)
-		(pin "3"
-			(uuid "abf0c9d7-abd8-4ba6-9bb5-abdb51547741")
-		)
-		(pin "4"
-			(uuid "5a4c59a6-12d9-4862-be95-d2bbaba1d2bf")
-		)
-		(pin "5"
-			(uuid "8d3efff2-3f13-4488-8017-b2f8a1e42fa9")
-		)
-		(pin "6"
-			(uuid "26525375-c924-42f1-91d4-09436138f167")
-		)
-		(pin "7"
-			(uuid "4b573aa4-346c-426e-9953-41c8a5264940")
-		)
-		(pin "8"
-			(uuid "068f012b-4c16-4997-a753-f8504fd322cf")
-		)
-		(instances
-			(project "oresat-live-card"
-				(path "/748bdd2d-da0a-4240-ba60-0bf881d2ec56/53f1a01a-ab00-470b-871b-16512f4395a9"
-					(reference "U11")
 					(unit 1)
 				)
 			)
